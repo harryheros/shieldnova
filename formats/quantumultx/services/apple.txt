@@ -4,7 +4,31 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 23:09:49 UTC
-# Total: 0
-# Breakdown: service_rules=0
+# Built: 2026-04-23 23:11:49 UTC
+# Total: 24
+# Breakdown: service_rules=24
 
+HOST-SUFFIX,apple.com,proxy
+HOST-SUFFIX,icloud.com,proxy
+HOST-SUFFIX,icloud.com.cn,proxy
+HOST-SUFFIX,me.com,proxy
+HOST-SUFFIX,mac.com,proxy
+HOST-SUFFIX,itunes.com,proxy
+HOST-SUFFIX,itunes.apple.com,proxy
+HOST-SUFFIX,apps.apple.com,proxy
+HOST-SUFFIX,mzstatic.com,proxy
+HOST-SUFFIX,aaplimg.com,proxy
+HOST-SUFFIX,cdn-apple.com,proxy
+HOST-SUFFIX,apple-dns.net,proxy
+HOST-SUFFIX,apple-mapkit.com,proxy
+HOST-SUFFIX,push.apple.com,proxy
+HOST-SUFFIX,ocsp.apple.com,proxy
+HOST-SUFFIX,crl.apple.com,proxy
+HOST-SUFFIX,swcdn.apple.com,proxy
+HOST-SUFFIX,mesu.apple.com,proxy
+HOST-SUFFIX,gdmf.apple.com,proxy
+HOST-SUFFIX,xp.apple.com,proxy
+HOST-SUFFIX,music.apple.com,proxy
+HOST-SUFFIX,tv.apple.com,proxy
+HOST-SUFFIX,news.apple.com,proxy
+HOST-SUFFIX,weatherkit.apple.com,proxy
