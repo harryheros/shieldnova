@@ -1,0 +1,17 @@
+# ShieldNova - Services / Telegram
+# Description: Domain set for Telegram traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-23 13:54:13 UTC
+# Total: 7
+# Breakdown: service_rules=7
+
+||telegram.org^                           ! Telegram - main website
+||telegram.me^                            ! Telegram - short link domain
+||t.me^                                   ! Telegram - short link domain
+||telegra.ph^                             ! Telegraph - publishing tool
+||telegram.dog^                           ! Telegram - alternative access domain
+||telesco.pe^                             ! Telegram - instant view
+||core.telegram.org^                      ! Telegram - API documentation

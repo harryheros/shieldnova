@@ -1,4 +1,19 @@
 ! ============================================================================
 ! ShieldNova - Advertising / China Mainland
-! STATUS: Under development. Rules added after individual verification.
+! Low-risk China mainland advertising and promotion domains.
+!
+! SAFETY: Targets clear ad-serving and ad-network endpoints only.
 ! ============================================================================
+
+! --- Baidu Ads ---
+||cpro.baidu.com^                         ! Baidu Union ad serving
+||pos.baidu.com^                          ! Baidu ad placement endpoint
+||union.baidu.com^                        ! Baidu Union advertising platform
+
+! --- Tencent Ads ---
+||gdt.qq.com^                             ! Tencent Guangdiantong ad platform
+||adsmind.gdtimg.com^                     ! Tencent ad delivery assets
+
+! --- Alibaba / Tanx ---
+||tanx.com^                               ! Alibaba Tanx ad exchange
+||atanx.com^                              ! Tanx ad serving

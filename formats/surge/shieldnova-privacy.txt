@@ -1,0 +1,65 @@
+# ShieldNova - Privacy Protection
+# Description: Low-risk analytics, attribution, fingerprinting, and telemetry blocking.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-23 13:54:13 UTC
+# Total: 55
+# Breakdown: privacy=55, allowlist_removed=0
+
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,pixel.facebook.com
+DOMAIN-SUFFIX,analytics.facebook.com
+DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,kochava.com
+DOMAIN-SUFFIX,singular.net
+DOMAIN-SUFFIX,tenjin.com
+DOMAIN-SUFFIX,mixpanel.com
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,segment.com
+DOMAIN-SUFFIX,heapanalytics.com
+DOMAIN-SUFFIX,hotjar.com
+DOMAIN-SUFFIX,fullstory.com
+DOMAIN-SUFFIX,mouseflow.com
+DOMAIN-SUFFIX,clarity.ms
+DOMAIN-SUFFIX,logrocket.com
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,newrelic.com
+DOMAIN-SUFFIX,nr-data.net
+DOMAIN-SUFFIX,telemetrydeck.com
+DOMAIN-SUFFIX,plausible.io
+DOMAIN-SUFFIX,actonservice.com
+DOMAIN-SUFFIX,criteo.com
+DOMAIN-SUFFIX,criteo.net
+DOMAIN-SUFFIX,scorecardresearch.com
+DOMAIN-SUFFIX,quantserve.com
+DOMAIN-SUFFIX,adnxs.com
+DOMAIN-SUFFIX,rubiconproject.com
+DOMAIN-SUFFIX,pubmatic.com
+DOMAIN-SUFFIX,openx.net
+DOMAIN-SUFFIX,casalemedia.com
+DOMAIN-SUFFIX,outbrain.com
+DOMAIN-SUFFIX,taboola.com
+DOMAIN-SUFFIX,snap.licdn.com
+DOMAIN-SUFFIX,ads.linkedin.com
+DOMAIN-SUFFIX,sc-static.net
+DOMAIN-SUFFIX,tr.snapchat.com
+DOMAIN-SUFFIX,marketo.com
+DOMAIN-SUFFIX,marketo.net
+DOMAIN-SUFFIX,pardot.com
+DOMAIN-SUFFIX,eloqua.com
+DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,2o7.net
+DOMAIN-SUFFIX,everesttech.net
+DOMAIN-SUFFIX,fingerprintjs.com

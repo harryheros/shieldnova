@@ -1,9 +1,10 @@
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
-! Blocks major global analytics, attribution, and fingerprinting services.
+! Blocks major global analytics, attribution, session replay, and telemetry.
 !
-! SAFETY: Every rule verified for zero false positives. Blocking these
-! domains will NOT break any app functionality or user-facing features.
+! SAFETY: Only low-risk tracking and telemetry domains are included here.
+! Avoids login, payments, app content delivery, deep links, CAPTCHAs, and
+! other domains that commonly affect normal app or website functionality.
 ! ============================================================================
 
 ! --- Google Analytics & Tracking ---
@@ -13,7 +14,7 @@
 ||googleadservices.com^                   ! Google Ads - conversion tracking
 ||doubleclick.net^                        ! Google DoubleClick - display ad tracking
 ||app-measurement.com^                    ! Firebase Analytics - mobile app measurement
-||crashlytics.com^                        ! Firebase Crashlytics - crash reporting (pure telemetry)
+||crashlytics.com^                        ! Firebase Crashlytics - crash reporting telemetry
 
 ! --- Meta / Facebook (tracking-only endpoints) ---
 ||pixel.facebook.com^                     ! Facebook Pixel - cross-site conversion tracking
@@ -30,7 +31,7 @@
 ! NOTE: branch.io / app.link NOT blocked — they handle deep links and
 ! share URLs. Blocking breaks "open in app" functionality.
 
-! --- Analytics Platforms (pure analytics, no user features) ---
+! --- Product Analytics & Session Replay ---
 ||mixpanel.com^                           ! Mixpanel - user behavior analytics
 ||amplitude.com^                          ! Amplitude - product analytics
 ||segment.io^                             ! Segment - customer data pipeline
@@ -40,6 +41,15 @@
 ||fullstory.com^                          ! FullStory - session replay
 ||mouseflow.com^                          ! Mouseflow - session replay & heatmaps
 ||clarity.ms^                             ! Microsoft Clarity - session recording
+||logrocket.com^                          ! LogRocket - session replay and diagnostics
+
+! --- Error Monitoring / Telemetry ---
+||bugsnag.com^                            ! Bugsnag - crash and stability telemetry
+||sentry.io^                              ! Sentry - application error telemetry
+||newrelic.com^                           ! New Relic - APM and user telemetry
+||nr-data.net^                            ! New Relic beacon collection endpoint
+||telemetrydeck.com^                      ! TelemetryDeck - anonymous app telemetry
+||plausible.io^                           ! Plausible - privacy-focused analytics
 
 ! --- Ad Tracking Networks (pure ad infra, no user features) ---
 ||actonservice.com^                       ! Act-On - marketing automation tracking
@@ -47,10 +57,10 @@
 ||criteo.net^                             ! Criteo - ad delivery network
 ||scorecardresearch.com^                  ! comScore - audience measurement
 ||quantserve.com^                         ! Quantcast - audience targeting
-||adnxs.com^                             ! Xandr/AppNexus - ad exchange
+||adnxs.com^                              ! Xandr/AppNexus - ad exchange
 ||rubiconproject.com^                     ! Magnite/Rubicon - ad exchange
 ||pubmatic.com^                           ! PubMatic - programmatic ads
-||openx.net^                             ! OpenX - ad marketplace
+||openx.net^                              ! OpenX - ad marketplace
 ||casalemedia.com^                        ! Index Exchange - ad exchange
 ||outbrain.com^                           ! Outbrain - content recommendation tracking
 ||taboola.com^                            ! Taboola - content recommendation tracking

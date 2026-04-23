@@ -1,17 +1,22 @@
 ! Title: ShieldNova - Security Protection
-! Description: Phishing, malware, scam, and cryptojacking domains.
+! Description: Conservative phishing, malware, scam, and cryptojacking domains.
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-23 13:18:28 UTC
-! Total: 0
+! Profile: Conservative / Compatibility-First
+! Built: 2026-04-23 13:54:13 UTC
+! Total: 5
+! Breakdown: phishing=0, malware=0, cryptojacking=5, allowlist_removed=0
 
 ! ============================================================================
-! ShieldNova - Security / Phishing
-! ============================================================================
-! ============================================================================
-! ShieldNova - Security / Malware
-! ============================================================================
-! ============================================================================
 ! ShieldNova - Security / Cryptojacking
+! Conservative blocklist for well-known browser mining infrastructure.
+!
+! SAFETY: Includes clear cryptomining domains only.
 ! ============================================================================
+
+||coinhive.com^                           ! Coinhive browser mining
+||coinhiveproxy.com^                      ! Coinhive proxy endpoint
+||authedmine.com^                         ! Coinhive opt-in miner
+||wsservices.org^                         ! Coinhive websocket endpoint
+||jsecoin.com^                            ! JSECoin browser mining

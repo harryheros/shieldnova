@@ -1,0 +1,80 @@
+{
+  "profile": "Conservative / Compatibility-First",
+  "built": "2026-04-23 13:54:13 UTC",
+  "allowlist_entries": 0,
+  "invalid_rules_skipped": 0,
+  "bundles": [
+    {
+      "filename": "shieldnova-privacy.txt",
+      "title": "Privacy Protection",
+      "description": "Low-risk analytics, attribution, fingerprinting, and telemetry blocking.",
+      "total": 55,
+      "breakdown": {
+        "privacy": 55,
+        "allowlist_removed": 0
+      }
+    },
+    {
+      "filename": "shieldnova-ads.txt",
+      "title": "Ads Protection",
+      "description": "Low-risk ad networks, exchanges, and ad-serving domains.",
+      "total": 22,
+      "breakdown": {
+        "ads": 22,
+        "allowlist_removed": 0
+      }
+    },
+    {
+      "filename": "shieldnova-security.txt",
+      "title": "Security Protection",
+      "description": "Conservative phishing, malware, scam, and cryptojacking domains.",
+      "total": 5,
+      "breakdown": {
+        "phishing": 0,
+        "malware": 0,
+        "cryptojacking": 5,
+        "allowlist_removed": 0
+      }
+    },
+    {
+      "filename": "shieldnova-full.txt",
+      "title": "Full (Global)",
+      "description": "Complete protection with a conservative compatibility-first profile.",
+      "total": 82,
+      "breakdown": {
+        "privacy": 55,
+        "ads": 22,
+        "security": 5,
+        "allowlist_removed": 0
+      }
+    },
+    {
+      "filename": "shieldnova-full-cn.txt",
+      "title": "Full (China Mainland)",
+      "description": "Complete protection with additional China mainland trackers and ad domains.",
+      "total": 113,
+      "breakdown": {
+        "privacy_global": 55,
+        "privacy_cn": 24,
+        "ads_global": 22,
+        "ads_cn": 7,
+        "security": 5,
+        "allowlist_removed": 0
+      }
+    },
+    {
+      "filename": "shieldnova-full-hktw.txt",
+      "title": "Full (Hong Kong & Taiwan)",
+      "description": "Complete protection with additional Hong Kong and Taiwan domains.",
+      "total": 82,
+      "breakdown": {
+        "privacy_global": 55,
+        "privacy_hktw": 0,
+        "ads_global": 22,
+        "ads_hktw": 0,
+        "security": 5,
+        "allowlist_removed": 0
+      }
+    }
+  ]
+}

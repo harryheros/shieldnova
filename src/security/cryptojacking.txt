@@ -1,4 +1,12 @@
 ! ============================================================================
 ! ShieldNova - Security / Cryptojacking
-! STATUS: Under development. Rules added after individual verification.
+! Conservative blocklist for well-known browser mining infrastructure.
+!
+! SAFETY: Includes clear cryptomining domains only.
 ! ============================================================================
+
+||coinhive.com^                           ! Coinhive browser mining
+||coinhiveproxy.com^                      ! Coinhive proxy endpoint
+||authedmine.com^                         ! Coinhive opt-in miner
+||wsservices.org^                         ! Coinhive websocket endpoint
+||jsecoin.com^                            ! JSECoin browser mining

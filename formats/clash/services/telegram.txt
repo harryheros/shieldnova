@@ -1,0 +1,18 @@
+# ShieldNova - Services / Telegram
+# Description: Domain set for Telegram traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-23 13:54:13 UTC
+# Total: 7
+# Breakdown: service_rules=7
+payload:
+
+  - DOMAIN-SUFFIX,telegram.org
+  - DOMAIN-SUFFIX,telegram.me
+  - DOMAIN-SUFFIX,t.me
+  - DOMAIN-SUFFIX,telegra.ph
+  - DOMAIN-SUFFIX,telegram.dog
+  - DOMAIN-SUFFIX,telesco.pe
+  - DOMAIN-SUFFIX,core.telegram.org
