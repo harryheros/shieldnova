@@ -140,3 +140,6 @@ ShieldNova is part of the Nova infrastructure toolkit:
 
 - **Personal use**: Free, no restrictions.
 - **Commercial use**: Requires a separate license. Contact via [GitHub Issues](https://github.com/harryheros/shieldnova/issues).
+---
+
+Part of the [Nova infrastructure toolkit](https://github.com/harryheros).
