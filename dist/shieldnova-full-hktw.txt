@@ -1,10 +1,10 @@
-! Title: ShieldNova - Essential (China Mainland)
-! Description: Complete protection with China mainland trackers and ad providers.
+! Title: ShieldNova - Essential (Hong Kong & Taiwan)
+! Description: Complete protection with HK & Taiwan specific trackers and ads.
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-23 10:19:43 UTC
-! Total: 72
+! Built: 2026-04-23 13:07:02 UTC
+! Total: 48
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -94,49 +94,8 @@
 ! ShieldNova - Security / Cryptojacking
 ! ============================================================================
 ! ============================================================================
-! ShieldNova - Privacy / China Mainland
-! Tracking and analytics domains specific to China mainland apps and services.
-!
-! SAFETY: Every rule verified for zero false positives. Blocking these
-! domains will NOT break any app functionality or user-facing features.
+! ShieldNova - Privacy / HK & TW
 ! ============================================================================
-
-! --- Baidu ---
-||hm.baidu.com^                           ! Baidu Tongji - web analytics
-||hmcdn.baidu.com^                        ! Baidu Tongji - analytics CDN
-||nsclick.baidu.com^                      ! Baidu - click tracking
-||fclog.baidu.com^                        ! Baidu - frontend logging
-
-! --- Alibaba ---
-||arms-retcode.aliyuncs.com^              ! Alibaba ARMS - frontend monitoring
-||retcode.alicdn.com^                     ! Alibaba - retcode tracking CDN
-||gm.mmstat.com^                          ! Alibaba - user behavior tracking
-||ac.mmstat.com^                          ! Alibaba - analytics collection
-
-! --- Tencent ---
-||beacon.qq.com^                          ! Tencent Beacon - app analytics SDK
-||otheve.beacon.qq.com^                   ! Tencent Beacon - event tracking
-||pingtas.qq.com^                         ! Tencent - performance monitoring
-||report.qqbrowser.qq.com^                ! QQ Browser - usage reporting
-||mta.qq.com^                             ! Tencent MTA - mobile analytics (legacy)
-
-! --- ByteDance ---
-||log.snssdk.com^                         ! ByteDance - app event logging
-||mon.snssdk.com^                         ! ByteDance - app monitoring
-||applog.snssdk.com^                      ! ByteDance - app usage logging
-
-! --- Umeng ---
-||umeng.com^                              ! Umeng - mobile analytics platform
-||cnzz.com^                               ! CNZZ (Umeng) - web analytics
-||umtrack.com^                            ! Umeng - tracking domain
-||alog.umeng.com^                         ! Umeng - analytics logging
-
-! --- Other China Analytics ---
-||growingio.com^                          ! GrowingIO - product analytics
-||sensorsdata.cn^                         ! Sensors Data - behavioral analytics
-||aldwx.com^                              ! Aldwx - WeChat mini-program analytics
-||tdatamaster.com^                        ! TalkingData - data analytics
-! push notifications for many China apps. Blocking causes missed messages.
 ! ============================================================================
-! ShieldNova - Advertising / China Mainland
+! ShieldNova - Advertising / HK & TW
 ! ============================================================================

@@ -29,9 +29,9 @@ Most users only need one link. Pick your region:
 
 | Edition | What's included | Subscribe |
 |---|---|---|
-| **Essential (Global)** | Privacy + Advertising + Security | `shieldnova-essential.txt` |
-| **Essential (China)** | Global + China mainland trackers & ads | `shieldnova-essential-cn.txt` |
-| **Essential (HK/TW)** | Global + HK & Taiwan specific | `shieldnova-essential-hktw.txt` |
+| **Essential (Global)** | Privacy + Advertising + Security | `shieldnova-full.txt` |
+| **Essential (China)** | Global + China mainland trackers & ads | `shieldnova-full-cn.txt` |
+| **Essential (HK/TW)** | Global + HK & Taiwan specific | `shieldnova-full-hktw.txt` |
 
 > These are pre-built combo files. One link gives you complete protection for your region.
 
@@ -42,7 +42,7 @@ For users who want granular control:
 | Module | Description | Subscribe |
 |---|---|---|
 | Privacy | Analytics, attribution, fingerprinting, telemetry | `shieldnova-privacy.txt` |
-| Advertising | Ad networks, ad exchanges, ad-serving | `shieldnova-advertising.txt` |
+| Advertising | Ad networks, ad exchanges, ad-serving | `shieldnova-ads.txt` |
 | Security | Phishing, malware, scam, cryptojacking | `shieldnova-security.txt` |
 
 ### Traffic Routing (For proxy tools)
@@ -124,11 +124,11 @@ Same result. One rule instead of five hundred.
 shieldnova/
 │
 ├── dist/                          # ← USERS SUBSCRIBE HERE
-│   ├── shieldnova-essential.txt         # Privacy + Ads + Security (Global)
-│   ├── shieldnova-essential-cn.txt      # Essential + China mainland
-│   ├── shieldnova-essential-hktw.txt    # Essential + Hong Kong & Taiwan
+│   ├── shieldnova-full.txt         # Privacy + Ads + Security (Global)
+│   ├── shieldnova-full-cn.txt      # Essential + China mainland
+│   ├── shieldnova-full-hktw.txt    # Essential + Hong Kong & Taiwan
 │   ├── shieldnova-privacy.txt           # Privacy module only
-│   ├── shieldnova-advertising.txt       # Advertising module only
+│   ├── shieldnova-ads.txt       # Advertising module only
 │   ├── shieldnova-security.txt          # Security module only
 │   └── services/                        # Traffic routing domain sets
 │       ├── netflix.txt
