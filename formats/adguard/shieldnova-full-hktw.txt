@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 14:27:22 UTC
-# Total: 82
-# Breakdown: privacy_global=55, privacy_hktw=0, ads_global=22, ads_hktw=0, security=5, allowlist_removed=0
+# Built: 2026-04-23 14:33:48 UTC
+# Total: 69
+# Breakdown: privacy_global=44, privacy_hktw=0, ads_global=22, ads_hktw=0, security=5, allowlist_removed=0
 
 ||google-analytics.com^                   ! Google Analytics - web/app usage tracking
 ||googletagmanager.com^                   ! Google Tag Manager - tag deployment & tracking
@@ -38,22 +38,11 @@
 ||nr-data.net^                            ! New Relic beacon collection endpoint
 ||telemetrydeck.com^                      ! TelemetryDeck - anonymous app telemetry
 ||plausible.io^                           ! Plausible - privacy-focused analytics
-||actonservice.com^                       ! Act-On - marketing automation tracking
-||criteo.com^                             ! Criteo - retargeting ad network
-||criteo.net^                             ! Criteo - ad delivery network
-||scorecardresearch.com^                  ! comScore - audience measurement
-||quantserve.com^                         ! Quantcast - audience targeting
-||adnxs.com^                              ! Xandr/AppNexus - ad exchange
-||rubiconproject.com^                     ! Magnite/Rubicon - ad exchange
-||pubmatic.com^                           ! PubMatic - programmatic ads
-||openx.net^                              ! OpenX - ad marketplace
-||casalemedia.com^                        ! Index Exchange - ad exchange
-||outbrain.com^                           ! Outbrain - content recommendation tracking
-||taboola.com^                            ! Taboola - content recommendation tracking
 ||snap.licdn.com^                         ! LinkedIn Insight Tag - conversion tracking
 ||ads.linkedin.com^                       ! LinkedIn Ads - tracking pixel
 ||sc-static.net^                          ! Snapchat - ad tracking SDK
 ||tr.snapchat.com^                        ! Snapchat - conversion tracking pixel
+||actonservice.com^                       ! Act-On - marketing automation tracking
 ||marketo.com^                            ! Marketo - marketing automation tracking
 ||marketo.net^                            ! Marketo - tracking delivery network
 ||pardot.com^                             ! Pardot - B2B marketing tracking
@@ -64,8 +53,6 @@
 ||everesttech.net^                        ! Adobe Advertising - ad tracking
 ||fingerprintjs.com^                      ! FingerprintJS - browser fingerprinting
 ||googlesyndication.com^                  ! Google AdSense / ad delivery
-||doubleclick.net^                        ! Google DoubleClick ad serving
-||googleadservices.com^                   ! Google Ads conversion and click tracking
 ||adnxs.com^                              ! Xandr/AppNexus ad exchange
 ||adsrvr.org^                             ! The Trade Desk ad delivery
 ||pubmatic.com^                           ! PubMatic ad exchange

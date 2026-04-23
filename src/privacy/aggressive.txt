@@ -22,11 +22,9 @@
 ||braze.com^                              ! Braze - breaks push notifications in some apps
 ||customer.io^                            ! Customer.io - breaks email unsubscribe links
 
-! --- Error Monitoring (may cause app instability) ---
-||sentry.io^                              ! Sentry - some apps crash if reporting fails
-||bugsnag.com^                            ! Bugsnag - some apps check-in on startup
-||newrelic.com^                           ! New Relic - may affect app performance monitoring
-||nr-data.net^                            ! New Relic - telemetry collection
+! --- Error Monitoring ---
+! NOTE: sentry.io, bugsnag.com, newrelic.com, nr-data.net are already
+! included in the core privacy module. They are NOT duplicated here.
 
 ! --- Bot Detection (WILL break login on some sites) ---
 ||arkoselabs.com^                         ! Arkose Labs - blocks CAPTCHA on EA, Microsoft, etc.

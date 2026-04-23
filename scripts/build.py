@@ -154,9 +154,11 @@ def compact_rule_block(rules):
             previous_blank = False
             continue
 
-        if stripped not in seen_rules:
+        # Extract just the rule part (before inline comment) for dedup
+        rule_part = stripped.split('!', 1)[0].rstrip() if '!' in stripped else stripped
+        if rule_part not in seen_rules:
             output.append(stripped)
-            seen_rules.add(stripped)
+            seen_rules.add(rule_part)
         previous_blank = False
 
     if output and output[-1] != '':

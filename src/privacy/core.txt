@@ -51,19 +51,11 @@
 ||telemetrydeck.com^                      ! TelemetryDeck - anonymous app telemetry
 ||plausible.io^                           ! Plausible - privacy-focused analytics
 
-! --- Ad Tracking Networks (pure ad infra, no user features) ---
-||actonservice.com^                       ! Act-On - marketing automation tracking
-||criteo.com^                             ! Criteo - retargeting ad network
-||criteo.net^                             ! Criteo - ad delivery network
-||scorecardresearch.com^                  ! comScore - audience measurement
-||quantserve.com^                         ! Quantcast - audience targeting
-||adnxs.com^                              ! Xandr/AppNexus - ad exchange
-||rubiconproject.com^                     ! Magnite/Rubicon - ad exchange
-||pubmatic.com^                           ! PubMatic - programmatic ads
-||openx.net^                              ! OpenX - ad marketplace
-||casalemedia.com^                        ! Index Exchange - ad exchange
-||outbrain.com^                           ! Outbrain - content recommendation tracking
-||taboola.com^                            ! Taboola - content recommendation tracking
+! --- Ad Tracking Networks ---
+! NOTE: Ad infrastructure domains (doubleclick, criteo, adnxs, pubmatic,
+! openx, rubiconproject, casalemedia, outbrain, taboola, quantserve,
+! scorecardresearch, googleadservices) are in the Advertising module.
+! They are not duplicated here to keep modules clean.
 
 ! --- Social Tracking (tracking-only subdomains) ---
 ||snap.licdn.com^                         ! LinkedIn Insight Tag - conversion tracking
@@ -74,6 +66,7 @@
 ! they serve embedded content (tweets, LinkedIn posts) on websites.
 
 ! --- Marketing Automation (pure tracking infra) ---
+||actonservice.com^                       ! Act-On - marketing automation tracking
 ||marketo.com^                            ! Marketo - marketing automation tracking
 ||marketo.net^                            ! Marketo - tracking delivery network
 ||pardot.com^                             ! Pardot - B2B marketing tracking
