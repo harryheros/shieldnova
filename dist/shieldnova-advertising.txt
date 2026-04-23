@@ -1,0 +1,11 @@
+! Title: ShieldNova - Advertising Protection
+! Description: Global ad networks, ad exchanges, and ad-serving domains.
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Built: 2026-04-23 09:23:49 UTC
+! Total: 0
+
+! ============================================================================
+! ShieldNova - Advertising / Global Core
+! ============================================================================

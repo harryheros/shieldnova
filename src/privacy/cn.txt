@@ -1,0 +1,43 @@
+! ============================================================================
+! ShieldNova - Privacy / China Mainland
+! Tracking and analytics domains specific to China mainland apps and services.
+! ============================================================================
+
+! --- Baidu ---
+||hm.baidu.com^                           ! Baidu Tongji - web analytics
+||hmcdn.baidu.com^                        ! Baidu Tongji - analytics CDN
+||nsclick.baidu.com^                      ! Baidu - click tracking
+||fclog.baidu.com^                        ! Baidu - frontend logging
+
+! --- Alibaba ---
+||arms-retcode.aliyuncs.com^              ! Alibaba ARMS - frontend monitoring
+||retcode.alicdn.com^                     ! Alibaba - retcode tracking CDN
+||gm.mmstat.com^                          ! Alibaba - user behavior tracking
+||ac.mmstat.com^                          ! Alibaba - analytics collection
+
+! --- Tencent ---
+||beacon.qq.com^                          ! Tencent Beacon - app analytics SDK
+||otheve.beacon.qq.com^                   ! Tencent Beacon - event tracking
+||pingtas.qq.com^                         ! Tencent - performance monitoring
+||report.qqbrowser.qq.com^                ! QQ Browser - usage reporting
+||mta.qq.com^                             ! Tencent MTA - mobile analytics (legacy)
+
+! --- ByteDance ---
+||log.snssdk.com^                         ! ByteDance - app event logging
+||mon.snssdk.com^                         ! ByteDance - app monitoring
+||applog.snssdk.com^                      ! ByteDance - app usage logging
+
+! --- Umeng ---
+||umeng.com^                              ! Umeng - mobile analytics platform
+||cnzz.com^                               ! CNZZ (Umeng) - web analytics
+||umtrack.com^                            ! Umeng - tracking domain
+||alog.umeng.com^                         ! Umeng - analytics logging
+
+! --- Other China Analytics ---
+||growingio.com^                          ! GrowingIO - product analytics
+||sensorsdata.cn^                         ! Sensors Data - behavioral analytics
+||aldwx.com^                              ! Aldwx - WeChat mini-program analytics
+||tdatamaster.com^                        ! TalkingData - data analytics
+||getui.com^                              ! Getui - push & user profiling
+||igexin.com^                             ! Igexin (Getui) - push SDK with data collection
+||jpush.cn^                               ! JPush (Aurora) - push with analytics

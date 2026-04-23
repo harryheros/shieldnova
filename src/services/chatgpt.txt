@@ -1,0 +1,14 @@
+! ============================================================================
+! ShieldNova - Services / ChatGPT & OpenAI
+! Domain set for routing OpenAI/ChatGPT traffic through proxy nodes.
+! NOTE: This is NOT a blocking list.
+! ============================================================================
+
+||openai.com^                             ! OpenAI - main platform
+||chatgpt.com^                            ! ChatGPT - conversational AI
+||chat.openai.com^                        ! ChatGPT - web interface
+||api.openai.com^                         ! OpenAI - API endpoint
+||auth0.openai.com^                       ! OpenAI - authentication
+||platform.openai.com^                    ! OpenAI - developer platform
+||oaiusercontent.com^                     ! OpenAI - user-generated content CDN
+||oaistatic.com^                          ! OpenAI - static assets

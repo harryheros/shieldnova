@@ -1,0 +1,21 @@
+! Title: ShieldNova - Services / Netflix
+! Description: Domain set for Netflix traffic routing.
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Built: 2026-04-23 09:23:49 UTC
+! Total: 8
+
+! ============================================================================
+! ShieldNova - Services / Netflix
+! Domain set for routing Netflix traffic through proxy nodes.
+! ============================================================================
+
+||netflix.com^                            ! Netflix - main platform
+||netflix.net^                            ! Netflix - CDN infrastructure
+||nflxvideo.net^                          ! Netflix - video delivery
+||nflximg.net^                            ! Netflix - image assets
+||nflximg.com^                            ! Netflix - image assets (alt)
+||nflxext.com^                            ! Netflix - browser extension
+||nflxso.net^                             ! Netflix - streaming optimization
+||fast.com^                               ! Netflix - speed test tool

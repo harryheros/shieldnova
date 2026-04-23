@@ -1,0 +1,14 @@
+! ============================================================================
+! ShieldNova - Services / Netflix
+! Domain set for routing Netflix traffic through proxy nodes.
+! NOTE: This is NOT a blocking list.
+! ============================================================================
+
+||netflix.com^                            ! Netflix - main platform
+||netflix.net^                            ! Netflix - CDN infrastructure
+||nflxvideo.net^                          ! Netflix - video delivery
+||nflximg.net^                            ! Netflix - image assets
+||nflximg.com^                            ! Netflix - image assets (alt)
+||nflxext.com^                            ! Netflix - browser extension
+||nflxso.net^                             ! Netflix - streaming optimization
+||fast.com^                               ! Netflix - speed test tool

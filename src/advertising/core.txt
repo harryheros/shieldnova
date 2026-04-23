@@ -1,0 +1,4 @@
+! ============================================================================
+! ShieldNova - Advertising / Global Core
+! STATUS: Under development. Rules added after individual verification.
+! ============================================================================
