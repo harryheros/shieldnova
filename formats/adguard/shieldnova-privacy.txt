@@ -1,54 +1,54 @@
-# ShieldNova - Privacy Protection
-# Description: Low-risk analytics, attribution, fingerprinting, and telemetry blocking.
-# Profile: Conservative / Compatibility-First
-# Author: Harry (https://github.com/harryheros)
-# Homepage: https://github.com/harryheros/shieldnova
-# License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 14:33:48 UTC
-# Total: 44
-# Breakdown: privacy=44, allowlist_removed=0
+! Title: ShieldNova - Privacy Protection
+! Description: Low-risk analytics, attribution, fingerprinting, and telemetry blocking.
+! Profile: Conservative / Compatibility-First
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Built: 2026-04-23 21:55:25 UTC
+! Total: 44
+! Breakdown: privacy=44, allowlist_removed=0
 
-||google-analytics.com^                   ! Google Analytics - web/app usage tracking
-||googletagmanager.com^                   ! Google Tag Manager - tag deployment & tracking
-||googletagservices.com^                  ! Google Publisher Tag - ad serving & tracking
-||googleadservices.com^                   ! Google Ads - conversion tracking
-||doubleclick.net^                        ! Google DoubleClick - display ad tracking
-||app-measurement.com^                    ! Firebase Analytics - mobile app measurement
-||crashlytics.com^                        ! Firebase Crashlytics - crash reporting telemetry
-||pixel.facebook.com^                     ! Facebook Pixel - cross-site conversion tracking
-||analytics.facebook.com^                 ! Facebook Analytics endpoint
-||adjust.com^                             ! Adjust - mobile install attribution
-||appsflyer.com^                          ! AppsFlyer - mobile attribution platform
-||kochava.com^                            ! Kochava - mobile attribution
-||singular.net^                           ! Singular - marketing analytics
-||tenjin.com^                             ! Tenjin - mobile ad revenue analytics
-||mixpanel.com^                           ! Mixpanel - user behavior analytics
-||amplitude.com^                          ! Amplitude - product analytics
-||segment.io^                             ! Segment - customer data pipeline
-||segment.com^                            ! Segment - customer data platform
-||heapanalytics.com^                      ! Heap - auto-capture analytics
-||hotjar.com^                             ! Hotjar - heatmaps & session recording
-||fullstory.com^                          ! FullStory - session replay
-||mouseflow.com^                          ! Mouseflow - session replay & heatmaps
-||clarity.ms^                             ! Microsoft Clarity - session recording
-||logrocket.com^                          ! LogRocket - session replay and diagnostics
-||bugsnag.com^                            ! Bugsnag - crash and stability telemetry
-||sentry.io^                              ! Sentry - application error telemetry
-||newrelic.com^                           ! New Relic - APM and user telemetry
-||nr-data.net^                            ! New Relic beacon collection endpoint
-||telemetrydeck.com^                      ! TelemetryDeck - anonymous app telemetry
-||plausible.io^                           ! Plausible - privacy-focused analytics
-||snap.licdn.com^                         ! LinkedIn Insight Tag - conversion tracking
-||ads.linkedin.com^                       ! LinkedIn Ads - tracking pixel
-||sc-static.net^                          ! Snapchat - ad tracking SDK
-||tr.snapchat.com^                        ! Snapchat - conversion tracking pixel
-||actonservice.com^                       ! Act-On - marketing automation tracking
-||marketo.com^                            ! Marketo - marketing automation tracking
-||marketo.net^                            ! Marketo - tracking delivery network
-||pardot.com^                             ! Pardot - B2B marketing tracking
-||eloqua.com^                             ! Oracle Eloqua - marketing automation tracking
-||omtrdc.net^                             ! Adobe Analytics - data collection endpoint
-||demdex.net^                             ! Adobe Audience Manager - audience tracking
-||2o7.net^                                ! Adobe/Omniture - legacy analytics tracking
-||everesttech.net^                        ! Adobe Advertising - ad tracking
-||fingerprintjs.com^                      ! FingerprintJS - browser fingerprinting
+||google-analytics.com^
+||googletagmanager.com^
+||googletagservices.com^
+||googleadservices.com^
+||doubleclick.net^
+||app-measurement.com^
+||crashlytics.com^
+||pixel.facebook.com^
+||analytics.facebook.com^
+||adjust.com^
+||appsflyer.com^
+||kochava.com^
+||singular.net^
+||tenjin.com^
+||mixpanel.com^
+||amplitude.com^
+||segment.io^
+||segment.com^
+||heapanalytics.com^
+||hotjar.com^
+||fullstory.com^
+||mouseflow.com^
+||clarity.ms^
+||logrocket.com^
+||bugsnag.com^
+||sentry.io^
+||newrelic.com^
+||nr-data.net^
+||telemetrydeck.com^
+||plausible.io^
+||snap.licdn.com^
+||ads.linkedin.com^
+||sc-static.net^
+||tr.snapchat.com^
+||actonservice.com^
+||marketo.com^
+||marketo.net^
+||pardot.com^
+||eloqua.com^
+||omtrdc.net^
+||demdex.net^
+||2o7.net^
+||everesttech.net^
+||fingerprintjs.com^

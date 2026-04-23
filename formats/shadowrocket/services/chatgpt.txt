@@ -4,15 +4,15 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 14:33:48 UTC
+# Built: 2026-04-23 21:55:25 UTC
 # Total: 8
 # Breakdown: service_rules=8
 
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,chat.openai.com
-DOMAIN-SUFFIX,api.openai.com
-DOMAIN-SUFFIX,auth0.openai.com
-DOMAIN-SUFFIX,platform.openai.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,openai.com,PROXY
+DOMAIN-SUFFIX,chatgpt.com,PROXY
+DOMAIN-SUFFIX,chat.openai.com,PROXY
+DOMAIN-SUFFIX,api.openai.com,PROXY
+DOMAIN-SUFFIX,auth0.openai.com,PROXY
+DOMAIN-SUFFIX,platform.openai.com,PROXY
+DOMAIN-SUFFIX,oaiusercontent.com,PROXY
+DOMAIN-SUFFIX,oaistatic.com,PROXY

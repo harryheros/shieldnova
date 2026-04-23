@@ -198,9 +198,42 @@ def convert_rule(rule, tool):
         return None
 
     if tool == 'adguard':
-        return rule.strip()
-    if tool in ('surge', 'shadowrocket', 'quantumultx', 'loon'):
+        # AdGuard native syntax: ||domain.com^
+        return f"||{domain}^"
+    if tool == 'surge':
+        # Surge: DOMAIN-SUFFIX,domain.com,REJECT
+        return f"DOMAIN-SUFFIX,{domain},REJECT"
+    if tool == 'shadowrocket':
+        # Shadowrocket: DOMAIN-SUFFIX,domain.com,REJECT
+        return f"DOMAIN-SUFFIX,{domain},REJECT"
+    if tool == 'loon':
+        # Loon: DOMAIN-SUFFIX,domain.com,REJECT
+        return f"DOMAIN-SUFFIX,{domain},REJECT"
+    if tool == 'quantumultx':
+        # Quantumult X: HOST-SUFFIX,domain.com,reject
+        return f"HOST-SUFFIX,{domain},reject"
+    if tool == 'clash':
+        # Clash: DOMAIN-SUFFIX,domain.com (action defined in proxy group, not inline)
         return f"DOMAIN-SUFFIX,{domain}"
+    return None
+
+
+def convert_service_rule(rule, tool):
+    """Convert service routing rules — use PROXY instead of REJECT."""
+    domain = extract_domain(rule)
+    if not domain:
+        return None
+
+    if tool == 'adguard':
+        return f"||{domain}^"
+    if tool == 'surge':
+        return f"DOMAIN-SUFFIX,{domain},PROXY"
+    if tool == 'shadowrocket':
+        return f"DOMAIN-SUFFIX,{domain},PROXY"
+    if tool == 'loon':
+        return f"DOMAIN-SUFFIX,{domain},PROXY"
+    if tool == 'quantumultx':
+        return f"HOST-SUFFIX,{domain},proxy"
     if tool == 'clash':
         return f"DOMAIN-SUFFIX,{domain}"
     return None
@@ -210,7 +243,22 @@ def format_header_lines(title, description, count, tool, breakdown):
     date = utc_now()
     breakdown_text = ', '.join(f'{k}={v}' for k, v in breakdown.items() if v is not None)
 
+    if tool == 'adguard':
+        # AdGuard uses ! for comments
+        return [
+            f"! Title: ShieldNova - {title}",
+            f"! Description: {description}",
+            "! Profile: Conservative / Compatibility-First",
+            "! Author: Harry (https://github.com/harryheros)",
+            "! Homepage: https://github.com/harryheros/shieldnova",
+            "! License: CC BY-NC-SA 4.0",
+            f"! Built: {date}",
+            f"! Total: {count}",
+            f"! Breakdown: {breakdown_text}",
+        ]
+
     if tool == 'clash':
+        # Clash YAML uses # for comments, needs payload: key
         return [
             f"# ShieldNova - {title}",
             f"# Description: {description}",
@@ -224,6 +272,7 @@ def format_header_lines(title, description, count, tool, breakdown):
             "payload:",
         ]
 
+    # Surge, Shadowrocket, Quantumult X, Loon all use # for comments
     return [
         f"# ShieldNova - {title}",
         f"# Description: {description}",
@@ -237,17 +286,18 @@ def format_header_lines(title, description, count, tool, breakdown):
     ]
 
 
-def convert_rules_for_tool(rules, tool):
+def convert_rules_for_tool(rules, tool, is_service=False):
+    converter = convert_service_rule if is_service else convert_rule
     converted = []
     for rule in active_rules_only(rules):
-        converted_rule = convert_rule(rule, tool)
+        converted_rule = converter(rule, tool)
         if converted_rule:
             converted.append(converted_rule)
     return dedupe_preserve_order(converted)
 
 
-def write_format(tool, filename, title, description, rules, breakdown):
-    converted = convert_rules_for_tool(rules, tool)
+def write_format(tool, filename, title, description, rules, breakdown, is_service=False):
+    converted = convert_rules_for_tool(rules, tool, is_service=is_service)
     count = len(converted)
     filepath = os.path.join(FORMATS_DIR, tool, filename)
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
@@ -460,7 +510,7 @@ def build():
 
             write_dist(f'services/{name}', title, description, rules, breakdown)
             for tool in ('adguard', 'surge', 'shadowrocket', 'clash', 'quantumultx', 'loon'):
-                write_format(tool, f'services/{name}', title, description, rules, breakdown)
+                write_format(tool, f'services/{name}', title, description, rules, breakdown, is_service=True)
 
     report = OrderedDict([
         ('profile', 'Conservative / Compatibility-First'),

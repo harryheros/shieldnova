@@ -1,32 +1,32 @@
-# ShieldNova - Ads Protection
-# Description: Low-risk ad networks, exchanges, and ad-serving domains.
-# Profile: Conservative / Compatibility-First
-# Author: Harry (https://github.com/harryheros)
-# Homepage: https://github.com/harryheros/shieldnova
-# License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 14:33:48 UTC
-# Total: 22
-# Breakdown: ads=22, allowlist_removed=0
+! Title: ShieldNova - Ads Protection
+! Description: Low-risk ad networks, exchanges, and ad-serving domains.
+! Profile: Conservative / Compatibility-First
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Built: 2026-04-23 21:55:25 UTC
+! Total: 22
+! Breakdown: ads=22, allowlist_removed=0
 
-||googlesyndication.com^                  ! Google AdSense / ad delivery
-||doubleclick.net^                        ! Google DoubleClick ad serving
-||googleadservices.com^                   ! Google Ads conversion and click tracking
-||adnxs.com^                              ! Xandr/AppNexus ad exchange
-||adsrvr.org^                             ! The Trade Desk ad delivery
-||pubmatic.com^                           ! PubMatic ad exchange
-||rubiconproject.com^                     ! Magnite/Rubicon ad exchange
-||openx.net^                              ! OpenX ad marketplace
-||sharethrough.com^                       ! Sharethrough native ads
-||bidswitch.net^                          ! BidSwitch exchange routing
-||lijit.com^                              ! Sovrn / Lijit ad serving
-||media.net^                              ! Media.net contextual ads
-||serving-sys.com^                        ! Sizmek ad serving
-||casalemedia.com^                        ! Index Exchange ad marketplace
-||criteo.com^                             ! Criteo retargeting ads
-||criteo.net^                             ! Criteo ad delivery
-||taboola.com^                            ! Taboola sponsored content
-||outbrain.com^                           ! Outbrain sponsored content
-||quantserve.com^                         ! Quantcast ad targeting
-||scorecardresearch.com^                  ! comScore audience measurement
-||mookie1.com^                            ! Oracle BlueKai / identity for ads
-||rlcdn.com^                              ! LiveRamp ad tech CDN
+||googlesyndication.com^
+||doubleclick.net^
+||googleadservices.com^
+||adnxs.com^
+||adsrvr.org^
+||pubmatic.com^
+||rubiconproject.com^
+||openx.net^
+||sharethrough.com^
+||bidswitch.net^
+||lijit.com^
+||media.net^
+||serving-sys.com^
+||casalemedia.com^
+||criteo.com^
+||criteo.net^
+||taboola.com^
+||outbrain.com^
+||quantserve.com^
+||scorecardresearch.com^
+||mookie1.com^
+||rlcdn.com^
