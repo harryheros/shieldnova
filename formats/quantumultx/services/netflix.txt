@@ -4,15 +4,15 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 14:33:48 UTC
+# Built: 2026-04-23 21:55:25 UTC
 # Total: 8
 # Breakdown: service_rules=8
 
-DOMAIN-SUFFIX,netflix.com
-DOMAIN-SUFFIX,netflix.net
-DOMAIN-SUFFIX,nflxvideo.net
-DOMAIN-SUFFIX,nflximg.net
-DOMAIN-SUFFIX,nflximg.com
-DOMAIN-SUFFIX,nflxext.com
-DOMAIN-SUFFIX,nflxso.net
-DOMAIN-SUFFIX,fast.com
+HOST-SUFFIX,netflix.com,proxy
+HOST-SUFFIX,netflix.net,proxy
+HOST-SUFFIX,nflxvideo.net,proxy
+HOST-SUFFIX,nflximg.net,proxy
+HOST-SUFFIX,nflximg.com,proxy
+HOST-SUFFIX,nflxext.com,proxy
+HOST-SUFFIX,nflxso.net,proxy
+HOST-SUFFIX,fast.com,proxy

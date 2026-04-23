@@ -4,14 +4,14 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 14:33:48 UTC
+# Built: 2026-04-23 21:55:25 UTC
 # Total: 7
 # Breakdown: service_rules=7
 
-DOMAIN-SUFFIX,telegram.org
-DOMAIN-SUFFIX,telegram.me
-DOMAIN-SUFFIX,t.me
-DOMAIN-SUFFIX,telegra.ph
-DOMAIN-SUFFIX,telegram.dog
-DOMAIN-SUFFIX,telesco.pe
-DOMAIN-SUFFIX,core.telegram.org
+DOMAIN-SUFFIX,telegram.org,PROXY
+DOMAIN-SUFFIX,telegram.me,PROXY
+DOMAIN-SUFFIX,t.me,PROXY
+DOMAIN-SUFFIX,telegra.ph,PROXY
+DOMAIN-SUFFIX,telegram.dog,PROXY
+DOMAIN-SUFFIX,telesco.pe,PROXY
+DOMAIN-SUFFIX,core.telegram.org,PROXY

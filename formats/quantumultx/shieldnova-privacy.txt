@@ -4,51 +4,51 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 14:33:48 UTC
+# Built: 2026-04-23 21:55:25 UTC
 # Total: 44
 # Breakdown: privacy=44, allowlist_removed=0
 
-DOMAIN-SUFFIX,google-analytics.com
-DOMAIN-SUFFIX,googletagmanager.com
-DOMAIN-SUFFIX,googletagservices.com
-DOMAIN-SUFFIX,googleadservices.com
-DOMAIN-SUFFIX,doubleclick.net
-DOMAIN-SUFFIX,app-measurement.com
-DOMAIN-SUFFIX,crashlytics.com
-DOMAIN-SUFFIX,pixel.facebook.com
-DOMAIN-SUFFIX,analytics.facebook.com
-DOMAIN-SUFFIX,adjust.com
-DOMAIN-SUFFIX,appsflyer.com
-DOMAIN-SUFFIX,kochava.com
-DOMAIN-SUFFIX,singular.net
-DOMAIN-SUFFIX,tenjin.com
-DOMAIN-SUFFIX,mixpanel.com
-DOMAIN-SUFFIX,amplitude.com
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,segment.com
-DOMAIN-SUFFIX,heapanalytics.com
-DOMAIN-SUFFIX,hotjar.com
-DOMAIN-SUFFIX,fullstory.com
-DOMAIN-SUFFIX,mouseflow.com
-DOMAIN-SUFFIX,clarity.ms
-DOMAIN-SUFFIX,logrocket.com
-DOMAIN-SUFFIX,bugsnag.com
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,newrelic.com
-DOMAIN-SUFFIX,nr-data.net
-DOMAIN-SUFFIX,telemetrydeck.com
-DOMAIN-SUFFIX,plausible.io
-DOMAIN-SUFFIX,snap.licdn.com
-DOMAIN-SUFFIX,ads.linkedin.com
-DOMAIN-SUFFIX,sc-static.net
-DOMAIN-SUFFIX,tr.snapchat.com
-DOMAIN-SUFFIX,actonservice.com
-DOMAIN-SUFFIX,marketo.com
-DOMAIN-SUFFIX,marketo.net
-DOMAIN-SUFFIX,pardot.com
-DOMAIN-SUFFIX,eloqua.com
-DOMAIN-SUFFIX,omtrdc.net
-DOMAIN-SUFFIX,demdex.net
-DOMAIN-SUFFIX,2o7.net
-DOMAIN-SUFFIX,everesttech.net
-DOMAIN-SUFFIX,fingerprintjs.com
+HOST-SUFFIX,google-analytics.com,reject
+HOST-SUFFIX,googletagmanager.com,reject
+HOST-SUFFIX,googletagservices.com,reject
+HOST-SUFFIX,googleadservices.com,reject
+HOST-SUFFIX,doubleclick.net,reject
+HOST-SUFFIX,app-measurement.com,reject
+HOST-SUFFIX,crashlytics.com,reject
+HOST-SUFFIX,pixel.facebook.com,reject
+HOST-SUFFIX,analytics.facebook.com,reject
+HOST-SUFFIX,adjust.com,reject
+HOST-SUFFIX,appsflyer.com,reject
+HOST-SUFFIX,kochava.com,reject
+HOST-SUFFIX,singular.net,reject
+HOST-SUFFIX,tenjin.com,reject
+HOST-SUFFIX,mixpanel.com,reject
+HOST-SUFFIX,amplitude.com,reject
+HOST-SUFFIX,segment.io,reject
+HOST-SUFFIX,segment.com,reject
+HOST-SUFFIX,heapanalytics.com,reject
+HOST-SUFFIX,hotjar.com,reject
+HOST-SUFFIX,fullstory.com,reject
+HOST-SUFFIX,mouseflow.com,reject
+HOST-SUFFIX,clarity.ms,reject
+HOST-SUFFIX,logrocket.com,reject
+HOST-SUFFIX,bugsnag.com,reject
+HOST-SUFFIX,sentry.io,reject
+HOST-SUFFIX,newrelic.com,reject
+HOST-SUFFIX,nr-data.net,reject
+HOST-SUFFIX,telemetrydeck.com,reject
+HOST-SUFFIX,plausible.io,reject
+HOST-SUFFIX,snap.licdn.com,reject
+HOST-SUFFIX,ads.linkedin.com,reject
+HOST-SUFFIX,sc-static.net,reject
+HOST-SUFFIX,tr.snapchat.com,reject
+HOST-SUFFIX,actonservice.com,reject
+HOST-SUFFIX,marketo.com,reject
+HOST-SUFFIX,marketo.net,reject
+HOST-SUFFIX,pardot.com,reject
+HOST-SUFFIX,eloqua.com,reject
+HOST-SUFFIX,omtrdc.net,reject
+HOST-SUFFIX,demdex.net,reject
+HOST-SUFFIX,2o7.net,reject
+HOST-SUFFIX,everesttech.net,reject
+HOST-SUFFIX,fingerprintjs.com,reject

@@ -4,29 +4,29 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 14:33:48 UTC
+# Built: 2026-04-23 21:55:25 UTC
 # Total: 22
 # Breakdown: ads=22, allowlist_removed=0
 
-DOMAIN-SUFFIX,googlesyndication.com
-DOMAIN-SUFFIX,doubleclick.net
-DOMAIN-SUFFIX,googleadservices.com
-DOMAIN-SUFFIX,adnxs.com
-DOMAIN-SUFFIX,adsrvr.org
-DOMAIN-SUFFIX,pubmatic.com
-DOMAIN-SUFFIX,rubiconproject.com
-DOMAIN-SUFFIX,openx.net
-DOMAIN-SUFFIX,sharethrough.com
-DOMAIN-SUFFIX,bidswitch.net
-DOMAIN-SUFFIX,lijit.com
-DOMAIN-SUFFIX,media.net
-DOMAIN-SUFFIX,serving-sys.com
-DOMAIN-SUFFIX,casalemedia.com
-DOMAIN-SUFFIX,criteo.com
-DOMAIN-SUFFIX,criteo.net
-DOMAIN-SUFFIX,taboola.com
-DOMAIN-SUFFIX,outbrain.com
-DOMAIN-SUFFIX,quantserve.com
-DOMAIN-SUFFIX,scorecardresearch.com
-DOMAIN-SUFFIX,mookie1.com
-DOMAIN-SUFFIX,rlcdn.com
+HOST-SUFFIX,googlesyndication.com,reject
+HOST-SUFFIX,doubleclick.net,reject
+HOST-SUFFIX,googleadservices.com,reject
+HOST-SUFFIX,adnxs.com,reject
+HOST-SUFFIX,adsrvr.org,reject
+HOST-SUFFIX,pubmatic.com,reject
+HOST-SUFFIX,rubiconproject.com,reject
+HOST-SUFFIX,openx.net,reject
+HOST-SUFFIX,sharethrough.com,reject
+HOST-SUFFIX,bidswitch.net,reject
+HOST-SUFFIX,lijit.com,reject
+HOST-SUFFIX,media.net,reject
+HOST-SUFFIX,serving-sys.com,reject
+HOST-SUFFIX,casalemedia.com,reject
+HOST-SUFFIX,criteo.com,reject
+HOST-SUFFIX,criteo.net,reject
+HOST-SUFFIX,taboola.com,reject
+HOST-SUFFIX,outbrain.com,reject
+HOST-SUFFIX,quantserve.com,reject
+HOST-SUFFIX,scorecardresearch.com,reject
+HOST-SUFFIX,mookie1.com,reject
+HOST-SUFFIX,rlcdn.com,reject

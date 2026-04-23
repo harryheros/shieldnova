@@ -1,110 +1,110 @@
-# ShieldNova - Full (China Mainland)
-# Description: Complete protection with additional China mainland trackers and ad domains.
-# Profile: Conservative / Compatibility-First
-# Author: Harry (https://github.com/harryheros)
-# Homepage: https://github.com/harryheros/shieldnova
-# License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 14:33:48 UTC
-# Total: 100
-# Breakdown: privacy_global=44, privacy_cn=24, ads_global=22, ads_cn=7, security=5, allowlist_removed=0
+! Title: ShieldNova - Full (China Mainland)
+! Description: Complete protection with additional China mainland trackers and ad domains.
+! Profile: Conservative / Compatibility-First
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Built: 2026-04-23 21:55:25 UTC
+! Total: 100
+! Breakdown: privacy_global=44, privacy_cn=24, ads_global=22, ads_cn=7, security=5, allowlist_removed=0
 
-||google-analytics.com^                   ! Google Analytics - web/app usage tracking
-||googletagmanager.com^                   ! Google Tag Manager - tag deployment & tracking
-||googletagservices.com^                  ! Google Publisher Tag - ad serving & tracking
-||googleadservices.com^                   ! Google Ads - conversion tracking
-||doubleclick.net^                        ! Google DoubleClick - display ad tracking
-||app-measurement.com^                    ! Firebase Analytics - mobile app measurement
-||crashlytics.com^                        ! Firebase Crashlytics - crash reporting telemetry
-||pixel.facebook.com^                     ! Facebook Pixel - cross-site conversion tracking
-||analytics.facebook.com^                 ! Facebook Analytics endpoint
-||adjust.com^                             ! Adjust - mobile install attribution
-||appsflyer.com^                          ! AppsFlyer - mobile attribution platform
-||kochava.com^                            ! Kochava - mobile attribution
-||singular.net^                           ! Singular - marketing analytics
-||tenjin.com^                             ! Tenjin - mobile ad revenue analytics
-||mixpanel.com^                           ! Mixpanel - user behavior analytics
-||amplitude.com^                          ! Amplitude - product analytics
-||segment.io^                             ! Segment - customer data pipeline
-||segment.com^                            ! Segment - customer data platform
-||heapanalytics.com^                      ! Heap - auto-capture analytics
-||hotjar.com^                             ! Hotjar - heatmaps & session recording
-||fullstory.com^                          ! FullStory - session replay
-||mouseflow.com^                          ! Mouseflow - session replay & heatmaps
-||clarity.ms^                             ! Microsoft Clarity - session recording
-||logrocket.com^                          ! LogRocket - session replay and diagnostics
-||bugsnag.com^                            ! Bugsnag - crash and stability telemetry
-||sentry.io^                              ! Sentry - application error telemetry
-||newrelic.com^                           ! New Relic - APM and user telemetry
-||nr-data.net^                            ! New Relic beacon collection endpoint
-||telemetrydeck.com^                      ! TelemetryDeck - anonymous app telemetry
-||plausible.io^                           ! Plausible - privacy-focused analytics
-||snap.licdn.com^                         ! LinkedIn Insight Tag - conversion tracking
-||ads.linkedin.com^                       ! LinkedIn Ads - tracking pixel
-||sc-static.net^                          ! Snapchat - ad tracking SDK
-||tr.snapchat.com^                        ! Snapchat - conversion tracking pixel
-||actonservice.com^                       ! Act-On - marketing automation tracking
-||marketo.com^                            ! Marketo - marketing automation tracking
-||marketo.net^                            ! Marketo - tracking delivery network
-||pardot.com^                             ! Pardot - B2B marketing tracking
-||eloqua.com^                             ! Oracle Eloqua - marketing automation tracking
-||omtrdc.net^                             ! Adobe Analytics - data collection endpoint
-||demdex.net^                             ! Adobe Audience Manager - audience tracking
-||2o7.net^                                ! Adobe/Omniture - legacy analytics tracking
-||everesttech.net^                        ! Adobe Advertising - ad tracking
-||fingerprintjs.com^                      ! FingerprintJS - browser fingerprinting
-||googlesyndication.com^                  ! Google AdSense / ad delivery
-||adnxs.com^                              ! Xandr/AppNexus ad exchange
-||adsrvr.org^                             ! The Trade Desk ad delivery
-||pubmatic.com^                           ! PubMatic ad exchange
-||rubiconproject.com^                     ! Magnite/Rubicon ad exchange
-||openx.net^                              ! OpenX ad marketplace
-||sharethrough.com^                       ! Sharethrough native ads
-||bidswitch.net^                          ! BidSwitch exchange routing
-||lijit.com^                              ! Sovrn / Lijit ad serving
-||media.net^                              ! Media.net contextual ads
-||serving-sys.com^                        ! Sizmek ad serving
-||casalemedia.com^                        ! Index Exchange ad marketplace
-||criteo.com^                             ! Criteo retargeting ads
-||criteo.net^                             ! Criteo ad delivery
-||taboola.com^                            ! Taboola sponsored content
-||outbrain.com^                           ! Outbrain sponsored content
-||quantserve.com^                         ! Quantcast ad targeting
-||scorecardresearch.com^                  ! comScore audience measurement
-||mookie1.com^                            ! Oracle BlueKai / identity for ads
-||rlcdn.com^                              ! LiveRamp ad tech CDN
-||coinhive.com^                           ! Coinhive browser mining
-||coinhiveproxy.com^                      ! Coinhive proxy endpoint
-||authedmine.com^                         ! Coinhive opt-in miner
-||wsservices.org^                         ! Coinhive websocket endpoint
-||jsecoin.com^                            ! JSECoin browser mining
-||hm.baidu.com^                           ! Baidu Tongji - web analytics
-||hmcdn.baidu.com^                        ! Baidu Tongji - analytics CDN
-||nsclick.baidu.com^                      ! Baidu - click tracking
-||fclog.baidu.com^                        ! Baidu - frontend logging
-||arms-retcode.aliyuncs.com^              ! Alibaba ARMS - frontend monitoring
-||retcode.alicdn.com^                     ! Alibaba - retcode tracking CDN
-||gm.mmstat.com^                          ! Alibaba - user behavior tracking
-||ac.mmstat.com^                          ! Alibaba - analytics collection
-||beacon.qq.com^                          ! Tencent Beacon - app analytics SDK
-||otheve.beacon.qq.com^                   ! Tencent Beacon - event tracking
-||pingtas.qq.com^                         ! Tencent - performance monitoring
-||report.qqbrowser.qq.com^                ! QQ Browser - usage reporting
-||mta.qq.com^                             ! Tencent MTA - mobile analytics (legacy)
-||log.snssdk.com^                         ! ByteDance - app event logging
-||mon.snssdk.com^                         ! ByteDance - app monitoring
-||applog.snssdk.com^                      ! ByteDance - app usage logging
-||umeng.com^                              ! Umeng - mobile analytics platform
-||cnzz.com^                               ! CNZZ (Umeng) - web analytics
-||umtrack.com^                            ! Umeng - tracking domain
-||alog.umeng.com^                         ! Umeng - analytics logging
-||growingio.com^                          ! GrowingIO - product analytics
-||sensorsdata.cn^                         ! Sensors Data - behavioral analytics
-||aldwx.com^                              ! Aldwx - WeChat mini-program analytics
-||tdatamaster.com^                        ! TalkingData - data analytics
-||cpro.baidu.com^                         ! Baidu Union ad serving
-||pos.baidu.com^                          ! Baidu ad placement endpoint
-||union.baidu.com^                        ! Baidu Union advertising platform
-||gdt.qq.com^                             ! Tencent Guangdiantong ad platform
-||adsmind.gdtimg.com^                     ! Tencent ad delivery assets
-||tanx.com^                               ! Alibaba Tanx ad exchange
-||atanx.com^                              ! Tanx ad serving
+||google-analytics.com^
+||googletagmanager.com^
+||googletagservices.com^
+||googleadservices.com^
+||doubleclick.net^
+||app-measurement.com^
+||crashlytics.com^
+||pixel.facebook.com^
+||analytics.facebook.com^
+||adjust.com^
+||appsflyer.com^
+||kochava.com^
+||singular.net^
+||tenjin.com^
+||mixpanel.com^
+||amplitude.com^
+||segment.io^
+||segment.com^
+||heapanalytics.com^
+||hotjar.com^
+||fullstory.com^
+||mouseflow.com^
+||clarity.ms^
+||logrocket.com^
+||bugsnag.com^
+||sentry.io^
+||newrelic.com^
+||nr-data.net^
+||telemetrydeck.com^
+||plausible.io^
+||snap.licdn.com^
+||ads.linkedin.com^
+||sc-static.net^
+||tr.snapchat.com^
+||actonservice.com^
+||marketo.com^
+||marketo.net^
+||pardot.com^
+||eloqua.com^
+||omtrdc.net^
+||demdex.net^
+||2o7.net^
+||everesttech.net^
+||fingerprintjs.com^
+||googlesyndication.com^
+||adnxs.com^
+||adsrvr.org^
+||pubmatic.com^
+||rubiconproject.com^
+||openx.net^
+||sharethrough.com^
+||bidswitch.net^
+||lijit.com^
+||media.net^
+||serving-sys.com^
+||casalemedia.com^
+||criteo.com^
+||criteo.net^
+||taboola.com^
+||outbrain.com^
+||quantserve.com^
+||scorecardresearch.com^
+||mookie1.com^
+||rlcdn.com^
+||coinhive.com^
+||coinhiveproxy.com^
+||authedmine.com^
+||wsservices.org^
+||jsecoin.com^
+||hm.baidu.com^
+||hmcdn.baidu.com^
+||nsclick.baidu.com^
+||fclog.baidu.com^
+||arms-retcode.aliyuncs.com^
+||retcode.alicdn.com^
+||gm.mmstat.com^
+||ac.mmstat.com^
+||beacon.qq.com^
+||otheve.beacon.qq.com^
+||pingtas.qq.com^
+||report.qqbrowser.qq.com^
+||mta.qq.com^
+||log.snssdk.com^
+||mon.snssdk.com^
+||applog.snssdk.com^
+||umeng.com^
+||cnzz.com^
+||umtrack.com^
+||alog.umeng.com^
+||growingio.com^
+||sensorsdata.cn^
+||aldwx.com^
+||tdatamaster.com^
+||cpro.baidu.com^
+||pos.baidu.com^
+||union.baidu.com^
+||gdt.qq.com^
+||adsmind.gdtimg.com^
+||tanx.com^
+||atanx.com^
