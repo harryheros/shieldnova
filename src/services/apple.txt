@@ -1,19 +1,28 @@
-# Apple Core Services
-# Purpose: service-specific routing / consistency
+# Apple Services
+# Purpose: service-specific routing / availability / consistency.
 # This is NOT a blocking list.
+# Users should route this rule-set to a single consistent policy.
 
 apple.com
 icloud.com
-apple-dns.net
-push.apple.com
-identity.apple.com
-idmsa.apple.com
-setup.icloud.com
+me.com
+mac.com
+itunes.com
 itunes.apple.com
 apps.apple.com
 mzstatic.com
-swcdn.apple.com
-mesu.apple.com
+aaplimg.com
+cdn-apple.com
+apple-dns.net
+apple-mapkit.com
+push.apple.com
 ocsp.apple.com
 crl.apple.com
-apple-mapkit.com
+swcdn.apple.com
+mesu.apple.com
+gdmf.apple.com
+xp.apple.com
+music.apple.com
+tv.apple.com
+news.apple.com
+weatherkit.apple.com
