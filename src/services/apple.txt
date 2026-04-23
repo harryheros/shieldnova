@@ -1,0 +1,19 @@
+# Apple Core Services
+# Purpose: service-specific routing / consistency
+# This is NOT a blocking list.
+
+apple.com
+icloud.com
+apple-dns.net
+push.apple.com
+identity.apple.com
+idmsa.apple.com
+setup.icloud.com
+itunes.apple.com
+apps.apple.com
+mzstatic.com
+swcdn.apple.com
+mesu.apple.com
+ocsp.apple.com
+crl.apple.com
+apple-mapkit.com
