@@ -84,7 +84,7 @@ def build():
                'Global analytics, attribution, fingerprinting, and telemetry blocking.',
                privacy_core)
 
-    write_dist('shieldnova-advertising.txt',
+    write_dist('shieldnova-ads.txt',
                'Advertising Protection',
                'Global ad networks, ad exchanges, and ad-serving domains.',
                ads_core)
@@ -96,19 +96,19 @@ def build():
 
     # --- Essential combos ---
     global_rules = privacy_core + ads_core + sec_phishing + sec_malware + sec_crypto
-    write_dist('shieldnova-essential.txt',
+    write_dist('shieldnova-full.txt',
                'Essential (Global)',
                'Complete protection: privacy + advertising + security. Global edition.',
                global_rules)
 
     cn_rules = global_rules + privacy_cn + ads_cn
-    write_dist('shieldnova-essential-cn.txt',
+    write_dist('shieldnova-full-cn.txt',
                'Essential (China Mainland)',
                'Complete protection with China mainland trackers and ad providers.',
                cn_rules)
 
     hktw_rules = global_rules + privacy_hktw + ads_hktw
-    write_dist('shieldnova-essential-hktw.txt',
+    write_dist('shieldnova-full-hktw.txt',
                'Essential (Hong Kong & Taiwan)',
                'Complete protection with HK & Taiwan specific trackers and ads.',
                hktw_rules)

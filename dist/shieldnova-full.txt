@@ -1,9 +1,9 @@
-! Title: ShieldNova - Essential (Hong Kong & Taiwan)
-! Description: Complete protection with HK & Taiwan specific trackers and ads.
+! Title: ShieldNova - Essential (Global)
+! Description: Complete protection: privacy + advertising + security. Global edition.
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-23 10:19:43 UTC
+! Built: 2026-04-23 13:07:02 UTC
 ! Total: 48
 
 ! ============================================================================
@@ -92,10 +92,4 @@
 ! ============================================================================
 ! ============================================================================
 ! ShieldNova - Security / Cryptojacking
-! ============================================================================
-! ============================================================================
-! ShieldNova - Privacy / HK & TW
-! ============================================================================
-! ============================================================================
-! ShieldNova - Advertising / HK & TW
 ! ============================================================================
