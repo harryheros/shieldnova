@@ -198,11 +198,11 @@ ShieldNova is part of the Nova infrastructure toolkit:
 
 | Project | Layer | Description |
 |---|---|---|
-| [IPNova](https://github.com/harryheros/ipnova) | IP | Routing-aware IPv4 dataset for infrastructure classification and traffic control |
-| [DomainNova](https://github.com/harryheros/domainnova) | Domain (Data) | High-precision Mainland China domain dataset for proxy routing and network intelligence |
-| **ShieldNova** | **Domain (Filter)** | **Domain intelligence for filtering, blocking & routing** |
-| [HarryWrt](https://github.com/harryheros/harrywrt) | Device | Clean OpenWrt-based firmware for x86_64 (BIOS & UEFI) |
-| [OSNova](https://github.com/harryheros/osnova) | System | System deployment and reinstallation engine for VPS and bare-metal servers |
+| [IPNova](https://github.com/harryheros/ipnova) | IP | Routing-aware IPv4 dataset for traffic filtering |
+| **ShieldNova** | **Domain** | **Domain intelligence for filtering, blocking & routing** |
+| [HarryWrt](https://github.com/harryheros/harrywrt) | Device | OpenWrt firmware with integrated filtering |
+| [LinuxTools](https://github.com/harryheros/linuxtools) | System | Automated Linux provisioning for VPS & bare-metal |
+
 ---
 
 ## Roadmap
