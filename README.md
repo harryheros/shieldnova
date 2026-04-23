@@ -1,54 +1,71 @@
 # ShieldNova
 
-ShieldNova is a curated domain intelligence library for:
+ShieldNova is a curated **domain intelligence layer** for:
 
-- Privacy protection
-- Ad blocking
-- Security filtering
-- Traffic routing
+- Privacy protection  
+- Ad blocking  
+- Security filtering  
+- Traffic routing  
 
-It is designed as a **high-compatibility default protection layer**, minimizing breakage while providing meaningful protection.
+Designed with **high compatibility and minimal breakage** in mind, ShieldNova provides a reliable default protection layer for modern applications and networks.
 
 ---
 
-## Recommended Subscription
+## Why ShieldNova
 
-- shieldnova-full.txt (Global)
-- shieldnova-full-cn.txt (China Mainland)
-- shieldnova-full-hktw.txt (HK/TW)
+Unlike large aggregated blocklists, ShieldNova focuses on:
+
+- High-confidence rules only  
+- Minimal impact on application functionality  
+- Carefully curated domain intelligence  
+- Long-term maintainability  
+
+The goal is not maximum blocking, but **maximum usable protection**.
+
+---
+
+## Recommended Profiles
+
+- shieldnova-full.txt  
+- shieldnova-full-cn.txt  
+- shieldnova-full-hktw.txt  
 
 Includes:
-- Privacy + Ads + Security
+- Privacy + Ads + Security modules  
+
+Suitable for most users as a default configuration.
 
 ---
 
 ## Modules
 
-- privacy — tracking & telemetry
-- ads — advertising infrastructure
-- security — phishing, malware, cryptojacking
+- privacy — tracking & telemetry domains  
+- ads — advertising infrastructure  
+- security — phishing, malware, cryptojacking  
 
 ---
 
-## Design Philosophy
+## Build & Architecture
 
-- High compatibility first
-- Only high-confidence rules
-- Minimal user breakage
-- Maintainable & auditable rules
+- Source rules: `src/`  
+- Generated output: `dist/`  
+- Multi-client formats: `formats/`  
+
+Features:
+
+- Rule validation and deduplication  
+- Allowlist override system  
+- Structured statistics output  
+- Multi-platform compatibility  
 
 ---
 
-## Build System
+## Design Principles
 
-- src/ → source rules
-- dist/ → AdGuard output
-- formats/ → Surge / Clash / etc
-
-Includes:
-- auto deduplication
-- validation
-- stats output
+- Compatibility first  
+- High-confidence filtering  
+- Minimal disruption  
+- Transparent and auditable rules  
 
 ---
 
@@ -56,21 +73,21 @@ Includes:
 
 Override rules safely:
 
-- src/allowlist/core.txt
-- src/allowlist/custom.txt
+- src/allowlist/core.txt  
+- src/allowlist/custom.txt  
 
 ---
 
-## Related Projects
+## Nova Toolkit
 
-Part of the Nova toolkit:
+ShieldNova is part of the Nova infrastructure toolkit:
 
-- IPNova — routing-aware IPv4 dataset
-- DomainNova — mainland China infrastructure domain dataset
-- OSNova — system deployment engine
+- IPNova — routing-aware IPv4 dataset  
+- DomainNova — infrastructure domain dataset  
+- OSNova — system deployment engine  
 
 ---
 
 ## License
 
-MIT
+MIT License
