@@ -1,0 +1,16 @@
+# ShieldNova - Security Protection
+# Description: Conservative phishing, malware, scam, and cryptojacking domains.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-23 13:54:13 UTC
+# Total: 5
+# Breakdown: phishing=0, malware=0, cryptojacking=5, allowlist_removed=0
+payload:
+
+  - DOMAIN-SUFFIX,coinhive.com
+  - DOMAIN-SUFFIX,coinhiveproxy.com
+  - DOMAIN-SUFFIX,authedmine.com
+  - DOMAIN-SUFFIX,wsservices.org
+  - DOMAIN-SUFFIX,jsecoin.com

@@ -1,17 +1,20 @@
 ! Title: ShieldNova - Full (Global)
-! Description: Complete protection: privacy + advertising + security. Global edition.
+! Description: Complete protection with a conservative compatibility-first profile.
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-23 13:18:28 UTC
-! Total: 48
+! Profile: Conservative / Compatibility-First
+! Built: 2026-04-23 13:54:13 UTC
+! Total: 82
+! Breakdown: privacy=55, ads=22, security=5, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
-! Blocks major global analytics, attribution, and fingerprinting services.
+! Blocks major global analytics, attribution, session replay, and telemetry.
 !
-! SAFETY: Every rule verified for zero false positives. Blocking these
-! domains will NOT break any app functionality or user-facing features.
+! SAFETY: Only low-risk tracking and telemetry domains are included here.
+! Avoids login, payments, app content delivery, deep links, CAPTCHAs, and
+! other domains that commonly affect normal app or website functionality.
 ! ============================================================================
 
 ! --- Google Analytics & Tracking ---
@@ -21,7 +24,7 @@
 ||googleadservices.com^                   ! Google Ads - conversion tracking
 ||doubleclick.net^                        ! Google DoubleClick - display ad tracking
 ||app-measurement.com^                    ! Firebase Analytics - mobile app measurement
-||crashlytics.com^                        ! Firebase Crashlytics - crash reporting (pure telemetry)
+||crashlytics.com^                        ! Firebase Crashlytics - crash reporting telemetry
 
 ! --- Meta / Facebook (tracking-only endpoints) ---
 ||pixel.facebook.com^                     ! Facebook Pixel - cross-site conversion tracking
@@ -36,7 +39,7 @@
 ||tenjin.com^                             ! Tenjin - mobile ad revenue analytics
 ! share URLs. Blocking breaks "open in app" functionality.
 
-! --- Analytics Platforms (pure analytics, no user features) ---
+! --- Product Analytics & Session Replay ---
 ||mixpanel.com^                           ! Mixpanel - user behavior analytics
 ||amplitude.com^                          ! Amplitude - product analytics
 ||segment.io^                             ! Segment - customer data pipeline
@@ -46,6 +49,15 @@
 ||fullstory.com^                          ! FullStory - session replay
 ||mouseflow.com^                          ! Mouseflow - session replay & heatmaps
 ||clarity.ms^                             ! Microsoft Clarity - session recording
+||logrocket.com^                          ! LogRocket - session replay and diagnostics
+
+! --- Error Monitoring / Telemetry ---
+||bugsnag.com^                            ! Bugsnag - crash and stability telemetry
+||sentry.io^                              ! Sentry - application error telemetry
+||newrelic.com^                           ! New Relic - APM and user telemetry
+||nr-data.net^                            ! New Relic beacon collection endpoint
+||telemetrydeck.com^                      ! TelemetryDeck - anonymous app telemetry
+||plausible.io^                           ! Plausible - privacy-focused analytics
 
 ! --- Ad Tracking Networks (pure ad infra, no user features) ---
 ||actonservice.com^                       ! Act-On - marketing automation tracking
@@ -53,10 +65,10 @@
 ||criteo.net^                             ! Criteo - ad delivery network
 ||scorecardresearch.com^                  ! comScore - audience measurement
 ||quantserve.com^                         ! Quantcast - audience targeting
-||adnxs.com^                             ! Xandr/AppNexus - ad exchange
+||adnxs.com^                              ! Xandr/AppNexus - ad exchange
 ||rubiconproject.com^                     ! Magnite/Rubicon - ad exchange
 ||pubmatic.com^                           ! PubMatic - programmatic ads
-||openx.net^                             ! OpenX - ad marketplace
+||openx.net^                              ! OpenX - ad marketplace
 ||casalemedia.com^                        ! Index Exchange - ad exchange
 ||outbrain.com^                           ! Outbrain - content recommendation tracking
 ||taboola.com^                            ! Taboola - content recommendation tracking
@@ -83,13 +95,50 @@
 ! CAPTCHAs and bot verification. Blocking prevents login on many sites.
 ! ============================================================================
 ! ShieldNova - Advertising / Global Core
+! Low-risk ad networks, exchanges, and ad-serving domains.
+!
+! SAFETY: Includes clear ad infrastructure only. Avoids domains commonly used
+! for site hosting, logins, static assets, payments, or app core APIs.
 ! ============================================================================
-! ============================================================================
-! ShieldNova - Security / Phishing
-! ============================================================================
-! ============================================================================
-! ShieldNova - Security / Malware
-! ============================================================================
+
+! --- Google / Major Ad Delivery ---
+||googlesyndication.com^                  ! Google AdSense / ad delivery
+||doubleclick.net^                        ! Google DoubleClick ad serving
+||googleadservices.com^                   ! Google Ads conversion and click tracking
+
+! --- Programmatic / DSP / SSP ---
+||adnxs.com^                              ! Xandr/AppNexus ad exchange
+||adsrvr.org^                             ! The Trade Desk ad delivery
+||pubmatic.com^                           ! PubMatic ad exchange
+||rubiconproject.com^                     ! Magnite/Rubicon ad exchange
+||openx.net^                              ! OpenX ad marketplace
+||sharethrough.com^                       ! Sharethrough native ads
+||bidswitch.net^                          ! BidSwitch exchange routing
+||lijit.com^                              ! Sovrn / Lijit ad serving
+||media.net^                              ! Media.net contextual ads
+||serving-sys.com^                        ! Sizmek ad serving
+||casalemedia.com^                        ! Index Exchange ad marketplace
+
+! --- Retargeting / Content Ads ---
+||criteo.com^                             ! Criteo retargeting ads
+||criteo.net^                             ! Criteo ad delivery
+||taboola.com^                            ! Taboola sponsored content
+||outbrain.com^                           ! Outbrain sponsored content
+
+! --- Audience / Identity for Ads ---
+||quantserve.com^                         ! Quantcast ad targeting
+||scorecardresearch.com^                  ! comScore audience measurement
+||mookie1.com^                            ! Oracle BlueKai / identity for ads
+||rlcdn.com^                              ! LiveRamp ad tech CDN
 ! ============================================================================
 ! ShieldNova - Security / Cryptojacking
+! Conservative blocklist for well-known browser mining infrastructure.
+!
+! SAFETY: Includes clear cryptomining domains only.
 ! ============================================================================
+
+||coinhive.com^                           ! Coinhive browser mining
+||coinhiveproxy.com^                      ! Coinhive proxy endpoint
+||authedmine.com^                         ! Coinhive opt-in miner
+||wsservices.org^                         ! Coinhive websocket endpoint
+||jsecoin.com^                            ! JSECoin browser mining

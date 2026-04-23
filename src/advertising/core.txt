@@ -1,4 +1,37 @@
 ! ============================================================================
 ! ShieldNova - Advertising / Global Core
-! STATUS: Under development. Rules added after individual verification.
+! Low-risk ad networks, exchanges, and ad-serving domains.
+!
+! SAFETY: Includes clear ad infrastructure only. Avoids domains commonly used
+! for site hosting, logins, static assets, payments, or app core APIs.
 ! ============================================================================
+
+! --- Google / Major Ad Delivery ---
+||googlesyndication.com^                  ! Google AdSense / ad delivery
+||doubleclick.net^                        ! Google DoubleClick ad serving
+||googleadservices.com^                   ! Google Ads conversion and click tracking
+
+! --- Programmatic / DSP / SSP ---
+||adnxs.com^                              ! Xandr/AppNexus ad exchange
+||adsrvr.org^                             ! The Trade Desk ad delivery
+||pubmatic.com^                           ! PubMatic ad exchange
+||rubiconproject.com^                     ! Magnite/Rubicon ad exchange
+||openx.net^                              ! OpenX ad marketplace
+||sharethrough.com^                       ! Sharethrough native ads
+||bidswitch.net^                          ! BidSwitch exchange routing
+||lijit.com^                              ! Sovrn / Lijit ad serving
+||media.net^                              ! Media.net contextual ads
+||serving-sys.com^                        ! Sizmek ad serving
+||casalemedia.com^                        ! Index Exchange ad marketplace
+
+! --- Retargeting / Content Ads ---
+||criteo.com^                             ! Criteo retargeting ads
+||criteo.net^                             ! Criteo ad delivery
+||taboola.com^                            ! Taboola sponsored content
+||outbrain.com^                           ! Outbrain sponsored content
+
+! --- Audience / Identity for Ads ---
+||quantserve.com^                         ! Quantcast ad targeting
+||scorecardresearch.com^                  ! comScore audience measurement
+||mookie1.com^                            ! Oracle BlueKai / identity for ads
+||rlcdn.com^                              ! LiveRamp ad tech CDN

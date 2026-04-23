@@ -1,4 +1,1 @@
-! ============================================================================
-! ShieldNova - Security / Phishing
-! STATUS: Under development. Rules added after individual verification.
-! ============================================================================
+! NOTE: Phishing additions will be added after individual verification.

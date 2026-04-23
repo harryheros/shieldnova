@@ -1,0 +1,32 @@
+# ShieldNova - Ads Protection
+# Description: Low-risk ad networks, exchanges, and ad-serving domains.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-23 13:54:13 UTC
+# Total: 22
+# Breakdown: ads=22, allowlist_removed=0
+
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,adnxs.com
+DOMAIN-SUFFIX,adsrvr.org
+DOMAIN-SUFFIX,pubmatic.com
+DOMAIN-SUFFIX,rubiconproject.com
+DOMAIN-SUFFIX,openx.net
+DOMAIN-SUFFIX,sharethrough.com
+DOMAIN-SUFFIX,bidswitch.net
+DOMAIN-SUFFIX,lijit.com
+DOMAIN-SUFFIX,media.net
+DOMAIN-SUFFIX,serving-sys.com
+DOMAIN-SUFFIX,casalemedia.com
+DOMAIN-SUFFIX,criteo.com
+DOMAIN-SUFFIX,criteo.net
+DOMAIN-SUFFIX,taboola.com
+DOMAIN-SUFFIX,outbrain.com
+DOMAIN-SUFFIX,quantserve.com
+DOMAIN-SUFFIX,scorecardresearch.com
+DOMAIN-SUFFIX,mookie1.com
+DOMAIN-SUFFIX,rlcdn.com
