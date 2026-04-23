@@ -29,9 +29,9 @@ Most users only need one link. Pick your region:
 
 | Edition | What's included | Subscribe |
 |---|---|---|
-| **Essential (Global)** | Privacy + Advertising + Security | `shieldnova-full.txt` |
-| **Essential (China)** | Global + China mainland trackers & ads | `shieldnova-full-cn.txt` |
-| **Essential (HK/TW)** | Global + HK & Taiwan specific | `shieldnova-full-hktw.txt` |
+| **Full (Global)** | Privacy + Advertising + Security | `shieldnova-full.txt` |
+| **Full (China Mainland)** | Global + China mainland trackers & ads | `shieldnova-full-cn.txt` |
+| **Full (Hong Kong & Taiwan)** | Global + HK & Taiwan specific | `shieldnova-full-hktw.txt` |
 
 > These are pre-built combo files. One link gives you complete protection for your region.
 
@@ -52,14 +52,8 @@ Domain sets for routing specific service traffic through proxy nodes:
 | Service | Subscribe |
 |---|---|
 | Netflix | `services/netflix.txt` |
-| Disney+ | `services/disney.txt` |
-| Spotify | `services/spotify.txt` |
-| YouTube | `services/youtube.txt` |
 | Telegram | `services/telegram.txt` |
 | ChatGPT | `services/chatgpt.txt` |
-| GitHub | `services/github.txt` |
-| WhatsApp | `services/whatsapp.txt` |
-| Bilibili | `services/bilibili.txt` |
 
 > These are NOT blocking rules. They identify service domains so your proxy tool can route them through specific nodes.
 
@@ -67,7 +61,7 @@ Domain sets for routing specific service traffic through proxy nodes:
 
 ## Supported Tools
 
-All editions are available in every major format:
+Planned output formats (generated under `formats/`):
 
 | Tool | Platform | Format directory |
 |---|---|---|
@@ -125,11 +119,11 @@ shieldnova/
 │
 ├── dist/                          # ← USERS SUBSCRIBE HERE
 │   ├── shieldnova-full.txt         # Privacy + Ads + Security (Global)
-│   ├── shieldnova-full-cn.txt      # Essential + China mainland
-│   ├── shieldnova-full-hktw.txt    # Essential + Hong Kong & Taiwan
-│   ├── shieldnova-privacy.txt           # Privacy module only
-│   ├── shieldnova-ads.txt       # Advertising module only
-│   ├── shieldnova-security.txt          # Security module only
+│   ├── shieldnova-full-cn.txt      # Full + China mainland
+│   ├── shieldnova-full-hktw.txt    # Full + Hong Kong & Taiwan
+│   ├── shieldnova-privacy.txt      # Privacy module only
+│   ├── shieldnova-ads.txt          # Ads module only
+│   ├── shieldnova-security.txt     # Security module only
 │   └── services/                        # Traffic routing domain sets
 │       ├── netflix.txt
 │       ├── telegram.txt
@@ -213,7 +207,7 @@ ShieldNova is part of the Nova infrastructure toolkit:
 - [ ] Advertising module — global core
 - [ ] Advertising module — China mainland
 - [ ] Security module — phishing & malware
-- [ ] Essential combo builds (global / cn / hktw)
+- [ ] Full combo builds (global / cn / hktw)
 - [ ] Service domain sets (Netflix, Telegram, ChatGPT, etc.)
 - [ ] Build & convert scripts with CI/CD
 - [ ] Surge / Shadowrocket / Clash / QX / Loon format output

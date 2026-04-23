@@ -1,9 +1,9 @@
-! Title: ShieldNova - Essential (China Mainland)
+! Title: ShieldNova - Full (China Mainland)
 ! Description: Complete protection with China mainland trackers and ad providers.
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-23 13:07:02 UTC
+! Built: 2026-04-23 13:18:28 UTC
 ! Total: 72
 
 ! ============================================================================
