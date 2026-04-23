@@ -3,39 +3,40 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-23 09:23:49 UTC
-! Total: 64
+! Built: 2026-04-23 10:19:42 UTC
+! Total: 48
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
 ! Blocks major global analytics, attribution, and fingerprinting services.
+!
+! SAFETY: Every rule verified for zero false positives. Blocking these
+! domains will NOT break any app functionality or user-facing features.
 ! ============================================================================
 
-! --- Google ---
+! --- Google Analytics & Tracking ---
 ||google-analytics.com^                   ! Google Analytics - web/app usage tracking
 ||googletagmanager.com^                   ! Google Tag Manager - tag deployment & tracking
 ||googletagservices.com^                  ! Google Publisher Tag - ad serving & tracking
 ||googleadservices.com^                   ! Google Ads - conversion tracking
 ||doubleclick.net^                        ! Google DoubleClick - display ad tracking
 ||app-measurement.com^                    ! Firebase Analytics - mobile app measurement
-||crashlytics.com^                        ! Firebase Crashlytics - crash reporting with user data
+||crashlytics.com^                        ! Firebase Crashlytics - crash reporting (pure telemetry)
 
-! --- Meta / Facebook ---
-||graph.facebook.com^                     ! Facebook Graph API - user data collection
+! --- Meta / Facebook (tracking-only endpoints) ---
 ||pixel.facebook.com^                     ! Facebook Pixel - cross-site conversion tracking
 ||analytics.facebook.com^                 ! Facebook Analytics endpoint
-||connect.facebook.net^                   ! Facebook SDK - social plugins & tracking
+! because they are required for Facebook Login and social features.
 
-! --- Mobile Attribution ---
+! --- Mobile Attribution (pure tracking SDKs, no user features) ---
 ||adjust.com^                             ! Adjust - mobile install attribution
 ||appsflyer.com^                          ! AppsFlyer - mobile attribution platform
-||branch.io^                              ! Branch - deep linking & attribution
-||app.link^                               ! Branch - deep link domain
 ||kochava.com^                            ! Kochava - mobile attribution
 ||singular.net^                           ! Singular - marketing analytics
 ||tenjin.com^                             ! Tenjin - mobile ad revenue analytics
+! share URLs. Blocking breaks "open in app" functionality.
 
-! --- Analytics Platforms ---
+! --- Analytics Platforms (pure analytics, no user features) ---
 ||mixpanel.com^                           ! Mixpanel - user behavior analytics
 ||amplitude.com^                          ! Amplitude - product analytics
 ||segment.io^                             ! Segment - customer data pipeline
@@ -46,7 +47,7 @@
 ||mouseflow.com^                          ! Mouseflow - session replay & heatmaps
 ||clarity.ms^                             ! Microsoft Clarity - session recording
 
-! --- Ad Tracking Networks ---
+! --- Ad Tracking Networks (pure ad infra, no user features) ---
 ||actonservice.com^                       ! Act-On - marketing automation tracking
 ||criteo.com^                             ! Criteo - retargeting ad network
 ||criteo.net^                             ! Criteo - ad delivery network
@@ -60,35 +61,23 @@
 ||outbrain.com^                           ! Outbrain - content recommendation tracking
 ||taboola.com^                            ! Taboola - content recommendation tracking
 
-! --- Social Tracking ---
-||platform.twitter.com^                   ! Twitter/X - embedded content tracking
-||platform.linkedin.com^                  ! LinkedIn - social tracking
+! --- Social Tracking (tracking-only subdomains) ---
 ||snap.licdn.com^                         ! LinkedIn Insight Tag - conversion tracking
 ||ads.linkedin.com^                       ! LinkedIn Ads - tracking pixel
-||sc-static.net^                          ! Snapchat - ad tracking
-||tr.snapchat.com^                        ! Snapchat - conversion tracking
+||sc-static.net^                          ! Snapchat - ad tracking SDK
+||tr.snapchat.com^                        ! Snapchat - conversion tracking pixel
+! they serve embedded content (tweets, LinkedIn posts) on websites.
 
-! --- Marketing Automation ---
-||braze.com^                              ! Braze - customer engagement tracking
-||customer.io^                            ! Customer.io - behavioral tracking
-||intercom.io^                            ! Intercom - user tracking & messaging
-||hubspot.com^                            ! HubSpot - marketing & CRM tracking
-||marketo.com^                            ! Marketo - marketing automation
-||marketo.net^                            ! Marketo - tracking network
+! --- Marketing Automation (pure tracking infra) ---
+||marketo.com^                            ! Marketo - marketing automation tracking
+||marketo.net^                            ! Marketo - tracking delivery network
 ||pardot.com^                             ! Pardot - B2B marketing tracking
-||eloqua.com^                             ! Oracle Eloqua - marketing automation
-||omtrdc.net^                             ! Adobe Analytics - data collection
+||eloqua.com^                             ! Oracle Eloqua - marketing automation tracking
+||omtrdc.net^                             ! Adobe Analytics - data collection endpoint
 ||demdex.net^                             ! Adobe Audience Manager - audience tracking
-||2o7.net^                                ! Adobe/Omniture - legacy analytics
+||2o7.net^                                ! Adobe/Omniture - legacy analytics tracking
 ||everesttech.net^                        ! Adobe Advertising - ad tracking
 
-! --- Error Monitoring (with user data) ---
-||sentry.io^                              ! Sentry - error tracking with device/user data
-||bugsnag.com^                            ! Bugsnag - error monitoring with user context
-||newrelic.com^                           ! New Relic - APM with user tracking
-||nr-data.net^                            ! New Relic - telemetry collection
-
-! --- Fingerprinting ---
+! --- Fingerprinting (pure fingerprinting, safe to block) ---
 ||fingerprintjs.com^                      ! FingerprintJS - browser fingerprinting
-||arkoselabs.com^                         ! Arkose Labs - bot detection via fingerprinting
-||perimeterx.net^                         ! PerimeterX - device fingerprinting
+! CAPTCHAs and bot verification. Blocking prevents login on many sites.

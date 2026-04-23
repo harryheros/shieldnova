@@ -1,0 +1,38 @@
+! ============================================================================
+! ShieldNova - Optional / Aggressive
+! Stricter privacy rules that MAY affect some app functionality.
+!
+! WARNING: These rules block domains that serve both tracking AND
+! legitimate features. Only use if you understand the trade-offs.
+! ============================================================================
+
+! --- Social Platform Tracking (may break embedded content) ---
+||graph.facebook.com^                     ! Facebook Graph API - breaks FB Login & sharing
+||connect.facebook.net^                   ! Facebook SDK - breaks FB Login buttons on websites
+||platform.twitter.com^                   ! Twitter/X embeds - breaks embedded tweets
+||platform.linkedin.com^                  ! LinkedIn embeds - breaks embedded posts
+
+! --- Deep Linking (may break "open in app" links) ---
+||branch.io^                              ! Branch - breaks deep links & share URLs
+||app.link^                               ! Branch - breaks app-to-app links
+
+! --- Customer-Facing Services (may break support & notifications) ---
+||hubspot.com^                            ! HubSpot - breaks sites hosted on HubSpot
+||intercom.io^                            ! Intercom - breaks in-app customer support chat
+||braze.com^                              ! Braze - breaks push notifications in some apps
+||customer.io^                            ! Customer.io - breaks email unsubscribe links
+
+! --- Error Monitoring (may cause app instability) ---
+||sentry.io^                              ! Sentry - some apps crash if reporting fails
+||bugsnag.com^                            ! Bugsnag - some apps check-in on startup
+||newrelic.com^                           ! New Relic - may affect app performance monitoring
+||nr-data.net^                            ! New Relic - telemetry collection
+
+! --- Bot Detection (WILL break login on some sites) ---
+||arkoselabs.com^                         ! Arkose Labs - blocks CAPTCHA on EA, Microsoft, etc.
+||perimeterx.net^                         ! PerimeterX - blocks access to many e-commerce sites
+
+! --- China Push Services (WILL cause missed notifications) ---
+||getui.com^                              ! Getui - push notifications for many China apps
+||igexin.com^                             ! Igexin (Getui) - push SDK
+||jpush.cn^                               ! JPush (Aurora) - push notifications

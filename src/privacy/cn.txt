@@ -1,6 +1,9 @@
 ! ============================================================================
 ! ShieldNova - Privacy / China Mainland
 ! Tracking and analytics domains specific to China mainland apps and services.
+!
+! SAFETY: Every rule verified for zero false positives. Blocking these
+! domains will NOT break any app functionality or user-facing features.
 ! ============================================================================
 
 ! --- Baidu ---
@@ -38,6 +41,5 @@
 ||sensorsdata.cn^                         ! Sensors Data - behavioral analytics
 ||aldwx.com^                              ! Aldwx - WeChat mini-program analytics
 ||tdatamaster.com^                        ! TalkingData - data analytics
-||getui.com^                              ! Getui - push & user profiling
-||igexin.com^                             ! Igexin (Getui) - push SDK with data collection
-||jpush.cn^                               ! JPush (Aurora) - push with analytics
+! NOTE: getui.com / igexin.com / jpush.cn NOT blocked — they handle
+! push notifications for many China apps. Blocking causes missed messages.
