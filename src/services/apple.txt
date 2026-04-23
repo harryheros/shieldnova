@@ -1,28 +1,29 @@
-# Apple Services
-# Purpose: service-specific routing / availability / consistency.
-# This is NOT a blocking list.
-# Users should route this rule-set to a single consistent policy.
+! Apple Services
+! Purpose: service-specific routing / availability / consistency.
+! This is NOT a blocking list.
+! Users should route this rule-set to a single consistent policy.
 
-apple.com
-icloud.com
-me.com
-mac.com
-itunes.com
-itunes.apple.com
-apps.apple.com
-mzstatic.com
-aaplimg.com
-cdn-apple.com
-apple-dns.net
-apple-mapkit.com
-push.apple.com
-ocsp.apple.com
-crl.apple.com
-swcdn.apple.com
-mesu.apple.com
-gdmf.apple.com
-xp.apple.com
-music.apple.com
-tv.apple.com
-news.apple.com
-weatherkit.apple.com
+||apple.com^
+||icloud.com^
+||icloud.com.cn^
+||me.com^
+||mac.com^
+||itunes.com^
+||itunes.apple.com^
+||apps.apple.com^
+||mzstatic.com^
+||aaplimg.com^
+||cdn-apple.com^
+||apple-dns.net^
+||apple-mapkit.com^
+||push.apple.com^
+||ocsp.apple.com^
+||crl.apple.com^
+||swcdn.apple.com^
+||mesu.apple.com^
+||gdmf.apple.com^
+||xp.apple.com^
+||music.apple.com^
+||tv.apple.com^
+||news.apple.com^
+||weatherkit.apple.com^
