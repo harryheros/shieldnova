@@ -89,10 +89,10 @@ Same coverage. One rule instead of five hundred.
 
 ## Services (Traffic Routing)
 
-Domain sets for service-aware traffic classification and routing.
+Domain sets for structured service classification.
 
-These are **NOT blocking rules** — they identify domains associated with specific services, 
-allowing network tools to apply appropriate routing or policy decisions.
+These datasets provide domain-level intelligence, enabling network systems 
+to implement routing, filtering, and policy controls based on service context.
 
 | Service | File |
 |---|---|
