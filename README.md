@@ -5,7 +5,7 @@ ShieldNova is a curated **domain intelligence layer** for:
 - Privacy protection  
 - Ad blocking  
 - Security filtering  
-- Traffic routing  
+- Service-aware traffic handling  
 
 Designed with **high compatibility and minimal breakage** in mind, ShieldNova provides a reliable default protection layer for modern applications and networks.
 
@@ -26,7 +26,7 @@ The goal is not maximum blocking, but **maximum usable protection**.
 
 ## Recommended Profiles
 
-Most users only need one link. Pick your region:
+Most users only need one profile. Pick your region:
 
 | Profile | What's included | Subscribe |
 |---|---|---|
@@ -89,10 +89,8 @@ Same coverage. One rule instead of five hundred.
 
 ## Services (Traffic Routing)
 
-Domain sets for structured service classification.
-
-These datasets provide domain-level intelligence, enabling network systems 
-to implement routing, filtering, and policy controls based on service context.
+Domain sets for routing specific service traffic through proxy nodes.  
+These are **NOT blocking rules** — they identify service domains so your proxy tool can route them correctly.
 
 | Service | File |
 |---|---|
