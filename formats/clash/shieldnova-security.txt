@@ -4,13 +4,51 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 23:11:49 UTC
-# Total: 5
-# Breakdown: phishing=0, malware=0, cryptojacking=5, allowlist_removed=0
+# Built: 2026-04-24 02:00:30 UTC
+# Total: 43
+# Breakdown: phishing=2, malware=7, cryptojacking=34, allowlist_removed=0
 payload:
 
+  - DOMAIN-SUFFIX,16shop.co
+  - DOMAIN-SUFFIX,logincdn.net
+  - DOMAIN-SUFFIX,onclkds.com
+  - DOMAIN-SUFFIX,clksite.com
+  - DOMAIN-SUFFIX,clkrev.com
+  - DOMAIN-SUFFIX,installcore.net
+  - DOMAIN-SUFFIX,amonetize.com
+  - DOMAIN-SUFFIX,outbrowse.com
+  - DOMAIN-SUFFIX,somoto.com
   - DOMAIN-SUFFIX,coinhive.com
   - DOMAIN-SUFFIX,coinhiveproxy.com
   - DOMAIN-SUFFIX,authedmine.com
+  - DOMAIN-SUFFIX,authedmine.eu
+  - DOMAIN-SUFFIX,authedwebmine.cz
+  - DOMAIN-SUFFIX,cnhv.co
   - DOMAIN-SUFFIX,wsservices.org
+  - DOMAIN-SUFFIX,crypto-loot.com
+  - DOMAIN-SUFFIX,crypto-loot.org
+  - DOMAIN-SUFFIX,cryptaloot.pro
+  - DOMAIN-SUFFIX,coinimp.com
+  - DOMAIN-SUFFIX,coinimp.net
+  - DOMAIN-SUFFIX,freecontent.date
+  - DOMAIN-SUFFIX,freecontent.stream
+  - DOMAIN-SUFFIX,freecontent.live
+  - DOMAIN-SUFFIX,hostcontent.live
+  - DOMAIN-SUFFIX,hostingcloud.racing
+  - DOMAIN-SUFFIX,hostingcloud.party
   - DOMAIN-SUFFIX,jsecoin.com
+  - DOMAIN-SUFFIX,mineralt.io
+  - DOMAIN-SUFFIX,webminepool.com
+  - DOMAIN-SUFFIX,browsermine.com
+  - DOMAIN-SUFFIX,nerohut.com
+  - DOMAIN-SUFFIX,papoto.com
+  - DOMAIN-SUFFIX,monerominer.rocks
+  - DOMAIN-SUFFIX,minero.cc
+  - DOMAIN-SUFFIX,inwemo.com
+  - DOMAIN-SUFFIX,minescripts.info
+  - DOMAIN-SUFFIX,ad-miner.com
+  - DOMAIN-SUFFIX,afminer.com
+  - DOMAIN-SUFFIX,coin-service.com
+  - DOMAIN-SUFFIX,webassembly.stream
+  - DOMAIN-SUFFIX,wasm.stream
+  - DOMAIN-SUFFIX,adless.io

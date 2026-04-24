@@ -1,1 +1,16 @@
-! NOTE: Phishing additions will be added after individual verification.
+! ============================================================================
+! ShieldNova - Security / Phishing
+! Phishing infrastructure domains with ZERO legitimate use cases.
+! Only platforms and services used to host/deliver phishing are included.
+! ============================================================================
+
+! --- Phishing-as-a-service platforms ---
+||16shop.co^                              ! 16Shop - phishing kit distribution platform
+
+! --- Fake login page infrastructure ---
+||logincdn.net^                           ! Fake login page CDN infrastructure
+
+! NOTE: Dynamic DNS services (duckdns.org, hopto.org, sytes.net, etc.)
+! are NOT blocked. Many users rely on them for home server remote access.
+! NOTE: URL shorteners (adf.ly, shorte.st, bit.do, etc.) are NOT blocked.
+! Many forums and download sites use them for legitimate links.

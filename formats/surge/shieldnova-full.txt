@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 23:11:49 UTC
-# Total: 69
-# Breakdown: privacy=44, ads=22, security=5, allowlist_removed=0
+# Built: 2026-04-24 02:00:30 UTC
+# Total: 107
+# Breakdown: privacy=44, ads=22, security=43, allowlist_removed=0
 
 DOMAIN-SUFFIX,google-analytics.com,REJECT
 DOMAIN-SUFFIX,googletagmanager.com,REJECT
@@ -72,8 +72,46 @@ DOMAIN-SUFFIX,quantserve.com,REJECT
 DOMAIN-SUFFIX,scorecardresearch.com,REJECT
 DOMAIN-SUFFIX,mookie1.com,REJECT
 DOMAIN-SUFFIX,rlcdn.com,REJECT
+DOMAIN-SUFFIX,16shop.co,REJECT
+DOMAIN-SUFFIX,logincdn.net,REJECT
+DOMAIN-SUFFIX,onclkds.com,REJECT
+DOMAIN-SUFFIX,clksite.com,REJECT
+DOMAIN-SUFFIX,clkrev.com,REJECT
+DOMAIN-SUFFIX,installcore.net,REJECT
+DOMAIN-SUFFIX,amonetize.com,REJECT
+DOMAIN-SUFFIX,outbrowse.com,REJECT
+DOMAIN-SUFFIX,somoto.com,REJECT
 DOMAIN-SUFFIX,coinhive.com,REJECT
 DOMAIN-SUFFIX,coinhiveproxy.com,REJECT
 DOMAIN-SUFFIX,authedmine.com,REJECT
+DOMAIN-SUFFIX,authedmine.eu,REJECT
+DOMAIN-SUFFIX,authedwebmine.cz,REJECT
+DOMAIN-SUFFIX,cnhv.co,REJECT
 DOMAIN-SUFFIX,wsservices.org,REJECT
+DOMAIN-SUFFIX,crypto-loot.com,REJECT
+DOMAIN-SUFFIX,crypto-loot.org,REJECT
+DOMAIN-SUFFIX,cryptaloot.pro,REJECT
+DOMAIN-SUFFIX,coinimp.com,REJECT
+DOMAIN-SUFFIX,coinimp.net,REJECT
+DOMAIN-SUFFIX,freecontent.date,REJECT
+DOMAIN-SUFFIX,freecontent.stream,REJECT
+DOMAIN-SUFFIX,freecontent.live,REJECT
+DOMAIN-SUFFIX,hostcontent.live,REJECT
+DOMAIN-SUFFIX,hostingcloud.racing,REJECT
+DOMAIN-SUFFIX,hostingcloud.party,REJECT
 DOMAIN-SUFFIX,jsecoin.com,REJECT
+DOMAIN-SUFFIX,mineralt.io,REJECT
+DOMAIN-SUFFIX,webminepool.com,REJECT
+DOMAIN-SUFFIX,browsermine.com,REJECT
+DOMAIN-SUFFIX,nerohut.com,REJECT
+DOMAIN-SUFFIX,papoto.com,REJECT
+DOMAIN-SUFFIX,monerominer.rocks,REJECT
+DOMAIN-SUFFIX,minero.cc,REJECT
+DOMAIN-SUFFIX,inwemo.com,REJECT
+DOMAIN-SUFFIX,minescripts.info,REJECT
+DOMAIN-SUFFIX,ad-miner.com,REJECT
+DOMAIN-SUFFIX,afminer.com,REJECT
+DOMAIN-SUFFIX,coin-service.com,REJECT
+DOMAIN-SUFFIX,webassembly.stream,REJECT
+DOMAIN-SUFFIX,wasm.stream,REJECT
+DOMAIN-SUFFIX,adless.io,REJECT
