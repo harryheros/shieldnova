@@ -4,12 +4,50 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-23 23:11:49 UTC
-! Total: 5
-! Breakdown: phishing=0, malware=0, cryptojacking=5, allowlist_removed=0
+! Built: 2026-04-24 02:00:30 UTC
+! Total: 43
+! Breakdown: phishing=2, malware=7, cryptojacking=34, allowlist_removed=0
 
+||16shop.co^
+||logincdn.net^
+||onclkds.com^
+||clksite.com^
+||clkrev.com^
+||installcore.net^
+||amonetize.com^
+||outbrowse.com^
+||somoto.com^
 ||coinhive.com^
 ||coinhiveproxy.com^
 ||authedmine.com^
+||authedmine.eu^
+||authedwebmine.cz^
+||cnhv.co^
 ||wsservices.org^
+||crypto-loot.com^
+||crypto-loot.org^
+||cryptaloot.pro^
+||coinimp.com^
+||coinimp.net^
+||freecontent.date^
+||freecontent.stream^
+||freecontent.live^
+||hostcontent.live^
+||hostingcloud.racing^
+||hostingcloud.party^
 ||jsecoin.com^
+||mineralt.io^
+||webminepool.com^
+||browsermine.com^
+||nerohut.com^
+||papoto.com^
+||monerominer.rocks^
+||minero.cc^
+||inwemo.com^
+||minescripts.info^
+||ad-miner.com^
+||afminer.com^
+||coin-service.com^
+||webassembly.stream^
+||wasm.stream^
+||adless.io^

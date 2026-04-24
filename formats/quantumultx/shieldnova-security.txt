@@ -4,12 +4,50 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-23 23:11:49 UTC
-# Total: 5
-# Breakdown: phishing=0, malware=0, cryptojacking=5, allowlist_removed=0
+# Built: 2026-04-24 02:00:30 UTC
+# Total: 43
+# Breakdown: phishing=2, malware=7, cryptojacking=34, allowlist_removed=0
 
+HOST-SUFFIX,16shop.co,reject
+HOST-SUFFIX,logincdn.net,reject
+HOST-SUFFIX,onclkds.com,reject
+HOST-SUFFIX,clksite.com,reject
+HOST-SUFFIX,clkrev.com,reject
+HOST-SUFFIX,installcore.net,reject
+HOST-SUFFIX,amonetize.com,reject
+HOST-SUFFIX,outbrowse.com,reject
+HOST-SUFFIX,somoto.com,reject
 HOST-SUFFIX,coinhive.com,reject
 HOST-SUFFIX,coinhiveproxy.com,reject
 HOST-SUFFIX,authedmine.com,reject
+HOST-SUFFIX,authedmine.eu,reject
+HOST-SUFFIX,authedwebmine.cz,reject
+HOST-SUFFIX,cnhv.co,reject
 HOST-SUFFIX,wsservices.org,reject
+HOST-SUFFIX,crypto-loot.com,reject
+HOST-SUFFIX,crypto-loot.org,reject
+HOST-SUFFIX,cryptaloot.pro,reject
+HOST-SUFFIX,coinimp.com,reject
+HOST-SUFFIX,coinimp.net,reject
+HOST-SUFFIX,freecontent.date,reject
+HOST-SUFFIX,freecontent.stream,reject
+HOST-SUFFIX,freecontent.live,reject
+HOST-SUFFIX,hostcontent.live,reject
+HOST-SUFFIX,hostingcloud.racing,reject
+HOST-SUFFIX,hostingcloud.party,reject
 HOST-SUFFIX,jsecoin.com,reject
+HOST-SUFFIX,mineralt.io,reject
+HOST-SUFFIX,webminepool.com,reject
+HOST-SUFFIX,browsermine.com,reject
+HOST-SUFFIX,nerohut.com,reject
+HOST-SUFFIX,papoto.com,reject
+HOST-SUFFIX,monerominer.rocks,reject
+HOST-SUFFIX,minero.cc,reject
+HOST-SUFFIX,inwemo.com,reject
+HOST-SUFFIX,minescripts.info,reject
+HOST-SUFFIX,ad-miner.com,reject
+HOST-SUFFIX,afminer.com,reject
+HOST-SUFFIX,coin-service.com,reject
+HOST-SUFFIX,webassembly.stream,reject
+HOST-SUFFIX,wasm.stream,reject
+HOST-SUFFIX,adless.io,reject

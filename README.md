@@ -87,6 +87,27 @@ Same coverage. One rule instead of five hundred.
 
 ---
 
+## Services (Traffic Routing)
+
+Domain sets for routing specific service traffic through proxy nodes.  
+These are **NOT blocking rules** — they identify service domains so your proxy tool can route them correctly.
+
+| Service | File |
+|---|---|
+| Apple | `services/apple.txt` |
+| ChatGPT / OpenAI | `services/chatgpt.txt` |
+| Netflix | `services/netflix.txt` |
+| Telegram | `services/telegram.txt` |
+
+Subscribe URL pattern:
+```
+https://raw.githubusercontent.com/harryheros/shieldnova/main/dist/services/{service}.txt
+```
+
+For Surge/Shadowrocket/Clash/QX/Loon, use files under `formats/{tool}/services/`.
+
+---
+
 ## Build & Architecture
 
 - Source rules: `src/`  

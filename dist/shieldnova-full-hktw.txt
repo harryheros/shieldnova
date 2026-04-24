@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-04-23 23:11:49 UTC
-! Total: 69
-! Breakdown: privacy_global=44, privacy_hktw=0, ads_global=22, ads_hktw=0, security=5, allowlist_removed=0
+! Built: 2026-04-24 02:00:30 UTC
+! Total: 107
+! Breakdown: privacy_global=44, privacy_hktw=0, ads_global=22, ads_hktw=0, security=43, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -121,14 +121,82 @@
 ||mookie1.com^                            ! Oracle BlueKai / identity for ads
 ||rlcdn.com^                              ! LiveRamp ad tech CDN
 ! ============================================================================
+! ShieldNova - Security / Phishing
+! Phishing infrastructure domains with ZERO legitimate use cases.
+! Only platforms and services used to host/deliver phishing are included.
+! ============================================================================
+
+! --- Phishing-as-a-service platforms ---
+||16shop.co^                              ! 16Shop - phishing kit distribution platform
+
+! --- Fake login page infrastructure ---
+||logincdn.net^                           ! Fake login page CDN infrastructure
+
+! are NOT blocked. Many users rely on them for home server remote access.
+! Many forums and download sites use them for legitimate links.
+! ============================================================================
+! ShieldNova - Security / Malware
+! Malware distribution infrastructure with ZERO legitimate use cases.
+! Only platforms and redirect chains used for malware delivery are included.
+! ============================================================================
+
+! --- Malicious redirect chains ---
+||onclkds.com^                            ! Malware click redirect chain
+||clksite.com^                            ! Malware click redirect chain
+||clkrev.com^                             ! Malware click redirect chain
+
+! --- PUP/Adware bundler platforms ---
+||installcore.net^                        ! InstallCore - PUP/adware bundler
+||amonetize.com^                          ! Amonetize - PUP/adware bundler
+||outbrowse.com^                          ! OutBrowse - adware installer platform
+||somoto.com^                             ! Somoto - PUP/adware distribution
+
+! ============================================================================
 ! ShieldNova - Security / Cryptojacking
 ! Conservative blocklist for well-known browser mining infrastructure.
 !
-! SAFETY: Includes clear cryptomining domains only.
+! SAFETY: These are mining SERVICE PROVIDERS only, not individual infected
+! sites. They have zero legitimate use cases for end users.
 ! ============================================================================
 
-||coinhive.com^                           ! Coinhive browser mining
-||coinhiveproxy.com^                      ! Coinhive proxy endpoint
-||authedmine.com^                         ! Coinhive opt-in miner
-||wsservices.org^                         ! Coinhive websocket endpoint
-||jsecoin.com^                            ! JSECoin browser mining
+! --- Coinhive & related (defunct but still requested by infected sites) ---
+||coinhive.com^                           ! Coinhive - browser crypto miner (defunct)
+||coinhiveproxy.com^                      ! Coinhive - proxy endpoint
+||authedmine.com^                         ! Coinhive - opt-in miner variant
+||authedmine.eu^                          ! Coinhive - opt-in miner (EU)
+||authedwebmine.cz^                       ! AuthedWebMine - Coinhive fork
+||cnhv.co^                               ! Coinhive - short link / miner redirect
+||wsservices.org^                         ! Coinhive - websocket endpoint
+
+! --- CryptoLoot ---
+||crypto-loot.com^                        ! CryptoLoot - Coinhive alternative
+||crypto-loot.org^                        ! CryptoLoot - alternative domain
+||cryptaloot.pro^                         ! CryptoLoot - proxy domain
+
+! --- CoinImp ---
+||coinimp.com^                            ! CoinImp - browser mining service
+||coinimp.net^                            ! CoinImp - delivery network
+||freecontent.date^                       ! CoinImp - content delivery alias
+||freecontent.stream^                     ! CoinImp - content delivery alias
+||freecontent.live^                       ! CoinImp - content delivery alias
+||hostcontent.live^                       ! CoinImp - content delivery alias
+||hostingcloud.racing^                    ! CoinImp - hosting alias
+||hostingcloud.party^                     ! CoinImp - hosting alias
+
+! --- Other mining services ---
+||jsecoin.com^                            ! JSEcoin - browser mining platform
+||mineralt.io^                            ! Mineralt - browser mining service
+||webminepool.com^                        ! WebMinePool - browser mining pool
+||browsermine.com^                        ! BrowserMine - browser mining service
+||nerohut.com^                            ! NeroHut - browser mining service
+||papoto.com^                             ! Papoto - browser mining service
+||monerominer.rocks^                      ! MoneroMiner - browser Monero miner
+||minero.cc^                              ! Minero - browser mining
+||inwemo.com^                             ! InWemo - browser mining service
+||minescripts.info^                       ! MineScripts - mining script host
+||ad-miner.com^                           ! Ad-Miner - browser mining service
+||afminer.com^                            ! AFMiner - browser mining service
+||coin-service.com^                       ! CoinNebula - mining service domain
+||webassembly.stream^                     ! WebAssembly mining payload delivery
+||wasm.stream^                            ! WASM mining payload delivery
+||adless.io^                              ! Adless - mining-as-ad-replacement

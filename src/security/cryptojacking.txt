@@ -2,11 +2,48 @@
 ! ShieldNova - Security / Cryptojacking
 ! Conservative blocklist for well-known browser mining infrastructure.
 !
-! SAFETY: Includes clear cryptomining domains only.
+! SAFETY: These are mining SERVICE PROVIDERS only, not individual infected
+! sites. They have zero legitimate use cases for end users.
 ! ============================================================================
 
-||coinhive.com^                           ! Coinhive browser mining
-||coinhiveproxy.com^                      ! Coinhive proxy endpoint
-||authedmine.com^                         ! Coinhive opt-in miner
-||wsservices.org^                         ! Coinhive websocket endpoint
-||jsecoin.com^                            ! JSECoin browser mining
+! --- Coinhive & related (defunct but still requested by infected sites) ---
+||coinhive.com^                           ! Coinhive - browser crypto miner (defunct)
+||coinhiveproxy.com^                      ! Coinhive - proxy endpoint
+||authedmine.com^                         ! Coinhive - opt-in miner variant
+||authedmine.eu^                          ! Coinhive - opt-in miner (EU)
+||authedwebmine.cz^                       ! AuthedWebMine - Coinhive fork
+||cnhv.co^                               ! Coinhive - short link / miner redirect
+||wsservices.org^                         ! Coinhive - websocket endpoint
+
+! --- CryptoLoot ---
+||crypto-loot.com^                        ! CryptoLoot - Coinhive alternative
+||crypto-loot.org^                        ! CryptoLoot - alternative domain
+||cryptaloot.pro^                         ! CryptoLoot - proxy domain
+
+! --- CoinImp ---
+||coinimp.com^                            ! CoinImp - browser mining service
+||coinimp.net^                            ! CoinImp - delivery network
+||freecontent.date^                       ! CoinImp - content delivery alias
+||freecontent.stream^                     ! CoinImp - content delivery alias
+||freecontent.live^                       ! CoinImp - content delivery alias
+||hostcontent.live^                       ! CoinImp - content delivery alias
+||hostingcloud.racing^                    ! CoinImp - hosting alias
+||hostingcloud.party^                     ! CoinImp - hosting alias
+
+! --- Other mining services ---
+||jsecoin.com^                            ! JSEcoin - browser mining platform
+||mineralt.io^                            ! Mineralt - browser mining service
+||webminepool.com^                        ! WebMinePool - browser mining pool
+||browsermine.com^                        ! BrowserMine - browser mining service
+||nerohut.com^                            ! NeroHut - browser mining service
+||papoto.com^                             ! Papoto - browser mining service
+||monerominer.rocks^                      ! MoneroMiner - browser Monero miner
+||minero.cc^                              ! Minero - browser mining
+||inwemo.com^                             ! InWemo - browser mining service
+||minescripts.info^                       ! MineScripts - mining script host
+||ad-miner.com^                           ! Ad-Miner - browser mining service
+||afminer.com^                            ! AFMiner - browser mining service
+||coin-service.com^                       ! CoinNebula - mining service domain
+||webassembly.stream^                     ! WebAssembly mining payload delivery
+||wasm.stream^                            ! WASM mining payload delivery
+||adless.io^                              ! Adless - mining-as-ad-replacement
