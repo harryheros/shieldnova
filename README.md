@@ -89,8 +89,10 @@ Same coverage. One rule instead of five hundred.
 
 ## Services (Traffic Routing)
 
-Domain sets for routing specific service traffic through proxy nodes.  
-These are **NOT blocking rules** — they identify service domains so your proxy tool can route them correctly.
+Domain sets for service-aware traffic classification and routing.
+
+These are **NOT blocking rules** — they identify domains associated with specific services, 
+allowing network tools to apply appropriate routing or policy decisions.
 
 | Service | File |
 |---|---|
