@@ -1,0 +1,18 @@
+# ShieldNova - Services / Spotify
+# Description: Domain set for Spotify traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-26 01:32:25 UTC
+# Total: 8
+# Breakdown: service_rules=8
+
+HOST-SUFFIX,spotify.com,proxy
+HOST-SUFFIX,scdn.co,proxy
+HOST-SUFFIX,spoti.fi,proxy
+HOST-SUFFIX,audio-ak-spotify-com.akamaized.net,proxy
+HOST-SUFFIX,heads-ak-spotify-com.akamaized.net,proxy
+HOST-SUFFIX,audio4-ak-spotify-com.akamaized.net,proxy
+HOST-SUFFIX,ap-gew4.spotify.com,proxy
+HOST-SUFFIX,dealer.spotify.com,proxy

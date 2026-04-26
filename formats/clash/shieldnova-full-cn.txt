@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-24 03:32:58 UTC
-# Total: 138
-# Breakdown: privacy_global=44, privacy_cn=24, ads_global=22, ads_cn=7, security=43, allowlist_removed=0
+# Built: 2026-04-26 01:32:25 UTC
+# Total: 189
+# Breakdown: privacy_global=44, privacy_cn=24, ads_global=59, ads_cn=21, security=43, allowlist_removed=0
 payload:
 
   - DOMAIN-SUFFIX,google-analytics.com
@@ -54,6 +54,8 @@ payload:
   - DOMAIN-SUFFIX,everesttech.net
   - DOMAIN-SUFFIX,fingerprintjs.com
   - DOMAIN-SUFFIX,googlesyndication.com
+  - DOMAIN-SUFFIX,pagead2.googlesyndication.com
+  - DOMAIN-SUFFIX,adservice.google.com
   - DOMAIN-SUFFIX,adnxs.com
   - DOMAIN-SUFFIX,adsrvr.org
   - DOMAIN-SUFFIX,pubmatic.com
@@ -65,14 +67,49 @@ payload:
   - DOMAIN-SUFFIX,media.net
   - DOMAIN-SUFFIX,serving-sys.com
   - DOMAIN-SUFFIX,casalemedia.com
+  - DOMAIN-SUFFIX,indexww.com
+  - DOMAIN-SUFFIX,33across.com
+  - DOMAIN-SUFFIX,smartadserver.com
+  - DOMAIN-SUFFIX,yieldmo.com
+  - DOMAIN-SUFFIX,triplelift.com
+  - DOMAIN-SUFFIX,sonobi.com
+  - DOMAIN-SUFFIX,emxdgt.com
+  - DOMAIN-SUFFIX,contextweb.com
+  - DOMAIN-SUFFIX,adcolony.com
+  - DOMAIN-SUFFIX,vungle.com
+  - DOMAIN-SUFFIX,unityads.unity3d.com
+  - DOMAIN-SUFFIX,unityads.unitychina.cn
+  - DOMAIN-SUFFIX,applovin.com
+  - DOMAIN-SUFFIX,ironsrc.com
+  - DOMAIN-SUFFIX,mintegral.com
+  - DOMAIN-SUFFIX,inmobi.com
+  - DOMAIN-SUFFIX,chartboost.com
+  - DOMAIN-SUFFIX,fyber.com
+  - DOMAIN-SUFFIX,liftoff.io
+  - DOMAIN-SUFFIX,moloco.com
   - DOMAIN-SUFFIX,criteo.com
   - DOMAIN-SUFFIX,criteo.net
   - DOMAIN-SUFFIX,taboola.com
   - DOMAIN-SUFFIX,outbrain.com
+  - DOMAIN-SUFFIX,revcontent.com
+  - DOMAIN-SUFFIX,mgid.com
+  - DOMAIN-SUFFIX,springserve.com
+  - DOMAIN-SUFFIX,spotxchange.com
+  - DOMAIN-SUFFIX,spotx.tv
+  - DOMAIN-SUFFIX,teads.tv
   - DOMAIN-SUFFIX,quantserve.com
   - DOMAIN-SUFFIX,scorecardresearch.com
   - DOMAIN-SUFFIX,mookie1.com
   - DOMAIN-SUFFIX,rlcdn.com
+  - DOMAIN-SUFFIX,id5-sync.com
+  - DOMAIN-SUFFIX,adsymptotic.com
+  - DOMAIN-SUFFIX,crwdcntrl.net
+  - DOMAIN-SUFFIX,bluekai.com
+  - DOMAIN-SUFFIX,exelator.com
+  - DOMAIN-SUFFIX,eyeota.net
+  - DOMAIN-SUFFIX,popads.net
+  - DOMAIN-SUFFIX,popcash.net
+  - DOMAIN-SUFFIX,propellerads.com
   - DOMAIN-SUFFIX,16shop.co
   - DOMAIN-SUFFIX,logincdn.net
   - DOMAIN-SUFFIX,onclkds.com
@@ -143,7 +180,21 @@ payload:
   - DOMAIN-SUFFIX,cpro.baidu.com
   - DOMAIN-SUFFIX,pos.baidu.com
   - DOMAIN-SUFFIX,union.baidu.com
+  - DOMAIN-SUFFIX,mobads.baidu.com
+  - DOMAIN-SUFFIX,mobads-logs.baidu.com
+  - DOMAIN-SUFFIX,baidustatic.com
   - DOMAIN-SUFFIX,gdt.qq.com
   - DOMAIN-SUFFIX,adsmind.gdtimg.com
+  - DOMAIN-SUFFIX,e.qq.com
+  - DOMAIN-SUFFIX,l.qq.com
   - DOMAIN-SUFFIX,tanx.com
   - DOMAIN-SUFFIX,atanx.com
+  - DOMAIN-SUFFIX,alimama.com
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+  - DOMAIN-SUFFIX,pglstatp-toutiao.com
+  - DOMAIN-SUFFIX,adview.cn
+  - DOMAIN-SUFFIX,mobisage.cn
+  - DOMAIN-SUFFIX,youmi.net
+  - DOMAIN-SUFFIX,domob.cn
+  - DOMAIN-SUFFIX,admaster.com.cn
+  - DOMAIN-SUFFIX,miaozhen.com

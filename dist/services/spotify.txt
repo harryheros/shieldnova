@@ -1,0 +1,22 @@
+! Title: ShieldNova - Services / Spotify
+! Description: Domain set for Spotify traffic routing.
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Profile: Conservative / Compatibility-First
+! Built: 2026-04-26 01:32:25 UTC
+! Total: 8
+! Breakdown: service_rules=8
+
+! Spotify
+! Purpose: service-specific routing for proxy tools.
+! This is NOT a blocking list.
+
+||spotify.com^                            ! Spotify - main platform
+||scdn.co^                                ! Spotify - static CDN
+||spoti.fi^                               ! Spotify - short links
+||audio-ak-spotify-com.akamaized.net^     ! Spotify - audio delivery
+||heads-ak-spotify-com.akamaized.net^     ! Spotify - audio delivery
+||audio4-ak-spotify-com.akamaized.net^    ! Spotify - audio delivery
+||ap-gew4.spotify.com^                    ! Spotify - access point
+||dealer.spotify.com^                     ! Spotify - real-time updates

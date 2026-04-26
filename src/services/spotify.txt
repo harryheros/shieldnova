@@ -1,0 +1,12 @@
+! Spotify
+! Purpose: service-specific routing for proxy tools.
+! This is NOT a blocking list.
+
+||spotify.com^                            ! Spotify - main platform
+||scdn.co^                                ! Spotify - static CDN
+||spoti.fi^                               ! Spotify - short links
+||audio-ak-spotify-com.akamaized.net^     ! Spotify - audio delivery
+||heads-ak-spotify-com.akamaized.net^     ! Spotify - audio delivery
+||audio4-ak-spotify-com.akamaized.net^    ! Spotify - audio delivery
+||ap-gew4.spotify.com^                    ! Spotify - access point
+||dealer.spotify.com^                     ! Spotify - real-time updates

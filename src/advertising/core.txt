@@ -10,28 +10,72 @@
 ||googlesyndication.com^                  ! Google AdSense / ad delivery
 ||doubleclick.net^                        ! Google DoubleClick ad serving
 ||googleadservices.com^                   ! Google Ads conversion and click tracking
+||pagead2.googlesyndication.com^          ! Google AdSense page-level ads
+||adservice.google.com^                   ! Google ad service endpoint
 
 ! --- Programmatic / DSP / SSP ---
-||adnxs.com^                              ! Xandr/AppNexus ad exchange
+||adnxs.com^                             ! Xandr/AppNexus ad exchange
 ||adsrvr.org^                             ! The Trade Desk ad delivery
 ||pubmatic.com^                           ! PubMatic ad exchange
 ||rubiconproject.com^                     ! Magnite/Rubicon ad exchange
-||openx.net^                              ! OpenX ad marketplace
+||openx.net^                             ! OpenX ad marketplace
 ||sharethrough.com^                       ! Sharethrough native ads
 ||bidswitch.net^                          ! BidSwitch exchange routing
 ||lijit.com^                              ! Sovrn / Lijit ad serving
 ||media.net^                              ! Media.net contextual ads
 ||serving-sys.com^                        ! Sizmek ad serving
 ||casalemedia.com^                        ! Index Exchange ad marketplace
+||indexww.com^                            ! Index Exchange - wrapper
+||33across.com^                           ! 33Across ad exchange
+||smartadserver.com^                      ! Equativ/Smart AdServer
+||yieldmo.com^                            ! Yieldmo ad exchange
+||triplelift.com^                         ! TripleLift native ad exchange
+||sonobi.com^                             ! Sonobi ad exchange
+||emxdgt.com^                             ! EMX Digital ad exchange
+||contextweb.com^                         ! PulsePoint ad exchange
+||adcolony.com^                           ! AdColony mobile ad network
+||vungle.com^                             ! Vungle mobile video ads
+||unityads.unity3d.com^                   ! Unity Ads - mobile ad delivery
+||unityads.unitychina.cn^                 ! Unity Ads China - mobile ad delivery
+||applovin.com^                           ! AppLovin mobile ad network
+||ironsrc.com^                            ! ironSource mobile ad mediation
+||mintegral.com^                          ! Mintegral mobile ad network
+||inmobi.com^                             ! InMobi mobile ad platform
+||chartboost.com^                         ! Chartboost mobile game ads
+||fyber.com^                              ! Fyber mobile ad mediation
+||liftoff.io^                             ! Liftoff mobile ad platform
+||moloco.com^                             ! Moloco mobile ad platform
 
 ! --- Retargeting / Content Ads ---
 ||criteo.com^                             ! Criteo retargeting ads
 ||criteo.net^                             ! Criteo ad delivery
 ||taboola.com^                            ! Taboola sponsored content
 ||outbrain.com^                           ! Outbrain sponsored content
+||revcontent.com^                         ! RevContent native ads
+||mgid.com^                               ! MGID native ads
+
+! --- Video / Streaming Ads ---
+||springserve.com^                        ! SpringServe video ad server
+||spotxchange.com^                        ! SpotX video ad exchange
+||spotx.tv^                               ! SpotX video ad delivery
+||teads.tv^                               ! Teads video ad platform
 
 ! --- Audience / Identity for Ads ---
 ||quantserve.com^                         ! Quantcast ad targeting
 ||scorecardresearch.com^                  ! comScore audience measurement
 ||mookie1.com^                            ! Oracle BlueKai / identity for ads
 ||rlcdn.com^                              ! LiveRamp ad tech CDN
+||id5-sync.com^                           ! ID5 identity for ads
+||adsymptotic.com^                        ! Ad identity sync
+||crwdcntrl.net^                          ! Lotame audience management
+||bluekai.com^                            ! Oracle BlueKai DMP
+||exelator.com^                           ! Nielsen eXelator DMP
+||eyeota.net^                             ! Eyeota audience data
+
+! --- Pop-under / Interstitial Ad Networks ---
+||popads.net^                             ! PopAds pop-under network
+||popcash.net^                            ! PopCash pop-under network
+||propellerads.com^                       ! PropellerAds pop-under / push ads
+
+! NOTE: Amazon ad services (aps.amazon.com etc.) are NOT blocked because
+! blocking can break product pages and checkout on Amazon-owned sites.

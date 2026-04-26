@@ -1,6 +1,6 @@
 {
   "profile": "Conservative / Compatibility-First",
-  "built": "2026-04-24 03:32:58 UTC",
+  "built": "2026-04-26 01:32:25 UTC",
   "allowlist_entries": 0,
   "invalid_rules_skipped": 0,
   "bundles": [
@@ -18,9 +18,9 @@
       "filename": "shieldnova-ads.txt",
       "title": "Ads Protection",
       "description": "Low-risk ad networks, exchanges, and ad-serving domains.",
-      "total": 22,
+      "total": 59,
       "breakdown": {
-        "ads": 22,
+        "ads": 59,
         "allowlist_removed": 0
       }
     },
@@ -40,10 +40,10 @@
       "filename": "shieldnova-full.txt",
       "title": "Full (Global)",
       "description": "Complete protection with a conservative compatibility-first profile.",
-      "total": 107,
+      "total": 144,
       "breakdown": {
         "privacy": 44,
-        "ads": 22,
+        "ads": 59,
         "security": 43,
         "allowlist_removed": 0
       }
@@ -52,12 +52,12 @@
       "filename": "shieldnova-full-cn.txt",
       "title": "Full (China Mainland)",
       "description": "Complete protection with additional China mainland trackers and ad domains.",
-      "total": 138,
+      "total": 189,
       "breakdown": {
         "privacy_global": 44,
         "privacy_cn": 24,
-        "ads_global": 22,
-        "ads_cn": 7,
+        "ads_global": 59,
+        "ads_cn": 21,
         "security": 43,
         "allowlist_removed": 0
       }
@@ -66,11 +66,11 @@
       "filename": "shieldnova-full-hktw.txt",
       "title": "Full (Hong Kong & Taiwan)",
       "description": "Complete protection with additional Hong Kong and Taiwan domains.",
-      "total": 107,
+      "total": 144,
       "breakdown": {
         "privacy_global": 44,
         "privacy_hktw": 0,
-        "ads_global": 22,
+        "ads_global": 59,
         "ads_hktw": 0,
         "security": 43,
         "allowlist_removed": 0

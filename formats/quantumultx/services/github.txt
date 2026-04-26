@@ -1,0 +1,18 @@
+# ShieldNova - Services / Github
+# Description: Domain set for Github traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-26 01:32:25 UTC
+# Total: 8
+# Breakdown: service_rules=8
+
+HOST-SUFFIX,github.com,proxy
+HOST-SUFFIX,github.io,proxy
+HOST-SUFFIX,githubusercontent.com,proxy
+HOST-SUFFIX,githubassets.com,proxy
+HOST-SUFFIX,github.dev,proxy
+HOST-SUFFIX,copilot.github.com,proxy
+HOST-SUFFIX,api.github.com,proxy
+HOST-SUFFIX,ghcr.io,proxy

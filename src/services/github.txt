@@ -1,0 +1,12 @@
+! GitHub
+! Purpose: service-specific routing for proxy tools.
+! This is NOT a blocking list.
+
+||github.com^                             ! GitHub - main platform
+||github.io^                              ! GitHub Pages
+||githubusercontent.com^                  ! GitHub - raw content / assets
+||githubassets.com^                        ! GitHub - static assets
+||github.dev^                             ! GitHub - web editor
+||copilot.github.com^                     ! GitHub Copilot
+||api.github.com^                         ! GitHub - API
+||ghcr.io^                                ! GitHub Container Registry

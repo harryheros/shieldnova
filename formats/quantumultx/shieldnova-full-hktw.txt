@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-24 03:32:58 UTC
-# Total: 107
-# Breakdown: privacy_global=44, privacy_hktw=0, ads_global=22, ads_hktw=0, security=43, allowlist_removed=0
+# Built: 2026-04-26 01:32:25 UTC
+# Total: 144
+# Breakdown: privacy_global=44, privacy_hktw=0, ads_global=59, ads_hktw=0, security=43, allowlist_removed=0
 
 HOST-SUFFIX,google-analytics.com,reject
 HOST-SUFFIX,googletagmanager.com,reject
@@ -53,6 +53,8 @@ HOST-SUFFIX,2o7.net,reject
 HOST-SUFFIX,everesttech.net,reject
 HOST-SUFFIX,fingerprintjs.com,reject
 HOST-SUFFIX,googlesyndication.com,reject
+HOST-SUFFIX,pagead2.googlesyndication.com,reject
+HOST-SUFFIX,adservice.google.com,reject
 HOST-SUFFIX,adnxs.com,reject
 HOST-SUFFIX,adsrvr.org,reject
 HOST-SUFFIX,pubmatic.com,reject
@@ -64,14 +66,49 @@ HOST-SUFFIX,lijit.com,reject
 HOST-SUFFIX,media.net,reject
 HOST-SUFFIX,serving-sys.com,reject
 HOST-SUFFIX,casalemedia.com,reject
+HOST-SUFFIX,indexww.com,reject
+HOST-SUFFIX,33across.com,reject
+HOST-SUFFIX,smartadserver.com,reject
+HOST-SUFFIX,yieldmo.com,reject
+HOST-SUFFIX,triplelift.com,reject
+HOST-SUFFIX,sonobi.com,reject
+HOST-SUFFIX,emxdgt.com,reject
+HOST-SUFFIX,contextweb.com,reject
+HOST-SUFFIX,adcolony.com,reject
+HOST-SUFFIX,vungle.com,reject
+HOST-SUFFIX,unityads.unity3d.com,reject
+HOST-SUFFIX,unityads.unitychina.cn,reject
+HOST-SUFFIX,applovin.com,reject
+HOST-SUFFIX,ironsrc.com,reject
+HOST-SUFFIX,mintegral.com,reject
+HOST-SUFFIX,inmobi.com,reject
+HOST-SUFFIX,chartboost.com,reject
+HOST-SUFFIX,fyber.com,reject
+HOST-SUFFIX,liftoff.io,reject
+HOST-SUFFIX,moloco.com,reject
 HOST-SUFFIX,criteo.com,reject
 HOST-SUFFIX,criteo.net,reject
 HOST-SUFFIX,taboola.com,reject
 HOST-SUFFIX,outbrain.com,reject
+HOST-SUFFIX,revcontent.com,reject
+HOST-SUFFIX,mgid.com,reject
+HOST-SUFFIX,springserve.com,reject
+HOST-SUFFIX,spotxchange.com,reject
+HOST-SUFFIX,spotx.tv,reject
+HOST-SUFFIX,teads.tv,reject
 HOST-SUFFIX,quantserve.com,reject
 HOST-SUFFIX,scorecardresearch.com,reject
 HOST-SUFFIX,mookie1.com,reject
 HOST-SUFFIX,rlcdn.com,reject
+HOST-SUFFIX,id5-sync.com,reject
+HOST-SUFFIX,adsymptotic.com,reject
+HOST-SUFFIX,crwdcntrl.net,reject
+HOST-SUFFIX,bluekai.com,reject
+HOST-SUFFIX,exelator.com,reject
+HOST-SUFFIX,eyeota.net,reject
+HOST-SUFFIX,popads.net,reject
+HOST-SUFFIX,popcash.net,reject
+HOST-SUFFIX,propellerads.com,reject
 HOST-SUFFIX,16shop.co,reject
 HOST-SUFFIX,logincdn.net,reject
 HOST-SUFFIX,onclkds.com,reject

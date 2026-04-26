@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-24 03:32:58 UTC
-# Total: 107
-# Breakdown: privacy=44, ads=22, security=43, allowlist_removed=0
+# Built: 2026-04-26 01:32:25 UTC
+# Total: 144
+# Breakdown: privacy=44, ads=59, security=43, allowlist_removed=0
 
 DOMAIN-SUFFIX,google-analytics.com,REJECT
 DOMAIN-SUFFIX,googletagmanager.com,REJECT
@@ -53,6 +53,8 @@ DOMAIN-SUFFIX,2o7.net,REJECT
 DOMAIN-SUFFIX,everesttech.net,REJECT
 DOMAIN-SUFFIX,fingerprintjs.com,REJECT
 DOMAIN-SUFFIX,googlesyndication.com,REJECT
+DOMAIN-SUFFIX,pagead2.googlesyndication.com,REJECT
+DOMAIN-SUFFIX,adservice.google.com,REJECT
 DOMAIN-SUFFIX,adnxs.com,REJECT
 DOMAIN-SUFFIX,adsrvr.org,REJECT
 DOMAIN-SUFFIX,pubmatic.com,REJECT
@@ -64,14 +66,49 @@ DOMAIN-SUFFIX,lijit.com,REJECT
 DOMAIN-SUFFIX,media.net,REJECT
 DOMAIN-SUFFIX,serving-sys.com,REJECT
 DOMAIN-SUFFIX,casalemedia.com,REJECT
+DOMAIN-SUFFIX,indexww.com,REJECT
+DOMAIN-SUFFIX,33across.com,REJECT
+DOMAIN-SUFFIX,smartadserver.com,REJECT
+DOMAIN-SUFFIX,yieldmo.com,REJECT
+DOMAIN-SUFFIX,triplelift.com,REJECT
+DOMAIN-SUFFIX,sonobi.com,REJECT
+DOMAIN-SUFFIX,emxdgt.com,REJECT
+DOMAIN-SUFFIX,contextweb.com,REJECT
+DOMAIN-SUFFIX,adcolony.com,REJECT
+DOMAIN-SUFFIX,vungle.com,REJECT
+DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
+DOMAIN-SUFFIX,unityads.unitychina.cn,REJECT
+DOMAIN-SUFFIX,applovin.com,REJECT
+DOMAIN-SUFFIX,ironsrc.com,REJECT
+DOMAIN-SUFFIX,mintegral.com,REJECT
+DOMAIN-SUFFIX,inmobi.com,REJECT
+DOMAIN-SUFFIX,chartboost.com,REJECT
+DOMAIN-SUFFIX,fyber.com,REJECT
+DOMAIN-SUFFIX,liftoff.io,REJECT
+DOMAIN-SUFFIX,moloco.com,REJECT
 DOMAIN-SUFFIX,criteo.com,REJECT
 DOMAIN-SUFFIX,criteo.net,REJECT
 DOMAIN-SUFFIX,taboola.com,REJECT
 DOMAIN-SUFFIX,outbrain.com,REJECT
+DOMAIN-SUFFIX,revcontent.com,REJECT
+DOMAIN-SUFFIX,mgid.com,REJECT
+DOMAIN-SUFFIX,springserve.com,REJECT
+DOMAIN-SUFFIX,spotxchange.com,REJECT
+DOMAIN-SUFFIX,spotx.tv,REJECT
+DOMAIN-SUFFIX,teads.tv,REJECT
 DOMAIN-SUFFIX,quantserve.com,REJECT
 DOMAIN-SUFFIX,scorecardresearch.com,REJECT
 DOMAIN-SUFFIX,mookie1.com,REJECT
 DOMAIN-SUFFIX,rlcdn.com,REJECT
+DOMAIN-SUFFIX,id5-sync.com,REJECT
+DOMAIN-SUFFIX,adsymptotic.com,REJECT
+DOMAIN-SUFFIX,crwdcntrl.net,REJECT
+DOMAIN-SUFFIX,bluekai.com,REJECT
+DOMAIN-SUFFIX,exelator.com,REJECT
+DOMAIN-SUFFIX,eyeota.net,REJECT
+DOMAIN-SUFFIX,popads.net,REJECT
+DOMAIN-SUFFIX,popcash.net,REJECT
+DOMAIN-SUFFIX,propellerads.com,REJECT
 DOMAIN-SUFFIX,16shop.co,REJECT
 DOMAIN-SUFFIX,logincdn.net,REJECT
 DOMAIN-SUFFIX,onclkds.com,REJECT

@@ -1,0 +1,26 @@
+# ShieldNova - Services / Google
+# Description: Domain set for Google traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-26 01:32:25 UTC
+# Total: 16
+# Breakdown: service_rules=16
+
+HOST-SUFFIX,google.com,proxy
+HOST-SUFFIX,googleapis.com,proxy
+HOST-SUFFIX,gstatic.com,proxy
+HOST-SUFFIX,googleplex.com,proxy
+HOST-SUFFIX,gmail.com,proxy
+HOST-SUFFIX,googlemail.com,proxy
+HOST-SUFFIX,google.com.hk,proxy
+HOST-SUFFIX,google.co.jp,proxy
+HOST-SUFFIX,google.com.tw,proxy
+HOST-SUFFIX,google.com.sg,proxy
+HOST-SUFFIX,googlevideo.com,proxy
+HOST-SUFFIX,googleusercontent.com,proxy
+HOST-SUFFIX,ggpht.com,proxy
+HOST-SUFFIX,google-analytics.com,proxy
+HOST-SUFFIX,gvt1.com,proxy
+HOST-SUFFIX,gvt2.com,proxy
