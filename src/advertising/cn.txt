@@ -9,11 +9,29 @@
 ||cpro.baidu.com^                         ! Baidu Union ad serving
 ||pos.baidu.com^                          ! Baidu ad placement endpoint
 ||union.baidu.com^                        ! Baidu Union advertising platform
+||mobads.baidu.com^                       ! Baidu mobile ad SDK
+||mobads-logs.baidu.com^                  ! Baidu mobile ad logging
+||baidustatic.com^                        ! Baidu ad static assets
 
 ! --- Tencent Ads ---
 ||gdt.qq.com^                             ! Tencent Guangdiantong ad platform
 ||adsmind.gdtimg.com^                     ! Tencent ad delivery assets
+||e.qq.com^                               ! Tencent ad tracking
+||l.qq.com^                               ! Tencent ad click tracking
 
 ! --- Alibaba / Tanx ---
 ||tanx.com^                               ! Alibaba Tanx ad exchange
 ||atanx.com^                              ! Tanx ad serving
+||alimama.com^                            ! Alibaba Alimama ad platform
+
+! --- ByteDance / Pangle ---
+||pangolin-sdk-toutiao.com^               ! ByteDance Pangle ad SDK
+||pglstatp-toutiao.com^                   ! ByteDance ad stats
+
+! --- Other China Ad Networks ---
+||adview.cn^                              ! AdView mobile ad aggregation
+||mobisage.cn^                            ! Mobisage mobile ad network
+||youmi.net^                              ! Youmi mobile ad network
+||domob.cn^                               ! Domob mobile ad platform
+||admaster.com.cn^                        ! AdMaster ad tracking
+||miaozhen.com^                           ! Miaozhen Systems ad verification

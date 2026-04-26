@@ -4,9 +4,9 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-24 03:32:58 UTC
-! Total: 107
-! Breakdown: privacy=44, ads=22, security=43, allowlist_removed=0
+! Built: 2026-04-26 01:32:25 UTC
+! Total: 144
+! Breakdown: privacy=44, ads=59, security=43, allowlist_removed=0
 
 ||google-analytics.com^
 ||googletagmanager.com^
@@ -53,6 +53,8 @@
 ||everesttech.net^
 ||fingerprintjs.com^
 ||googlesyndication.com^
+||pagead2.googlesyndication.com^
+||adservice.google.com^
 ||adnxs.com^
 ||adsrvr.org^
 ||pubmatic.com^
@@ -64,14 +66,49 @@
 ||media.net^
 ||serving-sys.com^
 ||casalemedia.com^
+||indexww.com^
+||33across.com^
+||smartadserver.com^
+||yieldmo.com^
+||triplelift.com^
+||sonobi.com^
+||emxdgt.com^
+||contextweb.com^
+||adcolony.com^
+||vungle.com^
+||unityads.unity3d.com^
+||unityads.unitychina.cn^
+||applovin.com^
+||ironsrc.com^
+||mintegral.com^
+||inmobi.com^
+||chartboost.com^
+||fyber.com^
+||liftoff.io^
+||moloco.com^
 ||criteo.com^
 ||criteo.net^
 ||taboola.com^
 ||outbrain.com^
+||revcontent.com^
+||mgid.com^
+||springserve.com^
+||spotxchange.com^
+||spotx.tv^
+||teads.tv^
 ||quantserve.com^
 ||scorecardresearch.com^
 ||mookie1.com^
 ||rlcdn.com^
+||id5-sync.com^
+||adsymptotic.com^
+||crwdcntrl.net^
+||bluekai.com^
+||exelator.com^
+||eyeota.net^
+||popads.net^
+||popcash.net^
+||propellerads.com^
 ||16shop.co^
 ||logincdn.net^
 ||onclkds.com^

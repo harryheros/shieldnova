@@ -96,8 +96,14 @@ These are **NOT blocking rules** — they identify service domains so your proxy
 |---|---|
 | Apple | `services/apple.txt` |
 | ChatGPT / OpenAI | `services/chatgpt.txt` |
+| Disney+ | `services/disney.txt` |
+| GitHub | `services/github.txt` |
+| Google | `services/google.txt` |
 | Netflix | `services/netflix.txt` |
+| Spotify | `services/spotify.txt` |
 | Telegram | `services/telegram.txt` |
+| WhatsApp | `services/whatsapp.txt` |
+| YouTube | `services/youtube.txt` |
 
 Subscribe URL pattern:
 ```

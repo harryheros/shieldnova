@@ -1,0 +1,19 @@
+# ShieldNova - Services / Youtube
+# Description: Domain set for Youtube traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-26 01:32:25 UTC
+# Total: 9
+# Breakdown: service_rules=9
+
+HOST-SUFFIX,youtube.com,proxy
+HOST-SUFFIX,youtu.be,proxy
+HOST-SUFFIX,youtubei.googleapis.com,proxy
+HOST-SUFFIX,youtube-nocookie.com,proxy
+HOST-SUFFIX,yt3.ggpht.com,proxy
+HOST-SUFFIX,ytimg.com,proxy
+HOST-SUFFIX,googlevideo.com,proxy
+HOST-SUFFIX,yt.be,proxy
+HOST-SUFFIX,music.youtube.com,proxy

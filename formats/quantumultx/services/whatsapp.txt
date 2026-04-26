@@ -1,0 +1,14 @@
+# ShieldNova - Services / Whatsapp
+# Description: Domain set for Whatsapp traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-26 01:32:25 UTC
+# Total: 4
+# Breakdown: service_rules=4
+
+HOST-SUFFIX,whatsapp.com,proxy
+HOST-SUFFIX,whatsapp.net,proxy
+HOST-SUFFIX,web.whatsapp.com,proxy
+HOST-SUFFIX,wa.me,proxy
