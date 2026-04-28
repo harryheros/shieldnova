@@ -1,0 +1,23 @@
+! Title: ShieldNova - Services / Amazon
+! Description: Domain set for Amazon traffic routing.
+! Profile: Conservative / Compatibility-First
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Built: 2026-04-28 00:14:00 UTC
+! Total: 13
+! Breakdown: service_rules=13
+
+||amazon.com^
+||amazon.co.jp^
+||amazon.co.uk^
+||amazon.de^
+||amazon.sg^
+||amazonaws.com^
+||amazonws.com^
+||cloudfront.net^
+||ssl-images-amazon.com^
+||media-amazon.com^
+||amazon-adsystem.com^
+||primevideo.com^
+||twitch.tv^

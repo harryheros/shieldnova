@@ -1,0 +1,16 @@
+# ShieldNova - Services / Tiktok
+# Description: Domain set for Tiktok traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-28 00:14:00 UTC
+# Total: 6
+# Breakdown: service_rules=6
+
+HOST-SUFFIX,tiktok.com,proxy
+HOST-SUFFIX,tiktokcdn.com,proxy
+HOST-SUFFIX,tiktokv.com,proxy
+HOST-SUFFIX,musical.ly,proxy
+HOST-SUFFIX,isnssdk.com,proxy
+HOST-SUFFIX,byteoversea.com,proxy

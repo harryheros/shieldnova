@@ -84,3 +84,21 @@
 ||fingerprintjs.com^                      ! FingerprintJS - browser fingerprinting
 ! NOTE: arkoselabs.com and perimeterx.net NOT blocked — they serve
 ! CAPTCHAs and bot verification. Blocking prevents login on many sites.
+
+! --- Consent / Cookie Tracking ---
+||cookiebot.com^                          ! Cookiebot - cookie consent tracking
+||cookieinformation.com^                  ! Cookie Information - consent tracking
+||onetrust.com^                           ! OneTrust - privacy consent management
+||trustarc.com^                           ! TrustArc - privacy compliance tracking
+||cookielaw.org^                          ! OneTrust - cookie consent CDN
+
+! --- A/B Testing & Optimization ---
+||optimizely.com^                         ! Optimizely - A/B testing & experimentation
+||launchdarkly.com^                       ! LaunchDarkly - feature flag & experimentation
+||vwo.com^                                ! VWO - A/B testing & conversion optimization
+||abtasty.com^                            ! AB Tasty - A/B testing platform
+
+! --- Email Tracking ---
+||mailtrack.io^                           ! Mailtrack - email open tracking
+||yesware.com^                            ! Yesware - email tracking for sales
+||bananatag.com^                          ! Bananatag - email tracking

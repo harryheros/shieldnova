@@ -70,7 +70,7 @@ Same coverage. One rule instead of five hundred.
 | | ShieldNova | Typical aggregated lists |
 |---|---|---|
 | Subscribe | 1 link | 10-100+ links |
-| Total rules | ~100 curated | 40,000+ scraped |
+| Total rules | ~200 curated | 40,000+ scraped |
 | Annotations | Every rule | Rarely |
 | Region editions | Yes | No |
 | False positives | Near zero | Frequent |
@@ -94,15 +94,21 @@ These are **NOT blocking rules** — they identify service domains so your proxy
 
 | Service | File |
 |---|---|
+| Amazon / AWS | `services/amazon.txt` |
 | Apple | `services/apple.txt` |
 | ChatGPT / OpenAI | `services/chatgpt.txt` |
+| Claude / Anthropic | `services/claude.txt` |
 | Disney+ | `services/disney.txt` |
 | GitHub | `services/github.txt` |
 | Google | `services/google.txt` |
+| Meta / Instagram | `services/meta.txt` |
+| Microsoft / Azure | `services/microsoft.txt` |
 | Netflix | `services/netflix.txt` |
 | Spotify | `services/spotify.txt` |
 | Telegram | `services/telegram.txt` |
+| TikTok | `services/tiktok.txt` |
 | WhatsApp | `services/whatsapp.txt` |
+| X (Twitter) | `services/twitter.txt` |
 | YouTube | `services/youtube.txt` |
 
 Subscribe URL pattern:

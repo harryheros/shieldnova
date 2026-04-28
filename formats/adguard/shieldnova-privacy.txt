@@ -4,9 +4,9 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-26 02:45:09 UTC
-! Total: 44
-! Breakdown: privacy=44, allowlist_removed=0
+! Built: 2026-04-28 00:14:00 UTC
+! Total: 56
+! Breakdown: privacy=56, allowlist_removed=0
 
 ||google-analytics.com^
 ||googletagmanager.com^
@@ -52,3 +52,15 @@
 ||2o7.net^
 ||everesttech.net^
 ||fingerprintjs.com^
+||cookiebot.com^
+||cookieinformation.com^
+||onetrust.com^
+||trustarc.com^
+||cookielaw.org^
+||optimizely.com^
+||launchdarkly.com^
+||vwo.com^
+||abtasty.com^
+||mailtrack.io^
+||yesware.com^
+||bananatag.com^

@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-26 02:45:09 UTC
-# Total: 189
-# Breakdown: privacy_global=44, privacy_cn=24, ads_global=59, ads_cn=21, security=43, allowlist_removed=0
+# Built: 2026-04-28 00:14:00 UTC
+# Total: 207
+# Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=43, allowlist_removed=0
 
 HOST-SUFFIX,google-analytics.com,reject
 HOST-SUFFIX,googletagmanager.com,reject
@@ -52,6 +52,18 @@ HOST-SUFFIX,demdex.net,reject
 HOST-SUFFIX,2o7.net,reject
 HOST-SUFFIX,everesttech.net,reject
 HOST-SUFFIX,fingerprintjs.com,reject
+HOST-SUFFIX,cookiebot.com,reject
+HOST-SUFFIX,cookieinformation.com,reject
+HOST-SUFFIX,onetrust.com,reject
+HOST-SUFFIX,trustarc.com,reject
+HOST-SUFFIX,cookielaw.org,reject
+HOST-SUFFIX,optimizely.com,reject
+HOST-SUFFIX,launchdarkly.com,reject
+HOST-SUFFIX,vwo.com,reject
+HOST-SUFFIX,abtasty.com,reject
+HOST-SUFFIX,mailtrack.io,reject
+HOST-SUFFIX,yesware.com,reject
+HOST-SUFFIX,bananatag.com,reject
 HOST-SUFFIX,googlesyndication.com,reject
 HOST-SUFFIX,pagead2.googlesyndication.com,reject
 HOST-SUFFIX,adservice.google.com,reject
@@ -176,6 +188,12 @@ HOST-SUFFIX,growingio.com,reject
 HOST-SUFFIX,sensorsdata.cn,reject
 HOST-SUFFIX,aldwx.com,reject
 HOST-SUFFIX,tdatamaster.com,reject
+HOST-SUFFIX,volcengine.com,reject
+HOST-SUFFIX,tongji.baidu.com,reject
+HOST-SUFFIX,tj.gdt.qq.com,reject
+HOST-SUFFIX,dataeye.com,reject
+HOST-SUFFIX,talkingdata.com,reject
+HOST-SUFFIX,tingyun.com,reject
 HOST-SUFFIX,cpro.baidu.com,reject
 HOST-SUFFIX,pos.baidu.com,reject
 HOST-SUFFIX,union.baidu.com,reject

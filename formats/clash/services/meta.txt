@@ -1,0 +1,21 @@
+# ShieldNova - Services / Meta
+# Description: Domain set for Meta traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-28 00:14:00 UTC
+# Total: 10
+# Breakdown: service_rules=10
+payload:
+
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,fbcdn.net
+  - DOMAIN-SUFFIX,fb.com
+  - DOMAIN-SUFFIX,fb.me
+  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-SUFFIX,cdninstagram.com
+  - DOMAIN-SUFFIX,threads.net
+  - DOMAIN-SUFFIX,messenger.com
+  - DOMAIN-SUFFIX,meta.com
+  - DOMAIN-SUFFIX,oculus.com

@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-26 02:45:09 UTC
-# Total: 144
-# Breakdown: privacy_global=44, privacy_hktw=0, ads_global=59, ads_hktw=0, security=43, allowlist_removed=0
+# Built: 2026-04-28 00:14:00 UTC
+# Total: 156
+# Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=43, allowlist_removed=0
 payload:
 
   - DOMAIN-SUFFIX,google-analytics.com
@@ -53,6 +53,18 @@ payload:
   - DOMAIN-SUFFIX,2o7.net
   - DOMAIN-SUFFIX,everesttech.net
   - DOMAIN-SUFFIX,fingerprintjs.com
+  - DOMAIN-SUFFIX,cookiebot.com
+  - DOMAIN-SUFFIX,cookieinformation.com
+  - DOMAIN-SUFFIX,onetrust.com
+  - DOMAIN-SUFFIX,trustarc.com
+  - DOMAIN-SUFFIX,cookielaw.org
+  - DOMAIN-SUFFIX,optimizely.com
+  - DOMAIN-SUFFIX,launchdarkly.com
+  - DOMAIN-SUFFIX,vwo.com
+  - DOMAIN-SUFFIX,abtasty.com
+  - DOMAIN-SUFFIX,mailtrack.io
+  - DOMAIN-SUFFIX,yesware.com
+  - DOMAIN-SUFFIX,bananatag.com
   - DOMAIN-SUFFIX,googlesyndication.com
   - DOMAIN-SUFFIX,pagead2.googlesyndication.com
   - DOMAIN-SUFFIX,adservice.google.com

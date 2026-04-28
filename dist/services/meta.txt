@@ -1,0 +1,24 @@
+! Title: ShieldNova - Services / Meta
+! Description: Domain set for Meta traffic routing.
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Profile: Conservative / Compatibility-First
+! Built: 2026-04-28 00:14:00 UTC
+! Total: 10
+! Breakdown: service_rules=10
+
+! Meta / Instagram / Facebook
+! Purpose: service-specific routing for proxy tools.
+! This is NOT a blocking list.
+
+||facebook.com^                           ! Facebook - main platform
+||fbcdn.net^                              ! Facebook CDN
+||fb.com^                                 ! Facebook - short domain
+||fb.me^                                  ! Facebook - short links
+||instagram.com^                          ! Instagram
+||cdninstagram.com^                       ! Instagram CDN
+||threads.net^                            ! Threads (Meta)
+||messenger.com^                          ! Messenger
+||meta.com^                               ! Meta - corporate
+||oculus.com^                             ! Oculus VR (Meta)

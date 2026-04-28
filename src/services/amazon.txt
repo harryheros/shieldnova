@@ -1,0 +1,17 @@
+! Amazon & AWS
+! Purpose: service-specific routing for proxy tools.
+! This is NOT a blocking list.
+
+||amazon.com^                             ! Amazon - main platform
+||amazon.co.jp^                           ! Amazon Japan
+||amazon.co.uk^                           ! Amazon UK
+||amazon.de^                              ! Amazon Germany
+||amazon.sg^                              ! Amazon Singapore
+||amazonaws.com^                          ! AWS - cloud infrastructure
+||amazonws.com^                           ! AWS - alternative
+||cloudfront.net^                         ! Amazon CloudFront CDN
+||ssl-images-amazon.com^                  ! Amazon - image CDN
+||media-amazon.com^                       ! Amazon - media CDN
+||amazon-adsystem.com^                    ! Amazon - ad system
+||primevideo.com^                         ! Prime Video
+||twitch.tv^                              ! Twitch (Amazon)

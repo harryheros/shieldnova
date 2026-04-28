@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-26 02:45:09 UTC
-# Total: 189
-# Breakdown: privacy_global=44, privacy_cn=24, ads_global=59, ads_cn=21, security=43, allowlist_removed=0
+# Built: 2026-04-28 00:14:00 UTC
+# Total: 207
+# Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=43, allowlist_removed=0
 
 DOMAIN-SUFFIX,google-analytics.com,REJECT
 DOMAIN-SUFFIX,googletagmanager.com,REJECT
@@ -52,6 +52,18 @@ DOMAIN-SUFFIX,demdex.net,REJECT
 DOMAIN-SUFFIX,2o7.net,REJECT
 DOMAIN-SUFFIX,everesttech.net,REJECT
 DOMAIN-SUFFIX,fingerprintjs.com,REJECT
+DOMAIN-SUFFIX,cookiebot.com,REJECT
+DOMAIN-SUFFIX,cookieinformation.com,REJECT
+DOMAIN-SUFFIX,onetrust.com,REJECT
+DOMAIN-SUFFIX,trustarc.com,REJECT
+DOMAIN-SUFFIX,cookielaw.org,REJECT
+DOMAIN-SUFFIX,optimizely.com,REJECT
+DOMAIN-SUFFIX,launchdarkly.com,REJECT
+DOMAIN-SUFFIX,vwo.com,REJECT
+DOMAIN-SUFFIX,abtasty.com,REJECT
+DOMAIN-SUFFIX,mailtrack.io,REJECT
+DOMAIN-SUFFIX,yesware.com,REJECT
+DOMAIN-SUFFIX,bananatag.com,REJECT
 DOMAIN-SUFFIX,googlesyndication.com,REJECT
 DOMAIN-SUFFIX,pagead2.googlesyndication.com,REJECT
 DOMAIN-SUFFIX,adservice.google.com,REJECT
@@ -176,6 +188,12 @@ DOMAIN-SUFFIX,growingio.com,REJECT
 DOMAIN-SUFFIX,sensorsdata.cn,REJECT
 DOMAIN-SUFFIX,aldwx.com,REJECT
 DOMAIN-SUFFIX,tdatamaster.com,REJECT
+DOMAIN-SUFFIX,volcengine.com,REJECT
+DOMAIN-SUFFIX,tongji.baidu.com,REJECT
+DOMAIN-SUFFIX,tj.gdt.qq.com,REJECT
+DOMAIN-SUFFIX,dataeye.com,REJECT
+DOMAIN-SUFFIX,talkingdata.com,REJECT
+DOMAIN-SUFFIX,tingyun.com,REJECT
 DOMAIN-SUFFIX,cpro.baidu.com,REJECT
 DOMAIN-SUFFIX,pos.baidu.com,REJECT
 DOMAIN-SUFFIX,union.baidu.com,REJECT

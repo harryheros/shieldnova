@@ -1,0 +1,73 @@
+name: Update ShieldNova Dataset
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"    # Weekly: every Monday 02:00 UTC (build only)
+    - cron: "0 3 1 * *"    # Monthly: 1st of month 03:00 UTC (threat intel fetch + build)
+  workflow_dispatch:
+    inputs:
+      run_fetch:
+        description: "Run threat intelligence fetch (yes/no)"
+        required: false
+        default: "no"
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Threat intel fetch - run monthly or on manual trigger
+      - name: Fetch threat intelligence
+        if: |
+          github.event.schedule == '0 3 1 * *' ||
+          github.event.inputs.run_fetch == 'yes'
+        run: |
+          echo "[+] Fetching threat intelligence from public feeds..."
+          python3 scripts/fetch_threat_intel.py
+        continue-on-error: true
+
+      - name: Build rule artifacts
+        run: python3 scripts/build.py
+
+      - name: Show stats
+        run: |
+          echo "=== Build Stats ==="
+          [ -f dist/stats.json ] && cat dist/stats.json || echo "stats.json missing"
+          echo ""
+          echo "=== Fetch Stats ==="
+          [ -f dist/fetch_stats.json ] && cat dist/fetch_stats.json || echo "No fetch stats (fetch not run)"
+          echo ""
+          echo "=== Rule Counts ==="
+          for f in dist/shieldnova-*.txt; do
+            count=$(grep -cv '^[!#]' "$f" 2>/dev/null | head -1)
+            echo "  $(basename $f): $count rules"
+          done
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            src/ \
+            dist/ \
+            formats/
+          if git diff --cached --quiet; then
+            echo "No changes detected. Skipping commit."
+          else
+            git commit -m "chore: auto-update $(date -u +%Y-%m-%d)"
+            git push
+          fi

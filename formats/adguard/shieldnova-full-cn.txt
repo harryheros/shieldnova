@@ -4,9 +4,9 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-26 02:45:09 UTC
-! Total: 189
-! Breakdown: privacy_global=44, privacy_cn=24, ads_global=59, ads_cn=21, security=43, allowlist_removed=0
+! Built: 2026-04-28 00:14:00 UTC
+! Total: 207
+! Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=43, allowlist_removed=0
 
 ||google-analytics.com^
 ||googletagmanager.com^
@@ -52,6 +52,18 @@
 ||2o7.net^
 ||everesttech.net^
 ||fingerprintjs.com^
+||cookiebot.com^
+||cookieinformation.com^
+||onetrust.com^
+||trustarc.com^
+||cookielaw.org^
+||optimizely.com^
+||launchdarkly.com^
+||vwo.com^
+||abtasty.com^
+||mailtrack.io^
+||yesware.com^
+||bananatag.com^
 ||googlesyndication.com^
 ||pagead2.googlesyndication.com^
 ||adservice.google.com^
@@ -176,6 +188,12 @@
 ||sensorsdata.cn^
 ||aldwx.com^
 ||tdatamaster.com^
+||volcengine.com^
+||tongji.baidu.com^
+||tj.gdt.qq.com^
+||dataeye.com^
+||talkingdata.com^
+||tingyun.com^
 ||cpro.baidu.com^
 ||pos.baidu.com^
 ||union.baidu.com^

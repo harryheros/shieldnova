@@ -1,0 +1,23 @@
+# ShieldNova - Services / Amazon
+# Description: Domain set for Amazon traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-28 00:14:00 UTC
+# Total: 13
+# Breakdown: service_rules=13
+
+HOST-SUFFIX,amazon.com,proxy
+HOST-SUFFIX,amazon.co.jp,proxy
+HOST-SUFFIX,amazon.co.uk,proxy
+HOST-SUFFIX,amazon.de,proxy
+HOST-SUFFIX,amazon.sg,proxy
+HOST-SUFFIX,amazonaws.com,proxy
+HOST-SUFFIX,amazonws.com,proxy
+HOST-SUFFIX,cloudfront.net,proxy
+HOST-SUFFIX,ssl-images-amazon.com,proxy
+HOST-SUFFIX,media-amazon.com,proxy
+HOST-SUFFIX,amazon-adsystem.com,proxy
+HOST-SUFFIX,primevideo.com,proxy
+HOST-SUFFIX,twitch.tv,proxy
