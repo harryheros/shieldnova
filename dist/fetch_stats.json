@@ -1,0 +1,29 @@
+{
+  "fetched_at": "2026-04-28 15:33:31 UTC",
+  "dry_run": false,
+  "sources": {
+    "urlhaus": {
+      "status": "ok",
+      "raw": 621,
+      "new": 50,
+      "capped_at": 50
+    },
+    "threatfox": {
+      "status": "ok",
+      "raw": 0,
+      "new": 0,
+      "capped_at": 50
+    },
+    "nocoin": {
+      "status": "fetch_failed",
+      "new": 0
+    },
+    "phishing_database": {
+      "status": "ok",
+      "raw": 385168,
+      "new": 50,
+      "capped_at": 50
+    }
+  },
+  "total_added": 100
+}

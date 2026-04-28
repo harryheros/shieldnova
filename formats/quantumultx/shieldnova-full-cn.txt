@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-28 02:33:30 UTC
-# Total: 207
-# Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=43, allowlist_removed=0
+# Built: 2026-04-28 15:33:33 UTC
+# Total: 307
+# Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=143, allowlist_removed=0
 
 HOST-SUFFIX,google-analytics.com,reject
 HOST-SUFFIX,googletagmanager.com,reject
@@ -123,6 +123,56 @@ HOST-SUFFIX,popcash.net,reject
 HOST-SUFFIX,propellerads.com,reject
 HOST-SUFFIX,16shop.co,reject
 HOST-SUFFIX,logincdn.net,reject
+HOST-SUFFIX,0-105.com,reject
+HOST-SUFFIX,0-9-8-7-6-5-4-3-2-1-0.live,reject
+HOST-SUFFIX,0-amazon.weebly.com,reject
+HOST-SUFFIX,0-amfc.firebaseapp.com,reject
+HOST-SUFFIX,0-whatsapp.com,reject
+HOST-SUFFIX,0.0.0.0forum.cryptonight.net,reject
+HOST-SUFFIX,0.0.0.0mailgate.cryptonight.net,reject
+HOST-SUFFIX,0.0.0.0ns10.cryptonight.net,reject
+HOST-SUFFIX,0.0.0.0ssl.cryptonight.net,reject
+HOST-SUFFIX,0.0.0assets.cryptonight.net,reject
+HOST-SUFFIX,0.0.0dbs.cryptonight.net,reject
+HOST-SUFFIX,0.0.0fileserver.cryptonight.net,reject
+HOST-SUFFIX,0.0.0mail3.cryptonight.net,reject
+HOST-SUFFIX,0.0.0ns6.cryptonight.net,reject
+HOST-SUFFIX,0.0.0t.cryptonight.net,reject
+HOST-SUFFIX,0.0.0wsus.cryptonight.net,reject
+HOST-SUFFIX,0.0l.cryptonight.net,reject
+HOST-SUFFIX,0.0mx03.cryptonight.net,reject
+HOST-SUFFIX,0.232.205.92.host.secureserver.net,reject
+HOST-SUFFIX,0.bgeneral0.repl.co,reject
+HOST-SUFFIX,0.fascinatingsciencemag.com,reject
+HOST-SUFFIX,0.feixue316p.cloudns.biz,reject
+HOST-SUFFIX,0.feixue317p.cloudns.biz,reject
+HOST-SUFFIX,0.feixue318p.cloudns.biz,reject
+HOST-SUFFIX,0.fres-news.com,reject
+HOST-SUFFIX,0.sciiaawuroyagu9524.workers.dev,reject
+HOST-SUFFIX,0.tecnodentalrd.com,reject
+HOST-SUFFIX,0.vsxmfkrvoipzs67.workers.dev,reject
+HOST-SUFFIX,0.xyasrhsju3235.workers.dev,reject
+HOST-SUFFIX,00-5fu.pages.dev,reject
+HOST-SUFFIX,00-663b30.ingress-daribow.ewp.live,reject
+HOST-SUFFIX,00-974a.duckdns.org,reject
+HOST-SUFFIX,00-c1aimn0w.com,reject
+HOST-SUFFIX,00.buh30-00.ru,reject
+HOST-SUFFIX,000-00-000-000000.pages.dev,reject
+HOST-SUFFIX,000-7yt65t564656ythygy.000webhostapp.com,reject
+HOST-SUFFIX,000.abreubueno91.repl.co,reject
+HOST-SUFFIX,0000-1t8.pages.dev,reject
+HOST-SUFFIX,0000.com.my,reject
+HOST-SUFFIX,0000.hopto.org,reject
+HOST-SUFFIX,00000--bancogeneral3.repl.co,reject
+HOST-SUFFIX,0000000000000000000000000.findyourjacket.com,reject
+HOST-SUFFIX,00000000000000000000000000000000000000000.xyz,reject
+HOST-SUFFIX,00000000000000000000000000000000000000dfjjjhv.000webhostapp.com,reject
+HOST-SUFFIX,00000000000000000000000056000005-102299.weeblysite.com,reject
+HOST-SUFFIX,000000000000000000gg.000webhostapp.com,reject
+HOST-SUFFIX,00000000000000000update.emy.ba,reject
+HOST-SUFFIX,000000000000000ooooo.000webhostapp.com,reject
+HOST-SUFFIX,0000000000c0.x9xcax2a.workers.dev,reject
+HOST-SUFFIX,000000000a0uutlook.weebly.com,reject
 HOST-SUFFIX,onclkds.com,reject
 HOST-SUFFIX,clksite.com,reject
 HOST-SUFFIX,clkrev.com,reject
@@ -130,6 +180,56 @@ HOST-SUFFIX,installcore.net,reject
 HOST-SUFFIX,amonetize.com,reject
 HOST-SUFFIX,outbrowse.com,reject
 HOST-SUFFIX,somoto.com,reject
+HOST-SUFFIX,0022a601.pphost.net,reject
+HOST-SUFFIX,111101111.ru,reject
+HOST-SUFFIX,123.ywxww.net,reject
+HOST-SUFFIX,132.red-81-42-249.staticip.rima-tde.net,reject
+HOST-SUFFIX,1717.1000uc.com,reject
+HOST-SUFFIX,176.190.153.160.host.secureserver.net,reject
+HOST-SUFFIX,178.248.3.202.ll.sta.mana.pf,reject
+HOST-SUFFIX,179.248.3.202.ll.sta.mana.pf,reject
+HOST-SUFFIX,1827897262.v.123pan.cn,reject
+HOST-SUFFIX,185-55-196-13.cprapid.com,reject
+HOST-SUFFIX,1oade4-zone.sunmeadow.garden,reject
+HOST-SUFFIX,2cfc0222.salamanderprocessing.pages.dev,reject
+HOST-SUFFIX,5un-drive.frosthaven.garden,reject
+HOST-SUFFIX,5urv3-layer.stoneflare.garden,reject
+HOST-SUFFIX,60aaf9c6.salamanderprocessing.pages.dev,reject
+HOST-SUFFIX,69sexy.duckdns.org,reject
+HOST-SUFFIX,99-118-215-24.lightspeed.irvnca.sbcglobal.net,reject
+HOST-SUFFIX,99194034-96-20180108171507.webstarterz.com,reject
+HOST-SUFFIX,a-gwo.pages.dev,reject
+HOST-SUFFIX,aaronart.com,reject
+HOST-SUFFIX,acaviationsupplies.com,reject
+HOST-SUFFIX,acc.jiangsujiaxue.com,reject
+HOST-SUFFIX,access.skaparade.com,reject
+HOST-SUFFIX,acms.saleseos.com,reject
+HOST-SUFFIX,adclick.g.doubleclick.net,reject
+HOST-SUFFIX,admin.byte.in.ua,reject
+HOST-SUFFIX,admin.gestroom.it,reject
+HOST-SUFFIX,airlife.bget.ru,reject
+HOST-SUFFIX,alarmline.com.br,reject
+HOST-SUFFIX,alineeleuterio.com.br,reject
+HOST-SUFFIX,allendostmen.com,reject
+HOST-SUFFIX,allister.ee,reject
+HOST-SUFFIX,alternativas.ru,reject
+HOST-SUFFIX,api.baimless.com,reject
+HOST-SUFFIX,api.ezilax.com,reject
+HOST-SUFFIX,apn-87-251-249-41.static.gprs.plus.pl,reject
+HOST-SUFFIX,app.appzcvb.com,reject
+HOST-SUFFIX,apple-service93.ru,reject
+HOST-SUFFIX,ardena.pro,reject
+HOST-SUFFIX,areyouready.co.za,reject
+HOST-SUFFIX,arrayterminal.shadowpeak.garden,reject
+HOST-SUFFIX,artacom.com.br,reject
+HOST-SUFFIX,asl-company.ru,reject
+HOST-SUFFIX,asse4-track.frosthaven.garden,reject
+HOST-SUFFIX,atasapka.com.tr,reject
+HOST-SUFFIX,atkcgnew.evgeni7e.beget.tech,reject
+HOST-SUFFIX,attach.mail.daum.net,reject
+HOST-SUFFIX,audicontadores.com,reject
+HOST-SUFFIX,augsburg-auto.com,reject
+HOST-SUFFIX,autobaenasl.com,reject
 HOST-SUFFIX,coinhive.com,reject
 HOST-SUFFIX,coinhiveproxy.com,reject
 HOST-SUFFIX,authedmine.com,reject

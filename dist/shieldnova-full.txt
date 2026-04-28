@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-04-28 02:33:30 UTC
-! Total: 156
-! Breakdown: privacy=56, ads=59, security=43, allowlist_removed=0
+! Built: 2026-04-28 15:33:33 UTC
+! Total: 256
+! Breakdown: privacy=56, ads=59, security=143, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -195,6 +195,58 @@
 
 ! are NOT blocked. Many users rely on them for home server remote access.
 ! Many forums and download sites use them for legitimate links.
+
+! --- Auto-fetched from phishing (2026-04-28) ---
+||0-105.com^                           ! auto: phishing
+||0-9-8-7-6-5-4-3-2-1-0.live^                           ! auto: phishing
+||0-amazon.weebly.com^                           ! auto: phishing
+||0-amfc.firebaseapp.com^                           ! auto: phishing
+||0-whatsapp.com^                           ! auto: phishing
+||0.0.0.0forum.cryptonight.net^                           ! auto: phishing
+||0.0.0.0mailgate.cryptonight.net^                           ! auto: phishing
+||0.0.0.0ns10.cryptonight.net^                           ! auto: phishing
+||0.0.0.0ssl.cryptonight.net^                           ! auto: phishing
+||0.0.0assets.cryptonight.net^                           ! auto: phishing
+||0.0.0dbs.cryptonight.net^                           ! auto: phishing
+||0.0.0fileserver.cryptonight.net^                           ! auto: phishing
+||0.0.0mail3.cryptonight.net^                           ! auto: phishing
+||0.0.0ns6.cryptonight.net^                           ! auto: phishing
+||0.0.0t.cryptonight.net^                           ! auto: phishing
+||0.0.0wsus.cryptonight.net^                           ! auto: phishing
+||0.0l.cryptonight.net^                           ! auto: phishing
+||0.0mx03.cryptonight.net^                           ! auto: phishing
+||0.232.205.92.host.secureserver.net^                           ! auto: phishing
+||0.bgeneral0.repl.co^                           ! auto: phishing
+||0.fascinatingsciencemag.com^                           ! auto: phishing
+||0.feixue316p.cloudns.biz^                           ! auto: phishing
+||0.feixue317p.cloudns.biz^                           ! auto: phishing
+||0.feixue318p.cloudns.biz^                           ! auto: phishing
+||0.fres-news.com^                           ! auto: phishing
+||0.sciiaawuroyagu9524.workers.dev^                           ! auto: phishing
+||0.tecnodentalrd.com^                           ! auto: phishing
+||0.vsxmfkrvoipzs67.workers.dev^                           ! auto: phishing
+||0.xyasrhsju3235.workers.dev^                           ! auto: phishing
+||00-5fu.pages.dev^                           ! auto: phishing
+||00-663b30.ingress-daribow.ewp.live^                           ! auto: phishing
+||00-974a.duckdns.org^                           ! auto: phishing
+||00-c1aimn0w.com^                           ! auto: phishing
+||00.buh30-00.ru^                           ! auto: phishing
+||000-00-000-000000.pages.dev^                           ! auto: phishing
+||000-7yt65t564656ythygy.000webhostapp.com^                           ! auto: phishing
+||000.abreubueno91.repl.co^                           ! auto: phishing
+||0000-1t8.pages.dev^                           ! auto: phishing
+||0000.com.my^                           ! auto: phishing
+||0000.hopto.org^                           ! auto: phishing
+||00000--bancogeneral3.repl.co^                           ! auto: phishing
+||0000000000000000000000000.findyourjacket.com^                           ! auto: phishing
+||00000000000000000000000000000000000000000.xyz^                           ! auto: phishing
+||00000000000000000000000000000000000000dfjjjhv.000webhostapp.com^                           ! auto: phishing
+||00000000000000000000000056000005-102299.weeblysite.com^                           ! auto: phishing
+||000000000000000000gg.000webhostapp.com^                           ! auto: phishing
+||00000000000000000update.emy.ba^                           ! auto: phishing
+||000000000000000ooooo.000webhostapp.com^                           ! auto: phishing
+||0000000000c0.x9xcax2a.workers.dev^                           ! auto: phishing
+||000000000a0uutlook.weebly.com^                           ! auto: phishing
 ! ============================================================================
 ! ShieldNova - Security / Malware
 ! Malware distribution infrastructure with ZERO legitimate use cases.
@@ -212,6 +264,57 @@
 ||outbrowse.com^                          ! OutBrowse - adware installer platform
 ||somoto.com^                             ! Somoto - PUP/adware distribution
 
+! --- Auto-fetched from malware (2026-04-28) ---
+||0022a601.pphost.net^                           ! auto: malware
+||111101111.ru^                           ! auto: malware
+||123.ywxww.net^                           ! auto: malware
+||132.red-81-42-249.staticip.rima-tde.net^                           ! auto: malware
+||1717.1000uc.com^                           ! auto: malware
+||176.190.153.160.host.secureserver.net^                           ! auto: malware
+||178.248.3.202.ll.sta.mana.pf^                           ! auto: malware
+||179.248.3.202.ll.sta.mana.pf^                           ! auto: malware
+||1827897262.v.123pan.cn^                           ! auto: malware
+||185-55-196-13.cprapid.com^                           ! auto: malware
+||1oade4-zone.sunmeadow.garden^                           ! auto: malware
+||2cfc0222.salamanderprocessing.pages.dev^                           ! auto: malware
+||5un-drive.frosthaven.garden^                           ! auto: malware
+||5urv3-layer.stoneflare.garden^                           ! auto: malware
+||60aaf9c6.salamanderprocessing.pages.dev^                           ! auto: malware
+||69sexy.duckdns.org^                           ! auto: malware
+||99-118-215-24.lightspeed.irvnca.sbcglobal.net^                           ! auto: malware
+||99194034-96-20180108171507.webstarterz.com^                           ! auto: malware
+||a-gwo.pages.dev^                           ! auto: malware
+||aaronart.com^                           ! auto: malware
+||acaviationsupplies.com^                           ! auto: malware
+||acc.jiangsujiaxue.com^                           ! auto: malware
+||access.skaparade.com^                           ! auto: malware
+||acms.saleseos.com^                           ! auto: malware
+||adclick.g.doubleclick.net^                           ! auto: malware
+||admin.byte.in.ua^                           ! auto: malware
+||admin.gestroom.it^                           ! auto: malware
+||airlife.bget.ru^                           ! auto: malware
+||alarmline.com.br^                           ! auto: malware
+||alineeleuterio.com.br^                           ! auto: malware
+||allendostmen.com^                           ! auto: malware
+||allister.ee^                           ! auto: malware
+||alternativas.ru^                           ! auto: malware
+||api.baimless.com^                           ! auto: malware
+||api.ezilax.com^                           ! auto: malware
+||apn-87-251-249-41.static.gprs.plus.pl^                           ! auto: malware
+||app.appzcvb.com^                           ! auto: malware
+||apple-service93.ru^                           ! auto: malware
+||ardena.pro^                           ! auto: malware
+||areyouready.co.za^                           ! auto: malware
+||arrayterminal.shadowpeak.garden^                           ! auto: malware
+||artacom.com.br^                           ! auto: malware
+||asl-company.ru^                           ! auto: malware
+||asse4-track.frosthaven.garden^                           ! auto: malware
+||atasapka.com.tr^                           ! auto: malware
+||atkcgnew.evgeni7e.beget.tech^                           ! auto: malware
+||attach.mail.daum.net^                           ! auto: malware
+||audicontadores.com^                           ! auto: malware
+||augsburg-auto.com^                           ! auto: malware
+||autobaenasl.com^                           ! auto: malware
 ! ============================================================================
 ! ShieldNova - Security / Cryptojacking
 ! Conservative blocklist for well-known browser mining infrastructure.

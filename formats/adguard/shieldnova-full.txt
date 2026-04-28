@@ -4,9 +4,9 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-28 02:33:30 UTC
-! Total: 156
-! Breakdown: privacy=56, ads=59, security=43, allowlist_removed=0
+! Built: 2026-04-28 15:33:33 UTC
+! Total: 256
+! Breakdown: privacy=56, ads=59, security=143, allowlist_removed=0
 
 ||google-analytics.com^
 ||googletagmanager.com^
@@ -123,6 +123,56 @@
 ||propellerads.com^
 ||16shop.co^
 ||logincdn.net^
+||0-105.com^
+||0-9-8-7-6-5-4-3-2-1-0.live^
+||0-amazon.weebly.com^
+||0-amfc.firebaseapp.com^
+||0-whatsapp.com^
+||0.0.0.0forum.cryptonight.net^
+||0.0.0.0mailgate.cryptonight.net^
+||0.0.0.0ns10.cryptonight.net^
+||0.0.0.0ssl.cryptonight.net^
+||0.0.0assets.cryptonight.net^
+||0.0.0dbs.cryptonight.net^
+||0.0.0fileserver.cryptonight.net^
+||0.0.0mail3.cryptonight.net^
+||0.0.0ns6.cryptonight.net^
+||0.0.0t.cryptonight.net^
+||0.0.0wsus.cryptonight.net^
+||0.0l.cryptonight.net^
+||0.0mx03.cryptonight.net^
+||0.232.205.92.host.secureserver.net^
+||0.bgeneral0.repl.co^
+||0.fascinatingsciencemag.com^
+||0.feixue316p.cloudns.biz^
+||0.feixue317p.cloudns.biz^
+||0.feixue318p.cloudns.biz^
+||0.fres-news.com^
+||0.sciiaawuroyagu9524.workers.dev^
+||0.tecnodentalrd.com^
+||0.vsxmfkrvoipzs67.workers.dev^
+||0.xyasrhsju3235.workers.dev^
+||00-5fu.pages.dev^
+||00-663b30.ingress-daribow.ewp.live^
+||00-974a.duckdns.org^
+||00-c1aimn0w.com^
+||00.buh30-00.ru^
+||000-00-000-000000.pages.dev^
+||000-7yt65t564656ythygy.000webhostapp.com^
+||000.abreubueno91.repl.co^
+||0000-1t8.pages.dev^
+||0000.com.my^
+||0000.hopto.org^
+||00000--bancogeneral3.repl.co^
+||0000000000000000000000000.findyourjacket.com^
+||00000000000000000000000000000000000000000.xyz^
+||00000000000000000000000000000000000000dfjjjhv.000webhostapp.com^
+||00000000000000000000000056000005-102299.weeblysite.com^
+||000000000000000000gg.000webhostapp.com^
+||00000000000000000update.emy.ba^
+||000000000000000ooooo.000webhostapp.com^
+||0000000000c0.x9xcax2a.workers.dev^
+||000000000a0uutlook.weebly.com^
 ||onclkds.com^
 ||clksite.com^
 ||clkrev.com^
@@ -130,6 +180,56 @@
 ||amonetize.com^
 ||outbrowse.com^
 ||somoto.com^
+||0022a601.pphost.net^
+||111101111.ru^
+||123.ywxww.net^
+||132.red-81-42-249.staticip.rima-tde.net^
+||1717.1000uc.com^
+||176.190.153.160.host.secureserver.net^
+||178.248.3.202.ll.sta.mana.pf^
+||179.248.3.202.ll.sta.mana.pf^
+||1827897262.v.123pan.cn^
+||185-55-196-13.cprapid.com^
+||1oade4-zone.sunmeadow.garden^
+||2cfc0222.salamanderprocessing.pages.dev^
+||5un-drive.frosthaven.garden^
+||5urv3-layer.stoneflare.garden^
+||60aaf9c6.salamanderprocessing.pages.dev^
+||69sexy.duckdns.org^
+||99-118-215-24.lightspeed.irvnca.sbcglobal.net^
+||99194034-96-20180108171507.webstarterz.com^
+||a-gwo.pages.dev^
+||aaronart.com^
+||acaviationsupplies.com^
+||acc.jiangsujiaxue.com^
+||access.skaparade.com^
+||acms.saleseos.com^
+||adclick.g.doubleclick.net^
+||admin.byte.in.ua^
+||admin.gestroom.it^
+||airlife.bget.ru^
+||alarmline.com.br^
+||alineeleuterio.com.br^
+||allendostmen.com^
+||allister.ee^
+||alternativas.ru^
+||api.baimless.com^
+||api.ezilax.com^
+||apn-87-251-249-41.static.gprs.plus.pl^
+||app.appzcvb.com^
+||apple-service93.ru^
+||ardena.pro^
+||areyouready.co.za^
+||arrayterminal.shadowpeak.garden^
+||artacom.com.br^
+||asl-company.ru^
+||asse4-track.frosthaven.garden^
+||atasapka.com.tr^
+||atkcgnew.evgeni7e.beget.tech^
+||attach.mail.daum.net^
+||audicontadores.com^
+||augsburg-auto.com^
+||autobaenasl.com^
 ||coinhive.com^
 ||coinhiveproxy.com^
 ||authedmine.com^
