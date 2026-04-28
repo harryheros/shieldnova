@@ -5,7 +5,6 @@ ShieldNova is a curated **domain intelligence layer** for:
 - Privacy protection  
 - Ad blocking  
 - Security filtering  
-- Service-aware traffic handling  
 
 Designed with **high compatibility and minimal breakage** in mind, ShieldNova provides a reliable default protection layer for modern applications and networks.
 
@@ -87,51 +86,57 @@ Same coverage. One rule instead of five hundred.
 
 ---
 
-## Services (Traffic Routing)
-
-Domain sets for routing specific service traffic through proxy nodes.  
-These are **NOT blocking rules** — they identify service domains so your proxy tool can route them correctly.
-
-| Service | File |
-|---|---|
-| Amazon / AWS | `services/amazon.txt` |
-| Apple | `services/apple.txt` |
-| ChatGPT / OpenAI | `services/chatgpt.txt` |
-| Claude / Anthropic | `services/claude.txt` |
-| Disney+ | `services/disney.txt` |
-| GitHub | `services/github.txt` |
-| Google | `services/google.txt` |
-| Meta / Instagram | `services/meta.txt` |
-| Microsoft / Azure | `services/microsoft.txt` |
-| Netflix | `services/netflix.txt` |
-| Spotify | `services/spotify.txt` |
-| Telegram | `services/telegram.txt` |
-| TikTok | `services/tiktok.txt` |
-| WhatsApp | `services/whatsapp.txt` |
-| X (Twitter) | `services/twitter.txt` |
-| YouTube | `services/youtube.txt` |
-
-Subscribe URL pattern:
-```
-https://raw.githubusercontent.com/harryheros/shieldnova/main/dist/services/{service}.txt
-```
-
-For Surge/Shadowrocket/Clash/QX/Loon, use files under `formats/{tool}/services/`.
-
----
-
 ## Build & Architecture
 
-- Source rules: `src/`  
-- Generated output: `dist/`  
-- Multi-client formats: `formats/`  
+```text
+┌─────────────────────────────────────────────────┐
+│  Manual Rules (src/)                            │
+│  privacy / ads / security — hand-curated        │
+└──────────────────┬──────────────────────────────┘
+                   │
+┌──────────────────▼──────────────────────────────┐
+│  Threat Intel Fetch (monthly, automated)        │
+│  abuse.ch URLhaus / ThreatFox                   │
+│  Phishing.Database / NoCoin list                │
+│  → dedup → cap → append to src/security/        │
+└──────────────────┬──────────────────────────────┘
+                   │
+┌──────────────────▼──────────────────────────────┐
+│  Build Pipeline                                 │
+│  validate → normalize → dedup → allowlist       │
+│  → merge combos → generate 6 client formats     │
+└──────────────────┬──────────────────────────────┘
+                   │
+         ┌─────────┴──────────┐
+         ▼                    ▼
+┌─────────────────┐  ┌────────────────────┐
+│  dist/           │  │  formats/          │
+│  shieldnova-*   │  │  adguard / surge / │
+│  (AdGuard fmt)  │  │  clash / qx / loon │
+└─────────────────┘  └────────────────────┘
+```
 
-Features:
+### Automated Threat Intelligence
 
-- Rule validation and deduplication  
-- Allowlist override system  
-- Structured statistics output  
-- Multi-platform compatibility  
+ShieldNova's security module grows automatically via monthly feeds from:
+
+| Source | Type | Feed |
+|---|---|---|
+| abuse.ch URLhaus | Malware distribution | Active malware URLs |
+| abuse.ch ThreatFox | Malware C2 | Recent IOCs |
+| NoCoin | Cryptojacking | Mining service domains |
+| Phishing.Database | Phishing | Confirmed active phishing |
+
+Each fetch is capped (max 50 per source, 500 per file), deduplicated against all existing rules, and appended with full attribution. Growth is controlled and auditable.
+
+### Update Schedule
+
+| Trigger | Frequency | Action |
+|---|---|---|
+| Scheduled | Every Monday 02:00 UTC | Build only |
+| Scheduled | 1st of month 03:00 UTC | Threat intel fetch + build |
+| Manual | On demand | Build or fetch + build |
+| Failure | Automatic | Creates GitHub Issue |
 
 ---
 
@@ -148,8 +153,7 @@ Features:
 
 Override rules safely:
 
-- src/allowlist/core.txt  
-- src/allowlist/custom.txt  
+- `src/allowlist/core.txt` — domains listed here are excluded from all generated outputs
 
 ---
 
@@ -161,7 +165,7 @@ ShieldNova is part of the Nova infrastructure toolkit:
 |---|---|---|
 | [IPNova](https://github.com/harryheros/ipnova) | IP | Routing-aware IPv4 dataset for Asia-Pacific infrastructure classification and traffic control |
 | [DomainNova](https://github.com/harryheros/domainnova) | Domain (Data) | High-precision domain dataset for proxy routing and network intelligence |
-| **ShieldNova** | **Domain (Filter)** | **Domain intelligence for filtering, blocking & routing** |
+| **ShieldNova** | **Domain (Filter)** | **Compatibility-first domain intelligence for privacy, ad blocking, and security** |
 | [HarryWrt](https://github.com/harryheros/harrywrt) | Device | Clean OpenWrt-based firmware for x86_64 and aarch64 (BIOS & UEFI) |
 | [OSNova](https://github.com/harryheros/osnova) | System | System deployment and reinstallation engine for VPS and bare-metal servers |
 
@@ -173,6 +177,7 @@ ShieldNova is part of the Nova infrastructure toolkit:
 
 - **Personal use**: Free, no restrictions.
 - **Commercial use**: Requires a separate license. Contact via [GitHub Issues](https://github.com/harryheros/shieldnova/issues).
+
 ---
 
 Part of the [Nova infrastructure toolkit](https://github.com/harryheros).

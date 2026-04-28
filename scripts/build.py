@@ -12,7 +12,6 @@ Design goals:
 - Per-bundle statistics for maintenance visibility
 """
 
-import glob
 import json
 import os
 import re
@@ -218,27 +217,6 @@ def convert_rule(rule, tool):
     return None
 
 
-def convert_service_rule(rule, tool):
-    """Convert service routing rules — use PROXY instead of REJECT."""
-    domain = extract_domain(rule)
-    if not domain:
-        return None
-
-    if tool == 'adguard':
-        return f"||{domain}^"
-    if tool == 'surge':
-        return f"DOMAIN-SUFFIX,{domain},PROXY"
-    if tool == 'shadowrocket':
-        return f"DOMAIN-SUFFIX,{domain},PROXY"
-    if tool == 'loon':
-        return f"DOMAIN-SUFFIX,{domain},PROXY"
-    if tool == 'quantumultx':
-        return f"HOST-SUFFIX,{domain},proxy"
-    if tool == 'clash':
-        return f"DOMAIN-SUFFIX,{domain}"
-    return None
-
-
 def format_header_lines(title, description, count, tool, breakdown):
     date = utc_now()
     breakdown_text = ', '.join(f'{k}={v}' for k, v in breakdown.items() if v is not None)
@@ -286,18 +264,17 @@ def format_header_lines(title, description, count, tool, breakdown):
     ]
 
 
-def convert_rules_for_tool(rules, tool, is_service=False):
-    converter = convert_service_rule if is_service else convert_rule
+def convert_rules_for_tool(rules, tool):
     converted = []
     for rule in active_rules_only(rules):
-        converted_rule = converter(rule, tool)
+        converted_rule = convert_rule(rule, tool)
         if converted_rule:
             converted.append(converted_rule)
     return dedupe_preserve_order(converted)
 
 
-def write_format(tool, filename, title, description, rules, breakdown, is_service=False):
-    converted = convert_rules_for_tool(rules, tool, is_service=is_service)
+def write_format(tool, filename, title, description, rules, breakdown):
+    converted = convert_rules_for_tool(rules, tool)
     count = len(converted)
     filepath = os.path.join(FORMATS_DIR, tool, filename)
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
@@ -493,24 +470,6 @@ def build():
     write_dist('shieldnova-full-hktw.txt', full_hktw_title, full_hktw_desc, hktw_rules, hktw_breakdown)
     write_all_formats('shieldnova-full-hktw.txt', full_hktw_title, full_hktw_desc, hktw_rules, hktw_breakdown)
     bundles.append(bundle_stats('shieldnova-full-hktw.txt', full_hktw_title, full_hktw_desc, hktw_rules, hktw_breakdown))
-
-    # --- Services ---
-    services_dir = os.path.join(SRC_DIR, 'services')
-    if os.path.exists(services_dir):
-        for f in sorted(glob.glob(os.path.join(services_dir, '*.txt'))):
-            name = os.path.basename(f)
-            rules, invalid = normalize_rules(read_rules(f))
-            if invalid:
-                print(f'  WARNING: invalid service rules skipped in {name}: {len(invalid)}')
-            rules = compact_rule_block(rules)
-            service_name = os.path.splitext(name)[0].replace('-', ' ').title()
-            title = f'Services / {service_name}'
-            description = f'Domain set for {service_name} traffic routing.'
-            breakdown = OrderedDict([('service_rules', count_active_rules(rules))])
-
-            write_dist(f'services/{name}', title, description, rules, breakdown)
-            for tool in ('adguard', 'surge', 'shadowrocket', 'clash', 'quantumultx', 'loon'):
-                write_format(tool, f'services/{name}', title, description, rules, breakdown, is_service=True)
 
     report = OrderedDict([
         ('profile', 'Conservative / Compatibility-First'),

@@ -1,8 +1,0 @@
-! WhatsApp
-! Purpose: service-specific routing for proxy tools.
-! This is NOT a blocking list.
-
-||whatsapp.com^                           ! WhatsApp - main platform
-||whatsapp.net^                           ! WhatsApp - messaging infrastructure
-||web.whatsapp.com^                       ! WhatsApp Web
-||wa.me^                                  ! WhatsApp - short links
