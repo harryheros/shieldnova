@@ -1,0 +1,7 @@
+! Anthropic / Claude
+! Purpose: service-specific routing for proxy tools.
+! This is NOT a blocking list.
+
+||anthropic.com^                          ! Anthropic - main platform
+||claude.ai^                              ! Claude - AI assistant
+||api.anthropic.com^                      ! Anthropic - API endpoint

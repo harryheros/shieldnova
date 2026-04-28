@@ -1,0 +1,13 @@
+# ShieldNova - Services / Claude
+# Description: Domain set for Claude traffic routing.
+# Profile: Conservative / Compatibility-First
+# Author: Harry (https://github.com/harryheros)
+# Homepage: https://github.com/harryheros/shieldnova
+# License: CC BY-NC-SA 4.0
+# Built: 2026-04-28 00:14:00 UTC
+# Total: 3
+# Breakdown: service_rules=3
+
+HOST-SUFFIX,anthropic.com,proxy
+HOST-SUFFIX,claude.ai,proxy
+HOST-SUFFIX,api.anthropic.com,proxy

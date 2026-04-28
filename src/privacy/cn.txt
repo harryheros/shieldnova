@@ -41,5 +41,14 @@
 ||sensorsdata.cn^                         ! Sensors Data - behavioral analytics
 ||aldwx.com^                              ! Aldwx - WeChat mini-program analytics
 ||tdatamaster.com^                        ! TalkingData - data analytics
+
+! --- China A/B Testing & Data Platforms ---
+||volcengine.com^                         ! ByteDance Volcengine - cloud analytics
+||tongji.baidu.com^                       ! Baidu Tongji - web analytics dashboard
+||tj.gdt.qq.com^                          ! Tencent GDT - ad analytics
+||dataeye.com^                            ! DataEye - mobile game analytics
+||talkingdata.com^                        ! TalkingData - mobile analytics platform
+||tingyun.com^                            ! Tingyun - APM / performance monitoring
+
 ! NOTE: getui.com / igexin.com / jpush.cn NOT blocked — they handle
 ! push notifications for many China apps. Blocking causes missed messages.

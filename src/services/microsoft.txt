@@ -1,0 +1,25 @@
+! Microsoft Services
+! Purpose: service-specific routing for proxy tools.
+! This is NOT a blocking list.
+
+||microsoft.com^                          ! Microsoft - main platform
+||microsoftonline.com^                    ! Microsoft 365 auth
+||office.com^                             ! Microsoft Office
+||office365.com^                          ! Microsoft 365
+||live.com^                               ! Microsoft Live / Outlook
+||outlook.com^                            ! Outlook email
+||hotmail.com^                            ! Hotmail (legacy)
+||msn.com^                                ! MSN
+||bing.com^                               ! Bing search
+||azure.com^                              ! Azure cloud
+||azureedge.net^                          ! Azure CDN
+||windows.net^                            ! Azure storage
+||msauth.net^                             ! Microsoft auth
+||msftauth.net^                           ! Microsoft auth
+||onedrive.com^                           ! OneDrive
+||sharepoint.com^                         ! SharePoint
+||skype.com^                              ! Skype
+||linkedin.com^                           ! LinkedIn
+||github.com^                             ! GitHub (Microsoft)
+||visualstudio.com^                       ! Visual Studio
+||xbox.com^                               ! Xbox

@@ -1,0 +1,16 @@
+! Title: ShieldNova - Services / Twitter
+! Description: Domain set for Twitter traffic routing.
+! Profile: Conservative / Compatibility-First
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Built: 2026-04-28 00:14:00 UTC
+! Total: 6
+! Breakdown: service_rules=6
+
+||twitter.com^
+||x.com^
+||t.co^
+||twimg.com^
+||tweetdeck.com^
+||periscope.tv^

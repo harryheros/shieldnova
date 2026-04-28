@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-04-26 02:45:09 UTC
-! Total: 189
-! Breakdown: privacy_global=44, privacy_cn=24, ads_global=59, ads_cn=21, security=43, allowlist_removed=0
+! Built: 2026-04-28 00:14:00 UTC
+! Total: 207
+! Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=43, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -85,6 +85,24 @@
 ! --- Fingerprinting (pure fingerprinting, safe to block) ---
 ||fingerprintjs.com^                      ! FingerprintJS - browser fingerprinting
 ! CAPTCHAs and bot verification. Blocking prevents login on many sites.
+
+! --- Consent / Cookie Tracking ---
+||cookiebot.com^                          ! Cookiebot - cookie consent tracking
+||cookieinformation.com^                  ! Cookie Information - consent tracking
+||onetrust.com^                           ! OneTrust - privacy consent management
+||trustarc.com^                           ! TrustArc - privacy compliance tracking
+||cookielaw.org^                          ! OneTrust - cookie consent CDN
+
+! --- A/B Testing & Optimization ---
+||optimizely.com^                         ! Optimizely - A/B testing & experimentation
+||launchdarkly.com^                       ! LaunchDarkly - feature flag & experimentation
+||vwo.com^                                ! VWO - A/B testing & conversion optimization
+||abtasty.com^                            ! AB Tasty - A/B testing platform
+
+! --- Email Tracking ---
+||mailtrack.io^                           ! Mailtrack - email open tracking
+||yesware.com^                            ! Yesware - email tracking for sales
+||bananatag.com^                          ! Bananatag - email tracking
 ! ============================================================================
 ! ShieldNova - Advertising / Global Core
 ! Low-risk ad networks, exchanges, and ad-serving domains.
@@ -286,6 +304,15 @@
 ||sensorsdata.cn^                         ! Sensors Data - behavioral analytics
 ||aldwx.com^                              ! Aldwx - WeChat mini-program analytics
 ||tdatamaster.com^                        ! TalkingData - data analytics
+
+! --- China A/B Testing & Data Platforms ---
+||volcengine.com^                         ! ByteDance Volcengine - cloud analytics
+||tongji.baidu.com^                       ! Baidu Tongji - web analytics dashboard
+||tj.gdt.qq.com^                          ! Tencent GDT - ad analytics
+||dataeye.com^                            ! DataEye - mobile game analytics
+||talkingdata.com^                        ! TalkingData - mobile analytics platform
+||tingyun.com^                            ! Tingyun - APM / performance monitoring
+
 ! push notifications for many China apps. Blocking causes missed messages.
 ! ============================================================================
 ! ShieldNova - Advertising / China Mainland

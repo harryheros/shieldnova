@@ -1,0 +1,31 @@
+! Title: ShieldNova - Services / Microsoft
+! Description: Domain set for Microsoft traffic routing.
+! Profile: Conservative / Compatibility-First
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Built: 2026-04-28 00:14:00 UTC
+! Total: 21
+! Breakdown: service_rules=21
+
+||microsoft.com^
+||microsoftonline.com^
+||office.com^
+||office365.com^
+||live.com^
+||outlook.com^
+||hotmail.com^
+||msn.com^
+||bing.com^
+||azure.com^
+||azureedge.net^
+||windows.net^
+||msauth.net^
+||msftauth.net^
+||onedrive.com^
+||sharepoint.com^
+||skype.com^
+||linkedin.com^
+||github.com^
+||visualstudio.com^
+||xbox.com^
