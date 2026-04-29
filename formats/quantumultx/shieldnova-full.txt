@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-28 15:33:33 UTC
-# Total: 256
-# Breakdown: privacy=56, ads=59, security=143, allowlist_removed=0
+# Built: 2026-04-29 23:33:55 UTC
+# Total: 266
+# Breakdown: privacy=56, ads=59, security=243, allowlist_removed=0
 
 HOST-SUFFIX,google-analytics.com,reject
 HOST-SUFFIX,googletagmanager.com,reject
@@ -230,6 +230,16 @@ HOST-SUFFIX,attach.mail.daum.net,reject
 HOST-SUFFIX,audicontadores.com,reject
 HOST-SUFFIX,augsburg-auto.com,reject
 HOST-SUFFIX,autobaenasl.com,reject
+HOST-SUFFIX,199.98.88.92.rev.sfr.net,reject
+HOST-SUFFIX,6352.grov9essa.garden,reject
+HOST-SUFFIX,9takl.grov9essa.garden,reject
+HOST-SUFFIX,ante4pathgate.lo4miren.bet,reject
+HOST-SUFFIX,arknex1ix.flo5renth.garden,reject
+HOST-SUFFIX,avbackup.acionline.de,reject
+HOST-SUFFIX,backupso.com,reject
+HOST-SUFFIX,bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link,reject
+HOST-SUFFIX,bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link,reject
+HOST-SUFFIX,bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link,reject
 HOST-SUFFIX,coinhive.com,reject
 HOST-SUFFIX,coinhiveproxy.com,reject
 HOST-SUFFIX,authedmine.com,reject

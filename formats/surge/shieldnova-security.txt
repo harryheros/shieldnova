@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-28 15:33:33 UTC
-# Total: 143
-# Breakdown: phishing=52, malware=57, cryptojacking=34, allowlist_removed=0
+# Built: 2026-04-29 23:33:55 UTC
+# Total: 153
+# Breakdown: phishing=102, malware=107, cryptojacking=34, allowlist_removed=0
 
 DOMAIN-SUFFIX,16shop.co,REJECT
 DOMAIN-SUFFIX,logincdn.net,REJECT
@@ -117,6 +117,16 @@ DOMAIN-SUFFIX,attach.mail.daum.net,REJECT
 DOMAIN-SUFFIX,audicontadores.com,REJECT
 DOMAIN-SUFFIX,augsburg-auto.com,REJECT
 DOMAIN-SUFFIX,autobaenasl.com,REJECT
+DOMAIN-SUFFIX,199.98.88.92.rev.sfr.net,REJECT
+DOMAIN-SUFFIX,6352.grov9essa.garden,REJECT
+DOMAIN-SUFFIX,9takl.grov9essa.garden,REJECT
+DOMAIN-SUFFIX,ante4pathgate.lo4miren.bet,REJECT
+DOMAIN-SUFFIX,arknex1ix.flo5renth.garden,REJECT
+DOMAIN-SUFFIX,avbackup.acionline.de,REJECT
+DOMAIN-SUFFIX,backupso.com,REJECT
+DOMAIN-SUFFIX,bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link,REJECT
+DOMAIN-SUFFIX,bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link,REJECT
+DOMAIN-SUFFIX,bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link,REJECT
 DOMAIN-SUFFIX,coinhive.com,REJECT
 DOMAIN-SUFFIX,coinhiveproxy.com,REJECT
 DOMAIN-SUFFIX,authedmine.com,REJECT

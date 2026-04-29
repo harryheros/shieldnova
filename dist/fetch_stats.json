@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-04-28 15:33:31 UTC",
+  "fetched_at": "2026-04-29 23:33:54 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "ok",
-      "raw": 621,
+      "raw": 580,
       "new": 50,
       "capped_at": 50
     },
@@ -20,7 +20,7 @@
     },
     "phishing_database": {
       "status": "ok",
-      "raw": 385168,
+      "raw": 385169,
       "new": 50,
       "capped_at": 50
     }

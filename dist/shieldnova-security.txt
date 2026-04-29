@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-04-28 15:33:33 UTC
-! Total: 143
-! Breakdown: phishing=52, malware=57, cryptojacking=34, allowlist_removed=0
+! Built: 2026-04-29 23:33:55 UTC
+! Total: 153
+! Breakdown: phishing=102, malware=107, cryptojacking=34, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Security / Phishing
@@ -74,6 +74,8 @@
 ||000000000000000ooooo.000webhostapp.com^                           ! auto: phishing
 ||0000000000c0.x9xcax2a.workers.dev^                           ! auto: phishing
 ||000000000a0uutlook.weebly.com^                           ! auto: phishing
+
+! --- Auto-fetched from phishing (2026-04-29) ---
 ! ============================================================================
 ! ShieldNova - Security / Malware
 ! Malware distribution infrastructure with ZERO legitimate use cases.
@@ -142,6 +144,18 @@
 ||audicontadores.com^                           ! auto: malware
 ||augsburg-auto.com^                           ! auto: malware
 ||autobaenasl.com^                           ! auto: malware
+
+! --- Auto-fetched from malware (2026-04-29) ---
+||199.98.88.92.rev.sfr.net^                           ! auto: malware
+||6352.grov9essa.garden^                           ! auto: malware
+||9takl.grov9essa.garden^                           ! auto: malware
+||ante4pathgate.lo4miren.bet^                           ! auto: malware
+||arknex1ix.flo5renth.garden^                           ! auto: malware
+||avbackup.acionline.de^                           ! auto: malware
+||backupso.com^                           ! auto: malware
+||bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link^                           ! auto: malware
+||bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link^                           ! auto: malware
+||bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link^                           ! auto: malware
 ! ============================================================================
 ! ShieldNova - Security / Cryptojacking
 ! Conservative blocklist for well-known browser mining infrastructure.
