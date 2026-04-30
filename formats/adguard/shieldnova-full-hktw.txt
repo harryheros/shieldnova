@@ -4,9 +4,9 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-30 16:22:05 UTC
-! Total: 667
-! Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=554, deduped_total=667, allowlist_removed=0
+! Built: 2026-04-30 21:47:44 UTC
+! Total: 767
+! Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=654, deduped_total=767, allowlist_removed=0
 
 ||google-analytics.com^
 ||googletagmanager.com^
@@ -373,6 +373,56 @@
 ||006t-rshyktuaerhetjr6yk7tl6tmyrntbref.vercel.app^
 ||007-c1z.pages.dev^
 ||0070e26e-ac97-4dd9-a7c9-08cb4d2b1678.id.repl.co^
+||007168-00.000webhostapp.com^
+||007595d4969707fd4a3543145addf49b-dot-gle9392420309493993.rj.r.appspot.com^
+||0076678.com^
+||007954335-reviewpagepages.pages.dev^
+||007a5701-5600-455b-84dc-c684b82e196b.s3.ap-northeast-2.amazonaws.com^
+||007k7.com^
+||007ligneorange.weebly.com^
+||007sbw.cn^
+||007wa.xyz^
+||00800.vip^
+||008008.cc^
+||008009989987890007.co.vu^
+||00808.vip^
+||00828.liye19960713.workers.dev^
+||00829.cc^
+||008491133.cloudns.nz^
+||0085ccc098789.pages.dev^
+||0085vip00.com^
+||0086a.shop^
+||008753331120.com^
+||00877.cc^
+||0087b3k.pages.dev^
+||008ecdda.encrypted.pages.dev^
+||008f5c4e.doekeopsmn.cloud^
+||008h-7yughbesfdt87y8useifiuhsjkg.vercel.app^
+||008kp.cc^
+||009-288-49.weeblysite.com^
+||009190-securepage.000webhostapp.com^
+||0094059000293htjkm.000webhostapp.com^
+||00941.webflow.io^
+||00976.weebly.com^
+||009812kivip.top^
+||00987.ru.com^
+||0099.amazoonz.net^
+||00998.90009.repl.co^
+||009987lk.weebly.com^
+||0099887.com^
+||009988r3sucursalactivaciones.brizy.site^
+||0099extuyafeliciades092.c1.biz^
+||0099xxy78.weebly.com^
+||009bb11405fa5b694a9f9915bc2acf38-dot-gle9392420309493993.rj.r.appspot.com^
+||009bf6e1.fei124970841.cn^
+||009krewamz.duckdns.org^
+||009verf-desj.com^
+||009voicemaill-009listenhereahxhfsaf.us-east-1.linodeobjects.com^
+||00accountmxspotfy.com^
+||00alt.za.com^
+||00as4h7vjwum3i.53244ds.xyz^
+||00ato-mygov-0-au.duckdns.org.fix-02bug.duckdns.org^
+||00banc0we8pichi.000webhostapp.com^
 ||onclkds.com^
 ||clksite.com^
 ||clkrev.com^
@@ -641,6 +691,56 @@
 ||fukt.link^
 ||furystaff.tech^
 ||fz.tiansys.cn^
+||aumri.ae^
+||backmeshsite.undo-wingless.bet^
+||basehostunit.technic2lweak.bet^
+||bblissmassage.com^
+||chip9siteview.technic2lweak.bet^
+||core8taskhub.technic2lweak.bet^
+||cut2taskhub.dismemb7harlot.bet^
+||dash2taskhub.expresser-pray.bet^
+||data2pathgate.everfo7mat.bet^
+||datehostunit.years-quackery.bet^
+||dialkwik.in^
+||diskmeshnode.everfo7mat.bet^
+||drop5pathgate.dismemb7harlot.bet^
+||fakehostunit.kutsy-proquac.bet^
+||fast7logicway.expresser-pray.bet^
+||firm4pathgate.technic2lweak.bet^
+||flowhostunit.expresser-pray.bet^
+||form9logicnet.everfo7mat.bet^
+||full7siteview.everfo7mat.bet^
+||gadomamada.com^
+||galeri3.arkitera.com^
+||galerisenimutiara.com^
+||geo-foundation.vg^
+||gist.githubusercontent.com^
+||github.com^
+||gitlab.com^
+||globalbank.us^
+||globaltechbilling.com^
+||google-services.cc^
+||grantexx.gr^
+||greenf.alexion.rs^
+||grupomcperu.com^
+||gtps4change.org^
+||gutando.com^
+||haeum.nfile.net^
+||halfmillion-iq.com^
+||hardmeshnode.technic2lweak.bet^
+||hasalltalent.com^
+||hcsnet.com.br^
+||heyleny2.dothome.co.kr^
+||hhbs.hhu.edu.cn^
+||hitman-pro.ru^
+||hitstation.nl^
+||hnjgdl.geps.glodon.com^
+||hobobot.net^
+||homecaremovers.com^
+||horion-static.pages.dev^
+||host-195-103-203-106.business.telecomitalia.it^
+||host-95-230-215-65.business.telecomitalia.it^
+||host-95-255-114-11.business.telecomitalia.it^
 ||coinhive.com^
 ||coinhiveproxy.com^
 ||authedmine.com^
