@@ -4,9 +4,9 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-29 23:33:55 UTC
+! Built: 2026-04-30 03:24:38 UTC
 ! Total: 317
-! Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=243, allowlist_removed=0
+! Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=153, deduped_total=317, allowlist_removed=0
 
 ||google-analytics.com^
 ||googletagmanager.com^

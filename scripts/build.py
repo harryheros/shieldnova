@@ -31,38 +31,117 @@ HEADER_TEMPLATE = """! Title: ShieldNova - {title}
 SRC_DIR = os.path.join(os.path.dirname(__file__), '..', 'src')
 DIST_DIR = os.path.join(os.path.dirname(__file__), '..', 'dist')
 FORMATS_DIR = os.path.join(os.path.dirname(__file__), '..', 'formats')
-DOMAIN_RE = re.compile(r'^\|\|([A-Za-z0-9.-]+)\^(?:\$.*)?$')
 
+RULE_RE = re.compile(r'^\|\|(?P<domain>[^\^\s]+)\^(?P<options>\$[^\s!]+)?$')
+LABEL_RE = re.compile(r'^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$')
+IPV4_RE = re.compile(r'^(?:\d{1,3}\.){3}\d{1,3}$')
+
+
+# ── Generic helpers ─────────────────────────────────────────────────────────
 
 def utc_now():
     return datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
 
 
+def split_inline_comment(line):
+    """Return (content, comment) for a rule line while preserving inline notes."""
+    if '!' not in line:
+        return line.rstrip(), ''
+    content, comment = line.split('!', 1)
+    return content.rstrip(), '!' + comment.rstrip()
+
+
+def parse_rule(rule):
+    """Parse an AdGuard-style domain rule into canonical parts."""
+    content, comment = split_inline_comment(rule.strip())
+    match = RULE_RE.match(content)
+    if not match:
+        return None
+
+    domain = match.group('domain').lower().strip('.')
+    options = match.group('options') or ''
+    if not is_valid_domain(domain):
+        return None
+
+    return {
+        'domain': domain,
+        'options': options,
+        'comment': comment,
+        'rule': f'||{domain}^{options}',
+    }
+
+
+def is_valid_domain(domain):
+    """Validate ordinary and punycode DNS names; reject IPs and malformed labels."""
+    domain = domain.lower().strip('.')
+    if not domain or len(domain) > 253:
+        return False
+    if IPV4_RE.match(domain):
+        return False
+    if '..' in domain or '.' not in domain:
+        return False
+
+    labels = domain.split('.')
+    if any(not LABEL_RE.match(label) for label in labels):
+        return False
+
+    tld = labels[-1]
+    if len(tld) < 2:
+        return False
+    if tld.startswith('xn--'):
+        return True
+    return tld.isalpha()
+
+
+def format_rule(parsed, comment_column=44):
+    """Render a normalized rule while keeping the project's annotation style."""
+    rule = parsed['rule']
+    comment = parsed.get('comment', '')
+    if not comment:
+        return rule
+    padding = ' ' * max(1, comment_column - len(rule))
+    return f'{rule}{padding}{comment}'
+
+
+def rule_key(line):
+    parsed = parse_rule(line)
+    return parsed['rule'] if parsed else None
+
+
+# ── File loading and validation ─────────────────────────────────────────────
+
 def read_rules(filepath):
-    """Read a rule file while stripping file-level metadata headers."""
+    """Read a rule file while stripping generated file-level metadata headers."""
     rules = []
     if not os.path.exists(filepath):
         return rules
+
+    generated_headers = (
+        '! Title:', '! Description:', '! Author:', '! Homepage:',
+        '! License:', '! Updated:', '! Built:', '! Total:',
+        '! STATUS:', '! NOTE:', '! PURPOSE:', '! Profile:',
+        '! Breakdown:'
+    )
+
     with open(filepath, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.rstrip('\n')
-            if line.startswith((
-                '! Title:', '! Description:', '! Author:', '! Homepage:',
-                '! License:', '! Updated:', '! Built:', '! Total:',
-                '! STATUS:', '! NOTE:', '! PURPOSE:', '! Profile:',
-                '! Breakdown:'
-            )):
+            if line.startswith(generated_headers):
                 continue
             rules.append(line)
     return rules
 
 
 def count_active_rules(rules):
-    return sum(1 for r in rules if r.strip() and not r.strip().startswith(('!', '#')))
+    return sum(1 for r in rules if rule_key(r))
+
+
+def count_unique_rules(rules):
+    return len({key for key in (rule_key(r) for r in rules) if key})
 
 
 def active_rules_only(rules):
-    return [r.strip() for r in rules if r.strip() and not r.strip().startswith(('!', '#'))]
+    return [r.strip() for r in rules if rule_key(r)]
 
 
 def dedupe_preserve_order(items):
@@ -76,39 +155,34 @@ def dedupe_preserve_order(items):
 
 
 def extract_domain(rule):
-    rule = rule.strip()
-    if '!' in rule:
-        rule = rule.split('!', 1)[0].rstrip()
-    m = DOMAIN_RE.match(rule)
-    if not m:
-        return None
-    return m.group(1).lower()
+    parsed = parse_rule(rule)
+    return parsed['domain'] if parsed else None
 
 
 def validate_rule(rule):
-    domain = extract_domain(rule)
-    if not domain:
-        return False
-    if '..' in domain or domain.startswith('.') or domain.endswith('.'):
-        return False
-    return True
+    return parse_rule(rule) is not None
 
 
 def normalize_rules(rules):
+    """Normalize valid rules, keep comments/blanks, and report invalid active lines."""
     cleaned = []
     invalid = []
+
     for line in rules:
         stripped = line.strip()
         if not stripped:
             cleaned.append('')
             continue
-        if stripped.startswith('!'):
+        if stripped.startswith(('!', '#')):
             cleaned.append(line.rstrip())
             continue
-        if validate_rule(stripped):
-            cleaned.append(stripped)
+
+        parsed = parse_rule(stripped)
+        if parsed:
+            cleaned.append(format_rule(parsed))
         else:
             invalid.append(stripped)
+
     return cleaned, invalid
 
 
@@ -119,16 +193,18 @@ def load_allowlist():
         os.path.join(SRC_DIR, 'allowlist', 'custom.txt'),
     ]:
         allow_rules += read_rules(candidate)
-    return {r for r in active_rules_only(allow_rules) if validate_rule(r)}
+    return {key for key in (rule_key(r) for r in allow_rules) if key}
 
 
 def apply_allowlist(rules, allow_rules):
     if not allow_rules:
         return rules, 0
+
     filtered = []
     removed = 0
     for rule in rules:
-        if rule.strip() and not rule.strip().startswith('!') and rule.strip() in allow_rules:
+        key = rule_key(rule)
+        if key and key in allow_rules:
             removed += 1
             continue
         filtered.append(rule)
@@ -140,6 +216,7 @@ def compact_rule_block(rules):
     output = []
     seen_rules = set()
     previous_blank = True
+
     for line in rules:
         stripped = line.strip()
         if not stripped:
@@ -148,29 +225,31 @@ def compact_rule_block(rules):
             previous_blank = True
             continue
 
-        if stripped.startswith('!'):
+        if stripped.startswith(('!', '#')):
             output.append(line.rstrip())
             previous_blank = False
             continue
 
-        # Extract just the rule part (before inline comment) for dedup
-        rule_part = stripped.split('!', 1)[0].rstrip() if '!' in stripped else stripped
-        if rule_part not in seen_rules:
-            output.append(stripped)
-            seen_rules.add(rule_part)
+        key = rule_key(stripped)
+        if not key:
+            continue
+        if key not in seen_rules:
+            parsed = parse_rule(stripped)
+            output.append(format_rule(parsed))
+            seen_rules.add(key)
         previous_blank = False
 
-    if output and output[-1] != '':
-        return output
     while output and output[-1] == '':
         output.pop()
     return output
 
 
 def format_breakdown(breakdown):
-    parts = [f"{k}={v}" for k, v in breakdown.items() if v is not None]
+    parts = [f'{k}={v}' for k, v in breakdown.items() if v is not None]
     return '! Breakdown: ' + ', '.join(parts)
 
+
+# ── Writers ─────────────────────────────────────────────────────────────────
 
 def write_dist(filename, title, description, rules, breakdown):
     count = count_active_rules(rules)
@@ -188,7 +267,7 @@ def write_dist(filename, title, description, rules, breakdown):
         f.write(header.strip() + '\n\n')
         if rules:
             f.write('\n'.join(rules) + '\n')
-    print(f"  Built dist: {filename} ({count} rules)")
+    print(f'  Built dist: {filename} ({count} rules)')
 
 
 def convert_rule(rule, tool):
@@ -197,23 +276,13 @@ def convert_rule(rule, tool):
         return None
 
     if tool == 'adguard':
-        # AdGuard native syntax: ||domain.com^
-        return f"||{domain}^"
-    if tool == 'surge':
-        # Surge: DOMAIN-SUFFIX,domain.com,REJECT
-        return f"DOMAIN-SUFFIX,{domain},REJECT"
-    if tool == 'shadowrocket':
-        # Shadowrocket: DOMAIN-SUFFIX,domain.com,REJECT
-        return f"DOMAIN-SUFFIX,{domain},REJECT"
-    if tool == 'loon':
-        # Loon: DOMAIN-SUFFIX,domain.com,REJECT
-        return f"DOMAIN-SUFFIX,{domain},REJECT"
+        return f'||{domain}^'
+    if tool in ('surge', 'shadowrocket', 'loon'):
+        return f'DOMAIN-SUFFIX,{domain},REJECT'
     if tool == 'quantumultx':
-        # Quantumult X: HOST-SUFFIX,domain.com,reject
-        return f"HOST-SUFFIX,{domain},reject"
+        return f'HOST-SUFFIX,{domain},reject'
     if tool == 'clash':
-        # Clash: DOMAIN-SUFFIX,domain.com (action defined in proxy group, not inline)
-        return f"DOMAIN-SUFFIX,{domain}"
+        return f'DOMAIN-SUFFIX,{domain}'
     return None
 
 
@@ -222,45 +291,42 @@ def format_header_lines(title, description, count, tool, breakdown):
     breakdown_text = ', '.join(f'{k}={v}' for k, v in breakdown.items() if v is not None)
 
     if tool == 'adguard':
-        # AdGuard uses ! for comments
         return [
-            f"! Title: ShieldNova - {title}",
-            f"! Description: {description}",
-            "! Profile: Conservative / Compatibility-First",
-            "! Author: Harry (https://github.com/harryheros)",
-            "! Homepage: https://github.com/harryheros/shieldnova",
-            "! License: CC BY-NC-SA 4.0",
-            f"! Built: {date}",
-            f"! Total: {count}",
-            f"! Breakdown: {breakdown_text}",
+            f'! Title: ShieldNova - {title}',
+            f'! Description: {description}',
+            '! Profile: Conservative / Compatibility-First',
+            '! Author: Harry (https://github.com/harryheros)',
+            '! Homepage: https://github.com/harryheros/shieldnova',
+            '! License: CC BY-NC-SA 4.0',
+            f'! Built: {date}',
+            f'! Total: {count}',
+            f'! Breakdown: {breakdown_text}',
         ]
 
     if tool == 'clash':
-        # Clash YAML uses # for comments, needs payload: key
         return [
-            f"# ShieldNova - {title}",
-            f"# Description: {description}",
-            "# Profile: Conservative / Compatibility-First",
-            "# Author: Harry (https://github.com/harryheros)",
-            "# Homepage: https://github.com/harryheros/shieldnova",
-            "# License: CC BY-NC-SA 4.0",
-            f"# Built: {date}",
-            f"# Total: {count}",
-            f"# Breakdown: {breakdown_text}",
-            "payload:",
+            f'# ShieldNova - {title}',
+            f'# Description: {description}',
+            '# Profile: Conservative / Compatibility-First',
+            '# Author: Harry (https://github.com/harryheros)',
+            '# Homepage: https://github.com/harryheros/shieldnova',
+            '# License: CC BY-NC-SA 4.0',
+            f'# Built: {date}',
+            f'# Total: {count}',
+            f'# Breakdown: {breakdown_text}',
+            'payload:',
         ]
 
-    # Surge, Shadowrocket, Quantumult X, Loon all use # for comments
     return [
-        f"# ShieldNova - {title}",
-        f"# Description: {description}",
-        "# Profile: Conservative / Compatibility-First",
-        "# Author: Harry (https://github.com/harryheros)",
-        "# Homepage: https://github.com/harryheros/shieldnova",
-        "# License: CC BY-NC-SA 4.0",
-        f"# Built: {date}",
-        f"# Total: {count}",
-        f"# Breakdown: {breakdown_text}",
+        f'# ShieldNova - {title}',
+        f'# Description: {description}',
+        '# Profile: Conservative / Compatibility-First',
+        '# Author: Harry (https://github.com/harryheros)',
+        '# Homepage: https://github.com/harryheros/shieldnova',
+        '# License: CC BY-NC-SA 4.0',
+        f'# Built: {date}',
+        f'# Total: {count}',
+        f'# Breakdown: {breakdown_text}',
     ]
 
 
@@ -285,11 +351,11 @@ def write_format(tool, filename, title, description, rules, breakdown):
         f.write('\n'.join(header_lines) + '\n\n')
         if tool == 'clash':
             for rule in converted:
-                f.write(f"  - {rule}\n")
+                f.write(f'  - {rule}\n')
         elif converted:
             f.write('\n'.join(converted) + '\n')
 
-    print(f"  Built {tool}: {filename} ({count} rules)")
+    print(f'  Built {tool}: {filename} ({count} rules)')
 
 
 def write_all_formats(filename, title, description, rules, breakdown):
@@ -334,40 +400,33 @@ def write_stats_report(report):
     print('  Built dist: stats.md')
 
 
+# ── Build pipeline ──────────────────────────────────────────────────────────
+
 def build():
-    print("ShieldNova Build")
-    print("=" * 50)
+    print('ShieldNova Build')
+    print('=' * 50)
 
     os.makedirs(DIST_DIR, exist_ok=True)
     os.makedirs(FORMATS_DIR, exist_ok=True)
 
     allow_rules = load_allowlist()
 
-    # --- Source files ---
-    privacy_core = read_rules(os.path.join(SRC_DIR, 'privacy', 'core.txt'))
-    privacy_cn = read_rules(os.path.join(SRC_DIR, 'privacy', 'cn.txt'))
-    privacy_hktw = read_rules(os.path.join(SRC_DIR, 'privacy', 'hktw.txt'))
-    ads_core = read_rules(os.path.join(SRC_DIR, 'advertising', 'core.txt'))
-    ads_cn = read_rules(os.path.join(SRC_DIR, 'advertising', 'cn.txt'))
-    ads_hktw = read_rules(os.path.join(SRC_DIR, 'advertising', 'hktw.txt'))
-    sec_phishing = read_rules(os.path.join(SRC_DIR, 'security', 'phishing.txt'))
-    sec_malware = read_rules(os.path.join(SRC_DIR, 'security', 'malware.txt'))
-    sec_crypto = read_rules(os.path.join(SRC_DIR, 'security', 'cryptojacking.txt'))
+    source_paths = OrderedDict([
+        ('privacy_core', os.path.join(SRC_DIR, 'privacy', 'core.txt')),
+        ('privacy_cn', os.path.join(SRC_DIR, 'privacy', 'cn.txt')),
+        ('privacy_hktw', os.path.join(SRC_DIR, 'privacy', 'hktw.txt')),
+        ('ads_core', os.path.join(SRC_DIR, 'advertising', 'core.txt')),
+        ('ads_cn', os.path.join(SRC_DIR, 'advertising', 'cn.txt')),
+        ('ads_hktw', os.path.join(SRC_DIR, 'advertising', 'hktw.txt')),
+        ('sec_phishing', os.path.join(SRC_DIR, 'security', 'phishing.txt')),
+        ('sec_malware', os.path.join(SRC_DIR, 'security', 'malware.txt')),
+        ('sec_crypto', os.path.join(SRC_DIR, 'security', 'cryptojacking.txt')),
+    ])
 
     invalid_rules = []
     normalized_sources = {}
-    for name, rules in {
-        'privacy_core': privacy_core,
-        'privacy_cn': privacy_cn,
-        'privacy_hktw': privacy_hktw,
-        'ads_core': ads_core,
-        'ads_cn': ads_cn,
-        'ads_hktw': ads_hktw,
-        'sec_phishing': sec_phishing,
-        'sec_malware': sec_malware,
-        'sec_crypto': sec_crypto,
-    }.items():
-        normalized, invalid = normalize_rules(rules)
+    for name, path in source_paths.items():
+        normalized, invalid = normalize_rules(read_rules(path))
         normalized_sources[name] = normalized
         invalid_rules.extend(f'{name}: {rule}' for rule in invalid)
 
@@ -386,7 +445,6 @@ def build():
     sec_malware = normalized_sources['sec_malware']
     sec_crypto = normalized_sources['sec_crypto']
 
-    # --- Individual module outputs ---
     bundles = []
 
     def finalize_rules(rules):
@@ -397,7 +455,7 @@ def build():
     privacy_title = 'Privacy Protection'
     privacy_desc = 'Low-risk analytics, attribution, fingerprinting, and telemetry blocking.'
     privacy_rules, privacy_allow_removed = finalize_rules(privacy_core)
-    privacy_breakdown = OrderedDict([('privacy', count_active_rules(privacy_core)), ('allowlist_removed', privacy_allow_removed)])
+    privacy_breakdown = OrderedDict([('privacy', count_active_rules(privacy_rules)), ('allowlist_removed', privacy_allow_removed)])
     write_dist('shieldnova-privacy.txt', privacy_title, privacy_desc, privacy_rules, privacy_breakdown)
     write_all_formats('shieldnova-privacy.txt', privacy_title, privacy_desc, privacy_rules, privacy_breakdown)
     bundles.append(bundle_stats('shieldnova-privacy.txt', privacy_title, privacy_desc, privacy_rules, privacy_breakdown))
@@ -405,7 +463,7 @@ def build():
     ads_title = 'Ads Protection'
     ads_desc = 'Low-risk ad networks, exchanges, and ad-serving domains.'
     ads_rules, ads_allow_removed = finalize_rules(ads_core)
-    ads_breakdown = OrderedDict([('ads', count_active_rules(ads_core)), ('allowlist_removed', ads_allow_removed)])
+    ads_breakdown = OrderedDict([('ads', count_active_rules(ads_rules)), ('allowlist_removed', ads_allow_removed)])
     write_dist('shieldnova-ads.txt', ads_title, ads_desc, ads_rules, ads_breakdown)
     write_all_formats('shieldnova-ads.txt', ads_title, ads_desc, ads_rules, ads_breakdown)
     bundles.append(bundle_stats('shieldnova-ads.txt', ads_title, ads_desc, ads_rules, ads_breakdown))
@@ -415,24 +473,25 @@ def build():
     security_source = sec_phishing + sec_malware + sec_crypto
     security_rules, security_allow_removed = finalize_rules(security_source)
     security_breakdown = OrderedDict([
-        ('phishing', count_active_rules(sec_phishing)),
-        ('malware', count_active_rules(sec_malware)),
-        ('cryptojacking', count_active_rules(sec_crypto)),
+        ('phishing', count_unique_rules(sec_phishing)),
+        ('malware', count_unique_rules(sec_malware)),
+        ('cryptojacking', count_unique_rules(sec_crypto)),
+        ('deduped_total', count_active_rules(security_rules)),
         ('allowlist_removed', security_allow_removed),
     ])
     write_dist('shieldnova-security.txt', security_title, security_desc, security_rules, security_breakdown)
     write_all_formats('shieldnova-security.txt', security_title, security_desc, security_rules, security_breakdown)
     bundles.append(bundle_stats('shieldnova-security.txt', security_title, security_desc, security_rules, security_breakdown))
 
-    # --- Full combos ---
     global_source = privacy_core + ads_core + sec_phishing + sec_malware + sec_crypto
     global_rules, global_allow_removed = finalize_rules(global_source)
     full_title = 'Full (Global)'
     full_desc = 'Complete protection with a conservative compatibility-first profile.'
     global_breakdown = OrderedDict([
-        ('privacy', count_active_rules(privacy_core)),
-        ('ads', count_active_rules(ads_core)),
-        ('security', count_active_rules(sec_phishing + sec_malware + sec_crypto)),
+        ('privacy', count_unique_rules(privacy_core)),
+        ('ads', count_unique_rules(ads_core)),
+        ('security', count_active_rules(security_rules)),
+        ('deduped_total', count_active_rules(global_rules)),
         ('allowlist_removed', global_allow_removed),
     ])
     write_dist('shieldnova-full.txt', full_title, full_desc, global_rules, global_breakdown)
@@ -444,11 +503,12 @@ def build():
     full_cn_title = 'Full (China Mainland)'
     full_cn_desc = 'Complete protection with additional China mainland trackers and ad domains.'
     cn_breakdown = OrderedDict([
-        ('privacy_global', count_active_rules(privacy_core)),
-        ('privacy_cn', count_active_rules(privacy_cn)),
-        ('ads_global', count_active_rules(ads_core)),
-        ('ads_cn', count_active_rules(ads_cn)),
-        ('security', count_active_rules(sec_phishing + sec_malware + sec_crypto)),
+        ('privacy_global', count_unique_rules(privacy_core)),
+        ('privacy_cn', count_unique_rules(privacy_cn)),
+        ('ads_global', count_unique_rules(ads_core)),
+        ('ads_cn', count_unique_rules(ads_cn)),
+        ('security', count_active_rules(security_rules)),
+        ('deduped_total', count_active_rules(cn_rules)),
         ('allowlist_removed', cn_allow_removed),
     ])
     write_dist('shieldnova-full-cn.txt', full_cn_title, full_cn_desc, cn_rules, cn_breakdown)
@@ -460,11 +520,12 @@ def build():
     full_hktw_title = 'Full (Hong Kong & Taiwan)'
     full_hktw_desc = 'Complete protection with additional Hong Kong and Taiwan domains.'
     hktw_breakdown = OrderedDict([
-        ('privacy_global', count_active_rules(privacy_core)),
-        ('privacy_hktw', count_active_rules(privacy_hktw)),
-        ('ads_global', count_active_rules(ads_core)),
-        ('ads_hktw', count_active_rules(ads_hktw)),
-        ('security', count_active_rules(sec_phishing + sec_malware + sec_crypto)),
+        ('privacy_global', count_unique_rules(privacy_core)),
+        ('privacy_hktw', count_unique_rules(privacy_hktw)),
+        ('ads_global', count_unique_rules(ads_core)),
+        ('ads_hktw', count_unique_rules(ads_hktw)),
+        ('security', count_active_rules(security_rules)),
+        ('deduped_total', count_active_rules(hktw_rules)),
         ('allowlist_removed', hktw_allow_removed),
     ])
     write_dist('shieldnova-full-hktw.txt', full_hktw_title, full_hktw_desc, hktw_rules, hktw_breakdown)
@@ -480,7 +541,7 @@ def build():
     ])
     write_stats_report(report)
 
-    print("\nDone.")
+    print('\nDone.')
 
 
 if __name__ == '__main__':

@@ -23,141 +23,193 @@ Usage:
   python3 scripts/fetch_threat_intel.py [--dry-run]
 """
 
+import csv
+import ipaddress
 import json
 import os
 import re
 import sys
-import urllib.request
 import urllib.error
+import urllib.parse
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
 # ── Config ──────────────────────────────────────────────────────────────────
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-SRC_DIR = REPO_ROOT / "src"
-STATS_FILE = REPO_ROOT / "dist" / "fetch_stats.json"
+SRC_DIR = REPO_ROOT / 'src'
+STATS_FILE = REPO_ROOT / 'dist' / 'fetch_stats.json'
 
-# Max new domains to add per source per run (prevents runaway growth)
 MAX_PER_SOURCE = 50
-
-# Max total domains per security file (hard cap)
 MAX_PER_FILE = 500
+DRY_RUN = '--dry-run' in sys.argv
 
-DRY_RUN = "--dry-run" in sys.argv
-
-# Domain validation regex
-DOMAIN_RE = re.compile(
-    r'^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$'
-)
+LABEL_RE = re.compile(r'^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$')
+HOSTS_PREFIX_RE = re.compile(r'^(?:0\.0\.0\.0|127\.0\.0\.1|::1)\s+')
 
 # ── Upstream Sources ────────────────────────────────────────────────────────
 
 SOURCES = {
-    "urlhaus": {
-        "url": "https://urlhaus.abuse.ch/downloads/text_online/",
-        "target": "malware",
-        "description": "abuse.ch URLhaus - active malware distribution URLs",
+    'urlhaus': {
+        'url': 'https://urlhaus.abuse.ch/downloads/text_online/',
+        'target': 'malware',
+        'description': 'abuse.ch URLhaus - active malware distribution URLs',
     },
-    "threatfox": {
-        "url": "https://threatfox.abuse.ch/export/csv/recent/",
-        "target": "malware",
-        "description": "abuse.ch ThreatFox - recent malware IOCs",
+    'threatfox': {
+        'url': 'https://threatfox.abuse.ch/export/csv/recent/',
+        'target': 'malware',
+        'description': 'abuse.ch ThreatFox - recent malware IOCs',
     },
-    "nocoin": {
-        "url": "https://raw.githubusercontent.com/nicehash/NoCoin/master/src/nocoin-list.txt",
-        "target": "cryptojacking",
-        "description": "NoCoin - browser mining domain list",
+    'nocoin': {
+        'url': 'https://raw.githubusercontent.com/nicehash/NoCoin/master/src/nocoin-list.txt',
+        'target': 'cryptojacking',
+        'description': 'NoCoin - browser mining domain list',
     },
-    "phishing_database": {
-        "url": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt",
-        "target": "phishing",
-        "description": "Phishing.Database - confirmed active phishing domains",
+    'phishing_database': {
+        'url': 'https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt',
+        'target': 'phishing',
+        'description': 'Phishing.Database - confirmed active phishing domains',
     },
+}
+
+TARGET_FILES = {
+    'malware': SRC_DIR / 'security' / 'malware.txt',
+    'cryptojacking': SRC_DIR / 'security' / 'cryptojacking.txt',
+    'phishing': SRC_DIR / 'security' / 'phishing.txt',
 }
 
 
 # ── Helpers ─────────────────────────────────────────────────────────────────
 
 def log(msg: str):
-    print(f"[fetch] {msg}")
+    print(f'[fetch] {msg}')
 
 
 def fetch_url(url: str, timeout: int = 30) -> str:
     """Fetch URL content as text. Returns empty string on failure."""
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "ShieldNova/1.0"})
+        req = urllib.request.Request(url, headers={'User-Agent': 'ShieldNova/1.0'})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return resp.read().decode("utf-8", errors="replace")
+            return resp.read().decode('utf-8', errors='replace')
     except (urllib.error.URLError, OSError, TimeoutError) as e:
-        log(f"  WARN: failed to fetch {url}: {e}")
-        return ""
+        log(f'  WARN: failed to fetch {url}: {e}')
+        return ''
 
 
-def extract_domain(url_or_line: str) -> str:
-    """Extract a clean domain from a URL or raw line."""
-    line = url_or_line.strip().lower()
+def is_valid_domain(domain: str) -> bool:
+    domain = domain.lower().strip('.')
+    if not domain or len(domain) > 253 or '..' in domain or '.' not in domain:
+        return False
 
-    # Skip comments and empty
-    if not line or line.startswith("#") or line.startswith("//") or line.startswith(";"):
-        return ""
+    try:
+        ipaddress.ip_address(domain)
+        return False
+    except ValueError:
+        pass
 
-    # Remove protocol
-    for prefix in ("https://", "http://", "||", "@@||"):
+    labels = domain.split('.')
+    if any(not LABEL_RE.match(label) for label in labels):
+        return False
+
+    tld = labels[-1]
+    if len(tld) < 2:
+        return False
+    if tld.startswith('xn--'):
+        return True
+    return tld.isalpha()
+
+
+def strip_rule_syntax(value: str) -> str:
+    line = value.strip().lower()
+    if not line:
+        return ''
+
+    # Drop inline comments before parsing rule-like text.
+    for marker in (' #', ' ;'):
+        if marker in line:
+            line = line.split(marker, 1)[0].strip()
+    if '!' in line and not line.startswith('!'):
+        line = line.split('!', 1)[0].strip()
+
+    # Hosts-file syntax: "0.0.0.0 example.com" or "127.0.0.1 example.com".
+    line = HOSTS_PREFIX_RE.sub('', line).strip()
+    if ' ' in line or '\t' in line:
+        tokens = [token for token in re.split(r'\s+', line) if token]
+        line = tokens[-1] if tokens else ''
+
+    for prefix in ('@@||', '||'):
         if line.startswith(prefix):
             line = line[len(prefix):]
 
-    # Remove path, port, trailing markers
-    line = line.split("/")[0].split(":")[0].split("^")[0].split("$")[0]
+    if line.startswith('*.'):
+        line = line[2:]
 
-    # Remove leading/trailing dots
-    line = line.strip(".")
+    # URL-aware parsing is safer than splitting blindly on ':', because ports
+    # and schemes may both be present in upstream feeds.
+    if '://' in line:
+        parsed = urllib.parse.urlsplit(line)
+        line = parsed.hostname or ''
+    else:
+        line = line.split('/')[0].split('^')[0].split('$')[0]
+        if ':' in line:
+            line = line.split(':', 1)[0]
 
-    # Validate
-    if DOMAIN_RE.match(line) and "." in line:
-        return line
-    return ""
+    return line.strip().strip('.')
+
+
+def extract_domain(url_or_line: str) -> str:
+    """Extract a clean domain from a URL, hosts entry, or AdGuard-style rule."""
+    line = url_or_line.strip()
+    if not line or line.startswith(('#', '//', ';', '!')):
+        return ''
+
+    domain = strip_rule_syntax(line)
+    if is_valid_domain(domain):
+        return domain
+    return ''
 
 
 def load_existing_domains() -> set:
-    """Load all domains from all src/ rule files to deduplicate against."""
+    """Load all domains from src/ rule files, including inline-commented rules."""
     existing = set()
-    for txt_file in SRC_DIR.rglob("*.txt"):
-        with open(txt_file, "r", encoding="utf-8") as f:
+    for txt_file in SRC_DIR.rglob('*.txt'):
+        with open(txt_file, 'r', encoding='utf-8') as f:
             for line in f:
-                line = line.strip()
-                if line.startswith("||") and line.endswith("^"):
-                    domain = line[2:-1].split("^")[0]
-                    existing.add(domain.lower())
+                domain = extract_domain(line)
+                if domain:
+                    existing.add(domain)
     return existing
 
 
 def load_file_domain_count(filepath: Path) -> int:
-    """Count active rules in a file."""
     if not filepath.exists():
         return 0
-    count = 0
-    with open(filepath, "r", encoding="utf-8") as f:
+    domains = set()
+    with open(filepath, 'r', encoding='utf-8') as f:
         for line in f:
-            if line.strip().startswith("||"):
-                count += 1
-    return count
+            domain = extract_domain(line)
+            if domain:
+                domains.add(domain)
+    return len(domains)
 
 
 def append_domains(filepath: Path, domains: list, source_name: str):
     """Append new domains to a source file with attribution comment."""
-    if not domains:
+    unique_domains = sorted(set(domains))
+    if not unique_domains:
         return
-    with open(filepath, "a", encoding="utf-8") as f:
+
+    with open(filepath, 'a', encoding='utf-8') as f:
         f.write(f"\n! --- Auto-fetched from {source_name} ({datetime.now(timezone.utc).strftime('%Y-%m-%d')}) ---\n")
-        for domain in sorted(domains):
-            f.write(f"||{domain}^                           ! auto: {source_name}\n")
+        for domain in unique_domains:
+            rule = f'||{domain}^'
+            f.write(f'{rule:<44}! auto: {source_name}\n')
 
 
 # ── Source Parsers ──────────────────────────────────────────────────────────
 
 def parse_urlhaus(content: str) -> set:
-    """Parse URLhaus online URL list → extract unique domains."""
     domains = set()
     for line in content.splitlines():
         domain = extract_domain(line)
@@ -167,22 +219,21 @@ def parse_urlhaus(content: str) -> set:
 
 
 def parse_threatfox(content: str) -> set:
-    """Parse ThreatFox CSV → extract domains from IOC column."""
     domains = set()
-    for line in content.splitlines():
-        if line.startswith("#") or line.startswith('"'):
+    for row in csv.reader(content.splitlines()):
+        if not row or row[0].startswith('#'):
             continue
-        parts = line.split(",")
-        if len(parts) >= 3:
-            ioc = parts[2].strip().strip('"')
-            domain = extract_domain(ioc)
+        # ThreatFox CSV has IOC value in column 3 in current exports; scan the
+        # row defensively so the parser survives minor upstream schema changes.
+        for cell in row[2:]:
+            domain = extract_domain(cell)
             if domain:
                 domains.add(domain)
+                break
     return domains
 
 
 def parse_nocoin(content: str) -> set:
-    """Parse NoCoin list → extract domains."""
     domains = set()
     for line in content.splitlines():
         domain = extract_domain(line)
@@ -192,7 +243,6 @@ def parse_nocoin(content: str) -> set:
 
 
 def parse_phishing_database(content: str) -> set:
-    """Parse Phishing.Database active list → extract domains."""
     domains = set()
     for line in content.splitlines():
         domain = extract_domain(line)
@@ -202,132 +252,114 @@ def parse_phishing_database(content: str) -> set:
 
 
 PARSERS = {
-    "urlhaus": parse_urlhaus,
-    "threatfox": parse_threatfox,
-    "nocoin": parse_nocoin,
-    "phishing_database": parse_phishing_database,
-}
-
-# ── File mapping ────────────────────────────────────────────────────────────
-
-TARGET_FILES = {
-    "malware": SRC_DIR / "security" / "malware.txt",
-    "cryptojacking": SRC_DIR / "security" / "cryptojacking.txt",
-    "phishing": SRC_DIR / "security" / "phishing.txt",
+    'urlhaus': parse_urlhaus,
+    'threatfox': parse_threatfox,
+    'nocoin': parse_nocoin,
+    'phishing_database': parse_phishing_database,
 }
 
 
 # ── Main ────────────────────────────────────────────────────────────────────
 
 def main():
-    log("ShieldNova Threat Intelligence Fetch")
-    log("=" * 50)
+    log('ShieldNova Threat Intelligence Fetch')
+    log('=' * 50)
 
     if DRY_RUN:
-        log("*** DRY-RUN MODE — no files will be modified ***")
+        log('*** DRY-RUN MODE — no files will be modified ***')
 
-    # Load existing rules for dedup
     existing = load_existing_domains()
-    log(f"Loaded {len(existing)} existing domains across all modules")
+    log(f'Loaded {len(existing)} existing domains across all modules')
 
     stats = {
-        "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
-        "dry_run": DRY_RUN,
-        "sources": {},
+        'fetched_at': datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC'),
+        'dry_run': DRY_RUN,
+        'sources': {},
     }
 
-    # Track new domains per target file
-    new_by_target: dict[str, list] = {t: [] for t in TARGET_FILES}
+    new_by_target: dict[str, list] = {target: [] for target in TARGET_FILES}
 
     for source_name, source_config in SOURCES.items():
-        url = source_config["url"]
-        target = source_config["target"]
-        description = source_config["description"]
+        url = source_config['url']
+        target = source_config['target']
+        description = source_config['description']
 
-        log(f"\nFetching: {description}")
-        log(f"  URL: {url}")
+        log(f'\nFetching: {description}')
+        log(f'  URL: {url}')
 
         content = fetch_url(url)
         if not content:
-            stats["sources"][source_name] = {"status": "fetch_failed", "new": 0}
+            stats['sources'][source_name] = {'status': 'fetch_failed', 'new': 0}
             continue
 
-        # Parse
         parser = PARSERS[source_name]
         raw_domains = parser(content)
-        log(f"  Parsed: {len(raw_domains)} raw domains")
+        log(f'  Parsed: {len(raw_domains)} raw domains')
 
-        # Deduplicate against existing
-        new_domains = [d for d in raw_domains if d not in existing]
-        log(f"  New (after dedup): {len(new_domains)}")
+        new_domains = sorted(d for d in raw_domains if d not in existing)
+        log(f'  New (after dedup): {len(new_domains)}')
 
-        # Check file cap
         target_file = TARGET_FILES[target]
         current_count = load_file_domain_count(target_file)
-        remaining_capacity = MAX_PER_FILE - current_count
+        already_queued = len(set(new_by_target[target]))
+        remaining_capacity = MAX_PER_FILE - current_count - already_queued
 
         if remaining_capacity <= 0:
-            log(f"  SKIP: {target_file.name} already at cap ({current_count}/{MAX_PER_FILE})")
-            stats["sources"][source_name] = {
-                "status": "file_cap_reached",
-                "raw": len(raw_domains),
-                "new": 0,
+            log(f'  SKIP: {target_file.name} already at cap ({current_count}/{MAX_PER_FILE})')
+            stats['sources'][source_name] = {
+                'status': 'file_cap_reached',
+                'raw': len(raw_domains),
+                'new': 0,
             }
             continue
 
-        # Cap per source per run
         cap = min(MAX_PER_SOURCE, remaining_capacity)
         if len(new_domains) > cap:
-            log(f"  Capped: {len(new_domains)} → {cap}")
-            new_domains = sorted(new_domains)[:cap]
+            log(f'  Capped: {len(new_domains)} → {cap}')
+            new_domains = new_domains[:cap]
 
-        # Add to target batch
         new_by_target[target].extend(new_domains)
+        existing.update(new_domains)
 
-        # Add to existing set to prevent cross-source duplicates within same run
-        for d in new_domains:
-            existing.add(d)
-
-        stats["sources"][source_name] = {
-            "status": "ok",
-            "raw": len(raw_domains),
-            "new": len(new_domains),
-            "capped_at": cap,
+        stats['sources'][source_name] = {
+            'status': 'ok',
+            'raw': len(raw_domains),
+            'new': len(new_domains),
+            'capped_at': cap,
         }
-        log(f"  Will add: {len(new_domains)} to {target_file.name}")
+        log(f'  Will add: {len(new_domains)} to {target_file.name}')
 
-    # Write results
     total_added = 0
     for target, domains in new_by_target.items():
+        domains = sorted(set(domains))
         if not domains:
             continue
         target_file = TARGET_FILES[target]
         if DRY_RUN:
-            log(f"\n[DRY-RUN] Would append {len(domains)} domains to {target_file.name}")
-            for d in sorted(domains)[:10]:
-                log(f"  + {d}")
+            log(f'\n[DRY-RUN] Would append {len(domains)} domains to {target_file.name}')
+            for d in domains[:10]:
+                log(f'  + {d}')
             if len(domains) > 10:
-                log(f"  ... and {len(domains) - 10} more")
+                log(f'  ... and {len(domains) - 10} more')
         else:
             append_domains(target_file, domains, target)
-            log(f"\nAppended {len(domains)} domains to {target_file.name}")
+            log(f'\nAppended {len(domains)} domains to {target_file.name}')
         total_added += len(domains)
 
-    stats["total_added"] = total_added
+    stats['total_added'] = total_added
 
-    # Write stats
     if not DRY_RUN:
         os.makedirs(STATS_FILE.parent, exist_ok=True)
-        with open(STATS_FILE.parent / "fetch_stats.json", "w", encoding="utf-8") as f:
+        with open(STATS_FILE, 'w', encoding='utf-8') as f:
             json.dump(stats, f, indent=2)
-        log(f"\nStats written to dist/fetch_stats.json")
+        log('\nStats written to dist/fetch_stats.json')
 
     log(f"\n{'=' * 50}")
-    log(f"Total new domains added: {total_added}")
-    log("Done.")
+    log(f'Total new domains added: {total_added}')
+    log('Done.')
 
     return 0
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     sys.exit(main())
