@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-30 14:13:13 UTC
-# Total: 466
-# Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=353, deduped_total=466, allowlist_removed=0
+# Built: 2026-04-30 15:04:58 UTC
+# Total: 567
+# Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=454, deduped_total=567, allowlist_removed=0
 payload:
 
   - DOMAIN-SUFFIX,google-analytics.com
@@ -274,6 +274,56 @@ payload:
   - DOMAIN-SUFFIX,000wechost.000webhostapp.com
   - DOMAIN-SUFFIX,000wuwtg000ywwtvwt0y.networkmcn.com
   - DOMAIN-SUFFIX,000xxxbodddxx00.webcindario.com
+  - DOMAIN-SUFFIX,000yahoo.weebly.com
+  - DOMAIN-SUFFIX,000zc.000webhostapp.com
+  - DOMAIN-SUFFIX,001-a3s.pages.dev
+  - DOMAIN-SUFFIX,001-a6j.pages.dev
+  - DOMAIN-SUFFIX,001-eca.pages.dev
+  - DOMAIN-SUFFIX,001.1614214972.workers.dev
+  - DOMAIN-SUFFIX,001.9zhmn1k5.workers.dev
+  - DOMAIN-SUFFIX,001.gamecc.workers.dev
+  - DOMAIN-SUFFIX,00100.zzzly0925.workers.dev
+  - DOMAIN-SUFFIX,00100601120140002.cf
+  - DOMAIN-SUFFIX,00100601120140009.ml
+  - DOMAIN-SUFFIX,00104.github.io
+  - DOMAIN-SUFFIX,00110000.com
+  - DOMAIN-SUFFIX,001107018.studentserver.com.au
+  - DOMAIN-SUFFIX,00110omeopranslateslentldetext.godaddysites.com
+  - DOMAIN-SUFFIX,001114.itabankk.repl.co
+  - DOMAIN-SUFFIX,001122102120.duckdns.org
+  - DOMAIN-SUFFIX,00112378.com
+  - DOMAIN-SUFFIX,0011thu001-secondary.z1.web.core.windows.net
+  - DOMAIN-SUFFIX,0012-107647.weeblysite.com
+  - DOMAIN-SUFFIX,0012b3a1.89dduvdjsi.shop
+  - DOMAIN-SUFFIX,0013009.com
+  - DOMAIN-SUFFIX,001420990998183-dot-wetransfer-auth-file-342.appspot.com
+  - DOMAIN-SUFFIX,0014555.000webhostapp.com
+  - DOMAIN-SUFFIX,00155.cn
+  - DOMAIN-SUFFIX,0016948.bancoteafirma.repl.co
+  - DOMAIN-SUFFIX,00169763258316485.eu-gb.cf.appdomain.cloud
+  - DOMAIN-SUFFIX,00186.shop
+  - DOMAIN-SUFFIX,00186e.com
+  - DOMAIN-SUFFIX,001892.com
+  - DOMAIN-SUFFIX,001983878188731stea8a1a0.myclickfunnels.com
+  - DOMAIN-SUFFIX,001codashop.freefire-work.duckdns.org
+  - DOMAIN-SUFFIX,001dreamery.sa.com
+  - DOMAIN-SUFFIX,001fzh.corvettesandbids.com
+  - DOMAIN-SUFFIX,001imbrier.sa.com
+  - DOMAIN-SUFFIX,001kp.cc
+  - DOMAIN-SUFFIX,001madhankumar.github.io
+  - DOMAIN-SUFFIX,001molluscan.ru.com
+  - DOMAIN-SUFFIX,001myacct.weebly.com
+  - DOMAIN-SUFFIX,001tr3nsf00.com
+  - DOMAIN-SUFFIX,001user.moonfruit.com
+  - DOMAIN-SUFFIX,001xsnews.cn
+  - DOMAIN-SUFFIX,002-auto5eposlt.me
+  - DOMAIN-SUFFIX,002-bj9.pages.dev
+  - DOMAIN-SUFFIX,002.195533.xyz
+  - DOMAIN-SUFFIX,00223.cc
+  - DOMAIN-SUFFIX,0023-1--soporte2023co00.repl.co
+  - DOMAIN-SUFFIX,002321.cn
+  - DOMAIN-SUFFIX,00272781hubpointmicrosoft.myportfolio.com
+  - DOMAIN-SUFFIX,002gltz1wz1ltltz1w0wltw02gtz1.trackfiz.net
   - DOMAIN-SUFFIX,onclkds.com
   - DOMAIN-SUFFIX,clksite.com
   - DOMAIN-SUFFIX,clkrev.com
@@ -441,6 +491,57 @@ payload:
   - DOMAIN-SUFFIX,data.yhydl.com
   - DOMAIN-SUFFIX,dcrun.co.uk
   - DOMAIN-SUFFIX,dcwblida.dz
+  - DOMAIN-SUFFIX,3yd5.dark-salittle.bet
+  - DOMAIN-SUFFIX,5ignal8-forge.dark-salittle.bet
+  - DOMAIN-SUFFIX,67mvmowu.belief-handcraft.bet
+  - DOMAIN-SUFFIX,781q.convinc8mission.bet
+  - DOMAIN-SUFFIX,8ugxvfg.decommiss-mint.bet
+  - DOMAIN-SUFFIX,agropole.tg
+  - DOMAIN-SUFFIX,amb3-cache.retellin8tolle.bet
+  - DOMAIN-SUFFIX,asiaengrs.com
+  - DOMAIN-SUFFIX,atomchec.belief-handcraft.bet
+  - DOMAIN-SUFFIX,bdecgtb.coraprimat0sis.bet
+  - DOMAIN-SUFFIX,clos-aut.dis9ualescapes.bet
+  - DOMAIN-SUFFIX,coralasargetia.ro
+  - DOMAIN-SUFFIX,crimefreesoftware.com
+  - DOMAIN-SUFFIX,d90aaos.dis9ualescapes.bet
+  - DOMAIN-SUFFIX,darkdelivery.convinc8mission.bet
+  - DOMAIN-SUFFIX,deathmatchuk.com
+  - DOMAIN-SUFFIX,def163.keenetic.pro
+  - DOMAIN-SUFFIX,delp-heizungsbau.de
+  - DOMAIN-SUFFIX,derekludlow.com
+  - DOMAIN-SUFFIX,dexios.co.za
+  - DOMAIN-SUFFIX,dezcom.com
+  - DOMAIN-SUFFIX,dhnconstrucciones.com.ar
+  - DOMAIN-SUFFIX,dindong.tos-cn-hongkong.volces.com
+  - DOMAIN-SUFFIX,disk.accord1key.cn
+  - DOMAIN-SUFFIX,divvanews.com
+  - DOMAIN-SUFFIX,dl.1003b.56a.com
+  - DOMAIN-SUFFIX,dl.360safe.com
+  - DOMAIN-SUFFIX,dl.dzqzd.com
+  - DOMAIN-SUFFIX,dl.ijinshan.com
+  - DOMAIN-SUFFIX,dl.natgo.cn
+  - DOMAIN-SUFFIX,dlied6.bytes.tcdnos.com
+  - DOMAIN-SUFFIX,dlied6.yz.tcdnos.com
+  - DOMAIN-SUFFIX,do-dear.com
+  - DOMAIN-SUFFIX,doc.e-statements.app
+  - DOMAIN-SUFFIX,docs.google.com
+  - DOMAIN-SUFFIX,donkeytourscroatia.com
+  - DOMAIN-SUFFIX,down.54nb.com
+  - DOMAIN-SUFFIX,down.ftp21.cc
+  - DOMAIN-SUFFIX,down.fwqlt.com
+  - DOMAIN-SUFFIX,down.mvip8.ru
+  - DOMAIN-SUFFIX,down.pcclear.com
+  - DOMAIN-SUFFIX,down.qqfarmer.com.cn
+  - DOMAIN-SUFFIX,down10d.zol.com.cn
+  - DOMAIN-SUFFIX,downali.game.uc.cn
+  - DOMAIN-SUFFIX,download.caihong.com
+  - DOMAIN-SUFFIX,download.doumaibiji.cn
+  - DOMAIN-SUFFIX,download.haozip.com
+  - DOMAIN-SUFFIX,download.kaobeitu.com
+  - DOMAIN-SUFFIX,download.kbcard.com
+  - DOMAIN-SUFFIX,download.pdf00.cn
+  - DOMAIN-SUFFIX,socket.io
   - DOMAIN-SUFFIX,coinhive.com
   - DOMAIN-SUFFIX,coinhiveproxy.com
   - DOMAIN-SUFFIX,authedmine.com

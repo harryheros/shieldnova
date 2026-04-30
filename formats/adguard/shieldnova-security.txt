@@ -4,9 +4,9 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-30 14:13:13 UTC
-! Total: 353
-! Breakdown: phishing=152, malware=167, cryptojacking=34, deduped_total=353, allowlist_removed=0
+! Built: 2026-04-30 15:04:58 UTC
+! Total: 454
+! Breakdown: phishing=202, malware=218, cryptojacking=34, deduped_total=454, allowlist_removed=0
 
 ||16shop.co^
 ||logincdn.net^
@@ -160,6 +160,56 @@
 ||000wechost.000webhostapp.com^
 ||000wuwtg000ywwtvwt0y.networkmcn.com^
 ||000xxxbodddxx00.webcindario.com^
+||000yahoo.weebly.com^
+||000zc.000webhostapp.com^
+||001-a3s.pages.dev^
+||001-a6j.pages.dev^
+||001-eca.pages.dev^
+||001.1614214972.workers.dev^
+||001.9zhmn1k5.workers.dev^
+||001.gamecc.workers.dev^
+||00100.zzzly0925.workers.dev^
+||00100601120140002.cf^
+||00100601120140009.ml^
+||00104.github.io^
+||00110000.com^
+||001107018.studentserver.com.au^
+||00110omeopranslateslentldetext.godaddysites.com^
+||001114.itabankk.repl.co^
+||001122102120.duckdns.org^
+||00112378.com^
+||0011thu001-secondary.z1.web.core.windows.net^
+||0012-107647.weeblysite.com^
+||0012b3a1.89dduvdjsi.shop^
+||0013009.com^
+||001420990998183-dot-wetransfer-auth-file-342.appspot.com^
+||0014555.000webhostapp.com^
+||00155.cn^
+||0016948.bancoteafirma.repl.co^
+||00169763258316485.eu-gb.cf.appdomain.cloud^
+||00186.shop^
+||00186e.com^
+||001892.com^
+||001983878188731stea8a1a0.myclickfunnels.com^
+||001codashop.freefire-work.duckdns.org^
+||001dreamery.sa.com^
+||001fzh.corvettesandbids.com^
+||001imbrier.sa.com^
+||001kp.cc^
+||001madhankumar.github.io^
+||001molluscan.ru.com^
+||001myacct.weebly.com^
+||001tr3nsf00.com^
+||001user.moonfruit.com^
+||001xsnews.cn^
+||002-auto5eposlt.me^
+||002-bj9.pages.dev^
+||002.195533.xyz^
+||00223.cc^
+||0023-1--soporte2023co00.repl.co^
+||002321.cn^
+||00272781hubpointmicrosoft.myportfolio.com^
+||002gltz1wz1ltltz1w0wltw02gtz1.trackfiz.net^
 ||onclkds.com^
 ||clksite.com^
 ||clkrev.com^
@@ -327,6 +377,57 @@
 ||data.yhydl.com^
 ||dcrun.co.uk^
 ||dcwblida.dz^
+||3yd5.dark-salittle.bet^
+||5ignal8-forge.dark-salittle.bet^
+||67mvmowu.belief-handcraft.bet^
+||781q.convinc8mission.bet^
+||8ugxvfg.decommiss-mint.bet^
+||agropole.tg^
+||amb3-cache.retellin8tolle.bet^
+||asiaengrs.com^
+||atomchec.belief-handcraft.bet^
+||bdecgtb.coraprimat0sis.bet^
+||clos-aut.dis9ualescapes.bet^
+||coralasargetia.ro^
+||crimefreesoftware.com^
+||d90aaos.dis9ualescapes.bet^
+||darkdelivery.convinc8mission.bet^
+||deathmatchuk.com^
+||def163.keenetic.pro^
+||delp-heizungsbau.de^
+||derekludlow.com^
+||dexios.co.za^
+||dezcom.com^
+||dhnconstrucciones.com.ar^
+||dindong.tos-cn-hongkong.volces.com^
+||disk.accord1key.cn^
+||divvanews.com^
+||dl.1003b.56a.com^
+||dl.360safe.com^
+||dl.dzqzd.com^
+||dl.ijinshan.com^
+||dl.natgo.cn^
+||dlied6.bytes.tcdnos.com^
+||dlied6.yz.tcdnos.com^
+||do-dear.com^
+||doc.e-statements.app^
+||docs.google.com^
+||donkeytourscroatia.com^
+||down.54nb.com^
+||down.ftp21.cc^
+||down.fwqlt.com^
+||down.mvip8.ru^
+||down.pcclear.com^
+||down.qqfarmer.com.cn^
+||down10d.zol.com.cn^
+||downali.game.uc.cn^
+||download.caihong.com^
+||download.doumaibiji.cn^
+||download.haozip.com^
+||download.kaobeitu.com^
+||download.kbcard.com^
+||download.pdf00.cn^
+||socket.io^
 ||coinhive.com^
 ||coinhiveproxy.com^
 ||authedmine.com^

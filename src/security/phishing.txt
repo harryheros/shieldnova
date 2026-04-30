@@ -172,3 +172,55 @@
 ||000wechost.000webhostapp.com^             ! auto: phishing
 ||000wuwtg000ywwtvwt0y.networkmcn.com^      ! auto: phishing
 ||000xxxbodddxx00.webcindario.com^          ! auto: phishing
+
+! --- Auto-fetched from phishing (2026-04-30) ---
+||000yahoo.weebly.com^                      ! auto: phishing
+||000zc.000webhostapp.com^                  ! auto: phishing
+||001-a3s.pages.dev^                        ! auto: phishing
+||001-a6j.pages.dev^                        ! auto: phishing
+||001-eca.pages.dev^                        ! auto: phishing
+||001.1614214972.workers.dev^               ! auto: phishing
+||001.9zhmn1k5.workers.dev^                 ! auto: phishing
+||001.gamecc.workers.dev^                   ! auto: phishing
+||00100.zzzly0925.workers.dev^              ! auto: phishing
+||00100601120140002.cf^                     ! auto: phishing
+||00100601120140009.ml^                     ! auto: phishing
+||00104.github.io^                          ! auto: phishing
+||00110000.com^                             ! auto: phishing
+||001107018.studentserver.com.au^           ! auto: phishing
+||00110omeopranslateslentldetext.godaddysites.com^! auto: phishing
+||001114.itabankk.repl.co^                  ! auto: phishing
+||001122102120.duckdns.org^                 ! auto: phishing
+||00112378.com^                             ! auto: phishing
+||0011thu001-secondary.z1.web.core.windows.net^! auto: phishing
+||0012-107647.weeblysite.com^               ! auto: phishing
+||0012b3a1.89dduvdjsi.shop^                 ! auto: phishing
+||0013009.com^                              ! auto: phishing
+||001420990998183-dot-wetransfer-auth-file-342.appspot.com^! auto: phishing
+||0014555.000webhostapp.com^                ! auto: phishing
+||00155.cn^                                 ! auto: phishing
+||0016948.bancoteafirma.repl.co^            ! auto: phishing
+||00169763258316485.eu-gb.cf.appdomain.cloud^! auto: phishing
+||00186.shop^                               ! auto: phishing
+||00186e.com^                               ! auto: phishing
+||001892.com^                               ! auto: phishing
+||001983878188731stea8a1a0.myclickfunnels.com^! auto: phishing
+||001codashop.freefire-work.duckdns.org^    ! auto: phishing
+||001dreamery.sa.com^                       ! auto: phishing
+||001fzh.corvettesandbids.com^              ! auto: phishing
+||001imbrier.sa.com^                        ! auto: phishing
+||001kp.cc^                                 ! auto: phishing
+||001madhankumar.github.io^                 ! auto: phishing
+||001molluscan.ru.com^                      ! auto: phishing
+||001myacct.weebly.com^                     ! auto: phishing
+||001tr3nsf00.com^                          ! auto: phishing
+||001user.moonfruit.com^                    ! auto: phishing
+||001xsnews.cn^                             ! auto: phishing
+||002-auto5eposlt.me^                       ! auto: phishing
+||002-bj9.pages.dev^                        ! auto: phishing
+||002.195533.xyz^                           ! auto: phishing
+||00223.cc^                                 ! auto: phishing
+||0023-1--soporte2023co00.repl.co^          ! auto: phishing
+||002321.cn^                                ! auto: phishing
+||00272781hubpointmicrosoft.myportfolio.com^! auto: phishing
+||002gltz1wz1ltltz1w0wltw02gtz1.trackfiz.net^! auto: phishing

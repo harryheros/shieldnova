@@ -1,17 +1,17 @@
 {
-  "fetched_at": "2026-04-30 06:24:14 UTC",
+  "fetched_at": "2026-04-30 15:04:54 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "ok",
-      "raw": 612,
+      "raw": 609,
       "new": 50,
       "capped_at": 50
     },
     "threatfox": {
       "status": "ok",
-      "raw": 0,
-      "new": 0,
+      "raw": 1,
+      "new": 1,
       "capped_at": 50
     },
     "nocoin": {
@@ -25,5 +25,5 @@
       "capped_at": 50
     }
   },
-  "total_added": 100
+  "total_added": 101
 }

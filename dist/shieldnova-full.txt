@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-04-30 14:13:13 UTC
-! Total: 466
-! Breakdown: privacy=56, ads=59, security=353, deduped_total=466, allowlist_removed=0
+! Built: 2026-04-30 15:04:58 UTC
+! Total: 567
+! Breakdown: privacy=56, ads=59, security=454, deduped_total=567, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -353,6 +353,58 @@
 ||000wechost.000webhostapp.com^             ! auto: phishing
 ||000wuwtg000ywwtvwt0y.networkmcn.com^      ! auto: phishing
 ||000xxxbodddxx00.webcindario.com^          ! auto: phishing
+
+! --- Auto-fetched from phishing (2026-04-30) ---
+||000yahoo.weebly.com^                      ! auto: phishing
+||000zc.000webhostapp.com^                  ! auto: phishing
+||001-a3s.pages.dev^                        ! auto: phishing
+||001-a6j.pages.dev^                        ! auto: phishing
+||001-eca.pages.dev^                        ! auto: phishing
+||001.1614214972.workers.dev^               ! auto: phishing
+||001.9zhmn1k5.workers.dev^                 ! auto: phishing
+||001.gamecc.workers.dev^                   ! auto: phishing
+||00100.zzzly0925.workers.dev^              ! auto: phishing
+||00100601120140002.cf^                     ! auto: phishing
+||00100601120140009.ml^                     ! auto: phishing
+||00104.github.io^                          ! auto: phishing
+||00110000.com^                             ! auto: phishing
+||001107018.studentserver.com.au^           ! auto: phishing
+||00110omeopranslateslentldetext.godaddysites.com^ ! auto: phishing
+||001114.itabankk.repl.co^                  ! auto: phishing
+||001122102120.duckdns.org^                 ! auto: phishing
+||00112378.com^                             ! auto: phishing
+||0011thu001-secondary.z1.web.core.windows.net^ ! auto: phishing
+||0012-107647.weeblysite.com^               ! auto: phishing
+||0012b3a1.89dduvdjsi.shop^                 ! auto: phishing
+||0013009.com^                              ! auto: phishing
+||001420990998183-dot-wetransfer-auth-file-342.appspot.com^ ! auto: phishing
+||0014555.000webhostapp.com^                ! auto: phishing
+||00155.cn^                                 ! auto: phishing
+||0016948.bancoteafirma.repl.co^            ! auto: phishing
+||00169763258316485.eu-gb.cf.appdomain.cloud^ ! auto: phishing
+||00186.shop^                               ! auto: phishing
+||00186e.com^                               ! auto: phishing
+||001892.com^                               ! auto: phishing
+||001983878188731stea8a1a0.myclickfunnels.com^ ! auto: phishing
+||001codashop.freefire-work.duckdns.org^    ! auto: phishing
+||001dreamery.sa.com^                       ! auto: phishing
+||001fzh.corvettesandbids.com^              ! auto: phishing
+||001imbrier.sa.com^                        ! auto: phishing
+||001kp.cc^                                 ! auto: phishing
+||001madhankumar.github.io^                 ! auto: phishing
+||001molluscan.ru.com^                      ! auto: phishing
+||001myacct.weebly.com^                     ! auto: phishing
+||001tr3nsf00.com^                          ! auto: phishing
+||001user.moonfruit.com^                    ! auto: phishing
+||001xsnews.cn^                             ! auto: phishing
+||002-auto5eposlt.me^                       ! auto: phishing
+||002-bj9.pages.dev^                        ! auto: phishing
+||002.195533.xyz^                           ! auto: phishing
+||00223.cc^                                 ! auto: phishing
+||0023-1--soporte2023co00.repl.co^          ! auto: phishing
+||002321.cn^                                ! auto: phishing
+||00272781hubpointmicrosoft.myportfolio.com^ ! auto: phishing
+||002gltz1wz1ltltz1w0wltw02gtz1.trackfiz.net^ ! auto: phishing
 ! ============================================================================
 ! ShieldNova - Security / Malware
 ! Malware distribution infrastructure with ZERO legitimate use cases.
@@ -537,6 +589,59 @@
 ||data.yhydl.com^                           ! auto: malware
 ||dcrun.co.uk^                              ! auto: malware
 ||dcwblida.dz^                              ! auto: malware
+
+! --- Auto-fetched from malware (2026-04-30) ---
+||3yd5.dark-salittle.bet^                   ! auto: malware
+||5ignal8-forge.dark-salittle.bet^          ! auto: malware
+||67mvmowu.belief-handcraft.bet^            ! auto: malware
+||781q.convinc8mission.bet^                 ! auto: malware
+||8ugxvfg.decommiss-mint.bet^               ! auto: malware
+||agropole.tg^                              ! auto: malware
+||amb3-cache.retellin8tolle.bet^            ! auto: malware
+||asiaengrs.com^                            ! auto: malware
+||atomchec.belief-handcraft.bet^            ! auto: malware
+||bdecgtb.coraprimat0sis.bet^               ! auto: malware
+||clos-aut.dis9ualescapes.bet^              ! auto: malware
+||coralasargetia.ro^                        ! auto: malware
+||crimefreesoftware.com^                    ! auto: malware
+||d90aaos.dis9ualescapes.bet^               ! auto: malware
+||darkdelivery.convinc8mission.bet^         ! auto: malware
+||deathmatchuk.com^                         ! auto: malware
+||def163.keenetic.pro^                      ! auto: malware
+||delp-heizungsbau.de^                      ! auto: malware
+||derekludlow.com^                          ! auto: malware
+||dexios.co.za^                             ! auto: malware
+||dezcom.com^                               ! auto: malware
+||dhnconstrucciones.com.ar^                 ! auto: malware
+||dindong.tos-cn-hongkong.volces.com^       ! auto: malware
+||disk.accord1key.cn^                       ! auto: malware
+||divvanews.com^                            ! auto: malware
+||dl.1003b.56a.com^                         ! auto: malware
+||dl.360safe.com^                           ! auto: malware
+||dl.dzqzd.com^                             ! auto: malware
+||dl.ijinshan.com^                          ! auto: malware
+||dl.natgo.cn^                              ! auto: malware
+||dlied6.bytes.tcdnos.com^                  ! auto: malware
+||dlied6.yz.tcdnos.com^                     ! auto: malware
+||do-dear.com^                              ! auto: malware
+||doc.e-statements.app^                     ! auto: malware
+||docs.google.com^                          ! auto: malware
+||donkeytourscroatia.com^                   ! auto: malware
+||down.54nb.com^                            ! auto: malware
+||down.ftp21.cc^                            ! auto: malware
+||down.fwqlt.com^                           ! auto: malware
+||down.mvip8.ru^                            ! auto: malware
+||down.pcclear.com^                         ! auto: malware
+||down.qqfarmer.com.cn^                     ! auto: malware
+||down10d.zol.com.cn^                       ! auto: malware
+||downali.game.uc.cn^                       ! auto: malware
+||download.caihong.com^                     ! auto: malware
+||download.doumaibiji.cn^                   ! auto: malware
+||download.haozip.com^                      ! auto: malware
+||download.kaobeitu.com^                    ! auto: malware
+||download.kbcard.com^                      ! auto: malware
+||download.pdf00.cn^                        ! auto: malware
+||socket.io^                                ! auto: malware
 ! ============================================================================
 ! ShieldNova - Security / Cryptojacking
 ! Conservative blocklist for well-known browser mining infrastructure.
