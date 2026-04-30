@@ -1,10 +1,10 @@
 {
-  "fetched_at": "2026-04-30 21:47:40 UTC",
+  "fetched_at": "2026-04-30 23:37:41 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "ok",
-      "raw": 618,
+      "raw": 620,
       "new": 50,
       "capped_at": 50
     },
@@ -15,8 +15,10 @@
       "capped_at": 50
     },
     "nocoin": {
-      "status": "fetch_failed",
-      "new": 0
+      "status": "ok",
+      "raw": 201,
+      "new": 50,
+      "capped_at": 50
     },
     "phishing_database": {
       "status": "ok",
@@ -25,5 +27,5 @@
       "capped_at": 50
     }
   },
-  "total_added": 100
+  "total_added": 150
 }

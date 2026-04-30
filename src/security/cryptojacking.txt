@@ -47,3 +47,55 @@
 ||webassembly.stream^                       ! WebAssembly mining payload delivery
 ||wasm.stream^                              ! WASM mining payload delivery
 ||adless.io^                                ! Adless - mining-as-ad-replacement
+
+! --- Auto-fetched from cryptojacking (2026-04-30) ---
+||2miners.com^                              ! auto: cryptojacking
+||a-calc.de^                                ! auto: cryptojacking
+||acbp0020171456.page.tl^                   ! auto: cryptojacking
+||adminer.com^                              ! auto: cryptojacking
+||aeros02.tk^                               ! auto: cryptojacking
+||aeros12.tk^                               ! auto: cryptojacking
+||analytics.blue^                           ! auto: cryptojacking
+||andlache.com^                             ! auto: cryptojacking
+||api.nyda.pro^                             ! auto: cryptojacking
+||aptal.pro^                                ! auto: cryptojacking
+||ashgrrwt.click^                           ! auto: cryptojacking
+||bablace.com^                              ! auto: cryptojacking
+||bafybeidravcab5p3acvthxtwosm4rfpl4yypwwm52s7sazgxaezfzn5xn4.ipfs.infura-ipfs.io^! auto: cryptojacking
+||baiduccdn1.com^                           ! auto: cryptojacking
+||becanium.com^                             ! auto: cryptojacking
+||belicimo.pw^                              ! auto: cryptojacking
+||besocial.online^                          ! auto: cryptojacking
+||bestcoinsignals.com^                      ! auto: cryptojacking
+||bestsrv.de^                               ! auto: cryptojacking
+||bewaslac.com^                             ! auto: cryptojacking
+||bhzejltg.info^                            ! auto: cryptojacking
+||biberukalap.com^                          ! auto: cryptojacking
+||binarybusiness.de^                        ! auto: cryptojacking
+||bitcoin-cashcard.com^                     ! auto: cryptojacking
+||bmcm.pw^                                  ! auto: cryptojacking
+||bmnr.pw^                                  ! auto: cryptojacking
+||bmst.pw^                                  ! auto: cryptojacking
+||broadcastt.xyz^                           ! auto: cryptojacking
+||brominer.com^                             ! auto: cryptojacking
+||candid.zone^                              ! auto: cryptojacking
+||cashbeet.com^                             ! auto: cryptojacking
+||cdn.cloudcoins.co^                        ! auto: cryptojacking
+||cdn1.pebx.pl^                             ! auto: cryptojacking
+||cfcdist.gdn^                              ! auto: cryptojacking
+||clgserv.pro^                              ! auto: cryptojacking
+||cloud-miner.de^                           ! auto: cryptojacking
+||cloud-miner.eu^                           ! auto: cryptojacking
+||cloudcdn.gdn^                             ! auto: cryptojacking
+||cloudflane.com^                           ! auto: cryptojacking
+||coin-have.com^                            ! auto: cryptojacking
+||coinblind.com^                            ! auto: cryptojacking
+||coinerra.com^                             ! auto: cryptojacking
+||coinnebula.com^                           ! auto: cryptojacking
+||coinpirate.cf^                            ! auto: cryptojacking
+||coinpot.co^                               ! auto: cryptojacking
+||coinrail.io^                              ! auto: cryptojacking
+||cpufan.club^                              ! auto: cryptojacking
+||crypto-webminer.com^                      ! auto: cryptojacking
+||crypto.csgocpu.com^                       ! auto: cryptojacking
+||cryptobara.com^                           ! auto: cryptojacking
