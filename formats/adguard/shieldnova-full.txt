@@ -4,9 +4,9 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-30 03:24:38 UTC
-! Total: 266
-! Breakdown: privacy=56, ads=59, security=153, deduped_total=266, allowlist_removed=0
+! Built: 2026-04-30 05:21:11 UTC
+! Total: 366
+! Breakdown: privacy=56, ads=59, security=253, deduped_total=366, allowlist_removed=0
 
 ||google-analytics.com^
 ||googletagmanager.com^
@@ -173,6 +173,56 @@
 ||000000000000000ooooo.000webhostapp.com^
 ||0000000000c0.x9xcax2a.workers.dev^
 ||000000000a0uutlook.weebly.com^
+||00000000920.us-south.cf.appdomain.cloud^
+||0000000095.godaddysites.com^
+||00000002.c1.biz^
+||0000000666666.000webhostapp.com^
+||0000000o.weebly.com^
+||0000000wer.000webhostapp.com^
+||000000541840000.co.vu^
+||0000006738.vercel.app^
+||000000788-66666666.000webhostapp.com^
+||00000078uu7u8790090900.000webhostapp.com^
+||000000login.weebly.com^
+||000001010010104106.cloud^
+||000002456171.ml^
+||000002456180.ml^
+||000003.000000000013.repl.co^
+||0000091193.xyz^
+||00000f.nuevaconfirma.repl.co^
+||00000microsof.tonohost.com^
+||00000wefv.000webhostapp.com^
+||00001-888887766.weebly.com^
+||00001062.com^
+||000012151000.co.vu^
+||000012223.weebly.com^
+||000025123.com^
+||00003.godaddysites.com^
+||000066.godaddysites.com^
+||0000666688887777.000webhostapp.com^
+||00008.godaddysites.com^
+||000083.godaddysites.com^
+||0000bbffxzzzz900.000webhostapp.com^
+||0000guatec.davieelchirinos.repl.co^
+||0000h00003.byethost7.com^
+||0000mscautorizationclientid.com^
+||0000qwew341432edxzt.000webhostapp.com^
+||0000wa0outlook.weebly.com^
+||0001.353527440.workers.dev^
+||00010xsea34dsd.co.vu^
+||000111.pages.net.br^
+||00012sbcglobal.weebly.com^
+||000133210.000webhostapp.com^
+||000193.azurewebsites.net^
+||0001home.webflow.io^
+||0001qwis.webflow.io^
+||0002-i-nastolatek-to-przegrales-zycie-i-to-z-kretesem.fun^
+||000220.000webhostapp.com^
+||000247aa8f117a13af2094b691ab1b3e.serveo.net^
+||00030ae9.qepfmq.shop^
+||000343594567126312342754pgsbsnsswrng.000webhostapp.com^
+||0005tecnicoasistente.000webhostapp.com^
+||0006.mediafirew.xyz^
 ||onclkds.com^
 ||clksite.com^
 ||clkrev.com^
@@ -240,6 +290,56 @@
 ||bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link^
 ||bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link^
 ||bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link^
+||acehostunit.so8laven.bet^
+||atom9logicnet.quantumbitlink.bet^
+||axis4logicnet.torquegridunit.bet^
+||bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link^
+||bafybeidvf6tytrspkd4wnvxzs23m3kjr6bfvgszbfwybmmcosl4rrhvuo4.ipfs.dweb.link^
+||bafybeidvgy76m4r347tpqg6plr3ac2p7o5bpcluicawc25nuh7mowtkssy.ipfs.dweb.link^
+||bafybeieq7tctzxkqidqpq4fjvtznbupqrpo2w4n4lfmzksehei4dinilii.ipfs.w3s.link^
+||bafybeiffpkay6l7heq55epccneb563p5chjzclxnso3vkozyorphlz6ana.ipfs.w3s.link^
+||bafybeihamvbzrm2tsifa4s7xruhfnsgnkzgtk2jqwj6cwgmdxj4wqe5lm4.ipfs.dweb.link^
+||bankhostunit.verd7loka.bet^
+||basehostunit.staticmeshview.bet^
+||bbos.minet.vn^
+||beautiful-roentgen.176-65-139-130.plesk.page^
+||beoauto.alexion.rs^
+||best.obs.cn-sz1.ctyun.cn^
+||best10cdn.blob.core.windows.net^
+||bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com^
+||blessdayservices.org^
+||blogs.sokun.jp^
+||bmdcompany.com^
+||bnet-api.playm8ru.win^
+||bnet.playm8ru.win^
+||bolt9taskhub.torquegridunit.bet^
+||bombayonline.in^
+||book.rollingvideogames.com^
+||boydjackson.org^
+||bracell.latitude.net.br^
+||bridgeroad.maverickpreviews.com^
+||brightworks.cz^
+||bundle.kpzip.com^
+||burn2pathgate.grov6mira.bet^
+||bvaco.com^
+||c.fi3.me^
+||c0e5b87c.solaraweb-alj.pages.dev^
+||c3436037.salamanderprocessing.pages.dev^
+||c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru^
+||cad.659t.cn^
+||cash8siteview.peta1vrix.bet^
+||cat.xiaoshabi.nl^
+||catbaparadisehotel.com.vn^
+||ccleaner.gl^
+||cd.textfiles.com^
+||cdaonline.com.ar^
+||cdn-10049480.file.myqcloud.com^
+||cdn.file6.goodid.com^
+||cdn.gomlab.com^
+||cdn.novoline.top^
+||cdn.pixelbin.io^
+||cdn.xiaoduoai.com^
+||celebratingseniors.net^
 ||coinhive.com^
 ||coinhiveproxy.com^
 ||authedmine.com^

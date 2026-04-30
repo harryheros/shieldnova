@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-30 03:24:38 UTC
-# Total: 266
-# Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=153, deduped_total=266, allowlist_removed=0
+# Built: 2026-04-30 05:21:11 UTC
+# Total: 366
+# Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=253, deduped_total=366, allowlist_removed=0
 
 HOST-SUFFIX,google-analytics.com,reject
 HOST-SUFFIX,googletagmanager.com,reject
@@ -173,6 +173,56 @@ HOST-SUFFIX,00000000000000000update.emy.ba,reject
 HOST-SUFFIX,000000000000000ooooo.000webhostapp.com,reject
 HOST-SUFFIX,0000000000c0.x9xcax2a.workers.dev,reject
 HOST-SUFFIX,000000000a0uutlook.weebly.com,reject
+HOST-SUFFIX,00000000920.us-south.cf.appdomain.cloud,reject
+HOST-SUFFIX,0000000095.godaddysites.com,reject
+HOST-SUFFIX,00000002.c1.biz,reject
+HOST-SUFFIX,0000000666666.000webhostapp.com,reject
+HOST-SUFFIX,0000000o.weebly.com,reject
+HOST-SUFFIX,0000000wer.000webhostapp.com,reject
+HOST-SUFFIX,000000541840000.co.vu,reject
+HOST-SUFFIX,0000006738.vercel.app,reject
+HOST-SUFFIX,000000788-66666666.000webhostapp.com,reject
+HOST-SUFFIX,00000078uu7u8790090900.000webhostapp.com,reject
+HOST-SUFFIX,000000login.weebly.com,reject
+HOST-SUFFIX,000001010010104106.cloud,reject
+HOST-SUFFIX,000002456171.ml,reject
+HOST-SUFFIX,000002456180.ml,reject
+HOST-SUFFIX,000003.000000000013.repl.co,reject
+HOST-SUFFIX,0000091193.xyz,reject
+HOST-SUFFIX,00000f.nuevaconfirma.repl.co,reject
+HOST-SUFFIX,00000microsof.tonohost.com,reject
+HOST-SUFFIX,00000wefv.000webhostapp.com,reject
+HOST-SUFFIX,00001-888887766.weebly.com,reject
+HOST-SUFFIX,00001062.com,reject
+HOST-SUFFIX,000012151000.co.vu,reject
+HOST-SUFFIX,000012223.weebly.com,reject
+HOST-SUFFIX,000025123.com,reject
+HOST-SUFFIX,00003.godaddysites.com,reject
+HOST-SUFFIX,000066.godaddysites.com,reject
+HOST-SUFFIX,0000666688887777.000webhostapp.com,reject
+HOST-SUFFIX,00008.godaddysites.com,reject
+HOST-SUFFIX,000083.godaddysites.com,reject
+HOST-SUFFIX,0000bbffxzzzz900.000webhostapp.com,reject
+HOST-SUFFIX,0000guatec.davieelchirinos.repl.co,reject
+HOST-SUFFIX,0000h00003.byethost7.com,reject
+HOST-SUFFIX,0000mscautorizationclientid.com,reject
+HOST-SUFFIX,0000qwew341432edxzt.000webhostapp.com,reject
+HOST-SUFFIX,0000wa0outlook.weebly.com,reject
+HOST-SUFFIX,0001.353527440.workers.dev,reject
+HOST-SUFFIX,00010xsea34dsd.co.vu,reject
+HOST-SUFFIX,000111.pages.net.br,reject
+HOST-SUFFIX,00012sbcglobal.weebly.com,reject
+HOST-SUFFIX,000133210.000webhostapp.com,reject
+HOST-SUFFIX,000193.azurewebsites.net,reject
+HOST-SUFFIX,0001home.webflow.io,reject
+HOST-SUFFIX,0001qwis.webflow.io,reject
+HOST-SUFFIX,0002-i-nastolatek-to-przegrales-zycie-i-to-z-kretesem.fun,reject
+HOST-SUFFIX,000220.000webhostapp.com,reject
+HOST-SUFFIX,000247aa8f117a13af2094b691ab1b3e.serveo.net,reject
+HOST-SUFFIX,00030ae9.qepfmq.shop,reject
+HOST-SUFFIX,000343594567126312342754pgsbsnsswrng.000webhostapp.com,reject
+HOST-SUFFIX,0005tecnicoasistente.000webhostapp.com,reject
+HOST-SUFFIX,0006.mediafirew.xyz,reject
 HOST-SUFFIX,onclkds.com,reject
 HOST-SUFFIX,clksite.com,reject
 HOST-SUFFIX,clkrev.com,reject
@@ -240,6 +290,56 @@ HOST-SUFFIX,backupso.com,reject
 HOST-SUFFIX,bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link,reject
 HOST-SUFFIX,bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link,reject
 HOST-SUFFIX,bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link,reject
+HOST-SUFFIX,acehostunit.so8laven.bet,reject
+HOST-SUFFIX,atom9logicnet.quantumbitlink.bet,reject
+HOST-SUFFIX,axis4logicnet.torquegridunit.bet,reject
+HOST-SUFFIX,bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link,reject
+HOST-SUFFIX,bafybeidvf6tytrspkd4wnvxzs23m3kjr6bfvgszbfwybmmcosl4rrhvuo4.ipfs.dweb.link,reject
+HOST-SUFFIX,bafybeidvgy76m4r347tpqg6plr3ac2p7o5bpcluicawc25nuh7mowtkssy.ipfs.dweb.link,reject
+HOST-SUFFIX,bafybeieq7tctzxkqidqpq4fjvtznbupqrpo2w4n4lfmzksehei4dinilii.ipfs.w3s.link,reject
+HOST-SUFFIX,bafybeiffpkay6l7heq55epccneb563p5chjzclxnso3vkozyorphlz6ana.ipfs.w3s.link,reject
+HOST-SUFFIX,bafybeihamvbzrm2tsifa4s7xruhfnsgnkzgtk2jqwj6cwgmdxj4wqe5lm4.ipfs.dweb.link,reject
+HOST-SUFFIX,bankhostunit.verd7loka.bet,reject
+HOST-SUFFIX,basehostunit.staticmeshview.bet,reject
+HOST-SUFFIX,bbos.minet.vn,reject
+HOST-SUFFIX,beautiful-roentgen.176-65-139-130.plesk.page,reject
+HOST-SUFFIX,beoauto.alexion.rs,reject
+HOST-SUFFIX,best.obs.cn-sz1.ctyun.cn,reject
+HOST-SUFFIX,best10cdn.blob.core.windows.net,reject
+HOST-SUFFIX,bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com,reject
+HOST-SUFFIX,blessdayservices.org,reject
+HOST-SUFFIX,blogs.sokun.jp,reject
+HOST-SUFFIX,bmdcompany.com,reject
+HOST-SUFFIX,bnet-api.playm8ru.win,reject
+HOST-SUFFIX,bnet.playm8ru.win,reject
+HOST-SUFFIX,bolt9taskhub.torquegridunit.bet,reject
+HOST-SUFFIX,bombayonline.in,reject
+HOST-SUFFIX,book.rollingvideogames.com,reject
+HOST-SUFFIX,boydjackson.org,reject
+HOST-SUFFIX,bracell.latitude.net.br,reject
+HOST-SUFFIX,bridgeroad.maverickpreviews.com,reject
+HOST-SUFFIX,brightworks.cz,reject
+HOST-SUFFIX,bundle.kpzip.com,reject
+HOST-SUFFIX,burn2pathgate.grov6mira.bet,reject
+HOST-SUFFIX,bvaco.com,reject
+HOST-SUFFIX,c.fi3.me,reject
+HOST-SUFFIX,c0e5b87c.solaraweb-alj.pages.dev,reject
+HOST-SUFFIX,c3436037.salamanderprocessing.pages.dev,reject
+HOST-SUFFIX,c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru,reject
+HOST-SUFFIX,cad.659t.cn,reject
+HOST-SUFFIX,cash8siteview.peta1vrix.bet,reject
+HOST-SUFFIX,cat.xiaoshabi.nl,reject
+HOST-SUFFIX,catbaparadisehotel.com.vn,reject
+HOST-SUFFIX,ccleaner.gl,reject
+HOST-SUFFIX,cd.textfiles.com,reject
+HOST-SUFFIX,cdaonline.com.ar,reject
+HOST-SUFFIX,cdn-10049480.file.myqcloud.com,reject
+HOST-SUFFIX,cdn.file6.goodid.com,reject
+HOST-SUFFIX,cdn.gomlab.com,reject
+HOST-SUFFIX,cdn.novoline.top,reject
+HOST-SUFFIX,cdn.pixelbin.io,reject
+HOST-SUFFIX,cdn.xiaoduoai.com,reject
+HOST-SUFFIX,celebratingseniors.net,reject
 HOST-SUFFIX,coinhive.com,reject
 HOST-SUFFIX,coinhiveproxy.com,reject
 HOST-SUFFIX,authedmine.com,reject

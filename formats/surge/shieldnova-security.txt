@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-30 03:24:38 UTC
-# Total: 153
-# Breakdown: phishing=52, malware=67, cryptojacking=34, deduped_total=153, allowlist_removed=0
+# Built: 2026-04-30 05:21:11 UTC
+# Total: 253
+# Breakdown: phishing=102, malware=117, cryptojacking=34, deduped_total=253, allowlist_removed=0
 
 DOMAIN-SUFFIX,16shop.co,REJECT
 DOMAIN-SUFFIX,logincdn.net,REJECT
@@ -60,6 +60,56 @@ DOMAIN-SUFFIX,00000000000000000update.emy.ba,REJECT
 DOMAIN-SUFFIX,000000000000000ooooo.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,0000000000c0.x9xcax2a.workers.dev,REJECT
 DOMAIN-SUFFIX,000000000a0uutlook.weebly.com,REJECT
+DOMAIN-SUFFIX,00000000920.us-south.cf.appdomain.cloud,REJECT
+DOMAIN-SUFFIX,0000000095.godaddysites.com,REJECT
+DOMAIN-SUFFIX,00000002.c1.biz,REJECT
+DOMAIN-SUFFIX,0000000666666.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,0000000o.weebly.com,REJECT
+DOMAIN-SUFFIX,0000000wer.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,000000541840000.co.vu,REJECT
+DOMAIN-SUFFIX,0000006738.vercel.app,REJECT
+DOMAIN-SUFFIX,000000788-66666666.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,00000078uu7u8790090900.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,000000login.weebly.com,REJECT
+DOMAIN-SUFFIX,000001010010104106.cloud,REJECT
+DOMAIN-SUFFIX,000002456171.ml,REJECT
+DOMAIN-SUFFIX,000002456180.ml,REJECT
+DOMAIN-SUFFIX,000003.000000000013.repl.co,REJECT
+DOMAIN-SUFFIX,0000091193.xyz,REJECT
+DOMAIN-SUFFIX,00000f.nuevaconfirma.repl.co,REJECT
+DOMAIN-SUFFIX,00000microsof.tonohost.com,REJECT
+DOMAIN-SUFFIX,00000wefv.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,00001-888887766.weebly.com,REJECT
+DOMAIN-SUFFIX,00001062.com,REJECT
+DOMAIN-SUFFIX,000012151000.co.vu,REJECT
+DOMAIN-SUFFIX,000012223.weebly.com,REJECT
+DOMAIN-SUFFIX,000025123.com,REJECT
+DOMAIN-SUFFIX,00003.godaddysites.com,REJECT
+DOMAIN-SUFFIX,000066.godaddysites.com,REJECT
+DOMAIN-SUFFIX,0000666688887777.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,00008.godaddysites.com,REJECT
+DOMAIN-SUFFIX,000083.godaddysites.com,REJECT
+DOMAIN-SUFFIX,0000bbffxzzzz900.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,0000guatec.davieelchirinos.repl.co,REJECT
+DOMAIN-SUFFIX,0000h00003.byethost7.com,REJECT
+DOMAIN-SUFFIX,0000mscautorizationclientid.com,REJECT
+DOMAIN-SUFFIX,0000qwew341432edxzt.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,0000wa0outlook.weebly.com,REJECT
+DOMAIN-SUFFIX,0001.353527440.workers.dev,REJECT
+DOMAIN-SUFFIX,00010xsea34dsd.co.vu,REJECT
+DOMAIN-SUFFIX,000111.pages.net.br,REJECT
+DOMAIN-SUFFIX,00012sbcglobal.weebly.com,REJECT
+DOMAIN-SUFFIX,000133210.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,000193.azurewebsites.net,REJECT
+DOMAIN-SUFFIX,0001home.webflow.io,REJECT
+DOMAIN-SUFFIX,0001qwis.webflow.io,REJECT
+DOMAIN-SUFFIX,0002-i-nastolatek-to-przegrales-zycie-i-to-z-kretesem.fun,REJECT
+DOMAIN-SUFFIX,000220.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,000247aa8f117a13af2094b691ab1b3e.serveo.net,REJECT
+DOMAIN-SUFFIX,00030ae9.qepfmq.shop,REJECT
+DOMAIN-SUFFIX,000343594567126312342754pgsbsnsswrng.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,0005tecnicoasistente.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,0006.mediafirew.xyz,REJECT
 DOMAIN-SUFFIX,onclkds.com,REJECT
 DOMAIN-SUFFIX,clksite.com,REJECT
 DOMAIN-SUFFIX,clkrev.com,REJECT
@@ -127,6 +177,56 @@ DOMAIN-SUFFIX,backupso.com,REJECT
 DOMAIN-SUFFIX,bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link,REJECT
 DOMAIN-SUFFIX,bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link,REJECT
 DOMAIN-SUFFIX,bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link,REJECT
+DOMAIN-SUFFIX,acehostunit.so8laven.bet,REJECT
+DOMAIN-SUFFIX,atom9logicnet.quantumbitlink.bet,REJECT
+DOMAIN-SUFFIX,axis4logicnet.torquegridunit.bet,REJECT
+DOMAIN-SUFFIX,bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link,REJECT
+DOMAIN-SUFFIX,bafybeidvf6tytrspkd4wnvxzs23m3kjr6bfvgszbfwybmmcosl4rrhvuo4.ipfs.dweb.link,REJECT
+DOMAIN-SUFFIX,bafybeidvgy76m4r347tpqg6plr3ac2p7o5bpcluicawc25nuh7mowtkssy.ipfs.dweb.link,REJECT
+DOMAIN-SUFFIX,bafybeieq7tctzxkqidqpq4fjvtznbupqrpo2w4n4lfmzksehei4dinilii.ipfs.w3s.link,REJECT
+DOMAIN-SUFFIX,bafybeiffpkay6l7heq55epccneb563p5chjzclxnso3vkozyorphlz6ana.ipfs.w3s.link,REJECT
+DOMAIN-SUFFIX,bafybeihamvbzrm2tsifa4s7xruhfnsgnkzgtk2jqwj6cwgmdxj4wqe5lm4.ipfs.dweb.link,REJECT
+DOMAIN-SUFFIX,bankhostunit.verd7loka.bet,REJECT
+DOMAIN-SUFFIX,basehostunit.staticmeshview.bet,REJECT
+DOMAIN-SUFFIX,bbos.minet.vn,REJECT
+DOMAIN-SUFFIX,beautiful-roentgen.176-65-139-130.plesk.page,REJECT
+DOMAIN-SUFFIX,beoauto.alexion.rs,REJECT
+DOMAIN-SUFFIX,best.obs.cn-sz1.ctyun.cn,REJECT
+DOMAIN-SUFFIX,best10cdn.blob.core.windows.net,REJECT
+DOMAIN-SUFFIX,bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com,REJECT
+DOMAIN-SUFFIX,blessdayservices.org,REJECT
+DOMAIN-SUFFIX,blogs.sokun.jp,REJECT
+DOMAIN-SUFFIX,bmdcompany.com,REJECT
+DOMAIN-SUFFIX,bnet-api.playm8ru.win,REJECT
+DOMAIN-SUFFIX,bnet.playm8ru.win,REJECT
+DOMAIN-SUFFIX,bolt9taskhub.torquegridunit.bet,REJECT
+DOMAIN-SUFFIX,bombayonline.in,REJECT
+DOMAIN-SUFFIX,book.rollingvideogames.com,REJECT
+DOMAIN-SUFFIX,boydjackson.org,REJECT
+DOMAIN-SUFFIX,bracell.latitude.net.br,REJECT
+DOMAIN-SUFFIX,bridgeroad.maverickpreviews.com,REJECT
+DOMAIN-SUFFIX,brightworks.cz,REJECT
+DOMAIN-SUFFIX,bundle.kpzip.com,REJECT
+DOMAIN-SUFFIX,burn2pathgate.grov6mira.bet,REJECT
+DOMAIN-SUFFIX,bvaco.com,REJECT
+DOMAIN-SUFFIX,c.fi3.me,REJECT
+DOMAIN-SUFFIX,c0e5b87c.solaraweb-alj.pages.dev,REJECT
+DOMAIN-SUFFIX,c3436037.salamanderprocessing.pages.dev,REJECT
+DOMAIN-SUFFIX,c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru,REJECT
+DOMAIN-SUFFIX,cad.659t.cn,REJECT
+DOMAIN-SUFFIX,cash8siteview.peta1vrix.bet,REJECT
+DOMAIN-SUFFIX,cat.xiaoshabi.nl,REJECT
+DOMAIN-SUFFIX,catbaparadisehotel.com.vn,REJECT
+DOMAIN-SUFFIX,ccleaner.gl,REJECT
+DOMAIN-SUFFIX,cd.textfiles.com,REJECT
+DOMAIN-SUFFIX,cdaonline.com.ar,REJECT
+DOMAIN-SUFFIX,cdn-10049480.file.myqcloud.com,REJECT
+DOMAIN-SUFFIX,cdn.file6.goodid.com,REJECT
+DOMAIN-SUFFIX,cdn.gomlab.com,REJECT
+DOMAIN-SUFFIX,cdn.novoline.top,REJECT
+DOMAIN-SUFFIX,cdn.pixelbin.io,REJECT
+DOMAIN-SUFFIX,cdn.xiaoduoai.com,REJECT
+DOMAIN-SUFFIX,celebratingseniors.net,REJECT
 DOMAIN-SUFFIX,coinhive.com,REJECT
 DOMAIN-SUFFIX,coinhiveproxy.com,REJECT
 DOMAIN-SUFFIX,authedmine.com,REJECT

@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-30 03:24:38 UTC
-# Total: 266
-# Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=153, deduped_total=266, allowlist_removed=0
+# Built: 2026-04-30 05:21:11 UTC
+# Total: 366
+# Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=253, deduped_total=366, allowlist_removed=0
 payload:
 
   - DOMAIN-SUFFIX,google-analytics.com
@@ -174,6 +174,56 @@ payload:
   - DOMAIN-SUFFIX,000000000000000ooooo.000webhostapp.com
   - DOMAIN-SUFFIX,0000000000c0.x9xcax2a.workers.dev
   - DOMAIN-SUFFIX,000000000a0uutlook.weebly.com
+  - DOMAIN-SUFFIX,00000000920.us-south.cf.appdomain.cloud
+  - DOMAIN-SUFFIX,0000000095.godaddysites.com
+  - DOMAIN-SUFFIX,00000002.c1.biz
+  - DOMAIN-SUFFIX,0000000666666.000webhostapp.com
+  - DOMAIN-SUFFIX,0000000o.weebly.com
+  - DOMAIN-SUFFIX,0000000wer.000webhostapp.com
+  - DOMAIN-SUFFIX,000000541840000.co.vu
+  - DOMAIN-SUFFIX,0000006738.vercel.app
+  - DOMAIN-SUFFIX,000000788-66666666.000webhostapp.com
+  - DOMAIN-SUFFIX,00000078uu7u8790090900.000webhostapp.com
+  - DOMAIN-SUFFIX,000000login.weebly.com
+  - DOMAIN-SUFFIX,000001010010104106.cloud
+  - DOMAIN-SUFFIX,000002456171.ml
+  - DOMAIN-SUFFIX,000002456180.ml
+  - DOMAIN-SUFFIX,000003.000000000013.repl.co
+  - DOMAIN-SUFFIX,0000091193.xyz
+  - DOMAIN-SUFFIX,00000f.nuevaconfirma.repl.co
+  - DOMAIN-SUFFIX,00000microsof.tonohost.com
+  - DOMAIN-SUFFIX,00000wefv.000webhostapp.com
+  - DOMAIN-SUFFIX,00001-888887766.weebly.com
+  - DOMAIN-SUFFIX,00001062.com
+  - DOMAIN-SUFFIX,000012151000.co.vu
+  - DOMAIN-SUFFIX,000012223.weebly.com
+  - DOMAIN-SUFFIX,000025123.com
+  - DOMAIN-SUFFIX,00003.godaddysites.com
+  - DOMAIN-SUFFIX,000066.godaddysites.com
+  - DOMAIN-SUFFIX,0000666688887777.000webhostapp.com
+  - DOMAIN-SUFFIX,00008.godaddysites.com
+  - DOMAIN-SUFFIX,000083.godaddysites.com
+  - DOMAIN-SUFFIX,0000bbffxzzzz900.000webhostapp.com
+  - DOMAIN-SUFFIX,0000guatec.davieelchirinos.repl.co
+  - DOMAIN-SUFFIX,0000h00003.byethost7.com
+  - DOMAIN-SUFFIX,0000mscautorizationclientid.com
+  - DOMAIN-SUFFIX,0000qwew341432edxzt.000webhostapp.com
+  - DOMAIN-SUFFIX,0000wa0outlook.weebly.com
+  - DOMAIN-SUFFIX,0001.353527440.workers.dev
+  - DOMAIN-SUFFIX,00010xsea34dsd.co.vu
+  - DOMAIN-SUFFIX,000111.pages.net.br
+  - DOMAIN-SUFFIX,00012sbcglobal.weebly.com
+  - DOMAIN-SUFFIX,000133210.000webhostapp.com
+  - DOMAIN-SUFFIX,000193.azurewebsites.net
+  - DOMAIN-SUFFIX,0001home.webflow.io
+  - DOMAIN-SUFFIX,0001qwis.webflow.io
+  - DOMAIN-SUFFIX,0002-i-nastolatek-to-przegrales-zycie-i-to-z-kretesem.fun
+  - DOMAIN-SUFFIX,000220.000webhostapp.com
+  - DOMAIN-SUFFIX,000247aa8f117a13af2094b691ab1b3e.serveo.net
+  - DOMAIN-SUFFIX,00030ae9.qepfmq.shop
+  - DOMAIN-SUFFIX,000343594567126312342754pgsbsnsswrng.000webhostapp.com
+  - DOMAIN-SUFFIX,0005tecnicoasistente.000webhostapp.com
+  - DOMAIN-SUFFIX,0006.mediafirew.xyz
   - DOMAIN-SUFFIX,onclkds.com
   - DOMAIN-SUFFIX,clksite.com
   - DOMAIN-SUFFIX,clkrev.com
@@ -241,6 +291,56 @@ payload:
   - DOMAIN-SUFFIX,bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link
   - DOMAIN-SUFFIX,bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link
   - DOMAIN-SUFFIX,bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link
+  - DOMAIN-SUFFIX,acehostunit.so8laven.bet
+  - DOMAIN-SUFFIX,atom9logicnet.quantumbitlink.bet
+  - DOMAIN-SUFFIX,axis4logicnet.torquegridunit.bet
+  - DOMAIN-SUFFIX,bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link
+  - DOMAIN-SUFFIX,bafybeidvf6tytrspkd4wnvxzs23m3kjr6bfvgszbfwybmmcosl4rrhvuo4.ipfs.dweb.link
+  - DOMAIN-SUFFIX,bafybeidvgy76m4r347tpqg6plr3ac2p7o5bpcluicawc25nuh7mowtkssy.ipfs.dweb.link
+  - DOMAIN-SUFFIX,bafybeieq7tctzxkqidqpq4fjvtznbupqrpo2w4n4lfmzksehei4dinilii.ipfs.w3s.link
+  - DOMAIN-SUFFIX,bafybeiffpkay6l7heq55epccneb563p5chjzclxnso3vkozyorphlz6ana.ipfs.w3s.link
+  - DOMAIN-SUFFIX,bafybeihamvbzrm2tsifa4s7xruhfnsgnkzgtk2jqwj6cwgmdxj4wqe5lm4.ipfs.dweb.link
+  - DOMAIN-SUFFIX,bankhostunit.verd7loka.bet
+  - DOMAIN-SUFFIX,basehostunit.staticmeshview.bet
+  - DOMAIN-SUFFIX,bbos.minet.vn
+  - DOMAIN-SUFFIX,beautiful-roentgen.176-65-139-130.plesk.page
+  - DOMAIN-SUFFIX,beoauto.alexion.rs
+  - DOMAIN-SUFFIX,best.obs.cn-sz1.ctyun.cn
+  - DOMAIN-SUFFIX,best10cdn.blob.core.windows.net
+  - DOMAIN-SUFFIX,bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com
+  - DOMAIN-SUFFIX,blessdayservices.org
+  - DOMAIN-SUFFIX,blogs.sokun.jp
+  - DOMAIN-SUFFIX,bmdcompany.com
+  - DOMAIN-SUFFIX,bnet-api.playm8ru.win
+  - DOMAIN-SUFFIX,bnet.playm8ru.win
+  - DOMAIN-SUFFIX,bolt9taskhub.torquegridunit.bet
+  - DOMAIN-SUFFIX,bombayonline.in
+  - DOMAIN-SUFFIX,book.rollingvideogames.com
+  - DOMAIN-SUFFIX,boydjackson.org
+  - DOMAIN-SUFFIX,bracell.latitude.net.br
+  - DOMAIN-SUFFIX,bridgeroad.maverickpreviews.com
+  - DOMAIN-SUFFIX,brightworks.cz
+  - DOMAIN-SUFFIX,bundle.kpzip.com
+  - DOMAIN-SUFFIX,burn2pathgate.grov6mira.bet
+  - DOMAIN-SUFFIX,bvaco.com
+  - DOMAIN-SUFFIX,c.fi3.me
+  - DOMAIN-SUFFIX,c0e5b87c.solaraweb-alj.pages.dev
+  - DOMAIN-SUFFIX,c3436037.salamanderprocessing.pages.dev
+  - DOMAIN-SUFFIX,c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru
+  - DOMAIN-SUFFIX,cad.659t.cn
+  - DOMAIN-SUFFIX,cash8siteview.peta1vrix.bet
+  - DOMAIN-SUFFIX,cat.xiaoshabi.nl
+  - DOMAIN-SUFFIX,catbaparadisehotel.com.vn
+  - DOMAIN-SUFFIX,ccleaner.gl
+  - DOMAIN-SUFFIX,cd.textfiles.com
+  - DOMAIN-SUFFIX,cdaonline.com.ar
+  - DOMAIN-SUFFIX,cdn-10049480.file.myqcloud.com
+  - DOMAIN-SUFFIX,cdn.file6.goodid.com
+  - DOMAIN-SUFFIX,cdn.gomlab.com
+  - DOMAIN-SUFFIX,cdn.novoline.top
+  - DOMAIN-SUFFIX,cdn.pixelbin.io
+  - DOMAIN-SUFFIX,cdn.xiaoduoai.com
+  - DOMAIN-SUFFIX,celebratingseniors.net
   - DOMAIN-SUFFIX,coinhive.com
   - DOMAIN-SUFFIX,coinhiveproxy.com
   - DOMAIN-SUFFIX,authedmine.com
