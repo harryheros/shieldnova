@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-30 14:13:13 UTC
-# Total: 517
-# Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=353, deduped_total=517, allowlist_removed=0
+# Built: 2026-04-30 15:04:58 UTC
+# Total: 618
+# Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=454, deduped_total=618, allowlist_removed=0
 
 DOMAIN-SUFFIX,google-analytics.com,REJECT
 DOMAIN-SUFFIX,googletagmanager.com,REJECT
@@ -273,6 +273,56 @@ DOMAIN-SUFFIX,000webhostcrazystikers.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,000wechost.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,000wuwtg000ywwtvwt0y.networkmcn.com,REJECT
 DOMAIN-SUFFIX,000xxxbodddxx00.webcindario.com,REJECT
+DOMAIN-SUFFIX,000yahoo.weebly.com,REJECT
+DOMAIN-SUFFIX,000zc.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,001-a3s.pages.dev,REJECT
+DOMAIN-SUFFIX,001-a6j.pages.dev,REJECT
+DOMAIN-SUFFIX,001-eca.pages.dev,REJECT
+DOMAIN-SUFFIX,001.1614214972.workers.dev,REJECT
+DOMAIN-SUFFIX,001.9zhmn1k5.workers.dev,REJECT
+DOMAIN-SUFFIX,001.gamecc.workers.dev,REJECT
+DOMAIN-SUFFIX,00100.zzzly0925.workers.dev,REJECT
+DOMAIN-SUFFIX,00100601120140002.cf,REJECT
+DOMAIN-SUFFIX,00100601120140009.ml,REJECT
+DOMAIN-SUFFIX,00104.github.io,REJECT
+DOMAIN-SUFFIX,00110000.com,REJECT
+DOMAIN-SUFFIX,001107018.studentserver.com.au,REJECT
+DOMAIN-SUFFIX,00110omeopranslateslentldetext.godaddysites.com,REJECT
+DOMAIN-SUFFIX,001114.itabankk.repl.co,REJECT
+DOMAIN-SUFFIX,001122102120.duckdns.org,REJECT
+DOMAIN-SUFFIX,00112378.com,REJECT
+DOMAIN-SUFFIX,0011thu001-secondary.z1.web.core.windows.net,REJECT
+DOMAIN-SUFFIX,0012-107647.weeblysite.com,REJECT
+DOMAIN-SUFFIX,0012b3a1.89dduvdjsi.shop,REJECT
+DOMAIN-SUFFIX,0013009.com,REJECT
+DOMAIN-SUFFIX,001420990998183-dot-wetransfer-auth-file-342.appspot.com,REJECT
+DOMAIN-SUFFIX,0014555.000webhostapp.com,REJECT
+DOMAIN-SUFFIX,00155.cn,REJECT
+DOMAIN-SUFFIX,0016948.bancoteafirma.repl.co,REJECT
+DOMAIN-SUFFIX,00169763258316485.eu-gb.cf.appdomain.cloud,REJECT
+DOMAIN-SUFFIX,00186.shop,REJECT
+DOMAIN-SUFFIX,00186e.com,REJECT
+DOMAIN-SUFFIX,001892.com,REJECT
+DOMAIN-SUFFIX,001983878188731stea8a1a0.myclickfunnels.com,REJECT
+DOMAIN-SUFFIX,001codashop.freefire-work.duckdns.org,REJECT
+DOMAIN-SUFFIX,001dreamery.sa.com,REJECT
+DOMAIN-SUFFIX,001fzh.corvettesandbids.com,REJECT
+DOMAIN-SUFFIX,001imbrier.sa.com,REJECT
+DOMAIN-SUFFIX,001kp.cc,REJECT
+DOMAIN-SUFFIX,001madhankumar.github.io,REJECT
+DOMAIN-SUFFIX,001molluscan.ru.com,REJECT
+DOMAIN-SUFFIX,001myacct.weebly.com,REJECT
+DOMAIN-SUFFIX,001tr3nsf00.com,REJECT
+DOMAIN-SUFFIX,001user.moonfruit.com,REJECT
+DOMAIN-SUFFIX,001xsnews.cn,REJECT
+DOMAIN-SUFFIX,002-auto5eposlt.me,REJECT
+DOMAIN-SUFFIX,002-bj9.pages.dev,REJECT
+DOMAIN-SUFFIX,002.195533.xyz,REJECT
+DOMAIN-SUFFIX,00223.cc,REJECT
+DOMAIN-SUFFIX,0023-1--soporte2023co00.repl.co,REJECT
+DOMAIN-SUFFIX,002321.cn,REJECT
+DOMAIN-SUFFIX,00272781hubpointmicrosoft.myportfolio.com,REJECT
+DOMAIN-SUFFIX,002gltz1wz1ltltz1w0wltw02gtz1.trackfiz.net,REJECT
 DOMAIN-SUFFIX,onclkds.com,REJECT
 DOMAIN-SUFFIX,clksite.com,REJECT
 DOMAIN-SUFFIX,clkrev.com,REJECT
@@ -440,6 +490,57 @@ DOMAIN-SUFFIX,dash7taskhub.kineticgatehub.bet,REJECT
 DOMAIN-SUFFIX,data.yhydl.com,REJECT
 DOMAIN-SUFFIX,dcrun.co.uk,REJECT
 DOMAIN-SUFFIX,dcwblida.dz,REJECT
+DOMAIN-SUFFIX,3yd5.dark-salittle.bet,REJECT
+DOMAIN-SUFFIX,5ignal8-forge.dark-salittle.bet,REJECT
+DOMAIN-SUFFIX,67mvmowu.belief-handcraft.bet,REJECT
+DOMAIN-SUFFIX,781q.convinc8mission.bet,REJECT
+DOMAIN-SUFFIX,8ugxvfg.decommiss-mint.bet,REJECT
+DOMAIN-SUFFIX,agropole.tg,REJECT
+DOMAIN-SUFFIX,amb3-cache.retellin8tolle.bet,REJECT
+DOMAIN-SUFFIX,asiaengrs.com,REJECT
+DOMAIN-SUFFIX,atomchec.belief-handcraft.bet,REJECT
+DOMAIN-SUFFIX,bdecgtb.coraprimat0sis.bet,REJECT
+DOMAIN-SUFFIX,clos-aut.dis9ualescapes.bet,REJECT
+DOMAIN-SUFFIX,coralasargetia.ro,REJECT
+DOMAIN-SUFFIX,crimefreesoftware.com,REJECT
+DOMAIN-SUFFIX,d90aaos.dis9ualescapes.bet,REJECT
+DOMAIN-SUFFIX,darkdelivery.convinc8mission.bet,REJECT
+DOMAIN-SUFFIX,deathmatchuk.com,REJECT
+DOMAIN-SUFFIX,def163.keenetic.pro,REJECT
+DOMAIN-SUFFIX,delp-heizungsbau.de,REJECT
+DOMAIN-SUFFIX,derekludlow.com,REJECT
+DOMAIN-SUFFIX,dexios.co.za,REJECT
+DOMAIN-SUFFIX,dezcom.com,REJECT
+DOMAIN-SUFFIX,dhnconstrucciones.com.ar,REJECT
+DOMAIN-SUFFIX,dindong.tos-cn-hongkong.volces.com,REJECT
+DOMAIN-SUFFIX,disk.accord1key.cn,REJECT
+DOMAIN-SUFFIX,divvanews.com,REJECT
+DOMAIN-SUFFIX,dl.1003b.56a.com,REJECT
+DOMAIN-SUFFIX,dl.360safe.com,REJECT
+DOMAIN-SUFFIX,dl.dzqzd.com,REJECT
+DOMAIN-SUFFIX,dl.ijinshan.com,REJECT
+DOMAIN-SUFFIX,dl.natgo.cn,REJECT
+DOMAIN-SUFFIX,dlied6.bytes.tcdnos.com,REJECT
+DOMAIN-SUFFIX,dlied6.yz.tcdnos.com,REJECT
+DOMAIN-SUFFIX,do-dear.com,REJECT
+DOMAIN-SUFFIX,doc.e-statements.app,REJECT
+DOMAIN-SUFFIX,docs.google.com,REJECT
+DOMAIN-SUFFIX,donkeytourscroatia.com,REJECT
+DOMAIN-SUFFIX,down.54nb.com,REJECT
+DOMAIN-SUFFIX,down.ftp21.cc,REJECT
+DOMAIN-SUFFIX,down.fwqlt.com,REJECT
+DOMAIN-SUFFIX,down.mvip8.ru,REJECT
+DOMAIN-SUFFIX,down.pcclear.com,REJECT
+DOMAIN-SUFFIX,down.qqfarmer.com.cn,REJECT
+DOMAIN-SUFFIX,down10d.zol.com.cn,REJECT
+DOMAIN-SUFFIX,downali.game.uc.cn,REJECT
+DOMAIN-SUFFIX,download.caihong.com,REJECT
+DOMAIN-SUFFIX,download.doumaibiji.cn,REJECT
+DOMAIN-SUFFIX,download.haozip.com,REJECT
+DOMAIN-SUFFIX,download.kaobeitu.com,REJECT
+DOMAIN-SUFFIX,download.kbcard.com,REJECT
+DOMAIN-SUFFIX,download.pdf00.cn,REJECT
+DOMAIN-SUFFIX,socket.io,REJECT
 DOMAIN-SUFFIX,coinhive.com,REJECT
 DOMAIN-SUFFIX,coinhiveproxy.com,REJECT
 DOMAIN-SUFFIX,authedmine.com,REJECT
