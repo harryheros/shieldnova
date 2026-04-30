@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-30 15:12:32 UTC
-# Total: 567
-# Breakdown: privacy=56, ads=59, security=454, deduped_total=567, allowlist_removed=0
+# Built: 2026-04-30 16:22:05 UTC
+# Total: 667
+# Breakdown: privacy=56, ads=59, security=554, deduped_total=667, allowlist_removed=0
 payload:
 
   - DOMAIN-SUFFIX,google-analytics.com
@@ -324,6 +324,56 @@ payload:
   - DOMAIN-SUFFIX,002321.cn
   - DOMAIN-SUFFIX,00272781hubpointmicrosoft.myportfolio.com
   - DOMAIN-SUFFIX,002gltz1wz1ltltz1w0wltw02gtz1.trackfiz.net
+  - DOMAIN-SUFFIX,002nuctra02.com
+  - DOMAIN-SUFFIX,002paymts234.com
+  - DOMAIN-SUFFIX,002redir023.dns04.com
+  - DOMAIN-SUFFIX,002sfrontalpeni2773macbook-20email2520webmailfurh25e323w.weebly.com
+  - DOMAIN-SUFFIX,002v.pages.dev
+  - DOMAIN-SUFFIX,002y.github.io
+  - DOMAIN-SUFFIX,0031f0031f.zibonalam.com
+  - DOMAIN-SUFFIX,0033.top
+  - DOMAIN-SUFFIX,003429a9-b7ed-4689-89f.internalaccess.info
+  - DOMAIN-SUFFIX,003455-1318019027.cos.eu-frankfurt.myqcloud.com
+  - DOMAIN-SUFFIX,003467.cc
+  - DOMAIN-SUFFIX,003d6db553fcd8ae426bf76f121e0878-dot-cloud-365-000.el.r.appspot.com
+  - DOMAIN-SUFFIX,003mail.github.io
+  - DOMAIN-SUFFIX,004-auto5eposlt.me
+  - DOMAIN-SUFFIX,004.settrade-services.com
+  - DOMAIN-SUFFIX,004240331.top
+  - DOMAIN-SUFFIX,004261200-conf1rm.000webhostapp.com
+  - DOMAIN-SUFFIX,00435eb8.nd-8wjsn.cloud
+  - DOMAIN-SUFFIX,00439632890395435423.com
+  - DOMAIN-SUFFIX,0046.paypal-merchant.ru
+  - DOMAIN-SUFFIX,004605.com
+  - DOMAIN-SUFFIX,004767666634154.litoralsulpremium.com.br
+  - DOMAIN-SUFFIX,0047e852.jdhuwoskz.cloud
+  - DOMAIN-SUFFIX,004ca7f.netsolhost.com
+  - DOMAIN-SUFFIX,004sba90aolsecure00e0ios0sign0i0in8e0.netlify.app
+  - DOMAIN-SUFFIX,005-user.anzhiyu.workers.dev
+  - DOMAIN-SUFFIX,00514cdeadd561c329964c042008341e-dot-solidstar-improts.uk.r.appspot.com
+  - DOMAIN-SUFFIX,00531688.0fhsdakffirer.org.cn
+  - DOMAIN-SUFFIX,005350049846275.nikkgpkvzv.957733539760618.avpcwvidxgiu.williamhnelson.org
+  - DOMAIN-SUFFIX,0055.top
+  - DOMAIN-SUFFIX,0057888.com
+  - DOMAIN-SUFFIX,005desj-verfact1.com
+  - DOMAIN-SUFFIX,005eb3e6f691652868ee9d5b5820e020-dot-gle9392420309493993.rj.r.appspot.com
+  - DOMAIN-SUFFIX,005pyn4t.com
+  - DOMAIN-SUFFIX,005verf-desj.com
+  - DOMAIN-SUFFIX,005verf-desjcontrole01.com
+  - DOMAIN-SUFFIX,006.zzz.com.ua
+  - DOMAIN-SUFFIX,00600501450003000.cf
+  - DOMAIN-SUFFIX,00610eb3e0ff28bce54e44ddfb2aa544-dot-gle9392420309493993.rj.r.appspot.com
+  - DOMAIN-SUFFIX,006161.com
+  - DOMAIN-SUFFIX,006186.alertbyte.com
+  - DOMAIN-SUFFIX,0064852575383277.eu-gb.cf.appdomain.cloud
+  - DOMAIN-SUFFIX,00669.cc
+  - DOMAIN-SUFFIX,006700.xyz
+  - DOMAIN-SUFFIX,0067786563423xcerrvg.000webhostapp.com
+  - DOMAIN-SUFFIX,006gqd9.pages.dev
+  - DOMAIN-SUFFIX,006l5.mjt.lu
+  - DOMAIN-SUFFIX,006t-rshyktuaerhetjr6yk7tl6tmyrntbref.vercel.app
+  - DOMAIN-SUFFIX,007-c1z.pages.dev
+  - DOMAIN-SUFFIX,0070e26e-ac97-4dd9-a7c9-08cb4d2b1678.id.repl.co
   - DOMAIN-SUFFIX,onclkds.com
   - DOMAIN-SUFFIX,clksite.com
   - DOMAIN-SUFFIX,clkrev.com
@@ -542,6 +592,56 @@ payload:
   - DOMAIN-SUFFIX,download.kbcard.com
   - DOMAIN-SUFFIX,download.pdf00.cn
   - DOMAIN-SUFFIX,socket.io
+  - DOMAIN-SUFFIX,1oca1-trail.belief-handcraft.bet
+  - DOMAIN-SUFFIX,download.pdf00.com
+  - DOMAIN-SUFFIX,download.suxiazai.com
+  - DOMAIN-SUFFIX,download2.huduntech.com
+  - DOMAIN-SUFFIX,dowonline.ru
+  - DOMAIN-SUFFIX,dreamwatchevent.com
+  - DOMAIN-SUFFIX,drevos.ro
+  - DOMAIN-SUFFIX,drive.google.com
+  - DOMAIN-SUFFIX,dubaitechnicalservice.ae
+  - DOMAIN-SUFFIX,dubapkg.cmcmcdn.com
+  - DOMAIN-SUFFIX,dusttv.com
+  - DOMAIN-SUFFIX,dweixin.cn
+  - DOMAIN-SUFFIX,easybrand.vn
+  - DOMAIN-SUFFIX,electri.billregulator.com
+  - DOMAIN-SUFFIX,elisans.novayonetim.com
+  - DOMAIN-SUFFIX,embedone.com
+  - DOMAIN-SUFFIX,en.taichuan.com
+  - DOMAIN-SUFFIX,encod-vault.herod-terminology.bet
+  - DOMAIN-SUFFIX,epanpano.com
+  - DOMAIN-SUFFIX,estudio.ythan.com.br
+  - DOMAIN-SUFFIX,euob.youstarsbuilding.com
+  - DOMAIN-SUFFIX,evangroup.ru
+  - DOMAIN-SUFFIX,everycarebd.com
+  - DOMAIN-SUFFIX,explorer.vg
+  - DOMAIN-SUFFIX,f24-zfcloud.zdn.vn
+  - DOMAIN-SUFFIX,f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com
+  - DOMAIN-SUFFIX,fa1th3-wave.decommiss-mint.bet
+  - DOMAIN-SUFFIX,fakers.co.jp
+  - DOMAIN-SUFFIX,farschid.de
+  - DOMAIN-SUFFIX,fb6390d5.infinityindians.pages.dev
+  - DOMAIN-SUFFIX,fd.v2downf.shop
+  - DOMAIN-SUFFIX,fertas.com.tr
+  - DOMAIN-SUFFIX,file.blackint3.com
+  - DOMAIN-SUFFIX,file.uhsea.com
+  - DOMAIN-SUFFIX,filerit.com
+  - DOMAIN-SUFFIX,files.constantcontact.com
+  - DOMAIN-SUFFIX,files.pythonhosted.org
+  - DOMAIN-SUFFIX,firebasestorage.googleapis.com
+  - DOMAIN-SUFFIX,first-security-verden.de
+  - DOMAIN-SUFFIX,flyingmutts.com
+  - DOMAIN-SUFFIX,fnvimoyvwkbxbmczlqus.supabase.co
+  - DOMAIN-SUFFIX,forms.saurashtrauniversity.edu
+  - DOMAIN-SUFFIX,forspeed.onlinedown.net
+  - DOMAIN-SUFFIX,fromthetrenchesworldreport.com
+  - DOMAIN-SUFFIX,frozi.cc
+  - DOMAIN-SUFFIX,frygzjyhtiunvhvnacif.supabase.co
+  - DOMAIN-SUFFIX,ftp.ywxww.net
+  - DOMAIN-SUFFIX,fukt.link
+  - DOMAIN-SUFFIX,furystaff.tech
+  - DOMAIN-SUFFIX,fz.tiansys.cn
   - DOMAIN-SUFFIX,coinhive.com
   - DOMAIN-SUFFIX,coinhiveproxy.com
   - DOMAIN-SUFFIX,authedmine.com
