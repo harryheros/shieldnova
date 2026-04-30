@@ -10,6 +10,9 @@ Designed with **high compatibility and minimal breakage** in mind, ShieldNova pr
 
 ---
 
+
+> **License Notice**: Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) as of 2026-04-30. Commercial use of any version requires explicit written permission from the author.
+
 ## Why ShieldNova
 
 Unlike large aggregated blocklists, ShieldNova focuses on:
