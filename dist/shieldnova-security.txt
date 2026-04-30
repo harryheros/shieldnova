@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-04-30 03:24:38 UTC
-! Total: 153
-! Breakdown: phishing=52, malware=67, cryptojacking=34, deduped_total=153, allowlist_removed=0
+! Built: 2026-04-30 05:21:11 UTC
+! Total: 253
+! Breakdown: phishing=102, malware=117, cryptojacking=34, deduped_total=253, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Security / Phishing
@@ -76,6 +76,58 @@
 ||000000000a0uutlook.weebly.com^            ! auto: phishing
 
 ! --- Auto-fetched from phishing (2026-04-29) ---
+
+! --- Auto-fetched from phishing (2026-04-30) ---
+||00000000920.us-south.cf.appdomain.cloud^  ! auto: phishing
+||0000000095.godaddysites.com^              ! auto: phishing
+||00000002.c1.biz^                          ! auto: phishing
+||0000000666666.000webhostapp.com^          ! auto: phishing
+||0000000o.weebly.com^                      ! auto: phishing
+||0000000wer.000webhostapp.com^             ! auto: phishing
+||000000541840000.co.vu^                    ! auto: phishing
+||0000006738.vercel.app^                    ! auto: phishing
+||000000788-66666666.000webhostapp.com^     ! auto: phishing
+||00000078uu7u8790090900.000webhostapp.com^ ! auto: phishing
+||000000login.weebly.com^                   ! auto: phishing
+||000001010010104106.cloud^                 ! auto: phishing
+||000002456171.ml^                          ! auto: phishing
+||000002456180.ml^                          ! auto: phishing
+||000003.000000000013.repl.co^              ! auto: phishing
+||0000091193.xyz^                           ! auto: phishing
+||00000f.nuevaconfirma.repl.co^             ! auto: phishing
+||00000microsof.tonohost.com^               ! auto: phishing
+||00000wefv.000webhostapp.com^              ! auto: phishing
+||00001-888887766.weebly.com^               ! auto: phishing
+||00001062.com^                             ! auto: phishing
+||000012151000.co.vu^                       ! auto: phishing
+||000012223.weebly.com^                     ! auto: phishing
+||000025123.com^                            ! auto: phishing
+||00003.godaddysites.com^                   ! auto: phishing
+||000066.godaddysites.com^                  ! auto: phishing
+||0000666688887777.000webhostapp.com^       ! auto: phishing
+||00008.godaddysites.com^                   ! auto: phishing
+||000083.godaddysites.com^                  ! auto: phishing
+||0000bbffxzzzz900.000webhostapp.com^       ! auto: phishing
+||0000guatec.davieelchirinos.repl.co^       ! auto: phishing
+||0000h00003.byethost7.com^                 ! auto: phishing
+||0000mscautorizationclientid.com^          ! auto: phishing
+||0000qwew341432edxzt.000webhostapp.com^    ! auto: phishing
+||0000wa0outlook.weebly.com^                ! auto: phishing
+||0001.353527440.workers.dev^               ! auto: phishing
+||00010xsea34dsd.co.vu^                     ! auto: phishing
+||000111.pages.net.br^                      ! auto: phishing
+||00012sbcglobal.weebly.com^                ! auto: phishing
+||000133210.000webhostapp.com^              ! auto: phishing
+||000193.azurewebsites.net^                 ! auto: phishing
+||0001home.webflow.io^                      ! auto: phishing
+||0001qwis.webflow.io^                      ! auto: phishing
+||0002-i-nastolatek-to-przegrales-zycie-i-to-z-kretesem.fun^ ! auto: phishing
+||000220.000webhostapp.com^                 ! auto: phishing
+||000247aa8f117a13af2094b691ab1b3e.serveo.net^ ! auto: phishing
+||00030ae9.qepfmq.shop^                     ! auto: phishing
+||000343594567126312342754pgsbsnsswrng.000webhostapp.com^ ! auto: phishing
+||0005tecnicoasistente.000webhostapp.com^   ! auto: phishing
+||0006.mediafirew.xyz^                      ! auto: phishing
 ! ============================================================================
 ! ShieldNova - Security / Malware
 ! Malware distribution infrastructure with ZERO legitimate use cases.
@@ -156,6 +208,58 @@
 ||bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link^ ! auto: malware
 ||bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link^ ! auto: malware
 ||bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link^ ! auto: malware
+
+! --- Auto-fetched from malware (2026-04-30) ---
+||acehostunit.so8laven.bet^                 ! auto: malware
+||atom9logicnet.quantumbitlink.bet^         ! auto: malware
+||axis4logicnet.torquegridunit.bet^         ! auto: malware
+||bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link^ ! auto: malware
+||bafybeidvf6tytrspkd4wnvxzs23m3kjr6bfvgszbfwybmmcosl4rrhvuo4.ipfs.dweb.link^ ! auto: malware
+||bafybeidvgy76m4r347tpqg6plr3ac2p7o5bpcluicawc25nuh7mowtkssy.ipfs.dweb.link^ ! auto: malware
+||bafybeieq7tctzxkqidqpq4fjvtznbupqrpo2w4n4lfmzksehei4dinilii.ipfs.w3s.link^ ! auto: malware
+||bafybeiffpkay6l7heq55epccneb563p5chjzclxnso3vkozyorphlz6ana.ipfs.w3s.link^ ! auto: malware
+||bafybeihamvbzrm2tsifa4s7xruhfnsgnkzgtk2jqwj6cwgmdxj4wqe5lm4.ipfs.dweb.link^ ! auto: malware
+||bankhostunit.verd7loka.bet^               ! auto: malware
+||basehostunit.staticmeshview.bet^          ! auto: malware
+||bbos.minet.vn^                            ! auto: malware
+||beautiful-roentgen.176-65-139-130.plesk.page^ ! auto: malware
+||beoauto.alexion.rs^                       ! auto: malware
+||best.obs.cn-sz1.ctyun.cn^                 ! auto: malware
+||best10cdn.blob.core.windows.net^          ! auto: malware
+||bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com^ ! auto: malware
+||blessdayservices.org^                     ! auto: malware
+||blogs.sokun.jp^                           ! auto: malware
+||bmdcompany.com^                           ! auto: malware
+||bnet-api.playm8ru.win^                    ! auto: malware
+||bnet.playm8ru.win^                        ! auto: malware
+||bolt9taskhub.torquegridunit.bet^          ! auto: malware
+||bombayonline.in^                          ! auto: malware
+||book.rollingvideogames.com^               ! auto: malware
+||boydjackson.org^                          ! auto: malware
+||bracell.latitude.net.br^                  ! auto: malware
+||bridgeroad.maverickpreviews.com^          ! auto: malware
+||brightworks.cz^                           ! auto: malware
+||bundle.kpzip.com^                         ! auto: malware
+||burn2pathgate.grov6mira.bet^              ! auto: malware
+||bvaco.com^                                ! auto: malware
+||c.fi3.me^                                 ! auto: malware
+||c0e5b87c.solaraweb-alj.pages.dev^         ! auto: malware
+||c3436037.salamanderprocessing.pages.dev^  ! auto: malware
+||c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru^ ! auto: malware
+||cad.659t.cn^                              ! auto: malware
+||cash8siteview.peta1vrix.bet^              ! auto: malware
+||cat.xiaoshabi.nl^                         ! auto: malware
+||catbaparadisehotel.com.vn^                ! auto: malware
+||ccleaner.gl^                              ! auto: malware
+||cd.textfiles.com^                         ! auto: malware
+||cdaonline.com.ar^                         ! auto: malware
+||cdn-10049480.file.myqcloud.com^           ! auto: malware
+||cdn.file6.goodid.com^                     ! auto: malware
+||cdn.gomlab.com^                           ! auto: malware
+||cdn.novoline.top^                         ! auto: malware
+||cdn.pixelbin.io^                          ! auto: malware
+||cdn.xiaoduoai.com^                        ! auto: malware
+||celebratingseniors.net^                   ! auto: malware
 ! ============================================================================
 ! ShieldNova - Security / Cryptojacking
 ! Conservative blocklist for well-known browser mining infrastructure.
