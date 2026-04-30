@@ -1,6 +1,6 @@
 {
   "profile": "Conservative / Compatibility-First",
-  "built": "2026-04-29 23:33:55 UTC",
+  "built": "2026-04-30 03:24:38 UTC",
   "allowlist_entries": 0,
   "invalid_rules_skipped": 0,
   "bundles": [
@@ -30,9 +30,10 @@
       "description": "Conservative phishing, malware, scam, and cryptojacking domains.",
       "total": 153,
       "breakdown": {
-        "phishing": 102,
-        "malware": 107,
+        "phishing": 52,
+        "malware": 67,
         "cryptojacking": 34,
+        "deduped_total": 153,
         "allowlist_removed": 0
       }
     },
@@ -44,7 +45,8 @@
       "breakdown": {
         "privacy": 56,
         "ads": 59,
-        "security": 243,
+        "security": 153,
+        "deduped_total": 266,
         "allowlist_removed": 0
       }
     },
@@ -58,7 +60,8 @@
         "privacy_cn": 30,
         "ads_global": 59,
         "ads_cn": 21,
-        "security": 243,
+        "security": 153,
+        "deduped_total": 317,
         "allowlist_removed": 0
       }
     },
@@ -72,7 +75,8 @@
         "privacy_hktw": 0,
         "ads_global": 59,
         "ads_hktw": 0,
-        "security": 243,
+        "security": 153,
+        "deduped_total": 266,
         "allowlist_removed": 0
       }
     }
