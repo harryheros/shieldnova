@@ -11,7 +11,7 @@ Designed with **high compatibility and minimal breakage** in mind, ShieldNova pr
 ---
 
 
-> **License Notice**: Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) as of 2026-04-30. Commercial use of any version requires explicit written permission from the author.
+> **License Notice**: All versions of this project, including historical commits, are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Commercial use of any version requires a separate written license agreement.
 
 ## Why ShieldNova
 
@@ -176,10 +176,10 @@ ShieldNova is part of the Nova infrastructure toolkit:
 
 ## License
 
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — Attribution-NonCommercial-ShareAlike.
 
-- **Personal use**: Free, no restrictions.
-- **Commercial use**: Requires a separate license. Contact via [GitHub Issues](https://github.com/harryheros/shieldnova/issues).
+- **Non-commercial use**: Permitted under the terms of CC BY-NC-SA 4.0.
+- **Commercial use**: Requires a separate written license agreement. Contact via [GitHub Issues](https://github.com/harryheros/shieldnova/issues).
 
 ---
 
