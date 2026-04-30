@@ -10,7 +10,6 @@ Designed with **high compatibility and minimal breakage** in mind, ShieldNova pr
 
 ---
 
-
 > **License Notice**: All versions of this project, including historical commits, are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Commercial use of any version requires a separate written license agreement.
 > **Versioning Notice**: Previous public versions of this project may have been distributed under different license terms. All current and future releases are governed solely by the LICENSE file in this repository.
 
@@ -24,6 +23,8 @@ Unlike large aggregated blocklists, ShieldNova focuses on:
 - Long-term maintainability  
 
 The goal is not maximum blocking, but **maximum usable protection**.
+
+For current rule counts per profile, see `dist/stats.json`.
 
 ---
 
@@ -73,7 +74,7 @@ Same coverage. One rule instead of five hundred.
 | | ShieldNova | Typical aggregated lists |
 |---|---|---|
 | Subscribe | 1 link | 10-100+ links |
-| Total rules | ~200 curated | 40,000+ scraped |
+| Total rules | ~600 curated | 40,000+ scraped |
 | Annotations | Every rule | Rarely |
 | Region editions | Yes | No |
 | False positives | Near zero | Frequent |
@@ -84,9 +85,9 @@ Same coverage. One rule instead of five hundred.
 
 ## Modules
 
-- privacy — tracking & telemetry domains  
-- ads — advertising infrastructure  
-- security — phishing, malware, cryptojacking  
+- **privacy** — tracking & telemetry domains  
+- **ads** — advertising infrastructure  
+- **security** — phishing, malware, cryptojacking  
 
 ---
 
