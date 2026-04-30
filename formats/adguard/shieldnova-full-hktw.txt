@@ -4,9 +4,9 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-30 06:20:54 UTC
-! Total: 366
-! Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=253, deduped_total=366, allowlist_removed=0
+! Built: 2026-04-30 06:24:18 UTC
+! Total: 466
+! Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=353, deduped_total=466, allowlist_removed=0
 
 ||google-analytics.com^
 ||googletagmanager.com^
@@ -223,6 +223,56 @@
 ||000343594567126312342754pgsbsnsswrng.000webhostapp.com^
 ||0005tecnicoasistente.000webhostapp.com^
 ||0006.mediafirew.xyz^
+||0006.uk^
+||000667993.codepen.website^
+||000690750.deployed.codepen.website^
+||000717-coinbase.com^
+||0007854.atwebpages.com^
+||0007933738373.myportfolio.com^
+||000811893962007154932393170597959432.hanefra7bikiemta.com^
+||000838774343.000webhostapp.com^
+||00099881111.000webhostapp.com^
+||0009aak.pages.dev^
+||000agreementmail.weebly.com^
+||000cc-ed5446.pages.dev^
+||000ccee008762200ccceecc.pages.dev^
+||000chgojhd78jhvbwreuvk.webnode.com^
+||000codashoppfreee-771.duckdns.org^
+||000e-239f-23ea3-yah100-8ta1xb1rs33.netlify.app^
+||000f9e-48.myshopify.com^
+||000ficohs99onli22.125mb.com^
+||000ind002.webflow.io^
+||000int-5403945int.xyz^
+||000itkw.lfd.myj.mybluehost.me^
+||000jbjdvvdhjvbdjvndvdv.s3.us-east-2.amazonaws.com^
+||000l.weebly.com^
+||000l34e.wcomhost.com^
+||000m8ih.wcomhost.com^
+||000mclogin.micloud-object-storage-xc-cos-static-web-hosting-qny.s3.us-east.cloud-object-storage.appdomain.cloud^
+||000nt6r.wcomhost.com^
+||000nx2b.wcomhost.com^
+||000o2ba.wcomhost.com^
+||000o4d4.wcomhost.com^
+||000o5eh.wcomhost.com^
+||000o8dc.wcomhost.com^
+||000ogwl.wcomhost.com^
+||000ogxd.wcomhost.com^
+||000oiq3.wcomhost.com^
+||000p0d5.wcomhost.com^
+||000p0dg.wcomhost.com^
+||000p4en.wcomhost.com^
+||000p6vl.wcomhost.com^
+||000p7l3.wcomhost.com^
+||000p8my.wcomhost.com^
+||000pbob.wcomhost.com^
+||000pbox.wcomhost.com^
+||000unlock.000webhostapp.com^
+||000update1.alsgroup-eg.com^
+||000web-signon.4nmn.com^
+||000webhostcrazystikers.000webhostapp.com^
+||000wechost.000webhostapp.com^
+||000wuwtg000ywwtvwt0y.networkmcn.com^
+||000xxxbodddxx00.webcindario.com^
 ||onclkds.com^
 ||clksite.com^
 ||clkrev.com^
@@ -340,6 +390,56 @@
 ||cdn.pixelbin.io^
 ||cdn.xiaoduoai.com^
 ||celebratingseniors.net^
+||14-0-204-188.static.pccw-hkt.com^
+||accesstelematics.com^
+||biducaconfeitos.com.br^
+||cfs10.blog.daum.net^
+||cfs13.tistory.com^
+||cfs5.tistory.com^
+||cfs7.blog.daum.net^
+||cfs9.blog.daum.net^
+||cfu.twr.mybluehost.me^
+||chanchanmiraixd.duckdns.org^
+||chat-server.maverickpreviews.com^
+||checkfivem.com^
+||checkinetverifk.com^
+||chelpus.com^
+||chinaapper.com^
+||chiptune.com^
+||chuguadventures.co.tz^
+||chungminhtaichinhsaigon.net^
+||cl.ssouy.com^
+||class1004.dothome.co.kr^
+||clipaid.app^
+||cloudstay168.com^
+||clubdetiroelpicarcho.com^
+||cn.unionlever.com^
+||co-emas.com^
+||codeload.github.com^
+||codemeshsite.cryptosyncflow.bet^
+||cold6siteview.staticmeshview.bet^
+||compimento.ba^
+||compuserviceonline.com.br^
+||contentmentfairnesspesky.com^
+||continentalgroup.net.in^
+||controliumbt.com^
+||corehostunit.quantumbitlink.bet^
+||corporacioncrf.com^
+||cpofficial.com^
+||crystalpvp.ru^
+||cs.go.kg^
+||csg-app.com^
+||ct3-24.ru^
+||d.14yaa.com^
+||d.kpzip.com^
+||d.wanyouxi7.com^
+||d2314eac.solaraweb-alj.pages.dev^
+||d3cciiowg5l3jx.cloudfront.net^
+||damiancollier.com^
+||dash7taskhub.kineticgatehub.bet^
+||data.yhydl.com^
+||dcrun.co.uk^
+||dcwblida.dz^
 ||coinhive.com^
 ||coinhiveproxy.com^
 ||authedmine.com^
