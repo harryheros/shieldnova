@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-30 06:20:54 UTC
-# Total: 253
-# Breakdown: phishing=102, malware=117, cryptojacking=34, deduped_total=253, allowlist_removed=0
+# Built: 2026-04-30 06:24:18 UTC
+# Total: 353
+# Breakdown: phishing=152, malware=167, cryptojacking=34, deduped_total=353, allowlist_removed=0
 payload:
 
   - DOMAIN-SUFFIX,16shop.co
@@ -111,6 +111,56 @@ payload:
   - DOMAIN-SUFFIX,000343594567126312342754pgsbsnsswrng.000webhostapp.com
   - DOMAIN-SUFFIX,0005tecnicoasistente.000webhostapp.com
   - DOMAIN-SUFFIX,0006.mediafirew.xyz
+  - DOMAIN-SUFFIX,0006.uk
+  - DOMAIN-SUFFIX,000667993.codepen.website
+  - DOMAIN-SUFFIX,000690750.deployed.codepen.website
+  - DOMAIN-SUFFIX,000717-coinbase.com
+  - DOMAIN-SUFFIX,0007854.atwebpages.com
+  - DOMAIN-SUFFIX,0007933738373.myportfolio.com
+  - DOMAIN-SUFFIX,000811893962007154932393170597959432.hanefra7bikiemta.com
+  - DOMAIN-SUFFIX,000838774343.000webhostapp.com
+  - DOMAIN-SUFFIX,00099881111.000webhostapp.com
+  - DOMAIN-SUFFIX,0009aak.pages.dev
+  - DOMAIN-SUFFIX,000agreementmail.weebly.com
+  - DOMAIN-SUFFIX,000cc-ed5446.pages.dev
+  - DOMAIN-SUFFIX,000ccee008762200ccceecc.pages.dev
+  - DOMAIN-SUFFIX,000chgojhd78jhvbwreuvk.webnode.com
+  - DOMAIN-SUFFIX,000codashoppfreee-771.duckdns.org
+  - DOMAIN-SUFFIX,000e-239f-23ea3-yah100-8ta1xb1rs33.netlify.app
+  - DOMAIN-SUFFIX,000f9e-48.myshopify.com
+  - DOMAIN-SUFFIX,000ficohs99onli22.125mb.com
+  - DOMAIN-SUFFIX,000ind002.webflow.io
+  - DOMAIN-SUFFIX,000int-5403945int.xyz
+  - DOMAIN-SUFFIX,000itkw.lfd.myj.mybluehost.me
+  - DOMAIN-SUFFIX,000jbjdvvdhjvbdjvndvdv.s3.us-east-2.amazonaws.com
+  - DOMAIN-SUFFIX,000l.weebly.com
+  - DOMAIN-SUFFIX,000l34e.wcomhost.com
+  - DOMAIN-SUFFIX,000m8ih.wcomhost.com
+  - DOMAIN-SUFFIX,000mclogin.micloud-object-storage-xc-cos-static-web-hosting-qny.s3.us-east.cloud-object-storage.appdomain.cloud
+  - DOMAIN-SUFFIX,000nt6r.wcomhost.com
+  - DOMAIN-SUFFIX,000nx2b.wcomhost.com
+  - DOMAIN-SUFFIX,000o2ba.wcomhost.com
+  - DOMAIN-SUFFIX,000o4d4.wcomhost.com
+  - DOMAIN-SUFFIX,000o5eh.wcomhost.com
+  - DOMAIN-SUFFIX,000o8dc.wcomhost.com
+  - DOMAIN-SUFFIX,000ogwl.wcomhost.com
+  - DOMAIN-SUFFIX,000ogxd.wcomhost.com
+  - DOMAIN-SUFFIX,000oiq3.wcomhost.com
+  - DOMAIN-SUFFIX,000p0d5.wcomhost.com
+  - DOMAIN-SUFFIX,000p0dg.wcomhost.com
+  - DOMAIN-SUFFIX,000p4en.wcomhost.com
+  - DOMAIN-SUFFIX,000p6vl.wcomhost.com
+  - DOMAIN-SUFFIX,000p7l3.wcomhost.com
+  - DOMAIN-SUFFIX,000p8my.wcomhost.com
+  - DOMAIN-SUFFIX,000pbob.wcomhost.com
+  - DOMAIN-SUFFIX,000pbox.wcomhost.com
+  - DOMAIN-SUFFIX,000unlock.000webhostapp.com
+  - DOMAIN-SUFFIX,000update1.alsgroup-eg.com
+  - DOMAIN-SUFFIX,000web-signon.4nmn.com
+  - DOMAIN-SUFFIX,000webhostcrazystikers.000webhostapp.com
+  - DOMAIN-SUFFIX,000wechost.000webhostapp.com
+  - DOMAIN-SUFFIX,000wuwtg000ywwtvwt0y.networkmcn.com
+  - DOMAIN-SUFFIX,000xxxbodddxx00.webcindario.com
   - DOMAIN-SUFFIX,onclkds.com
   - DOMAIN-SUFFIX,clksite.com
   - DOMAIN-SUFFIX,clkrev.com
@@ -228,6 +278,56 @@ payload:
   - DOMAIN-SUFFIX,cdn.pixelbin.io
   - DOMAIN-SUFFIX,cdn.xiaoduoai.com
   - DOMAIN-SUFFIX,celebratingseniors.net
+  - DOMAIN-SUFFIX,14-0-204-188.static.pccw-hkt.com
+  - DOMAIN-SUFFIX,accesstelematics.com
+  - DOMAIN-SUFFIX,biducaconfeitos.com.br
+  - DOMAIN-SUFFIX,cfs10.blog.daum.net
+  - DOMAIN-SUFFIX,cfs13.tistory.com
+  - DOMAIN-SUFFIX,cfs5.tistory.com
+  - DOMAIN-SUFFIX,cfs7.blog.daum.net
+  - DOMAIN-SUFFIX,cfs9.blog.daum.net
+  - DOMAIN-SUFFIX,cfu.twr.mybluehost.me
+  - DOMAIN-SUFFIX,chanchanmiraixd.duckdns.org
+  - DOMAIN-SUFFIX,chat-server.maverickpreviews.com
+  - DOMAIN-SUFFIX,checkfivem.com
+  - DOMAIN-SUFFIX,checkinetverifk.com
+  - DOMAIN-SUFFIX,chelpus.com
+  - DOMAIN-SUFFIX,chinaapper.com
+  - DOMAIN-SUFFIX,chiptune.com
+  - DOMAIN-SUFFIX,chuguadventures.co.tz
+  - DOMAIN-SUFFIX,chungminhtaichinhsaigon.net
+  - DOMAIN-SUFFIX,cl.ssouy.com
+  - DOMAIN-SUFFIX,class1004.dothome.co.kr
+  - DOMAIN-SUFFIX,clipaid.app
+  - DOMAIN-SUFFIX,cloudstay168.com
+  - DOMAIN-SUFFIX,clubdetiroelpicarcho.com
+  - DOMAIN-SUFFIX,cn.unionlever.com
+  - DOMAIN-SUFFIX,co-emas.com
+  - DOMAIN-SUFFIX,codeload.github.com
+  - DOMAIN-SUFFIX,codemeshsite.cryptosyncflow.bet
+  - DOMAIN-SUFFIX,cold6siteview.staticmeshview.bet
+  - DOMAIN-SUFFIX,compimento.ba
+  - DOMAIN-SUFFIX,compuserviceonline.com.br
+  - DOMAIN-SUFFIX,contentmentfairnesspesky.com
+  - DOMAIN-SUFFIX,continentalgroup.net.in
+  - DOMAIN-SUFFIX,controliumbt.com
+  - DOMAIN-SUFFIX,corehostunit.quantumbitlink.bet
+  - DOMAIN-SUFFIX,corporacioncrf.com
+  - DOMAIN-SUFFIX,cpofficial.com
+  - DOMAIN-SUFFIX,crystalpvp.ru
+  - DOMAIN-SUFFIX,cs.go.kg
+  - DOMAIN-SUFFIX,csg-app.com
+  - DOMAIN-SUFFIX,ct3-24.ru
+  - DOMAIN-SUFFIX,d.14yaa.com
+  - DOMAIN-SUFFIX,d.kpzip.com
+  - DOMAIN-SUFFIX,d.wanyouxi7.com
+  - DOMAIN-SUFFIX,d2314eac.solaraweb-alj.pages.dev
+  - DOMAIN-SUFFIX,d3cciiowg5l3jx.cloudfront.net
+  - DOMAIN-SUFFIX,damiancollier.com
+  - DOMAIN-SUFFIX,dash7taskhub.kineticgatehub.bet
+  - DOMAIN-SUFFIX,data.yhydl.com
+  - DOMAIN-SUFFIX,dcrun.co.uk
+  - DOMAIN-SUFFIX,dcwblida.dz
   - DOMAIN-SUFFIX,coinhive.com
   - DOMAIN-SUFFIX,coinhiveproxy.com
   - DOMAIN-SUFFIX,authedmine.com

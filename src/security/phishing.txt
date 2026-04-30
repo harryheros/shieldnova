@@ -120,3 +120,55 @@
 ||000343594567126312342754pgsbsnsswrng.000webhostapp.com^! auto: phishing
 ||0005tecnicoasistente.000webhostapp.com^   ! auto: phishing
 ||0006.mediafirew.xyz^                      ! auto: phishing
+
+! --- Auto-fetched from phishing (2026-04-30) ---
+||0006.uk^                                  ! auto: phishing
+||000667993.codepen.website^                ! auto: phishing
+||000690750.deployed.codepen.website^       ! auto: phishing
+||000717-coinbase.com^                      ! auto: phishing
+||0007854.atwebpages.com^                   ! auto: phishing
+||0007933738373.myportfolio.com^            ! auto: phishing
+||000811893962007154932393170597959432.hanefra7bikiemta.com^! auto: phishing
+||000838774343.000webhostapp.com^           ! auto: phishing
+||00099881111.000webhostapp.com^            ! auto: phishing
+||0009aak.pages.dev^                        ! auto: phishing
+||000agreementmail.weebly.com^              ! auto: phishing
+||000cc-ed5446.pages.dev^                   ! auto: phishing
+||000ccee008762200ccceecc.pages.dev^        ! auto: phishing
+||000chgojhd78jhvbwreuvk.webnode.com^       ! auto: phishing
+||000codashoppfreee-771.duckdns.org^        ! auto: phishing
+||000e-239f-23ea3-yah100-8ta1xb1rs33.netlify.app^! auto: phishing
+||000f9e-48.myshopify.com^                  ! auto: phishing
+||000ficohs99onli22.125mb.com^              ! auto: phishing
+||000ind002.webflow.io^                     ! auto: phishing
+||000int-5403945int.xyz^                    ! auto: phishing
+||000itkw.lfd.myj.mybluehost.me^            ! auto: phishing
+||000jbjdvvdhjvbdjvndvdv.s3.us-east-2.amazonaws.com^! auto: phishing
+||000l.weebly.com^                          ! auto: phishing
+||000l34e.wcomhost.com^                     ! auto: phishing
+||000m8ih.wcomhost.com^                     ! auto: phishing
+||000mclogin.micloud-object-storage-xc-cos-static-web-hosting-qny.s3.us-east.cloud-object-storage.appdomain.cloud^! auto: phishing
+||000nt6r.wcomhost.com^                     ! auto: phishing
+||000nx2b.wcomhost.com^                     ! auto: phishing
+||000o2ba.wcomhost.com^                     ! auto: phishing
+||000o4d4.wcomhost.com^                     ! auto: phishing
+||000o5eh.wcomhost.com^                     ! auto: phishing
+||000o8dc.wcomhost.com^                     ! auto: phishing
+||000ogwl.wcomhost.com^                     ! auto: phishing
+||000ogxd.wcomhost.com^                     ! auto: phishing
+||000oiq3.wcomhost.com^                     ! auto: phishing
+||000p0d5.wcomhost.com^                     ! auto: phishing
+||000p0dg.wcomhost.com^                     ! auto: phishing
+||000p4en.wcomhost.com^                     ! auto: phishing
+||000p6vl.wcomhost.com^                     ! auto: phishing
+||000p7l3.wcomhost.com^                     ! auto: phishing
+||000p8my.wcomhost.com^                     ! auto: phishing
+||000pbob.wcomhost.com^                     ! auto: phishing
+||000pbox.wcomhost.com^                     ! auto: phishing
+||000unlock.000webhostapp.com^              ! auto: phishing
+||000update1.alsgroup-eg.com^               ! auto: phishing
+||000web-signon.4nmn.com^                   ! auto: phishing
+||000webhostcrazystikers.000webhostapp.com^ ! auto: phishing
+||000wechost.000webhostapp.com^             ! auto: phishing
+||000wuwtg000ywwtvwt0y.networkmcn.com^      ! auto: phishing
+||000xxxbodddxx00.webcindario.com^          ! auto: phishing
