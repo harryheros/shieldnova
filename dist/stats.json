@@ -1,6 +1,6 @@
 {
   "profile": "Conservative / Compatibility-First",
-  "built": "2026-04-30 21:47:44 UTC",
+  "built": "2026-04-30 22:09:03 UTC",
   "allowlist_entries": 0,
   "invalid_rules_skipped": 0,
   "bundles": [
@@ -69,14 +69,14 @@
       "filename": "shieldnova-full-hktw.txt",
       "title": "Full (Hong Kong & Taiwan)",
       "description": "Complete protection with additional Hong Kong and Taiwan domains.",
-      "total": 767,
+      "total": 805,
       "breakdown": {
         "privacy_global": 56,
-        "privacy_hktw": 0,
+        "privacy_hktw": 18,
         "ads_global": 59,
-        "ads_hktw": 0,
+        "ads_hktw": 20,
         "security": 654,
-        "deduped_total": 767,
+        "deduped_total": 805,
         "allowlist_removed": 0
       }
     }

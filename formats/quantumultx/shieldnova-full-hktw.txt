@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-30 21:47:44 UTC
-# Total: 767
-# Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=654, deduped_total=767, allowlist_removed=0
+# Built: 2026-04-30 22:09:03 UTC
+# Total: 805
+# Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=654, deduped_total=805, allowlist_removed=0
 
 HOST-SUFFIX,google-analytics.com,reject
 HOST-SUFFIX,googletagmanager.com,reject
@@ -775,3 +775,41 @@ HOST-SUFFIX,coin-service.com,reject
 HOST-SUFFIX,webassembly.stream,reject
 HOST-SUFFIX,wasm.stream,reject
 HOST-SUFFIX,adless.io,reject
+HOST-SUFFIX,analytics.query.yahoo.com,reject
+HOST-SUFFIX,geo.yahoo.com,reject
+HOST-SUFFIX,log.fc.yahoo.com,reject
+HOST-SUFFIX,tr.line.me,reject
+HOST-SUFFIX,uts-front.line-apps.com,reject
+HOST-SUFFIX,a.line.me,reject
+HOST-SUFFIX,appier.net,reject
+HOST-SUFFIX,appier.com,reject
+HOST-SUFFIX,aiqua.appier.net,reject
+HOST-SUFFIX,jscdn.appier.net,reject
+HOST-SUFFIX,apn.c.appier.net,reject
+HOST-SUFFIX,tenmax.io,reject
+HOST-SUFFIX,adx.tappier.com,reject
+HOST-SUFFIX,bridgewell.com,reject
+HOST-SUFFIX,bidder.brealtime.com,reject
+HOST-SUFFIX,beacon.sojern.com,reject
+HOST-SUFFIX,tracking.wisepops.com,reject
+HOST-SUFFIX,pixel.wp.com,reject
+HOST-SUFFIX,tw.adserver.yahoo.com,reject
+HOST-SUFFIX,adserver.yahoo.com,reject
+HOST-SUFFIX,ads.yahoo.com,reject
+HOST-SUFFIX,gemini.yahoo.com,reject
+HOST-SUFFIX,ad.line-scdn.net,reject
+HOST-SUFFIX,adserver.line-apps.com,reject
+HOST-SUFFIX,obs.line-scdn.net,reject
+HOST-SUFFIX,adcloud.jp,reject
+HOST-SUFFIX,ad2iction.com,reject
+HOST-SUFFIX,anymanager.io,reject
+HOST-SUFFIX,anymind360.com,reject
+HOST-SUFFIX,adbert.com.tw,reject
+HOST-SUFFIX,adbert.com,reject
+HOST-SUFFIX,clickforce.com.tw,reject
+HOST-SUFFIX,clickforce.com,reject
+HOST-SUFFIX,urad.com.tw,reject
+HOST-SUFFIX,adup-tech.com,reject
+HOST-SUFFIX,innity.com,reject
+HOST-SUFFIX,innity.net,reject
+HOST-SUFFIX,pixel.advertising.com,reject

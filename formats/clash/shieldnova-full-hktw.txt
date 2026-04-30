@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-30 21:47:44 UTC
-# Total: 767
-# Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=654, deduped_total=767, allowlist_removed=0
+# Built: 2026-04-30 22:09:03 UTC
+# Total: 805
+# Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=654, deduped_total=805, allowlist_removed=0
 payload:
 
   - DOMAIN-SUFFIX,google-analytics.com
@@ -776,3 +776,41 @@ payload:
   - DOMAIN-SUFFIX,webassembly.stream
   - DOMAIN-SUFFIX,wasm.stream
   - DOMAIN-SUFFIX,adless.io
+  - DOMAIN-SUFFIX,analytics.query.yahoo.com
+  - DOMAIN-SUFFIX,geo.yahoo.com
+  - DOMAIN-SUFFIX,log.fc.yahoo.com
+  - DOMAIN-SUFFIX,tr.line.me
+  - DOMAIN-SUFFIX,uts-front.line-apps.com
+  - DOMAIN-SUFFIX,a.line.me
+  - DOMAIN-SUFFIX,appier.net
+  - DOMAIN-SUFFIX,appier.com
+  - DOMAIN-SUFFIX,aiqua.appier.net
+  - DOMAIN-SUFFIX,jscdn.appier.net
+  - DOMAIN-SUFFIX,apn.c.appier.net
+  - DOMAIN-SUFFIX,tenmax.io
+  - DOMAIN-SUFFIX,adx.tappier.com
+  - DOMAIN-SUFFIX,bridgewell.com
+  - DOMAIN-SUFFIX,bidder.brealtime.com
+  - DOMAIN-SUFFIX,beacon.sojern.com
+  - DOMAIN-SUFFIX,tracking.wisepops.com
+  - DOMAIN-SUFFIX,pixel.wp.com
+  - DOMAIN-SUFFIX,tw.adserver.yahoo.com
+  - DOMAIN-SUFFIX,adserver.yahoo.com
+  - DOMAIN-SUFFIX,ads.yahoo.com
+  - DOMAIN-SUFFIX,gemini.yahoo.com
+  - DOMAIN-SUFFIX,ad.line-scdn.net
+  - DOMAIN-SUFFIX,adserver.line-apps.com
+  - DOMAIN-SUFFIX,obs.line-scdn.net
+  - DOMAIN-SUFFIX,adcloud.jp
+  - DOMAIN-SUFFIX,ad2iction.com
+  - DOMAIN-SUFFIX,anymanager.io
+  - DOMAIN-SUFFIX,anymind360.com
+  - DOMAIN-SUFFIX,adbert.com.tw
+  - DOMAIN-SUFFIX,adbert.com
+  - DOMAIN-SUFFIX,clickforce.com.tw
+  - DOMAIN-SUFFIX,clickforce.com
+  - DOMAIN-SUFFIX,urad.com.tw
+  - DOMAIN-SUFFIX,adup-tech.com
+  - DOMAIN-SUFFIX,innity.com
+  - DOMAIN-SUFFIX,innity.net
+  - DOMAIN-SUFFIX,pixel.advertising.com

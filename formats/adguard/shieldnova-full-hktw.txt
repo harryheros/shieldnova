@@ -4,9 +4,9 @@
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
-! Built: 2026-04-30 21:47:44 UTC
-! Total: 767
-! Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=654, deduped_total=767, allowlist_removed=0
+! Built: 2026-04-30 22:09:03 UTC
+! Total: 805
+! Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=654, deduped_total=805, allowlist_removed=0
 
 ||google-analytics.com^
 ||googletagmanager.com^
@@ -775,3 +775,41 @@
 ||webassembly.stream^
 ||wasm.stream^
 ||adless.io^
+||analytics.query.yahoo.com^
+||geo.yahoo.com^
+||log.fc.yahoo.com^
+||tr.line.me^
+||uts-front.line-apps.com^
+||a.line.me^
+||appier.net^
+||appier.com^
+||aiqua.appier.net^
+||jscdn.appier.net^
+||apn.c.appier.net^
+||tenmax.io^
+||adx.tappier.com^
+||bridgewell.com^
+||bidder.brealtime.com^
+||beacon.sojern.com^
+||tracking.wisepops.com^
+||pixel.wp.com^
+||tw.adserver.yahoo.com^
+||adserver.yahoo.com^
+||ads.yahoo.com^
+||gemini.yahoo.com^
+||ad.line-scdn.net^
+||adserver.line-apps.com^
+||obs.line-scdn.net^
+||adcloud.jp^
+||ad2iction.com^
+||anymanager.io^
+||anymind360.com^
+||adbert.com.tw^
+||adbert.com^
+||clickforce.com.tw^
+||clickforce.com^
+||urad.com.tw^
+||adup-tech.com^
+||innity.com^
+||innity.net^
+||pixel.advertising.com^

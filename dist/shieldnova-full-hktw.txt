@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-04-30 21:47:44 UTC
-! Total: 767
-! Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=654, deduped_total=767, allowlist_removed=0
+! Built: 2026-04-30 22:09:03 UTC
+! Total: 805
+! Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=654, deduped_total=805, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -899,3 +899,78 @@
 ||webassembly.stream^                       ! WebAssembly mining payload delivery
 ||wasm.stream^                              ! WASM mining payload delivery
 ||adless.io^                                ! Adless - mining-as-ad-replacement
+! ============================================================================
+! ShieldNova - Privacy / Hong Kong & Taiwan
+! Conservative HK/TW regional analytics, attribution, and telemetry endpoints.
+!
+! SAFETY: Includes tracking/telemetry endpoints with low likelihood of breaking
+! core website or app functions. Avoids login, payments, CDN, comments, maps,
+! news content, and general API hostnames.
+! ============================================================================
+
+! --- Yahoo Taiwan / Regional Analytics ---
+||analytics.query.yahoo.com^                ! Yahoo analytics endpoint used across regional Yahoo properties
+||geo.yahoo.com^                            ! Yahoo geo / audience measurement endpoint
+||log.fc.yahoo.com^                         ! Yahoo click / event logging endpoint
+
+! --- LINE / Regional Ad & Analytics Telemetry ---
+||tr.line.me^                               ! LINE conversion / tracking pixel
+||uts-front.line-apps.com^                  ! LINE app telemetry endpoint
+||a.line.me^                                ! LINE advertising attribution endpoint
+
+! --- Appier / Taiwan Ad-tech Analytics ---
+||appier.net^                               ! Appier AI marketing / audience tracking
+||appier.com^                               ! Appier marketing technology
+||aiqua.appier.net^                         ! Appier AIQUA customer engagement tracking
+||jscdn.appier.net^                         ! Appier tracking script delivery
+||apn.c.appier.net^                         ! Appier ad / attribution endpoint
+
+! --- TenMax / Taiwan Ad-tech ---
+||tenmax.io^                                ! TenMax ad-tech / tracking platform
+||adx.tappier.com^                          ! TenMax/Appier ad exchange endpoint
+
+! --- Bridgewell / Taiwan Ad-tech ---
+||bridgewell.com^                           ! Bridgewell digital advertising platform
+||bidder.brealtime.com^                     ! Real-time bidding endpoint
+
+! --- Hong Kong / Taiwan Web Analytics & Tagging ---
+||beacon.sojern.com^                        ! Travel advertising beacon often seen on regional travel sites
+||tracking.wisepops.com^                    ! Marketing popup/tracking endpoint
+||pixel.wp.com^                             ! WordPress.com stats pixel used by regional publishers
+! ============================================================================
+! ShieldNova - Advertising / Hong Kong & Taiwan
+! Conservative HK/TW regional advertising additions.
+!
+! SAFETY: Targets clear ad-serving, ad-exchange, and sponsored-content domains.
+! Avoids broadcaster/news core domains and general-purpose CDNs.
+! ============================================================================
+
+! --- Yahoo Taiwan / Verizon Media Ads ---
+||tw.adserver.yahoo.com^                    ! Yahoo Taiwan ad serving
+||adserver.yahoo.com^                       ! Yahoo ad serving
+||ads.yahoo.com^                            ! Yahoo Ads delivery
+||gemini.yahoo.com^                         ! Yahoo native advertising
+
+! --- LINE Ads ---
+||ad.line-scdn.net^                         ! LINE ad static assets
+||adserver.line-apps.com^                   ! LINE ad server
+||obs.line-scdn.net^                        ! LINE ad / impression assets
+
+! --- Appier / Taiwan Advertising ---
+||adcloud.jp^                               ! Appier CrossX advertising delivery
+||ad2iction.com^                            ! Appier/Ad2iction ad network
+||anymanager.io^                            ! AnyManager publisher monetization
+||anymind360.com^                           ! AnyMind advertising platform
+
+! --- Taiwan Publisher / Ad Networks ---
+||adbert.com.tw^                            ! Adbert Taiwan ad network
+||adbert.com^                               ! Adbert ad platform
+||clickforce.com.tw^                        ! ClickForce Taiwan ad network
+||clickforce.com^                           ! ClickForce ad platform
+||urad.com.tw^                              ! uRad Taiwan advertising network
+||adup-tech.com^                            ! Adup ad network
+
+! --- Hong Kong / Regional Programmatic Ads ---
+||innity.com^                               ! Innity regional ad network
+||innity.net^                               ! Innity ad delivery
+||pixel.advertising.com^                    ! Advertising.com ad pixel

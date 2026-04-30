@@ -62,9 +62,9 @@ SOURCES = {
         'description': 'abuse.ch ThreatFox - recent malware IOCs',
     },
     'nocoin': {
-        'url': 'https://raw.githubusercontent.com/nicehash/NoCoin/master/src/nocoin-list.txt',
+        'url': 'https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt',
         'target': 'cryptojacking',
-        'description': 'NoCoin - browser mining domain list',
+        'description': 'adblock-nocoin-list - actively maintained cryptojacking domain list',
     },
     'phishing_database': {
         'url': 'https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt',
@@ -234,11 +234,24 @@ def parse_threatfox(content: str) -> set:
 
 
 def parse_nocoin(content: str) -> set:
+    """
+    Parse adblock-nocoin-list format (||domain^) or plain domain list.
+    Handles both AdBlock syntax and plain text formats.
+    """
     domains = set()
     for line in content.splitlines():
-        domain = extract_domain(line)
-        if domain:
-            domains.add(domain)
+        line = line.strip()
+        if not line or line.startswith('!') or line.startswith('#'):
+            continue
+        # AdBlock format: ||domain^
+        if line.startswith('||') and line.endswith('^'):
+            domain = line[2:-1]
+        elif line.startswith('||'):
+            domain = line[2:].split('^')[0]
+        else:
+            domain = extract_domain(line)
+        if domain and is_valid_domain(domain):
+            domains.add(domain.lower())
     return domains
 
 

@@ -1,1 +1,37 @@
-! NOTE: HK/TW regional advertising additions will be added after individual verification.
+! ============================================================================
+! ShieldNova - Advertising / Hong Kong & Taiwan
+! Conservative HK/TW regional advertising additions.
+!
+! SAFETY: Targets clear ad-serving, ad-exchange, and sponsored-content domains.
+! Avoids broadcaster/news core domains and general-purpose CDNs.
+! ============================================================================
+
+! --- Yahoo Taiwan / Verizon Media Ads ---
+||tw.adserver.yahoo.com^                    ! Yahoo Taiwan ad serving
+||adserver.yahoo.com^                       ! Yahoo ad serving
+||ads.yahoo.com^                            ! Yahoo Ads delivery
+||gemini.yahoo.com^                         ! Yahoo native advertising
+
+! --- LINE Ads ---
+||ad.line-scdn.net^                         ! LINE ad static assets
+||adserver.line-apps.com^                   ! LINE ad server
+||obs.line-scdn.net^                        ! LINE ad / impression assets
+
+! --- Appier / Taiwan Advertising ---
+||adcloud.jp^                               ! Appier CrossX advertising delivery
+||ad2iction.com^                            ! Appier/Ad2iction ad network
+||anymanager.io^                            ! AnyManager publisher monetization
+||anymind360.com^                           ! AnyMind advertising platform
+
+! --- Taiwan Publisher / Ad Networks ---
+||adbert.com.tw^                            ! Adbert Taiwan ad network
+||adbert.com^                               ! Adbert ad platform
+||clickforce.com.tw^                        ! ClickForce Taiwan ad network
+||clickforce.com^                           ! ClickForce ad platform
+||urad.com.tw^                              ! uRad Taiwan advertising network
+||adup-tech.com^                            ! Adup ad network
+
+! --- Hong Kong / Regional Programmatic Ads ---
+||innity.com^                               ! Innity regional ad network
+||innity.net^                               ! Innity ad delivery
+||pixel.advertising.com^                    ! Advertising.com ad pixel

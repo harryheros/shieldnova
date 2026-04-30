@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-04-30 21:47:44 UTC
-# Total: 767
-# Breakdown: privacy_global=56, privacy_hktw=0, ads_global=59, ads_hktw=0, security=654, deduped_total=767, allowlist_removed=0
+# Built: 2026-04-30 22:09:03 UTC
+# Total: 805
+# Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=654, deduped_total=805, allowlist_removed=0
 
 DOMAIN-SUFFIX,google-analytics.com,REJECT
 DOMAIN-SUFFIX,googletagmanager.com,REJECT
@@ -775,3 +775,41 @@ DOMAIN-SUFFIX,coin-service.com,REJECT
 DOMAIN-SUFFIX,webassembly.stream,REJECT
 DOMAIN-SUFFIX,wasm.stream,REJECT
 DOMAIN-SUFFIX,adless.io,REJECT
+DOMAIN-SUFFIX,analytics.query.yahoo.com,REJECT
+DOMAIN-SUFFIX,geo.yahoo.com,REJECT
+DOMAIN-SUFFIX,log.fc.yahoo.com,REJECT
+DOMAIN-SUFFIX,tr.line.me,REJECT
+DOMAIN-SUFFIX,uts-front.line-apps.com,REJECT
+DOMAIN-SUFFIX,a.line.me,REJECT
+DOMAIN-SUFFIX,appier.net,REJECT
+DOMAIN-SUFFIX,appier.com,REJECT
+DOMAIN-SUFFIX,aiqua.appier.net,REJECT
+DOMAIN-SUFFIX,jscdn.appier.net,REJECT
+DOMAIN-SUFFIX,apn.c.appier.net,REJECT
+DOMAIN-SUFFIX,tenmax.io,REJECT
+DOMAIN-SUFFIX,adx.tappier.com,REJECT
+DOMAIN-SUFFIX,bridgewell.com,REJECT
+DOMAIN-SUFFIX,bidder.brealtime.com,REJECT
+DOMAIN-SUFFIX,beacon.sojern.com,REJECT
+DOMAIN-SUFFIX,tracking.wisepops.com,REJECT
+DOMAIN-SUFFIX,pixel.wp.com,REJECT
+DOMAIN-SUFFIX,tw.adserver.yahoo.com,REJECT
+DOMAIN-SUFFIX,adserver.yahoo.com,REJECT
+DOMAIN-SUFFIX,ads.yahoo.com,REJECT
+DOMAIN-SUFFIX,gemini.yahoo.com,REJECT
+DOMAIN-SUFFIX,ad.line-scdn.net,REJECT
+DOMAIN-SUFFIX,adserver.line-apps.com,REJECT
+DOMAIN-SUFFIX,obs.line-scdn.net,REJECT
+DOMAIN-SUFFIX,adcloud.jp,REJECT
+DOMAIN-SUFFIX,ad2iction.com,REJECT
+DOMAIN-SUFFIX,anymanager.io,REJECT
+DOMAIN-SUFFIX,anymind360.com,REJECT
+DOMAIN-SUFFIX,adbert.com.tw,REJECT
+DOMAIN-SUFFIX,adbert.com,REJECT
+DOMAIN-SUFFIX,clickforce.com.tw,REJECT
+DOMAIN-SUFFIX,clickforce.com,REJECT
+DOMAIN-SUFFIX,urad.com.tw,REJECT
+DOMAIN-SUFFIX,adup-tech.com,REJECT
+DOMAIN-SUFFIX,innity.com,REJECT
+DOMAIN-SUFFIX,innity.net,REJECT
+DOMAIN-SUFFIX,pixel.advertising.com,REJECT
