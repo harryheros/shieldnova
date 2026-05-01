@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-05-01 14:32:58 UTC
-# Total: 1217
-# Breakdown: privacy=56, ads=59, security=1104, deduped_total=1217, allowlist_removed=0
+# Built: 2026-05-01 21:34:22 UTC
+# Total: 1135
+# Breakdown: privacy=56, ads=59, security=1022, deduped_total=1135, allowlist_removed=0
 payload:
 
   - DOMAIN-SUFFIX,google-analytics.com
@@ -126,8 +126,6 @@ payload:
   - DOMAIN-SUFFIX,logincdn.net
   - DOMAIN-SUFFIX,0-105.com
   - DOMAIN-SUFFIX,0-9-8-7-6-5-4-3-2-1-0.live
-  - DOMAIN-SUFFIX,0-amazon.weebly.com
-  - DOMAIN-SUFFIX,0-amfc.firebaseapp.com
   - DOMAIN-SUFFIX,0-whatsapp.com
   - DOMAIN-SUFFIX,0.0.0.0forum.cryptonight.net
   - DOMAIN-SUFFIX,0.0.0.0mailgate.cryptonight.net
@@ -153,15 +151,12 @@ payload:
   - DOMAIN-SUFFIX,0.tecnodentalrd.com
   - DOMAIN-SUFFIX,0.vsxmfkrvoipzs67.workers.dev
   - DOMAIN-SUFFIX,0.xyasrhsju3235.workers.dev
-  - DOMAIN-SUFFIX,00-5fu.pages.dev
   - DOMAIN-SUFFIX,00-663b30.ingress-daribow.ewp.live
   - DOMAIN-SUFFIX,00-974a.duckdns.org
   - DOMAIN-SUFFIX,00-c1aimn0w.com
   - DOMAIN-SUFFIX,00.buh30-00.ru
-  - DOMAIN-SUFFIX,000-00-000-000000.pages.dev
   - DOMAIN-SUFFIX,000-7yt65t564656ythygy.000webhostapp.com
   - DOMAIN-SUFFIX,000.abreubueno91.repl.co
-  - DOMAIN-SUFFIX,0000-1t8.pages.dev
   - DOMAIN-SUFFIX,0000.com.my
   - DOMAIN-SUFFIX,0000.hopto.org
   - DOMAIN-SUFFIX,00000--bancogeneral3.repl.co
@@ -173,18 +168,15 @@ payload:
   - DOMAIN-SUFFIX,00000000000000000update.emy.ba
   - DOMAIN-SUFFIX,000000000000000ooooo.000webhostapp.com
   - DOMAIN-SUFFIX,0000000000c0.x9xcax2a.workers.dev
-  - DOMAIN-SUFFIX,000000000a0uutlook.weebly.com
   - DOMAIN-SUFFIX,00000000920.us-south.cf.appdomain.cloud
   - DOMAIN-SUFFIX,0000000095.godaddysites.com
   - DOMAIN-SUFFIX,00000002.c1.biz
   - DOMAIN-SUFFIX,0000000666666.000webhostapp.com
-  - DOMAIN-SUFFIX,0000000o.weebly.com
   - DOMAIN-SUFFIX,0000000wer.000webhostapp.com
   - DOMAIN-SUFFIX,000000541840000.co.vu
   - DOMAIN-SUFFIX,0000006738.vercel.app
   - DOMAIN-SUFFIX,000000788-66666666.000webhostapp.com
   - DOMAIN-SUFFIX,00000078uu7u8790090900.000webhostapp.com
-  - DOMAIN-SUFFIX,000000login.weebly.com
   - DOMAIN-SUFFIX,000001010010104106.cloud
   - DOMAIN-SUFFIX,000002456171.ml
   - DOMAIN-SUFFIX,000002456180.ml
@@ -193,10 +185,8 @@ payload:
   - DOMAIN-SUFFIX,00000f.nuevaconfirma.repl.co
   - DOMAIN-SUFFIX,00000microsof.tonohost.com
   - DOMAIN-SUFFIX,00000wefv.000webhostapp.com
-  - DOMAIN-SUFFIX,00001-888887766.weebly.com
   - DOMAIN-SUFFIX,00001062.com
   - DOMAIN-SUFFIX,000012151000.co.vu
-  - DOMAIN-SUFFIX,000012223.weebly.com
   - DOMAIN-SUFFIX,000025123.com
   - DOMAIN-SUFFIX,00003.godaddysites.com
   - DOMAIN-SUFFIX,000066.godaddysites.com
@@ -208,11 +198,9 @@ payload:
   - DOMAIN-SUFFIX,0000h00003.byethost7.com
   - DOMAIN-SUFFIX,0000mscautorizationclientid.com
   - DOMAIN-SUFFIX,0000qwew341432edxzt.000webhostapp.com
-  - DOMAIN-SUFFIX,0000wa0outlook.weebly.com
   - DOMAIN-SUFFIX,0001.353527440.workers.dev
   - DOMAIN-SUFFIX,00010xsea34dsd.co.vu
   - DOMAIN-SUFFIX,000111.pages.net.br
-  - DOMAIN-SUFFIX,00012sbcglobal.weebly.com
   - DOMAIN-SUFFIX,000133210.000webhostapp.com
   - DOMAIN-SUFFIX,000193.azurewebsites.net
   - DOMAIN-SUFFIX,0001home.webflow.io
@@ -233,10 +221,6 @@ payload:
   - DOMAIN-SUFFIX,000811893962007154932393170597959432.hanefra7bikiemta.com
   - DOMAIN-SUFFIX,000838774343.000webhostapp.com
   - DOMAIN-SUFFIX,00099881111.000webhostapp.com
-  - DOMAIN-SUFFIX,0009aak.pages.dev
-  - DOMAIN-SUFFIX,000agreementmail.weebly.com
-  - DOMAIN-SUFFIX,000cc-ed5446.pages.dev
-  - DOMAIN-SUFFIX,000ccee008762200ccceecc.pages.dev
   - DOMAIN-SUFFIX,000chgojhd78jhvbwreuvk.webnode.com
   - DOMAIN-SUFFIX,000codashoppfreee-771.duckdns.org
   - DOMAIN-SUFFIX,000e-239f-23ea3-yah100-8ta1xb1rs33.netlify.app
@@ -245,8 +229,6 @@ payload:
   - DOMAIN-SUFFIX,000ind002.webflow.io
   - DOMAIN-SUFFIX,000int-5403945int.xyz
   - DOMAIN-SUFFIX,000itkw.lfd.myj.mybluehost.me
-  - DOMAIN-SUFFIX,000jbjdvvdhjvbdjvndvdv.s3.us-east-2.amazonaws.com
-  - DOMAIN-SUFFIX,000l.weebly.com
   - DOMAIN-SUFFIX,000l34e.wcomhost.com
   - DOMAIN-SUFFIX,000m8ih.wcomhost.com
   - DOMAIN-SUFFIX,000mclogin.micloud-object-storage-xc-cos-static-web-hosting-qny.s3.us-east.cloud-object-storage.appdomain.cloud
@@ -274,11 +256,7 @@ payload:
   - DOMAIN-SUFFIX,000wechost.000webhostapp.com
   - DOMAIN-SUFFIX,000wuwtg000ywwtvwt0y.networkmcn.com
   - DOMAIN-SUFFIX,000xxxbodddxx00.webcindario.com
-  - DOMAIN-SUFFIX,000yahoo.weebly.com
   - DOMAIN-SUFFIX,000zc.000webhostapp.com
-  - DOMAIN-SUFFIX,001-a3s.pages.dev
-  - DOMAIN-SUFFIX,001-a6j.pages.dev
-  - DOMAIN-SUFFIX,001-eca.pages.dev
   - DOMAIN-SUFFIX,001.1614214972.workers.dev
   - DOMAIN-SUFFIX,001.9zhmn1k5.workers.dev
   - DOMAIN-SUFFIX,001.gamecc.workers.dev
@@ -312,12 +290,10 @@ payload:
   - DOMAIN-SUFFIX,001kp.cc
   - DOMAIN-SUFFIX,001madhankumar.github.io
   - DOMAIN-SUFFIX,001molluscan.ru.com
-  - DOMAIN-SUFFIX,001myacct.weebly.com
   - DOMAIN-SUFFIX,001tr3nsf00.com
   - DOMAIN-SUFFIX,001user.moonfruit.com
   - DOMAIN-SUFFIX,001xsnews.cn
   - DOMAIN-SUFFIX,002-auto5eposlt.me
-  - DOMAIN-SUFFIX,002-bj9.pages.dev
   - DOMAIN-SUFFIX,002.195533.xyz
   - DOMAIN-SUFFIX,00223.cc
   - DOMAIN-SUFFIX,0023-1--soporte2023co00.repl.co
@@ -327,8 +303,6 @@ payload:
   - DOMAIN-SUFFIX,002nuctra02.com
   - DOMAIN-SUFFIX,002paymts234.com
   - DOMAIN-SUFFIX,002redir023.dns04.com
-  - DOMAIN-SUFFIX,002sfrontalpeni2773macbook-20email2520webmailfurh25e323w.weebly.com
-  - DOMAIN-SUFFIX,002v.pages.dev
   - DOMAIN-SUFFIX,002y.github.io
   - DOMAIN-SUFFIX,0031f0031f.zibonalam.com
   - DOMAIN-SUFFIX,0033.top
@@ -369,18 +343,13 @@ payload:
   - DOMAIN-SUFFIX,00669.cc
   - DOMAIN-SUFFIX,006700.xyz
   - DOMAIN-SUFFIX,0067786563423xcerrvg.000webhostapp.com
-  - DOMAIN-SUFFIX,006gqd9.pages.dev
   - DOMAIN-SUFFIX,006l5.mjt.lu
   - DOMAIN-SUFFIX,006t-rshyktuaerhetjr6yk7tl6tmyrntbref.vercel.app
-  - DOMAIN-SUFFIX,007-c1z.pages.dev
   - DOMAIN-SUFFIX,0070e26e-ac97-4dd9-a7c9-08cb4d2b1678.id.repl.co
   - DOMAIN-SUFFIX,007168-00.000webhostapp.com
   - DOMAIN-SUFFIX,007595d4969707fd4a3543145addf49b-dot-gle9392420309493993.rj.r.appspot.com
   - DOMAIN-SUFFIX,0076678.com
-  - DOMAIN-SUFFIX,007954335-reviewpagepages.pages.dev
-  - DOMAIN-SUFFIX,007a5701-5600-455b-84dc-c684b82e196b.s3.ap-northeast-2.amazonaws.com
   - DOMAIN-SUFFIX,007k7.com
-  - DOMAIN-SUFFIX,007ligneorange.weebly.com
   - DOMAIN-SUFFIX,007sbw.cn
   - DOMAIN-SUFFIX,007wa.xyz
   - DOMAIN-SUFFIX,00800.vip
@@ -390,13 +359,10 @@ payload:
   - DOMAIN-SUFFIX,00828.liye19960713.workers.dev
   - DOMAIN-SUFFIX,00829.cc
   - DOMAIN-SUFFIX,008491133.cloudns.nz
-  - DOMAIN-SUFFIX,0085ccc098789.pages.dev
   - DOMAIN-SUFFIX,0085vip00.com
   - DOMAIN-SUFFIX,0086a.shop
   - DOMAIN-SUFFIX,008753331120.com
   - DOMAIN-SUFFIX,00877.cc
-  - DOMAIN-SUFFIX,0087b3k.pages.dev
-  - DOMAIN-SUFFIX,008ecdda.encrypted.pages.dev
   - DOMAIN-SUFFIX,008f5c4e.doekeopsmn.cloud
   - DOMAIN-SUFFIX,008h-7yughbesfdt87y8useifiuhsjkg.vercel.app
   - DOMAIN-SUFFIX,008kp.cc
@@ -404,16 +370,13 @@ payload:
   - DOMAIN-SUFFIX,009190-securepage.000webhostapp.com
   - DOMAIN-SUFFIX,0094059000293htjkm.000webhostapp.com
   - DOMAIN-SUFFIX,00941.webflow.io
-  - DOMAIN-SUFFIX,00976.weebly.com
   - DOMAIN-SUFFIX,009812kivip.top
   - DOMAIN-SUFFIX,00987.ru.com
   - DOMAIN-SUFFIX,0099.amazoonz.net
   - DOMAIN-SUFFIX,00998.90009.repl.co
-  - DOMAIN-SUFFIX,009987lk.weebly.com
   - DOMAIN-SUFFIX,0099887.com
   - DOMAIN-SUFFIX,009988r3sucursalactivaciones.brizy.site
   - DOMAIN-SUFFIX,0099extuyafeliciades092.c1.biz
-  - DOMAIN-SUFFIX,0099xxy78.weebly.com
   - DOMAIN-SUFFIX,009bb11405fa5b694a9f9915bc2acf38-dot-gle9392420309493993.rj.r.appspot.com
   - DOMAIN-SUFFIX,009bf6e1.fei124970841.cn
   - DOMAIN-SUFFIX,009krewamz.duckdns.org
@@ -425,7 +388,6 @@ payload:
   - DOMAIN-SUFFIX,00ato-mygov-0-au.duckdns.org.fix-02bug.duckdns.org
   - DOMAIN-SUFFIX,00banc0we8pichi.000webhostapp.com
   - DOMAIN-SUFFIX,00bbfl2ke6.1qw2es2z.xyz
-  - DOMAIN-SUFFIX,00btmallbtlnternet00we0.weebly.com
   - DOMAIN-SUFFIX,00c.16mb.com
   - DOMAIN-SUFFIX,00c238ff.hsduecinfj.com.cn
   - DOMAIN-SUFFIX,00c85b59-4f3f-4376-8b3d-de07cf5249d3.htmlcomponentservice.com
@@ -438,23 +400,15 @@ payload:
   - DOMAIN-SUFFIX,00dbs.vip
   - DOMAIN-SUFFIX,00e132a99407d8e60c6b0895577e2d25-dot-gle9392420309493993.rj.r.appspot.com
   - DOMAIN-SUFFIX,00e94yahoouserid092e-apra02ios16win11.netlify.app
-  - DOMAIN-SUFFIX,00e9e64bac127f1ea25c54f64b0c85197a1a1fa387312ba076-apidata.googleusercontent.com
-  - DOMAIN-SUFFIX,00e9e64bacce231bc2e4635333a7a68bbab82bbabbb7941b9b-apidata.googleusercontent.com
   - DOMAIN-SUFFIX,00ef5c18-e78b-489b-b945-c2a2a70d0f9e-00-2ers01t3lx3b0.spock.replit.dev
   - DOMAIN-SUFFIX,00ei0aol023sba03esecure0i0verify0forg.netlify.app
   - DOMAIN-SUFFIX,00f025b3.d26218.cn
   - DOMAIN-SUFFIX,00f28a5a21c09720affa474c7b4f134c-dot-gle9392420309493993.rj.r.appspot.com
-  - DOMAIN-SUFFIX,00ff0ice-0utl00k-authenticate.pages.dev
-  - DOMAIN-SUFFIX,00ffice-authenticate-01.pages.dev
-  - DOMAIN-SUFFIX,00ficee435.weebly.com
   - DOMAIN-SUFFIX,00gnp.liusanjie.cc
-  - DOMAIN-SUFFIX,00griel-bdvenline.pages.dev
   - DOMAIN-SUFFIX,00gty.ru.com
   - DOMAIN-SUFFIX,00h.x24hr.com
   - DOMAIN-SUFFIX,00hbp0.000webhostapp.com
-  - DOMAIN-SUFFIX,00inicio-validacion-segura-31.weebly.com
   - DOMAIN-SUFFIX,00instagramsecure.blogspot.nl
-  - DOMAIN-SUFFIX,00jhzxcv.pages.dev
   - DOMAIN-SUFFIX,00jmtol5tlmgpaxz4douvgbsnvj6v4eygpaxz4douvg-com.cf
   - DOMAIN-SUFFIX,00krafton-tencent.my.id
   - DOMAIN-SUFFIX,00luminarious.sa.com
@@ -467,12 +421,10 @@ payload:
   - DOMAIN-SUFFIX,00np8.app.link
   - DOMAIN-SUFFIX,00o-mobility535554.info
   - DOMAIN-SUFFIX,00oeady.cn
-  - DOMAIN-SUFFIX,00oo00fhhhdjjjo000000.pages.dev
   - DOMAIN-SUFFIX,00pcz4dy1shpwti-1321712386.cos.na-siliconvalley.myqcloud.com
   - DOMAIN-SUFFIX,00pgvf.sa.com
   - DOMAIN-SUFFIX,00pie.sa.com
   - DOMAIN-SUFFIX,00pix.sa.com
-  - DOMAIN-SUFFIX,00privacidad-cuenta-bhd-2025-22.weebly.com
   - DOMAIN-SUFFIX,00ql.paypal-merchant.ru
   - DOMAIN-SUFFIX,00refund321-mobile.com
   - DOMAIN-SUFFIX,00rm-huntiiingtonbnk.dynamic-dns.net
@@ -481,13 +433,11 @@ payload:
   - DOMAIN-SUFFIX,00tyw0aytaw0tawtuaty.touryar.net
   - DOMAIN-SUFFIX,00tyy.ru.com
   - DOMAIN-SUFFIX,00uyyu0gwytwuyytw00w.ketix.net
-  - DOMAIN-SUFFIX,00validar-l-ogin045.weebly.com
   - DOMAIN-SUFFIX,00web.glitch.me
   - DOMAIN-SUFFIX,00wellsfarg.azurewebsites.net
   - DOMAIN-SUFFIX,00wetransfer-sharedfiles.netlify.app
   - DOMAIN-SUFFIX,00wqj4vup.duckdns.org
   - DOMAIN-SUFFIX,01-10-2025-updates.netsons.org
-  - DOMAIN-SUFFIX,01-51h.pages.dev
   - DOMAIN-SUFFIX,01-secure.redirectme.net
   - DOMAIN-SUFFIX,01-spk-veri7.xyz
   - DOMAIN-SUFFIX,01.pilot45.com
@@ -502,7 +452,6 @@ payload:
   - DOMAIN-SUFFIX,0103659.com
   - DOMAIN-SUFFIX,010365vip.com
   - DOMAIN-SUFFIX,01064223613.com
-  - DOMAIN-SUFFIX,01077jjj.pages.dev
   - DOMAIN-SUFFIX,0109626668.cn
   - DOMAIN-SUFFIX,010aa.cn
   - DOMAIN-SUFFIX,010auth0.duckdns.org
@@ -521,7 +470,6 @@ payload:
   - DOMAIN-SUFFIX,01175421.00agt8.shop
   - DOMAIN-SUFFIX,01188086.gstwu-eu-hey.com.cn
   - DOMAIN-SUFFIX,012-109354.weeblysite.com
-  - DOMAIN-SUFFIX,012-f5b.pages.dev
   - DOMAIN-SUFFIX,01213300.atwebpages.com
   - DOMAIN-SUFFIX,0123-luke-tatsuki.com
   - DOMAIN-SUFFIX,0124985675.cf
@@ -543,21 +491,14 @@ payload:
   - DOMAIN-SUFFIX,01417282-9677-428f-8b57-11e362547314.id.repl.co
   - DOMAIN-SUFFIX,0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co
   - DOMAIN-SUFFIX,0145879-pagehelping.000webhostapp.com
-  - DOMAIN-SUFFIX,014925396510-rackspace-loginwe6ee67wd.pages.dev
-  - DOMAIN-SUFFIX,014mailorange.weebly.com
-  - DOMAIN-SUFFIX,014oo.blogspot.com
-  - DOMAIN-SUFFIX,015072cd.ssl-6x4meta.pages.dev
   - DOMAIN-SUFFIX,0152indemnisat.pics
   - DOMAIN-SUFFIX,015481847436324436677560049.com
   - DOMAIN-SUFFIX,01549b.com
   - DOMAIN-SUFFIX,015595384.com
   - DOMAIN-SUFFIX,0158k.cn
-  - DOMAIN-SUFFIX,015d4d84ac0ca018d50929e33c891fc2e6a83c19fd4b170bca9f893390.pages.dev
-  - DOMAIN-SUFFIX,015fa8dc4cae9c1a049f0ec2dc23d3e54d47c426a3b1cda4d8b53757f8.pages.dev
   - DOMAIN-SUFFIX,015hfy3c.square.site
   - DOMAIN-SUFFIX,016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com
   - DOMAIN-SUFFIX,016614590390149677279078.my-project-45bb.ey.r.appspot.com
-  - DOMAIN-SUFFIX,01679-login-att-index.weebly.com
   - DOMAIN-SUFFIX,016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev
   - DOMAIN-SUFFIX,0171500061.mexigas.com.mx
   - DOMAIN-SUFFIX,0172844bks.7m.pl
@@ -592,14 +533,11 @@ payload:
   - DOMAIN-SUFFIX,1827897262.v.123pan.cn
   - DOMAIN-SUFFIX,185-55-196-13.cprapid.com
   - DOMAIN-SUFFIX,1oade4-zone.sunmeadow.garden
-  - DOMAIN-SUFFIX,2cfc0222.salamanderprocessing.pages.dev
   - DOMAIN-SUFFIX,5un-drive.frosthaven.garden
   - DOMAIN-SUFFIX,5urv3-layer.stoneflare.garden
-  - DOMAIN-SUFFIX,60aaf9c6.salamanderprocessing.pages.dev
   - DOMAIN-SUFFIX,69sexy.duckdns.org
   - DOMAIN-SUFFIX,99-118-215-24.lightspeed.irvnca.sbcglobal.net
   - DOMAIN-SUFFIX,99194034-96-20180108171507.webstarterz.com
-  - DOMAIN-SUFFIX,a-gwo.pages.dev
   - DOMAIN-SUFFIX,aaronart.com
   - DOMAIN-SUFFIX,acaviationsupplies.com
   - DOMAIN-SUFFIX,acc.jiangsujiaxue.com
@@ -674,8 +612,6 @@ payload:
   - DOMAIN-SUFFIX,burn2pathgate.grov6mira.bet
   - DOMAIN-SUFFIX,bvaco.com
   - DOMAIN-SUFFIX,c.fi3.me
-  - DOMAIN-SUFFIX,c0e5b87c.solaraweb-alj.pages.dev
-  - DOMAIN-SUFFIX,c3436037.salamanderprocessing.pages.dev
   - DOMAIN-SUFFIX,c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru
   - DOMAIN-SUFFIX,cad.659t.cn
   - DOMAIN-SUFFIX,cash8siteview.peta1vrix.bet
@@ -716,7 +652,6 @@ payload:
   - DOMAIN-SUFFIX,clubdetiroelpicarcho.com
   - DOMAIN-SUFFIX,cn.unionlever.com
   - DOMAIN-SUFFIX,co-emas.com
-  - DOMAIN-SUFFIX,codeload.github.com
   - DOMAIN-SUFFIX,codemeshsite.cryptosyncflow.bet
   - DOMAIN-SUFFIX,cold6siteview.staticmeshview.bet
   - DOMAIN-SUFFIX,compimento.ba
@@ -734,7 +669,6 @@ payload:
   - DOMAIN-SUFFIX,d.14yaa.com
   - DOMAIN-SUFFIX,d.kpzip.com
   - DOMAIN-SUFFIX,d.wanyouxi7.com
-  - DOMAIN-SUFFIX,d2314eac.solaraweb-alj.pages.dev
   - DOMAIN-SUFFIX,d3cciiowg5l3jx.cloudfront.net
   - DOMAIN-SUFFIX,damiancollier.com
   - DOMAIN-SUFFIX,dash7taskhub.kineticgatehub.bet
@@ -775,7 +709,6 @@ payload:
   - DOMAIN-SUFFIX,dlied6.yz.tcdnos.com
   - DOMAIN-SUFFIX,do-dear.com
   - DOMAIN-SUFFIX,doc.e-statements.app
-  - DOMAIN-SUFFIX,docs.google.com
   - DOMAIN-SUFFIX,donkeytourscroatia.com
   - DOMAIN-SUFFIX,down.54nb.com
   - DOMAIN-SUFFIX,down.ftp21.cc
@@ -799,7 +732,6 @@ payload:
   - DOMAIN-SUFFIX,dowonline.ru
   - DOMAIN-SUFFIX,dreamwatchevent.com
   - DOMAIN-SUFFIX,drevos.ro
-  - DOMAIN-SUFFIX,drive.google.com
   - DOMAIN-SUFFIX,dubaitechnicalservice.ae
   - DOMAIN-SUFFIX,dubapkg.cmcmcdn.com
   - DOMAIN-SUFFIX,dusttv.com
@@ -821,7 +753,6 @@ payload:
   - DOMAIN-SUFFIX,fa1th3-wave.decommiss-mint.bet
   - DOMAIN-SUFFIX,fakers.co.jp
   - DOMAIN-SUFFIX,farschid.de
-  - DOMAIN-SUFFIX,fb6390d5.infinityindians.pages.dev
   - DOMAIN-SUFFIX,fd.v2downf.shop
   - DOMAIN-SUFFIX,fertas.com.tr
   - DOMAIN-SUFFIX,file.blackint3.com
@@ -829,7 +760,6 @@ payload:
   - DOMAIN-SUFFIX,filerit.com
   - DOMAIN-SUFFIX,files.constantcontact.com
   - DOMAIN-SUFFIX,files.pythonhosted.org
-  - DOMAIN-SUFFIX,firebasestorage.googleapis.com
   - DOMAIN-SUFFIX,first-security-verden.de
   - DOMAIN-SUFFIX,flyingmutts.com
   - DOMAIN-SUFFIX,fnvimoyvwkbxbmczlqus.supabase.co
@@ -865,9 +795,6 @@ payload:
   - DOMAIN-SUFFIX,galeri3.arkitera.com
   - DOMAIN-SUFFIX,galerisenimutiara.com
   - DOMAIN-SUFFIX,geo-foundation.vg
-  - DOMAIN-SUFFIX,gist.githubusercontent.com
-  - DOMAIN-SUFFIX,github.com
-  - DOMAIN-SUFFIX,gitlab.com
   - DOMAIN-SUFFIX,globalbank.us
   - DOMAIN-SUFFIX,globaltechbilling.com
   - DOMAIN-SUFFIX,google-services.cc
@@ -888,7 +815,6 @@ payload:
   - DOMAIN-SUFFIX,hnjgdl.geps.glodon.com
   - DOMAIN-SUFFIX,hobobot.net
   - DOMAIN-SUFFIX,homecaremovers.com
-  - DOMAIN-SUFFIX,horion-static.pages.dev
   - DOMAIN-SUFFIX,host-195-103-203-106.business.telecomitalia.it
   - DOMAIN-SUFFIX,host-95-230-215-65.business.telecomitalia.it
   - DOMAIN-SUFFIX,host-95-255-114-11.business.telecomitalia.it
@@ -899,10 +825,8 @@ payload:
   - DOMAIN-SUFFIX,hostunitgate.lookin8back.bet
   - DOMAIN-SUFFIX,hotelembuguacu.blob.core.windows.net
   - DOMAIN-SUFFIX,hotellacastellana.com.uy
-  - DOMAIN-SUFFIX,hotelsep.blogspot.com
   - DOMAIN-SUFFIX,hqweb.id.vn
   - DOMAIN-SUFFIX,hseda.com
-  - DOMAIN-SUFFIX,hzxcaq-github-io.pages.dev
   - DOMAIN-SUFFIX,i.404.pm
   - DOMAIN-SUFFIX,ia802801.us.archive.org
   - DOMAIN-SUFFIX,icoffeecloud.com
@@ -959,7 +883,6 @@ payload:
   - DOMAIN-SUFFIX,high7logicnet.nexo7peak.surf
   - DOMAIN-SUFFIX,ionhostunit.voda4flux.surf
   - DOMAIN-SUFFIX,kokorostore.it
-  - DOMAIN-SUFFIX,libretv-16e.pages.dev
   - DOMAIN-SUFFIX,libss.0x504.com
   - DOMAIN-SUFFIX,lindenappliances.co.za
   - DOMAIN-SUFFIX,lindnerelektroanlagen.de
@@ -975,14 +898,11 @@ payload:
   - DOMAIN-SUFFIX,mail.ssadownload.top
   - DOMAIN-SUFFIX,map2taskhub.tavi8grid.surf
   - DOMAIN-SUFFIX,marsalek.cy
-  - DOMAIN-SUFFIX,matthewsigmondv5.pages.dev
-  - DOMAIN-SUFFIX,media.githubusercontent.com
   - DOMAIN-SUFFIX,meetvideogoogle.com
   - DOMAIN-SUFFIX,meltmeshsite.voda4flux.surf
   - DOMAIN-SUFFIX,mersped.mycpanel.rs
   - DOMAIN-SUFFIX,metrics.gocloudmaps.com
   - DOMAIN-SUFFIX,mgtms.cc
-  - DOMAIN-SUFFIX,miner.pages.dev
   - DOMAIN-SUFFIX,mininews.kpzip.com
   - DOMAIN-SUFFIX,mistralkorea.ru
   - DOMAIN-SUFFIX,mitreart.com
@@ -990,7 +910,6 @@ payload:
   - DOMAIN-SUFFIX,mockupcorporation.com
   - DOMAIN-SUFFIX,mogimall.com
   - DOMAIN-SUFFIX,mosselnet.co.za
-  - DOMAIN-SUFFIX,movseek.pages.dev
   - DOMAIN-SUFFIX,msoftdatastore.z22.web.core.windows.net
   - DOMAIN-SUFFIX,42v06.lami4qor.surf
   - DOMAIN-SUFFIX,areameshnode.felo7zone.surf
@@ -1037,7 +956,6 @@ payload:
   - DOMAIN-SUFFIX,okhan.net
   - DOMAIN-SUFFIX,oknoplastik.sk
   - DOMAIN-SUFFIX,old.bullydog.com
-  - DOMAIN-SUFFIX,onedrive.live.com
   - DOMAIN-SUFFIX,onfiltre.com.tr
   - DOMAIN-SUFFIX,onyxguardify.de
   - DOMAIN-SUFFIX,onyxphantomlock.de

@@ -1,0 +1,145 @@
+{
+  "_comment": "Single source of truth for domain classification used by fetch_threat_intel.py, test_false_positives.py, and audit_existing_rules.py. Update this file to keep all three scripts in sync.",
+
+  "tier0": {
+    "_comment": "Absolute never-block. OS/platform/financial infrastructure. Any hit = build failure.",
+    "domains": [
+      ["apple.com",            "Apple core services"],
+      ["icloud.com",           "iCloud sync / backup"],
+      ["mzstatic.com",         "App Store CDN"],
+      ["aaplimg.com",          "Apple image CDN"],
+      ["me.com",               "Apple account services"],
+      ["microsoft.com",        "Microsoft services"],
+      ["microsoftonline.com",  "Microsoft 365 / Azure AD"],
+      ["office.com",           "Office 365"],
+      ["office365.com",        "Office 365"],
+      ["windows.com",          "Windows services"],
+      ["windowsupdate.com",    "Windows Update"],
+      ["azure.com",            "Microsoft Azure"],
+      ["azureedge.net",        "Azure CDN"],
+      ["google.com",           "Google core services"],
+      ["gstatic.com",          "Google static CDN"],
+      ["cloudflare.com",       "Cloudflare network"],
+      ["cloudflaressl.com",    "Cloudflare SSL"],
+      ["fastly.net",           "Fastly CDN"],
+      ["akamai.net",           "Akamai CDN"],
+      ["akamaized.net",        "Akamai CDN"],
+      ["edgekey.net",          "Akamai edge"],
+      ["jsdelivr.net",         "jsDelivr CDN"],
+      ["paypal.com",           "PayPal payments"],
+      ["paypalobjects.com",    "PayPal CDN"],
+      ["stripe.com",           "Stripe payments"],
+      ["visa.com",             "Visa"],
+      ["mastercard.com",       "Mastercard"],
+      ["okta.com",             "Okta identity"],
+      ["auth0.com",            "Auth0 identity"]
+    ]
+  },
+
+  "tier0_core_only": {
+    "_comment": "Tier 0 protection applies ONLY to the exact apex and non-hosting subdomains. Known hosting/storage subdomains are classified as hosting surfaces and may be blocked.",
+    "domains": [
+      ["amazonaws.com",  "AWS core (NOT S3 buckets)"],
+      ["googleapis.com", "Google APIs core (NOT storage/firebase)"],
+      ["live.com",       "Microsoft account (NOT onedrive.live.com)"]
+    ],
+    "hosting_subdomains": [
+      "s3.amazonaws.com",
+      "s3-website.amazonaws.com",
+      "execute-api.amazonaws.com",
+      "storage.googleapis.com",
+      "firebasestorage.googleapis.com",
+      "onedrive.live.com"
+    ]
+  },
+
+  "tier1": {
+    "_comment": "Developer tools, communication, major productivity. Any hit = build failure.",
+    "domains": [
+      ["github.com",           "GitHub"],
+      ["githubusercontent.com","GitHub raw content"],
+      ["githubassets.com",     "GitHub assets"],
+      ["gitlab.com",           "GitLab"],
+      ["telegram.org",         "Telegram"],
+      ["discord.com",          "Discord"],
+      ["discordapp.com",       "Discord CDN"],
+      ["slack.com",            "Slack"],
+      ["zoom.us",              "Zoom"],
+      ["whatsapp.com",         "WhatsApp"],
+      ["whatsapp.net",         "WhatsApp CDN"],
+      ["dropbox.com",          "Dropbox"],
+      ["box.com",              "Box"],
+      ["notion.so",            "Notion"],
+      ["notion.site",          "Notion published pages"],
+      ["atlassian.com",        "Atlassian"],
+      ["atlassian.net",        "Atlassian cloud"],
+      ["npmjs.com",            "npm registry"],
+      ["pypi.org",             "PyPI"],
+      ["docker.com",           "Docker Hub"],
+      ["openai.com",           "OpenAI"],
+      ["anthropic.com",        "Anthropic"],
+      ["youtube.com",          "YouTube"],
+      ["netflix.com",          "Netflix"],
+      ["spotify.com",          "Spotify"],
+      ["twitch.tv",            "Twitch"],
+      ["twitter.com",          "Twitter/X"],
+      ["x.com",                "Twitter/X"],
+      ["facebook.com",         "Facebook"],
+      ["instagram.com",        "Instagram"],
+      ["linkedin.com",         "LinkedIn"],
+      ["reddit.com",           "Reddit"],
+      ["tiktok.com",           "TikTok"]
+    ]
+  },
+
+  "tier2_roots": {
+    "_comment": "Known-abuse-vector platforms. Root domain block = failure. Subdomain block may be legitimate phishing/malware.",
+    "domains": [
+      ["pages.dev",         "Cloudflare Pages"],
+      ["workers.dev",       "Cloudflare Workers"],
+      ["web.app",           "Firebase Hosting"],
+      ["firebaseapp.com",   "Firebase app"],
+      ["vercel.app",        "Vercel"],
+      ["netlify.app",       "Netlify"],
+      ["github.io",         "GitHub Pages"],
+      ["gitlab.io",         "GitLab Pages"],
+      ["wordpress.com",     "WordPress.com"],
+      ["blogspot.com",      "Blogspot"],
+      ["weebly.com",        "Weebly"],
+      ["wix.com",           "Wix"],
+      ["wixsite.com",       "Wix site"],
+      ["squarespace.com",   "Squarespace"],
+      ["herokuapp.com",     "Heroku"],
+      ["appspot.com",       "Google App Engine"],
+      ["azurewebsites.net", "Azure App Service"],
+      ["replit.com",        "Replit"],
+      ["glitch.me",         "Glitch"],
+      ["codepen.io",        "CodePen"],
+      ["codesandbox.io",    "CodeSandbox"]
+    ]
+  },
+
+  "tracking_exceptions": {
+    "_comment": "Subdomains of Tier 0/1 apexes that serve advertising/tracking exclusively. Blocking these is CORRECT. Excluded from false-positive violations.",
+    "domains": [
+      "adservice.google.com",
+      "pagead2.googlesyndication.com",
+      "tpc.googlesyndication.com",
+      "adwords.google.com",
+      "doubleclick.net",
+      "pixel.facebook.com",
+      "analytics.facebook.com",
+      "connect.facebook.net",
+      "ads.linkedin.com",
+      "px.ads.linkedin.com",
+      "ads.twitter.com",
+      "ads.x.com",
+      "advertising.amazon.com",
+      "aax.amazon-adsystem.com",
+      "bat.bing.com",
+      "ads.microsoft.com",
+      "ads.tiktok.com",
+      "analytics.tiktok.com"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "profile": "Conservative / Compatibility-First",
-  "built": "2026-05-01 14:32:58 UTC",
+  "built": "2026-05-01 21:34:22 UTC",
   "allowlist_entries": 0,
   "invalid_rules_skipped": 0,
   "bundles": [
@@ -28,12 +28,12 @@
       "filename": "shieldnova-security.txt",
       "title": "Security Protection",
       "description": "Conservative phishing, malware, scam, and cryptojacking domains.",
-      "total": 1104,
+      "total": 1022,
       "breakdown": {
-        "phishing": 452,
-        "malware": 468,
+        "phishing": 393,
+        "malware": 445,
         "cryptojacking": 184,
-        "deduped_total": 1104,
+        "deduped_total": 1022,
         "allowlist_removed": 0
       }
     },
@@ -41,12 +41,12 @@
       "filename": "shieldnova-full.txt",
       "title": "Full (Global)",
       "description": "Complete protection with a conservative compatibility-first profile.",
-      "total": 1217,
+      "total": 1135,
       "breakdown": {
         "privacy": 56,
         "ads": 59,
-        "security": 1104,
-        "deduped_total": 1217,
+        "security": 1022,
+        "deduped_total": 1135,
         "allowlist_removed": 0
       }
     },
@@ -54,14 +54,14 @@
       "filename": "shieldnova-full-cn.txt",
       "title": "Full (China Mainland)",
       "description": "Complete protection with additional China mainland trackers and ad domains.",
-      "total": 1268,
+      "total": 1186,
       "breakdown": {
         "privacy_global": 56,
         "privacy_cn": 30,
         "ads_global": 59,
         "ads_cn": 21,
-        "security": 1104,
-        "deduped_total": 1268,
+        "security": 1022,
+        "deduped_total": 1186,
         "allowlist_removed": 0
       }
     },
@@ -69,14 +69,14 @@
       "filename": "shieldnova-full-hktw.txt",
       "title": "Full (Hong Kong & Taiwan)",
       "description": "Complete protection with additional Hong Kong and Taiwan domains.",
-      "total": 1255,
+      "total": 1173,
       "breakdown": {
         "privacy_global": 56,
         "privacy_hktw": 18,
         "ads_global": 59,
         "ads_hktw": 20,
-        "security": 1104,
-        "deduped_total": 1255,
+        "security": 1022,
+        "deduped_total": 1173,
         "allowlist_removed": 0
       }
     }
