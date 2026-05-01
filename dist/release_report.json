@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-01 21:50:22 UTC",
+  "generated_at": "2026-05-01 21:54:17 UTC",
   "build": {
-    "built_at": "2026-05-01 20:46:33 UTC",
+    "built_at": "2026-05-01 21:54:16 UTC",
     "profile": "Conservative / Compatibility-First",
     "invalid_rules_skipped": 0,
     "allowlist_entries": 0,
@@ -24,63 +24,63 @@
       },
       {
         "filename": "shieldnova-security.txt",
-        "total": 1022,
+        "total": 1150,
         "breakdown": {
-          "phishing": 393,
-          "malware": 445,
-          "cryptojacking": 184,
-          "deduped_total": 1022,
+          "phishing": 443,
+          "malware": 495,
+          "cryptojacking": 212,
+          "deduped_total": 1150,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full.txt",
-        "total": 1135,
+        "total": 1263,
         "breakdown": {
           "privacy": 56,
           "ads": 59,
-          "security": 1022,
-          "deduped_total": 1135,
+          "security": 1150,
+          "deduped_total": 1263,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full-cn.txt",
-        "total": 1186,
+        "total": 1314,
         "breakdown": {
           "privacy_global": 56,
           "privacy_cn": 30,
           "ads_global": 59,
           "ads_cn": 21,
-          "security": 1022,
-          "deduped_total": 1186,
+          "security": 1150,
+          "deduped_total": 1314,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full-hktw.txt",
-        "total": 1173,
+        "total": 1301,
         "breakdown": {
           "privacy_global": 56,
           "privacy_hktw": 18,
           "ads_global": 59,
           "ads_hktw": 20,
-          "security": 1022,
-          "deduped_total": 1173,
+          "security": 1150,
+          "deduped_total": 1301,
           "allowlist_removed": 0
         }
       }
     ]
   },
   "fetch": {
-    "fetched_at": "2026-05-01 14:32:53 UTC",
-    "total_new_domains": 150,
-    "total_platform_skipped": 0,
+    "fetched_at": "2026-05-01 21:54:09 UTC",
+    "total_new_domains": 128,
+    "total_platform_skipped": 89361,
     "sources": {
       "urlhaus": {
         "status": "ok",
-        "raw": 606,
-        "platform_skipped": 0,
+        "raw": 586,
+        "platform_skipped": 2592,
         "new": 50
       },
       "threatfox": {
@@ -91,19 +91,27 @@
       },
       "nocoin": {
         "status": "ok",
-        "raw": 201,
-        "platform_skipped": 0,
-        "new": 50
+        "raw": 200,
+        "platform_skipped": 2,
+        "new": 28
       },
       "phishing_database": {
         "status": "ok",
-        "raw": 385174,
-        "platform_skipped": 0,
+        "raw": 298420,
+        "platform_skipped": 86767,
         "new": 50
       }
     }
   },
-  "audit": null,
+  "audit": {
+    "scanned_files": 3,
+    "total_findings": 238,
+    "summary": {
+      "must_remove": 0,
+      "hosting": 43,
+      "manual_review": 195
+    }
+  },
   "false_positive_gate": {
     "passed": true,
     "files_scanned": 42,
@@ -116,37 +124,37 @@
   },
   "integrity": {
     "sha256": {
-      "stats.json": "a228354aa96edd7068b3e4a8b1bdfbe08229b46f7276152123ad4ccb7d538d67",
-      "fetch_stats.json": "bd8375fa4af7265ec0eb6c070242c947b6c3f29766f89de143308d153150fb33",
-      "shieldnova-full.txt": "ecdba31247212e8465119f73129f86150f5fbd0408bd11ef80dda5e3fa97b3fe",
-      "shieldnova-security.txt": "b75e0675df03c701f8b6cc435cdb50f965bb9da6e69e542c30f185fb0c427e39"
+      "stats.json": "3e9dfa878d4627db1bb5d0624c12acdf12e76be8272fe06df1760a8e44209b4b",
+      "fetch_stats.json": "07686368c616f62dc1c586d1deecc2665af2e0c44b3d6cce63b24f8391f6032c",
+      "shieldnova-full.txt": "7616897f3f27dfcaa1e4175ab9f65988cc8557270d41b56d6426355945af240a",
+      "shieldnova-security.txt": "6f4a394de069627749afccb5c4de48412ef2e659ea4c09165f25d9e5cd6d6aa5"
     }
   },
   "intelligence_summary": {
     "top_phishing_tlds": [
       [
         ".com",
-        176
+        199
       ],
       [
         ".net",
-        28
+        32
       ],
       [
         ".org",
-        21
+        28
+      ],
+      [
+        ".cn",
+        19
+      ],
+      [
+        ".co",
+        15
       ],
       [
         ".dev",
         15
-      ],
-      [
-        ".cn",
-        15
-      ],
-      [
-        ".co",
-        14
       ],
       [
         ".xyz",
@@ -165,7 +173,48 @@
         9
       ]
     ],
-    "top_skipped_platforms": [],
+    "top_skipped_platforms": [
+      [
+        "appspot.com",
+        12973
+      ],
+      [
+        "pages.dev",
+        12743
+      ],
+      [
+        "webflow.io",
+        11742
+      ],
+      [
+        "vercel.app",
+        10652
+      ],
+      [
+        "github.io",
+        7498
+      ],
+      [
+        "weebly.com",
+        6900
+      ],
+      [
+        "web.app",
+        4428
+      ],
+      [
+        "glitch.me",
+        3994
+      ],
+      [
+        "netlify.app",
+        3901
+      ],
+      [
+        "workers.dev",
+        3884
+      ]
+    ],
     "false_positive_fixes": [],
     "new_domains_by_source": [
       [
@@ -173,12 +222,12 @@
         50
       ],
       [
-        "nocoin",
+        "phishing_database",
         50
       ],
       [
-        "phishing_database",
-        50
+        "nocoin",
+        28
       ]
     ]
   }

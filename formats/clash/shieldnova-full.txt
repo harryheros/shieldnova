@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-05-01 21:52:07 UTC
-# Total: 1135
-# Breakdown: privacy=56, ads=59, security=1022, deduped_total=1135, allowlist_removed=0
+# Built: 2026-05-01 21:54:16 UTC
+# Total: 1263
+# Breakdown: privacy=56, ads=59, security=1150, deduped_total=1263, allowlist_removed=0
 payload:
 
   - DOMAIN-SUFFIX,google-analytics.com
@@ -515,6 +515,56 @@ payload:
   - DOMAIN-SUFFIX,018f3b18cc2962586.temporary.link
   - DOMAIN-SUFFIX,018uh.mjt.lu
   - DOMAIN-SUFFIX,01928758273.atwebpages.com
+  - DOMAIN-SUFFIX,01940d0e.learnhere.com.cn
+  - DOMAIN-SUFFIX,01967.com
+  - DOMAIN-SUFFIX,019aa9ed.d23822.cn
+  - DOMAIN-SUFFIX,01a-v0-cat33.hostenko.net
+  - DOMAIN-SUFFIX,01activar-pin-protegercuenta.atsnx.com
+  - DOMAIN-SUFFIX,01adc8d6.89dduvdjsi.shop
+  - DOMAIN-SUFFIX,01b3659.com
+  - DOMAIN-SUFFIX,01becu-server.duckdns.org
+  - DOMAIN-SUFFIX,01bh.01zaq.dns-dynamic.net
+  - DOMAIN-SUFFIX,01blaak.com
+  - DOMAIN-SUFFIX,01db3205053754908.temporary.link
+  - DOMAIN-SUFFIX,01digitalmaio.com
+  - DOMAIN-SUFFIX,01duon.uhgko.cloudns.biz
+  - DOMAIN-SUFFIX,01e913e6-93dc-43b6-b2a3-cee1b5dc0ea4.selstorage.ru
+  - DOMAIN-SUFFIX,01etr10nsf.ltd
+  - DOMAIN-SUFFIX,01f47fd8.7832iweof8ds.org.cn
+  - DOMAIN-SUFFIX,01f6bd75.szzhengqian.cn
+  - DOMAIN-SUFFIX,01finder-smm.ru
+  - DOMAIN-SUFFIX,01genrasecrit74522.atwebpages.com
+  - DOMAIN-SUFFIX,01iujlxenapswa68xi46segli4.qwo231sdx.club
+  - DOMAIN-SUFFIX,01klaimhadiahgratis2021.duckdns.org
+  - DOMAIN-SUFFIX,01na5.hamime-hagh.com
+  - DOMAIN-SUFFIX,01newlyrecomend-1318015313.cos.na-siliconvalley.myqcloud.com
+  - DOMAIN-SUFFIX,01notif-ing-virification-baca12.ingress-erytho.ewp.live
+  - DOMAIN-SUFFIX,01notif-stractpoul-baca12.ingress-baronn.ewp.live
+  - DOMAIN-SUFFIX,01online-asb-co-nz-auth-fm-header-login.duckdns.org
+  - DOMAIN-SUFFIX,01petl41.duckdns.org
+  - DOMAIN-SUFFIX,01securechas5elogin.duckdns.org
+  - DOMAIN-SUFFIX,01up4zpe8us.co
+  - DOMAIN-SUFFIX,01vhl.mjt.lu
+  - DOMAIN-SUFFIX,01wiyped1.duckdns.org
+  - DOMAIN-SUFFIX,01xsecure-chase.duckdns.org
+  - DOMAIN-SUFFIX,02-accountverification.com
+  - DOMAIN-SUFFIX,02-bill.ref-386.com
+  - DOMAIN-SUFFIX,02-billing-bundle.com
+  - DOMAIN-SUFFIX,02-billing-error.com
+  - DOMAIN-SUFFIX,02-billing-renew.net
+  - DOMAIN-SUFFIX,02-billing-renewal.com
+  - DOMAIN-SUFFIX,02-billing-secure.net
+  - DOMAIN-SUFFIX,02-billing-verify.com
+  - DOMAIN-SUFFIX,02-billing.link
+  - DOMAIN-SUFFIX,02-billing.ref-193.com
+  - DOMAIN-SUFFIX,02-billing.ref-386.com
+  - DOMAIN-SUFFIX,02-billing.secure-online-account9220.com
+  - DOMAIN-SUFFIX,02-billinguk.com
+  - DOMAIN-SUFFIX,02-billingupdate.com
+  - DOMAIN-SUFFIX,02-bundle-help.com
+  - DOMAIN-SUFFIX,02-bundle-package.com
+  - DOMAIN-SUFFIX,02-bundle-renewed.com
+  - DOMAIN-SUFFIX,02-cancelled-bundle.com
   - DOMAIN-SUFFIX,onclkds.com
   - DOMAIN-SUFFIX,clksite.com
   - DOMAIN-SUFFIX,clkrev.com
@@ -960,6 +1010,56 @@ payload:
   - DOMAIN-SUFFIX,onyxguardify.de
   - DOMAIN-SUFFIX,onyxphantomlock.de
   - DOMAIN-SUFFIX,ossapp.suning.com
+  - DOMAIN-SUFFIX,access-b8.bnaumann87.work
+  - DOMAIN-SUFFIX,api.clearviewcloud.lat
+  - DOMAIN-SUFFIX,api.physiolpo1icy.lat
+  - DOMAIN-SUFFIX,app.physiolpo1icy.lat
+  - DOMAIN-SUFFIX,auth-sys.sarahkapsreit.work
+  - DOMAIN-SUFFIX,auth.smartlogicgate.lat
+  - DOMAIN-SUFFIX,bal-f7.bnaumann87.work
+  - DOMAIN-SUFFIX,cdn.smartlogicgate.lat
+  - DOMAIN-SUFFIX,cloud-kaps.sarahkapsreit.work
+  - DOMAIN-SUFFIX,coorsamexico.mx
+  - DOMAIN-SUFFIX,core-logic.herbertrutt.work
+  - DOMAIN-SUFFIX,cr-cloud.crinkdimit.work
+  - DOMAIN-SUFFIX,creativevoltage.com
+  - DOMAIN-SUFFIX,data-sync.rolfgrassinger.work
+  - DOMAIN-SUFFIX,data.fastworknode.lat
+  - DOMAIN-SUFFIX,db.clearviewcloud.lat
+  - DOMAIN-SUFFIX,db.physiolpo1icy.lat
+  - DOMAIN-SUFFIX,dim-proxy.crinkdimit.work
+  - DOMAIN-SUFFIX,dns-naum.bnaumann87.work
+  - DOMAIN-SUFFIX,edge-v6.rolfgrassinger.work
+  - DOMAIN-SUFFIX,exec-unit.herbertrutt.work
+  - DOMAIN-SUFFIX,gate.clearviewcloud.lat
+  - DOMAIN-SUFFIX,gate.physiolpo1icy.lat
+  - DOMAIN-SUFFIX,herb-store.herbertrutt.work
+  - DOMAIN-SUFFIX,hub.fastworknode.lat
+  - DOMAIN-SUFFIX,internal-r.sarahkapsreit.work
+  - DOMAIN-SUFFIX,lab-sys5.bnaumann87.work
+  - DOMAIN-SUFFIX,login-web.sarahkapsreit.work
+  - DOMAIN-SUFFIX,map-entry.herbertrutt.work
+  - DOMAIN-SUFFIX,mast.smartlogicgate.lat
+  - DOMAIN-SUFFIX,node.fastworknode.lat
+  - DOMAIN-SUFFIX,owlcity.ru
+  - DOMAIN-SUFFIX,oxfordmobilexray.com
+  - DOMAIN-SUFFIX,p3.zbjimg.com
+  - DOMAIN-SUFFIX,palharesinformatica.com.br
+  - DOMAIN-SUFFIX,panychurasc0.com
+  - DOMAIN-SUFFIX,pay.aqiu6.com
+  - DOMAIN-SUFFIX,pcupd.com
+  - DOMAIN-SUFFIX,petitesalope.com
+  - DOMAIN-SUFFIX,pfatrivandrum.org
+  - DOMAIN-SUFFIX,pid.fly160.com
+  - DOMAIN-SUFFIX,pinaview.com
+  - DOMAIN-SUFFIX,pjsn.hi2.ro
+  - DOMAIN-SUFFIX,planetariumobil.ro
+  - DOMAIN-SUFFIX,plasteredplayn.com
+  - DOMAIN-SUFFIX,pns.org.pk
+  - DOMAIN-SUFFIX,pobedastaff.ru
+  - DOMAIN-SUFFIX,polonyauniversiteleri.com.tr
+  - DOMAIN-SUFFIX,postelnini.mk
+  - DOMAIN-SUFFIX,prepstarcenter.com
   - DOMAIN-SUFFIX,coinhive.com
   - DOMAIN-SUFFIX,coinhiveproxy.com
   - DOMAIN-SUFFIX,authedmine.com
@@ -1144,3 +1244,31 @@ payload:
   - DOMAIN-SUFFIX,statdynamic.com
   - DOMAIN-SUFFIX,statistic.date
   - DOMAIN-SUFFIX,stonecalcom.com
+  - DOMAIN-SUFFIX,str1kee.com
+  - DOMAIN-SUFFIX,sunnimiq.cf
+  - DOMAIN-SUFFIX,swiftmining.win
+  - DOMAIN-SUFFIX,tercabilis.info
+  - DOMAIN-SUFFIX,thewhizmarketing.com
+  - DOMAIN-SUFFIX,thewhizproducts.com
+  - DOMAIN-SUFFIX,thewise.com
+  - DOMAIN-SUFFIX,traffic.tc-clicks.com
+  - DOMAIN-SUFFIX,trustaproiam.de
+  - DOMAIN-SUFFIX,trusteverything.de
+  - DOMAIN-SUFFIX,trustiseverything.de
+  - DOMAIN-SUFFIX,tulip18.com
+  - DOMAIN-SUFFIX,verifier.live
+  - DOMAIN-SUFFIX,vkcdnservice.com
+  - DOMAIN-SUFFIX,vuryua.ru
+  - DOMAIN-SUFFIX,wallpoper.com
+  - DOMAIN-SUFFIX,webapi.salamantex.com
+  - DOMAIN-SUFFIX,webapi.staging.salamantex.com
+  - DOMAIN-SUFFIX,webmine.cz
+  - DOMAIN-SUFFIX,webmine.pro
+  - DOMAIN-SUFFIX,webminerpool.com
+  - DOMAIN-SUFFIX,webmining.co
+  - DOMAIN-SUFFIX,webxmr.com
+  - DOMAIN-SUFFIX,wordc.ga
+  - DOMAIN-SUFFIX,ws.webcaster.pro
+  - DOMAIN-SUFFIX,wtm.monitoringservice.co
+  - DOMAIN-SUFFIX,xmr.cool
+  - DOMAIN-SUFFIX,zlx.com.br

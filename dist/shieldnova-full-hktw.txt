@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-05-01 21:52:07 UTC
-! Total: 1173
-! Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=1022, deduped_total=1173, allowlist_removed=0
+! Built: 2026-05-01 21:54:16 UTC
+! Total: 1301
+! Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=1150, deduped_total=1301, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -606,6 +606,58 @@
 ||018f3b18cc2962586.temporary.link^         ! auto: phishing
 ||018uh.mjt.lu^                             ! auto: phishing
 ||01928758273.atwebpages.com^               ! auto: phishing
+
+! --- Auto-fetched from phishing (2026-05-01) ---
+||01940d0e.learnhere.com.cn^                ! auto: phishing
+||01967.com^                                ! auto: phishing
+||019aa9ed.d23822.cn^                       ! auto: phishing
+||01a-v0-cat33.hostenko.net^                ! auto: phishing
+||01activar-pin-protegercuenta.atsnx.com^   ! auto: phishing
+||01adc8d6.89dduvdjsi.shop^                 ! auto: phishing
+||01b3659.com^                              ! auto: phishing
+||01becu-server.duckdns.org^                ! auto: phishing
+||01bh.01zaq.dns-dynamic.net^               ! auto: phishing
+||01blaak.com^                              ! auto: phishing
+||01db3205053754908.temporary.link^         ! auto: phishing
+||01digitalmaio.com^                        ! auto: phishing
+||01duon.uhgko.cloudns.biz^                 ! auto: phishing
+||01e913e6-93dc-43b6-b2a3-cee1b5dc0ea4.selstorage.ru^ ! auto: phishing
+||01etr10nsf.ltd^                           ! auto: phishing
+||01f47fd8.7832iweof8ds.org.cn^             ! auto: phishing
+||01f6bd75.szzhengqian.cn^                  ! auto: phishing
+||01finder-smm.ru^                          ! auto: phishing
+||01genrasecrit74522.atwebpages.com^        ! auto: phishing
+||01iujlxenapswa68xi46segli4.qwo231sdx.club^ ! auto: phishing
+||01klaimhadiahgratis2021.duckdns.org^      ! auto: phishing
+||01na5.hamime-hagh.com^                    ! auto: phishing
+||01newlyrecomend-1318015313.cos.na-siliconvalley.myqcloud.com^ ! auto: phishing
+||01notif-ing-virification-baca12.ingress-erytho.ewp.live^ ! auto: phishing
+||01notif-stractpoul-baca12.ingress-baronn.ewp.live^ ! auto: phishing
+||01online-asb-co-nz-auth-fm-header-login.duckdns.org^ ! auto: phishing
+||01petl41.duckdns.org^                     ! auto: phishing
+||01securechas5elogin.duckdns.org^          ! auto: phishing
+||01up4zpe8us.co^                           ! auto: phishing
+||01vhl.mjt.lu^                             ! auto: phishing
+||01wiyped1.duckdns.org^                    ! auto: phishing
+||01xsecure-chase.duckdns.org^              ! auto: phishing
+||02-accountverification.com^               ! auto: phishing
+||02-bill.ref-386.com^                      ! auto: phishing
+||02-billing-bundle.com^                    ! auto: phishing
+||02-billing-error.com^                     ! auto: phishing
+||02-billing-renew.net^                     ! auto: phishing
+||02-billing-renewal.com^                   ! auto: phishing
+||02-billing-secure.net^                    ! auto: phishing
+||02-billing-verify.com^                    ! auto: phishing
+||02-billing.link^                          ! auto: phishing
+||02-billing.ref-193.com^                   ! auto: phishing
+||02-billing.ref-386.com^                   ! auto: phishing
+||02-billing.secure-online-account9220.com^ ! auto: phishing
+||02-billinguk.com^                         ! auto: phishing
+||02-billingupdate.com^                     ! auto: phishing
+||02-bundle-help.com^                       ! auto: phishing
+||02-bundle-package.com^                    ! auto: phishing
+||02-bundle-renewed.com^                    ! auto: phishing
+||02-cancelled-bundle.com^                  ! auto: phishing
 ! ============================================================================
 ! ShieldNova - Security / Malware
 ! Malware distribution infrastructure with ZERO legitimate use cases.
@@ -1080,6 +1132,58 @@
 ||onyxguardify.de^                          ! auto: malware
 ||onyxphantomlock.de^                       ! auto: malware
 ||ossapp.suning.com^                        ! auto: malware
+
+! --- Auto-fetched from malware (2026-05-01) ---
+||access-b8.bnaumann87.work^                ! auto: malware
+||api.clearviewcloud.lat^                   ! auto: malware
+||api.physiolpo1icy.lat^                    ! auto: malware
+||app.physiolpo1icy.lat^                    ! auto: malware
+||auth-sys.sarahkapsreit.work^              ! auto: malware
+||auth.smartlogicgate.lat^                  ! auto: malware
+||bal-f7.bnaumann87.work^                   ! auto: malware
+||cdn.smartlogicgate.lat^                   ! auto: malware
+||cloud-kaps.sarahkapsreit.work^            ! auto: malware
+||coorsamexico.mx^                          ! auto: malware
+||core-logic.herbertrutt.work^              ! auto: malware
+||cr-cloud.crinkdimit.work^                 ! auto: malware
+||creativevoltage.com^                      ! auto: malware
+||data-sync.rolfgrassinger.work^            ! auto: malware
+||data.fastworknode.lat^                    ! auto: malware
+||db.clearviewcloud.lat^                    ! auto: malware
+||db.physiolpo1icy.lat^                     ! auto: malware
+||dim-proxy.crinkdimit.work^                ! auto: malware
+||dns-naum.bnaumann87.work^                 ! auto: malware
+||edge-v6.rolfgrassinger.work^              ! auto: malware
+||exec-unit.herbertrutt.work^               ! auto: malware
+||gate.clearviewcloud.lat^                  ! auto: malware
+||gate.physiolpo1icy.lat^                   ! auto: malware
+||herb-store.herbertrutt.work^              ! auto: malware
+||hub.fastworknode.lat^                     ! auto: malware
+||internal-r.sarahkapsreit.work^            ! auto: malware
+||lab-sys5.bnaumann87.work^                 ! auto: malware
+||login-web.sarahkapsreit.work^             ! auto: malware
+||map-entry.herbertrutt.work^               ! auto: malware
+||mast.smartlogicgate.lat^                  ! auto: malware
+||node.fastworknode.lat^                    ! auto: malware
+||owlcity.ru^                               ! auto: malware
+||oxfordmobilexray.com^                     ! auto: malware
+||p3.zbjimg.com^                            ! auto: malware
+||palharesinformatica.com.br^               ! auto: malware
+||panychurasc0.com^                         ! auto: malware
+||pay.aqiu6.com^                            ! auto: malware
+||pcupd.com^                                ! auto: malware
+||petitesalope.com^                         ! auto: malware
+||pfatrivandrum.org^                        ! auto: malware
+||pid.fly160.com^                           ! auto: malware
+||pinaview.com^                             ! auto: malware
+||pjsn.hi2.ro^                              ! auto: malware
+||planetariumobil.ro^                       ! auto: malware
+||plasteredplayn.com^                       ! auto: malware
+||pns.org.pk^                               ! auto: malware
+||pobedastaff.ru^                           ! auto: malware
+||polonyauniversiteleri.com.tr^             ! auto: malware
+||postelnini.mk^                            ! auto: malware
+||prepstarcenter.com^                       ! auto: malware
 ! ============================================================================
 ! ShieldNova - Security / Cryptojacking
 ! Conservative blocklist for well-known browser mining infrastructure.
@@ -1285,6 +1389,36 @@
 ||statdynamic.com^                          ! auto: cryptojacking
 ||statistic.date^                           ! auto: cryptojacking
 ||stonecalcom.com^                          ! auto: cryptojacking
+
+! --- Auto-fetched from cryptojacking (2026-05-01) ---
+||str1kee.com^                              ! auto: cryptojacking
+||sunnimiq.cf^                              ! auto: cryptojacking
+||swiftmining.win^                          ! auto: cryptojacking
+||tercabilis.info^                          ! auto: cryptojacking
+||thewhizmarketing.com^                     ! auto: cryptojacking
+||thewhizproducts.com^                      ! auto: cryptojacking
+||thewise.com^                              ! auto: cryptojacking
+||traffic.tc-clicks.com^                    ! auto: cryptojacking
+||trustaproiam.de^                          ! auto: cryptojacking
+||trusteverything.de^                       ! auto: cryptojacking
+||trustiseverything.de^                     ! auto: cryptojacking
+||tulip18.com^                              ! auto: cryptojacking
+||verifier.live^                            ! auto: cryptojacking
+||vkcdnservice.com^                         ! auto: cryptojacking
+||vuryua.ru^                                ! auto: cryptojacking
+||wallpoper.com^                            ! auto: cryptojacking
+||webapi.salamantex.com^                    ! auto: cryptojacking
+||webapi.staging.salamantex.com^            ! auto: cryptojacking
+||webmine.cz^                               ! auto: cryptojacking
+||webmine.pro^                              ! auto: cryptojacking
+||webminerpool.com^                         ! auto: cryptojacking
+||webmining.co^                             ! auto: cryptojacking
+||webxmr.com^                               ! auto: cryptojacking
+||wordc.ga^                                 ! auto: cryptojacking
+||ws.webcaster.pro^                         ! auto: cryptojacking
+||wtm.monitoringservice.co^                 ! auto: cryptojacking
+||xmr.cool^                                 ! auto: cryptojacking
+||zlx.com.br^                               ! auto: cryptojacking
 ! ============================================================================
 ! ShieldNova - Privacy / Hong Kong & Taiwan
 ! Conservative HK/TW regional analytics, attribution, and telemetry endpoints.
