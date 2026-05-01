@@ -639,22 +639,32 @@ def parse_nocoin(content: str) -> tuple[set, dict]:
 
 def parse_phishing_database(content: str) -> tuple[set, dict]:
     """
-    Parse Phishing.Database active phishing domain list. Returns (domains, platform_skipped_count).
+    Parse Phishing.Database active phishing domain list. Returns (domains, skipped_by_platform).
     """
-    domains = set()
-    skipped_platform = {}
+    domains: set = set()
+    skipped_by_platform: dict[str, int] = {}
     for line in content.splitlines():
         domain = extract_domain(line)
         if not domain:
             continue
         if is_hosting_platform(domain):
-            skipped_platform += 1
+            parts = domain.split('.')
+            apex = 'unknown'
+            for i in range(1, len(parts)):
+                parent = '.'.join(parts[i:])
+                if parent in _HOSTING_APEXES_MERGED:
+                    apex = parent
+                    break
+            if apex == 'unknown' and domain in _HOSTING_APEXES_MERGED:
+                apex = domain
+            skipped_by_platform[apex] = skipped_by_platform.get(apex, 0) + 1
             continue
         if is_valid_domain(domain):
             domains.add(domain)
-    if skipped_platform:
-        log(f'  [platform-skip] phishing_database: {skipped_platform} hosting-platform entries discarded')
-    return domains, skipped_platform
+    total_skipped = sum(skipped_by_platform.values())
+    if total_skipped:
+        log(f'  [platform-skip] phishing_database: {total_skipped} hosting-platform entries discarded')
+    return domains, skipped_by_platform
 
 
 PARSERS = {
