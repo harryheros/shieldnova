@@ -1,12 +1,9 @@
 # ShieldNova - Full (Hong Kong & Taiwan)
-# Description: Complete protection with additional Hong Kong and Taiwan domains.
-# Profile: Conservative / Compatibility-First
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-05-01 21:54:16 UTC
+# Built: 2026-05-01 22:45:53 UTC
 # Total: 1301
-# Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=1150, deduped_total=1301, allowlist_removed=0
 
 HOST-SUFFIX,google-analytics.com,reject
 HOST-SUFFIX,googletagmanager.com,reject

@@ -22,7 +22,7 @@ Output schema (release_report.json):
       "delta": +/- N
     },
     "profiles": [ { "filename": ..., "total": N, "breakdown": {...} } ],
-    "sources": { per-source fetch stats },
+    "fetch": { aggregate public fetch stats },
     "integrity": { "sha256": { "stats.json": "...", "shieldnova-full.txt": "..." } }
   }
 """
@@ -65,14 +65,20 @@ def load_json(path: Path) -> dict | None:
 
 
 def count_rules_in_dist() -> int:
-    """Count total active rules across all dist/shieldnova-*.txt files (deduplicated)."""
+    """Count total active AdGuard-style rules across dist files.
+
+    Rules may include inline comments or options, so avoid a strict
+    line.endswith('^') check.
+    """
+    import re
+    rule_re = re.compile(r'^\|\|([^\^\s]+)\^(?:\$[^\s!]+)?')
     all_domains: set[str] = set()
     for f in DIST_DIR.glob('shieldnova-*.txt'):
         with open(f, encoding='utf-8') as fh:
             for line in fh:
-                line = line.strip()
-                if line.startswith('||') and line.endswith('^'):
-                    all_domains.add(line[2:-1].lower())
+                m = rule_re.match(line.strip())
+                if m:
+                    all_domains.add(m.group(1).lower().strip('.'))
     return len(all_domains)
 
 
@@ -98,21 +104,24 @@ def collect_build_data(stats: dict) -> dict:
 def collect_fetch_data(fetch_stats: dict | None) -> dict | None:
     if not fetch_stats:
         return None
-    sources = {}
     total_platform_skipped = 0
-    for src_name, src_data in fetch_stats.get('sources', {}).items():
-        sources[src_name] = {
-            'status':           src_data.get('status'),
-            'raw':              src_data.get('raw', 0),
-            'platform_skipped': src_data.get('platform_skipped', 0),
-            'new':              src_data.get('new', 0),
-        }
+    successful_sources = 0
+    failed_sources = 0
+
+    for src_data in fetch_stats.get('sources', {}).values():
+        if src_data.get('status') == 'ok':
+            successful_sources += 1
+        elif src_data.get('status'):
+            failed_sources += 1
         total_platform_skipped += src_data.get('platform_skipped', 0)
+
     return {
         'fetched_at':             fetch_stats.get('fetched_at'),
         'total_new_domains':      fetch_stats.get('total_added', 0),
         'total_platform_skipped': total_platform_skipped,
-        'sources':                sources,
+        'successful_sources':     successful_sources,
+        'failed_sources':         failed_sources,
+        'note':                   'Public summary only. Detailed operational data remains in internal build artifacts.',
     }
 
 
@@ -148,7 +157,11 @@ def collect_rule_delta(current_total: int) -> dict:
     """Compare current total to previous release_report.json if it exists."""
     previous_report = load_json(REPORT_OUT)
     if previous_report:
-        prev_total = previous_report.get('rule_delta', {}).get('total_rules_now', 0)
+        prev_total = previous_report.get('rule_delta', {}).get('total_rules_now')
+        # Older reports had a strict parser bug and may contain 0. Treat that
+        # as unavailable so public notes do not show a misleading huge delta.
+        if not isinstance(prev_total, int) or prev_total <= 0:
+            prev_total = None
     else:
         prev_total = None
 
@@ -245,11 +258,9 @@ def build_report(stats, fetch_stats, audit_report) -> dict:
         'false_positive_gate':    collect_fp_gate_data(),
         'rule_delta':             collect_rule_delta(current_total),
         'integrity':              collect_integrity(),
-        'intelligence_summary': {
-            'top_phishing_tlds':       top_phishing_tlds(10),
-            'top_skipped_platforms':   top_skipped_platforms(fetch_stats, 10),
-            'false_positive_fixes':    false_positive_fixes(audit_report),
-            'new_domains_by_source':   top_new_domains_by_tld(fetch_stats, 10),
+        'disclosure': {
+            'level': 'selective',
+            'policy': 'Public reports show release quality and aggregate outcomes, not detection recipes or source-specific internals.',
         },
     }
 
@@ -321,7 +332,7 @@ def update_changelog(report: dict):
 
     lines = [f'## {date_str}', '']
 
-    if diff is not None:
+    if diff is not None and diff != 0:
         sign = '+' if diff >= 0 else ''
         lines.append(f'- Security rules updated ({sign}{diff})')
     else:

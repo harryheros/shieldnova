@@ -288,45 +288,33 @@ def convert_rule(rule, tool):
 
 def format_header_lines(title, description, count, tool, breakdown):
     date = utc_now()
-    breakdown_text = ', '.join(f'{k}={v}' for k, v in breakdown.items() if v is not None)
-
     if tool == 'adguard':
         return [
             f'! Title: ShieldNova - {title}',
             f'! Description: {description}',
-            '! Profile: Conservative / Compatibility-First',
+            f'! Version: {date}',
             '! Author: Harry (https://github.com/harryheros)',
             '! Homepage: https://github.com/harryheros/shieldnova',
-            '! License: CC BY-NC-SA 4.0',
-            f'! Built: {date}',
+            '! Licence: CC BY-NC-SA 4.0',
             f'! Total: {count}',
-            f'! Breakdown: {breakdown_text}',
         ]
 
     if tool == 'clash':
         return [
             f'# ShieldNova - {title}',
-            f'# Description: {description}',
-            '# Profile: Conservative / Compatibility-First',
-            '# Author: Harry (https://github.com/harryheros)',
-            '# Homepage: https://github.com/harryheros/shieldnova',
-            '# License: CC BY-NC-SA 4.0',
+            f'# Homepage: https://github.com/harryheros/shieldnova',
             f'# Built: {date}',
             f'# Total: {count}',
-            f'# Breakdown: {breakdown_text}',
             'payload:',
         ]
 
     return [
         f'# ShieldNova - {title}',
-        f'# Description: {description}',
-        '# Profile: Conservative / Compatibility-First',
         '# Author: Harry (https://github.com/harryheros)',
         '# Homepage: https://github.com/harryheros/shieldnova',
         '# License: CC BY-NC-SA 4.0',
         f'# Built: {date}',
         f'# Total: {count}',
-        f'# Breakdown: {breakdown_text}',
     ]
 
 
@@ -348,12 +336,13 @@ def write_format(tool, filename, title, description, rules, breakdown):
     header_lines = format_header_lines(title, description, count, tool, breakdown)
 
     with open(filepath, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(header_lines) + '\n\n')
+        f.write('\n'.join(header_lines) + '\n')
         if tool == 'clash':
+            # payload: is the last header line; rules follow immediately
             for rule in converted:
                 f.write(f'  - {rule}\n')
         elif converted:
-            f.write('\n'.join(converted) + '\n')
+            f.write('\n' + '\n'.join(converted) + '\n')
 
     print(f'  Built {tool}: {filename} ({count} rules)')
 

@@ -1,12 +1,9 @@
 # ShieldNova - Security Protection
-# Description: Conservative phishing, malware, scam, and cryptojacking domains.
-# Profile: Conservative / Compatibility-First
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-05-01 21:54:16 UTC
+# Built: 2026-05-01 22:45:53 UTC
 # Total: 1150
-# Breakdown: phishing=443, malware=495, cryptojacking=212, deduped_total=1150, allowlist_removed=0
 
 HOST-SUFFIX,16shop.co,reject
 HOST-SUFFIX,logincdn.net,reject
