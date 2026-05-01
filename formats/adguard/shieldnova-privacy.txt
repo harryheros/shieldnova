@@ -1,12 +1,10 @@
 ! Title: ShieldNova - Privacy Protection
 ! Description: Low-risk analytics, attribution, fingerprinting, and telemetry blocking.
-! Profile: Conservative / Compatibility-First
+! Version: 2026-05-01 22:45:53 UTC
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
-! License: CC BY-NC-SA 4.0
-! Built: 2026-05-01 21:54:16 UTC
+! Licence: CC BY-NC-SA 4.0
 ! Total: 56
-! Breakdown: privacy=56, allowlist_removed=0
 
 ||google-analytics.com^
 ||googletagmanager.com^
