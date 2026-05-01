@@ -91,29 +91,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes detected. Skipping commit."
           else
-            # Build meaningful commit message from release report
-            TOTAL=$(python3 -c "
-import json, pathlib
-r = pathlib.Path('dist/release_report.json')
-if r.exists():
-    d = json.loads(r.read_text())
-    total = d.get('rule_delta', {}).get('total_rules_now', 0)
-    delta = d.get('rule_delta', {}).get('delta')
-    fetch = d.get('fetch') or {}
-    new_domains = fetch.get('total_new_domains', 0)
-    skipped = fetch.get('total_platform_skipped', 0)
-    parts = [f'rules={total}']
-    if delta is not None:
-        sign = '+' if delta >= 0 else ''
-        parts.append(f'delta={sign}{delta}')
-    if new_domains:
-        parts.append(f'new={new_domains}')
-    if skipped:
-        parts.append(f'platform-skip={skipped}')
-    print(' | '.join(parts))
-else:
-    print('auto-update')
-" 2>/dev/null || echo "auto-update")
+            TOTAL=$(python3 scripts/commit_message.py 2>/dev/null || echo "auto-update")
             git commit -m "chore: shieldnova $(date -u +%Y-%m-%d) | ${TOTAL}"
             git push
           fi
