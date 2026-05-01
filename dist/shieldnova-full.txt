@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-04-30 23:37:46 UTC
-! Total: 917
-! Breakdown: privacy=56, ads=59, security=804, deduped_total=917, allowlist_removed=0
+! Built: 2026-05-01 06:12:32 UTC
+! Total: 1067
+! Breakdown: privacy=56, ads=59, security=954, deduped_total=1067, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -561,6 +561,58 @@
 ||00pix.sa.com^                             ! auto: phishing
 ||00privacidad-cuenta-bhd-2025-22.weebly.com^ ! auto: phishing
 ||00ql.paypal-merchant.ru^                  ! auto: phishing
+
+! --- Auto-fetched from phishing (2026-05-01) ---
+||00refund321-mobile.com^                   ! auto: phishing
+||00rm-huntiiingtonbnk.dynamic-dns.net^     ! auto: phishing
+||00sharpening.sa.com^                      ! auto: phishing
+||00tec.blob.core.windows.net^              ! auto: phishing
+||00tyw0aytaw0tawtuaty.touryar.net^         ! auto: phishing
+||00tyy.ru.com^                             ! auto: phishing
+||00uyyu0gwytwuyytw00w.ketix.net^           ! auto: phishing
+||00validar-l-ogin045.weebly.com^           ! auto: phishing
+||00web.glitch.me^                          ! auto: phishing
+||00wellsfarg.azurewebsites.net^            ! auto: phishing
+||00wetransfer-sharedfiles.netlify.app^     ! auto: phishing
+||00wqj4vup.duckdns.org^                    ! auto: phishing
+||01-10-2025-updates.netsons.org^           ! auto: phishing
+||01-51h.pages.dev^                         ! auto: phishing
+||01-secure.redirectme.net^                 ! auto: phishing
+||01-spk-veri7.xyz^                         ! auto: phishing
+||01.pilot45.com^                           ! auto: phishing
+||01.yfziy.com^                             ! auto: phishing
+||01001015122344.ml^                        ! auto: phishing
+||01001015122346.ml^                        ! auto: phishing
+||0100238504.mexigas.com.mx^                ! auto: phishing
+||010101010011010093893930101.azurewebsites.net^ ! auto: phishing
+||0101010scotia-rst.agency^                 ! auto: phishing
+||010109434-111.duckdns.org^                ! auto: phishing
+||01025.yimumon.xyz^                        ! auto: phishing
+||0103659.com^                              ! auto: phishing
+||010365vip.com^                            ! auto: phishing
+||01064223613.com^                          ! auto: phishing
+||01077jjj.pages.dev^                       ! auto: phishing
+||0109626668.cn^                            ! auto: phishing
+||010aa.cn^                                 ! auto: phishing
+||010auth0.duckdns.org^                     ! auto: phishing
+||010c1ts.com^                              ! auto: phishing
+||010league0flegends010euw0.000webhostapp.com^ ! auto: phishing
+||011-two.vercel.app^                       ! auto: phishing
+||011.358761202.workers.dev^                ! auto: phishing
+||01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com^ ! auto: phishing
+||011111111.000webhostapp.com^              ! auto: phishing
+||01112450.duckdns.org^                     ! auto: phishing
+||01115484188.000webhostapp.com^            ! auto: phishing
+||0112254598920073980495234.com^            ! auto: phishing
+||0113985d.9jyji2.shop^                     ! auto: phishing
+||011511.xyz^                               ! auto: phishing
+||0115fe1f.jdksk-dndjcx.com.cn^             ! auto: phishing
+||01175421.00agt8.shop^                     ! auto: phishing
+||01188086.gstwu-eu-hey.com.cn^             ! auto: phishing
+||012-109354.weeblysite.com^                ! auto: phishing
+||012-f5b.pages.dev^                        ! auto: phishing
+||01213300.atwebpages.com^                  ! auto: phishing
+||0123-luke-tatsuki.com^                    ! auto: phishing
 ! ============================================================================
 ! ShieldNova - Security / Malware
 ! Malware distribution infrastructure with ZERO legitimate use cases.
@@ -954,6 +1006,58 @@
 ||leafhostunit.goddess-tapir.bet^           ! auto: malware
 ||legitserver.theworkpc.com^                ! auto: malware
 ||leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com^ ! auto: malware
+
+! --- Auto-fetched from malware (2026-05-01) ---
+||areahostunit.tavi8grid.surf^              ! auto: malware
+||basehostunit.kali9drift.surf^             ! auto: malware
+||byte1logicnet.pilo1byte.surf^             ! auto: malware
+||cambodiatouristservice.com^               ! auto: malware
+||dash3taskhub.colorist-resignat.bet^       ! auto: malware
+||dl.2345.com^                              ! auto: malware
+||fire1siteview.voda4flux.surf^             ! auto: malware
+||fire2taskhub.chaevodh0t.bet^              ! auto: malware
+||foci5taskhub.mero2beam.surf^              ! auto: malware
+||fonij.cm^                                 ! auto: malware
+||glow8siteview.colorfu1prep.bet^           ! auto: malware
+||goto.stnts.com^                           ! auto: malware
+||grid8logicway.tavi8grid.surf^             ! auto: malware
+||heat5pathgate.voda4flux.surf^             ! auto: malware
+||high7logicnet.nexo7peak.surf^             ! auto: malware
+||ionhostunit.voda4flux.surf^               ! auto: malware
+||kokorostore.it^                           ! auto: malware
+||libretv-16e.pages.dev^                    ! auto: malware
+||libss.0x504.com^                          ! auto: malware
+||lindenappliances.co.za^                   ! auto: malware
+||lindnerelektroanlagen.de^                 ! auto: malware
+||loadmeshnode.pilo1byte.surf^              ! auto: malware
+||local-update.com^                         ! auto: malware
+||lomejordesalamanca.es^                    ! auto: malware
+||lon-01.dlo4d.com^                         ! auto: malware
+||luizmatoso.com.br^                        ! auto: malware
+||m.jkoa.co.kr^                             ! auto: malware
+||m.meta-dm.com^                            ! auto: malware
+||magnusworkspace.com^                      ! auto: malware
+||maidforyou1985.com^                       ! auto: malware
+||mail.ssadownload.top^                     ! auto: malware
+||map2taskhub.tavi8grid.surf^               ! auto: malware
+||marsalek.cy^                              ! auto: malware
+||matthewsigmondv5.pages.dev^               ! auto: malware
+||media.githubusercontent.com^              ! auto: malware
+||meetvideogoogle.com^                      ! auto: malware
+||meltmeshsite.voda4flux.surf^              ! auto: malware
+||mersped.mycpanel.rs^                      ! auto: malware
+||metrics.gocloudmaps.com^                  ! auto: malware
+||mgtms.cc^                                 ! auto: malware
+||miner.pages.dev^                          ! auto: malware
+||mininews.kpzip.com^                       ! auto: malware
+||mistralkorea.ru^                          ! auto: malware
+||mitreart.com^                             ! auto: malware
+||mobshah.com^                              ! auto: malware
+||mockupcorporation.com^                    ! auto: malware
+||mogimall.com^                             ! auto: malware
+||mosselnet.co.za^                          ! auto: malware
+||movseek.pages.dev^                        ! auto: malware
+||msoftdatastore.z22.web.core.windows.net^  ! auto: malware
 ! ============================================================================
 ! ShieldNova - Security / Cryptojacking
 ! Conservative blocklist for well-known browser mining infrastructure.
@@ -1055,3 +1159,55 @@
 ||crypto-webminer.com^                      ! auto: cryptojacking
 ||crypto.csgocpu.com^                       ! auto: cryptojacking
 ||cryptobara.com^                           ! auto: cryptojacking
+
+! --- Auto-fetched from cryptojacking (2026-05-01) ---
+||cryptoloot.pro^                           ! auto: cryptojacking
+||cryptonoter.com^                          ! auto: cryptojacking
+||datasecu.download^                        ! auto: cryptojacking
+||ddns.net^                                 ! auto: cryptojacking
+||dekoder.ws^                               ! auto: cryptojacking
+||devphp.org.ua^                            ! auto: cryptojacking
+||directprimal.com^                         ! auto: cryptojacking
+||dontbeevils.de^                           ! auto: cryptojacking
+||donttbeevils.de^                          ! auto: cryptojacking
+||easyhash.de^                              ! auto: cryptojacking
+||eth-pocket.com^                           ! auto: cryptojacking
+||eth-pocket.de^                            ! auto: cryptojacking
+||ethereum-cashcard.com^                    ! auto: cryptojacking
+||ethereum-pocket.com^                      ! auto: cryptojacking
+||eucsoft.com^                              ! auto: cryptojacking
+||evilsbedont.de^                           ! auto: cryptojacking
+||f1tbit.com^                               ! auto: cryptojacking
+||filmoljupci.com^                          ! auto: cryptojacking
+||flare-analytics.com^                      ! auto: cryptojacking
+||flightsy.win^                             ! auto: cryptojacking
+||flightzy.date^                            ! auto: cryptojacking
+||formulawire.com^                          ! auto: cryptojacking
+||g1thub.com^                               ! auto: cryptojacking
+||gay-hotvideo.net^                         ! auto: cryptojacking
+||go.bestmobiworld.com^                     ! auto: cryptojacking
+||go.fastspot.io^                           ! auto: cryptojacking
+||go.megabanners.cf^                        ! auto: cryptojacking
+||grf.easyhash.io^                          ! auto: cryptojacking
+||gridiogrid.com^                           ! auto: cryptojacking
+||gxbrowser.net^                            ! auto: cryptojacking
+||hashing.win^                              ! auto: cryptojacking
+||hemnes.win^                               ! auto: cryptojacking
+||herominers.com^                           ! auto: cryptojacking
+||hive.tubetitties.com^                     ! auto: cryptojacking
+||igrid.org^                                ! auto: cryptojacking
+||ijfcm7bu6ocerxsfq56ka3dtdanunyp4ytwk745b54agtravj2wr2qqd.onion.pet^ ! auto: cryptojacking
+||intelserviceupdate.com^                   ! auto: cryptojacking
+||jqwww.download^                           ! auto: cryptojacking
+||js.nahnoji.cz^                            ! auto: cryptojacking
+||jscdndel.com^                             ! auto: cryptojacking
+||jscoinminer.com^                          ! auto: cryptojacking
+||kinokongo.cc^                             ! auto: cryptojacking
+||lags.win^                                 ! auto: cryptojacking
+||laserveradedomaina.com^                   ! auto: cryptojacking
+||lightminer.co^                            ! auto: cryptojacking
+||live.api.stream^                          ! auto: cryptojacking
+||losital.ru^                               ! auto: cryptojacking
+||machieved.com^                            ! auto: cryptojacking
+||mail.ghmproperties.com^                   ! auto: cryptojacking
+||mail.itseasy.com^                         ! auto: cryptojacking

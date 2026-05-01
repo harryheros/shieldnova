@@ -380,3 +380,55 @@
 ||00pix.sa.com^                             ! auto: phishing
 ||00privacidad-cuenta-bhd-2025-22.weebly.com^! auto: phishing
 ||00ql.paypal-merchant.ru^                  ! auto: phishing
+
+! --- Auto-fetched from phishing (2026-05-01) ---
+||00refund321-mobile.com^                   ! auto: phishing
+||00rm-huntiiingtonbnk.dynamic-dns.net^     ! auto: phishing
+||00sharpening.sa.com^                      ! auto: phishing
+||00tec.blob.core.windows.net^              ! auto: phishing
+||00tyw0aytaw0tawtuaty.touryar.net^         ! auto: phishing
+||00tyy.ru.com^                             ! auto: phishing
+||00uyyu0gwytwuyytw00w.ketix.net^           ! auto: phishing
+||00validar-l-ogin045.weebly.com^           ! auto: phishing
+||00web.glitch.me^                          ! auto: phishing
+||00wellsfarg.azurewebsites.net^            ! auto: phishing
+||00wetransfer-sharedfiles.netlify.app^     ! auto: phishing
+||00wqj4vup.duckdns.org^                    ! auto: phishing
+||01-10-2025-updates.netsons.org^           ! auto: phishing
+||01-51h.pages.dev^                         ! auto: phishing
+||01-secure.redirectme.net^                 ! auto: phishing
+||01-spk-veri7.xyz^                         ! auto: phishing
+||01.pilot45.com^                           ! auto: phishing
+||01.yfziy.com^                             ! auto: phishing
+||01001015122344.ml^                        ! auto: phishing
+||01001015122346.ml^                        ! auto: phishing
+||0100238504.mexigas.com.mx^                ! auto: phishing
+||010101010011010093893930101.azurewebsites.net^! auto: phishing
+||0101010scotia-rst.agency^                 ! auto: phishing
+||010109434-111.duckdns.org^                ! auto: phishing
+||01025.yimumon.xyz^                        ! auto: phishing
+||0103659.com^                              ! auto: phishing
+||010365vip.com^                            ! auto: phishing
+||01064223613.com^                          ! auto: phishing
+||01077jjj.pages.dev^                       ! auto: phishing
+||0109626668.cn^                            ! auto: phishing
+||010aa.cn^                                 ! auto: phishing
+||010auth0.duckdns.org^                     ! auto: phishing
+||010c1ts.com^                              ! auto: phishing
+||010league0flegends010euw0.000webhostapp.com^! auto: phishing
+||011-two.vercel.app^                       ! auto: phishing
+||011.358761202.workers.dev^                ! auto: phishing
+||01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com^! auto: phishing
+||011111111.000webhostapp.com^              ! auto: phishing
+||01112450.duckdns.org^                     ! auto: phishing
+||01115484188.000webhostapp.com^            ! auto: phishing
+||0112254598920073980495234.com^            ! auto: phishing
+||0113985d.9jyji2.shop^                     ! auto: phishing
+||011511.xyz^                               ! auto: phishing
+||0115fe1f.jdksk-dndjcx.com.cn^             ! auto: phishing
+||01175421.00agt8.shop^                     ! auto: phishing
+||01188086.gstwu-eu-hey.com.cn^             ! auto: phishing
+||012-109354.weeblysite.com^                ! auto: phishing
+||012-f5b.pages.dev^                        ! auto: phishing
+||01213300.atwebpages.com^                  ! auto: phishing
+||0123-luke-tatsuki.com^                    ! auto: phishing
