@@ -598,7 +598,7 @@ def parse_threatfox(content: str) -> tuple[set, dict]:
     return domains, skipped_by_platform
 
 
-def parse_nocoin(content: str) -> set:
+def parse_nocoin(content: str) -> tuple[set, dict]:
     """
     Parse adblock-nocoin-list (AdBlock syntax: ||domain^).
 
@@ -606,7 +606,8 @@ def parse_nocoin(content: str) -> set:
     infrastructure, not hosted on legitimate platforms. Platform-hosting
     check is still applied for correctness.
     """
-    domains = set()
+    domains: set = set()
+    skipped_by_platform: dict[str, int] = {}
     for line in content.splitlines():
         line = line.strip()
         if not line or line.startswith('!') or line.startswith('#'):
@@ -617,9 +618,23 @@ def parse_nocoin(content: str) -> set:
             domain = line[2:].split('^')[0]
         else:
             domain = extract_domain(line)
-        if domain and is_eligible(domain):
+        if not domain:
+            continue
+        if is_hosting_platform(domain):
+            parts = domain.split('.')
+            apex = 'unknown'
+            for i in range(1, len(parts)):
+                parent = '.'.join(parts[i:])
+                if parent in _HOSTING_APEXES_MERGED:
+                    apex = parent
+                    break
+            if apex == 'unknown' and domain in _HOSTING_APEXES_MERGED:
+                apex = domain
+            skipped_by_platform[apex] = skipped_by_platform.get(apex, 0) + 1
+            continue
+        if is_valid_domain(domain):
             domains.add(domain.lower())
-    return domains
+    return domains, skipped_by_platform
 
 
 def parse_phishing_database(content: str) -> tuple[set, dict]:
