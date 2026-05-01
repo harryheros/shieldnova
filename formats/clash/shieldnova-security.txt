@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-05-01 06:12:32 UTC
-# Total: 954
-# Breakdown: phishing=402, malware=418, cryptojacking=134, deduped_total=954, allowlist_removed=0
+# Built: 2026-05-01 14:32:58 UTC
+# Total: 1104
+# Breakdown: phishing=452, malware=468, cryptojacking=184, deduped_total=1104, allowlist_removed=0
 payload:
 
   - DOMAIN-SUFFIX,16shop.co
@@ -411,6 +411,56 @@ payload:
   - DOMAIN-SUFFIX,012-f5b.pages.dev
   - DOMAIN-SUFFIX,01213300.atwebpages.com
   - DOMAIN-SUFFIX,0123-luke-tatsuki.com
+  - DOMAIN-SUFFIX,0124985675.cf
+  - DOMAIN-SUFFIX,012567-24.000webhostapp.com
+  - DOMAIN-SUFFIX,0126365.com
+  - DOMAIN-SUFFIX,012678.xyz
+  - DOMAIN-SUFFIX,012833215698.work.gd
+  - DOMAIN-SUFFIX,0128410.duckdns.org
+  - DOMAIN-SUFFIX,012841010.duckdns.org
+  - DOMAIN-SUFFIX,012841011.duckdns.org
+  - DOMAIN-SUFFIX,012841012.duckdns.org
+  - DOMAIN-SUFFIX,012841013.duckdns.org
+  - DOMAIN-SUFFIX,012de12faamaijf-cfbb43.ingress-earth.ewp.live
+  - DOMAIN-SUFFIX,012sec-help-veri-citizen.duckdns.org
+  - DOMAIN-SUFFIX,0135d091.00agt8.shop
+  - DOMAIN-SUFFIX,01368b10-57e4-4138-acc3-01373134d221.usrfiles.com
+  - DOMAIN-SUFFIX,013d.paypal-merchant.ru
+  - DOMAIN-SUFFIX,0140.ee
+  - DOMAIN-SUFFIX,01417282-9677-428f-8b57-11e362547314.id.repl.co
+  - DOMAIN-SUFFIX,0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co
+  - DOMAIN-SUFFIX,0145879-pagehelping.000webhostapp.com
+  - DOMAIN-SUFFIX,014925396510-rackspace-loginwe6ee67wd.pages.dev
+  - DOMAIN-SUFFIX,014mailorange.weebly.com
+  - DOMAIN-SUFFIX,014oo.blogspot.com
+  - DOMAIN-SUFFIX,015072cd.ssl-6x4meta.pages.dev
+  - DOMAIN-SUFFIX,0152indemnisat.pics
+  - DOMAIN-SUFFIX,015481847436324436677560049.com
+  - DOMAIN-SUFFIX,01549b.com
+  - DOMAIN-SUFFIX,015595384.com
+  - DOMAIN-SUFFIX,0158k.cn
+  - DOMAIN-SUFFIX,015d4d84ac0ca018d50929e33c891fc2e6a83c19fd4b170bca9f893390.pages.dev
+  - DOMAIN-SUFFIX,015fa8dc4cae9c1a049f0ec2dc23d3e54d47c426a3b1cda4d8b53757f8.pages.dev
+  - DOMAIN-SUFFIX,015hfy3c.square.site
+  - DOMAIN-SUFFIX,016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com
+  - DOMAIN-SUFFIX,016614590390149677279078.my-project-45bb.ey.r.appspot.com
+  - DOMAIN-SUFFIX,01679-login-att-index.weebly.com
+  - DOMAIN-SUFFIX,016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev
+  - DOMAIN-SUFFIX,0171500061.mexigas.com.mx
+  - DOMAIN-SUFFIX,0172844bks.7m.pl
+  - DOMAIN-SUFFIX,0177.datingg-voice.workers.dev
+  - DOMAIN-SUFFIX,017795384.com
+  - DOMAIN-SUFFIX,0178ad5f.satgrjtxcvdv.org.cn
+  - DOMAIN-SUFFIX,01793008-2b5e-4bbb-a429-3ff58af1c013.htmlcomponentservice.com
+  - DOMAIN-SUFFIX,017a468d.huaxinsbm.com
+  - DOMAIN-SUFFIX,01837643.filesusr.com
+  - DOMAIN-SUFFIX,0184893-904.com
+  - DOMAIN-SUFFIX,018740-recoverpage.000webhostapp.com
+  - DOMAIN-SUFFIX,01888f90-c5de-40b5-aa35-28082cf97171.htmlcomponentservice.com
+  - DOMAIN-SUFFIX,018b1483.htengsc.com
+  - DOMAIN-SUFFIX,018f3b18cc2962586.temporary.link
+  - DOMAIN-SUFFIX,018uh.mjt.lu
+  - DOMAIN-SUFFIX,01928758273.atwebpages.com
   - DOMAIN-SUFFIX,onclkds.com
   - DOMAIN-SUFFIX,clksite.com
   - DOMAIN-SUFFIX,clkrev.com
@@ -829,6 +879,56 @@ payload:
   - DOMAIN-SUFFIX,mosselnet.co.za
   - DOMAIN-SUFFIX,movseek.pages.dev
   - DOMAIN-SUFFIX,msoftdatastore.z22.web.core.windows.net
+  - DOMAIN-SUFFIX,42v06.lami4qor.surf
+  - DOMAIN-SUFFIX,areameshnode.felo7zone.surf
+  - DOMAIN-SUFFIX,blobir.vori7nex.surf
+  - DOMAIN-SUFFIX,cliedrift.vori7nex.surf
+  - DOMAIN-SUFFIX,corwineagles.com
+  - DOMAIN-SUFFIX,disk4pathgate.piva1save.surf
+  - DOMAIN-SUFFIX,facanha.com.br
+  - DOMAIN-SUFFIX,findmeshsite.karo3view.surf
+  - DOMAIN-SUFFIX,glac14-frame.vori7nex.surf
+  - DOMAIN-SUFFIX,grid5pathgate.felo7zone.surf
+  - DOMAIN-SUFFIX,growth2-mark.lami4qor.surf
+  - DOMAIN-SUFFIX,hold8taskhub.piva1save.surf
+  - DOMAIN-SUFFIX,innlive.in
+  - DOMAIN-SUFFIX,jawaratekno.com
+  - DOMAIN-SUFFIX,keepmeshnode.piva1save.surf
+  - DOMAIN-SUFFIX,l3tter7-logic.lami4qor.surf
+  - DOMAIN-SUFFIX,last7siteview.piva1save.surf
+  - DOMAIN-SUFFIX,londonairportstransfer.co.uk
+  - DOMAIN-SUFFIX,lookhostunit.karo3view.surf
+  - DOMAIN-SUFFIX,mapphostunit.felo7zone.surf
+  - DOMAIN-SUFFIX,mark9siteview.karo3view.surf
+  - DOMAIN-SUFFIX,mernexex.vori7nex.surf
+  - DOMAIN-SUFFIX,msedge.vg
+  - DOMAIN-SUFFIX,msgrouppolicy.vg
+  - DOMAIN-SUFFIX,muledo.com
+  - DOMAIN-SUFFIX,mundocarnes.cl
+  - DOMAIN-SUFFIX,muriaspetin.es
+  - DOMAIN-SUFFIX,mygrocerbox.com
+  - DOMAIN-SUFFIX,n.vs108.com
+  - DOMAIN-SUFFIX,ncxps.com
+  - DOMAIN-SUFFIX,nelees.com
+  - DOMAIN-SUFFIX,nerve.untergrund.net
+  - DOMAIN-SUFFIX,new.quranushaiqer.org.sa
+  - DOMAIN-SUFFIX,noithaticon.vn
+  - DOMAIN-SUFFIX,nusatoyota.co.id
+  - DOMAIN-SUFFIX,ny.lshdw.cc
+  - DOMAIN-SUFFIX,o24o.ru
+  - DOMAIN-SUFFIX,ob.youstarsbuilding.com
+  - DOMAIN-SUFFIX,od.lk
+  - DOMAIN-SUFFIX,officials.ink
+  - DOMAIN-SUFFIX,ofice365.github.io
+  - DOMAIN-SUFFIX,ojang.pe.kr
+  - DOMAIN-SUFFIX,okhan.net
+  - DOMAIN-SUFFIX,oknoplastik.sk
+  - DOMAIN-SUFFIX,old.bullydog.com
+  - DOMAIN-SUFFIX,onedrive.live.com
+  - DOMAIN-SUFFIX,onfiltre.com.tr
+  - DOMAIN-SUFFIX,onyxguardify.de
+  - DOMAIN-SUFFIX,onyxphantomlock.de
+  - DOMAIN-SUFFIX,ossapp.suning.com
   - DOMAIN-SUFFIX,coinhive.com
   - DOMAIN-SUFFIX,coinhiveproxy.com
   - DOMAIN-SUFFIX,authedmine.com
@@ -963,3 +1063,53 @@ payload:
   - DOMAIN-SUFFIX,machieved.com
   - DOMAIN-SUFFIX,mail.ghmproperties.com
   - DOMAIN-SUFFIX,mail.itseasy.com
+  - DOMAIN-SUFFIX,mail.shaferglazer.com
+  - DOMAIN-SUFFIX,mail.techniservinc.com
+  - DOMAIN-SUFFIX,mepirtedic.com
+  - DOMAIN-SUFFIX,mi-de-ner-nis3.info
+  - DOMAIN-SUFFIX,mine.blank.drawpad.org
+  - DOMAIN-SUFFIX,mine.nahnoji.cz
+  - DOMAIN-SUFFIX,mine.terorie.com
+  - DOMAIN-SUFFIX,minemytraffic.com
+  - DOMAIN-SUFFIX,miner.nablabee.com
+  - DOMAIN-SUFFIX,minerad.com
+  - DOMAIN-SUFFIX,minexmr.com
+  - DOMAIN-SUFFIX,mining.best
+  - DOMAIN-SUFFIX,mutuza.win
+  - DOMAIN-SUFFIX,my.domain
+  - DOMAIN-SUFFIX,myeffect.net
+  - DOMAIN-SUFFIX,nablabee.com
+  - DOMAIN-SUFFIX,nahnoji.cz
+  - DOMAIN-SUFFIX,nametraff.com
+  - DOMAIN-SUFFIX,netflare.info
+  - DOMAIN-SUFFIX,nfwebminer.com
+  - DOMAIN-SUFFIX,nimiq.surf
+  - DOMAIN-SUFFIX,nimiqchina.com
+  - DOMAIN-SUFFIX,nitrokod.com
+  - DOMAIN-SUFFIX,notmining.org
+  - DOMAIN-SUFFIX,offerreality.com
+  - DOMAIN-SUFFIX,ogrid.org
+  - DOMAIN-SUFFIX,pampopholf.com
+  - DOMAIN-SUFFIX,party-vqgdyvoycc.now.sh
+  - DOMAIN-SUFFIX,pertholin.com
+  - DOMAIN-SUFFIX,pool.supportxmr.com
+  - DOMAIN-SUFFIX,pr0gram.org
+  - DOMAIN-SUFFIX,premiumstats.xyz
+  - DOMAIN-SUFFIX,pzoifaum.info
+  - DOMAIN-SUFFIX,quiknode.pro
+  - DOMAIN-SUFFIX,reauthenticator.com
+  - DOMAIN-SUFFIX,roastedvolt.net
+  - DOMAIN-SUFFIX,rocks.io
+  - DOMAIN-SUFFIX,scaleway.ovh
+  - DOMAIN-SUFFIX,serie-vostfr.com
+  - DOMAIN-SUFFIX,serv1swork.com
+  - DOMAIN-SUFFIX,silimbompom.com
+  - DOMAIN-SUFFIX,siteapi.idkfa.online
+  - DOMAIN-SUFFIX,sourcecode.pro
+  - DOMAIN-SUFFIX,spacepools.org
+  - DOMAIN-SUFFIX,sparechange.io
+  - DOMAIN-SUFFIX,srcip.com
+  - DOMAIN-SUFFIX,srcips.com
+  - DOMAIN-SUFFIX,statdynamic.com
+  - DOMAIN-SUFFIX,statistic.date
+  - DOMAIN-SUFFIX,stonecalcom.com
