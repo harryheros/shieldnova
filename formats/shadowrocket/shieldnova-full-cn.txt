@@ -4,9 +4,9 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-05-01 14:32:58 UTC
-# Total: 1268
-# Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=1104, deduped_total=1268, allowlist_removed=0
+# Built: 2026-05-01 21:34:22 UTC
+# Total: 1186
+# Breakdown: privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=1022, deduped_total=1186, allowlist_removed=0
 
 DOMAIN-SUFFIX,google-analytics.com,REJECT
 DOMAIN-SUFFIX,googletagmanager.com,REJECT
@@ -125,8 +125,6 @@ DOMAIN-SUFFIX,16shop.co,REJECT
 DOMAIN-SUFFIX,logincdn.net,REJECT
 DOMAIN-SUFFIX,0-105.com,REJECT
 DOMAIN-SUFFIX,0-9-8-7-6-5-4-3-2-1-0.live,REJECT
-DOMAIN-SUFFIX,0-amazon.weebly.com,REJECT
-DOMAIN-SUFFIX,0-amfc.firebaseapp.com,REJECT
 DOMAIN-SUFFIX,0-whatsapp.com,REJECT
 DOMAIN-SUFFIX,0.0.0.0forum.cryptonight.net,REJECT
 DOMAIN-SUFFIX,0.0.0.0mailgate.cryptonight.net,REJECT
@@ -152,15 +150,12 @@ DOMAIN-SUFFIX,0.sciiaawuroyagu9524.workers.dev,REJECT
 DOMAIN-SUFFIX,0.tecnodentalrd.com,REJECT
 DOMAIN-SUFFIX,0.vsxmfkrvoipzs67.workers.dev,REJECT
 DOMAIN-SUFFIX,0.xyasrhsju3235.workers.dev,REJECT
-DOMAIN-SUFFIX,00-5fu.pages.dev,REJECT
 DOMAIN-SUFFIX,00-663b30.ingress-daribow.ewp.live,REJECT
 DOMAIN-SUFFIX,00-974a.duckdns.org,REJECT
 DOMAIN-SUFFIX,00-c1aimn0w.com,REJECT
 DOMAIN-SUFFIX,00.buh30-00.ru,REJECT
-DOMAIN-SUFFIX,000-00-000-000000.pages.dev,REJECT
 DOMAIN-SUFFIX,000-7yt65t564656ythygy.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,000.abreubueno91.repl.co,REJECT
-DOMAIN-SUFFIX,0000-1t8.pages.dev,REJECT
 DOMAIN-SUFFIX,0000.com.my,REJECT
 DOMAIN-SUFFIX,0000.hopto.org,REJECT
 DOMAIN-SUFFIX,00000--bancogeneral3.repl.co,REJECT
@@ -172,18 +167,15 @@ DOMAIN-SUFFIX,000000000000000000gg.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,00000000000000000update.emy.ba,REJECT
 DOMAIN-SUFFIX,000000000000000ooooo.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,0000000000c0.x9xcax2a.workers.dev,REJECT
-DOMAIN-SUFFIX,000000000a0uutlook.weebly.com,REJECT
 DOMAIN-SUFFIX,00000000920.us-south.cf.appdomain.cloud,REJECT
 DOMAIN-SUFFIX,0000000095.godaddysites.com,REJECT
 DOMAIN-SUFFIX,00000002.c1.biz,REJECT
 DOMAIN-SUFFIX,0000000666666.000webhostapp.com,REJECT
-DOMAIN-SUFFIX,0000000o.weebly.com,REJECT
 DOMAIN-SUFFIX,0000000wer.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,000000541840000.co.vu,REJECT
 DOMAIN-SUFFIX,0000006738.vercel.app,REJECT
 DOMAIN-SUFFIX,000000788-66666666.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,00000078uu7u8790090900.000webhostapp.com,REJECT
-DOMAIN-SUFFIX,000000login.weebly.com,REJECT
 DOMAIN-SUFFIX,000001010010104106.cloud,REJECT
 DOMAIN-SUFFIX,000002456171.ml,REJECT
 DOMAIN-SUFFIX,000002456180.ml,REJECT
@@ -192,10 +184,8 @@ DOMAIN-SUFFIX,0000091193.xyz,REJECT
 DOMAIN-SUFFIX,00000f.nuevaconfirma.repl.co,REJECT
 DOMAIN-SUFFIX,00000microsof.tonohost.com,REJECT
 DOMAIN-SUFFIX,00000wefv.000webhostapp.com,REJECT
-DOMAIN-SUFFIX,00001-888887766.weebly.com,REJECT
 DOMAIN-SUFFIX,00001062.com,REJECT
 DOMAIN-SUFFIX,000012151000.co.vu,REJECT
-DOMAIN-SUFFIX,000012223.weebly.com,REJECT
 DOMAIN-SUFFIX,000025123.com,REJECT
 DOMAIN-SUFFIX,00003.godaddysites.com,REJECT
 DOMAIN-SUFFIX,000066.godaddysites.com,REJECT
@@ -207,11 +197,9 @@ DOMAIN-SUFFIX,0000guatec.davieelchirinos.repl.co,REJECT
 DOMAIN-SUFFIX,0000h00003.byethost7.com,REJECT
 DOMAIN-SUFFIX,0000mscautorizationclientid.com,REJECT
 DOMAIN-SUFFIX,0000qwew341432edxzt.000webhostapp.com,REJECT
-DOMAIN-SUFFIX,0000wa0outlook.weebly.com,REJECT
 DOMAIN-SUFFIX,0001.353527440.workers.dev,REJECT
 DOMAIN-SUFFIX,00010xsea34dsd.co.vu,REJECT
 DOMAIN-SUFFIX,000111.pages.net.br,REJECT
-DOMAIN-SUFFIX,00012sbcglobal.weebly.com,REJECT
 DOMAIN-SUFFIX,000133210.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,000193.azurewebsites.net,REJECT
 DOMAIN-SUFFIX,0001home.webflow.io,REJECT
@@ -232,10 +220,6 @@ DOMAIN-SUFFIX,0007933738373.myportfolio.com,REJECT
 DOMAIN-SUFFIX,000811893962007154932393170597959432.hanefra7bikiemta.com,REJECT
 DOMAIN-SUFFIX,000838774343.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,00099881111.000webhostapp.com,REJECT
-DOMAIN-SUFFIX,0009aak.pages.dev,REJECT
-DOMAIN-SUFFIX,000agreementmail.weebly.com,REJECT
-DOMAIN-SUFFIX,000cc-ed5446.pages.dev,REJECT
-DOMAIN-SUFFIX,000ccee008762200ccceecc.pages.dev,REJECT
 DOMAIN-SUFFIX,000chgojhd78jhvbwreuvk.webnode.com,REJECT
 DOMAIN-SUFFIX,000codashoppfreee-771.duckdns.org,REJECT
 DOMAIN-SUFFIX,000e-239f-23ea3-yah100-8ta1xb1rs33.netlify.app,REJECT
@@ -244,8 +228,6 @@ DOMAIN-SUFFIX,000ficohs99onli22.125mb.com,REJECT
 DOMAIN-SUFFIX,000ind002.webflow.io,REJECT
 DOMAIN-SUFFIX,000int-5403945int.xyz,REJECT
 DOMAIN-SUFFIX,000itkw.lfd.myj.mybluehost.me,REJECT
-DOMAIN-SUFFIX,000jbjdvvdhjvbdjvndvdv.s3.us-east-2.amazonaws.com,REJECT
-DOMAIN-SUFFIX,000l.weebly.com,REJECT
 DOMAIN-SUFFIX,000l34e.wcomhost.com,REJECT
 DOMAIN-SUFFIX,000m8ih.wcomhost.com,REJECT
 DOMAIN-SUFFIX,000mclogin.micloud-object-storage-xc-cos-static-web-hosting-qny.s3.us-east.cloud-object-storage.appdomain.cloud,REJECT
@@ -273,11 +255,7 @@ DOMAIN-SUFFIX,000webhostcrazystikers.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,000wechost.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,000wuwtg000ywwtvwt0y.networkmcn.com,REJECT
 DOMAIN-SUFFIX,000xxxbodddxx00.webcindario.com,REJECT
-DOMAIN-SUFFIX,000yahoo.weebly.com,REJECT
 DOMAIN-SUFFIX,000zc.000webhostapp.com,REJECT
-DOMAIN-SUFFIX,001-a3s.pages.dev,REJECT
-DOMAIN-SUFFIX,001-a6j.pages.dev,REJECT
-DOMAIN-SUFFIX,001-eca.pages.dev,REJECT
 DOMAIN-SUFFIX,001.1614214972.workers.dev,REJECT
 DOMAIN-SUFFIX,001.9zhmn1k5.workers.dev,REJECT
 DOMAIN-SUFFIX,001.gamecc.workers.dev,REJECT
@@ -311,12 +289,10 @@ DOMAIN-SUFFIX,001imbrier.sa.com,REJECT
 DOMAIN-SUFFIX,001kp.cc,REJECT
 DOMAIN-SUFFIX,001madhankumar.github.io,REJECT
 DOMAIN-SUFFIX,001molluscan.ru.com,REJECT
-DOMAIN-SUFFIX,001myacct.weebly.com,REJECT
 DOMAIN-SUFFIX,001tr3nsf00.com,REJECT
 DOMAIN-SUFFIX,001user.moonfruit.com,REJECT
 DOMAIN-SUFFIX,001xsnews.cn,REJECT
 DOMAIN-SUFFIX,002-auto5eposlt.me,REJECT
-DOMAIN-SUFFIX,002-bj9.pages.dev,REJECT
 DOMAIN-SUFFIX,002.195533.xyz,REJECT
 DOMAIN-SUFFIX,00223.cc,REJECT
 DOMAIN-SUFFIX,0023-1--soporte2023co00.repl.co,REJECT
@@ -326,8 +302,6 @@ DOMAIN-SUFFIX,002gltz1wz1ltltz1w0wltw02gtz1.trackfiz.net,REJECT
 DOMAIN-SUFFIX,002nuctra02.com,REJECT
 DOMAIN-SUFFIX,002paymts234.com,REJECT
 DOMAIN-SUFFIX,002redir023.dns04.com,REJECT
-DOMAIN-SUFFIX,002sfrontalpeni2773macbook-20email2520webmailfurh25e323w.weebly.com,REJECT
-DOMAIN-SUFFIX,002v.pages.dev,REJECT
 DOMAIN-SUFFIX,002y.github.io,REJECT
 DOMAIN-SUFFIX,0031f0031f.zibonalam.com,REJECT
 DOMAIN-SUFFIX,0033.top,REJECT
@@ -368,18 +342,13 @@ DOMAIN-SUFFIX,0064852575383277.eu-gb.cf.appdomain.cloud,REJECT
 DOMAIN-SUFFIX,00669.cc,REJECT
 DOMAIN-SUFFIX,006700.xyz,REJECT
 DOMAIN-SUFFIX,0067786563423xcerrvg.000webhostapp.com,REJECT
-DOMAIN-SUFFIX,006gqd9.pages.dev,REJECT
 DOMAIN-SUFFIX,006l5.mjt.lu,REJECT
 DOMAIN-SUFFIX,006t-rshyktuaerhetjr6yk7tl6tmyrntbref.vercel.app,REJECT
-DOMAIN-SUFFIX,007-c1z.pages.dev,REJECT
 DOMAIN-SUFFIX,0070e26e-ac97-4dd9-a7c9-08cb4d2b1678.id.repl.co,REJECT
 DOMAIN-SUFFIX,007168-00.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,007595d4969707fd4a3543145addf49b-dot-gle9392420309493993.rj.r.appspot.com,REJECT
 DOMAIN-SUFFIX,0076678.com,REJECT
-DOMAIN-SUFFIX,007954335-reviewpagepages.pages.dev,REJECT
-DOMAIN-SUFFIX,007a5701-5600-455b-84dc-c684b82e196b.s3.ap-northeast-2.amazonaws.com,REJECT
 DOMAIN-SUFFIX,007k7.com,REJECT
-DOMAIN-SUFFIX,007ligneorange.weebly.com,REJECT
 DOMAIN-SUFFIX,007sbw.cn,REJECT
 DOMAIN-SUFFIX,007wa.xyz,REJECT
 DOMAIN-SUFFIX,00800.vip,REJECT
@@ -389,13 +358,10 @@ DOMAIN-SUFFIX,00808.vip,REJECT
 DOMAIN-SUFFIX,00828.liye19960713.workers.dev,REJECT
 DOMAIN-SUFFIX,00829.cc,REJECT
 DOMAIN-SUFFIX,008491133.cloudns.nz,REJECT
-DOMAIN-SUFFIX,0085ccc098789.pages.dev,REJECT
 DOMAIN-SUFFIX,0085vip00.com,REJECT
 DOMAIN-SUFFIX,0086a.shop,REJECT
 DOMAIN-SUFFIX,008753331120.com,REJECT
 DOMAIN-SUFFIX,00877.cc,REJECT
-DOMAIN-SUFFIX,0087b3k.pages.dev,REJECT
-DOMAIN-SUFFIX,008ecdda.encrypted.pages.dev,REJECT
 DOMAIN-SUFFIX,008f5c4e.doekeopsmn.cloud,REJECT
 DOMAIN-SUFFIX,008h-7yughbesfdt87y8useifiuhsjkg.vercel.app,REJECT
 DOMAIN-SUFFIX,008kp.cc,REJECT
@@ -403,16 +369,13 @@ DOMAIN-SUFFIX,009-288-49.weeblysite.com,REJECT
 DOMAIN-SUFFIX,009190-securepage.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,0094059000293htjkm.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,00941.webflow.io,REJECT
-DOMAIN-SUFFIX,00976.weebly.com,REJECT
 DOMAIN-SUFFIX,009812kivip.top,REJECT
 DOMAIN-SUFFIX,00987.ru.com,REJECT
 DOMAIN-SUFFIX,0099.amazoonz.net,REJECT
 DOMAIN-SUFFIX,00998.90009.repl.co,REJECT
-DOMAIN-SUFFIX,009987lk.weebly.com,REJECT
 DOMAIN-SUFFIX,0099887.com,REJECT
 DOMAIN-SUFFIX,009988r3sucursalactivaciones.brizy.site,REJECT
 DOMAIN-SUFFIX,0099extuyafeliciades092.c1.biz,REJECT
-DOMAIN-SUFFIX,0099xxy78.weebly.com,REJECT
 DOMAIN-SUFFIX,009bb11405fa5b694a9f9915bc2acf38-dot-gle9392420309493993.rj.r.appspot.com,REJECT
 DOMAIN-SUFFIX,009bf6e1.fei124970841.cn,REJECT
 DOMAIN-SUFFIX,009krewamz.duckdns.org,REJECT
@@ -424,7 +387,6 @@ DOMAIN-SUFFIX,00as4h7vjwum3i.53244ds.xyz,REJECT
 DOMAIN-SUFFIX,00ato-mygov-0-au.duckdns.org.fix-02bug.duckdns.org,REJECT
 DOMAIN-SUFFIX,00banc0we8pichi.000webhostapp.com,REJECT
 DOMAIN-SUFFIX,00bbfl2ke6.1qw2es2z.xyz,REJECT
-DOMAIN-SUFFIX,00btmallbtlnternet00we0.weebly.com,REJECT
 DOMAIN-SUFFIX,00c.16mb.com,REJECT
 DOMAIN-SUFFIX,00c238ff.hsduecinfj.com.cn,REJECT
 DOMAIN-SUFFIX,00c85b59-4f3f-4376-8b3d-de07cf5249d3.htmlcomponentservice.com,REJECT
@@ -437,23 +399,15 @@ DOMAIN-SUFFIX,00dbs.id,REJECT
 DOMAIN-SUFFIX,00dbs.vip,REJECT
 DOMAIN-SUFFIX,00e132a99407d8e60c6b0895577e2d25-dot-gle9392420309493993.rj.r.appspot.com,REJECT
 DOMAIN-SUFFIX,00e94yahoouserid092e-apra02ios16win11.netlify.app,REJECT
-DOMAIN-SUFFIX,00e9e64bac127f1ea25c54f64b0c85197a1a1fa387312ba076-apidata.googleusercontent.com,REJECT
-DOMAIN-SUFFIX,00e9e64bacce231bc2e4635333a7a68bbab82bbabbb7941b9b-apidata.googleusercontent.com,REJECT
 DOMAIN-SUFFIX,00ef5c18-e78b-489b-b945-c2a2a70d0f9e-00-2ers01t3lx3b0.spock.replit.dev,REJECT
 DOMAIN-SUFFIX,00ei0aol023sba03esecure0i0verify0forg.netlify.app,REJECT
 DOMAIN-SUFFIX,00f025b3.d26218.cn,REJECT
 DOMAIN-SUFFIX,00f28a5a21c09720affa474c7b4f134c-dot-gle9392420309493993.rj.r.appspot.com,REJECT
-DOMAIN-SUFFIX,00ff0ice-0utl00k-authenticate.pages.dev,REJECT
-DOMAIN-SUFFIX,00ffice-authenticate-01.pages.dev,REJECT
-DOMAIN-SUFFIX,00ficee435.weebly.com,REJECT
 DOMAIN-SUFFIX,00gnp.liusanjie.cc,REJECT
-DOMAIN-SUFFIX,00griel-bdvenline.pages.dev,REJECT
 DOMAIN-SUFFIX,00gty.ru.com,REJECT
 DOMAIN-SUFFIX,00h.x24hr.com,REJECT
 DOMAIN-SUFFIX,00hbp0.000webhostapp.com,REJECT
-DOMAIN-SUFFIX,00inicio-validacion-segura-31.weebly.com,REJECT
 DOMAIN-SUFFIX,00instagramsecure.blogspot.nl,REJECT
-DOMAIN-SUFFIX,00jhzxcv.pages.dev,REJECT
 DOMAIN-SUFFIX,00jmtol5tlmgpaxz4douvgbsnvj6v4eygpaxz4douvg-com.cf,REJECT
 DOMAIN-SUFFIX,00krafton-tencent.my.id,REJECT
 DOMAIN-SUFFIX,00luminarious.sa.com,REJECT
@@ -466,12 +420,10 @@ DOMAIN-SUFFIX,00nf1c1ae.top,REJECT
 DOMAIN-SUFFIX,00np8.app.link,REJECT
 DOMAIN-SUFFIX,00o-mobility535554.info,REJECT
 DOMAIN-SUFFIX,00oeady.cn,REJECT
-DOMAIN-SUFFIX,00oo00fhhhdjjjo000000.pages.dev,REJECT
 DOMAIN-SUFFIX,00pcz4dy1shpwti-1321712386.cos.na-siliconvalley.myqcloud.com,REJECT
 DOMAIN-SUFFIX,00pgvf.sa.com,REJECT
 DOMAIN-SUFFIX,00pie.sa.com,REJECT
 DOMAIN-SUFFIX,00pix.sa.com,REJECT
-DOMAIN-SUFFIX,00privacidad-cuenta-bhd-2025-22.weebly.com,REJECT
 DOMAIN-SUFFIX,00ql.paypal-merchant.ru,REJECT
 DOMAIN-SUFFIX,00refund321-mobile.com,REJECT
 DOMAIN-SUFFIX,00rm-huntiiingtonbnk.dynamic-dns.net,REJECT
@@ -480,13 +432,11 @@ DOMAIN-SUFFIX,00tec.blob.core.windows.net,REJECT
 DOMAIN-SUFFIX,00tyw0aytaw0tawtuaty.touryar.net,REJECT
 DOMAIN-SUFFIX,00tyy.ru.com,REJECT
 DOMAIN-SUFFIX,00uyyu0gwytwuyytw00w.ketix.net,REJECT
-DOMAIN-SUFFIX,00validar-l-ogin045.weebly.com,REJECT
 DOMAIN-SUFFIX,00web.glitch.me,REJECT
 DOMAIN-SUFFIX,00wellsfarg.azurewebsites.net,REJECT
 DOMAIN-SUFFIX,00wetransfer-sharedfiles.netlify.app,REJECT
 DOMAIN-SUFFIX,00wqj4vup.duckdns.org,REJECT
 DOMAIN-SUFFIX,01-10-2025-updates.netsons.org,REJECT
-DOMAIN-SUFFIX,01-51h.pages.dev,REJECT
 DOMAIN-SUFFIX,01-secure.redirectme.net,REJECT
 DOMAIN-SUFFIX,01-spk-veri7.xyz,REJECT
 DOMAIN-SUFFIX,01.pilot45.com,REJECT
@@ -501,7 +451,6 @@ DOMAIN-SUFFIX,01025.yimumon.xyz,REJECT
 DOMAIN-SUFFIX,0103659.com,REJECT
 DOMAIN-SUFFIX,010365vip.com,REJECT
 DOMAIN-SUFFIX,01064223613.com,REJECT
-DOMAIN-SUFFIX,01077jjj.pages.dev,REJECT
 DOMAIN-SUFFIX,0109626668.cn,REJECT
 DOMAIN-SUFFIX,010aa.cn,REJECT
 DOMAIN-SUFFIX,010auth0.duckdns.org,REJECT
@@ -520,7 +469,6 @@ DOMAIN-SUFFIX,0115fe1f.jdksk-dndjcx.com.cn,REJECT
 DOMAIN-SUFFIX,01175421.00agt8.shop,REJECT
 DOMAIN-SUFFIX,01188086.gstwu-eu-hey.com.cn,REJECT
 DOMAIN-SUFFIX,012-109354.weeblysite.com,REJECT
-DOMAIN-SUFFIX,012-f5b.pages.dev,REJECT
 DOMAIN-SUFFIX,01213300.atwebpages.com,REJECT
 DOMAIN-SUFFIX,0123-luke-tatsuki.com,REJECT
 DOMAIN-SUFFIX,0124985675.cf,REJECT
@@ -542,21 +490,14 @@ DOMAIN-SUFFIX,0140.ee,REJECT
 DOMAIN-SUFFIX,01417282-9677-428f-8b57-11e362547314.id.repl.co,REJECT
 DOMAIN-SUFFIX,0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co,REJECT
 DOMAIN-SUFFIX,0145879-pagehelping.000webhostapp.com,REJECT
-DOMAIN-SUFFIX,014925396510-rackspace-loginwe6ee67wd.pages.dev,REJECT
-DOMAIN-SUFFIX,014mailorange.weebly.com,REJECT
-DOMAIN-SUFFIX,014oo.blogspot.com,REJECT
-DOMAIN-SUFFIX,015072cd.ssl-6x4meta.pages.dev,REJECT
 DOMAIN-SUFFIX,0152indemnisat.pics,REJECT
 DOMAIN-SUFFIX,015481847436324436677560049.com,REJECT
 DOMAIN-SUFFIX,01549b.com,REJECT
 DOMAIN-SUFFIX,015595384.com,REJECT
 DOMAIN-SUFFIX,0158k.cn,REJECT
-DOMAIN-SUFFIX,015d4d84ac0ca018d50929e33c891fc2e6a83c19fd4b170bca9f893390.pages.dev,REJECT
-DOMAIN-SUFFIX,015fa8dc4cae9c1a049f0ec2dc23d3e54d47c426a3b1cda4d8b53757f8.pages.dev,REJECT
 DOMAIN-SUFFIX,015hfy3c.square.site,REJECT
 DOMAIN-SUFFIX,016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com,REJECT
 DOMAIN-SUFFIX,016614590390149677279078.my-project-45bb.ey.r.appspot.com,REJECT
-DOMAIN-SUFFIX,01679-login-att-index.weebly.com,REJECT
 DOMAIN-SUFFIX,016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev,REJECT
 DOMAIN-SUFFIX,0171500061.mexigas.com.mx,REJECT
 DOMAIN-SUFFIX,0172844bks.7m.pl,REJECT
@@ -591,14 +532,11 @@ DOMAIN-SUFFIX,179.248.3.202.ll.sta.mana.pf,REJECT
 DOMAIN-SUFFIX,1827897262.v.123pan.cn,REJECT
 DOMAIN-SUFFIX,185-55-196-13.cprapid.com,REJECT
 DOMAIN-SUFFIX,1oade4-zone.sunmeadow.garden,REJECT
-DOMAIN-SUFFIX,2cfc0222.salamanderprocessing.pages.dev,REJECT
 DOMAIN-SUFFIX,5un-drive.frosthaven.garden,REJECT
 DOMAIN-SUFFIX,5urv3-layer.stoneflare.garden,REJECT
-DOMAIN-SUFFIX,60aaf9c6.salamanderprocessing.pages.dev,REJECT
 DOMAIN-SUFFIX,69sexy.duckdns.org,REJECT
 DOMAIN-SUFFIX,99-118-215-24.lightspeed.irvnca.sbcglobal.net,REJECT
 DOMAIN-SUFFIX,99194034-96-20180108171507.webstarterz.com,REJECT
-DOMAIN-SUFFIX,a-gwo.pages.dev,REJECT
 DOMAIN-SUFFIX,aaronart.com,REJECT
 DOMAIN-SUFFIX,acaviationsupplies.com,REJECT
 DOMAIN-SUFFIX,acc.jiangsujiaxue.com,REJECT
@@ -673,8 +611,6 @@ DOMAIN-SUFFIX,bundle.kpzip.com,REJECT
 DOMAIN-SUFFIX,burn2pathgate.grov6mira.bet,REJECT
 DOMAIN-SUFFIX,bvaco.com,REJECT
 DOMAIN-SUFFIX,c.fi3.me,REJECT
-DOMAIN-SUFFIX,c0e5b87c.solaraweb-alj.pages.dev,REJECT
-DOMAIN-SUFFIX,c3436037.salamanderprocessing.pages.dev,REJECT
 DOMAIN-SUFFIX,c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru,REJECT
 DOMAIN-SUFFIX,cad.659t.cn,REJECT
 DOMAIN-SUFFIX,cash8siteview.peta1vrix.bet,REJECT
@@ -715,7 +651,6 @@ DOMAIN-SUFFIX,cloudstay168.com,REJECT
 DOMAIN-SUFFIX,clubdetiroelpicarcho.com,REJECT
 DOMAIN-SUFFIX,cn.unionlever.com,REJECT
 DOMAIN-SUFFIX,co-emas.com,REJECT
-DOMAIN-SUFFIX,codeload.github.com,REJECT
 DOMAIN-SUFFIX,codemeshsite.cryptosyncflow.bet,REJECT
 DOMAIN-SUFFIX,cold6siteview.staticmeshview.bet,REJECT
 DOMAIN-SUFFIX,compimento.ba,REJECT
@@ -733,7 +668,6 @@ DOMAIN-SUFFIX,ct3-24.ru,REJECT
 DOMAIN-SUFFIX,d.14yaa.com,REJECT
 DOMAIN-SUFFIX,d.kpzip.com,REJECT
 DOMAIN-SUFFIX,d.wanyouxi7.com,REJECT
-DOMAIN-SUFFIX,d2314eac.solaraweb-alj.pages.dev,REJECT
 DOMAIN-SUFFIX,d3cciiowg5l3jx.cloudfront.net,REJECT
 DOMAIN-SUFFIX,damiancollier.com,REJECT
 DOMAIN-SUFFIX,dash7taskhub.kineticgatehub.bet,REJECT
@@ -774,7 +708,6 @@ DOMAIN-SUFFIX,dlied6.bytes.tcdnos.com,REJECT
 DOMAIN-SUFFIX,dlied6.yz.tcdnos.com,REJECT
 DOMAIN-SUFFIX,do-dear.com,REJECT
 DOMAIN-SUFFIX,doc.e-statements.app,REJECT
-DOMAIN-SUFFIX,docs.google.com,REJECT
 DOMAIN-SUFFIX,donkeytourscroatia.com,REJECT
 DOMAIN-SUFFIX,down.54nb.com,REJECT
 DOMAIN-SUFFIX,down.ftp21.cc,REJECT
@@ -798,7 +731,6 @@ DOMAIN-SUFFIX,download2.huduntech.com,REJECT
 DOMAIN-SUFFIX,dowonline.ru,REJECT
 DOMAIN-SUFFIX,dreamwatchevent.com,REJECT
 DOMAIN-SUFFIX,drevos.ro,REJECT
-DOMAIN-SUFFIX,drive.google.com,REJECT
 DOMAIN-SUFFIX,dubaitechnicalservice.ae,REJECT
 DOMAIN-SUFFIX,dubapkg.cmcmcdn.com,REJECT
 DOMAIN-SUFFIX,dusttv.com,REJECT
@@ -820,7 +752,6 @@ DOMAIN-SUFFIX,f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com,REJECT
 DOMAIN-SUFFIX,fa1th3-wave.decommiss-mint.bet,REJECT
 DOMAIN-SUFFIX,fakers.co.jp,REJECT
 DOMAIN-SUFFIX,farschid.de,REJECT
-DOMAIN-SUFFIX,fb6390d5.infinityindians.pages.dev,REJECT
 DOMAIN-SUFFIX,fd.v2downf.shop,REJECT
 DOMAIN-SUFFIX,fertas.com.tr,REJECT
 DOMAIN-SUFFIX,file.blackint3.com,REJECT
@@ -828,7 +759,6 @@ DOMAIN-SUFFIX,file.uhsea.com,REJECT
 DOMAIN-SUFFIX,filerit.com,REJECT
 DOMAIN-SUFFIX,files.constantcontact.com,REJECT
 DOMAIN-SUFFIX,files.pythonhosted.org,REJECT
-DOMAIN-SUFFIX,firebasestorage.googleapis.com,REJECT
 DOMAIN-SUFFIX,first-security-verden.de,REJECT
 DOMAIN-SUFFIX,flyingmutts.com,REJECT
 DOMAIN-SUFFIX,fnvimoyvwkbxbmczlqus.supabase.co,REJECT
@@ -864,9 +794,6 @@ DOMAIN-SUFFIX,gadomamada.com,REJECT
 DOMAIN-SUFFIX,galeri3.arkitera.com,REJECT
 DOMAIN-SUFFIX,galerisenimutiara.com,REJECT
 DOMAIN-SUFFIX,geo-foundation.vg,REJECT
-DOMAIN-SUFFIX,gist.githubusercontent.com,REJECT
-DOMAIN-SUFFIX,github.com,REJECT
-DOMAIN-SUFFIX,gitlab.com,REJECT
 DOMAIN-SUFFIX,globalbank.us,REJECT
 DOMAIN-SUFFIX,globaltechbilling.com,REJECT
 DOMAIN-SUFFIX,google-services.cc,REJECT
@@ -887,7 +814,6 @@ DOMAIN-SUFFIX,hitstation.nl,REJECT
 DOMAIN-SUFFIX,hnjgdl.geps.glodon.com,REJECT
 DOMAIN-SUFFIX,hobobot.net,REJECT
 DOMAIN-SUFFIX,homecaremovers.com,REJECT
-DOMAIN-SUFFIX,horion-static.pages.dev,REJECT
 DOMAIN-SUFFIX,host-195-103-203-106.business.telecomitalia.it,REJECT
 DOMAIN-SUFFIX,host-95-230-215-65.business.telecomitalia.it,REJECT
 DOMAIN-SUFFIX,host-95-255-114-11.business.telecomitalia.it,REJECT
@@ -898,10 +824,8 @@ DOMAIN-SUFFIX,grow6taskhub.goddess-tapir.bet,REJECT
 DOMAIN-SUFFIX,hostunitgate.lookin8back.bet,REJECT
 DOMAIN-SUFFIX,hotelembuguacu.blob.core.windows.net,REJECT
 DOMAIN-SUFFIX,hotellacastellana.com.uy,REJECT
-DOMAIN-SUFFIX,hotelsep.blogspot.com,REJECT
 DOMAIN-SUFFIX,hqweb.id.vn,REJECT
 DOMAIN-SUFFIX,hseda.com,REJECT
-DOMAIN-SUFFIX,hzxcaq-github-io.pages.dev,REJECT
 DOMAIN-SUFFIX,i.404.pm,REJECT
 DOMAIN-SUFFIX,ia802801.us.archive.org,REJECT
 DOMAIN-SUFFIX,icoffeecloud.com,REJECT
@@ -958,7 +882,6 @@ DOMAIN-SUFFIX,heat5pathgate.voda4flux.surf,REJECT
 DOMAIN-SUFFIX,high7logicnet.nexo7peak.surf,REJECT
 DOMAIN-SUFFIX,ionhostunit.voda4flux.surf,REJECT
 DOMAIN-SUFFIX,kokorostore.it,REJECT
-DOMAIN-SUFFIX,libretv-16e.pages.dev,REJECT
 DOMAIN-SUFFIX,libss.0x504.com,REJECT
 DOMAIN-SUFFIX,lindenappliances.co.za,REJECT
 DOMAIN-SUFFIX,lindnerelektroanlagen.de,REJECT
@@ -974,14 +897,11 @@ DOMAIN-SUFFIX,maidforyou1985.com,REJECT
 DOMAIN-SUFFIX,mail.ssadownload.top,REJECT
 DOMAIN-SUFFIX,map2taskhub.tavi8grid.surf,REJECT
 DOMAIN-SUFFIX,marsalek.cy,REJECT
-DOMAIN-SUFFIX,matthewsigmondv5.pages.dev,REJECT
-DOMAIN-SUFFIX,media.githubusercontent.com,REJECT
 DOMAIN-SUFFIX,meetvideogoogle.com,REJECT
 DOMAIN-SUFFIX,meltmeshsite.voda4flux.surf,REJECT
 DOMAIN-SUFFIX,mersped.mycpanel.rs,REJECT
 DOMAIN-SUFFIX,metrics.gocloudmaps.com,REJECT
 DOMAIN-SUFFIX,mgtms.cc,REJECT
-DOMAIN-SUFFIX,miner.pages.dev,REJECT
 DOMAIN-SUFFIX,mininews.kpzip.com,REJECT
 DOMAIN-SUFFIX,mistralkorea.ru,REJECT
 DOMAIN-SUFFIX,mitreart.com,REJECT
@@ -989,7 +909,6 @@ DOMAIN-SUFFIX,mobshah.com,REJECT
 DOMAIN-SUFFIX,mockupcorporation.com,REJECT
 DOMAIN-SUFFIX,mogimall.com,REJECT
 DOMAIN-SUFFIX,mosselnet.co.za,REJECT
-DOMAIN-SUFFIX,movseek.pages.dev,REJECT
 DOMAIN-SUFFIX,msoftdatastore.z22.web.core.windows.net,REJECT
 DOMAIN-SUFFIX,42v06.lami4qor.surf,REJECT
 DOMAIN-SUFFIX,areameshnode.felo7zone.surf,REJECT
@@ -1036,7 +955,6 @@ DOMAIN-SUFFIX,ojang.pe.kr,REJECT
 DOMAIN-SUFFIX,okhan.net,REJECT
 DOMAIN-SUFFIX,oknoplastik.sk,REJECT
 DOMAIN-SUFFIX,old.bullydog.com,REJECT
-DOMAIN-SUFFIX,onedrive.live.com,REJECT
 DOMAIN-SUFFIX,onfiltre.com.tr,REJECT
 DOMAIN-SUFFIX,onyxguardify.de,REJECT
 DOMAIN-SUFFIX,onyxphantomlock.de,REJECT

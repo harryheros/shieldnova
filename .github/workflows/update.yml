@@ -32,6 +32,8 @@ jobs:
           python-version: "3.11"
 
       # Threat intel fetch - run monthly or on manual trigger
+      # Weekly build: fetch is skipped, continue-on-error not needed
+      # Monthly / manual fetch: failure creates a GitHub Issue via notify-failure job
       - name: Fetch threat intelligence
         if: |
           github.event.schedule == '0 3 1 * *' ||
@@ -39,10 +41,28 @@ jobs:
         run: |
           echo "[+] Fetching threat intelligence from public feeds..."
           python3 scripts/fetch_threat_intel.py
-        continue-on-error: true
+
+      - name: Audit existing rules (post-fetch)
+        if: |
+          github.event.schedule == '0 3 1 * *' ||
+          github.event.inputs.run_fetch == 'yes'
+        run: |
+          echo "[+] Auditing src/security/ for feed pollution..."
+          python3 scripts/audit_existing_rules.py --fix --output dist/audit_report.json
+          echo "Audit complete"
 
       - name: Build rule artifacts
         run: python3 scripts/build.py
+
+      - name: False positive gate
+        run: |
+          echo "[+] Running false positive detection..."
+          python3 scripts/test_false_positives.py
+
+      - name: Generate release report
+        run: |
+          echo "[+] Generating transparency report..."
+          python3 scripts/generate_release_report.py
 
       - name: Show stats
         run: |
@@ -65,11 +85,36 @@ jobs:
           git add \
             src/ \
             dist/ \
-            formats/
+            formats/ \
+            config/critical_domains.json \
+            CHANGELOG.md
           if git diff --cached --quiet; then
             echo "No changes detected. Skipping commit."
           else
-            git commit -m "chore: auto-update $(date -u +%Y-%m-%d)"
+            # Build meaningful commit message from release report
+            TOTAL=$(python3 -c "
+import json, pathlib
+r = pathlib.Path('dist/release_report.json')
+if r.exists():
+    d = json.loads(r.read_text())
+    total = d.get('rule_delta', {}).get('total_rules_now', 0)
+    delta = d.get('rule_delta', {}).get('delta')
+    fetch = d.get('fetch') or {}
+    new_domains = fetch.get('total_new_domains', 0)
+    skipped = fetch.get('total_platform_skipped', 0)
+    parts = [f'rules={total}']
+    if delta is not None:
+        sign = '+' if delta >= 0 else ''
+        parts.append(f'delta={sign}{delta}')
+    if new_domains:
+        parts.append(f'new={new_domains}')
+    if skipped:
+        parts.append(f'platform-skip={skipped}')
+    print(' | '.join(parts))
+else:
+    print('auto-update')
+" 2>/dev/null || echo "auto-update")
+            git commit -m "chore: shieldnova $(date -u +%Y-%m-%d) | ${TOTAL}"
             git push
           fi
 
