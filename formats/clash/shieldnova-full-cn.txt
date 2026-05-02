@@ -1,7 +1,7 @@
 # ShieldNova - Full (China Mainland)
 # Homepage: https://github.com/harryheros/shieldnova
-# Built: 2026-05-02 00:01:51 UTC
-# Total: 1369
+# Built: 2026-05-02 14:20:10 UTC
+# Total: 1376
 payload:
   - DOMAIN-SUFFIX,google-analytics.com
   - DOMAIN-SUFFIX,googletagmanager.com
@@ -609,6 +609,13 @@ payload:
   - DOMAIN-SUFFIX,025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com
   - DOMAIN-SUFFIX,025662nhhh.hyperphp.com
   - DOMAIN-SUFFIX,025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com
+  - DOMAIN-SUFFIX,0258369.com
+  - DOMAIN-SUFFIX,025a85a7.voag.cn
+  - DOMAIN-SUFFIX,025g.top
+  - DOMAIN-SUFFIX,025k365.com
+  - DOMAIN-SUFFIX,025nh.com
+  - DOMAIN-SUFFIX,025saibo.com
+  - DOMAIN-SUFFIX,025sn.com
   - DOMAIN-SUFFIX,onclkds.com
   - DOMAIN-SUFFIX,clksite.com
   - DOMAIN-SUFFIX,clkrev.com

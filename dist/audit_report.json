@@ -1,10 +1,10 @@
 {
   "scanned_files": 3,
-  "total_findings": 255,
+  "total_findings": 257,
   "summary": {
     "must_remove": 0,
     "hosting": 43,
-    "manual_review": 212
+    "manual_review": 214
   },
   "by_category": {
     "MUST-REMOVE": [],
@@ -2050,6 +2050,22 @@
         "rule": "||025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com^",
         "category": "MANUAL-REVIEW",
         "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 534,
+        "domain": "0258369.com",
+        "rule": "||0258369.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 536,
+        "domain": "025g.top",
+        "rule": "||025g.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
       }
     ]
   },
@@ -4093,6 +4109,22 @@
       "rule": "||025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com^",
       "category": "MANUAL-REVIEW",
       "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 534,
+      "domain": "0258369.com",
+      "rule": "||0258369.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 536,
+      "domain": "025g.top",
+      "rule": "||025g.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
     }
   ]
 }
