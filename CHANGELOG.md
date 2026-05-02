@@ -4,8 +4,7 @@
 
 ## 2026-05-02
 
-- Security rules updated (+7)
-- Threat intelligence refreshed
+- Security rules updated
 - ✓ Release validation: passed
 
 ---
