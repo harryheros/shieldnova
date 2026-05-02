@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-05-01 22:45:53 UTC
-! Total: 1301
-! Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=1150, deduped_total=1301, allowlist_removed=0
+! Built: 2026-05-02 00:01:51 UTC
+! Total: 1356
+! Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=1205, deduped_total=1356, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -658,6 +658,58 @@
 ||02-bundle-package.com^                    ! auto: phishing
 ||02-bundle-renewed.com^                    ! auto: phishing
 ||02-cancelled-bundle.com^                  ! auto: phishing
+
+! --- Auto-fetched from phishing (2026-05-02) ---
+||02-com.preview-domain.com^                ! auto: phishing
+||02-error-billing.info^                    ! auto: phishing
+||02-info-billing.com^                      ! auto: phishing
+||02-invalid-bundle.com^                    ! auto: phishing
+||02-login-pending.com^                     ! auto: phishing
+||02-pontos-exclusivos.dynv6.net^           ! auto: phishing
+||02-renew-bundle.com^                      ! auto: phishing
+||02-resolve.net^                           ! auto: phishing
+||02-review-bundle.com^                     ! auto: phishing
+||02-u-4528172.com^                         ! auto: phishing
+||02-ukresolutions.com^                     ! auto: phishing
+||02-update-auth.com^                       ! auto: phishing
+||02-update-bundle.com^                     ! auto: phishing
+||02-updatebilling-info.co.uk^              ! auto: phishing
+||02-updatebillingnew.com^                  ! auto: phishing
+||02-updated-billing.com^                   ! auto: phishing
+||02-verify-billing.com^                    ! auto: phishing
+||02.billing.ref-119.com^                   ! auto: phishing
+||02.data-process01.com^                    ! auto: phishing
+||02.jie888.link^                           ! auto: phishing
+||02.kkdz21.filegear-sg.me^                 ! auto: phishing
+||02.my-payments.org^                       ! auto: phishing
+||020101.000webhostapp.com^                 ! auto: phishing
+||02012348.com^                             ! auto: phishing
+||0202.com.tw^                              ! auto: phishing
+||0203659.com^                              ! auto: phishing
+||0205.vip^                                 ! auto: phishing
+||020k365.com^                              ! auto: phishing
+||020life.com^                              ! auto: phishing
+||020saibo.com^                             ! auto: phishing
+||021034662015959.kitlanchesisa.com.br^     ! auto: phishing
+||0211ze21ze212ez1ezze-d19e64.ingress-earth.ewp.live^ ! auto: phishing
+||0215412pageaccountserve23-confirm.start.page^ ! auto: phishing
+||021bag.com^                               ! auto: phishing
+||021lm.com^                                ! auto: phishing
+||02213.pages.net.br^                       ! auto: phishing
+||02221203252120.duckdns.org^               ! auto: phishing
+||022994.com^                               ! auto: phishing
+||022saibo.com^                             ! auto: phishing
+||023-102613t271.weeblysite.com^            ! auto: phishing
+||0233659.com^                              ! auto: phishing
+||02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com^ ! auto: phishing
+||023k365.com^                              ! auto: phishing
+||02402300601394318587048.jamb2022.co^      ! auto: phishing
+||0242523456345.3456945020012.repl.co^      ! auto: phishing
+||024goeqwpoewla.ga^                        ! auto: phishing
+||024k365.com^                              ! auto: phishing
+||025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com^ ! auto: phishing
+||025662nhhh.hyperphp.com^                  ! auto: phishing
+||025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com^ ! auto: phishing
 ! ============================================================================
 ! ShieldNova - Security / Malware
 ! Malware distribution infrastructure with ZERO legitimate use cases.
@@ -1184,6 +1236,13 @@
 ||polonyauniversiteleri.com.tr^             ! auto: malware
 ||postelnini.mk^                            ! auto: malware
 ||prepstarcenter.com^                       ! auto: malware
+
+! --- Auto-fetched from malware (2026-05-02) ---
+||beam.brightsunray.lat^                    ! auto: malware
+||cold.coldwindy.lat^                       ! auto: malware
+||core.greenforestsky.lat^                  ! auto: malware
+||dns.quickstepflow.lat^                    ! auto: malware
+||fast.brightsunray.lat^                    ! auto: malware
 ! ============================================================================
 ! ShieldNova - Security / Cryptojacking
 ! Conservative blocklist for well-known browser mining infrastructure.

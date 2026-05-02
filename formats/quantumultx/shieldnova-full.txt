@@ -2,8 +2,8 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-05-01 22:45:53 UTC
-# Total: 1263
+# Built: 2026-05-02 00:01:51 UTC
+# Total: 1318
 
 HOST-SUFFIX,google-analytics.com,reject
 HOST-SUFFIX,googletagmanager.com,reject
@@ -561,6 +561,56 @@ HOST-SUFFIX,02-bundle-help.com,reject
 HOST-SUFFIX,02-bundle-package.com,reject
 HOST-SUFFIX,02-bundle-renewed.com,reject
 HOST-SUFFIX,02-cancelled-bundle.com,reject
+HOST-SUFFIX,02-com.preview-domain.com,reject
+HOST-SUFFIX,02-error-billing.info,reject
+HOST-SUFFIX,02-info-billing.com,reject
+HOST-SUFFIX,02-invalid-bundle.com,reject
+HOST-SUFFIX,02-login-pending.com,reject
+HOST-SUFFIX,02-pontos-exclusivos.dynv6.net,reject
+HOST-SUFFIX,02-renew-bundle.com,reject
+HOST-SUFFIX,02-resolve.net,reject
+HOST-SUFFIX,02-review-bundle.com,reject
+HOST-SUFFIX,02-u-4528172.com,reject
+HOST-SUFFIX,02-ukresolutions.com,reject
+HOST-SUFFIX,02-update-auth.com,reject
+HOST-SUFFIX,02-update-bundle.com,reject
+HOST-SUFFIX,02-updatebilling-info.co.uk,reject
+HOST-SUFFIX,02-updatebillingnew.com,reject
+HOST-SUFFIX,02-updated-billing.com,reject
+HOST-SUFFIX,02-verify-billing.com,reject
+HOST-SUFFIX,02.billing.ref-119.com,reject
+HOST-SUFFIX,02.data-process01.com,reject
+HOST-SUFFIX,02.jie888.link,reject
+HOST-SUFFIX,02.kkdz21.filegear-sg.me,reject
+HOST-SUFFIX,02.my-payments.org,reject
+HOST-SUFFIX,020101.000webhostapp.com,reject
+HOST-SUFFIX,02012348.com,reject
+HOST-SUFFIX,0202.com.tw,reject
+HOST-SUFFIX,0203659.com,reject
+HOST-SUFFIX,0205.vip,reject
+HOST-SUFFIX,020k365.com,reject
+HOST-SUFFIX,020life.com,reject
+HOST-SUFFIX,020saibo.com,reject
+HOST-SUFFIX,021034662015959.kitlanchesisa.com.br,reject
+HOST-SUFFIX,0211ze21ze212ez1ezze-d19e64.ingress-earth.ewp.live,reject
+HOST-SUFFIX,0215412pageaccountserve23-confirm.start.page,reject
+HOST-SUFFIX,021bag.com,reject
+HOST-SUFFIX,021lm.com,reject
+HOST-SUFFIX,02213.pages.net.br,reject
+HOST-SUFFIX,02221203252120.duckdns.org,reject
+HOST-SUFFIX,022994.com,reject
+HOST-SUFFIX,022saibo.com,reject
+HOST-SUFFIX,023-102613t271.weeblysite.com,reject
+HOST-SUFFIX,0233659.com,reject
+HOST-SUFFIX,02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com,reject
+HOST-SUFFIX,023k365.com,reject
+HOST-SUFFIX,02402300601394318587048.jamb2022.co,reject
+HOST-SUFFIX,0242523456345.3456945020012.repl.co,reject
+HOST-SUFFIX,024goeqwpoewla.ga,reject
+HOST-SUFFIX,024k365.com,reject
+HOST-SUFFIX,025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com,reject
+HOST-SUFFIX,025662nhhh.hyperphp.com,reject
+HOST-SUFFIX,025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com,reject
 HOST-SUFFIX,onclkds.com,reject
 HOST-SUFFIX,clksite.com,reject
 HOST-SUFFIX,clkrev.com,reject
@@ -1056,6 +1106,11 @@ HOST-SUFFIX,pobedastaff.ru,reject
 HOST-SUFFIX,polonyauniversiteleri.com.tr,reject
 HOST-SUFFIX,postelnini.mk,reject
 HOST-SUFFIX,prepstarcenter.com,reject
+HOST-SUFFIX,beam.brightsunray.lat,reject
+HOST-SUFFIX,cold.coldwindy.lat,reject
+HOST-SUFFIX,core.greenforestsky.lat,reject
+HOST-SUFFIX,dns.quickstepflow.lat,reject
+HOST-SUFFIX,fast.brightsunray.lat,reject
 HOST-SUFFIX,coinhive.com,reject
 HOST-SUFFIX,coinhiveproxy.com,reject
 HOST-SUFFIX,authedmine.com,reject
