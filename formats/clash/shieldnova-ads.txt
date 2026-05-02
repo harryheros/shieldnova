@@ -1,6 +1,6 @@
 # ShieldNova - Ads Protection
 # Homepage: https://github.com/harryheros/shieldnova
-# Built: 2026-05-02 21:49:01 UTC
+# Built: 2026-05-02 22:42:04 UTC
 # Total: 59
 payload:
   - DOMAIN-SUFFIX,googlesyndication.com
