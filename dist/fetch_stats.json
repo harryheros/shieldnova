@@ -1,14 +1,14 @@
 {
-  "fetched_at": "2026-05-02 00:01:45 UTC",
+  "fetched_at": "2026-05-02 14:20:04 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
-      "status": "ok",
-      "raw": 581,
-      "platform_skipped": 2593,
+      "status": "file_cap_reached",
+      "raw": 553,
+      "platform_skipped": 2592,
       "platform_skipped_by_apex": {
-        "github.com": 1385,
-        "githubusercontent.com": 936,
+        "github.com": 1383,
+        "githubusercontent.com": 937,
         "vercel.app": 1,
         "google.com": 147,
         "googleapis.com": 2,
@@ -22,12 +22,11 @@
         "dropbox.com": 4,
         "live.com": 5
       },
-      "new": 5,
-      "capped_at": 5
+      "new": 0
     },
     "threatfox": {
       "status": "file_cap_reached",
-      "raw": 1,
+      "raw": 0,
       "platform_skipped": 0,
       "platform_skipped_by_apex": {},
       "new": 0
@@ -44,7 +43,7 @@
     },
     "phishing_database": {
       "status": "ok",
-      "raw": 298420,
+      "raw": 298456,
       "platform_skipped": 86767,
       "platform_skipped_by_apex": {
         "pages.dev": 12720,
@@ -102,9 +101,9 @@
         "plnkr.co": 1,
         "wix.com": 1
       },
-      "new": 50,
-      "capped_at": 50
+      "new": 7,
+      "capped_at": 7
     }
   },
-  "total_added": 55
+  "total_added": 7
 }

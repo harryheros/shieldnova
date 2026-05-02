@@ -2,8 +2,8 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-05-02 00:01:51 UTC
-# Total: 1318
+# Built: 2026-05-02 14:20:10 UTC
+# Total: 1325
 
 DOMAIN-SUFFIX,google-analytics.com,REJECT
 DOMAIN-SUFFIX,googletagmanager.com,REJECT
@@ -611,6 +611,13 @@ DOMAIN-SUFFIX,024k365.com,REJECT
 DOMAIN-SUFFIX,025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com,REJECT
 DOMAIN-SUFFIX,025662nhhh.hyperphp.com,REJECT
 DOMAIN-SUFFIX,025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com,REJECT
+DOMAIN-SUFFIX,0258369.com,REJECT
+DOMAIN-SUFFIX,025a85a7.voag.cn,REJECT
+DOMAIN-SUFFIX,025g.top,REJECT
+DOMAIN-SUFFIX,025k365.com,REJECT
+DOMAIN-SUFFIX,025nh.com,REJECT
+DOMAIN-SUFFIX,025saibo.com,REJECT
+DOMAIN-SUFFIX,025sn.com,REJECT
 DOMAIN-SUFFIX,onclkds.com,REJECT
 DOMAIN-SUFFIX,clksite.com,REJECT
 DOMAIN-SUFFIX,clkrev.com,REJECT

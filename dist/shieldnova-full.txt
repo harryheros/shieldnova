@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-05-02 00:01:51 UTC
-! Total: 1318
-! Breakdown: privacy=56, ads=59, security=1205, deduped_total=1318, allowlist_removed=0
+! Built: 2026-05-02 14:20:10 UTC
+! Total: 1325
+! Breakdown: privacy=56, ads=59, security=1212, deduped_total=1325, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -710,6 +710,15 @@
 ||025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com^ ! auto: phishing
 ||025662nhhh.hyperphp.com^                  ! auto: phishing
 ||025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com^ ! auto: phishing
+
+! --- Auto-fetched from phishing (2026-05-02) ---
+||0258369.com^                              ! auto: phishing
+||025a85a7.voag.cn^                         ! auto: phishing
+||025g.top^                                 ! auto: phishing
+||025k365.com^                              ! auto: phishing
+||025nh.com^                                ! auto: phishing
+||025saibo.com^                             ! auto: phishing
+||025sn.com^                                ! auto: phishing
 ! ============================================================================
 ! ShieldNova - Security / Malware
 ! Malware distribution infrastructure with ZERO legitimate use cases.
