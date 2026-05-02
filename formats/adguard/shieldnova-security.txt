@@ -1,10 +1,10 @@
 ! Title: ShieldNova - Security Protection
 ! Description: Conservative phishing, malware, scam, and cryptojacking domains.
-! Version: 2026-05-01 22:45:53 UTC
+! Version: 2026-05-02 00:01:51 UTC
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! Licence: CC BY-NC-SA 4.0
-! Total: 1150
+! Total: 1205
 
 ||16shop.co^
 ||logincdn.net^
@@ -449,6 +449,56 @@
 ||02-bundle-package.com^
 ||02-bundle-renewed.com^
 ||02-cancelled-bundle.com^
+||02-com.preview-domain.com^
+||02-error-billing.info^
+||02-info-billing.com^
+||02-invalid-bundle.com^
+||02-login-pending.com^
+||02-pontos-exclusivos.dynv6.net^
+||02-renew-bundle.com^
+||02-resolve.net^
+||02-review-bundle.com^
+||02-u-4528172.com^
+||02-ukresolutions.com^
+||02-update-auth.com^
+||02-update-bundle.com^
+||02-updatebilling-info.co.uk^
+||02-updatebillingnew.com^
+||02-updated-billing.com^
+||02-verify-billing.com^
+||02.billing.ref-119.com^
+||02.data-process01.com^
+||02.jie888.link^
+||02.kkdz21.filegear-sg.me^
+||02.my-payments.org^
+||020101.000webhostapp.com^
+||02012348.com^
+||0202.com.tw^
+||0203659.com^
+||0205.vip^
+||020k365.com^
+||020life.com^
+||020saibo.com^
+||021034662015959.kitlanchesisa.com.br^
+||0211ze21ze212ez1ezze-d19e64.ingress-earth.ewp.live^
+||0215412pageaccountserve23-confirm.start.page^
+||021bag.com^
+||021lm.com^
+||02213.pages.net.br^
+||02221203252120.duckdns.org^
+||022994.com^
+||022saibo.com^
+||023-102613t271.weeblysite.com^
+||0233659.com^
+||02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com^
+||023k365.com^
+||02402300601394318587048.jamb2022.co^
+||0242523456345.3456945020012.repl.co^
+||024goeqwpoewla.ga^
+||024k365.com^
+||025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com^
+||025662nhhh.hyperphp.com^
+||025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com^
 ||onclkds.com^
 ||clksite.com^
 ||clkrev.com^
@@ -944,6 +994,11 @@
 ||polonyauniversiteleri.com.tr^
 ||postelnini.mk^
 ||prepstarcenter.com^
+||beam.brightsunray.lat^
+||cold.coldwindy.lat^
+||core.greenforestsky.lat^
+||dns.quickstepflow.lat^
+||fast.brightsunray.lat^
 ||coinhive.com^
 ||coinhiveproxy.com^
 ||authedmine.com^

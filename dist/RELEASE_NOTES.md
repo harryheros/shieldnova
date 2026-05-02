@@ -1,4 +1,4 @@
-## 2026-05-01
+## 2026-05-02
 
 - Security rules updated
 - Threat intelligence refreshed

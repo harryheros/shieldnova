@@ -1,7 +1,7 @@
 # ShieldNova - Security Protection
 # Homepage: https://github.com/harryheros/shieldnova
-# Built: 2026-05-01 22:45:53 UTC
-# Total: 1150
+# Built: 2026-05-02 00:01:51 UTC
+# Total: 1205
 payload:
   - DOMAIN-SUFFIX,16shop.co
   - DOMAIN-SUFFIX,logincdn.net
@@ -446,6 +446,56 @@ payload:
   - DOMAIN-SUFFIX,02-bundle-package.com
   - DOMAIN-SUFFIX,02-bundle-renewed.com
   - DOMAIN-SUFFIX,02-cancelled-bundle.com
+  - DOMAIN-SUFFIX,02-com.preview-domain.com
+  - DOMAIN-SUFFIX,02-error-billing.info
+  - DOMAIN-SUFFIX,02-info-billing.com
+  - DOMAIN-SUFFIX,02-invalid-bundle.com
+  - DOMAIN-SUFFIX,02-login-pending.com
+  - DOMAIN-SUFFIX,02-pontos-exclusivos.dynv6.net
+  - DOMAIN-SUFFIX,02-renew-bundle.com
+  - DOMAIN-SUFFIX,02-resolve.net
+  - DOMAIN-SUFFIX,02-review-bundle.com
+  - DOMAIN-SUFFIX,02-u-4528172.com
+  - DOMAIN-SUFFIX,02-ukresolutions.com
+  - DOMAIN-SUFFIX,02-update-auth.com
+  - DOMAIN-SUFFIX,02-update-bundle.com
+  - DOMAIN-SUFFIX,02-updatebilling-info.co.uk
+  - DOMAIN-SUFFIX,02-updatebillingnew.com
+  - DOMAIN-SUFFIX,02-updated-billing.com
+  - DOMAIN-SUFFIX,02-verify-billing.com
+  - DOMAIN-SUFFIX,02.billing.ref-119.com
+  - DOMAIN-SUFFIX,02.data-process01.com
+  - DOMAIN-SUFFIX,02.jie888.link
+  - DOMAIN-SUFFIX,02.kkdz21.filegear-sg.me
+  - DOMAIN-SUFFIX,02.my-payments.org
+  - DOMAIN-SUFFIX,020101.000webhostapp.com
+  - DOMAIN-SUFFIX,02012348.com
+  - DOMAIN-SUFFIX,0202.com.tw
+  - DOMAIN-SUFFIX,0203659.com
+  - DOMAIN-SUFFIX,0205.vip
+  - DOMAIN-SUFFIX,020k365.com
+  - DOMAIN-SUFFIX,020life.com
+  - DOMAIN-SUFFIX,020saibo.com
+  - DOMAIN-SUFFIX,021034662015959.kitlanchesisa.com.br
+  - DOMAIN-SUFFIX,0211ze21ze212ez1ezze-d19e64.ingress-earth.ewp.live
+  - DOMAIN-SUFFIX,0215412pageaccountserve23-confirm.start.page
+  - DOMAIN-SUFFIX,021bag.com
+  - DOMAIN-SUFFIX,021lm.com
+  - DOMAIN-SUFFIX,02213.pages.net.br
+  - DOMAIN-SUFFIX,02221203252120.duckdns.org
+  - DOMAIN-SUFFIX,022994.com
+  - DOMAIN-SUFFIX,022saibo.com
+  - DOMAIN-SUFFIX,023-102613t271.weeblysite.com
+  - DOMAIN-SUFFIX,0233659.com
+  - DOMAIN-SUFFIX,02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com
+  - DOMAIN-SUFFIX,023k365.com
+  - DOMAIN-SUFFIX,02402300601394318587048.jamb2022.co
+  - DOMAIN-SUFFIX,0242523456345.3456945020012.repl.co
+  - DOMAIN-SUFFIX,024goeqwpoewla.ga
+  - DOMAIN-SUFFIX,024k365.com
+  - DOMAIN-SUFFIX,025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com
+  - DOMAIN-SUFFIX,025662nhhh.hyperphp.com
+  - DOMAIN-SUFFIX,025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com
   - DOMAIN-SUFFIX,onclkds.com
   - DOMAIN-SUFFIX,clksite.com
   - DOMAIN-SUFFIX,clkrev.com
@@ -941,6 +991,11 @@ payload:
   - DOMAIN-SUFFIX,polonyauniversiteleri.com.tr
   - DOMAIN-SUFFIX,postelnini.mk
   - DOMAIN-SUFFIX,prepstarcenter.com
+  - DOMAIN-SUFFIX,beam.brightsunray.lat
+  - DOMAIN-SUFFIX,cold.coldwindy.lat
+  - DOMAIN-SUFFIX,core.greenforestsky.lat
+  - DOMAIN-SUFFIX,dns.quickstepflow.lat
+  - DOMAIN-SUFFIX,fast.brightsunray.lat
   - DOMAIN-SUFFIX,coinhive.com
   - DOMAIN-SUFFIX,coinhiveproxy.com
   - DOMAIN-SUFFIX,authedmine.com
