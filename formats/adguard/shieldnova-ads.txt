@@ -1,6 +1,6 @@
 ! Title: ShieldNova - Ads Protection
 ! Description: Low-risk ad networks, exchanges, and ad-serving domains.
-! Version: 2026-05-03 09:54:58 UTC
+! Version: 2026-05-03 15:00:09 UTC
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! Licence: CC BY-NC-SA 4.0
