@@ -1,14 +1,14 @@
 {
-  "fetched_at": "2026-05-02 23:17:49 UTC",
+  "fetched_at": "2026-05-03 09:54:52 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "file_cap_reached",
-      "raw": 581,
-      "platform_skipped": 2589,
+      "raw": 559,
+      "platform_skipped": 2593,
       "platform_skipped_by_apex": {
-        "github.com": 1381,
-        "githubusercontent.com": 936,
+        "github.com": 1386,
+        "githubusercontent.com": 935,
         "vercel.app": 1,
         "google.com": 147,
         "googleapis.com": 2,
