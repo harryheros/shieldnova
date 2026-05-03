@@ -1,14 +1,14 @@
 {
-  "fetched_at": "2026-05-03 15:00:02 UTC",
+  "fetched_at": "2026-05-03 21:48:32 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "file_cap_reached",
-      "raw": 552,
-      "platform_skipped": 2597,
+      "raw": 567,
+      "platform_skipped": 2594,
       "platform_skipped_by_apex": {
-        "github.com": 1389,
-        "githubusercontent.com": 936,
+        "github.com": 1385,
+        "githubusercontent.com": 937,
         "vercel.app": 1,
         "google.com": 147,
         "googleapis.com": 2,
@@ -43,7 +43,7 @@
     },
     "phishing_database": {
       "status": "file_cap_reached",
-      "raw": 298455,
+      "raw": 298467,
       "platform_skipped": 86767,
       "platform_skipped_by_apex": {
         "pages.dev": 12720,
