@@ -1,26 +1,25 @@
 {
-  "fetched_at": "2026-05-04 09:59:09 UTC",
+  "fetched_at": "2026-05-04 23:25:54 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "file_cap_reached",
-      "raw": 594,
-      "platform_skipped": 2574,
+      "raw": 569,
+      "platform_skipped": 2176,
       "platform_skipped_by_apex": {
-        "gitlab.com": 3,
-        "github.com": 1373,
-        "githubusercontent.com": 929,
-        "vercel.app": 1,
-        "google.com": 148,
+        "gitlab.com": 2,
+        "github.com": 1148,
+        "githubusercontent.com": 789,
+        "google.com": 140,
         "googleapis.com": 2,
-        "pages.dev": 22,
-        "pastebin.com": 66,
+        "pages.dev": 23,
         "blogspot.com": 1,
+        "pastebin.com": 49,
         "blob.core.windows.net": 3,
         "github.io": 2,
-        "sendspace.com": 15,
+        "sendspace.com": 10,
         "dropbox.com": 4,
-        "live.com": 5
+        "live.com": 3
       },
       "new": 0
     },
