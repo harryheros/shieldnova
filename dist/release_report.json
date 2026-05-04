@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-03 21:48:39 UTC",
+  "generated_at": "2026-05-04 05:28:29 UTC",
   "build": {
-    "built_at": "2026-05-03 21:48:38 UTC",
+    "built_at": "2026-05-04 05:28:29 UTC",
     "profile": "Conservative / Compatibility-First",
     "invalid_rules_skipped": 0,
     "allowlist_entries": 0,
@@ -101,10 +101,10 @@
   },
   "integrity": {
     "sha256": {
-      "stats.json": "5ecb4770d5285482fd503ba51fe1ffbee640ce299903612a556b66c0305dc765",
+      "stats.json": "1e11c0167588aa951bea7caee2dcdcbd321efe8b130180cabd10acb0012927ab",
       "fetch_stats.json": "b3f53480736f602452206b135f8cd96caa6088e62e7a9a2d8f1615f5ddfffc4f",
-      "shieldnova-full.txt": "d19a2aa0edbccd78fb3addbc53686103cba8bcdd58ca844d740d9c3f59cbbfa5",
-      "shieldnova-security.txt": "988962bb0dac95fed55c570f2a107c4f88383e4484c5d052701364794938daa1"
+      "shieldnova-full.txt": "bb790ce7d8762b952ae5d91d31ad6c59533a36e8c1b081c726439e64890ab119",
+      "shieldnova-security.txt": "eb1ae834397e87deaf190aef23e1d77b5fd60af472d565d9366da00609bcecfe"
     }
   },
   "disclosure": {
