@@ -1,6 +1,6 @@
 ! Title: ShieldNova - Security Protection
 ! Description: Conservative phishing, malware, scam, and cryptojacking domains.
-! Version: 2026-05-04 05:28:28 UTC
+! Version: 2026-05-04 09:59:16 UTC
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! Licence: CC BY-NC-SA 4.0
