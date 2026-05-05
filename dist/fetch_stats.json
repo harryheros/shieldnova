@@ -1,25 +1,26 @@
 {
-  "fetched_at": "2026-05-04 23:25:54 UTC",
+  "fetched_at": "2026-05-05 17:57:02 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "file_cap_reached",
-      "raw": 569,
-      "platform_skipped": 2176,
+      "raw": 539,
+      "platform_skipped": 2215,
       "platform_skipped_by_apex": {
-        "gitlab.com": 2,
-        "github.com": 1148,
-        "githubusercontent.com": 789,
-        "google.com": 140,
-        "googleapis.com": 2,
-        "pages.dev": 23,
+        "github.com": 1167,
+        "bitbucket.org": 1,
+        "githubusercontent.com": 795,
+        "google.com": 143,
+        "googleapis.com": 1,
+        "pastebin.com": 62,
+        "pages.dev": 18,
         "blogspot.com": 1,
-        "pastebin.com": 49,
-        "blob.core.windows.net": 3,
+        "gitlab.com": 2,
+        "blob.core.windows.net": 2,
         "github.io": 2,
-        "sendspace.com": 10,
+        "sendspace.com": 13,
         "dropbox.com": 4,
-        "live.com": 3
+        "live.com": 4
       },
       "new": 0
     },
