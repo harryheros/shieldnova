@@ -1,26 +1,25 @@
 {
-  "fetched_at": "2026-05-05 17:57:02 UTC",
+  "fetched_at": "2026-05-06 23:29:37 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "file_cap_reached",
-      "raw": 539,
-      "platform_skipped": 2215,
+      "raw": 502,
+      "platform_skipped": 2195,
       "platform_skipped_by_apex": {
-        "github.com": 1167,
+        "github.com": 1154,
         "bitbucket.org": 1,
-        "githubusercontent.com": 795,
-        "google.com": 143,
-        "googleapis.com": 1,
-        "pastebin.com": 62,
-        "pages.dev": 18,
+        "githubusercontent.com": 793,
+        "google.com": 139,
+        "googleapis.com": 2,
+        "pages.dev": 20,
+        "pastebin.com": 60,
         "blogspot.com": 1,
         "gitlab.com": 2,
-        "blob.core.windows.net": 2,
-        "github.io": 2,
-        "sendspace.com": 13,
-        "dropbox.com": 4,
-        "live.com": 4
+        "blob.core.windows.net": 3,
+        "github.io": 1,
+        "sendspace.com": 14,
+        "live.com": 5
       },
       "new": 0
     },
@@ -43,7 +42,7 @@
     },
     "phishing_database": {
       "status": "file_cap_reached",
-      "raw": 298467,
+      "raw": 298468,
       "platform_skipped": 86767,
       "platform_skipped_by_apex": {
         "pages.dev": 12720,
