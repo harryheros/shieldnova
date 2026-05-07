@@ -4,7 +4,7 @@
 
 ## 2026-05-07
 
-- Security rules updated
+- Security rules updated (+15)
 - ✓ Release validation: passed
 
 ---
