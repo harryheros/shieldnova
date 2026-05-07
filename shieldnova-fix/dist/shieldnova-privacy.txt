@@ -1,0 +1,105 @@
+! Title: ShieldNova - Privacy Protection
+! Description: Low-risk analytics, attribution, fingerprinting, and telemetry blocking.
+! Author: Harry (https://github.com/harryheros)
+! Homepage: https://github.com/harryheros/shieldnova
+! License: CC BY-NC-SA 4.0
+! Profile: Conservative / Compatibility-First
+! Built: 2026-05-07 21:55:51 UTC
+! Total: 56
+! Breakdown: privacy=56, allowlist_removed=0
+
+! ============================================================================
+! ShieldNova - Privacy / Global Core
+! Blocks major global analytics, attribution, session replay, and telemetry.
+!
+! SAFETY: Only low-risk tracking and telemetry domains are included here.
+! Avoids login, payments, app content delivery, deep links, CAPTCHAs, and
+! other domains that commonly affect normal app or website functionality.
+! ============================================================================
+
+! --- Google Analytics & Tracking ---
+||google-analytics.com^                     ! Google Analytics - web/app usage tracking
+||googletagmanager.com^                     ! Google Tag Manager - tag deployment & tracking
+||googletagservices.com^                    ! Google Publisher Tag - ad serving & tracking
+||googleadservices.com^                     ! Google Ads - conversion tracking
+||doubleclick.net^                          ! Google DoubleClick - display ad tracking
+||app-measurement.com^                      ! Firebase Analytics - mobile app measurement
+||crashlytics.com^                          ! Firebase Crashlytics - crash reporting telemetry
+
+! --- Meta / Facebook (tracking-only endpoints) ---
+||pixel.facebook.com^                       ! Facebook Pixel - cross-site conversion tracking
+||analytics.facebook.com^                   ! Facebook Analytics endpoint
+! because they are required for Facebook Login and social features.
+
+! --- Mobile Attribution (pure tracking SDKs, no user features) ---
+||adjust.com^                               ! Adjust - mobile install attribution
+||appsflyer.com^                            ! AppsFlyer - mobile attribution platform
+||kochava.com^                              ! Kochava - mobile attribution
+||singular.net^                             ! Singular - marketing analytics
+||tenjin.com^                               ! Tenjin - mobile ad revenue analytics
+! share URLs. Blocking breaks "open in app" functionality.
+
+! --- Product Analytics & Session Replay ---
+||mixpanel.com^                             ! Mixpanel - user behavior analytics
+||amplitude.com^                            ! Amplitude - product analytics
+||segment.io^                               ! Segment - customer data pipeline
+||segment.com^                              ! Segment - customer data platform
+||heapanalytics.com^                        ! Heap - auto-capture analytics
+||hotjar.com^                               ! Hotjar - heatmaps & session recording
+||fullstory.com^                            ! FullStory - session replay
+||mouseflow.com^                            ! Mouseflow - session replay & heatmaps
+||clarity.ms^                               ! Microsoft Clarity - session recording
+||logrocket.com^                            ! LogRocket - session replay and diagnostics
+
+! --- Error Monitoring / Telemetry ---
+||bugsnag.com^                              ! Bugsnag - crash and stability telemetry
+||sentry.io^                                ! Sentry - application error telemetry
+||newrelic.com^                             ! New Relic - APM and user telemetry
+||nr-data.net^                              ! New Relic beacon collection endpoint
+||telemetrydeck.com^                        ! TelemetryDeck - anonymous app telemetry
+||plausible.io^                             ! Plausible - privacy-focused analytics
+
+! --- Ad Tracking Networks ---
+! openx, rubiconproject, casalemedia, outbrain, taboola, quantserve,
+! scorecardresearch, googleadservices) are in the Advertising module.
+! They are not duplicated here to keep modules clean.
+
+! --- Social Tracking (tracking-only subdomains) ---
+||snap.licdn.com^                           ! LinkedIn Insight Tag - conversion tracking
+||ads.linkedin.com^                         ! LinkedIn Ads - tracking pixel
+||sc-static.net^                            ! Snapchat - ad tracking SDK
+||tr.snapchat.com^                          ! Snapchat - conversion tracking pixel
+! they serve embedded content (tweets, LinkedIn posts) on websites.
+
+! --- Marketing Automation (pure tracking infra) ---
+||actonservice.com^                         ! Act-On - marketing automation tracking
+||marketo.com^                              ! Marketo - marketing automation tracking
+||marketo.net^                              ! Marketo - tracking delivery network
+||pardot.com^                               ! Pardot - B2B marketing tracking
+||eloqua.com^                               ! Oracle Eloqua - marketing automation tracking
+||omtrdc.net^                               ! Adobe Analytics - data collection endpoint
+||demdex.net^                               ! Adobe Audience Manager - audience tracking
+||2o7.net^                                  ! Adobe/Omniture - legacy analytics tracking
+||everesttech.net^                          ! Adobe Advertising - ad tracking
+
+! --- Fingerprinting (pure fingerprinting, safe to block) ---
+||fingerprintjs.com^                        ! FingerprintJS - browser fingerprinting
+! CAPTCHAs and bot verification. Blocking prevents login on many sites.
+
+! --- Consent / Cookie Tracking ---
+||cookiebot.com^                            ! Cookiebot - cookie consent tracking
+||cookieinformation.com^                    ! Cookie Information - consent tracking
+||onetrust.com^                             ! OneTrust - privacy consent management
+||trustarc.com^                             ! TrustArc - privacy compliance tracking
+||cookielaw.org^                            ! OneTrust - cookie consent CDN
+
+! --- A/B Testing & Optimization ---
+||optimizely.com^                           ! Optimizely - A/B testing & experimentation
+||launchdarkly.com^                         ! LaunchDarkly - feature flag & experimentation
+||vwo.com^                                  ! VWO - A/B testing & conversion optimization
+||abtasty.com^                              ! AB Tasty - A/B testing platform
+
+! --- Email Tracking ---
+||mailtrack.io^                             ! Mailtrack - email open tracking
+||yesware.com^                              ! Yesware - email tracking for sales
+||bananatag.com^                            ! Bananatag - email tracking

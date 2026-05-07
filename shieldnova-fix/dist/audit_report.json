@@ -1,0 +1,4130 @@
+{
+  "scanned_files": 3,
+  "total_findings": 257,
+  "summary": {
+    "must_remove": 0,
+    "hosting": 43,
+    "manual_review": 214
+  },
+  "by_category": {
+    "MUST-REMOVE": [],
+    "HOSTING": [
+      {
+        "file": "src/security/malware.txt",
+        "line": 470,
+        "domain": "ofice365.github.io",
+        "rule": "||ofice365.github.io^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 42,
+        "domain": "0.sciiaawuroyagu9524.workers.dev",
+        "rule": "||0.sciiaawuroyagu9524.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 44,
+        "domain": "0.vsxmfkrvoipzs67.workers.dev",
+        "rule": "||0.vsxmfkrvoipzs67.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 45,
+        "domain": "0.xyasrhsju3235.workers.dev",
+        "rule": "||0.xyasrhsju3235.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 62,
+        "domain": "0000000000c0.x9xcax2a.workers.dev",
+        "rule": "||0000000000c0.x9xcax2a.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 73,
+        "domain": "0000006738.vercel.app",
+        "rule": "||0000006738.vercel.app^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (vercel.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 97,
+        "domain": "0001.353527440.workers.dev",
+        "rule": "||0001.353527440.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 101,
+        "domain": "000193.azurewebsites.net",
+        "rule": "||000193.azurewebsites.net^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (azurewebsites.net) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 124,
+        "domain": "000e-239f-23ea3-yah100-8ta1xb1rs33.netlify.app",
+        "rule": "||000e-239f-23ea3-yah100-8ta1xb1rs33.netlify.app^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 160,
+        "domain": "001.1614214972.workers.dev",
+        "rule": "||001.1614214972.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 161,
+        "domain": "001.9zhmn1k5.workers.dev",
+        "rule": "||001.9zhmn1k5.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 162,
+        "domain": "001.gamecc.workers.dev",
+        "rule": "||001.gamecc.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 163,
+        "domain": "00100.zzzly0925.workers.dev",
+        "rule": "||00100.zzzly0925.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 166,
+        "domain": "00104.github.io",
+        "rule": "||00104.github.io^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 177,
+        "domain": "001420990998183-dot-wetransfer-auth-file-342.appspot.com",
+        "rule": "||001420990998183-dot-wetransfer-auth-file-342.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 191,
+        "domain": "001madhankumar.github.io",
+        "rule": "||001madhankumar.github.io^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 208,
+        "domain": "002y.github.io",
+        "rule": "||002y.github.io^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 214,
+        "domain": "003d6db553fcd8ae426bf76f121e0878-dot-cloud-365-000.el.r.appspot.com",
+        "rule": "||003d6db553fcd8ae426bf76f121e0878-dot-cloud-365-000.el.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 215,
+        "domain": "003mail.github.io",
+        "rule": "||003mail.github.io^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 227,
+        "domain": "004sba90aolsecure00e0ios0sign0i0in8e0.netlify.app",
+        "rule": "||004sba90aolsecure00e0ios0sign0i0in8e0.netlify.app^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 228,
+        "domain": "005-user.anzhiyu.workers.dev",
+        "rule": "||005-user.anzhiyu.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 229,
+        "domain": "00514cdeadd561c329964c042008341e-dot-solidstar-improts.uk.r.appspot.com",
+        "rule": "||00514cdeadd561c329964c042008341e-dot-solidstar-improts.uk.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 235,
+        "domain": "005eb3e6f691652868ee9d5b5820e020-dot-gle9392420309493993.rj.r.appspot.com",
+        "rule": "||005eb3e6f691652868ee9d5b5820e020-dot-gle9392420309493993.rj.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 241,
+        "domain": "00610eb3e0ff28bce54e44ddfb2aa544-dot-gle9392420309493993.rj.r.appspot.com",
+        "rule": "||00610eb3e0ff28bce54e44ddfb2aa544-dot-gle9392420309493993.rj.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 249,
+        "domain": "006t-rshyktuaerhetjr6yk7tl6tmyrntbref.vercel.app",
+        "rule": "||006t-rshyktuaerhetjr6yk7tl6tmyrntbref.vercel.app^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (vercel.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 254,
+        "domain": "007595d4969707fd4a3543145addf49b-dot-gle9392420309493993.rj.r.appspot.com",
+        "rule": "||007595d4969707fd4a3543145addf49b-dot-gle9392420309493993.rj.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 263,
+        "domain": "00828.liye19960713.workers.dev",
+        "rule": "||00828.liye19960713.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 271,
+        "domain": "008h-7yughbesfdt87y8useifiuhsjkg.vercel.app",
+        "rule": "||008h-7yughbesfdt87y8useifiuhsjkg.vercel.app^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (vercel.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 284,
+        "domain": "009bb11405fa5b694a9f9915bc2acf38-dot-gle9392420309493993.rj.r.appspot.com",
+        "rule": "||009bb11405fa5b694a9f9915bc2acf38-dot-gle9392420309493993.rj.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 307,
+        "domain": "00e132a99407d8e60c6b0895577e2d25-dot-gle9392420309493993.rj.r.appspot.com",
+        "rule": "||00e132a99407d8e60c6b0895577e2d25-dot-gle9392420309493993.rj.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 308,
+        "domain": "00e94yahoouserid092e-apra02ios16win11.netlify.app",
+        "rule": "||00e94yahoouserid092e-apra02ios16win11.netlify.app^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 310,
+        "domain": "00ei0aol023sba03esecure0i0verify0forg.netlify.app",
+        "rule": "||00ei0aol023sba03esecure0i0verify0forg.netlify.app^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 312,
+        "domain": "00f28a5a21c09720affa474c7b4f134c-dot-gle9392420309493993.rj.r.appspot.com",
+        "rule": "||00f28a5a21c09720affa474c7b4f134c-dot-gle9392420309493993.rj.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 344,
+        "domain": "00web.glitch.me",
+        "rule": "||00web.glitch.me^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (glitch.me) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 345,
+        "domain": "00wellsfarg.azurewebsites.net",
+        "rule": "||00wellsfarg.azurewebsites.net^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (azurewebsites.net) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 346,
+        "domain": "00wetransfer-sharedfiles.netlify.app",
+        "rule": "||00wetransfer-sharedfiles.netlify.app^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 356,
+        "domain": "010101010011010093893930101.azurewebsites.net",
+        "rule": "||010101010011010093893930101.azurewebsites.net^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (azurewebsites.net) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 368,
+        "domain": "011-two.vercel.app",
+        "rule": "||011-two.vercel.app^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (vercel.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 369,
+        "domain": "011.358761202.workers.dev",
+        "rule": "||011.358761202.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 370,
+        "domain": "01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com",
+        "rule": "||01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 410,
+        "domain": "016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com",
+        "rule": "||016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 411,
+        "domain": "016614590390149677279078.my-project-45bb.ey.r.appspot.com",
+        "rule": "||016614590390149677279078.my-project-45bb.ey.r.appspot.com^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 415,
+        "domain": "0177.datingg-voice.workers.dev",
+        "rule": "||0177.datingg-voice.workers.dev^",
+        "category": "HOSTING",
+        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+      }
+    ],
+    "MANUAL-REVIEW": [
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 54,
+        "domain": "acbp0020171456.page.tl",
+        "rule": "||acbp0020171456.page.tl^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 56,
+        "domain": "aeros02.tk",
+        "rule": "||aeros02.tk^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 57,
+        "domain": "aeros12.tk",
+        "rule": "||aeros12.tk^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 62,
+        "domain": "ashgrrwt.click",
+        "rule": "||ashgrrwt.click^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 64,
+        "domain": "bafybeidravcab5p3acvthxtwosm4rfpl4yypwwm52s7sazgxaezfzn5xn4.ipfs.infura-ipfs.io",
+        "rule": "||bafybeidravcab5p3acvthxtwosm4rfpl4yypwwm52s7sazgxaezfzn5xn4.ipfs.infura-ipfs.io^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 79,
+        "domain": "broadcastt.xyz",
+        "rule": "||broadcastt.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 95,
+        "domain": "coinpirate.cf",
+        "rule": "||coinpirate.cf^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 123,
+        "domain": "flightsy.win",
+        "rule": "||flightsy.win^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 130,
+        "domain": "go.megabanners.cf",
+        "rule": "||go.megabanners.cf^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 134,
+        "domain": "hashing.win",
+        "rule": "||hashing.win^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 135,
+        "domain": "hemnes.win",
+        "rule": "||hemnes.win^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 139,
+        "domain": "ijfcm7bu6ocerxsfq56ka3dtdanunyp4ytwk745b54agtravj2wr2qqd.onion.pet",
+        "rule": "||ijfcm7bu6ocerxsfq56ka3dtdanunyp4ytwk745b54agtravj2wr2qqd.onion.pet^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 146,
+        "domain": "lags.win",
+        "rule": "||lags.win^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 168,
+        "domain": "mutuza.win",
+        "rule": "||mutuza.win^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 187,
+        "domain": "premiumstats.xyz",
+        "rule": "||premiumstats.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 209,
+        "domain": "sunnimiq.cf",
+        "rule": "||sunnimiq.cf^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 210,
+        "domain": "swiftmining.win",
+        "rule": "||swiftmining.win^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/cryptojacking.txt",
+        "line": 231,
+        "domain": "wordc.ga",
+        "rule": "||wordc.ga^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 24,
+        "domain": "111101111.ru",
+        "rule": "||111101111.ru^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 31,
+        "domain": "1827897262.v.123pan.cn",
+        "rule": "||1827897262.v.123pan.cn^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 38,
+        "domain": "99194034-96-20180108171507.webstarterz.com",
+        "rule": "||99194034-96-20180108171507.webstarterz.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 79,
+        "domain": "bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link",
+        "rule": "||bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 80,
+        "domain": "bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link",
+        "rule": "||bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 81,
+        "domain": "bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link",
+        "rule": "||bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 87,
+        "domain": "bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link",
+        "rule": "||bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 88,
+        "domain": "bafybeidvf6tytrspkd4wnvxzs23m3kjr6bfvgszbfwybmmcosl4rrhvuo4.ipfs.dweb.link",
+        "rule": "||bafybeidvf6tytrspkd4wnvxzs23m3kjr6bfvgszbfwybmmcosl4rrhvuo4.ipfs.dweb.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 89,
+        "domain": "bafybeidvgy76m4r347tpqg6plr3ac2p7o5bpcluicawc25nuh7mowtkssy.ipfs.dweb.link",
+        "rule": "||bafybeidvgy76m4r347tpqg6plr3ac2p7o5bpcluicawc25nuh7mowtkssy.ipfs.dweb.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 90,
+        "domain": "bafybeieq7tctzxkqidqpq4fjvtznbupqrpo2w4n4lfmzksehei4dinilii.ipfs.w3s.link",
+        "rule": "||bafybeieq7tctzxkqidqpq4fjvtznbupqrpo2w4n4lfmzksehei4dinilii.ipfs.w3s.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 91,
+        "domain": "bafybeiffpkay6l7heq55epccneb563p5chjzclxnso3vkozyorphlz6ana.ipfs.w3s.link",
+        "rule": "||bafybeiffpkay6l7heq55epccneb563p5chjzclxnso3vkozyorphlz6ana.ipfs.w3s.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 92,
+        "domain": "bafybeihamvbzrm2tsifa4s7xruhfnsgnkzgtk2jqwj6cwgmdxj4wqe5lm4.ipfs.dweb.link",
+        "rule": "||bafybeihamvbzrm2tsifa4s7xruhfnsgnkzgtk2jqwj6cwgmdxj4wqe5lm4.ipfs.dweb.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 100,
+        "domain": "bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com",
+        "rule": "||bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 104,
+        "domain": "bnet-api.playm8ru.win",
+        "rule": "||bnet-api.playm8ru.win^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 105,
+        "domain": "bnet.playm8ru.win",
+        "rule": "||bnet.playm8ru.win^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 117,
+        "domain": "c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru",
+        "rule": "||c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: UUID-like"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 125,
+        "domain": "cdn-10049480.file.myqcloud.com",
+        "rule": "||cdn-10049480.file.myqcloud.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 128,
+        "domain": "cdn.novoline.top",
+        "rule": "||cdn.novoline.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 260,
+        "domain": "f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com",
+        "rule": "||f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 343,
+        "domain": "ia802801.us.archive.org",
+        "rule": "||ia802801.us.archive.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 359,
+        "domain": "j-0-09g-9bh-h-ggf-1324992141.cos.ap-bangkok.myqcloud.com",
+        "rule": "||j-0-09g-9bh-h-ggf-1324992141.cos.ap-bangkok.myqcloud.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 380,
+        "domain": "leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com",
+        "rule": "||leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 412,
+        "domain": "mail.ssadownload.top",
+        "rule": "||mail.ssadownload.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 50,
+        "domain": "000-7yt65t564656ythygy.000webhostapp.com",
+        "rule": "||000-7yt65t564656ythygy.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 55,
+        "domain": "0000000000000000000000000.findyourjacket.com",
+        "rule": "||0000000000000000000000000.findyourjacket.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 56,
+        "domain": "00000000000000000000000000000000000000000.xyz",
+        "rule": "||00000000000000000000000000000000000000000.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 57,
+        "domain": "00000000000000000000000000000000000000dfjjjhv.000webhostapp.com",
+        "rule": "||00000000000000000000000000000000000000dfjjjhv.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 58,
+        "domain": "00000000000000000000000056000005-102299.weeblysite.com",
+        "rule": "||00000000000000000000000056000005-102299.weeblysite.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 59,
+        "domain": "000000000000000000gg.000webhostapp.com",
+        "rule": "||000000000000000000gg.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 60,
+        "domain": "00000000000000000update.emy.ba",
+        "rule": "||00000000000000000update.emy.ba^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 61,
+        "domain": "000000000000000ooooo.000webhostapp.com",
+        "rule": "||000000000000000ooooo.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 67,
+        "domain": "00000000920.us-south.cf.appdomain.cloud",
+        "rule": "||00000000920.us-south.cf.appdomain.cloud^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 68,
+        "domain": "0000000095.godaddysites.com",
+        "rule": "||0000000095.godaddysites.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 69,
+        "domain": "00000002.c1.biz",
+        "rule": "||00000002.c1.biz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 70,
+        "domain": "0000000666666.000webhostapp.com",
+        "rule": "||0000000666666.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 71,
+        "domain": "0000000wer.000webhostapp.com",
+        "rule": "||0000000wer.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 72,
+        "domain": "000000541840000.co.vu",
+        "rule": "||000000541840000.co.vu^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 74,
+        "domain": "000000788-66666666.000webhostapp.com",
+        "rule": "||000000788-66666666.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 75,
+        "domain": "00000078uu7u8790090900.000webhostapp.com",
+        "rule": "||00000078uu7u8790090900.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 76,
+        "domain": "000001010010104106.cloud",
+        "rule": "||000001010010104106.cloud^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 77,
+        "domain": "000002456171.ml",
+        "rule": "||000002456171.ml^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 78,
+        "domain": "000002456180.ml",
+        "rule": "||000002456180.ml^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 79,
+        "domain": "000003.000000000013.repl.co",
+        "rule": "||000003.000000000013.repl.co^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 80,
+        "domain": "0000091193.xyz",
+        "rule": "||0000091193.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 84,
+        "domain": "00001062.com",
+        "rule": "||00001062.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 85,
+        "domain": "000012151000.co.vu",
+        "rule": "||000012151000.co.vu^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 86,
+        "domain": "000025123.com",
+        "rule": "||000025123.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 88,
+        "domain": "000066.godaddysites.com",
+        "rule": "||000066.godaddysites.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 89,
+        "domain": "0000666688887777.000webhostapp.com",
+        "rule": "||0000666688887777.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 91,
+        "domain": "000083.godaddysites.com",
+        "rule": "||000083.godaddysites.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 96,
+        "domain": "0000qwew341432edxzt.000webhostapp.com",
+        "rule": "||0000qwew341432edxzt.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 99,
+        "domain": "000111.pages.net.br",
+        "rule": "||000111.pages.net.br^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 100,
+        "domain": "000133210.000webhostapp.com",
+        "rule": "||000133210.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 105,
+        "domain": "000220.000webhostapp.com",
+        "rule": "||000220.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 106,
+        "domain": "000247aa8f117a13af2094b691ab1b3e.serveo.net",
+        "rule": "||000247aa8f117a13af2094b691ab1b3e.serveo.net^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 108,
+        "domain": "000343594567126312342754pgsbsnsswrng.000webhostapp.com",
+        "rule": "||000343594567126312342754pgsbsnsswrng.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 110,
+        "domain": "0006.mediafirew.xyz",
+        "rule": "||0006.mediafirew.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 114,
+        "domain": "000667993.codepen.website",
+        "rule": "||000667993.codepen.website^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 115,
+        "domain": "000690750.deployed.codepen.website",
+        "rule": "||000690750.deployed.codepen.website^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 116,
+        "domain": "000717-coinbase.com",
+        "rule": "||000717-coinbase.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 117,
+        "domain": "0007854.atwebpages.com",
+        "rule": "||0007854.atwebpages.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 118,
+        "domain": "0007933738373.myportfolio.com",
+        "rule": "||0007933738373.myportfolio.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 119,
+        "domain": "000811893962007154932393170597959432.hanefra7bikiemta.com",
+        "rule": "||000811893962007154932393170597959432.hanefra7bikiemta.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 120,
+        "domain": "000838774343.000webhostapp.com",
+        "rule": "||000838774343.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 121,
+        "domain": "00099881111.000webhostapp.com",
+        "rule": "||00099881111.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 128,
+        "domain": "000int-5403945int.xyz",
+        "rule": "||000int-5403945int.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 164,
+        "domain": "00100601120140002.cf",
+        "rule": "||00100601120140002.cf^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 165,
+        "domain": "00100601120140009.ml",
+        "rule": "||00100601120140009.ml^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 167,
+        "domain": "00110000.com",
+        "rule": "||00110000.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 168,
+        "domain": "001107018.studentserver.com.au",
+        "rule": "||001107018.studentserver.com.au^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 170,
+        "domain": "001114.itabankk.repl.co",
+        "rule": "||001114.itabankk.repl.co^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 171,
+        "domain": "001122102120.duckdns.org",
+        "rule": "||001122102120.duckdns.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 172,
+        "domain": "00112378.com",
+        "rule": "||00112378.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 174,
+        "domain": "0012-107647.weeblysite.com",
+        "rule": "||0012-107647.weeblysite.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 176,
+        "domain": "0013009.com",
+        "rule": "||0013009.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 178,
+        "domain": "0014555.000webhostapp.com",
+        "rule": "||0014555.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 180,
+        "domain": "0016948.bancoteafirma.repl.co",
+        "rule": "||0016948.bancoteafirma.repl.co^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 181,
+        "domain": "00169763258316485.eu-gb.cf.appdomain.cloud",
+        "rule": "||00169763258316485.eu-gb.cf.appdomain.cloud^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 184,
+        "domain": "001892.com",
+        "rule": "||001892.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 185,
+        "domain": "001983878188731stea8a1a0.myclickfunnels.com",
+        "rule": "||001983878188731stea8a1a0.myclickfunnels.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 197,
+        "domain": "002.195533.xyz",
+        "rule": "||002.195533.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 200,
+        "domain": "002321.cn",
+        "rule": "||002321.cn^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 201,
+        "domain": "00272781hubpointmicrosoft.myportfolio.com",
+        "rule": "||00272781hubpointmicrosoft.myportfolio.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 210,
+        "domain": "0033.top",
+        "rule": "||0033.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 211,
+        "domain": "003429a9-b7ed-4689-89f.internalaccess.info",
+        "rule": "||003429a9-b7ed-4689-89f.internalaccess.info^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 212,
+        "domain": "003455-1318019027.cos.eu-frankfurt.myqcloud.com",
+        "rule": "||003455-1318019027.cos.eu-frankfurt.myqcloud.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 213,
+        "domain": "003467.cc",
+        "rule": "||003467.cc^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 218,
+        "domain": "004240331.top",
+        "rule": "||004240331.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 219,
+        "domain": "004261200-conf1rm.000webhostapp.com",
+        "rule": "||004261200-conf1rm.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 221,
+        "domain": "00439632890395435423.com",
+        "rule": "||00439632890395435423.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 223,
+        "domain": "004605.com",
+        "rule": "||004605.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 224,
+        "domain": "004767666634154.litoralsulpremium.com.br",
+        "rule": "||004767666634154.litoralsulpremium.com.br^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 230,
+        "domain": "00531688.0fhsdakffirer.org.cn",
+        "rule": "||00531688.0fhsdakffirer.org.cn^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 231,
+        "domain": "005350049846275.nikkgpkvzv.957733539760618.avpcwvidxgiu.williamhnelson.org",
+        "rule": "||005350049846275.nikkgpkvzv.957733539760618.avpcwvidxgiu.williamhnelson.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 232,
+        "domain": "0055.top",
+        "rule": "||0055.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 233,
+        "domain": "0057888.com",
+        "rule": "||0057888.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 240,
+        "domain": "00600501450003000.cf",
+        "rule": "||00600501450003000.cf^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 242,
+        "domain": "006161.com",
+        "rule": "||006161.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 243,
+        "domain": "006186.alertbyte.com",
+        "rule": "||006186.alertbyte.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 244,
+        "domain": "0064852575383277.eu-gb.cf.appdomain.cloud",
+        "rule": "||0064852575383277.eu-gb.cf.appdomain.cloud^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 246,
+        "domain": "006700.xyz",
+        "rule": "||006700.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 247,
+        "domain": "0067786563423xcerrvg.000webhostapp.com",
+        "rule": "||0067786563423xcerrvg.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 250,
+        "domain": "0070e26e-ac97-4dd9-a7c9-08cb4d2b1678.id.repl.co",
+        "rule": "||0070e26e-ac97-4dd9-a7c9-08cb4d2b1678.id.repl.co^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: UUID-like"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 253,
+        "domain": "007168-00.000webhostapp.com",
+        "rule": "||007168-00.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 255,
+        "domain": "0076678.com",
+        "rule": "||0076678.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 258,
+        "domain": "007wa.xyz",
+        "rule": "||007wa.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 260,
+        "domain": "008008.cc",
+        "rule": "||008008.cc^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 261,
+        "domain": "008009989987890007.co.vu",
+        "rule": "||008009989987890007.co.vu^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 265,
+        "domain": "008491133.cloudns.nz",
+        "rule": "||008491133.cloudns.nz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 268,
+        "domain": "008753331120.com",
+        "rule": "||008753331120.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 274,
+        "domain": "009190-securepage.000webhostapp.com",
+        "rule": "||009190-securepage.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 275,
+        "domain": "0094059000293htjkm.000webhostapp.com",
+        "rule": "||0094059000293htjkm.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 277,
+        "domain": "009812kivip.top",
+        "rule": "||009812kivip.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 281,
+        "domain": "0099887.com",
+        "rule": "||0099887.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 282,
+        "domain": "009988r3sucursalactivaciones.brizy.site",
+        "rule": "||009988r3sucursalactivaciones.brizy.site^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 285,
+        "domain": "009bf6e1.fei124970841.cn",
+        "rule": "||009bf6e1.fei124970841.cn^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 291,
+        "domain": "00as4h7vjwum3i.53244ds.xyz",
+        "rule": "||00as4h7vjwum3i.53244ds.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 296,
+        "domain": "00bbfl2ke6.1qw2es2z.xyz",
+        "rule": "||00bbfl2ke6.1qw2es2z.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 299,
+        "domain": "00c85b59-4f3f-4376-8b3d-de07cf5249d3.htmlcomponentservice.com",
+        "rule": "||00c85b59-4f3f-4376-8b3d-de07cf5249d3.htmlcomponentservice.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: UUID-like"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 300,
+        "domain": "00ca83f5-b7df-418d-ace5-e303a7e99cdf.htmlcomponentservice.com",
+        "rule": "||00ca83f5-b7df-418d-ace5-e303a7e99cdf.htmlcomponentservice.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: UUID-like"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 303,
+        "domain": "00d94bf3262617342.tempsite.link",
+        "rule": "||00d94bf3262617342.tempsite.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 309,
+        "domain": "00ef5c18-e78b-489b-b945-c2a2a70d0f9e-00-2ers01t3lx3b0.spock.replit.dev",
+        "rule": "||00ef5c18-e78b-489b-b945-c2a2a70d0f9e-00-2ers01t3lx3b0.spock.replit.dev^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: UUID-like"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 318,
+        "domain": "00jmtol5tlmgpaxz4douvgbsnvj6v4eygpaxz4douvg-com.cf",
+        "rule": "||00jmtol5tlmgpaxz4douvgbsnvj6v4eygpaxz4douvg-com.cf^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 326,
+        "domain": "00nf1c1ae.top",
+        "rule": "||00nf1c1ae.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 328,
+        "domain": "00o-mobility535554.info",
+        "rule": "||00o-mobility535554.info^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 330,
+        "domain": "00pcz4dy1shpwti-1321712386.cos.na-siliconvalley.myqcloud.com",
+        "rule": "||00pcz4dy1shpwti-1321712386.cos.na-siliconvalley.myqcloud.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 350,
+        "domain": "01-spk-veri7.xyz",
+        "rule": "||01-spk-veri7.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 353,
+        "domain": "01001015122344.ml",
+        "rule": "||01001015122344.ml^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 354,
+        "domain": "01001015122346.ml",
+        "rule": "||01001015122346.ml^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 355,
+        "domain": "0100238504.mexigas.com.mx",
+        "rule": "||0100238504.mexigas.com.mx^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 357,
+        "domain": "0101010scotia-rst.agency",
+        "rule": "||0101010scotia-rst.agency^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 358,
+        "domain": "010109434-111.duckdns.org",
+        "rule": "||010109434-111.duckdns.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 359,
+        "domain": "01025.yimumon.xyz",
+        "rule": "||01025.yimumon.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 360,
+        "domain": "0103659.com",
+        "rule": "||0103659.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 361,
+        "domain": "010365vip.com",
+        "rule": "||010365vip.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 362,
+        "domain": "01064223613.com",
+        "rule": "||01064223613.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 363,
+        "domain": "0109626668.cn",
+        "rule": "||0109626668.cn^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 371,
+        "domain": "011111111.000webhostapp.com",
+        "rule": "||011111111.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 372,
+        "domain": "01112450.duckdns.org",
+        "rule": "||01112450.duckdns.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 373,
+        "domain": "01115484188.000webhostapp.com",
+        "rule": "||01115484188.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 374,
+        "domain": "0112254598920073980495234.com",
+        "rule": "||0112254598920073980495234.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 375,
+        "domain": "0113985d.9jyji2.shop",
+        "rule": "||0113985d.9jyji2.shop^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 376,
+        "domain": "011511.xyz",
+        "rule": "||011511.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 378,
+        "domain": "01175421.00agt8.shop",
+        "rule": "||01175421.00agt8.shop^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 379,
+        "domain": "01188086.gstwu-eu-hey.com.cn",
+        "rule": "||01188086.gstwu-eu-hey.com.cn^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 380,
+        "domain": "012-109354.weeblysite.com",
+        "rule": "||012-109354.weeblysite.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 381,
+        "domain": "01213300.atwebpages.com",
+        "rule": "||01213300.atwebpages.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 385,
+        "domain": "0124985675.cf",
+        "rule": "||0124985675.cf^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 386,
+        "domain": "012567-24.000webhostapp.com",
+        "rule": "||012567-24.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 387,
+        "domain": "0126365.com",
+        "rule": "||0126365.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 388,
+        "domain": "012678.xyz",
+        "rule": "||012678.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 389,
+        "domain": "012833215698.work.gd",
+        "rule": "||012833215698.work.gd^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 390,
+        "domain": "0128410.duckdns.org",
+        "rule": "||0128410.duckdns.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 391,
+        "domain": "012841010.duckdns.org",
+        "rule": "||012841010.duckdns.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 392,
+        "domain": "012841011.duckdns.org",
+        "rule": "||012841011.duckdns.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 393,
+        "domain": "012841012.duckdns.org",
+        "rule": "||012841012.duckdns.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 394,
+        "domain": "012841013.duckdns.org",
+        "rule": "||012841013.duckdns.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 398,
+        "domain": "01368b10-57e4-4138-acc3-01373134d221.usrfiles.com",
+        "rule": "||01368b10-57e4-4138-acc3-01373134d221.usrfiles.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 401,
+        "domain": "01417282-9677-428f-8b57-11e362547314.id.repl.co",
+        "rule": "||01417282-9677-428f-8b57-11e362547314.id.repl.co^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 402,
+        "domain": "0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co",
+        "rule": "||0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 403,
+        "domain": "0145879-pagehelping.000webhostapp.com",
+        "rule": "||0145879-pagehelping.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 405,
+        "domain": "015481847436324436677560049.com",
+        "rule": "||015481847436324436677560049.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 407,
+        "domain": "015595384.com",
+        "rule": "||015595384.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 412,
+        "domain": "016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev",
+        "rule": "||016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: UUID-like"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 413,
+        "domain": "0171500061.mexigas.com.mx",
+        "rule": "||0171500061.mexigas.com.mx^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 414,
+        "domain": "0172844bks.7m.pl",
+        "rule": "||0172844bks.7m.pl^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 416,
+        "domain": "017795384.com",
+        "rule": "||017795384.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 418,
+        "domain": "01793008-2b5e-4bbb-a429-3ff58af1c013.htmlcomponentservice.com",
+        "rule": "||01793008-2b5e-4bbb-a429-3ff58af1c013.htmlcomponentservice.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 420,
+        "domain": "01837643.filesusr.com",
+        "rule": "||01837643.filesusr.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 421,
+        "domain": "0184893-904.com",
+        "rule": "||0184893-904.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 422,
+        "domain": "018740-recoverpage.000webhostapp.com",
+        "rule": "||018740-recoverpage.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 423,
+        "domain": "01888f90-c5de-40b5-aa35-28082cf97171.htmlcomponentservice.com",
+        "rule": "||01888f90-c5de-40b5-aa35-28082cf97171.htmlcomponentservice.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: UUID-like"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 425,
+        "domain": "018f3b18cc2962586.temporary.link",
+        "rule": "||018f3b18cc2962586.temporary.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 427,
+        "domain": "01928758273.atwebpages.com",
+        "rule": "||01928758273.atwebpages.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 440,
+        "domain": "01db3205053754908.temporary.link",
+        "rule": "||01db3205053754908.temporary.link^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 443,
+        "domain": "01e913e6-93dc-43b6-b2a3-cee1b5dc0ea4.selstorage.ru",
+        "rule": "||01e913e6-93dc-43b6-b2a3-cee1b5dc0ea4.selstorage.ru^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: UUID-like"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 452,
+        "domain": "01newlyrecomend-1318015313.cos.na-siliconvalley.myqcloud.com",
+        "rule": "||01newlyrecomend-1318015313.cos.na-siliconvalley.myqcloud.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 491,
+        "domain": "02-u-4528172.com",
+        "rule": "||02-u-4528172.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 504,
+        "domain": "020101.000webhostapp.com",
+        "rule": "||020101.000webhostapp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 505,
+        "domain": "02012348.com",
+        "rule": "||02012348.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 507,
+        "domain": "0203659.com",
+        "rule": "||0203659.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 512,
+        "domain": "021034662015959.kitlanchesisa.com.br",
+        "rule": "||021034662015959.kitlanchesisa.com.br^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 514,
+        "domain": "0215412pageaccountserve23-confirm.start.page",
+        "rule": "||0215412pageaccountserve23-confirm.start.page^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 518,
+        "domain": "02221203252120.duckdns.org",
+        "rule": "||02221203252120.duckdns.org^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 519,
+        "domain": "022994.com",
+        "rule": "||022994.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 521,
+        "domain": "023-102613t271.weeblysite.com",
+        "rule": "||023-102613t271.weeblysite.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 522,
+        "domain": "0233659.com",
+        "rule": "||0233659.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 523,
+        "domain": "02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com",
+        "rule": "||02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 525,
+        "domain": "02402300601394318587048.jamb2022.co",
+        "rule": "||02402300601394318587048.jamb2022.co^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 526,
+        "domain": "0242523456345.3456945020012.repl.co",
+        "rule": "||0242523456345.3456945020012.repl.co^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 527,
+        "domain": "024goeqwpoewla.ga",
+        "rule": "||024goeqwpoewla.ga^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 529,
+        "domain": "025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com",
+        "rule": "||025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 530,
+        "domain": "025662nhhh.hyperphp.com",
+        "rule": "||025662nhhh.hyperphp.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 531,
+        "domain": "025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com",
+        "rule": "||025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 534,
+        "domain": "0258369.com",
+        "rule": "||0258369.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 536,
+        "domain": "025g.top",
+        "rule": "||025g.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 54,
+      "domain": "acbp0020171456.page.tl",
+      "rule": "||acbp0020171456.page.tl^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 56,
+      "domain": "aeros02.tk",
+      "rule": "||aeros02.tk^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 57,
+      "domain": "aeros12.tk",
+      "rule": "||aeros12.tk^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 62,
+      "domain": "ashgrrwt.click",
+      "rule": "||ashgrrwt.click^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 64,
+      "domain": "bafybeidravcab5p3acvthxtwosm4rfpl4yypwwm52s7sazgxaezfzn5xn4.ipfs.infura-ipfs.io",
+      "rule": "||bafybeidravcab5p3acvthxtwosm4rfpl4yypwwm52s7sazgxaezfzn5xn4.ipfs.infura-ipfs.io^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 79,
+      "domain": "broadcastt.xyz",
+      "rule": "||broadcastt.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 95,
+      "domain": "coinpirate.cf",
+      "rule": "||coinpirate.cf^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 123,
+      "domain": "flightsy.win",
+      "rule": "||flightsy.win^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 130,
+      "domain": "go.megabanners.cf",
+      "rule": "||go.megabanners.cf^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 134,
+      "domain": "hashing.win",
+      "rule": "||hashing.win^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 135,
+      "domain": "hemnes.win",
+      "rule": "||hemnes.win^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 139,
+      "domain": "ijfcm7bu6ocerxsfq56ka3dtdanunyp4ytwk745b54agtravj2wr2qqd.onion.pet",
+      "rule": "||ijfcm7bu6ocerxsfq56ka3dtdanunyp4ytwk745b54agtravj2wr2qqd.onion.pet^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 146,
+      "domain": "lags.win",
+      "rule": "||lags.win^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 168,
+      "domain": "mutuza.win",
+      "rule": "||mutuza.win^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 187,
+      "domain": "premiumstats.xyz",
+      "rule": "||premiumstats.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 209,
+      "domain": "sunnimiq.cf",
+      "rule": "||sunnimiq.cf^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 210,
+      "domain": "swiftmining.win",
+      "rule": "||swiftmining.win^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/cryptojacking.txt",
+      "line": 231,
+      "domain": "wordc.ga",
+      "rule": "||wordc.ga^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 24,
+      "domain": "111101111.ru",
+      "rule": "||111101111.ru^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 31,
+      "domain": "1827897262.v.123pan.cn",
+      "rule": "||1827897262.v.123pan.cn^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 38,
+      "domain": "99194034-96-20180108171507.webstarterz.com",
+      "rule": "||99194034-96-20180108171507.webstarterz.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 79,
+      "domain": "bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link",
+      "rule": "||bafybeibfoyi7ruuyoncarf4xr55qa3lthsjjjgrktk4ia4z3upesawb4ry.ipfs.w3s.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 80,
+      "domain": "bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link",
+      "rule": "||bafybeibqcivjhwg2msil5g62did64uhtptlf7epidbrat4gexerzfv5mmq.ipfs.dweb.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 81,
+      "domain": "bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link",
+      "rule": "||bafybeiccl6irsru52xsyiuy4pqlitflw4f57xovkfpk5w2wnhtmeaqpjuy.ipfs.dweb.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 87,
+      "domain": "bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link",
+      "rule": "||bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 88,
+      "domain": "bafybeidvf6tytrspkd4wnvxzs23m3kjr6bfvgszbfwybmmcosl4rrhvuo4.ipfs.dweb.link",
+      "rule": "||bafybeidvf6tytrspkd4wnvxzs23m3kjr6bfvgszbfwybmmcosl4rrhvuo4.ipfs.dweb.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 89,
+      "domain": "bafybeidvgy76m4r347tpqg6plr3ac2p7o5bpcluicawc25nuh7mowtkssy.ipfs.dweb.link",
+      "rule": "||bafybeidvgy76m4r347tpqg6plr3ac2p7o5bpcluicawc25nuh7mowtkssy.ipfs.dweb.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 90,
+      "domain": "bafybeieq7tctzxkqidqpq4fjvtznbupqrpo2w4n4lfmzksehei4dinilii.ipfs.w3s.link",
+      "rule": "||bafybeieq7tctzxkqidqpq4fjvtznbupqrpo2w4n4lfmzksehei4dinilii.ipfs.w3s.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 91,
+      "domain": "bafybeiffpkay6l7heq55epccneb563p5chjzclxnso3vkozyorphlz6ana.ipfs.w3s.link",
+      "rule": "||bafybeiffpkay6l7heq55epccneb563p5chjzclxnso3vkozyorphlz6ana.ipfs.w3s.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 92,
+      "domain": "bafybeihamvbzrm2tsifa4s7xruhfnsgnkzgtk2jqwj6cwgmdxj4wqe5lm4.ipfs.dweb.link",
+      "rule": "||bafybeihamvbzrm2tsifa4s7xruhfnsgnkzgtk2jqwj6cwgmdxj4wqe5lm4.ipfs.dweb.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 100,
+      "domain": "bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com",
+      "rule": "||bj5y6-0f-9h4-9fgg4-1324992141.cos.ap-bangkok.myqcloud.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 104,
+      "domain": "bnet-api.playm8ru.win",
+      "rule": "||bnet-api.playm8ru.win^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 105,
+      "domain": "bnet.playm8ru.win",
+      "rule": "||bnet.playm8ru.win^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 117,
+      "domain": "c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru",
+      "rule": "||c9791c08-f1e4-4402-9510-d04c13c50ea3.selstorage.ru^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: UUID-like"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 125,
+      "domain": "cdn-10049480.file.myqcloud.com",
+      "rule": "||cdn-10049480.file.myqcloud.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 128,
+      "domain": "cdn.novoline.top",
+      "rule": "||cdn.novoline.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 260,
+      "domain": "f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com",
+      "rule": "||f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 343,
+      "domain": "ia802801.us.archive.org",
+      "rule": "||ia802801.us.archive.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 359,
+      "domain": "j-0-09g-9bh-h-ggf-1324992141.cos.ap-bangkok.myqcloud.com",
+      "rule": "||j-0-09g-9bh-h-ggf-1324992141.cos.ap-bangkok.myqcloud.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 380,
+      "domain": "leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com",
+      "rule": "||leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 412,
+      "domain": "mail.ssadownload.top",
+      "rule": "||mail.ssadownload.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 470,
+      "domain": "ofice365.github.io",
+      "rule": "||ofice365.github.io^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 42,
+      "domain": "0.sciiaawuroyagu9524.workers.dev",
+      "rule": "||0.sciiaawuroyagu9524.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 44,
+      "domain": "0.vsxmfkrvoipzs67.workers.dev",
+      "rule": "||0.vsxmfkrvoipzs67.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 45,
+      "domain": "0.xyasrhsju3235.workers.dev",
+      "rule": "||0.xyasrhsju3235.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 50,
+      "domain": "000-7yt65t564656ythygy.000webhostapp.com",
+      "rule": "||000-7yt65t564656ythygy.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 55,
+      "domain": "0000000000000000000000000.findyourjacket.com",
+      "rule": "||0000000000000000000000000.findyourjacket.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 56,
+      "domain": "00000000000000000000000000000000000000000.xyz",
+      "rule": "||00000000000000000000000000000000000000000.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 57,
+      "domain": "00000000000000000000000000000000000000dfjjjhv.000webhostapp.com",
+      "rule": "||00000000000000000000000000000000000000dfjjjhv.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 58,
+      "domain": "00000000000000000000000056000005-102299.weeblysite.com",
+      "rule": "||00000000000000000000000056000005-102299.weeblysite.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 59,
+      "domain": "000000000000000000gg.000webhostapp.com",
+      "rule": "||000000000000000000gg.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 60,
+      "domain": "00000000000000000update.emy.ba",
+      "rule": "||00000000000000000update.emy.ba^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 61,
+      "domain": "000000000000000ooooo.000webhostapp.com",
+      "rule": "||000000000000000ooooo.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 62,
+      "domain": "0000000000c0.x9xcax2a.workers.dev",
+      "rule": "||0000000000c0.x9xcax2a.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 67,
+      "domain": "00000000920.us-south.cf.appdomain.cloud",
+      "rule": "||00000000920.us-south.cf.appdomain.cloud^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 68,
+      "domain": "0000000095.godaddysites.com",
+      "rule": "||0000000095.godaddysites.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 69,
+      "domain": "00000002.c1.biz",
+      "rule": "||00000002.c1.biz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 70,
+      "domain": "0000000666666.000webhostapp.com",
+      "rule": "||0000000666666.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 71,
+      "domain": "0000000wer.000webhostapp.com",
+      "rule": "||0000000wer.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 72,
+      "domain": "000000541840000.co.vu",
+      "rule": "||000000541840000.co.vu^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 73,
+      "domain": "0000006738.vercel.app",
+      "rule": "||0000006738.vercel.app^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (vercel.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 74,
+      "domain": "000000788-66666666.000webhostapp.com",
+      "rule": "||000000788-66666666.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 75,
+      "domain": "00000078uu7u8790090900.000webhostapp.com",
+      "rule": "||00000078uu7u8790090900.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 76,
+      "domain": "000001010010104106.cloud",
+      "rule": "||000001010010104106.cloud^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 77,
+      "domain": "000002456171.ml",
+      "rule": "||000002456171.ml^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 78,
+      "domain": "000002456180.ml",
+      "rule": "||000002456180.ml^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 79,
+      "domain": "000003.000000000013.repl.co",
+      "rule": "||000003.000000000013.repl.co^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 80,
+      "domain": "0000091193.xyz",
+      "rule": "||0000091193.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 84,
+      "domain": "00001062.com",
+      "rule": "||00001062.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 85,
+      "domain": "000012151000.co.vu",
+      "rule": "||000012151000.co.vu^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 86,
+      "domain": "000025123.com",
+      "rule": "||000025123.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 88,
+      "domain": "000066.godaddysites.com",
+      "rule": "||000066.godaddysites.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 89,
+      "domain": "0000666688887777.000webhostapp.com",
+      "rule": "||0000666688887777.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 91,
+      "domain": "000083.godaddysites.com",
+      "rule": "||000083.godaddysites.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 96,
+      "domain": "0000qwew341432edxzt.000webhostapp.com",
+      "rule": "||0000qwew341432edxzt.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 97,
+      "domain": "0001.353527440.workers.dev",
+      "rule": "||0001.353527440.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 99,
+      "domain": "000111.pages.net.br",
+      "rule": "||000111.pages.net.br^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 100,
+      "domain": "000133210.000webhostapp.com",
+      "rule": "||000133210.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 101,
+      "domain": "000193.azurewebsites.net",
+      "rule": "||000193.azurewebsites.net^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (azurewebsites.net) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 105,
+      "domain": "000220.000webhostapp.com",
+      "rule": "||000220.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 106,
+      "domain": "000247aa8f117a13af2094b691ab1b3e.serveo.net",
+      "rule": "||000247aa8f117a13af2094b691ab1b3e.serveo.net^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 108,
+      "domain": "000343594567126312342754pgsbsnsswrng.000webhostapp.com",
+      "rule": "||000343594567126312342754pgsbsnsswrng.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 110,
+      "domain": "0006.mediafirew.xyz",
+      "rule": "||0006.mediafirew.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 114,
+      "domain": "000667993.codepen.website",
+      "rule": "||000667993.codepen.website^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 115,
+      "domain": "000690750.deployed.codepen.website",
+      "rule": "||000690750.deployed.codepen.website^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 116,
+      "domain": "000717-coinbase.com",
+      "rule": "||000717-coinbase.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 117,
+      "domain": "0007854.atwebpages.com",
+      "rule": "||0007854.atwebpages.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 118,
+      "domain": "0007933738373.myportfolio.com",
+      "rule": "||0007933738373.myportfolio.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 119,
+      "domain": "000811893962007154932393170597959432.hanefra7bikiemta.com",
+      "rule": "||000811893962007154932393170597959432.hanefra7bikiemta.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 120,
+      "domain": "000838774343.000webhostapp.com",
+      "rule": "||000838774343.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 121,
+      "domain": "00099881111.000webhostapp.com",
+      "rule": "||00099881111.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 124,
+      "domain": "000e-239f-23ea3-yah100-8ta1xb1rs33.netlify.app",
+      "rule": "||000e-239f-23ea3-yah100-8ta1xb1rs33.netlify.app^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 128,
+      "domain": "000int-5403945int.xyz",
+      "rule": "||000int-5403945int.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 160,
+      "domain": "001.1614214972.workers.dev",
+      "rule": "||001.1614214972.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 161,
+      "domain": "001.9zhmn1k5.workers.dev",
+      "rule": "||001.9zhmn1k5.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 162,
+      "domain": "001.gamecc.workers.dev",
+      "rule": "||001.gamecc.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 163,
+      "domain": "00100.zzzly0925.workers.dev",
+      "rule": "||00100.zzzly0925.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 164,
+      "domain": "00100601120140002.cf",
+      "rule": "||00100601120140002.cf^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 165,
+      "domain": "00100601120140009.ml",
+      "rule": "||00100601120140009.ml^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 166,
+      "domain": "00104.github.io",
+      "rule": "||00104.github.io^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 167,
+      "domain": "00110000.com",
+      "rule": "||00110000.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 168,
+      "domain": "001107018.studentserver.com.au",
+      "rule": "||001107018.studentserver.com.au^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 170,
+      "domain": "001114.itabankk.repl.co",
+      "rule": "||001114.itabankk.repl.co^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 171,
+      "domain": "001122102120.duckdns.org",
+      "rule": "||001122102120.duckdns.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 172,
+      "domain": "00112378.com",
+      "rule": "||00112378.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 174,
+      "domain": "0012-107647.weeblysite.com",
+      "rule": "||0012-107647.weeblysite.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 176,
+      "domain": "0013009.com",
+      "rule": "||0013009.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 177,
+      "domain": "001420990998183-dot-wetransfer-auth-file-342.appspot.com",
+      "rule": "||001420990998183-dot-wetransfer-auth-file-342.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 178,
+      "domain": "0014555.000webhostapp.com",
+      "rule": "||0014555.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 180,
+      "domain": "0016948.bancoteafirma.repl.co",
+      "rule": "||0016948.bancoteafirma.repl.co^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 181,
+      "domain": "00169763258316485.eu-gb.cf.appdomain.cloud",
+      "rule": "||00169763258316485.eu-gb.cf.appdomain.cloud^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 184,
+      "domain": "001892.com",
+      "rule": "||001892.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 185,
+      "domain": "001983878188731stea8a1a0.myclickfunnels.com",
+      "rule": "||001983878188731stea8a1a0.myclickfunnels.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 191,
+      "domain": "001madhankumar.github.io",
+      "rule": "||001madhankumar.github.io^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 197,
+      "domain": "002.195533.xyz",
+      "rule": "||002.195533.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 200,
+      "domain": "002321.cn",
+      "rule": "||002321.cn^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 201,
+      "domain": "00272781hubpointmicrosoft.myportfolio.com",
+      "rule": "||00272781hubpointmicrosoft.myportfolio.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 208,
+      "domain": "002y.github.io",
+      "rule": "||002y.github.io^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 210,
+      "domain": "0033.top",
+      "rule": "||0033.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 211,
+      "domain": "003429a9-b7ed-4689-89f.internalaccess.info",
+      "rule": "||003429a9-b7ed-4689-89f.internalaccess.info^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 212,
+      "domain": "003455-1318019027.cos.eu-frankfurt.myqcloud.com",
+      "rule": "||003455-1318019027.cos.eu-frankfurt.myqcloud.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 213,
+      "domain": "003467.cc",
+      "rule": "||003467.cc^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 214,
+      "domain": "003d6db553fcd8ae426bf76f121e0878-dot-cloud-365-000.el.r.appspot.com",
+      "rule": "||003d6db553fcd8ae426bf76f121e0878-dot-cloud-365-000.el.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 215,
+      "domain": "003mail.github.io",
+      "rule": "||003mail.github.io^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 218,
+      "domain": "004240331.top",
+      "rule": "||004240331.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 219,
+      "domain": "004261200-conf1rm.000webhostapp.com",
+      "rule": "||004261200-conf1rm.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 221,
+      "domain": "00439632890395435423.com",
+      "rule": "||00439632890395435423.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 223,
+      "domain": "004605.com",
+      "rule": "||004605.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 224,
+      "domain": "004767666634154.litoralsulpremium.com.br",
+      "rule": "||004767666634154.litoralsulpremium.com.br^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 227,
+      "domain": "004sba90aolsecure00e0ios0sign0i0in8e0.netlify.app",
+      "rule": "||004sba90aolsecure00e0ios0sign0i0in8e0.netlify.app^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 228,
+      "domain": "005-user.anzhiyu.workers.dev",
+      "rule": "||005-user.anzhiyu.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 229,
+      "domain": "00514cdeadd561c329964c042008341e-dot-solidstar-improts.uk.r.appspot.com",
+      "rule": "||00514cdeadd561c329964c042008341e-dot-solidstar-improts.uk.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 230,
+      "domain": "00531688.0fhsdakffirer.org.cn",
+      "rule": "||00531688.0fhsdakffirer.org.cn^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 231,
+      "domain": "005350049846275.nikkgpkvzv.957733539760618.avpcwvidxgiu.williamhnelson.org",
+      "rule": "||005350049846275.nikkgpkvzv.957733539760618.avpcwvidxgiu.williamhnelson.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 232,
+      "domain": "0055.top",
+      "rule": "||0055.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 233,
+      "domain": "0057888.com",
+      "rule": "||0057888.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 235,
+      "domain": "005eb3e6f691652868ee9d5b5820e020-dot-gle9392420309493993.rj.r.appspot.com",
+      "rule": "||005eb3e6f691652868ee9d5b5820e020-dot-gle9392420309493993.rj.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 240,
+      "domain": "00600501450003000.cf",
+      "rule": "||00600501450003000.cf^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 241,
+      "domain": "00610eb3e0ff28bce54e44ddfb2aa544-dot-gle9392420309493993.rj.r.appspot.com",
+      "rule": "||00610eb3e0ff28bce54e44ddfb2aa544-dot-gle9392420309493993.rj.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 242,
+      "domain": "006161.com",
+      "rule": "||006161.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 243,
+      "domain": "006186.alertbyte.com",
+      "rule": "||006186.alertbyte.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 244,
+      "domain": "0064852575383277.eu-gb.cf.appdomain.cloud",
+      "rule": "||0064852575383277.eu-gb.cf.appdomain.cloud^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 246,
+      "domain": "006700.xyz",
+      "rule": "||006700.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 247,
+      "domain": "0067786563423xcerrvg.000webhostapp.com",
+      "rule": "||0067786563423xcerrvg.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 249,
+      "domain": "006t-rshyktuaerhetjr6yk7tl6tmyrntbref.vercel.app",
+      "rule": "||006t-rshyktuaerhetjr6yk7tl6tmyrntbref.vercel.app^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (vercel.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 250,
+      "domain": "0070e26e-ac97-4dd9-a7c9-08cb4d2b1678.id.repl.co",
+      "rule": "||0070e26e-ac97-4dd9-a7c9-08cb4d2b1678.id.repl.co^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: UUID-like"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 253,
+      "domain": "007168-00.000webhostapp.com",
+      "rule": "||007168-00.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 254,
+      "domain": "007595d4969707fd4a3543145addf49b-dot-gle9392420309493993.rj.r.appspot.com",
+      "rule": "||007595d4969707fd4a3543145addf49b-dot-gle9392420309493993.rj.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 255,
+      "domain": "0076678.com",
+      "rule": "||0076678.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 258,
+      "domain": "007wa.xyz",
+      "rule": "||007wa.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 260,
+      "domain": "008008.cc",
+      "rule": "||008008.cc^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 261,
+      "domain": "008009989987890007.co.vu",
+      "rule": "||008009989987890007.co.vu^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 263,
+      "domain": "00828.liye19960713.workers.dev",
+      "rule": "||00828.liye19960713.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 265,
+      "domain": "008491133.cloudns.nz",
+      "rule": "||008491133.cloudns.nz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 268,
+      "domain": "008753331120.com",
+      "rule": "||008753331120.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 271,
+      "domain": "008h-7yughbesfdt87y8useifiuhsjkg.vercel.app",
+      "rule": "||008h-7yughbesfdt87y8useifiuhsjkg.vercel.app^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (vercel.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 274,
+      "domain": "009190-securepage.000webhostapp.com",
+      "rule": "||009190-securepage.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 275,
+      "domain": "0094059000293htjkm.000webhostapp.com",
+      "rule": "||0094059000293htjkm.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 277,
+      "domain": "009812kivip.top",
+      "rule": "||009812kivip.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 281,
+      "domain": "0099887.com",
+      "rule": "||0099887.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 282,
+      "domain": "009988r3sucursalactivaciones.brizy.site",
+      "rule": "||009988r3sucursalactivaciones.brizy.site^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 284,
+      "domain": "009bb11405fa5b694a9f9915bc2acf38-dot-gle9392420309493993.rj.r.appspot.com",
+      "rule": "||009bb11405fa5b694a9f9915bc2acf38-dot-gle9392420309493993.rj.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 285,
+      "domain": "009bf6e1.fei124970841.cn",
+      "rule": "||009bf6e1.fei124970841.cn^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 291,
+      "domain": "00as4h7vjwum3i.53244ds.xyz",
+      "rule": "||00as4h7vjwum3i.53244ds.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 296,
+      "domain": "00bbfl2ke6.1qw2es2z.xyz",
+      "rule": "||00bbfl2ke6.1qw2es2z.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 299,
+      "domain": "00c85b59-4f3f-4376-8b3d-de07cf5249d3.htmlcomponentservice.com",
+      "rule": "||00c85b59-4f3f-4376-8b3d-de07cf5249d3.htmlcomponentservice.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: UUID-like"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 300,
+      "domain": "00ca83f5-b7df-418d-ace5-e303a7e99cdf.htmlcomponentservice.com",
+      "rule": "||00ca83f5-b7df-418d-ace5-e303a7e99cdf.htmlcomponentservice.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: UUID-like"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 303,
+      "domain": "00d94bf3262617342.tempsite.link",
+      "rule": "||00d94bf3262617342.tempsite.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 307,
+      "domain": "00e132a99407d8e60c6b0895577e2d25-dot-gle9392420309493993.rj.r.appspot.com",
+      "rule": "||00e132a99407d8e60c6b0895577e2d25-dot-gle9392420309493993.rj.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 308,
+      "domain": "00e94yahoouserid092e-apra02ios16win11.netlify.app",
+      "rule": "||00e94yahoouserid092e-apra02ios16win11.netlify.app^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 309,
+      "domain": "00ef5c18-e78b-489b-b945-c2a2a70d0f9e-00-2ers01t3lx3b0.spock.replit.dev",
+      "rule": "||00ef5c18-e78b-489b-b945-c2a2a70d0f9e-00-2ers01t3lx3b0.spock.replit.dev^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: UUID-like"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 310,
+      "domain": "00ei0aol023sba03esecure0i0verify0forg.netlify.app",
+      "rule": "||00ei0aol023sba03esecure0i0verify0forg.netlify.app^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 312,
+      "domain": "00f28a5a21c09720affa474c7b4f134c-dot-gle9392420309493993.rj.r.appspot.com",
+      "rule": "||00f28a5a21c09720affa474c7b4f134c-dot-gle9392420309493993.rj.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 318,
+      "domain": "00jmtol5tlmgpaxz4douvgbsnvj6v4eygpaxz4douvg-com.cf",
+      "rule": "||00jmtol5tlmgpaxz4douvgbsnvj6v4eygpaxz4douvg-com.cf^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 326,
+      "domain": "00nf1c1ae.top",
+      "rule": "||00nf1c1ae.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 328,
+      "domain": "00o-mobility535554.info",
+      "rule": "||00o-mobility535554.info^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 330,
+      "domain": "00pcz4dy1shpwti-1321712386.cos.na-siliconvalley.myqcloud.com",
+      "rule": "||00pcz4dy1shpwti-1321712386.cos.na-siliconvalley.myqcloud.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 344,
+      "domain": "00web.glitch.me",
+      "rule": "||00web.glitch.me^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (glitch.me) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 345,
+      "domain": "00wellsfarg.azurewebsites.net",
+      "rule": "||00wellsfarg.azurewebsites.net^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (azurewebsites.net) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 346,
+      "domain": "00wetransfer-sharedfiles.netlify.app",
+      "rule": "||00wetransfer-sharedfiles.netlify.app^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 350,
+      "domain": "01-spk-veri7.xyz",
+      "rule": "||01-spk-veri7.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 353,
+      "domain": "01001015122344.ml",
+      "rule": "||01001015122344.ml^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 354,
+      "domain": "01001015122346.ml",
+      "rule": "||01001015122346.ml^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 355,
+      "domain": "0100238504.mexigas.com.mx",
+      "rule": "||0100238504.mexigas.com.mx^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 356,
+      "domain": "010101010011010093893930101.azurewebsites.net",
+      "rule": "||010101010011010093893930101.azurewebsites.net^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (azurewebsites.net) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 357,
+      "domain": "0101010scotia-rst.agency",
+      "rule": "||0101010scotia-rst.agency^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 358,
+      "domain": "010109434-111.duckdns.org",
+      "rule": "||010109434-111.duckdns.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 359,
+      "domain": "01025.yimumon.xyz",
+      "rule": "||01025.yimumon.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 360,
+      "domain": "0103659.com",
+      "rule": "||0103659.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 361,
+      "domain": "010365vip.com",
+      "rule": "||010365vip.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 362,
+      "domain": "01064223613.com",
+      "rule": "||01064223613.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 363,
+      "domain": "0109626668.cn",
+      "rule": "||0109626668.cn^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 368,
+      "domain": "011-two.vercel.app",
+      "rule": "||011-two.vercel.app^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (vercel.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 369,
+      "domain": "011.358761202.workers.dev",
+      "rule": "||011.358761202.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 370,
+      "domain": "01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com",
+      "rule": "||01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 371,
+      "domain": "011111111.000webhostapp.com",
+      "rule": "||011111111.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 372,
+      "domain": "01112450.duckdns.org",
+      "rule": "||01112450.duckdns.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 373,
+      "domain": "01115484188.000webhostapp.com",
+      "rule": "||01115484188.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 374,
+      "domain": "0112254598920073980495234.com",
+      "rule": "||0112254598920073980495234.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 375,
+      "domain": "0113985d.9jyji2.shop",
+      "rule": "||0113985d.9jyji2.shop^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 376,
+      "domain": "011511.xyz",
+      "rule": "||011511.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 378,
+      "domain": "01175421.00agt8.shop",
+      "rule": "||01175421.00agt8.shop^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 379,
+      "domain": "01188086.gstwu-eu-hey.com.cn",
+      "rule": "||01188086.gstwu-eu-hey.com.cn^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 380,
+      "domain": "012-109354.weeblysite.com",
+      "rule": "||012-109354.weeblysite.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 381,
+      "domain": "01213300.atwebpages.com",
+      "rule": "||01213300.atwebpages.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 385,
+      "domain": "0124985675.cf",
+      "rule": "||0124985675.cf^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 386,
+      "domain": "012567-24.000webhostapp.com",
+      "rule": "||012567-24.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 387,
+      "domain": "0126365.com",
+      "rule": "||0126365.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 388,
+      "domain": "012678.xyz",
+      "rule": "||012678.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 389,
+      "domain": "012833215698.work.gd",
+      "rule": "||012833215698.work.gd^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 390,
+      "domain": "0128410.duckdns.org",
+      "rule": "||0128410.duckdns.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 391,
+      "domain": "012841010.duckdns.org",
+      "rule": "||012841010.duckdns.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 392,
+      "domain": "012841011.duckdns.org",
+      "rule": "||012841011.duckdns.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 393,
+      "domain": "012841012.duckdns.org",
+      "rule": "||012841012.duckdns.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 394,
+      "domain": "012841013.duckdns.org",
+      "rule": "||012841013.duckdns.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 398,
+      "domain": "01368b10-57e4-4138-acc3-01373134d221.usrfiles.com",
+      "rule": "||01368b10-57e4-4138-acc3-01373134d221.usrfiles.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 401,
+      "domain": "01417282-9677-428f-8b57-11e362547314.id.repl.co",
+      "rule": "||01417282-9677-428f-8b57-11e362547314.id.repl.co^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 402,
+      "domain": "0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co",
+      "rule": "||0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 403,
+      "domain": "0145879-pagehelping.000webhostapp.com",
+      "rule": "||0145879-pagehelping.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 405,
+      "domain": "015481847436324436677560049.com",
+      "rule": "||015481847436324436677560049.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 407,
+      "domain": "015595384.com",
+      "rule": "||015595384.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 410,
+      "domain": "016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com",
+      "rule": "||016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 411,
+      "domain": "016614590390149677279078.my-project-45bb.ey.r.appspot.com",
+      "rule": "||016614590390149677279078.my-project-45bb.ey.r.appspot.com^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 412,
+      "domain": "016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev",
+      "rule": "||016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: UUID-like"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 413,
+      "domain": "0171500061.mexigas.com.mx",
+      "rule": "||0171500061.mexigas.com.mx^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 414,
+      "domain": "0172844bks.7m.pl",
+      "rule": "||0172844bks.7m.pl^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 415,
+      "domain": "0177.datingg-voice.workers.dev",
+      "rule": "||0177.datingg-voice.workers.dev^",
+      "category": "HOSTING",
+      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 416,
+      "domain": "017795384.com",
+      "rule": "||017795384.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 418,
+      "domain": "01793008-2b5e-4bbb-a429-3ff58af1c013.htmlcomponentservice.com",
+      "rule": "||01793008-2b5e-4bbb-a429-3ff58af1c013.htmlcomponentservice.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 420,
+      "domain": "01837643.filesusr.com",
+      "rule": "||01837643.filesusr.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 421,
+      "domain": "0184893-904.com",
+      "rule": "||0184893-904.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 422,
+      "domain": "018740-recoverpage.000webhostapp.com",
+      "rule": "||018740-recoverpage.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 423,
+      "domain": "01888f90-c5de-40b5-aa35-28082cf97171.htmlcomponentservice.com",
+      "rule": "||01888f90-c5de-40b5-aa35-28082cf97171.htmlcomponentservice.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: UUID-like"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 425,
+      "domain": "018f3b18cc2962586.temporary.link",
+      "rule": "||018f3b18cc2962586.temporary.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 427,
+      "domain": "01928758273.atwebpages.com",
+      "rule": "||01928758273.atwebpages.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 440,
+      "domain": "01db3205053754908.temporary.link",
+      "rule": "||01db3205053754908.temporary.link^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 443,
+      "domain": "01e913e6-93dc-43b6-b2a3-cee1b5dc0ea4.selstorage.ru",
+      "rule": "||01e913e6-93dc-43b6-b2a3-cee1b5dc0ea4.selstorage.ru^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: UUID-like"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 452,
+      "domain": "01newlyrecomend-1318015313.cos.na-siliconvalley.myqcloud.com",
+      "rule": "||01newlyrecomend-1318015313.cos.na-siliconvalley.myqcloud.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 491,
+      "domain": "02-u-4528172.com",
+      "rule": "||02-u-4528172.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 504,
+      "domain": "020101.000webhostapp.com",
+      "rule": "||020101.000webhostapp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 505,
+      "domain": "02012348.com",
+      "rule": "||02012348.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 507,
+      "domain": "0203659.com",
+      "rule": "||0203659.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 512,
+      "domain": "021034662015959.kitlanchesisa.com.br",
+      "rule": "||021034662015959.kitlanchesisa.com.br^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 514,
+      "domain": "0215412pageaccountserve23-confirm.start.page",
+      "rule": "||0215412pageaccountserve23-confirm.start.page^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 518,
+      "domain": "02221203252120.duckdns.org",
+      "rule": "||02221203252120.duckdns.org^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 519,
+      "domain": "022994.com",
+      "rule": "||022994.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 521,
+      "domain": "023-102613t271.weeblysite.com",
+      "rule": "||023-102613t271.weeblysite.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 522,
+      "domain": "0233659.com",
+      "rule": "||0233659.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 523,
+      "domain": "02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com",
+      "rule": "||02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 525,
+      "domain": "02402300601394318587048.jamb2022.co",
+      "rule": "||02402300601394318587048.jamb2022.co^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 526,
+      "domain": "0242523456345.3456945020012.repl.co",
+      "rule": "||0242523456345.3456945020012.repl.co^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 527,
+      "domain": "024goeqwpoewla.ga",
+      "rule": "||024goeqwpoewla.ga^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 529,
+      "domain": "025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com",
+      "rule": "||025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 530,
+      "domain": "025662nhhh.hyperphp.com",
+      "rule": "||025662nhhh.hyperphp.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 531,
+      "domain": "025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com",
+      "rule": "||025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 534,
+      "domain": "0258369.com",
+      "rule": "||0258369.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 536,
+      "domain": "025g.top",
+      "rule": "||025g.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+! ============================================================================
+! ShieldNova - Security / Cryptojacking
+! Conservative blocklist for well-known browser mining infrastructure.
+!
+! SAFETY: These are mining SERVICE PROVIDERS only, not individual infected
+! sites. They have zero legitimate use cases for end users.
+! ============================================================================
+
+! --- Coinhive & related (defunct but still requested by infected sites) ---
+||coinhive.com^                             ! Coinhive - browser crypto miner (defunct)
+||coinhiveproxy.com^                        ! Coinhive - proxy endpoint
+||authedmine.com^                           ! Coinhive - opt-in miner variant
+||authedmine.eu^                            ! Coinhive - opt-in miner (EU)
+||authedwebmine.cz^                         ! AuthedWebMine - Coinhive fork
+||cnhv.co^                                  ! Coinhive - short link / miner redirect
+||wsservices.org^                           ! Coinhive - websocket endpoint
+
+! --- CryptoLoot ---
+||crypto-loot.com^                          ! CryptoLoot - Coinhive alternative
+||crypto-loot.org^                          ! CryptoLoot - alternative domain
+||cryptaloot.pro^                           ! CryptoLoot - proxy domain
+
+! --- CoinImp ---
+||coinimp.com^                              ! CoinImp - browser mining service
+||coinimp.net^                              ! CoinImp - delivery network
+||freecontent.date^                         ! CoinImp - content delivery alias
+||freecontent.stream^                       ! CoinImp - content delivery alias
+||freecontent.live^                         ! CoinImp - content delivery alias
+||hostcontent.live^                         ! CoinImp - content delivery alias
+||hostingcloud.racing^                      ! CoinImp - hosting alias
+||hostingcloud.party^                       ! CoinImp - hosting alias
+
+! --- Other mining services ---
+||jsecoin.com^                              ! JSEcoin - browser mining platform
+||mineralt.io^                              ! Mineralt - browser mining service
+||webminepool.com^                          ! WebMinePool - browser mining pool
+||browsermine.com^                          ! BrowserMine - browser mining service
+||nerohut.com^                              ! NeroHut - browser mining service
+||papoto.com^                               ! Papoto - browser mining service
+||monerominer.rocks^                        ! MoneroMiner - browser Monero miner
+||minero.cc^                                ! Minero - browser mining
+||inwemo.com^                               ! InWemo - browser mining service
+||minescripts.info^                         ! MineScripts - mining script host
+||ad-miner.com^                             ! Ad-Miner - browser mining service
+||afminer.com^                              ! AFMiner - browser mining service
+||coin-service.com^                         ! CoinNebula - mining service domain
+||webassembly.stream^                       ! WebAssembly mining payload delivery
+||wasm.stream^                              ! WASM mining payload delivery
+||adless.io^                                ! Adless - mining-as-ad-replacement
+
+! --- Auto-fetched from cryptojacking (2026-04-30) ---
+||2miners.com^                              ! auto: cryptojacking
+||a-calc.de^                                ! auto: cryptojacking
+||acbp0020171456.page.tl^                   ! auto: cryptojacking
+||adminer.com^                              ! auto: cryptojacking
+||aeros02.tk^                               ! auto: cryptojacking
+||aeros12.tk^                               ! auto: cryptojacking
+||analytics.blue^                           ! auto: cryptojacking
+||andlache.com^                             ! auto: cryptojacking
+||api.nyda.pro^                             ! auto: cryptojacking
+||aptal.pro^                                ! auto: cryptojacking
+||ashgrrwt.click^                           ! auto: cryptojacking
+||bablace.com^                              ! auto: cryptojacking
+||bafybeidravcab5p3acvthxtwosm4rfpl4yypwwm52s7sazgxaezfzn5xn4.ipfs.infura-ipfs.io^! auto: cryptojacking
+||baiduccdn1.com^                           ! auto: cryptojacking
+||becanium.com^                             ! auto: cryptojacking
+||belicimo.pw^                              ! auto: cryptojacking
+||besocial.online^                          ! auto: cryptojacking
+||bestcoinsignals.com^                      ! auto: cryptojacking
+||bestsrv.de^                               ! auto: cryptojacking
+||bewaslac.com^                             ! auto: cryptojacking
+||bhzejltg.info^                            ! auto: cryptojacking
+||biberukalap.com^                          ! auto: cryptojacking
+||binarybusiness.de^                        ! auto: cryptojacking
+||bitcoin-cashcard.com^                     ! auto: cryptojacking
+||bmcm.pw^                                  ! auto: cryptojacking
+||bmnr.pw^                                  ! auto: cryptojacking
+||bmst.pw^                                  ! auto: cryptojacking
+||broadcastt.xyz^                           ! auto: cryptojacking
+||brominer.com^                             ! auto: cryptojacking
+||candid.zone^                              ! auto: cryptojacking
+||cashbeet.com^                             ! auto: cryptojacking
+||cdn.cloudcoins.co^                        ! auto: cryptojacking
+||cdn1.pebx.pl^                             ! auto: cryptojacking
+||cfcdist.gdn^                              ! auto: cryptojacking
+||clgserv.pro^                              ! auto: cryptojacking
+||cloud-miner.de^                           ! auto: cryptojacking
+||cloud-miner.eu^                           ! auto: cryptojacking
+||cloudcdn.gdn^                             ! auto: cryptojacking
+||cloudflane.com^                           ! auto: cryptojacking
+||coin-have.com^                            ! auto: cryptojacking
+||coinblind.com^                            ! auto: cryptojacking
+||coinerra.com^                             ! auto: cryptojacking
+||coinnebula.com^                           ! auto: cryptojacking
+||coinpirate.cf^                            ! auto: cryptojacking
+||coinpot.co^                               ! auto: cryptojacking
+||coinrail.io^                              ! auto: cryptojacking
+||cpufan.club^                              ! auto: cryptojacking
+||crypto-webminer.com^                      ! auto: cryptojacking
+||crypto.csgocpu.com^                       ! auto: cryptojacking
+||cryptobara.com^                           ! auto: cryptojacking
+
+! --- Auto-fetched from cryptojacking (2026-05-01) ---
+||cryptoloot.pro^                           ! auto: cryptojacking
+||cryptonoter.com^                          ! auto: cryptojacking
+||datasecu.download^                        ! auto: cryptojacking
+||ddns.net^                                 ! auto: cryptojacking
+||dekoder.ws^                               ! auto: cryptojacking
+||devphp.org.ua^                            ! auto: cryptojacking
+||directprimal.com^                         ! auto: cryptojacking
+||dontbeevils.de^                           ! auto: cryptojacking
+||donttbeevils.de^                          ! auto: cryptojacking
+||easyhash.de^                              ! auto: cryptojacking
+||eth-pocket.com^                           ! auto: cryptojacking
+||eth-pocket.de^                            ! auto: cryptojacking
+||ethereum-cashcard.com^                    ! auto: cryptojacking
+||ethereum-pocket.com^                      ! auto: cryptojacking
+||eucsoft.com^                              ! auto: cryptojacking
+||evilsbedont.de^                           ! auto: cryptojacking
+||f1tbit.com^                               ! auto: cryptojacking
+||filmoljupci.com^                          ! auto: cryptojacking
+||flare-analytics.com^                      ! auto: cryptojacking
+||flightsy.win^                             ! auto: cryptojacking
+||flightzy.date^                            ! auto: cryptojacking
+||formulawire.com^                          ! auto: cryptojacking
+||g1thub.com^                               ! auto: cryptojacking
+||gay-hotvideo.net^                         ! auto: cryptojacking
+||go.bestmobiworld.com^                     ! auto: cryptojacking
+||go.fastspot.io^                           ! auto: cryptojacking
+||go.megabanners.cf^                        ! auto: cryptojacking
+||grf.easyhash.io^                          ! auto: cryptojacking
+||gridiogrid.com^                           ! auto: cryptojacking
+||gxbrowser.net^                            ! auto: cryptojacking
+||hashing.win^                              ! auto: cryptojacking
+||hemnes.win^                               ! auto: cryptojacking
+||herominers.com^                           ! auto: cryptojacking
+||hive.tubetitties.com^                     ! auto: cryptojacking
+||igrid.org^                                ! auto: cryptojacking
+||ijfcm7bu6ocerxsfq56ka3dtdanunyp4ytwk745b54agtravj2wr2qqd.onion.pet^! auto: cryptojacking
+||intelserviceupdate.com^                   ! auto: cryptojacking
+||jqwww.download^                           ! auto: cryptojacking
+||js.nahnoji.cz^                            ! auto: cryptojacking
+||jscdndel.com^                             ! auto: cryptojacking
+||jscoinminer.com^                          ! auto: cryptojacking
+||kinokongo.cc^                             ! auto: cryptojacking
+||lags.win^                                 ! auto: cryptojacking
+||laserveradedomaina.com^                   ! auto: cryptojacking
+||lightminer.co^                            ! auto: cryptojacking
+||live.api.stream^                          ! auto: cryptojacking
+||losital.ru^                               ! auto: cryptojacking
+||machieved.com^                            ! auto: cryptojacking
+||mail.ghmproperties.com^                   ! auto: cryptojacking
+||mail.itseasy.com^                         ! auto: cryptojacking
+
+! --- Auto-fetched from cryptojacking (2026-05-01) ---
+||mail.shaferglazer.com^                    ! auto: cryptojacking
+||mail.techniservinc.com^                   ! auto: cryptojacking
+||mepirtedic.com^                           ! auto: cryptojacking
+||mi-de-ner-nis3.info^                      ! auto: cryptojacking
+||mine.blank.drawpad.org^                   ! auto: cryptojacking
+||mine.nahnoji.cz^                          ! auto: cryptojacking
+||mine.terorie.com^                         ! auto: cryptojacking
+||minemytraffic.com^                        ! auto: cryptojacking
+||miner.nablabee.com^                       ! auto: cryptojacking
+||minerad.com^                              ! auto: cryptojacking
+||minexmr.com^                              ! auto: cryptojacking
+||mining.best^                              ! auto: cryptojacking
+||mutuza.win^                               ! auto: cryptojacking
+||my.domain^                                ! auto: cryptojacking
+||myeffect.net^                             ! auto: cryptojacking
+||nablabee.com^                             ! auto: cryptojacking
+||nahnoji.cz^                               ! auto: cryptojacking
+||nametraff.com^                            ! auto: cryptojacking
+||netflare.info^                            ! auto: cryptojacking
+||nfwebminer.com^                           ! auto: cryptojacking
+||nimiq.surf^                               ! auto: cryptojacking
+||nimiqchina.com^                           ! auto: cryptojacking
+||nitrokod.com^                             ! auto: cryptojacking
+||notmining.org^                            ! auto: cryptojacking
+||offerreality.com^                         ! auto: cryptojacking
+||ogrid.org^                                ! auto: cryptojacking
+||pampopholf.com^                           ! auto: cryptojacking
+||party-vqgdyvoycc.now.sh^                  ! auto: cryptojacking
+||pertholin.com^                            ! auto: cryptojacking
+||pool.supportxmr.com^                      ! auto: cryptojacking
+||pr0gram.org^                              ! auto: cryptojacking
+||premiumstats.xyz^                         ! auto: cryptojacking
+||pzoifaum.info^                            ! auto: cryptojacking
+||quiknode.pro^                             ! auto: cryptojacking
+||reauthenticator.com^                      ! auto: cryptojacking
+||roastedvolt.net^                          ! auto: cryptojacking
+||rocks.io^                                 ! auto: cryptojacking
+||scaleway.ovh^                             ! auto: cryptojacking
+||serie-vostfr.com^                         ! auto: cryptojacking
+||serv1swork.com^                           ! auto: cryptojacking
+||silimbompom.com^                          ! auto: cryptojacking
+||siteapi.idkfa.online^                     ! auto: cryptojacking
+||sourcecode.pro^                           ! auto: cryptojacking
+||spacepools.org^                           ! auto: cryptojacking
+||sparechange.io^                           ! auto: cryptojacking
+||srcip.com^                                ! auto: cryptojacking
+||srcips.com^                               ! auto: cryptojacking
+||statdynamic.com^                          ! auto: cryptojacking
+||statistic.date^                           ! auto: cryptojacking
+||stonecalcom.com^                          ! auto: cryptojacking
+
+! --- Auto-fetched from cryptojacking (2026-05-01) ---
+||str1kee.com^                              ! auto: cryptojacking
+||sunnimiq.cf^                              ! auto: cryptojacking
+||swiftmining.win^                          ! auto: cryptojacking
+||tercabilis.info^                          ! auto: cryptojacking
+||thewhizmarketing.com^                     ! auto: cryptojacking
+||thewhizproducts.com^                      ! auto: cryptojacking
+||thewise.com^                              ! auto: cryptojacking
+||traffic.tc-clicks.com^                    ! auto: cryptojacking
+||trustaproiam.de^                          ! auto: cryptojacking
+||trusteverything.de^                       ! auto: cryptojacking
+||trustiseverything.de^                     ! auto: cryptojacking
+||tulip18.com^                              ! auto: cryptojacking
+||verifier.live^                            ! auto: cryptojacking
+||vkcdnservice.com^                         ! auto: cryptojacking
+||vuryua.ru^                                ! auto: cryptojacking
+||wallpoper.com^                            ! auto: cryptojacking
+||webapi.salamantex.com^                    ! auto: cryptojacking
+||webapi.staging.salamantex.com^            ! auto: cryptojacking
+||webmine.cz^                               ! auto: cryptojacking
+||webmine.pro^                              ! auto: cryptojacking
+||webminerpool.com^                         ! auto: cryptojacking
+||webmining.co^                             ! auto: cryptojacking
+||webxmr.com^                               ! auto: cryptojacking
+||wordc.ga^                                 ! auto: cryptojacking
+||ws.webcaster.pro^                         ! auto: cryptojacking
+||wtm.monitoringservice.co^                 ! auto: cryptojacking
+||xmr.cool^                                 ! auto: cryptojacking
+||zlx.com.br^                               ! auto: cryptojacking
