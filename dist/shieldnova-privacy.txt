@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-05-07 21:57:54 UTC
+! Built: 2026-05-07 21:58:47 UTC
 ! Total: 56
 ! Breakdown: privacy=56, allowlist_removed=0
 
