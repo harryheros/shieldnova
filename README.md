@@ -1,12 +1,14 @@
 # ShieldNova
 
-ShieldNova is a curated **domain intelligence layer** for:
+ShieldNova is a **compatibility-first domain filter list** for:
 
-- Privacy protection  
-- Ad blocking  
-- Security filtering  
+- Privacy protection (analytics, fingerprinting, telemetry)
+- Ad blocking (ad networks, exchanges, ad-serving domains)
+- Security filtering (phishing, malware, cryptojacking)
 
-Designed with **high compatibility and minimal breakage** in mind, ShieldNova provides a reliable default protection layer for modern applications and networks.
+Designed for **minimal breakage** — conservative rules only, optimized for APAC users with dedicated CN / HK / TW coverage.
+
+Subscribe directly in AdGuard, Clash, Surge, Shadowrocket, Loon, or QuantumultX.
 
 ---
 

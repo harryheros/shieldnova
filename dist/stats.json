@@ -1,6 +1,6 @@
 {
   "profile": "Conservative / Compatibility-First",
-  "built": "2026-05-07 21:58:47 UTC",
+  "built": "2026-05-07 22:04:50 UTC",
   "allowlist_entries": 0,
   "invalid_rules_skipped": 0,
   "bundles": [
@@ -77,6 +77,20 @@
         "ads_hktw": 20,
         "security": 1212,
         "deduped_total": 1363,
+        "allowlist_removed": 0
+      }
+    },
+    {
+      "filename": "shieldnova-full-aggressive.txt",
+      "title": "Full + Aggressive Privacy",
+      "description": "Full protection with stricter privacy rules. May affect some app functionality.",
+      "total": 1340,
+      "breakdown": {
+        "privacy_global": 56,
+        "privacy_aggressive": 15,
+        "ads": 59,
+        "security": 1212,
+        "deduped_total": 1340,
         "allowlist_removed": 0
       }
     }

@@ -81,6 +81,9 @@ def load_blocked_domains(dist_dir: Path) -> dict[str, set[str]]:
     """
     Load all blocked domains from dist/*.txt and formats/**/*.txt.
     Supports all six output formats.
+
+    Files containing 'aggressive' in their name are tagged with the
+    'aggressive' key prefix so run_checks can apply relaxed Tier-1 rules.
     """
     result: dict[str, set[str]] = {}
     formats_dir = dist_dir.parent / 'formats'
@@ -105,6 +108,11 @@ def load_blocked_domains(dist_dir: Path) -> dict[str, set[str]]:
         result[rel] = domains
 
     return result
+
+
+def is_aggressive_file(filename: str) -> bool:
+    """Return True if the file belongs to the aggressive opt-in profile."""
+    return 'aggressive' in Path(filename).stem
 
 
 # ── Check logic ───────────────────────────────────────────────────────────────
@@ -152,14 +160,19 @@ def run_checks(blocked: dict[str, set[str]], cfg: dict) -> int:
                 violations += 1
 
         # ── Tier 1 ────────────────────────────────────────────────────────
-        for apex, description in tier1:
-            for hit in [d for d in domains if is_subdomain_of(d, apex)]:
-                if hit in tracking_exc:
-                    continue
-                file_violations.append(
-                    f'  [TIER-1] {hit!r} ({description}) in {filename}'
-                )
-                violations += 1
+        # Aggressive profile intentionally blocks some Tier-1 subdomains
+        # (e.g. graph.facebook.com, platform.linkedin.com) that serve dual
+        # tracking + legitimate purposes. Skip Tier-1 checks for aggressive
+        # files — the WARNING in aggressive.txt documents this trade-off.
+        if not is_aggressive_file(filename):
+            for apex, description in tier1:
+                for hit in [d for d in domains if is_subdomain_of(d, apex)]:
+                    if hit in tracking_exc:
+                        continue
+                    file_violations.append(
+                        f'  [TIER-1] {hit!r} ({description}) in {filename}'
+                    )
+                    violations += 1
 
         # ── Tier 2 (root-domain only) ─────────────────────────────────────
         for root, description in tier2_roots:

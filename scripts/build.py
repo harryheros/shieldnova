@@ -402,6 +402,7 @@ def build():
 
     source_paths = OrderedDict([
         ('privacy_core', os.path.join(SRC_DIR, 'privacy', 'core.txt')),
+        ('privacy_aggressive', os.path.join(SRC_DIR, 'privacy', 'aggressive.txt')),
         ('privacy_cn', os.path.join(SRC_DIR, 'privacy', 'cn.txt')),
         ('privacy_hktw', os.path.join(SRC_DIR, 'privacy', 'hktw.txt')),
         ('ads_core', os.path.join(SRC_DIR, 'advertising', 'core.txt')),
@@ -520,6 +521,29 @@ def build():
     write_dist('shieldnova-full-hktw.txt', full_hktw_title, full_hktw_desc, hktw_rules, hktw_breakdown)
     write_all_formats('shieldnova-full-hktw.txt', full_hktw_title, full_hktw_desc, hktw_rules, hktw_breakdown)
     bundles.append(bundle_stats('shieldnova-full-hktw.txt', full_hktw_title, full_hktw_desc, hktw_rules, hktw_breakdown))
+
+    # ── Optional: Aggressive Privacy profile ──────────────────────────────
+    # src/privacy/aggressive.txt contains stricter rules that MAY break
+    # some app functionality. Kept as a separate optional output so users
+    # who want maximum privacy can opt in without affecting the default profile.
+    privacy_aggressive = normalized_sources.get('privacy_aggressive', [])
+    if privacy_aggressive:
+        agg_source = global_source + privacy_aggressive
+        agg_rules, agg_allow_removed = finalize_rules(agg_source)
+        agg_title = 'Full + Aggressive Privacy'
+        agg_desc = 'Full protection with stricter privacy rules. May affect some app functionality.'
+        agg_breakdown = OrderedDict([
+            ('privacy_global', count_unique_rules(privacy_core)),
+            ('privacy_aggressive', count_unique_rules(privacy_aggressive)),
+            ('ads', count_unique_rules(ads_core)),
+            ('security', count_active_rules(security_rules)),
+            ('deduped_total', count_active_rules(agg_rules)),
+            ('allowlist_removed', agg_allow_removed),
+        ])
+        write_dist('shieldnova-full-aggressive.txt', agg_title, agg_desc, agg_rules, agg_breakdown)
+        write_all_formats('shieldnova-full-aggressive.txt', agg_title, agg_desc, agg_rules, agg_breakdown)
+        bundles.append(bundle_stats('shieldnova-full-aggressive.txt', agg_title, agg_desc, agg_rules, agg_breakdown))
+        print('  Note: aggressive profile built as optional opt-in output')
 
     report = OrderedDict([
         ('profile', 'Conservative / Compatibility-First'),
