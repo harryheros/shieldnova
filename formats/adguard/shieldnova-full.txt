@@ -1,6 +1,6 @@
 ! Title: ShieldNova - Full (Global)
 ! Description: Complete protection with a conservative compatibility-first profile.
-! Version: 2026-05-06 23:29:43 UTC
+! Version: 2026-05-07 09:27:39 UTC
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! Licence: CC BY-NC-SA 4.0

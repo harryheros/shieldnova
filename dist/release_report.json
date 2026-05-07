@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-06 23:29:43 UTC",
+  "generated_at": "2026-05-07 09:27:40 UTC",
   "build": {
-    "built_at": "2026-05-06 23:29:43 UTC",
+    "built_at": "2026-05-07 09:27:40 UTC",
     "profile": "Conservative / Compatibility-First",
     "invalid_rules_skipped": 0,
     "allowlist_entries": 0,
@@ -73,9 +73,9 @@
     ]
   },
   "fetch": {
-    "fetched_at": "2026-05-06 23:29:37 UTC",
+    "fetched_at": "2026-05-07 09:27:33 UTC",
     "total_new_domains": 0,
-    "total_platform_skipped": 88964,
+    "total_platform_skipped": 88957,
     "successful_sources": 1,
     "failed_sources": 3,
     "note": "Public summary only. Detailed operational data remains in internal build artifacts."
@@ -101,10 +101,10 @@
   },
   "integrity": {
     "sha256": {
-      "stats.json": "10a61ea4f290db399a1138dc0d455fbc8ec9e51c3e6968eb7a2630deddced48f",
-      "fetch_stats.json": "0812673b08e65abf6eaffc216a7ade3f71d9905e678976892bac410a2015102a",
-      "shieldnova-full.txt": "67ed7374802d6c8c4bf167fd331660c00446b14fa1a2535dbed48d86af3ec278",
-      "shieldnova-security.txt": "c8431a3c91212b826ffaae371968f6523eddf3e2ffb3166fb88d80c2b3f35cfe"
+      "stats.json": "7e395e03056cbc17d5c79448c3d603ce45c2dad80063cb25bc7c4bafb5a837f9",
+      "fetch_stats.json": "df73b8adc4c208e1d29d10763bd71dfdcd750835a9f36aea7302a92d83dad735",
+      "shieldnova-full.txt": "66435046fe1614bbaf4ca04f0171ceb51c20735da0f93013b2255f8381363ae8",
+      "shieldnova-security.txt": "b39749abba468ba1a135e14e1953f40e11c71b20e99d6fc744a78ef7d23fa0c7"
     }
   },
   "disclosure": {
