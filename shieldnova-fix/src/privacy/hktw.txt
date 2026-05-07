@@ -1,0 +1,38 @@
+! ============================================================================
+! ShieldNova - Privacy / Hong Kong & Taiwan
+! Conservative HK/TW regional analytics, attribution, and telemetry endpoints.
+!
+! SAFETY: Includes tracking/telemetry endpoints with low likelihood of breaking
+! core website or app functions. Avoids login, payments, CDN, comments, maps,
+! news content, and general API hostnames.
+! ============================================================================
+
+! --- Yahoo Taiwan / Regional Analytics ---
+||analytics.query.yahoo.com^                ! Yahoo analytics endpoint used across regional Yahoo properties
+||geo.yahoo.com^                            ! Yahoo geo / audience measurement endpoint
+||log.fc.yahoo.com^                         ! Yahoo click / event logging endpoint
+
+! --- LINE / Regional Ad & Analytics Telemetry ---
+||tr.line.me^                               ! LINE conversion / tracking pixel
+||uts-front.line-apps.com^                  ! LINE app telemetry endpoint
+||a.line.me^                                ! LINE advertising attribution endpoint
+
+! --- Appier / Taiwan Ad-tech Analytics ---
+||appier.net^                               ! Appier AI marketing / audience tracking
+||appier.com^                               ! Appier marketing technology
+||aiqua.appier.net^                         ! Appier AIQUA customer engagement tracking
+||jscdn.appier.net^                         ! Appier tracking script delivery
+||apn.c.appier.net^                         ! Appier ad / attribution endpoint
+
+! --- TenMax / Taiwan Ad-tech ---
+||tenmax.io^                                ! TenMax ad-tech / tracking platform
+||adx.tappier.com^                          ! TenMax/Appier ad exchange endpoint
+
+! --- Bridgewell / Taiwan Ad-tech ---
+||bridgewell.com^                           ! Bridgewell digital advertising platform
+||bidder.brealtime.com^                     ! Real-time bidding endpoint
+
+! --- Hong Kong / Taiwan Web Analytics & Tagging ---
+||beacon.sojern.com^                        ! Travel advertising beacon often seen on regional travel sites
+||tracking.wisepops.com^                    ! Marketing popup/tracking endpoint
+||pixel.wp.com^                             ! WordPress.com stats pixel used by regional publishers

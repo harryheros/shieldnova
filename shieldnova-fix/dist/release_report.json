@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-05-07 21:50:20 UTC",
+  "build": {
+    "built_at": "2026-05-07 21:50:20 UTC",
+    "profile": "Conservative / Compatibility-First",
+    "invalid_rules_skipped": 0,
+    "allowlist_entries": 0,
+    "profiles": [
+      {
+        "filename": "shieldnova-privacy.txt",
+        "total": 56,
+        "breakdown": {
+          "privacy": 56,
+          "allowlist_removed": 0
+        }
+      },
+      {
+        "filename": "shieldnova-ads.txt",
+        "total": 59,
+        "breakdown": {
+          "ads": 59,
+          "allowlist_removed": 0
+        }
+      },
+      {
+        "filename": "shieldnova-security.txt",
+        "total": 1212,
+        "breakdown": {
+          "phishing": 500,
+          "malware": 500,
+          "cryptojacking": 212,
+          "deduped_total": 1212,
+          "allowlist_removed": 0
+        }
+      },
+      {
+        "filename": "shieldnova-full.txt",
+        "total": 1325,
+        "breakdown": {
+          "privacy": 56,
+          "ads": 59,
+          "security": 1212,
+          "deduped_total": 1325,
+          "allowlist_removed": 0
+        }
+      },
+      {
+        "filename": "shieldnova-full-cn.txt",
+        "total": 1376,
+        "breakdown": {
+          "privacy_global": 56,
+          "privacy_cn": 30,
+          "ads_global": 59,
+          "ads_cn": 21,
+          "security": 1212,
+          "deduped_total": 1376,
+          "allowlist_removed": 0
+        }
+      },
+      {
+        "filename": "shieldnova-full-hktw.txt",
+        "total": 1363,
+        "breakdown": {
+          "privacy_global": 56,
+          "privacy_hktw": 18,
+          "ads_global": 59,
+          "ads_hktw": 20,
+          "security": 1212,
+          "deduped_total": 1363,
+          "allowlist_removed": 0
+        }
+      }
+    ]
+  },
+  "fetch": {
+    "fetched_at": "2026-05-07 21:50:13 UTC",
+    "total_new_domains": 0,
+    "total_platform_skipped": 88932,
+    "successful_sources": 1,
+    "failed_sources": 3,
+    "note": "Public summary only. Detailed operational data remains in internal build artifacts."
+  },
+  "audit": {
+    "scanned_files": 3,
+    "total_findings": 257,
+    "summary": {
+      "must_remove": 0,
+      "hosting": 43,
+      "manual_review": 214
+    }
+  },
+  "false_positive_gate": {
+    "passed": true,
+    "files_scanned": 42,
+    "note": "Gate passed as a prerequisite to report generation."
+  },
+  "rule_delta": {
+    "total_rules_now": 1414,
+    "previous_total": 1414,
+    "delta": 0
+  },
+  "integrity": {
+    "sha256": {
+      "stats.json": "65577bcad337b8854351a04ebae0f717beb5013a7c09598223b8615b9ea5a7dd",
+      "fetch_stats.json": "35d18d6dfbfcc2c31ce72d98a7f1b8bc4ca51f1a04892093e21f84153b174d13",
+      "shieldnova-full.txt": "7e8cce3b9ccc2f2d7a88404ce2e52b1aaf85360e5213f16a39ebd68111dab1c8",
+      "shieldnova-security.txt": "5ea8a2b0df5608beedb5199c1d34e913eaf85e625910708be09c62806b17853c"
+    }
+  },
+  "disclosure": {
+    "level": "selective",
+    "policy": "Public reports show release quality and aggregate outcomes, not detection recipes or source-specific internals."
+  }
+}

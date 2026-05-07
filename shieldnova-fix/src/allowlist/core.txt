@@ -1,0 +1,8 @@
+! ============================================================================
+! ShieldNova - Allowlist / Core
+! Optional compatibility guardrail. Domains listed here are removed from all
+! generated outputs even if they appear in source modules.
+!
+! Leave empty by default. Add only domains you explicitly want to preserve.
+! Syntax: ||domain.com^
+! ============================================================================
