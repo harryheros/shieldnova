@@ -1,12 +1,12 @@
-! Title: ShieldNova - Full (Hong Kong & Taiwan)
-! Description: Complete protection with additional Hong Kong and Taiwan domains.
+! Title: ShieldNova - Full + Aggressive Privacy
+! Description: Full protection with stricter privacy rules. May affect some app functionality.
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! License: CC BY-NC-SA 4.0
 ! Profile: Conservative / Compatibility-First
-! Built: 2026-05-07 22:04:49 UTC
-! Total: 1363
-! Breakdown: privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=1212, deduped_total=1363, allowlist_removed=0
+! Built: 2026-05-07 22:04:50 UTC
+! Total: 1340
+! Breakdown: privacy_global=56, privacy_aggressive=15, ads=59, security=1212, deduped_total=1340, allowlist_removed=0
 
 ! ============================================================================
 ! ShieldNova - Privacy / Global Core
@@ -1488,77 +1488,37 @@
 ||xmr.cool^                                 ! auto: cryptojacking
 ||zlx.com.br^                               ! auto: cryptojacking
 ! ============================================================================
-! ShieldNova - Privacy / Hong Kong & Taiwan
-! Conservative HK/TW regional analytics, attribution, and telemetry endpoints.
+! ShieldNova - Optional / Aggressive
+! Stricter privacy rules that MAY affect some app functionality.
 !
-! SAFETY: Includes tracking/telemetry endpoints with low likelihood of breaking
-! core website or app functions. Avoids login, payments, CDN, comments, maps,
-! news content, and general API hostnames.
+! WARNING: These rules block domains that serve both tracking AND
+! legitimate features. Only use if you understand the trade-offs.
 ! ============================================================================
 
-! --- Yahoo Taiwan / Regional Analytics ---
-||analytics.query.yahoo.com^                ! Yahoo analytics endpoint used across regional Yahoo properties
-||geo.yahoo.com^                            ! Yahoo geo / audience measurement endpoint
-||log.fc.yahoo.com^                         ! Yahoo click / event logging endpoint
+! --- Social Platform Tracking (may break embedded content) ---
+||graph.facebook.com^                       ! Facebook Graph API - breaks FB Login & sharing
+||connect.facebook.net^                     ! Facebook SDK - breaks FB Login buttons on websites
+||platform.twitter.com^                     ! Twitter/X embeds - breaks embedded tweets
+||platform.linkedin.com^                    ! LinkedIn embeds - breaks embedded posts
 
-! --- LINE / Regional Ad & Analytics Telemetry ---
-||tr.line.me^                               ! LINE conversion / tracking pixel
-||uts-front.line-apps.com^                  ! LINE app telemetry endpoint
-||a.line.me^                                ! LINE advertising attribution endpoint
+! --- Deep Linking (may break "open in app" links) ---
+||branch.io^                                ! Branch - breaks deep links & share URLs
+||app.link^                                 ! Branch - breaks app-to-app links
 
-! --- Appier / Taiwan Ad-tech Analytics ---
-||appier.net^                               ! Appier AI marketing / audience tracking
-||appier.com^                               ! Appier marketing technology
-||aiqua.appier.net^                         ! Appier AIQUA customer engagement tracking
-||jscdn.appier.net^                         ! Appier tracking script delivery
-||apn.c.appier.net^                         ! Appier ad / attribution endpoint
+! --- Customer-Facing Services (may break support & notifications) ---
+||hubspot.com^                              ! HubSpot - breaks sites hosted on HubSpot
+||intercom.io^                              ! Intercom - breaks in-app customer support chat
+||braze.com^                                ! Braze - breaks push notifications in some apps
+||customer.io^                              ! Customer.io - breaks email unsubscribe links
 
-! --- TenMax / Taiwan Ad-tech ---
-||tenmax.io^                                ! TenMax ad-tech / tracking platform
-||adx.tappier.com^                          ! TenMax/Appier ad exchange endpoint
+! --- Error Monitoring ---
+! included in the core privacy module. They are NOT duplicated here.
 
-! --- Bridgewell / Taiwan Ad-tech ---
-||bridgewell.com^                           ! Bridgewell digital advertising platform
-||bidder.brealtime.com^                     ! Real-time bidding endpoint
+! --- Bot Detection (WILL break login on some sites) ---
+||arkoselabs.com^                           ! Arkose Labs - blocks CAPTCHA on EA, Microsoft, etc.
+||perimeterx.net^                           ! PerimeterX - blocks access to many e-commerce sites
 
-! --- Hong Kong / Taiwan Web Analytics & Tagging ---
-||beacon.sojern.com^                        ! Travel advertising beacon often seen on regional travel sites
-||tracking.wisepops.com^                    ! Marketing popup/tracking endpoint
-||pixel.wp.com^                             ! WordPress.com stats pixel used by regional publishers
-! ============================================================================
-! ShieldNova - Advertising / Hong Kong & Taiwan
-! Conservative HK/TW regional advertising additions.
-!
-! SAFETY: Targets clear ad-serving, ad-exchange, and sponsored-content domains.
-! Avoids broadcaster/news core domains and general-purpose CDNs.
-! ============================================================================
-
-! --- Yahoo Taiwan / Verizon Media Ads ---
-||tw.adserver.yahoo.com^                    ! Yahoo Taiwan ad serving
-||adserver.yahoo.com^                       ! Yahoo ad serving
-||ads.yahoo.com^                            ! Yahoo Ads delivery
-||gemini.yahoo.com^                         ! Yahoo native advertising
-
-! --- LINE Ads ---
-||ad.line-scdn.net^                         ! LINE ad static assets
-||adserver.line-apps.com^                   ! LINE ad server
-||obs.line-scdn.net^                        ! LINE ad / impression assets
-
-! --- Appier / Taiwan Advertising ---
-||adcloud.jp^                               ! Appier CrossX advertising delivery
-||ad2iction.com^                            ! Appier/Ad2iction ad network
-||anymanager.io^                            ! AnyManager publisher monetization
-||anymind360.com^                           ! AnyMind advertising platform
-
-! --- Taiwan Publisher / Ad Networks ---
-||adbert.com.tw^                            ! Adbert Taiwan ad network
-||adbert.com^                               ! Adbert ad platform
-||clickforce.com.tw^                        ! ClickForce Taiwan ad network
-||clickforce.com^                           ! ClickForce ad platform
-||urad.com.tw^                              ! uRad Taiwan advertising network
-||adup-tech.com^                            ! Adup ad network
-
-! --- Hong Kong / Regional Programmatic Ads ---
-||innity.com^                               ! Innity regional ad network
-||innity.net^                               ! Innity ad delivery
-||pixel.advertising.com^                    ! Advertising.com ad pixel
+! --- China Push Services (WILL cause missed notifications) ---
+||getui.com^                                ! Getui - push notifications for many China apps
+||igexin.com^                               ! Igexin (Getui) - push SDK
+||jpush.cn^                                 ! JPush (Aurora) - push notifications

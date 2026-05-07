@@ -1,11 +1,124 @@
-! Title: ShieldNova - Security Protection
-! Description: Conservative phishing, malware, scam, and cryptojacking domains.
-! Version: 2026-05-07 22:04:49 UTC
+! Title: ShieldNova - Full + Aggressive Privacy
+! Description: Full protection with stricter privacy rules. May affect some app functionality.
+! Version: 2026-05-07 22:04:50 UTC
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! Licence: CC BY-NC-SA 4.0
-! Total: 1212
+! Total: 1340
 
+||google-analytics.com^
+||googletagmanager.com^
+||googletagservices.com^
+||googleadservices.com^
+||doubleclick.net^
+||app-measurement.com^
+||crashlytics.com^
+||pixel.facebook.com^
+||analytics.facebook.com^
+||adjust.com^
+||appsflyer.com^
+||kochava.com^
+||singular.net^
+||tenjin.com^
+||mixpanel.com^
+||amplitude.com^
+||segment.io^
+||segment.com^
+||heapanalytics.com^
+||hotjar.com^
+||fullstory.com^
+||mouseflow.com^
+||clarity.ms^
+||logrocket.com^
+||bugsnag.com^
+||sentry.io^
+||newrelic.com^
+||nr-data.net^
+||telemetrydeck.com^
+||plausible.io^
+||snap.licdn.com^
+||ads.linkedin.com^
+||sc-static.net^
+||tr.snapchat.com^
+||actonservice.com^
+||marketo.com^
+||marketo.net^
+||pardot.com^
+||eloqua.com^
+||omtrdc.net^
+||demdex.net^
+||2o7.net^
+||everesttech.net^
+||fingerprintjs.com^
+||cookiebot.com^
+||cookieinformation.com^
+||onetrust.com^
+||trustarc.com^
+||cookielaw.org^
+||optimizely.com^
+||launchdarkly.com^
+||vwo.com^
+||abtasty.com^
+||mailtrack.io^
+||yesware.com^
+||bananatag.com^
+||googlesyndication.com^
+||pagead2.googlesyndication.com^
+||adservice.google.com^
+||adnxs.com^
+||adsrvr.org^
+||pubmatic.com^
+||rubiconproject.com^
+||openx.net^
+||sharethrough.com^
+||bidswitch.net^
+||lijit.com^
+||media.net^
+||serving-sys.com^
+||casalemedia.com^
+||indexww.com^
+||33across.com^
+||smartadserver.com^
+||yieldmo.com^
+||triplelift.com^
+||sonobi.com^
+||emxdgt.com^
+||contextweb.com^
+||adcolony.com^
+||vungle.com^
+||unityads.unity3d.com^
+||unityads.unitychina.cn^
+||applovin.com^
+||ironsrc.com^
+||mintegral.com^
+||inmobi.com^
+||chartboost.com^
+||fyber.com^
+||liftoff.io^
+||moloco.com^
+||criteo.com^
+||criteo.net^
+||taboola.com^
+||outbrain.com^
+||revcontent.com^
+||mgid.com^
+||springserve.com^
+||spotxchange.com^
+||spotx.tv^
+||teads.tv^
+||quantserve.com^
+||scorecardresearch.com^
+||mookie1.com^
+||rlcdn.com^
+||id5-sync.com^
+||adsymptotic.com^
+||crwdcntrl.net^
+||bluekai.com^
+||exelator.com^
+||eyeota.net^
+||popads.net^
+||popcash.net^
+||propellerads.com^
 ||16shop.co^
 ||logincdn.net^
 ||0-105.com^
@@ -1218,3 +1331,18 @@
 ||wtm.monitoringservice.co^
 ||xmr.cool^
 ||zlx.com.br^
+||graph.facebook.com^
+||connect.facebook.net^
+||platform.twitter.com^
+||platform.linkedin.com^
+||branch.io^
+||app.link^
+||hubspot.com^
+||intercom.io^
+||braze.com^
+||customer.io^
+||arkoselabs.com^
+||perimeterx.net^
+||getui.com^
+||igexin.com^
+||jpush.cn^

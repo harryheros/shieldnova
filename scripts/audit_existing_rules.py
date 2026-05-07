@@ -73,7 +73,12 @@ def build_classifiers(cfg: dict):
         hosting_apexes.add(d)
     hosting_apexes.update(hosting_subs)
 
-    return must_never, tier0_core_apexes, hosting_subs, hosting_apexes
+    # reviewed_hosting_domains: manually verified malicious hosting subdomains.
+    # These are suppressed from HOSTING audit warnings — they are confirmed
+    # malicious and safe to keep in security source files.
+    reviewed_hosting = set(cfg.get('reviewed_hosting_domains', {}).get('domains', {}).keys())
+
+    return must_never, tier0_core_apexes, hosting_subs, hosting_apexes, reviewed_hosting
 
 
 def is_subdomain_of(domain: str, apex: str) -> bool:
@@ -81,7 +86,8 @@ def is_subdomain_of(domain: str, apex: str) -> bool:
 
 
 def classify(domain: str, must_never: set, tier0_core_apexes: set,
-             hosting_subs: set, hosting_apexes: set) -> tuple[str, str]:
+             hosting_subs: set, hosting_apexes: set,
+             reviewed_hosting: set | None = None) -> tuple[str, str]:
     d = domain.lower().strip('.')
 
     # Direct must-never match
@@ -102,11 +108,15 @@ def classify(domain: str, must_never: set, tier0_core_apexes: set,
                 return "HOSTING", f"hosting surface of {apex} — review if legitimately malicious"
             return "MUST-REMOVE", f"core API subdomain of {apex} — not a hosting surface"
 
-    # Hosting platform
+    # Hosting platform — skip if manually reviewed and confirmed malicious
+    if reviewed_hosting and d in reviewed_hosting:
+        return "SAFE", "reviewed hosting domain — manually confirmed malicious"
     if d in hosting_apexes:
         return "HOSTING", "hosting platform apex — root domain should not be blocked"
     for apex in hosting_apexes:
         if is_subdomain_of(d, apex):
+            if reviewed_hosting and d in reviewed_hosting:
+                return "SAFE", "reviewed hosting domain — manually confirmed malicious"
             return "HOSTING", (
                 f"subdomain of hosting platform ({apex}) — "
                 "may be legitimate phishing domain or feed pollution; verify manually"
@@ -121,7 +131,8 @@ def classify(domain: str, must_never: set, tier0_core_apexes: set,
 
 
 def audit_file(filepath: Path, must_never, tier0_core_apexes,
-               hosting_subs, hosting_apexes) -> list[dict]:
+               hosting_subs, hosting_apexes,
+               reviewed_hosting: set | None = None) -> list[dict]:
     findings = []
     with open(filepath, encoding='utf-8') as f:
         for lineno, line in enumerate(f, 1):
@@ -133,7 +144,8 @@ def audit_file(filepath: Path, must_never, tier0_core_apexes,
                 continue
             domain = m.group(1).lower().strip('.')
             category, reason = classify(
-                domain, must_never, tier0_core_apexes, hosting_subs, hosting_apexes
+                domain, must_never, tier0_core_apexes, hosting_subs, hosting_apexes,
+                reviewed_hosting=reviewed_hosting,
             )
             if category != 'SAFE':
                 findings.append({
@@ -186,7 +198,7 @@ def main() -> int:
     print('[audit] ' + '=' * 50)
 
     cfg = load_config()
-    must_never, tier0_core_apexes, hosting_subs, hosting_apexes = build_classifiers(cfg)
+    must_never, tier0_core_apexes, hosting_subs, hosting_apexes, reviewed_hosting = build_classifiers(cfg)
 
     if not SRC_DIR.exists():
         print(f'[audit] ERROR: src/security/ not found at {SRC_DIR}')
@@ -195,7 +207,8 @@ def main() -> int:
     all_findings: list[dict] = []
     for txt_file in sorted(SRC_DIR.glob('*.txt')):
         findings = audit_file(
-            txt_file, must_never, tier0_core_apexes, hosting_subs, hosting_apexes
+            txt_file, must_never, tier0_core_apexes, hosting_subs, hosting_apexes,
+            reviewed_hosting=reviewed_hosting,
         )
         all_findings.extend(findings)
 

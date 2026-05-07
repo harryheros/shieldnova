@@ -1,9 +1,9 @@
-# ShieldNova - Full (Hong Kong & Taiwan)
+# ShieldNova - Full + Aggressive Privacy
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
 # Built: 2026-05-07 22:04:50 UTC
-# Total: 1363
+# Total: 1340
 
 DOMAIN-SUFFIX,google-analytics.com,REJECT
 DOMAIN-SUFFIX,googletagmanager.com,REJECT
@@ -1330,41 +1330,18 @@ DOMAIN-SUFFIX,ws.webcaster.pro,REJECT
 DOMAIN-SUFFIX,wtm.monitoringservice.co,REJECT
 DOMAIN-SUFFIX,xmr.cool,REJECT
 DOMAIN-SUFFIX,zlx.com.br,REJECT
-DOMAIN-SUFFIX,analytics.query.yahoo.com,REJECT
-DOMAIN-SUFFIX,geo.yahoo.com,REJECT
-DOMAIN-SUFFIX,log.fc.yahoo.com,REJECT
-DOMAIN-SUFFIX,tr.line.me,REJECT
-DOMAIN-SUFFIX,uts-front.line-apps.com,REJECT
-DOMAIN-SUFFIX,a.line.me,REJECT
-DOMAIN-SUFFIX,appier.net,REJECT
-DOMAIN-SUFFIX,appier.com,REJECT
-DOMAIN-SUFFIX,aiqua.appier.net,REJECT
-DOMAIN-SUFFIX,jscdn.appier.net,REJECT
-DOMAIN-SUFFIX,apn.c.appier.net,REJECT
-DOMAIN-SUFFIX,tenmax.io,REJECT
-DOMAIN-SUFFIX,adx.tappier.com,REJECT
-DOMAIN-SUFFIX,bridgewell.com,REJECT
-DOMAIN-SUFFIX,bidder.brealtime.com,REJECT
-DOMAIN-SUFFIX,beacon.sojern.com,REJECT
-DOMAIN-SUFFIX,tracking.wisepops.com,REJECT
-DOMAIN-SUFFIX,pixel.wp.com,REJECT
-DOMAIN-SUFFIX,tw.adserver.yahoo.com,REJECT
-DOMAIN-SUFFIX,adserver.yahoo.com,REJECT
-DOMAIN-SUFFIX,ads.yahoo.com,REJECT
-DOMAIN-SUFFIX,gemini.yahoo.com,REJECT
-DOMAIN-SUFFIX,ad.line-scdn.net,REJECT
-DOMAIN-SUFFIX,adserver.line-apps.com,REJECT
-DOMAIN-SUFFIX,obs.line-scdn.net,REJECT
-DOMAIN-SUFFIX,adcloud.jp,REJECT
-DOMAIN-SUFFIX,ad2iction.com,REJECT
-DOMAIN-SUFFIX,anymanager.io,REJECT
-DOMAIN-SUFFIX,anymind360.com,REJECT
-DOMAIN-SUFFIX,adbert.com.tw,REJECT
-DOMAIN-SUFFIX,adbert.com,REJECT
-DOMAIN-SUFFIX,clickforce.com.tw,REJECT
-DOMAIN-SUFFIX,clickforce.com,REJECT
-DOMAIN-SUFFIX,urad.com.tw,REJECT
-DOMAIN-SUFFIX,adup-tech.com,REJECT
-DOMAIN-SUFFIX,innity.com,REJECT
-DOMAIN-SUFFIX,innity.net,REJECT
-DOMAIN-SUFFIX,pixel.advertising.com,REJECT
+DOMAIN-SUFFIX,graph.facebook.com,REJECT
+DOMAIN-SUFFIX,connect.facebook.net,REJECT
+DOMAIN-SUFFIX,platform.twitter.com,REJECT
+DOMAIN-SUFFIX,platform.linkedin.com,REJECT
+DOMAIN-SUFFIX,branch.io,REJECT
+DOMAIN-SUFFIX,app.link,REJECT
+DOMAIN-SUFFIX,hubspot.com,REJECT
+DOMAIN-SUFFIX,intercom.io,REJECT
+DOMAIN-SUFFIX,braze.com,REJECT
+DOMAIN-SUFFIX,customer.io,REJECT
+DOMAIN-SUFFIX,arkoselabs.com,REJECT
+DOMAIN-SUFFIX,perimeterx.net,REJECT
+DOMAIN-SUFFIX,getui.com,REJECT
+DOMAIN-SUFFIX,igexin.com,REJECT
+DOMAIN-SUFFIX,jpush.cn,REJECT

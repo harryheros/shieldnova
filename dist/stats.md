@@ -1,6 +1,6 @@
 # ShieldNova Build Stats
 
-Built: 2026-05-07 21:58:47 UTC
+Built: 2026-05-07 22:04:50 UTC
 
 | File | Total | Breakdown |
 |---|---:|---|
@@ -10,3 +10,4 @@ Built: 2026-05-07 21:58:47 UTC
 | `shieldnova-full.txt` | 1325 | privacy=56, ads=59, security=1212, deduped_total=1325, allowlist_removed=0 |
 | `shieldnova-full-cn.txt` | 1376 | privacy_global=56, privacy_cn=30, ads_global=59, ads_cn=21, security=1212, deduped_total=1376, allowlist_removed=0 |
 | `shieldnova-full-hktw.txt` | 1363 | privacy_global=56, privacy_hktw=18, ads_global=59, ads_hktw=20, security=1212, deduped_total=1363, allowlist_removed=0 |
+| `shieldnova-full-aggressive.txt` | 1340 | privacy_global=56, privacy_aggressive=15, ads=59, security=1212, deduped_total=1340, allowlist_removed=0 |
