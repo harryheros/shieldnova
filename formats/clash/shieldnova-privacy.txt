@@ -1,6 +1,6 @@
 # ShieldNova - Privacy Protection
 # Homepage: https://github.com/harryheros/shieldnova
-# Built: 2026-05-07 22:06:33 UTC
+# Built: 2026-05-08 08:26:25 UTC
 # Total: 56
 payload:
   - DOMAIN-SUFFIX,google-analytics.com
