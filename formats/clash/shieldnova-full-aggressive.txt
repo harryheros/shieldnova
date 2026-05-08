@@ -1,6 +1,6 @@
 # ShieldNova - Full + Aggressive Privacy
 # Homepage: https://github.com/harryheros/shieldnova
-# Built: 2026-05-08 08:26:26 UTC
+# Built: 2026-05-08 21:16:47 UTC
 # Total: 1340
 payload:
   - DOMAIN-SUFFIX,google-analytics.com
