@@ -1,6 +1,6 @@
 # ShieldNova - Full (China Mainland)
 # Homepage: https://github.com/harryheros/shieldnova
-# Built: 2026-05-11 00:54:12 UTC
+# Built: 2026-05-11 05:52:46 UTC
 # Total: 1376
 payload:
   - DOMAIN-SUFFIX,google-analytics.com
