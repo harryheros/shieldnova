@@ -1,25 +1,26 @@
 {
-  "fetched_at": "2026-05-08 21:16:40 UTC",
+  "fetched_at": "2026-05-11 00:54:06 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "file_cap_reached",
-      "raw": 484,
-      "platform_skipped": 2196,
+      "raw": 460,
+      "platform_skipped": 2214,
       "platform_skipped_by_apex": {
-        "google.com": 142,
-        "githubusercontent.com": 800,
-        "bitbucket.org": 2,
-        "github.com": 1147,
+        "vercel.app": 10,
+        "githubusercontent.com": 799,
+        "github.com": 1154,
+        "bitbucket.org": 1,
+        "google.com": 145,
         "googleapis.com": 1,
-        "pages.dev": 21,
-        "pastebin.com": 58,
+        "pages.dev": 20,
         "blogspot.com": 1,
+        "pastebin.com": 58,
         "gitlab.com": 2,
-        "blob.core.windows.net": 2,
+        "blob.core.windows.net": 3,
         "github.io": 2,
-        "sendspace.com": 15,
-        "live.com": 3
+        "sendspace.com": 14,
+        "live.com": 4
       },
       "new": 0
     },
@@ -42,7 +43,7 @@
     },
     "phishing_database": {
       "status": "file_cap_reached",
-      "raw": 298468,
+      "raw": 298473,
       "platform_skipped": 86767,
       "platform_skipped_by_apex": {
         "pages.dev": 12720,
