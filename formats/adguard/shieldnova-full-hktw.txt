@@ -1,6 +1,6 @@
 ! Title: ShieldNova - Full (Hong Kong & Taiwan)
 ! Description: Complete protection with additional Hong Kong and Taiwan domains.
-! Version: 2026-05-13 04:32:33 UTC
+! Version: 2026-05-14 16:08:35 UTC
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! Licence: CC BY-NC-SA 4.0
