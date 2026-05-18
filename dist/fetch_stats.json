@@ -1,21 +1,19 @@
 {
-  "fetched_at": "2026-05-14 16:08:28 UTC",
+  "fetched_at": "2026-05-18 16:45:56 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "file_cap_reached",
-      "raw": 521,
-      "platform_skipped": 2577,
+      "raw": 540,
+      "platform_skipped": 2574,
       "platform_skipped_by_apex": {
-        "discordapp.com": 1,
-        "github.com": 1366,
-        "githubusercontent.com": 941,
-        "google.com": 148,
+        "github.com": 1370,
+        "githubusercontent.com": 939,
+        "google.com": 146,
         "googleapis.com": 1,
         "pages.dev": 21,
         "pastebin.com": 67,
         "blogspot.com": 1,
-        "gitlab.com": 2,
         "blob.core.windows.net": 3,
         "github.io": 2,
         "sendspace.com": 15,
@@ -26,7 +24,7 @@
     },
     "threatfox": {
       "status": "file_cap_reached",
-      "raw": 0,
+      "raw": 1,
       "platform_skipped": 0,
       "platform_skipped_by_apex": {},
       "new": 0
@@ -43,7 +41,7 @@
     },
     "phishing_database": {
       "status": "file_cap_reached",
-      "raw": 298651,
+      "raw": 298652,
       "platform_skipped": 86767,
       "platform_skipped_by_apex": {
         "pages.dev": 12720,
