@@ -2,7 +2,7 @@
 # Author: Harry (https://github.com/harryheros)
 # Homepage: https://github.com/harryheros/shieldnova
 # License: CC BY-NC-SA 4.0
-# Built: 2026-05-14 16:08:34 UTC
+# Built: 2026-05-18 06:06:14 UTC
 # Total: 1325
 
 DOMAIN-SUFFIX,google-analytics.com,REJECT
