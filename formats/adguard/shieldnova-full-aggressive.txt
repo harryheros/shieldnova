@@ -1,6 +1,6 @@
 ! Title: ShieldNova - Full + Aggressive Privacy
 ! Description: Full protection with stricter privacy rules. May affect some app functionality.
-! Version: 2026-05-18 16:46:02 UTC
+! Version: 2026-05-20 01:30:49 UTC
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! Licence: CC BY-NC-SA 4.0
