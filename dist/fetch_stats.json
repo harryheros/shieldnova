@@ -1,15 +1,15 @@
 {
-  "fetched_at": "2026-05-18 16:45:56 UTC",
+  "fetched_at": "2026-05-20 01:30:43 UTC",
   "dry_run": false,
   "sources": {
     "urlhaus": {
       "status": "file_cap_reached",
-      "raw": 540,
-      "platform_skipped": 2574,
+      "raw": 526,
+      "platform_skipped": 2581,
       "platform_skipped_by_apex": {
         "github.com": 1370,
-        "githubusercontent.com": 939,
-        "google.com": 146,
+        "githubusercontent.com": 944,
+        "google.com": 148,
         "googleapis.com": 1,
         "pages.dev": 21,
         "pastebin.com": 67,
@@ -31,7 +31,7 @@
     },
     "nocoin": {
       "status": "ok",
-      "raw": 200,
+      "raw": 199,
       "platform_skipped": 2,
       "platform_skipped_by_apex": {
         "now.sh": 2
@@ -41,13 +41,13 @@
     },
     "phishing_database": {
       "status": "file_cap_reached",
-      "raw": 298652,
-      "platform_skipped": 86767,
+      "raw": 298689,
+      "platform_skipped": 86768,
       "platform_skipped_by_apex": {
         "pages.dev": 12720,
         "workers.dev": 3884,
         "weebly.com": 6900,
-        "vercel.app": 10651,
+        "vercel.app": 10652,
         "azurewebsites.net": 710,
         "webflow.io": 11742,
         "netlify.app": 3901,
