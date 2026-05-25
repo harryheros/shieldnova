@@ -1,6 +1,6 @@
 ! Title: ShieldNova - Full (China Mainland)
 ! Description: Complete protection with additional China mainland trackers and ad domains.
-! Version: 2026-05-24 16:39:52 UTC
+! Version: 2026-05-25 06:19:21 UTC
 ! Author: Harry (https://github.com/harryheros)
 ! Homepage: https://github.com/harryheros/shieldnova
 ! Licence: CC BY-NC-SA 4.0
