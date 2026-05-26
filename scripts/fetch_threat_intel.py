@@ -43,6 +43,14 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Shared primitives (LABEL_RE, IPV4_RE, is_valid_domain).
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _common import (  # noqa: E402
+    IPV4_RE,
+    LABEL_RE,
+    is_valid_domain,
+)
+
 # ── Config ──────────────────────────────────────────────────────────────────
 
 REPO_ROOT  = Path(__file__).resolve().parent.parent
@@ -54,7 +62,6 @@ MAX_PER_SOURCE = 50
 MAX_PER_FILE   = 500
 DRY_RUN = '--dry-run' in sys.argv
 
-LABEL_RE       = re.compile(r'^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$')
 HOSTS_PREFIX_RE = re.compile(r'^(?:0\.0\.0\.0|127\.0\.0\.1|::1)\s+')
 
 # ── Upstream Sources ────────────────────────────────────────────────────────
@@ -340,14 +347,18 @@ def _load_hosting_apexes() -> frozenset[str]:
     """
     Load hosting platform classification.
 
-    config/critical_domains.json is the authoritative source.
-    The built-in HOSTING_PLATFORM_APEXES is an emergency fallback only —
-    it is used when the config file is missing or malformed, and a warning
-    is emitted so the operator knows the config is not in effect.
+    Two-tier defence:
+      1. HOSTING_PLATFORM_APEXES (this file) is the curated baseline.
+         It cannot be accidentally truncated by editing JSON, and ships
+         with every release so a misconfigured environment still has
+         platform-abuse protection.
+      2. config/critical_domains.json supplements the baseline at runtime
+         with entries from tier2_roots and tier0_core_only. Operators can
+         expand coverage without touching code.
 
-    To keep config as single source of truth, run:
-      python3 scripts/fetch_threat_intel.py --check-config
-    to verify the built-in list does not contain entries absent from config.
+    The two sets are unioned. If the config file is missing or malformed,
+    a warning is emitted and only the baseline is used — the pipeline
+    never runs without platform-abuse protection.
     """
     if CONFIG.exists():
         try:
@@ -363,12 +374,12 @@ def _load_hosting_apexes() -> frozenset[str]:
                 from_config.add(d)
             if from_config:
                 return HOSTING_PLATFORM_APEXES | frozenset(from_config)
-            # Config parsed but no hosting entries — warn and fall back
-            log('WARN: config/critical_domains.json has no hosting entries; using built-in list')
+            # Config parsed but no hosting entries — warn and fall back to baseline
+            log('WARN: config/critical_domains.json has no hosting entries; using baseline only')
         except Exception as e:
-            log(f'WARN: failed to load config/critical_domains.json: {e}; using built-in list')
+            log(f'WARN: failed to load config/critical_domains.json: {e}; using baseline only')
     else:
-        log('WARN: config/critical_domains.json not found; using built-in emergency fallback list')
+        log('WARN: config/critical_domains.json not found; using baseline only')
     return HOSTING_PLATFORM_APEXES
 
 
@@ -411,26 +422,6 @@ def fetch_url(url: str, timeout: int = 30) -> str:
     except (urllib.error.URLError, OSError, TimeoutError) as e:
         log(f'  WARN: failed to fetch {url}: {e}')
         return ''
-
-
-def is_valid_domain(domain: str) -> bool:
-    domain = domain.lower().strip('.')
-    if not domain or len(domain) > 253 or '..' in domain or '.' not in domain:
-        return False
-    try:
-        ipaddress.ip_address(domain)
-        return False
-    except ValueError:
-        pass
-    labels = domain.split('.')
-    if any(not LABEL_RE.match(label) for label in labels):
-        return False
-    tld = labels[-1]
-    if len(tld) < 2:
-        return False
-    if tld.startswith('xn--'):
-        return True
-    return tld.isalpha()
 
 
 def strip_rule_syntax(value: str) -> str:
@@ -525,6 +516,42 @@ def append_domains(filepath: Path, domains: list, source_name: str):
             f.write(f'{rule:<44}! auto: {source_name}\n')
 
 
+def _matched_hosting_apex(domain: str) -> str:
+    """Return the hosting apex this domain belongs to.
+
+    Resolution order:
+      1. If the domain itself is in _HOSTING_APEXES_MERGED, return it.
+         (e.g. 'raw.githubusercontent.com' which is listed in its own
+         right because it deserves separate accounting from its parent
+         'githubusercontent.com'.)
+      2. Otherwise walk up the labels and return the first apex match.
+      3. Return 'unknown' if neither — should not happen when called
+         after is_hosting_platform() returns True, but guarded for safety.
+
+    Earlier code preferred parent matches even when the domain itself
+    was a listed apex, which lumped 'raw.githubusercontent.com' hits
+    under 'githubusercontent.com' and lost the distinction in
+    fetch_stats.json. Self-first match preserves per-subdomain accounting
+    while still falling back to parent for genuine subdomains like
+    'user1.github.io' → 'github.io'.
+    """
+    if domain in _HOSTING_APEXES_MERGED:
+        return domain
+    parts = domain.split('.')
+    for i in range(1, len(parts)):
+        parent = '.'.join(parts[i:])
+        if parent in _HOSTING_APEXES_MERGED:
+            return parent
+    return 'unknown'
+
+
+def _record_skip(skipped: dict, domain: str) -> None:
+    """Bump the per-apex counter for a domain skipped due to hosting-platform
+    classification. Mutates `skipped` in place."""
+    apex = _matched_hosting_apex(domain)
+    skipped[apex] = skipped.get(apex, 0) + 1
+
+
 # ── Source Parsers ────────────────────────────────────────────────────────────
 
 def parse_urlhaus(content: str) -> tuple[set, dict]:
@@ -537,25 +564,16 @@ def parse_urlhaus(content: str) -> tuple[set, dict]:
 
     Returns (domains, platform_skipped_count).
     """
-    domains = set()
+    domains: set = set()
     skipped_by_platform: dict[str, int] = {}
     for line in content.splitlines():
         domain = extract_domain(line)
         if not domain:
             continue
         if is_hosting_platform(domain):
-            # Record which apex platform was matched
-            parts = domain.split('.')
-            apex = 'unknown'
-            for i in range(1, len(parts)):
-                parent = '.'.join(parts[i:])
-                if parent in _HOSTING_APEXES_MERGED:
-                    apex = parent
-                    break
-            if apex == 'unknown' and domain in _HOSTING_APEXES_MERGED:
-                apex = domain
-            skipped_by_platform[apex] = skipped_by_platform.get(apex, 0) + 1
+            _record_skip(skipped_by_platform, domain)
             continue
+        # extract_domain has already validated, but keep the guard for safety
         if is_valid_domain(domain):
             domains.add(domain)
     total_skipped = sum(skipped_by_platform.values())
@@ -568,7 +586,7 @@ def parse_threatfox(content: str) -> tuple[set, dict]:
     """
     Parse ThreatFox CSV export. Returns (domains, platform_skipped_count).
     """
-    domains = set()
+    domains: set = set()
     skipped_by_platform: dict[str, int] = {}
     for row in csv.reader(content.splitlines()):
         if not row or row[0].startswith('#'):
@@ -578,16 +596,7 @@ def parse_threatfox(content: str) -> tuple[set, dict]:
             if not domain:
                 continue
             if is_hosting_platform(domain):
-                parts = domain.split('.')
-                apex = 'unknown'
-                for i in range(1, len(parts)):
-                    parent = '.'.join(parts[i:])
-                    if parent in _HOSTING_APEXES_MERGED:
-                        apex = parent
-                        break
-                if apex == 'unknown' and domain in _HOSTING_APEXES_MERGED:
-                    apex = domain
-                skipped_by_platform[apex] = skipped_by_platform.get(apex, 0) + 1
+                _record_skip(skipped_by_platform, domain)
                 break
             if is_valid_domain(domain):
                 domains.add(domain)
@@ -621,16 +630,7 @@ def parse_nocoin(content: str) -> tuple[set, dict]:
         if not domain:
             continue
         if is_hosting_platform(domain):
-            parts = domain.split('.')
-            apex = 'unknown'
-            for i in range(1, len(parts)):
-                parent = '.'.join(parts[i:])
-                if parent in _HOSTING_APEXES_MERGED:
-                    apex = parent
-                    break
-            if apex == 'unknown' and domain in _HOSTING_APEXES_MERGED:
-                apex = domain
-            skipped_by_platform[apex] = skipped_by_platform.get(apex, 0) + 1
+            _record_skip(skipped_by_platform, domain)
             continue
         if is_valid_domain(domain):
             domains.add(domain.lower())
@@ -648,16 +648,7 @@ def parse_phishing_database(content: str) -> tuple[set, dict]:
         if not domain:
             continue
         if is_hosting_platform(domain):
-            parts = domain.split('.')
-            apex = 'unknown'
-            for i in range(1, len(parts)):
-                parent = '.'.join(parts[i:])
-                if parent in _HOSTING_APEXES_MERGED:
-                    apex = parent
-                    break
-            if apex == 'unknown' and domain in _HOSTING_APEXES_MERGED:
-                apex = domain
-            skipped_by_platform[apex] = skipped_by_platform.get(apex, 0) + 1
+            _record_skip(skipped_by_platform, domain)
             continue
         if is_valid_domain(domain):
             domains.add(domain)

@@ -34,6 +34,12 @@ jobs:
       # Threat intel fetch - run monthly or on manual trigger
       # Weekly build: fetch is skipped, continue-on-error not needed
       # Monthly / manual fetch: failure creates a GitHub Issue via notify-failure job
+      - name: Run unit tests
+        run: |
+          echo "[+] Running unit tests for shared helpers..."
+          python3 scripts/test_common.py
+          python3 scripts/test_version_consistency.py
+
       - name: Fetch threat intelligence
         if: |
           github.event.schedule == '0 3 1 * *' ||
@@ -82,12 +88,10 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add \
-            src/ \
-            dist/ \
-            formats/ \
-            config/critical_domains.json \
-            CHANGELOG.md
+          # Directory-level adds so new output files (e.g. additional
+          # format outputs, future config tables) are picked up
+          # automatically instead of being silently dropped.
+          git add src/ dist/ formats/ config/ CHANGELOG.md
           if git diff --cached --quiet; then
             echo "No changes detected. Skipping commit."
           else

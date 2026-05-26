@@ -30,15 +30,43 @@ ROOT    = Path(__file__).resolve().parent.parent
 SRC_DIR = ROOT / 'src' / 'security'
 CONFIG  = ROOT / 'config' / 'critical_domains.json'
 
-RULE_RE = re.compile(r'^\|\|([^/\^\|@\s]+)\^')
+# Shared rule parsing — see scripts/_common.py
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _common import parse_adguard_rule  # noqa: E402
 
-SUSPICIOUS_PATTERNS: list[tuple[re.Pattern, str]] = [
+SUSPICIOUS_PATTERNS_FALLBACK: list[tuple[re.Pattern, str]] = [
     (re.compile(r'\d{6,}'),                   "long numeric string"),
     (re.compile(r'[a-f0-9]{8}-[a-f0-9]{4}'), "UUID-like"),
     (re.compile(r'[a-z0-9]{32,}\.'),          "hash-like subdomain"),
     (re.compile(r'\.(xyz|top|click|loan|win|bid|gq|cf|ml|ga|tk)$'),
                                                "high-abuse TLD"),
 ]
+
+
+def load_suspicious_patterns(cfg: dict) -> list[tuple[re.Pattern, str]]:
+    """Load MANUAL-REVIEW patterns from config, falling back to baseline.
+
+    Config schema:
+      "suspicious_patterns": { "patterns": [[regex, reason], ...] }
+
+    The fallback exists so the auditor still works if the config is
+    missing or malformed — running with reduced coverage is safer than
+    raising and losing the rest of the audit.
+    """
+    section = cfg.get('suspicious_patterns')
+    if not section or not section.get('patterns'):
+        return SUSPICIOUS_PATTERNS_FALLBACK
+    compiled: list[tuple[re.Pattern, str]] = []
+    for entry in section['patterns']:
+        if not isinstance(entry, list) or len(entry) != 2:
+            continue
+        pattern_str, reason = entry
+        try:
+            compiled.append((re.compile(pattern_str), reason))
+        except re.error as e:
+            print(f'[audit] WARN: invalid regex in suspicious_patterns: '
+                  f'{pattern_str!r} ({e}); skipping')
+    return compiled or SUSPICIOUS_PATTERNS_FALLBACK
 
 
 def load_config() -> dict:
@@ -87,7 +115,9 @@ def is_subdomain_of(domain: str, apex: str) -> bool:
 
 def classify(domain: str, must_never: set, tier0_core_apexes: set,
              hosting_subs: set, hosting_apexes: set,
-             reviewed_hosting: set | None = None) -> tuple[str, str]:
+             reviewed_hosting: set | None = None,
+             suspicious_patterns: list[tuple[re.Pattern, str]] | None = None
+             ) -> tuple[str, str]:
     d = domain.lower().strip('.')
 
     # Direct must-never match
@@ -122,8 +152,9 @@ def classify(domain: str, must_never: set, tier0_core_apexes: set,
                 "may be legitimate phishing domain or feed pollution; verify manually"
             )
 
-    # Suspicious patterns
-    for pattern, reason in SUSPICIOUS_PATTERNS:
+    # Suspicious patterns (config-driven, baseline fallback)
+    patterns = suspicious_patterns if suspicious_patterns is not None else SUSPICIOUS_PATTERNS_FALLBACK
+    for pattern, reason in patterns:
         if pattern.search(d):
             return "MANUAL-REVIEW", f"suspicious pattern: {reason}"
 
@@ -132,20 +163,25 @@ def classify(domain: str, must_never: set, tier0_core_apexes: set,
 
 def audit_file(filepath: Path, must_never, tier0_core_apexes,
                hosting_subs, hosting_apexes,
-               reviewed_hosting: set | None = None) -> list[dict]:
+               reviewed_hosting: set | None = None,
+               suspicious_patterns: list[tuple[re.Pattern, str]] | None = None
+               ) -> list[dict]:
     findings = []
     with open(filepath, encoding='utf-8') as f:
         for lineno, line in enumerate(f, 1):
             stripped = line.strip()
             if not stripped or stripped.startswith('!') or stripped.startswith('#'):
                 continue
-            m = RULE_RE.match(stripped)
-            if not m:
+            # parse_adguard_rule strips an inline '! comment' suffix before
+            # matching, so 'aeros02.tk' inside `||aeros02.tk^   ! auto: ...`
+            # is extracted correctly.
+            domain = parse_adguard_rule(stripped)
+            if not domain:
                 continue
-            domain = m.group(1).lower().strip('.')
             category, reason = classify(
                 domain, must_never, tier0_core_apexes, hosting_subs, hosting_apexes,
                 reviewed_hosting=reviewed_hosting,
+                suspicious_patterns=suspicious_patterns,
             )
             if category != 'SAFE':
                 findings.append({
@@ -199,6 +235,7 @@ def main() -> int:
 
     cfg = load_config()
     must_never, tier0_core_apexes, hosting_subs, hosting_apexes, reviewed_hosting = build_classifiers(cfg)
+    suspicious_patterns = load_suspicious_patterns(cfg)
 
     if not SRC_DIR.exists():
         print(f'[audit] ERROR: src/security/ not found at {SRC_DIR}')
@@ -209,6 +246,7 @@ def main() -> int:
         findings = audit_file(
             txt_file, must_never, tier0_core_apexes, hosting_subs, hosting_apexes,
             reviewed_hosting=reviewed_hosting,
+            suspicious_patterns=suspicious_patterns,
         )
         all_findings.extend(findings)
 

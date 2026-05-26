@@ -23,10 +23,9 @@ ROOT     = Path(__file__).resolve().parent.parent
 DIST_DIR = ROOT / 'dist'
 CONFIG   = ROOT / 'config' / 'critical_domains.json'
 
-# ── Rule extraction patterns ──────────────────────────────────────────────────
-
-# AdGuard / dist: ||example.com^
-_ADGUARD_RE = re.compile(r'^\|\|([^/\^\|@\s]+)\^')
+# Shared AdGuard rule matcher — see scripts/_common.py
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _common import RULE_RE as _ADGUARD_RE  # noqa: E402
 
 
 def extract_domain_from_line(line: str) -> str | None:

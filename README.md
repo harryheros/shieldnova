@@ -1,5 +1,8 @@
 # ShieldNova
 
+[![Version](https://img.shields.io/badge/version-v2.1.0-blue)](https://github.com/harryheros/shieldnova/releases)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-orange)](LICENSE)
+
 ShieldNova is a **compatibility-first domain filter list** for:
 
 - Privacy protection (analytics, fingerprinting, telemetry)
