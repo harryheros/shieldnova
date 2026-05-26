@@ -39,6 +39,10 @@ DIST_DIR  = ROOT / 'dist'
 REPORT_OUT = DIST_DIR / 'release_report.json'
 NOTES_OUT  = DIST_DIR / 'RELEASE_NOTES.md'
 
+# Shared rule parser — see scripts/_common.py
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _common import parse_adguard_rule  # noqa: E402
+
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -65,20 +69,18 @@ def load_json(path: Path) -> dict | None:
 
 
 def count_rules_in_dist() -> int:
-    """Count total active AdGuard-style rules across dist files.
+    """Count total unique domains across dist files.
 
-    Rules may include inline comments or options, so avoid a strict
-    line.endswith('^') check.
+    Uses the shared parse_adguard_rule helper instead of an inline regex,
+    so behaviour stays in lockstep with build.py and test_false_positives.py.
     """
-    import re
-    rule_re = re.compile(r'^\|\|([^\^\s]+)\^(?:\$[^\s!]+)?')
     all_domains: set[str] = set()
     for f in DIST_DIR.glob('shieldnova-*.txt'):
         with open(f, encoding='utf-8') as fh:
             for line in fh:
-                m = rule_re.match(line.strip())
-                if m:
-                    all_domains.add(m.group(1).lower().strip('.'))
+                domain = parse_adguard_rule(line)
+                if domain:
+                    all_domains.add(domain)
     return len(all_domains)
 
 
@@ -186,19 +188,15 @@ def collect_integrity() -> dict:
 
 def top_phishing_tlds(n: int = 10) -> list[tuple[str, int]]:
     """Count TLD distribution from phishing.txt."""
-    import re
     from collections import Counter
-    rule_re = re.compile(r'^\|\|([^/\^\|\s@]+)\^')
     tld_counts: Counter = Counter()
     phishing_file = ROOT / 'src' / 'security' / 'phishing.txt'
     if not phishing_file.exists():
         return []
     with open(phishing_file, encoding='utf-8') as f:
         for line in f:
-            line = line.strip()
-            m = rule_re.match(line)
-            if m:
-                domain = m.group(1).lower().strip('.')
+            domain = parse_adguard_rule(line)
+            if domain:
                 parts = domain.split('.')
                 if len(parts) >= 2:
                     tld_counts['.' + parts[-1]] += 1

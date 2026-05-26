@@ -14,9 +14,20 @@ Design goals:
 
 import json
 import os
-import re
+import sys
 from collections import OrderedDict
 from datetime import datetime, timezone
+
+# Shared primitives (RULE_RE, LABEL_RE, IPV4_RE, is_valid_domain).
+# Single source of truth across scripts/ — previously each script
+# carried a private copy that could drift silently.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _common import (  # noqa: E402
+    IPV4_RE,
+    LABEL_RE,
+    RULE_RE,
+    is_valid_domain,
+)
 
 HEADER_TEMPLATE = """! Title: ShieldNova - {title}
 ! Description: {description}
@@ -31,10 +42,6 @@ HEADER_TEMPLATE = """! Title: ShieldNova - {title}
 SRC_DIR = os.path.join(os.path.dirname(__file__), '..', 'src')
 DIST_DIR = os.path.join(os.path.dirname(__file__), '..', 'dist')
 FORMATS_DIR = os.path.join(os.path.dirname(__file__), '..', 'formats')
-
-RULE_RE = re.compile(r'^\|\|(?P<domain>[^\^\s]+)\^(?P<options>\$[^\s!]+)?$')
-LABEL_RE = re.compile(r'^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$')
-IPV4_RE = re.compile(r'^(?:\d{1,3}\.){3}\d{1,3}$')
 
 
 # ── Generic helpers ─────────────────────────────────────────────────────────
@@ -69,28 +76,6 @@ def parse_rule(rule):
         'comment': comment,
         'rule': f'||{domain}^{options}',
     }
-
-
-def is_valid_domain(domain):
-    """Validate ordinary and punycode DNS names; reject IPs and malformed labels."""
-    domain = domain.lower().strip('.')
-    if not domain or len(domain) > 253:
-        return False
-    if IPV4_RE.match(domain):
-        return False
-    if '..' in domain or '.' not in domain:
-        return False
-
-    labels = domain.split('.')
-    if any(not LABEL_RE.match(label) for label in labels):
-        return False
-
-    tld = labels[-1]
-    if len(tld) < 2:
-        return False
-    if tld.startswith('xn--'):
-        return True
-    return tld.isalpha()
 
 
 def format_rule(parsed, comment_column=44):
@@ -295,7 +280,7 @@ def format_header_lines(title, description, count, tool, breakdown):
             f'! Version: {date}',
             '! Author: Harry (https://github.com/harryheros)',
             '! Homepage: https://github.com/harryheros/shieldnova',
-            '! Licence: CC BY-NC-SA 4.0',
+            '! License: CC BY-NC-SA 4.0',
             f'! Total: {count}',
         ]
 

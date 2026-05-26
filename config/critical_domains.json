@@ -398,5 +398,14 @@
   "reviewed_hosting_domains": {
     "_comment": "Hosting-surface subdomains that have been manually verified as legitimately malicious (e.g. confirmed phishing pages on workers.dev, github.io, netlify.app). Entries here suppress HOSTING audit warnings and are safe to keep in security source files. Format: {\"domain\": \"reason / date reviewed\"}",
     "domains": {}
+  },
+  "suspicious_patterns": {
+    "_comment": "Regex patterns flagged as MANUAL-REVIEW by audit_existing_rules.py. Edit this list as TLD-abuse landscape shifts — e.g. .gq is no longer free, new abuse TLDs emerge. Each entry is [pattern, reason]. Patterns are applied with re.search() against the lowercased domain.",
+    "patterns": [
+      ["\\d{6,}",                                       "long numeric string"],
+      ["[a-f0-9]{8}-[a-f0-9]{4}",                       "UUID-like"],
+      ["[a-z0-9]{32,}\\.",                              "hash-like subdomain"],
+      ["\\.(xyz|top|click|loan|win|bid|gq|cf|ml|ga|tk)$", "high-abuse TLD"]
+    ]
   }
 }
