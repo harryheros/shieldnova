@@ -2,6 +2,12 @@
 
 > Security rule updates and release history.
 
+## 2026-06-01
+
+- Security rules updated
+- ✓ Release validation: passed
+
+---
 ## 2026-05-26
 
 - Security rules updated
