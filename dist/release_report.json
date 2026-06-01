@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-26 15:13:30 UTC",
+  "generated_at": "2026-06-01 06:47:26 UTC",
   "build": {
-    "built_at": "2026-05-26 15:13:30 UTC",
+    "built_at": "2026-06-01 06:47:26 UTC",
     "profile": "Conservative / Compatibility-First",
     "invalid_rules_skipped": 0,
     "allowlist_entries": 0,
@@ -108,15 +108,15 @@
   },
   "rule_delta": {
     "total_rules_now": 1429,
-    "previous_total": null,
-    "delta": null
+    "previous_total": 1429,
+    "delta": 0
   },
   "integrity": {
     "sha256": {
-      "stats.json": "907762be9abc73fafdb5de80cb54a605c2ac3487e877cf5abb1964acd798710c",
+      "stats.json": "bdb9f724b8ce9b1ab2246aa5633d23d1b48bc2d12aa048f10b20c78397e7bc4b",
       "fetch_stats.json": "1b81c047d97a9b00534d14233eba72ae1dda6fc4801d5f5aa80eaed18c424140",
-      "shieldnova-full.txt": "562f470856a2c77434a430dc725d3713fc106077416dfb118ff710ba0aef0dd1",
-      "shieldnova-security.txt": "5925884492c76f2e0278e79b0eae45f9168e706cd5a80ea1bd7138761bdfc067"
+      "shieldnova-full.txt": "19471c73d74e9e0d3fa71067a00a00d60229d09bfccdf5ed1578fa7d0919b202",
+      "shieldnova-security.txt": "ab1736992d1d2df34d47927d9dfb41944847dba81fa516d301192fe513794501"
     }
   },
   "disclosure": {
