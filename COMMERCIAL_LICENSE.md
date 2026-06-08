@@ -6,6 +6,24 @@ Commercial use requires a separate written license agreement.
 
 ---
 
+## Scope — What This License Covers
+
+Commercial licensing covers **ShieldNova's own original work**: curation,
+classification, organization, annotations, allowlists, cleansing and merge
+logic, enrichment, and the generated distribution formats.
+
+It does **not** cover, and does not purport to restrict, the underlying
+third-party factual data (individual malicious, tracking, or advertising
+domains) obtained from upstream threat-intelligence sources. That data remains
+subject to its original licenses — see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+A party obtaining the same domains directly from those upstream sources does not
+require a ShieldNova commercial license for that data.
+
+In short: you license ShieldNova's curation and packaging, not the raw facts it
+organizes.
+
+---
+
 ## What Requires a Commercial License
 
 The following uses require explicit prior written authorization from the author:

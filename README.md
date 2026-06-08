@@ -1,6 +1,6 @@
 # ShieldNova
 
-[![Version](https://img.shields.io/badge/version-v2.1.0-blue)](https://github.com/harryheros/shieldnova/releases)
+[![Version](https://img.shields.io/badge/version-v2.1.1-blue)](https://github.com/harryheros/shieldnova/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-orange)](LICENSE)
 
 ShieldNova is a **compatibility-first domain filter list** for:
@@ -15,7 +15,7 @@ Subscribe directly in AdGuard, Clash, Surge, Shadowrocket, Loon, or QuantumultX.
 
 ---
 
-> **License Notice**: All versions of this project, including historical commits, are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Commercial use of any version requires a separate written license agreement.
+> **License Notice**: All versions of this project, including historical commits, are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), **as applied to ShieldNova's own curation and value-added work**. Third-party source data remains under its original licenses — see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md). Commercial use of ShieldNova's own work requires a separate written license agreement.
 > **Versioning Notice**: Previous public versions of this project may have been distributed under different license terms. All current and future releases are governed solely by the LICENSE file in this repository.
 
 ## Why ShieldNova
@@ -187,6 +187,15 @@ ShieldNova is part of the Nova infrastructure toolkit:
 
 - **Non-commercial use**: Permitted under the terms of CC BY-NC-SA 4.0.
 - **Commercial use**: Commercial use, SaaS deployment, API resale, redistribution, or integration into paid products or services requires explicit prior written authorization from the author. See [COMMERCIAL_LICENSE.md](./COMMERCIAL_LICENSE.md) or contact via [GitHub Issues](https://github.com/harryheros/shieldnova/issues).
+
+### Third-party data
+
+ShieldNova contains data derived from third-party threat-intelligence sources
+(abuse.ch URLhaus & ThreatFox, adblock-nocoin-list, Phishing.Database). **Rights
+in third-party source data remain with their respective owners and licenses.**
+ShieldNova's license applies only to ShieldNova-specific curation,
+classification, annotations, formatting, allowlists, and other value-added work
+— not to the underlying factual domain data. See [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) for per-source attribution and licenses.
 
 ---
 

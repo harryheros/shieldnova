@@ -2,6 +2,17 @@
 
 > Security rule updates and release history.
 
+## 2026-06-05 — v2.1.1
+
+- Clarified licensing boundaries for third-party threat-intelligence sources
+- Added `THIRD_PARTY_NOTICES.md` documenting per-source attribution and licenses
+  (abuse.ch URLhaus & ThreatFox, adblock-nocoin-list MIT, Phishing.Database MIT)
+- README and COMMERCIAL_LICENSE now state that ShieldNova's license covers only
+  its own curation, classification, allowlists, annotations, and generated
+  formats — not the underlying third-party factual domain data
+- No data or pipeline changes
+
+---
 ## 2026-06-01
 
 - Security rules updated
