@@ -1,38 +1,53 @@
 {
-  "fetched_at": "2026-07-01 08:25:40 UTC",
+  "fetched_at": "2026-09-25 13:17:20 UTC",
   "dry_run": false,
+  "policy": {
+    "max_per_source": 250,
+    "max_per_file": 500,
+    "fresh_quota": 100,
+    "max_age_days": 180
+  },
   "sources": {
     "urlhaus": {
-      "status": "file_cap_reached",
-      "raw": 495,
-      "platform_skipped": 6795,
+      "status": "ok",
+      "raw": 508,
+      "platform_skipped": 6390,
       "platform_skipped_by_apex": {
-        "raw.githubusercontent.com": 5623,
-        "github.com": 920,
-        "blogspot.com": 3,
-        "codeload.github.com": 37,
-        "workers.dev": 5,
+        "github.com": 855,
+        "vercel.app": 2,
+        "amazonaws.com": 1,
+        "firebasestorage.googleapis.com": 8,
+        "raw.githubusercontent.com": 5270,
         "blob.core.windows.net": 4,
-        "drive.google.com": 112,
-        "firebasestorage.googleapis.com": 1,
-        "pages.dev": 20,
-        "dropbox.com": 6,
-        "githubusercontent.com": 3,
+        "drive.google.com": 136,
+        "githubusercontent.com": 4,
+        "blogspot.com": 2,
+        "workers.dev": 1,
+        "pages.dev": 19,
+        "codeload.github.com": 31,
         "github.io": 2,
         "media.githubusercontent.com": 1,
         "sendspace.com": 15,
-        "onedrive.live.com": 5,
-        "docs.google.com": 37,
+        "dropbox.com": 4,
+        "docs.google.com": 34,
         "sites.google.com": 1
       },
-      "new": 0
+      "new": 250
     },
     "threatfox": {
-      "status": "file_cap_reached",
-      "raw": 1,
-      "platform_skipped": 0,
-      "platform_skipped_by_apex": {},
-      "new": 0
+      "status": "ok",
+      "raw": 3442,
+      "platform_skipped": 22,
+      "platform_skipped_by_apex": {
+        "jsdelivr.net": 14,
+        "t.me": 3,
+        "sites.google.com": 1,
+        "workers.dev": 1,
+        "cloudapp.azure.com": 1,
+        "amazonaws.com": 1,
+        "azurefd.net": 1
+      },
+      "new": 49
     },
     "nocoin": {
       "status": "ok",
@@ -41,23 +56,22 @@
       "platform_skipped_by_apex": {
         "now.sh": 2
       },
-      "new": 0,
-      "capped_at": 50
+      "new": 2
     },
     "phishing_database": {
-      "status": "file_cap_reached",
-      "raw": 298732,
-      "platform_skipped": 86768,
+      "status": "ok",
+      "raw": 299147,
+      "platform_skipped": 86777,
       "platform_skipped_by_apex": {
-        "pages.dev": 12720,
+        "pages.dev": 12724,
         "workers.dev": 3884,
         "weebly.com": 6900,
-        "vercel.app": 10652,
+        "vercel.app": 10653,
         "azurewebsites.net": 710,
         "webflow.io": 11742,
         "netlify.app": 3901,
-        "amazonaws.com": 731,
-        "github.io": 7496,
+        "amazonaws.com": 733,
+        "github.io": 7497,
         "appspot.com": 12973,
         "googleusercontent.com": 81,
         "blob.core.windows.net": 85,
@@ -68,7 +82,7 @@
         "codesandbox.io": 57,
         "netlify.com": 36,
         "wixsite.com": 1245,
-        "web.app": 4428,
+        "web.app": 4429,
         "firebaseapp.com": 2167,
         "azureedge.net": 53,
         "tumblr.com": 37,
@@ -105,8 +119,41 @@
         "wix.com": 1,
         "sites.google.com": 1
       },
-      "new": 0
+      "new": 100
     }
   },
-  "total_added": 0
+  "targets": {
+    "malware": {
+      "evicted_age": 0,
+      "evicted_not_in_feed": 299,
+      "evicted_fifo": 0,
+      "liveness_checked_sources": [
+        "urlhaus"
+      ],
+      "added": 299,
+      "total_after": 500
+    },
+    "cryptojacking": {
+      "evicted_age": 0,
+      "evicted_not_in_feed": 3,
+      "evicted_fifo": 0,
+      "liveness_checked_sources": [
+        "nocoin"
+      ],
+      "added": 2,
+      "total_after": 211
+    },
+    "phishing": {
+      "evicted_age": 0,
+      "evicted_not_in_feed": 0,
+      "evicted_fifo": 100,
+      "liveness_checked_sources": [
+        "phishing_database"
+      ],
+      "added": 100,
+      "total_after": 500
+    }
+  },
+  "total_added": 401,
+  "total_removed": 402
 }
