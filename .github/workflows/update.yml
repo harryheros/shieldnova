@@ -2,17 +2,21 @@ name: Update ShieldNova Dataset
 
 on:
   schedule:
-    - cron: "0 2 * * 1"    # Weekly: every Monday 02:00 UTC (build only)
-    - cron: "0 3 1 * *"    # Monthly: 1st of month 03:00 UTC (threat intel fetch + build)
+    - cron: "0 2 * * 1"    # Weekly: every Monday 02:00 UTC (threat intel fetch + build)
   workflow_dispatch:
     inputs:
       run_fetch:
         description: "Run threat intelligence fetch (yes/no)"
         required: false
-        default: "no"
+        default: "yes"
+
+# Never let two dataset builds race on the same branch (manual + scheduled).
+concurrency:
+  group: shieldnova-update-${{ github.ref }}
+  cancel-in-progress: false
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  PYTHONUNBUFFERED: "1"
 
 permissions:
   contents: write
@@ -21,54 +25,43 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: "3.11"
+          python-version: "3.13"
 
-      # Threat intel fetch - run monthly or on manual trigger
-      # Weekly build: fetch is skipped, continue-on-error not needed
-      # Monthly / manual fetch: failure creates a GitHub Issue via notify-failure job
       - name: Run unit tests
         run: |
-          echo "[+] Running unit tests for shared helpers..."
           python3 scripts/test_common.py
           python3 scripts/test_version_consistency.py
+          python3 scripts/test_fetch_rotation.py
 
+      # Threat intel fetch runs weekly since v2.2: the security lists are a
+      # rolling window of *currently active* threats (see fetch_threat_intel.py),
+      # so freshness depends on how often it runs. It is 4 plain file
+      # downloads per run; feed failures are tolerated per source.
       - name: Fetch threat intelligence
-        if: |
-          github.event.schedule == '0 3 1 * *' ||
-          github.event.inputs.run_fetch == 'yes'
-        run: |
-          echo "[+] Fetching threat intelligence from public feeds..."
-          python3 scripts/fetch_threat_intel.py
+        if: github.event_name == 'schedule' || github.event.inputs.run_fetch != 'no'
+        run: python3 scripts/fetch_threat_intel.py
 
       - name: Audit existing rules (post-fetch)
-        if: |
-          github.event.schedule == '0 3 1 * *' ||
-          github.event.inputs.run_fetch == 'yes'
-        run: |
-          echo "[+] Auditing src/security/ for feed pollution..."
-          python3 scripts/audit_existing_rules.py --fix --output dist/audit_report.json
-          echo "Audit complete"
+        if: github.event_name == 'schedule' || github.event.inputs.run_fetch != 'no'
+        run: python3 scripts/audit_existing_rules.py --fix --output dist/audit_report.json
 
       - name: Build rule artifacts
         run: python3 scripts/build.py
 
       - name: False positive gate
-        run: |
-          echo "[+] Running false positive detection..."
-          python3 scripts/test_false_positives.py
+        run: python3 scripts/test_false_positives.py
 
       - name: Generate release report
-        run: |
-          echo "[+] Generating transparency report..."
-          python3 scripts/generate_release_report.py
+        run: python3 scripts/generate_release_report.py
 
       - name: Show stats
         run: |
@@ -76,7 +69,7 @@ jobs:
           [ -f dist/stats.json ] && cat dist/stats.json || echo "stats.json missing"
           echo ""
           echo "=== Fetch Stats ==="
-          [ -f dist/fetch_stats.json ] && cat dist/fetch_stats.json || echo "No fetch stats (fetch not run)"
+          [ -f dist/fetch_stats.json ] && cat dist/fetch_stats.json || echo "No fetch stats"
           echo ""
           echo "=== Rule Counts ==="
           for f in dist/shieldnova-*.txt; do
@@ -85,41 +78,54 @@ jobs:
           done
 
       - name: Commit and push if changed
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Directory-level adds so new output files (e.g. additional
-          # format outputs, future config tables) are picked up
-          # automatically instead of being silently dropped.
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/ dist/ formats/ config/ CHANGELOG.md
           if git diff --cached --quiet; then
             echo "No changes detected. Skipping commit."
-          else
-            TOTAL=$(python3 scripts/commit_message.py 2>/dev/null || echo "auto-update")
-            git commit -m "chore: shieldnova $(date -u +%Y-%m-%d) | ${TOTAL}"
-            git push
+            exit 0
           fi
+          TOTAL=$(python3 scripts/commit_message.py 2>/dev/null || echo "auto-update")
+          git commit -m "chore: shieldnova $(date -u +%Y-%m-%d) | ${TOTAL}"
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "::warning::push rejected (attempt $attempt), rebasing"
+            git pull --rebase --autostash
+            sleep $((attempt * 5))
+          done
+          echo "::error::failed to push after 3 attempts"
+          exit 1
 
   notify-failure:
     runs-on: ubuntu-latest
     needs: update
-    if: ${{ needs.update.result == 'failure' }}
+    if: ${{ failure() }}
+    timeout-minutes: 5
     permissions:
       issues: write
 
     steps:
       - name: Create failure issue
-        uses: actions/github-script@v7
+        # v7 ran on Node 20, which GitHub removed from hosted runners on
+        # 2026-09-16 — the failure notifier itself would no longer run.
+        uses: actions/github-script@v9
         with:
           script: |
             const title = `ShieldNova update failed — ${new Date().toISOString().split('T')[0]}`;
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
             const body = [
               '## ShieldNova automated update failed',
               '',
-              `**Workflow run:** ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              `**Workflow run:** ${runUrl}`,
               '',
               'Possible causes:',
-              '- Threat intel feed unavailable or returned invalid data',
+              '- Unit tests failed',
+              '- False positive gate found a critical-service domain in an output',
               '- Build script validation failure',
               '- Git push conflict',
               '',
@@ -141,5 +147,12 @@ jobs:
                 title,
                 body,
                 labels: ['ci-failure'],
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues.data[0].number,
+                body: `Another failed run: ${runUrl}`,
               });
             }
