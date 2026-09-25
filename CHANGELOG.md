@@ -2,6 +2,27 @@
 
 > Security rule updates and release history.
 
+## 2026-09-25 — v2.2.0
+
+- Security lists are now a rolling window of currently active threats instead
+  of append-only. `malware.txt` and `phishing.txt` had reached their 500-entry
+  cap on 2026-05-02, after which no new threat intelligence was added.
+  Auto-fetched entries are retired when their feed no longer lists them, after
+  180 days, or to make room for fresh entries; hand-curated rules are never
+  touched. Truncated or failed feeds never trigger removals.
+- Fixed ThreatFox parsing: the feed's comma-plus-space CSV format meant almost
+  nothing was parsed. Only the IOC value column is used now (domain/URL IOCs,
+  confidence >= 75), so reference links can never be mistaken for IOCs.
+- New domains are selected across the whole feed instead of alphabetically.
+- Threat intelligence fetch now runs weekly (was monthly).
+- Auto-fetched entries are attributed to their actual source feed.
+- Changelog entries report new/retired counts, and no longer repeat a
+  previous fetch as "refreshed".
+- CI: actions upgraded (checkout v7, setup-python v6 / Python 3.13,
+  github-script v9 — v7 ran on Node 20, removed from runners on 2026-09-16),
+  plus concurrency, timeout and push-with-rebase retry.
+
+---
 ## 2026-07-01
 
 - Security rules updated

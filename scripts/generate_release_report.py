@@ -103,15 +103,25 @@ def collect_build_data(stats: dict) -> dict:
     }
 
 
-def collect_fetch_data(fetch_stats: dict | None) -> dict | None:
+def fetch_ran_today(fetch_stats: dict | None) -> bool:
+    """dist/fetch_stats.json is committed and persists between runs. Only a
+    fetch from the same UTC day belongs to this build; older stats must not
+    be re-announced as "Threat intelligence refreshed" every week."""
     if not fetch_stats:
+        return False
+    fetched = str(fetch_stats.get('fetched_at', ''))[:10]
+    return fetched == datetime.now(timezone.utc).strftime('%Y-%m-%d')
+
+
+def collect_fetch_data(fetch_stats: dict | None) -> dict | None:
+    if not fetch_ran_today(fetch_stats):
         return None
     total_platform_skipped = 0
     successful_sources = 0
     failed_sources = 0
 
     for src_data in fetch_stats.get('sources', {}).values():
-        if src_data.get('status') == 'ok':
+        if src_data.get('status') in ('ok', 'feed_incomplete'):
             successful_sources += 1
         elif src_data.get('status'):
             failed_sources += 1
@@ -120,6 +130,7 @@ def collect_fetch_data(fetch_stats: dict | None) -> dict | None:
     return {
         'fetched_at':             fetch_stats.get('fetched_at'),
         'total_new_domains':      fetch_stats.get('total_added', 0),
+        'total_retired_domains':  fetch_stats.get('total_removed', 0),
         'total_platform_skipped': total_platform_skipped,
         'successful_sources':     successful_sources,
         'failed_sources':         failed_sources,
@@ -265,6 +276,23 @@ def build_report(stats, fetch_stats, audit_report) -> dict:
 
 # ── Human-readable release notes ──────────────────────────────────────────────
 
+def _change_lines(report: dict) -> list[str]:
+    """Public, results-only summary of what changed in this build."""
+    diff  = (report.get('rule_delta') or {}).get('delta')
+    fetch = report.get('fetch') or {}
+    added = fetch.get('total_new_domains', 0)
+    retired = fetch.get('total_retired_domains', 0)
+    lines = []
+    if added or retired:
+        lines.append(f'- Threat intelligence refreshed (+{added} new, -{retired} retired)')
+    if diff:
+        sign = '+' if diff > 0 else ''
+        lines.append(f'- Total rules: {sign}{diff}')
+    if not lines:
+        lines.append('- Rebuilt; no rule changes')
+    return lines
+
+
 def build_release_notes(report: dict) -> str:
     """
     Generate public-facing RELEASE_NOTES.md.
@@ -287,20 +315,7 @@ def build_release_notes(report: dict) -> str:
         '',
     ]
 
-    # Rule change — direction only, no internal breakdown
-    if diff is not None:
-        if diff > 0:
-            lines.append(f'- Security rules updated (+{diff})')
-        elif diff < 0:
-            lines.append(f'- Security rules updated ({diff})')
-        else:
-            lines.append('- Security rules updated')
-    else:
-        lines.append('- Security rules updated')
-
-    # Threat intel — acknowledge fetch happened, no source detail
-    if new_total > 0:
-        lines.append('- Threat intelligence refreshed')
+    lines += _change_lines(report)
 
     # FP gate — pass/fail only
     if passed:
@@ -329,15 +344,7 @@ def update_changelog(report: dict):
     new_total = fetch.get('total_new_domains', 0)
 
     lines = [f'## {date_str}', '']
-
-    if diff is not None and diff != 0:
-        sign = '+' if diff >= 0 else ''
-        lines.append(f'- Security rules updated ({sign}{diff})')
-    else:
-        lines.append('- Security rules updated')
-
-    if new_total > 0:
-        lines.append('- Threat intelligence refreshed')
+    lines += _change_lines(report)
 
     icon = '✓' if passed else '✗'
     lines.append(f'- {icon} Release validation: {"passed" if passed else "failed"}')
@@ -352,7 +359,10 @@ def update_changelog(report: dict):
         if existing.startswith('# ShieldNova Changelog'):
             existing = existing.split('\n', 3)[-1].lstrip('\n')
         entry_header = f'## {date_str}'
-        if existing.startswith(entry_header):
+        # Replace only an *automatic* entry for the same day (exact header).
+        # A hand-written release entry such as '## 2026-06-05 — v2.1.1'
+        # merely starts with the same prefix and must be preserved.
+        if existing.split('\n', 1)[0].strip() == entry_header:
             parts = existing.split('\n---\n', 1)
             existing = parts[1].lstrip('\n') if len(parts) > 1 else ''
         new_content = header + '\n'.join(lines) + existing

@@ -1,6 +1,6 @@
 # ShieldNova
 
-[![Version](https://img.shields.io/badge/version-v2.1.1-blue)](https://github.com/harryheros/shieldnova/releases)
+[![Version](https://img.shields.io/badge/version-v2.2.0-blue)](https://github.com/harryheros/shieldnova/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-orange)](LICENSE)
 
 ShieldNova is a **compatibility-first domain filter list** for:
@@ -105,10 +105,10 @@ Same coverage. One rule instead of five hundred.
 └──────────────────┬──────────────────────────────┘
                    │
 ┌──────────────────▼──────────────────────────────┐
-│  Threat Intel Fetch (monthly, automated)        │
+│  Threat Intel Fetch (weekly, automated)         │
 │  abuse.ch URLhaus / ThreatFox                   │
 │  Phishing.Database / NoCoin list                │
-│  → dedup → cap → append to src/security/        │
+│  → dedup → rotate window → src/security/        │
 └──────────────────┬──────────────────────────────┘
                    │
 ┌──────────────────▼──────────────────────────────┐
@@ -128,7 +128,7 @@ Same coverage. One rule instead of five hundred.
 
 ### Automated Threat Intelligence
 
-ShieldNova's security module grows automatically via monthly feeds from:
+ShieldNova's security module is refreshed automatically every week from:
 
 | Source | Type | Feed |
 |---|---|---|
@@ -137,15 +137,14 @@ ShieldNova's security module grows automatically via monthly feeds from:
 | NoCoin | Cryptojacking | Mining service domains |
 | Phishing.Database | Phishing | Confirmed active phishing |
 
-Each fetch is capped (max 50 per source, 500 per file), deduplicated against all existing rules, and appended with full attribution. Growth is controlled and auditable.
+Each security file is a rolling window of at most 500 auto-fetched plus hand-curated domains. Auto-fetched entries are retired when their feed no longer lists them as active, after 180 days, or to make room for fresh entries (up to 100 per file per run); hand-curated rules are never touched, and a failed or truncated feed never triggers removals. New entries are deduplicated against all existing rules and attributed to their source feed. Every change is recorded in `dist/fetch_stats.json`.
 
 ### Update Schedule
 
 | Trigger | Frequency | Action |
 |---|---|---|
-| Scheduled | Every Monday 02:00 UTC | Build only |
-| Scheduled | 1st of month 03:00 UTC | Threat intel fetch + build |
-| Manual | On demand | Build or fetch + build |
+| Scheduled | Every Monday 02:00 UTC | Threat intel fetch + build |
+| Manual | On demand | Fetch + build (or build only) |
 | Failure | Automatic | Creates GitHub Issue |
 
 ---

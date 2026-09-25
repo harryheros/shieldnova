@@ -23,8 +23,18 @@ Design principles:
   - Conservative: only high-confidence entries
   - Trusted-platform-aware: hosting providers are classified and skipped
   - Deduplicate against ALL existing src/ rules
-  - Append-only: never removes existing rules
-  - Capped per source per run to prevent bloat
+  - Rolling window (v2.2): auto-fetched entries are rotated, hand-curated
+    entries are never touched. An auto entry is removed when
+      * its feed lists *currently active* threats, was fetched successfully
+        and looks complete, and no longer lists the domain; or
+      * it is older than MAX_AGE_DAYS (ThreatFox itself expires IOCs
+        after 6 months); or
+      * the file is full and the oldest auto entries must make room for
+        the per-run freshness quota.
+    v2.1 was append-only with a 500-per-file cap: malware.txt and
+    phishing.txt filled up on 2026-05-02 and no new threat intel entered
+    them afterwards.
+  - Capped per source per run and per file to keep client lists small
   - Full audit trail in fetch_stats.json
 
 Usage:
@@ -32,6 +42,7 @@ Usage:
 """
 
 import csv
+import hashlib
 import ipaddress
 import json
 import os
@@ -48,8 +59,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _common import (  # noqa: E402
     IPV4_RE,
     LABEL_RE,
+    __version__,
     is_valid_domain,
 )
+
+USER_AGENT = f'ShieldNova/{__version__} (+https://github.com/harryheros/shieldnova)'
 
 # ── Config ──────────────────────────────────────────────────────────────────
 
@@ -58,9 +72,38 @@ SRC_DIR    = REPO_ROOT / 'src'
 STATS_FILE = REPO_ROOT / 'dist' / 'fetch_stats.json'
 CONFIG     = REPO_ROOT / 'config' / 'critical_domains.json'
 
-MAX_PER_SOURCE = 50
-MAX_PER_FILE   = 500
+MAX_PER_SOURCE = 250   # new domains one source may add in one run
+MAX_PER_FILE   = 500   # hard size limit per security file (mobile clients)
+FRESH_QUOTA    = 100   # new domains per file per run, making room if needed
+MAX_AGE_DAYS   = 180   # auto entries older than this are always removed
+THREATFOX_MIN_CONFIDENCE = 75
 DRY_RUN = '--dry-run' in sys.argv
+
+# Feeds that list *currently active* threats, so "no longer listed" means
+# "no longer active". ThreatFox's CSV export is a short recent-additions
+# window, so absence there says nothing — its entries rotate by age only.
+LIVENESS_SOURCES = frozenset({'urlhaus', 'nocoin', 'phishing_database'})
+
+# A feed smaller than this is treated as truncated/broken: its entries are
+# NOT evicted for "no longer listed" in that run (new ones may still be added).
+MIN_FEED_SIZE = {
+    'urlhaus': 100,
+    'threatfox': 0,
+    'nocoin': 50,
+    'phishing_database': 10000,
+}
+
+# v2.1 tagged auto entries with the target name ("! auto: malware") rather
+# than the source. Map those legacy tags to the feed they came from.
+LEGACY_TAG_SOURCE = {
+    'malware': 'urlhaus',
+    'phishing': 'phishing_database',
+    'cryptojacking': 'nocoin',
+}
+
+AUTO_HEADER_RE = re.compile(
+    r'^!\s*---\s*Auto-fetched from (\S+) \((\d{4}-\d{2}-\d{2})\)\s*---\s*$')
+AUTO_TAG_RE = re.compile(r'!\s*auto:\s*([A-Za-z0-9_-]+)')
 
 HOSTS_PREFIX_RE = re.compile(r'^(?:0\.0\.0\.0|127\.0\.0\.1|::1)\s+')
 
@@ -416,7 +459,7 @@ def log(msg: str):
 def fetch_url(url: str, timeout: int = 30) -> str:
     """Fetch URL content as text. Returns empty string on failure."""
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'ShieldNova/1.0'})
+        req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.read().decode('utf-8', errors='replace')
     except (urllib.error.URLError, OSError, TimeoutError) as e:
@@ -582,25 +625,65 @@ def parse_urlhaus(content: str) -> tuple[set, dict]:
     return domains, skipped_by_platform
 
 
+THREATFOX_DEFAULT_HEADER = [
+    'first_seen_utc', 'ioc_id', 'ioc_value', 'ioc_type', 'threat_type',
+    'fk_malware', 'malware_alias', 'malware_printable', 'last_seen_utc',
+    'confidence_level', 'is_compromised', 'reference', 'tags', 'anonymous',
+    'reporter',
+]
+
+
 def parse_threatfox(content: str) -> tuple[set, dict]:
     """
-    Parse ThreatFox CSV export. Returns (domains, platform_skipped_count).
+    Parse ThreatFox CSV export. Returns (domains, platform_skipped_by_apex).
+
+    The export separates fields with '", "' (comma + space). v2.1 used
+    csv.reader without skipinitialspace, so the quotes stayed attached and
+    virtually nothing parsed (raw=1 in fetch_stats). It also scanned every
+    column after index 2 and took the first domain-looking value, which —
+    once quoting works — would pick the *reference* URL (bazaar.abuse.ch,
+    honeylabs.net, ...) for ip:port IOCs. Now only the ioc_value column is
+    used, only for ioc_type domain/url, with a minimum confidence level.
     """
     domains: set = set()
     skipped_by_platform: dict[str, int] = {}
-    for row in csv.reader(content.splitlines()):
-        if not row or row[0].startswith('#'):
+    header: list[str] | None = None
+    data_lines: list[str] = []
+    for raw in content.splitlines():
+        line = raw.strip()
+        if not line:
             continue
-        for cell in row[2:]:
-            domain = extract_domain(cell)
-            if not domain:
-                continue
-            if is_hosting_platform(domain):
-                _record_skip(skipped_by_platform, domain)
-                break
-            if is_valid_domain(domain):
-                domains.add(domain)
-                break
+        if line.startswith('#'):
+            body = line.lstrip('#').strip()
+            if body.startswith('"first_seen_utc"'):
+                header = next(csv.reader([body], skipinitialspace=True))
+            continue
+        data_lines.append(line)
+    idx = {name: i for i, name in enumerate(header or THREATFOX_DEFAULT_HEADER)}
+    i_val, i_type = idx.get('ioc_value'), idx.get('ioc_type')
+    i_conf = idx.get('confidence_level')
+    if i_val is None or i_type is None:
+        log('  WARN: ThreatFox header missing ioc_value/ioc_type; skipping feed')
+        return domains, skipped_by_platform
+
+    for row in csv.reader(data_lines, skipinitialspace=True):
+        if len(row) <= max(i_val, i_type):
+            continue
+        if row[i_type].strip().lower() not in ('domain', 'url'):
+            continue
+        if i_conf is not None and len(row) > i_conf:
+            try:
+                if int(row[i_conf]) < THREATFOX_MIN_CONFIDENCE:
+                    continue
+            except ValueError:
+                pass
+        domain = extract_domain(row[i_val])
+        if not domain:
+            continue  # e.g. URL on a bare IP
+        if is_hosting_platform(domain):
+            _record_skip(skipped_by_platform, domain)
+            continue
+        domains.add(domain)
     total_skipped = sum(skipped_by_platform.values())
     if total_skipped:
         log(f'  [platform-skip] threatfox: {total_skipped} hosting-platform IOCs discarded')
@@ -666,109 +749,268 @@ PARSERS = {
 }
 
 
+# ── Rolling window ───────────────────────────────────────────────────────────
+
+def live_domains(content: str) -> set:
+    """Every valid domain a line-oriented feed currently lists — including
+    hosting-platform subdomains, so manually reviewed hosting entries are
+    judged against the feed too."""
+    out = set()
+    for line in content.splitlines():
+        d = extract_domain(line)
+        if d:
+            out.add(d)
+    return out
+
+
+def _parse_date(value: str):
+    try:
+        return datetime.strptime(value, '%Y-%m-%d').date()
+    except (TypeError, ValueError):
+        return None
+
+
+def classify_lines(lines: list[str], target: str) -> list[dict]:
+    """Annotate each line of a security source file.
+
+    Returns one dict per line: {'line', 'kind', 'domain', 'source', 'date'}
+    where kind is 'auto' (auto-fetched rule), 'header' (auto section
+    header) or 'other' (hand-curated rules, comments, blanks — never
+    modified by the rotation).
+    """
+    out = []
+    section_date = None
+    for line in lines:
+        m = AUTO_HEADER_RE.match(line.strip())
+        if m:
+            section_date = _parse_date(m.group(2))
+            out.append({'line': line, 'kind': 'header', 'domain': None,
+                        'source': m.group(1), 'date': section_date})
+            continue
+        tag = AUTO_TAG_RE.search(line)
+        domain = extract_domain(line) if tag else None
+        if tag and domain:
+            source = tag.group(1)
+            source = LEGACY_TAG_SOURCE.get(source, source) if source == target else source
+            out.append({'line': line, 'kind': 'auto', 'domain': domain,
+                        'source': source, 'date': section_date})
+        else:
+            out.append({'line': line, 'kind': 'other', 'domain': None,
+                        'source': None, 'date': None})
+    return out
+
+
+def cleanup_lines(entries: list[dict]) -> list[str]:
+    """Drop auto section headers left without rules; collapse blank runs."""
+    lines: list[str] = []
+    for i, e in enumerate(entries):
+        if e['kind'] == 'evicted':
+            continue
+        if e['kind'] == 'header':
+            has_rule = False
+            for nxt in entries[i + 1:]:
+                if nxt['kind'] == 'header':
+                    break
+                if nxt['kind'] == 'auto' or (
+                        nxt['kind'] == 'other' and nxt['line'].strip().startswith('||')):
+                    has_rule = True
+                    break
+            if not has_rule:
+                continue
+        lines.append(e['line'])
+    out: list[str] = []
+    for line in lines:
+        if not line.strip() and out and not out[-1].strip():
+            continue
+        out.append(line)
+    while out and not out[-1].strip():
+        out.pop()
+    return out
+
+
+def pick(candidates: set, k: int, seed: str) -> list[str]:
+    """Deterministic, alphabet-neutral selection of k candidates.
+
+    v2.1 took the alphabetically first N, which systematically favoured
+    names starting with digits/'a' (e.g. '01activar-...'). Ranking by a
+    hash seeded with the run date spreads picks across the feed and still
+    reproduces exactly for a given day.
+    """
+    ranked = sorted(candidates,
+                    key=lambda d: hashlib.sha256(f'{seed}|{d}'.encode()).hexdigest())
+    return sorted(ranked[:max(0, k)])
+
+
+def rotate_target(target: str, path: Path, fetched: dict, existing_all: set,
+                  today) -> tuple[list[str], dict, dict]:
+    """Apply eviction + admission to one security file.
+
+    Returns (new_file_lines, target_stats, new_by_source).
+    """
+    lines = path.read_text(encoding='utf-8').splitlines() if path.exists() else []
+    entries = classify_lines(lines, target)
+    sources = [s for s, cfg in SOURCES.items() if cfg['target'] == target]
+
+    live = {s: fetched[s]['live'] for s in sources
+            if s in LIVENESS_SOURCES and fetched.get(s, {}).get('sane')}
+
+    evicted = {'age': [], 'not_in_feed': [], 'fifo': []}
+    for e in entries:
+        if e['kind'] != 'auto':
+            continue
+        if e['date'] and (today - e['date']).days > MAX_AGE_DAYS:
+            e['kind'] = 'evicted'
+            evicted['age'].append(e['domain'])
+        elif e['source'] in live and e['domain'] not in live[e['source']]:
+            e['kind'] = 'evicted'
+            evicted['not_in_feed'].append(e['domain'])
+
+    removed = set(evicted['age']) | set(evicted['not_in_feed'])
+    known = existing_all - removed
+
+    def file_domains():
+        doms = set()
+        for e in entries:
+            if e['kind'] == 'auto':
+                doms.add(e['domain'])
+            elif e['kind'] == 'other':
+                d = extract_domain(e['line'])
+                if d:
+                    doms.add(d)
+        return doms
+
+    candidates = {s: set(fetched[s]['eligible']) - known
+                  for s in sources if fetched.get(s, {}).get('ok')}
+    total_candidates = len(set().union(*candidates.values())) if candidates else 0
+    wanted = min(total_candidates, FRESH_QUOTA, MAX_PER_FILE)
+
+    # Make room for the freshness quota by retiring the oldest auto entries.
+    shortfall = wanted - (MAX_PER_FILE - len(file_domains()))
+    if shortfall > 0:
+        autos = [e for e in entries if e['kind'] == 'auto']
+        autos.sort(key=lambda e: e['date'] or today)  # stable: file order within a day
+        for e in autos[:shortfall]:
+            e['kind'] = 'evicted'
+            evicted['fifo'].append(e['domain'])
+
+    capacity = MAX_PER_FILE - len(file_domains())
+    new_by_source: dict[str, list[str]] = {}
+    taken: set = set()
+    seed = today.isoformat()
+    for s in sources:
+        if capacity <= 0 or s not in candidates:
+            continue
+        k = min(MAX_PER_SOURCE, capacity)
+        chosen = pick(candidates[s] - taken, k, f'{seed}|{s}')
+        if chosen:
+            new_by_source[s] = chosen
+            taken.update(chosen)
+            capacity -= len(chosen)
+
+    new_lines = cleanup_lines(entries)
+    for s, doms in new_by_source.items():
+        new_lines.append('')
+        new_lines.append(f'! --- Auto-fetched from {s} ({seed}) ---')
+        for d in doms:
+            rule = f'||{d}^'
+            new_lines.append(f'{rule:<44}! auto: {s}')
+
+    stats = {
+        'evicted_age': len(evicted['age']),
+        'evicted_not_in_feed': len(evicted['not_in_feed']),
+        'evicted_fifo': len(evicted['fifo']),
+        'liveness_checked_sources': sorted(live),
+        'added': sum(len(v) for v in new_by_source.values()),
+        'total_after': len(file_domains()) + sum(len(v) for v in new_by_source.values()),
+    }
+    return new_lines, stats, new_by_source
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
     log('ShieldNova Threat Intelligence Fetch')
     log('=' * 50)
-
     if DRY_RUN:
         log('*** DRY-RUN MODE — no files will be modified ***')
 
     existing = load_existing_domains()
     log(f'Loaded {len(existing)} existing domains across all modules')
+    today = datetime.now(timezone.utc).date()
 
     stats = {
         'fetched_at': datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC'),
         'dry_run': DRY_RUN,
+        'policy': {
+            'max_per_source': MAX_PER_SOURCE,
+            'max_per_file': MAX_PER_FILE,
+            'fresh_quota': FRESH_QUOTA,
+            'max_age_days': MAX_AGE_DAYS,
+        },
         'sources': {},
+        'targets': {},
     }
 
-    new_by_target: dict[str, list] = {target: [] for target in TARGET_FILES}
-
+    fetched: dict[str, dict] = {}
     for source_name, source_config in SOURCES.items():
-        url         = source_config['url']
-        target      = source_config['target']
-        description = source_config['description']
-
-        log(f'\nFetching: {description}')
+        url = source_config['url']
+        log(f"\nFetching: {source_config['description']}")
         log(f'  URL: {url}')
-
         content = fetch_url(url)
         if not content:
+            fetched[source_name] = {'ok': False, 'sane': False, 'eligible': set(), 'live': set()}
             stats['sources'][source_name] = {'status': 'fetch_failed', 'new': 0}
             continue
-
-        parser     = PARSERS[source_name]
-        raw_domains, platform_skipped = parser(content)
-        log(f'  Parsed: {len(raw_domains)} eligible domains (hosting-platform URLs already discarded)')
-
-        new_domains = sorted(d for d in raw_domains if d not in existing)
-        log(f'  New (after dedup): {len(new_domains)}')
-
-        target_file   = TARGET_FILES[target]
-        current_count = load_file_domain_count(target_file)
-        already_queued = len(set(new_by_target[target]))
-        remaining_capacity = MAX_PER_FILE - current_count - already_queued
-
-        if remaining_capacity <= 0:
-            log(f'  SKIP: {target_file.name} already at cap ({current_count}/{MAX_PER_FILE})')
-            total_skipped = sum(platform_skipped.values()) if isinstance(platform_skipped, dict) else platform_skipped
-            stats['sources'][source_name] = {
-                'status': 'file_cap_reached',
-                'raw': len(raw_domains),
-                'platform_skipped': total_skipped,
-                'platform_skipped_by_apex': platform_skipped if isinstance(platform_skipped, dict) else {},
-                'new': 0,
-            }
-            continue
-
-        cap = min(MAX_PER_SOURCE, remaining_capacity)
-        if len(new_domains) > cap:
-            log(f'  Capped: {len(new_domains)} → {cap}')
-            new_domains = new_domains[:cap]
-
-        new_by_target[target].extend(new_domains)
-        existing.update(new_domains)
-
-        total_skipped = sum(platform_skipped.values()) if isinstance(platform_skipped, dict) else platform_skipped
+        eligible, platform_skipped = PARSERS[source_name](content)
+        live = live_domains(content) if source_name in LIVENESS_SOURCES else set()
+        sane = len(live) >= MIN_FEED_SIZE.get(source_name, 0) if source_name in LIVENESS_SOURCES else True
+        if source_name in LIVENESS_SOURCES and not sane:
+            log(f'  WARN: {source_name} lists only {len(live)} domains '
+                f'(< {MIN_FEED_SIZE[source_name]}); treating as incomplete — '
+                'no liveness eviction for this source this run')
+        fetched[source_name] = {'ok': True, 'sane': sane, 'eligible': eligible, 'live': live}
+        log(f'  Parsed: {len(eligible)} eligible domains (hosting-platform URLs already discarded)')
         stats['sources'][source_name] = {
-            'status': 'ok',
-            'raw': len(raw_domains),
-            'platform_skipped': total_skipped,
-            'platform_skipped_by_apex': platform_skipped if isinstance(platform_skipped, dict) else {},
-            'new': len(new_domains),
-            'capped_at': cap,
+            'status': 'ok' if sane else 'feed_incomplete',
+            'raw': len(eligible),
+            'platform_skipped': sum(platform_skipped.values()),
+            'platform_skipped_by_apex': platform_skipped,
+            'new': 0,
         }
-        log(f'  Will add: {len(new_domains)} to {target_file.name}')
 
     total_added = 0
-    for target, domains in new_by_target.items():
-        domains = sorted(set(domains))
-        if not domains:
-            continue
-        target_file = TARGET_FILES[target]
+    for target, path in TARGET_FILES.items():
+        new_lines, tstats, new_by_source = rotate_target(target, path, fetched, existing, today)
+        stats['targets'][target] = tstats
+        for s, doms in new_by_source.items():
+            stats['sources'][s]['new'] = stats['sources'][s].get('new', 0) + len(doms)
+            existing.update(doms)
+        total_added += tstats['added']
+        log(f"\n{path.name}: -{tstats['evicted_not_in_feed']} no longer listed, "
+            f"-{tstats['evicted_age']} expired (> {MAX_AGE_DAYS}d), "
+            f"-{tstats['evicted_fifo']} rotated out, +{tstats['added']} new "
+            f"→ {tstats['total_after']} domains")
         if DRY_RUN:
-            log(f'\n[DRY-RUN] Would append {len(domains)} domains to {target_file.name}')
-            for d in domains[:10]:
-                log(f'  + {d}')
-            if len(domains) > 10:
-                log(f'  ... and {len(domains) - 10} more')
-        else:
-            append_domains(target_file, domains, target)
-            log(f'\nAppended {len(domains)} domains to {target_file.name}')
-        total_added += len(domains)
+            for s, doms in new_by_source.items():
+                for d in doms[:5]:
+                    log(f'  [DRY-RUN] + {d}  ({s})')
+            continue
+        path.write_text('\n'.join(new_lines) + '\n', encoding='utf-8')
 
     stats['total_added'] = total_added
+    stats['total_removed'] = sum(
+        t['evicted_age'] + t['evicted_not_in_feed'] + t['evicted_fifo']
+        for t in stats['targets'].values())
 
     if not DRY_RUN:
         os.makedirs(STATS_FILE.parent, exist_ok=True)
         with open(STATS_FILE, 'w', encoding='utf-8') as f:
             json.dump(stats, f, indent=2)
+            f.write('\n')
         log('\nStats written to dist/fetch_stats.json')
 
     log(f"\n{'=' * 50}")
-    log(f'Total new domains added: {total_added}')
+    log(f"Total new domains added: {total_added}, removed: {stats['total_removed']}")
     log('Done.')
     return 0
 
