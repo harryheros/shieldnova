@@ -2,6 +2,13 @@
 
 > Security rule updates and release history.
 
+## 2026-09-25
+
+- Threat intelligence refreshed (+401 new, -402 retired)
+- Total rules: -1
+- ✓ Release validation: passed
+
+---
 ## 2026-09-25 — v2.2.0
 
 - Security lists are now a rolling window of currently active threats instead
