@@ -231,6 +231,6 @@
 ||xmr.cool^                                 ! auto: cryptojacking
 ||zlx.com.br^                               ! auto: cryptojacking
 
-! --- Auto-fetched from nocoin (2026-09-25) ---
+! --- Auto-fetched from nocoin (2026-09-28) ---
 ||ddns.net^                                 ! auto: nocoin
 ||myeffect.net^                             ! auto: nocoin

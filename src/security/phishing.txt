@@ -16,110 +16,6 @@
 ! Many forums and download sites use them for legitimate links.
 
 ! --- Auto-fetched from phishing (2026-04-30) ---
-||000f9e-48.myshopify.com^                  ! auto: phishing
-||000ficohs99onli22.125mb.com^              ! auto: phishing
-||000ind002.webflow.io^                     ! auto: phishing
-||000int-5403945int.xyz^                    ! auto: phishing
-||000itkw.lfd.myj.mybluehost.me^            ! auto: phishing
-||000l34e.wcomhost.com^                     ! auto: phishing
-||000m8ih.wcomhost.com^                     ! auto: phishing
-||000mclogin.micloud-object-storage-xc-cos-static-web-hosting-qny.s3.us-east.cloud-object-storage.appdomain.cloud^! auto: phishing
-||000nt6r.wcomhost.com^                     ! auto: phishing
-||000nx2b.wcomhost.com^                     ! auto: phishing
-||000o2ba.wcomhost.com^                     ! auto: phishing
-||000o4d4.wcomhost.com^                     ! auto: phishing
-||000o5eh.wcomhost.com^                     ! auto: phishing
-||000o8dc.wcomhost.com^                     ! auto: phishing
-||000ogwl.wcomhost.com^                     ! auto: phishing
-||000ogxd.wcomhost.com^                     ! auto: phishing
-||000oiq3.wcomhost.com^                     ! auto: phishing
-||000p0d5.wcomhost.com^                     ! auto: phishing
-||000p0dg.wcomhost.com^                     ! auto: phishing
-||000p4en.wcomhost.com^                     ! auto: phishing
-||000p6vl.wcomhost.com^                     ! auto: phishing
-||000p7l3.wcomhost.com^                     ! auto: phishing
-||000p8my.wcomhost.com^                     ! auto: phishing
-||000pbob.wcomhost.com^                     ! auto: phishing
-||000pbox.wcomhost.com^                     ! auto: phishing
-||000unlock.000webhostapp.com^              ! auto: phishing
-||000update1.alsgroup-eg.com^               ! auto: phishing
-||000web-signon.4nmn.com^                   ! auto: phishing
-||000webhostcrazystikers.000webhostapp.com^ ! auto: phishing
-||000wechost.000webhostapp.com^             ! auto: phishing
-||000wuwtg000ywwtvwt0y.networkmcn.com^      ! auto: phishing
-||000xxxbodddxx00.webcindario.com^          ! auto: phishing
-
-! --- Auto-fetched from phishing (2026-04-30) ---
-||000zc.000webhostapp.com^                  ! auto: phishing
-||001.1614214972.workers.dev^               ! auto: phishing
-||001.9zhmn1k5.workers.dev^                 ! auto: phishing
-||001.gamecc.workers.dev^                   ! auto: phishing
-||00100.zzzly0925.workers.dev^              ! auto: phishing
-||00100601120140002.cf^                     ! auto: phishing
-||00100601120140009.ml^                     ! auto: phishing
-||00104.github.io^                          ! auto: phishing
-||00110000.com^                             ! auto: phishing
-||001107018.studentserver.com.au^           ! auto: phishing
-||00110omeopranslateslentldetext.godaddysites.com^! auto: phishing
-||001114.itabankk.repl.co^                  ! auto: phishing
-||001122102120.duckdns.org^                 ! auto: phishing
-||00112378.com^                             ! auto: phishing
-||0011thu001-secondary.z1.web.core.windows.net^! auto: phishing
-||0012-107647.weeblysite.com^               ! auto: phishing
-||0012b3a1.89dduvdjsi.shop^                 ! auto: phishing
-||0013009.com^                              ! auto: phishing
-||001420990998183-dot-wetransfer-auth-file-342.appspot.com^! auto: phishing
-||0014555.000webhostapp.com^                ! auto: phishing
-||00155.cn^                                 ! auto: phishing
-||0016948.bancoteafirma.repl.co^            ! auto: phishing
-||00169763258316485.eu-gb.cf.appdomain.cloud^! auto: phishing
-||00186.shop^                               ! auto: phishing
-||00186e.com^                               ! auto: phishing
-||001892.com^                               ! auto: phishing
-||001983878188731stea8a1a0.myclickfunnels.com^! auto: phishing
-||001codashop.freefire-work.duckdns.org^    ! auto: phishing
-||001dreamery.sa.com^                       ! auto: phishing
-||001fzh.corvettesandbids.com^              ! auto: phishing
-||001imbrier.sa.com^                        ! auto: phishing
-||001kp.cc^                                 ! auto: phishing
-||001madhankumar.github.io^                 ! auto: phishing
-||001molluscan.ru.com^                      ! auto: phishing
-||001tr3nsf00.com^                          ! auto: phishing
-||001user.moonfruit.com^                    ! auto: phishing
-||001xsnews.cn^                             ! auto: phishing
-||002-auto5eposlt.me^                       ! auto: phishing
-||002.195533.xyz^                           ! auto: phishing
-||00223.cc^                                 ! auto: phishing
-||0023-1--soporte2023co00.repl.co^          ! auto: phishing
-||002321.cn^                                ! auto: phishing
-||00272781hubpointmicrosoft.myportfolio.com^! auto: phishing
-||002gltz1wz1ltltz1w0wltw02gtz1.trackfiz.net^! auto: phishing
-
-! --- Auto-fetched from phishing (2026-04-30) ---
-||002nuctra02.com^                          ! auto: phishing
-||002paymts234.com^                         ! auto: phishing
-||002redir023.dns04.com^                    ! auto: phishing
-||002y.github.io^                           ! auto: phishing
-||0031f0031f.zibonalam.com^                 ! auto: phishing
-||0033.top^                                 ! auto: phishing
-||003429a9-b7ed-4689-89f.internalaccess.info^! auto: phishing
-||003455-1318019027.cos.eu-frankfurt.myqcloud.com^! auto: phishing
-||003467.cc^                                ! auto: phishing
-||003d6db553fcd8ae426bf76f121e0878-dot-cloud-365-000.el.r.appspot.com^! auto: phishing
-||003mail.github.io^                        ! auto: phishing
-||004-auto5eposlt.me^                       ! auto: phishing
-||004.settrade-services.com^                ! auto: phishing
-||004240331.top^                            ! auto: phishing
-||004261200-conf1rm.000webhostapp.com^      ! auto: phishing
-||00435eb8.nd-8wjsn.cloud^                  ! auto: phishing
-||00439632890395435423.com^                 ! auto: phishing
-||0046.paypal-merchant.ru^                  ! auto: phishing
-||004605.com^                               ! auto: phishing
-||004767666634154.litoralsulpremium.com.br^ ! auto: phishing
-||0047e852.jdhuwoskz.cloud^                 ! auto: phishing
-||004ca7f.netsolhost.com^                   ! auto: phishing
-||004sba90aolsecure00e0ios0sign0i0in8e0.netlify.app^! auto: phishing
-||005-user.anzhiyu.workers.dev^             ! auto: phishing
 ||00514cdeadd561c329964c042008341e-dot-solidstar-improts.uk.r.appspot.com^! auto: phishing
 ||00531688.0fhsdakffirer.org.cn^            ! auto: phishing
 ||005350049846275.nikkgpkvzv.957733539760618.avpcwvidxgiu.williamhnelson.org^! auto: phishing
@@ -534,3 +430,105 @@
 ||tap3530lnr.cc^                            ! auto: phishing_database
 ||taubwork.store^                           ! auto: phishing_database
 ||vvv-wahst5pp.com^                         ! auto: phishing_database
+
+! --- Auto-fetched from phishing_database (2026-09-28) ---
+||3838.pm^                                  ! auto: phishing_database
+||4.f4st.pl^                                ! auto: phishing_database
+||4qiyds.wusps.xyz^                         ! auto: phishing_database
+||5fgfgfgrg4g4g4g.blogspot.co.za^           ! auto: phishing_database
+||6m3ydj.shop^                              ! auto: phishing_database
+||a0375741.xsph.ru^                         ! auto: phishing_database
+||about-violation-info.surge.sh^            ! auto: phishing_database
+||absoluteservicellc.com^                   ! auto: phishing_database
+||accessthecurrentlyattweb.square.site^     ! auto: phishing_database
+||adancy.com^                               ! auto: phishing_database
+||airbnb0383.temp.swtest.ru^                ! auto: phishing_database
+||alia-dwi.poetry.my.id^                    ! auto: phishing_database
+||allegrolokalnie.oferta8539261.buzz^       ! auto: phishing_database
+||amazcookes.ddnsking.com^                  ! auto: phishing_database
+||amers.dyndns.dk^                          ! auto: phishing_database
+||amozon.co.jp.ouerneng.cc^                 ! auto: phishing_database
+||aprobados.oi-pe.shop^                     ! auto: phishing_database
+||arnazon.oo.jp.euoenoenancvco.vvygpmb.cn^  ! auto: phishing_database
+||arpaintingcolorado.com^                   ! auto: phishing_database
+||artleasea.lol^                            ! auto: phishing_database
+||att-service-inc-102086.weeblysite.com^    ! auto: phishing_database
+||awww3-aaaaa-aaaag-abeia-cai.raw.ic0.app^  ! auto: phishing_database
+||bafybeicdf2vdrp45umnyrwy2cp3zn3gfrikhvrtpd52azoc6swwgcfm7d4.ipfs.infura-ipfs.io^! auto: phishing_database
+||bafybeiholp3tnp44cq6ldde44muyzhdowkwyvw4qkkcmsjzirjgnd2ifou.ipfs.nftstorage.link^! auto: phishing_database
+||bejayz.com^                               ! auto: phishing_database
+||bet365t7.com^                             ! auto: phishing_database
+||blancoencaladamulchen.cl^                 ! auto: phishing_database
+||bokep-terbaru-indo6737.duckdns.org^       ! auto: phishing_database
+||bqyng.kl76dc.cn^                          ! auto: phishing_database
+||ch41595.tw1.ru^                           ! auto: phishing_database
+||changenow.vip^                            ! auto: phishing_database
+||cloudworksvapor.com^                      ! auto: phishing_database
+||codaashopfree.duckdns.org^                ! auto: phishing_database
+||date-on-14-01.totaltrackingimproveupscanada.com^! auto: phishing_database
+||deadliftsanddiamantes.com^                ! auto: phishing_database
+||dev-ogn83.pantheonsite.io^                ! auto: phishing_database
+||dgfipimp11.temp.swtest.ru^                ! auto: phishing_database
+||emailmktg.pontoonline.com.br^             ! auto: phishing_database
+||enxbf.blogspot.hr^                        ! auto: phishing_database
+||fbwcx.blogspot.md^                        ! auto: phishing_database
+||fiasmana.xyz^                             ! auto: phishing_database
+||findmy-tsi.com^                           ! auto: phishing_database
+||freepokerphotossite.com^                  ! auto: phishing_database
+||fsstvll.kl-site.top^                      ! auto: phishing_database
+||gbscuy5.6bplmu2bji5.dns-dynamic.net^      ! auto: phishing_database
+||giftrgifts.com^                           ! auto: phishing_database
+||help-center600.crabdance.com^             ! auto: phishing_database
+||help-tarzhardware.gitbook.io^             ! auto: phishing_database
+||hjia9.shop^                               ! auto: phishing_database
+||https.uniswap.org.pepetoken.me^           ! auto: phishing_database
+||httpswwwpromericacomsv.onlinebankingg2.repl.co^! auto: phishing_database
+||iamokay.in^                               ! auto: phishing_database
+||igcjyxvdkwb.green^                        ! auto: phishing_database
+||imaptravel.com^                           ! auto: phishing_database
+||instagrambluetickserviceindonesia.masuk-dana.my.id^! auto: phishing_database
+||invest-pl.pl^                             ! auto: phishing_database
+||itasemprecomvoce2020.000webhostapp.com^   ! auto: phishing_database
+||jawefxc.duckdns.org^                      ! auto: phishing_database
+||jkrskuqtvuzhl59k.jimdofree.com^           ! auto: phishing_database
+||jobs.b2infosoft.com^                      ! auto: phishing_database
+||joingroupwa899.co.vu^                     ! auto: phishing_database
+||jointhecou.com^                           ! auto: phishing_database
+||jzynq.blogspot.bg^                        ! auto: phishing_database
+||kalibiti.cc^                              ! auto: phishing_database
+||koinbaseprologix.godaddysites.com^        ! auto: phishing_database
+||lemonchiffonpowderbluehypotenuse.adasdfff.repl.co^! auto: phishing_database
+||letterboxdistributionmelbourne.com.au^    ! auto: phishing_database
+||lifestyleresearch.co^                     ! auto: phishing_database
+||login.sing-sung.club^                     ! auto: phishing_database
+||lokalnie-potwierdzenie.blog^              ! auto: phishing_database
+||lsdh8.omegasolucionesweb.com^             ! auto: phishing_database
+||m4specialevent.com^                       ! auto: phishing_database
+||mail-103108.square.site^                  ! auto: phishing_database
+||mail-mobel-online-id-network-common2-eutnugonf.a-c-c.co^! auto: phishing_database
+||mail.fb-loginiui7ijv.indo5.link^          ! auto: phishing_database
+||mclarenreturn.com^                        ! auto: phishing_database
+||member.garenax.com^                       ! auto: phishing_database
+||meta.protection-pages40949989644786269072.m1ho2i7fmj-eqg35wpn23xn.p.runcloud.link^! auto: phishing_database
+||metafeedback3268923.click^                ! auto: phishing_database
+||metamaskbnkverificaionupdate.run.place^   ! auto: phishing_database
+||mpzpwp5b6n.onrocket.site^                 ! auto: phishing_database
+||mybusinessperks.com^                      ! auto: phishing_database
+||nld.byl.us.kg^                            ! auto: phishing_database
+||olx.pl-konto.com^                         ! auto: phishing_database
+||ori777qq.site^                            ! auto: phishing_database
+||pages-revertion.000webhostapp.com^        ! auto: phishing_database
+||pay.cyon3.com-2b460879.immobi-show.com^   ! auto: phishing_database
+||pay.emag.bg^                              ! auto: phishing_database
+||perolikequerico.com^                      ! auto: phishing_database
+||pub-140cf903de964a479f3b465e010ddb3b.r2.dev^! auto: phishing_database
+||redr.me^                                  ! auto: phishing_database
+||reglemtcartebcoin.000webhostapp.com^      ! auto: phishing_database
+||report-83047937.nabalifares.ps^           ! auto: phishing_database
+||restrizionewebapp.com^                    ! auto: phishing_database
+||rimbun-group.com^                         ! auto: phishing_database
+||safepal-en.org^                           ! auto: phishing_database
+||sagvdsbgvds.blogspot.com.es^              ! auto: phishing_database
+||service-reactivate.com^                   ! auto: phishing_database
+||sg.answers.quantarchive.com^              ! auto: phishing_database
+||zodlz-coakleywilliams.qkipikpp.es^        ! auto: phishing_database
