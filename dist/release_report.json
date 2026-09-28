@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25 13:17:26 UTC",
+  "generated_at": "2026-09-28 08:10:30 UTC",
   "build": {
-    "built_at": "2026-09-25 13:17:25 UTC",
+    "built_at": "2026-09-28 08:10:29 UTC",
     "profile": "Conservative / Compatibility-First",
     "invalid_rules_skipped": 0,
     "allowlist_entries": 0,
@@ -85,21 +85,21 @@
     ]
   },
   "fetch": {
-    "fetched_at": "2026-09-25 13:17:20 UTC",
-    "total_new_domains": 401,
-    "total_retired_domains": 402,
-    "total_platform_skipped": 93191,
+    "fetched_at": "2026-09-28 08:10:23 UTC",
+    "total_new_domains": 202,
+    "total_retired_domains": 202,
+    "total_platform_skipped": 93209,
     "successful_sources": 4,
     "failed_sources": 0,
     "note": "Public summary only. Detailed operational data remains in internal build artifacts."
   },
   "audit": {
     "scanned_files": 3,
-    "total_findings": 238,
+    "total_findings": 213,
     "summary": {
       "must_remove": 0,
-      "hosting": 35,
-      "manual_review": 203
+      "hosting": 23,
+      "manual_review": 190
     }
   },
   "false_positive_gate": {
@@ -109,15 +109,15 @@
   },
   "rule_delta": {
     "total_rules_now": 1428,
-    "previous_total": 1429,
-    "delta": -1
+    "previous_total": 1428,
+    "delta": 0
   },
   "integrity": {
     "sha256": {
-      "stats.json": "ac4e72ad5621665cdcd4a2d268791a41339be1b09a396486e560d56b13253e25",
-      "fetch_stats.json": "67edd3c407e38ccb8ba32637d3f2d3246133a4500ce9720e08f1a2d65e6dc998",
-      "shieldnova-full.txt": "51240b5122aa94a00a0bcddc1c42261c2455d6ac674345cd4ec1d664bf6e4694",
-      "shieldnova-security.txt": "aff5eccea38fe951d135b04733cce6929464d557f477d45ccb9ace0913446764"
+      "stats.json": "9812fd93eefcdb65ce8ff6dbda4b7953a5e242e4c2fee908ddbcf69895c0d0ab",
+      "fetch_stats.json": "2e9fbe95c208c188a9d3c33b086208dbae5fd5afea7b2c6b765313302426ced9",
+      "shieldnova-full.txt": "86a8ec1f008aebb6c77d0b289130ae307bf0b86bcd580a2a0ecd93ad9835c427",
+      "shieldnova-security.txt": "082822d5123832b09ef36a3fd285345f795e3e94c1a0207c321f9cb72963b4de"
     }
   },
   "disclosure": {
