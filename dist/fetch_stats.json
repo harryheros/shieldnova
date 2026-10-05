@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-28 08:10:23 UTC",
+  "fetched_at": "2026-10-05 08:15:00 UTC",
   "dry_run": false,
   "policy": {
     "max_per_source": 250,
@@ -10,14 +10,16 @@
   "sources": {
     "urlhaus": {
       "status": "ok",
-      "raw": 508,
-      "platform_skipped": 6415,
+      "raw": 533,
+      "platform_skipped": 6444,
       "platform_skipped_by_apex": {
-        "discordapp.com": 4,
-        "github.com": 874,
-        "gitlab.com": 1,
+        "github.com": 892,
+        "dropbox.com": 5,
+        "discordapp.com": 1,
+        "raw.githubusercontent.com": 5286,
+        "github.io": 3,
+        "vercel.app": 2,
         "firebasestorage.googleapis.com": 8,
-        "raw.githubusercontent.com": 5275,
         "blob.core.windows.net": 4,
         "drive.google.com": 135,
         "githubusercontent.com": 4,
@@ -25,28 +27,24 @@
         "workers.dev": 1,
         "pages.dev": 19,
         "codeload.github.com": 31,
-        "github.io": 2,
         "media.githubusercontent.com": 1,
         "sendspace.com": 15,
-        "dropbox.com": 4,
         "docs.google.com": 34,
         "sites.google.com": 1
       },
-      "new": 86
+      "new": 100
     },
     "threatfox": {
       "status": "ok",
-      "raw": 4889,
-      "platform_skipped": 15,
+      "raw": 2105,
+      "platform_skipped": 7,
       "platform_skipped_by_apex": {
-        "pages.dev": 5,
-        "jsdelivr.net": 4,
-        "t.me": 3,
+        "pages.dev": 4,
         "cloudapp.azure.com": 1,
         "amazonaws.com": 1,
         "azurefd.net": 1
       },
-      "new": 14
+      "new": 0
     },
     "nocoin": {
       "status": "ok",
@@ -59,7 +57,7 @@
     },
     "phishing_database": {
       "status": "ok",
-      "raw": 299261,
+      "raw": 299330,
       "platform_skipped": 86777,
       "platform_skipped_by_apex": {
         "pages.dev": 12724,
@@ -124,8 +122,8 @@
   "targets": {
     "malware": {
       "evicted_age": 0,
-      "evicted_not_in_feed": 20,
-      "evicted_fifo": 80,
+      "evicted_not_in_feed": 55,
+      "evicted_fifo": 45,
       "liveness_checked_sources": [
         "urlhaus"
       ],
