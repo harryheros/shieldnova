@@ -15,113 +15,7 @@
 ! NOTE: URL shorteners (adf.ly, shorte.st, bit.do, etc.) are NOT blocked.
 ! Many forums and download sites use them for legitimate links.
 
-! --- Auto-fetched from phishing (2026-04-30) ---
-||00pix.sa.com^                             ! auto: phishing
-||00ql.paypal-merchant.ru^                  ! auto: phishing
-
 ! --- Auto-fetched from phishing (2026-05-01) ---
-||00refund321-mobile.com^                   ! auto: phishing
-||00rm-huntiiingtonbnk.dynamic-dns.net^     ! auto: phishing
-||00sharpening.sa.com^                      ! auto: phishing
-||00tec.blob.core.windows.net^              ! auto: phishing
-||00tyw0aytaw0tawtuaty.touryar.net^         ! auto: phishing
-||00tyy.ru.com^                             ! auto: phishing
-||00uyyu0gwytwuyytw00w.ketix.net^           ! auto: phishing
-||00web.glitch.me^                          ! auto: phishing
-||00wellsfarg.azurewebsites.net^            ! auto: phishing
-||00wetransfer-sharedfiles.netlify.app^     ! auto: phishing
-||00wqj4vup.duckdns.org^                    ! auto: phishing
-||01-10-2025-updates.netsons.org^           ! auto: phishing
-||01-secure.redirectme.net^                 ! auto: phishing
-||01-spk-veri7.xyz^                         ! auto: phishing
-||01.pilot45.com^                           ! auto: phishing
-||01.yfziy.com^                             ! auto: phishing
-||01001015122344.ml^                        ! auto: phishing
-||01001015122346.ml^                        ! auto: phishing
-||0100238504.mexigas.com.mx^                ! auto: phishing
-||010101010011010093893930101.azurewebsites.net^! auto: phishing
-||0101010scotia-rst.agency^                 ! auto: phishing
-||010109434-111.duckdns.org^                ! auto: phishing
-||01025.yimumon.xyz^                        ! auto: phishing
-||0103659.com^                              ! auto: phishing
-||010365vip.com^                            ! auto: phishing
-||01064223613.com^                          ! auto: phishing
-||0109626668.cn^                            ! auto: phishing
-||010aa.cn^                                 ! auto: phishing
-||010auth0.duckdns.org^                     ! auto: phishing
-||010c1ts.com^                              ! auto: phishing
-||010league0flegends010euw0.000webhostapp.com^! auto: phishing
-||011-two.vercel.app^                       ! auto: phishing
-||011.358761202.workers.dev^                ! auto: phishing
-||01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com^! auto: phishing
-||011111111.000webhostapp.com^              ! auto: phishing
-||01112450.duckdns.org^                     ! auto: phishing
-||01115484188.000webhostapp.com^            ! auto: phishing
-||0112254598920073980495234.com^            ! auto: phishing
-||0113985d.9jyji2.shop^                     ! auto: phishing
-||011511.xyz^                               ! auto: phishing
-||0115fe1f.jdksk-dndjcx.com.cn^             ! auto: phishing
-||01175421.00agt8.shop^                     ! auto: phishing
-||01188086.gstwu-eu-hey.com.cn^             ! auto: phishing
-||012-109354.weeblysite.com^                ! auto: phishing
-||01213300.atwebpages.com^                  ! auto: phishing
-||0123-luke-tatsuki.com^                    ! auto: phishing
-
-! --- Auto-fetched from phishing (2026-05-01) ---
-||0124985675.cf^                            ! auto: phishing
-||012567-24.000webhostapp.com^              ! auto: phishing
-||0126365.com^                              ! auto: phishing
-||012678.xyz^                               ! auto: phishing
-||012833215698.work.gd^                     ! auto: phishing
-||0128410.duckdns.org^                      ! auto: phishing
-||012841010.duckdns.org^                    ! auto: phishing
-||012841011.duckdns.org^                    ! auto: phishing
-||012841012.duckdns.org^                    ! auto: phishing
-||012841013.duckdns.org^                    ! auto: phishing
-||012de12faamaijf-cfbb43.ingress-earth.ewp.live^! auto: phishing
-||012sec-help-veri-citizen.duckdns.org^     ! auto: phishing
-||0135d091.00agt8.shop^                     ! auto: phishing
-||01368b10-57e4-4138-acc3-01373134d221.usrfiles.com^! auto: phishing
-||013d.paypal-merchant.ru^                  ! auto: phishing
-||0140.ee^                                  ! auto: phishing
-||01417282-9677-428f-8b57-11e362547314.id.repl.co^! auto: phishing
-||0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co^! auto: phishing
-||0145879-pagehelping.000webhostapp.com^    ! auto: phishing
-||0152indemnisat.pics^                      ! auto: phishing
-||015481847436324436677560049.com^          ! auto: phishing
-||01549b.com^                               ! auto: phishing
-||015595384.com^                            ! auto: phishing
-||0158k.cn^                                 ! auto: phishing
-||015hfy3c.square.site^                     ! auto: phishing
-||016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com^! auto: phishing
-||016614590390149677279078.my-project-45bb.ey.r.appspot.com^! auto: phishing
-||016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev^! auto: phishing
-||0171500061.mexigas.com.mx^                ! auto: phishing
-||0172844bks.7m.pl^                         ! auto: phishing
-||0177.datingg-voice.workers.dev^           ! auto: phishing
-||017795384.com^                            ! auto: phishing
-||0178ad5f.satgrjtxcvdv.org.cn^             ! auto: phishing
-||01793008-2b5e-4bbb-a429-3ff58af1c013.htmlcomponentservice.com^! auto: phishing
-||017a468d.huaxinsbm.com^                   ! auto: phishing
-||01837643.filesusr.com^                    ! auto: phishing
-||0184893-904.com^                          ! auto: phishing
-||018740-recoverpage.000webhostapp.com^     ! auto: phishing
-||01888f90-c5de-40b5-aa35-28082cf97171.htmlcomponentservice.com^! auto: phishing
-||018b1483.htengsc.com^                     ! auto: phishing
-||018f3b18cc2962586.temporary.link^         ! auto: phishing
-||018uh.mjt.lu^                             ! auto: phishing
-||01928758273.atwebpages.com^               ! auto: phishing
-
-! --- Auto-fetched from phishing (2026-05-01) ---
-||01940d0e.learnhere.com.cn^                ! auto: phishing
-||01967.com^                                ! auto: phishing
-||019aa9ed.d23822.cn^                       ! auto: phishing
-||01a-v0-cat33.hostenko.net^                ! auto: phishing
-||01activar-pin-protegercuenta.atsnx.com^   ! auto: phishing
-||01adc8d6.89dduvdjsi.shop^                 ! auto: phishing
-||01b3659.com^                              ! auto: phishing
-||01becu-server.duckdns.org^                ! auto: phishing
-||01bh.01zaq.dns-dynamic.net^               ! auto: phishing
 ||01blaak.com^                              ! auto: phishing
 ||01db3205053754908.temporary.link^         ! auto: phishing
 ||01digitalmaio.com^                        ! auto: phishing
@@ -530,3 +424,105 @@
 ||redirectparcel-postoffice.com^            ! auto: phishing_database
 ||royaleseason.com^                         ! auto: phishing_database
 ||sacola-aamericanas.myvnc.com^             ! auto: phishing_database
+
+! --- Auto-fetched from phishing_database (2026-10-12) ---
+||100472974781984.ga^                       ! auto: phishing_database
+||1503.6pcmvj0xya.beyondsm.com^             ! auto: phishing_database
+||1drv.caynet.xyz^                          ! auto: phishing_database
+||302904.scrutihostvrfyonlne.myonlineportal.net^! auto: phishing_database
+||610225.selcdn.ru^                         ! auto: phishing_database
+||766c9cf0.hwqwwrh.com.cn^                  ! auto: phishing_database
+||88online.one^                             ! auto: phishing_database
+||930xj.com^                                ! auto: phishing_database
+||acctiononyourfanpaege.com^                ! auto: phishing_database
+||activity-page-identity-coordinator.my.id^ ! auto: phishing_database
+||aderesafoods.com^                         ! auto: phishing_database
+||allegrolokalnie.id8741893.buzz^           ! auto: phishing_database
+||altinmed.domainchi24.ir^                  ! auto: phishing_database
+||amanzon.co.ip.zqwinsun.com.cn^            ! auto: phishing_database
+||andremap.com.br^                          ! auto: phishing_database
+||angelshopee.com^                          ! auto: phishing_database
+||api.sasioncard.com^                       ! auto: phishing_database
+||app-87bb24fb-edfc-4cf2-a8bb-db3ad5476a80.cleverapps.io^! auto: phishing_database
+||appled-lost.com^                          ! auto: phishing_database
+||ascxe.blogspot.ug^                        ! auto: phishing_database
+||att-106521.weeblysite.com^                ! auto: phishing_database
+||att-login3453.weeblysite.com^             ! auto: phishing_database
+||autocraftinnovation.com^                  ! auto: phishing_database
+||b3tgfv.myraidbox.de^                      ! auto: phishing_database
+||bafybeiaycj7wyjjc7qhfdhswgaanmsy57o24sdpls5hg2o6bmg26vpelfq.ipfs.fleek.cool^! auto: phishing_database
+||bdd0d57c-a20e-462a-b66c-a441ab36ccc0-00-1qewacazmpkrw.riker.replit.dev^! auto: phishing_database
+||beccu.link^                               ! auto: phishing_database
+||billinginfo-myee.com^                     ! auto: phishing_database
+||bisoninc.jaxcomedyclub.com^               ! auto: phishing_database
+||bjdqckmm.sorrentoluxuryboat.com^          ! auto: phishing_database
+||blsdongsn7j.qwrk.my.id^                   ! auto: phishing_database
+||bronzgreenintelligence.com^               ! auto: phishing_database
+||bruinfa.eu^                               ! auto: phishing_database
+||c-agricole-a36ba3.ingress-daribow.easywp.com^! auto: phishing_database
+||cake.eu.com^                              ! auto: phishing_database
+||cf.hk.1111r.icu^                          ! auto: phishing_database
+||change-now.ing^                           ! auto: phishing_database
+||chezianyasociados.com^                    ! auto: phishing_database
+||coffeewithabagel.com^                     ! auto: phishing_database
+||common-authentication.us-southeast-1.linodeobjects.com^! auto: phishing_database
+||crushus-s7.cofry.com^                     ! auto: phishing_database
+||d1496d455d.nxcli.io^                      ! auto: phishing_database
+||dandy-worlds.000webhostapp.com^           ! auto: phishing_database
+||dev-0896231214.pantheonsite.io^           ! auto: phishing_database
+||dev.metoocakae.com^                       ! auto: phishing_database
+||dhl-express-service.com^                  ! auto: phishing_database
+||dioxe2.duckdns.org^                       ! auto: phishing_database
+||ebay.com-itm.2013-john-deere-gator-850i-rsx.cgiah.fit^! auto: phishing_database
+||elkabong.com.br^                          ! auto: phishing_database
+||eretrya.mywebsites360.com^                ! auto: phishing_database
+||f0573273.xsph.ru^                         ! auto: phishing_database
+||fimat.nivedeetaelectricals.com^           ! auto: phishing_database
+||freexnxx66.tftpd.net^                     ! auto: phishing_database
+||gmngt.blogspot.am^                        ! auto: phishing_database
+||go2.browngreer.com^                       ! auto: phishing_database
+||great-williamson.34-125-197-109.plesk.page^! auto: phishing_database
+||grub-tante-hot.duckdns.org^               ! auto: phishing_database
+||grubparayoutuber-berkumpulgarena2021.duckdns.org^! auto: phishing_database
+||grupbaruhott18.duckdns.org^               ! auto: phishing_database
+||happywaffleco.com^                        ! auto: phishing_database
+||hogeso3226.temp.swtest.ru^                ! auto: phishing_database
+||homemailatt-1008994.weeblysite.com^       ! auto: phishing_database
+||icicibank.leadportals.com^                ! auto: phishing_database
+||icld.mipaginaweb.us^                      ! auto: phishing_database
+||injarch.com^                              ! auto: phishing_database
+||instagrampwrst.info^                      ! auto: phishing_database
+||invitedlepro.party^                       ! auto: phishing_database
+||iptvrebrands.com^                         ! auto: phishing_database
+||irsgov.co^                                ! auto: phishing_database
+||j-torg.ru^                                ! auto: phishing_database
+||jawetrtcx4.duckdns.org^                   ! auto: phishing_database
+||joinevents-pubgmobile.qhigh.com^          ! auto: phishing_database
+||kkymh.blogspot.bg^                        ! auto: phishing_database
+||kolekcjonerhoteli.pl^                     ! auto: phishing_database
+||kucsnlosdn.godaddysites.com^              ! auto: phishing_database
+||laria.com.br^                             ! auto: phishing_database
+||mail.mens.business-minagne.com^           ! auto: phishing_database
+||mail.sipfi.c505.net^                      ! auto: phishing_database
+||mail.tuwoeo.c505.net^                     ! auto: phishing_database
+||maria.susypro.com^                        ! auto: phishing_database
+||metarightcenter.ml^                       ! auto: phishing_database
+||my-site-101197-103778.weeblysite.com^     ! auto: phishing_database
+||npekgapplnch-164061821.sangekasra.ir^     ! auto: phishing_database
+||ntflx-help.com^                           ! auto: phishing_database
+||olaoluorealtors.estate^                   ! auto: phishing_database
+||onlinepersonas00.webcindario.com^         ! auto: phishing_database
+||pgsandrcvryprvcy45744.co.vu^              ! auto: phishing_database
+||phbxpdrypj.duckdns.org^                   ! auto: phishing_database
+||postoffice.pts21x-redelivery.com^         ! auto: phishing_database
+||psgus.top^                                ! auto: phishing_database
+||pub-5f1a4a485c2c4c248d46f3f954af8b3f.r2.dev^! auto: phishing_database
+||pub-933f8476e3b84494ba3f03acae460733.r2.dev^! auto: phishing_database
+||pubgmobile.com.xxucpubg.com^              ! auto: phishing_database
+||pubgspin16.dynamic-dns.net^               ! auto: phishing_database
+||qpkjzfpdib.duckdns.org^                   ! auto: phishing_database
+||rakuten01.com^                            ! auto: phishing_database
+||repts-99932747.ameigr.ma^                 ! auto: phishing_database
+||trackqst.top^                             ! auto: phishing_database
+||usps.com-trackubh.top^                    ! auto: phishing_database
+||vwptguzzuq.duckdns.org^                   ! auto: phishing_database

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-05 08:15:00 UTC",
+  "fetched_at": "2026-10-12 08:32:35 UTC",
   "dry_run": false,
   "policy": {
     "max_per_source": 250,
@@ -10,25 +10,27 @@
   "sources": {
     "urlhaus": {
       "status": "ok",
-      "raw": 533,
-      "platform_skipped": 6444,
+      "raw": 541,
+      "platform_skipped": 21702,
       "platform_skipped_by_apex": {
-        "github.com": 892,
-        "dropbox.com": 5,
-        "discordapp.com": 1,
-        "raw.githubusercontent.com": 5286,
-        "github.io": 3,
+        "workers.dev": 5,
+        "drive.google.com": 139,
+        "discordapp.com": 8,
+        "raw.githubusercontent.com": 18586,
+        "github.com": 2463,
+        "gitlab.com": 369,
+        "netlify.app": 3,
         "vercel.app": 2,
-        "firebasestorage.googleapis.com": 8,
+        "github.io": 4,
+        "firebasestorage.googleapis.com": 9,
         "blob.core.windows.net": 4,
-        "drive.google.com": 135,
         "githubusercontent.com": 4,
         "blogspot.com": 2,
-        "workers.dev": 1,
         "pages.dev": 19,
-        "codeload.github.com": 31,
+        "codeload.github.com": 30,
         "media.githubusercontent.com": 1,
         "sendspace.com": 15,
+        "dropbox.com": 4,
         "docs.google.com": 34,
         "sites.google.com": 1
       },
@@ -36,10 +38,12 @@
     },
     "threatfox": {
       "status": "ok",
-      "raw": 2105,
-      "platform_skipped": 7,
+      "raw": 1202,
+      "platform_skipped": 8,
       "platform_skipped_by_apex": {
-        "pages.dev": 4,
+        "t.me": 1,
+        "pages.dev": 3,
+        "pastebin.com": 1,
         "cloudapp.azure.com": 1,
         "amazonaws.com": 1,
         "azurefd.net": 1
@@ -122,8 +126,8 @@
   "targets": {
     "malware": {
       "evicted_age": 0,
-      "evicted_not_in_feed": 55,
-      "evicted_fifo": 45,
+      "evicted_not_in_feed": 60,
+      "evicted_fifo": 40,
       "liveness_checked_sources": [
         "urlhaus"
       ],

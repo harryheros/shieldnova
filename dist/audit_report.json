@@ -1,101 +1,21 @@
 {
   "scanned_files": 3,
-  "total_findings": 187,
+  "total_findings": 150,
   "summary": {
     "must_remove": 0,
-    "hosting": 11,
-    "manual_review": 176
+    "hosting": 1,
+    "manual_review": 149
   },
   "by_category": {
     "MUST-REMOVE": [],
     "HOSTING": [
       {
         "file": "src/security/malware.txt",
-        "line": 75,
+        "line": 27,
         "domain": "ofice365.github.io",
         "rule": "||ofice365.github.io^",
         "category": "HOSTING",
         "reason": "subdomain of hosting platform (github.io) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 30,
-        "domain": "00web.glitch.me",
-        "rule": "||00web.glitch.me^",
-        "category": "HOSTING",
-        "reason": "subdomain of hosting platform (glitch.me) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 31,
-        "domain": "00wellsfarg.azurewebsites.net",
-        "rule": "||00wellsfarg.azurewebsites.net^",
-        "category": "HOSTING",
-        "reason": "subdomain of hosting platform (azurewebsites.net) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 32,
-        "domain": "00wetransfer-sharedfiles.netlify.app",
-        "rule": "||00wetransfer-sharedfiles.netlify.app^",
-        "category": "HOSTING",
-        "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 42,
-        "domain": "010101010011010093893930101.azurewebsites.net",
-        "rule": "||010101010011010093893930101.azurewebsites.net^",
-        "category": "HOSTING",
-        "reason": "subdomain of hosting platform (azurewebsites.net) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 54,
-        "domain": "011-two.vercel.app",
-        "rule": "||011-two.vercel.app^",
-        "category": "HOSTING",
-        "reason": "subdomain of hosting platform (vercel.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 55,
-        "domain": "011.358761202.workers.dev",
-        "rule": "||011.358761202.workers.dev^",
-        "category": "HOSTING",
-        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 56,
-        "domain": "01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com",
-        "rule": "||01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com^",
-        "category": "HOSTING",
-        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 96,
-        "domain": "016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com",
-        "rule": "||016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com^",
-        "category": "HOSTING",
-        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 97,
-        "domain": "016614590390149677279078.my-project-45bb.ey.r.appspot.com",
-        "rule": "||016614590390149677279078.my-project-45bb.ey.r.appspot.com^",
-        "category": "HOSTING",
-        "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 101,
-        "domain": "0177.datingg-voice.workers.dev",
-        "rule": "||0177.datingg-voice.workers.dev^",
-        "category": "HOSTING",
-        "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
       }
     ],
     "MANUAL-REVIEW": [
@@ -245,31 +165,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 41,
-        "domain": "j-0-09g-9bh-h-ggf-1324992141.cos.ap-bangkok.myqcloud.com",
-        "rule": "||j-0-09g-9bh-h-ggf-1324992141.cos.ap-bangkok.myqcloud.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/malware.txt",
         "line": 49,
-        "domain": "leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com",
-        "rule": "||leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/malware.txt",
-        "line": 95,
-        "domain": "198348.gl",
-        "rule": "||198348.gl^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/malware.txt",
-        "line": 99,
         "domain": "87130921-60-20220830152356.webstarterz.com",
         "rule": "||87130921-60-20220830152356.webstarterz.com^",
         "category": "MANUAL-REVIEW",
@@ -277,7 +173,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 137,
+        "line": 83,
         "domain": "lai-1451610695.cos.ap-guangzhou.myqcloud.com",
         "rule": "||lai-1451610695.cos.ap-guangzhou.myqcloud.com^",
         "category": "MANUAL-REVIEW",
@@ -285,7 +181,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 159,
+        "line": 102,
         "domain": "pub-0478b308b8cf46709a73d0eed5afd633.r2.dev",
         "rule": "||pub-0478b308b8cf46709a73d0eed5afd633.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -293,7 +189,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 160,
+        "line": 103,
         "domain": "pub-1614932a526c40d79fe5bf23e71e3ff7.r2.dev",
         "rule": "||pub-1614932a526c40d79fe5bf23e71e3ff7.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -301,7 +197,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 161,
+        "line": 104,
         "domain": "pub-1900be17f2994b5580d602f23eb7fb93.r2.dev",
         "rule": "||pub-1900be17f2994b5580d602f23eb7fb93.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -309,7 +205,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 162,
+        "line": 105,
         "domain": "pub-364c6b3011ca492cab2354176cfaf3f0.r2.dev",
         "rule": "||pub-364c6b3011ca492cab2354176cfaf3f0.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -317,7 +213,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 163,
+        "line": 106,
         "domain": "pub-43fc211373d547278dd3d5bd0b4d9dac.r2.dev",
         "rule": "||pub-43fc211373d547278dd3d5bd0b4d9dac.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -325,7 +221,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 164,
+        "line": 107,
         "domain": "pub-45a83f302a1943ed8d62418c2af947ef.r2.dev",
         "rule": "||pub-45a83f302a1943ed8d62418c2af947ef.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -333,7 +229,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 165,
+        "line": 108,
         "domain": "pub-bbbdebc2599c4d74b04c5d53e439f7a7.r2.dev",
         "rule": "||pub-bbbdebc2599c4d74b04c5d53e439f7a7.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -341,7 +237,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 166,
+        "line": 109,
         "domain": "pub-bfc34934a91a4893817098f73415917a.r2.dev",
         "rule": "||pub-bfc34934a91a4893817098f73415917a.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -349,7 +245,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 167,
+        "line": 110,
         "domain": "pub-cdd0dd27ae6a4aee9841d397e0496374.r2.dev",
         "rule": "||pub-cdd0dd27ae6a4aee9841d397e0496374.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -357,7 +253,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 168,
+        "line": 111,
         "domain": "pub-ec081eb0fab74385a17d8d77afeeda3b.r2.dev",
         "rule": "||pub-ec081eb0fab74385a17d8d77afeeda3b.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -365,7 +261,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 201,
+        "line": 142,
         "domain": "softbank126023203236.bbtec.net",
         "rule": "||softbank126023203236.bbtec.net^",
         "category": "MANUAL-REVIEW",
@@ -373,7 +269,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 213,
+        "line": 154,
         "domain": "tdfhdser-1433552157.cos.ap-hongkong.myqcloud.com",
         "rule": "||tdfhdser-1433552157.cos.ap-hongkong.myqcloud.com^",
         "category": "MANUAL-REVIEW",
@@ -381,7 +277,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 235,
+        "line": 173,
         "domain": "vaamsmgfreocmroe-1342087530.cos.sa-saopaulo.myqcloud.com",
         "rule": "||vaamsmgfreocmroe-1342087530.cos.sa-saopaulo.myqcloud.com^",
         "category": "MANUAL-REVIEW",
@@ -389,7 +285,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 291,
+        "line": 226,
         "domain": "www999999asgasg-1327129302.cos.ap-chengdu.myqcloud.com",
         "rule": "||www999999asgasg-1327129302.cos.ap-chengdu.myqcloud.com^",
         "category": "MANUAL-REVIEW",
@@ -397,7 +293,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 334,
+        "line": 268,
         "domain": "petcarv.click",
         "rule": "||petcarv.click^",
         "category": "MANUAL-REVIEW",
@@ -405,7 +301,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 373,
+        "line": 301,
         "domain": "pub-0216fa08b2b94e129cb9e002cf7cb1f4.r2.dev",
         "rule": "||pub-0216fa08b2b94e129cb9e002cf7cb1f4.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -413,7 +309,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 374,
+        "line": 302,
         "domain": "pub-1c4ef2a315ec4b89b9dfad9472afee69.r2.dev",
         "rule": "||pub-1c4ef2a315ec4b89b9dfad9472afee69.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -421,7 +317,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 375,
+        "line": 303,
         "domain": "pub-8d59738861b849e5a38b795cc17b1019.r2.dev",
         "rule": "||pub-8d59738861b849e5a38b795cc17b1019.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -429,7 +325,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 412,
+        "line": 339,
         "domain": "www999999safagqwhg-1327129302.cos.ap-chengdu.myqcloud.com",
         "rule": "||www999999safagqwhg-1327129302.cos.ap-chengdu.myqcloud.com^",
         "category": "MANUAL-REVIEW",
@@ -437,7 +333,7 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 516,
+        "line": 420,
         "domain": "pub-a06eb79f0ebe4a6999bcc71a2227d8e3.r2.dev",
         "rule": "||pub-a06eb79f0ebe4a6999bcc71a2227d8e3.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -445,399 +341,39 @@
       },
       {
         "file": "src/security/malware.txt",
-        "line": 527,
-        "domain": "tk-1464303226.cos.ap-guangzhou.myqcloud.com",
-        "rule": "||tk-1464303226.cos.ap-guangzhou.myqcloud.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 36,
-        "domain": "01-spk-veri7.xyz",
-        "rule": "||01-spk-veri7.xyz^",
+        "line": 439,
+        "domain": "bnet.playm8ru.win",
+        "rule": "||bnet.playm8ru.win^",
         "category": "MANUAL-REVIEW",
         "reason": "suspicious pattern: high-abuse TLD"
       },
       {
-        "file": "src/security/phishing.txt",
-        "line": 39,
-        "domain": "01001015122344.ml",
-        "rule": "||01001015122344.ml^",
+        "file": "src/security/malware.txt",
+        "line": 470,
+        "domain": "f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com",
+        "rule": "||f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 510,
+        "domain": "pub-ce02802067934e0eb072f69bf6427bf6.r2.dev",
+        "rule": "||pub-ce02802067934e0eb072f69bf6427bf6.r2.dev^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/malware.txt",
+        "line": 511,
+        "domain": "pub-ecb7161ffc7a4a67bdd8761583e21d16.r2.dev",
+        "rule": "||pub-ecb7161ffc7a4a67bdd8761583e21d16.r2.dev^",
         "category": "MANUAL-REVIEW",
         "reason": "suspicious pattern: long numeric string"
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 40,
-        "domain": "01001015122346.ml",
-        "rule": "||01001015122346.ml^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 41,
-        "domain": "0100238504.mexigas.com.mx",
-        "rule": "||0100238504.mexigas.com.mx^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 43,
-        "domain": "0101010scotia-rst.agency",
-        "rule": "||0101010scotia-rst.agency^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 44,
-        "domain": "010109434-111.duckdns.org",
-        "rule": "||010109434-111.duckdns.org^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 45,
-        "domain": "01025.yimumon.xyz",
-        "rule": "||01025.yimumon.xyz^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: high-abuse TLD"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 46,
-        "domain": "0103659.com",
-        "rule": "||0103659.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 47,
-        "domain": "010365vip.com",
-        "rule": "||010365vip.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 48,
-        "domain": "01064223613.com",
-        "rule": "||01064223613.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 49,
-        "domain": "0109626668.cn",
-        "rule": "||0109626668.cn^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 57,
-        "domain": "011111111.000webhostapp.com",
-        "rule": "||011111111.000webhostapp.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 58,
-        "domain": "01112450.duckdns.org",
-        "rule": "||01112450.duckdns.org^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 59,
-        "domain": "01115484188.000webhostapp.com",
-        "rule": "||01115484188.000webhostapp.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 60,
-        "domain": "0112254598920073980495234.com",
-        "rule": "||0112254598920073980495234.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 61,
-        "domain": "0113985d.9jyji2.shop",
-        "rule": "||0113985d.9jyji2.shop^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 62,
-        "domain": "011511.xyz",
-        "rule": "||011511.xyz^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 64,
-        "domain": "01175421.00agt8.shop",
-        "rule": "||01175421.00agt8.shop^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 65,
-        "domain": "01188086.gstwu-eu-hey.com.cn",
-        "rule": "||01188086.gstwu-eu-hey.com.cn^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 66,
-        "domain": "012-109354.weeblysite.com",
-        "rule": "||012-109354.weeblysite.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 67,
-        "domain": "01213300.atwebpages.com",
-        "rule": "||01213300.atwebpages.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 71,
-        "domain": "0124985675.cf",
-        "rule": "||0124985675.cf^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 72,
-        "domain": "012567-24.000webhostapp.com",
-        "rule": "||012567-24.000webhostapp.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 73,
-        "domain": "0126365.com",
-        "rule": "||0126365.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 74,
-        "domain": "012678.xyz",
-        "rule": "||012678.xyz^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 75,
-        "domain": "012833215698.work.gd",
-        "rule": "||012833215698.work.gd^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 76,
-        "domain": "0128410.duckdns.org",
-        "rule": "||0128410.duckdns.org^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 77,
-        "domain": "012841010.duckdns.org",
-        "rule": "||012841010.duckdns.org^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 78,
-        "domain": "012841011.duckdns.org",
-        "rule": "||012841011.duckdns.org^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 79,
-        "domain": "012841012.duckdns.org",
-        "rule": "||012841012.duckdns.org^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 80,
-        "domain": "012841013.duckdns.org",
-        "rule": "||012841013.duckdns.org^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 84,
-        "domain": "01368b10-57e4-4138-acc3-01373134d221.usrfiles.com",
-        "rule": "||01368b10-57e4-4138-acc3-01373134d221.usrfiles.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 87,
-        "domain": "01417282-9677-428f-8b57-11e362547314.id.repl.co",
-        "rule": "||01417282-9677-428f-8b57-11e362547314.id.repl.co^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 88,
-        "domain": "0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co",
-        "rule": "||0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 89,
-        "domain": "0145879-pagehelping.000webhostapp.com",
-        "rule": "||0145879-pagehelping.000webhostapp.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 91,
-        "domain": "015481847436324436677560049.com",
-        "rule": "||015481847436324436677560049.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 93,
-        "domain": "015595384.com",
-        "rule": "||015595384.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 98,
-        "domain": "016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev",
-        "rule": "||016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: UUID-like"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 99,
-        "domain": "0171500061.mexigas.com.mx",
-        "rule": "||0171500061.mexigas.com.mx^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 100,
-        "domain": "0172844bks.7m.pl",
-        "rule": "||0172844bks.7m.pl^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 102,
-        "domain": "017795384.com",
-        "rule": "||017795384.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 104,
-        "domain": "01793008-2b5e-4bbb-a429-3ff58af1c013.htmlcomponentservice.com",
-        "rule": "||01793008-2b5e-4bbb-a429-3ff58af1c013.htmlcomponentservice.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 106,
-        "domain": "01837643.filesusr.com",
-        "rule": "||01837643.filesusr.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 107,
-        "domain": "0184893-904.com",
-        "rule": "||0184893-904.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 108,
-        "domain": "018740-recoverpage.000webhostapp.com",
-        "rule": "||018740-recoverpage.000webhostapp.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 109,
-        "domain": "01888f90-c5de-40b5-aa35-28082cf97171.htmlcomponentservice.com",
-        "rule": "||01888f90-c5de-40b5-aa35-28082cf97171.htmlcomponentservice.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: UUID-like"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 111,
-        "domain": "018f3b18cc2962586.temporary.link",
-        "rule": "||018f3b18cc2962586.temporary.link^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 113,
-        "domain": "01928758273.atwebpages.com",
-        "rule": "||01928758273.atwebpages.com^",
-        "category": "MANUAL-REVIEW",
-        "reason": "suspicious pattern: long numeric string"
-      },
-      {
-        "file": "src/security/phishing.txt",
-        "line": 126,
+        "line": 20,
         "domain": "01db3205053754908.temporary.link",
         "rule": "||01db3205053754908.temporary.link^",
         "category": "MANUAL-REVIEW",
@@ -845,7 +381,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 129,
+        "line": 23,
         "domain": "01e913e6-93dc-43b6-b2a3-cee1b5dc0ea4.selstorage.ru",
         "rule": "||01e913e6-93dc-43b6-b2a3-cee1b5dc0ea4.selstorage.ru^",
         "category": "MANUAL-REVIEW",
@@ -853,7 +389,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 138,
+        "line": 32,
         "domain": "01newlyrecomend-1318015313.cos.na-siliconvalley.myqcloud.com",
         "rule": "||01newlyrecomend-1318015313.cos.na-siliconvalley.myqcloud.com^",
         "category": "MANUAL-REVIEW",
@@ -861,7 +397,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 177,
+        "line": 71,
         "domain": "02-u-4528172.com",
         "rule": "||02-u-4528172.com^",
         "category": "MANUAL-REVIEW",
@@ -869,7 +405,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 190,
+        "line": 84,
         "domain": "020101.000webhostapp.com",
         "rule": "||020101.000webhostapp.com^",
         "category": "MANUAL-REVIEW",
@@ -877,7 +413,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 191,
+        "line": 85,
         "domain": "02012348.com",
         "rule": "||02012348.com^",
         "category": "MANUAL-REVIEW",
@@ -885,7 +421,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 193,
+        "line": 87,
         "domain": "0203659.com",
         "rule": "||0203659.com^",
         "category": "MANUAL-REVIEW",
@@ -893,7 +429,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 198,
+        "line": 92,
         "domain": "021034662015959.kitlanchesisa.com.br",
         "rule": "||021034662015959.kitlanchesisa.com.br^",
         "category": "MANUAL-REVIEW",
@@ -901,7 +437,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 200,
+        "line": 94,
         "domain": "0215412pageaccountserve23-confirm.start.page",
         "rule": "||0215412pageaccountserve23-confirm.start.page^",
         "category": "MANUAL-REVIEW",
@@ -909,7 +445,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 204,
+        "line": 98,
         "domain": "02221203252120.duckdns.org",
         "rule": "||02221203252120.duckdns.org^",
         "category": "MANUAL-REVIEW",
@@ -917,7 +453,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 205,
+        "line": 99,
         "domain": "022994.com",
         "rule": "||022994.com^",
         "category": "MANUAL-REVIEW",
@@ -925,7 +461,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 207,
+        "line": 101,
         "domain": "023-102613t271.weeblysite.com",
         "rule": "||023-102613t271.weeblysite.com^",
         "category": "MANUAL-REVIEW",
@@ -933,7 +469,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 208,
+        "line": 102,
         "domain": "0233659.com",
         "rule": "||0233659.com^",
         "category": "MANUAL-REVIEW",
@@ -941,7 +477,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 209,
+        "line": 103,
         "domain": "02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com",
         "rule": "||02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com^",
         "category": "MANUAL-REVIEW",
@@ -949,7 +485,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 211,
+        "line": 105,
         "domain": "02402300601394318587048.jamb2022.co",
         "rule": "||02402300601394318587048.jamb2022.co^",
         "category": "MANUAL-REVIEW",
@@ -957,7 +493,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 212,
+        "line": 106,
         "domain": "0242523456345.3456945020012.repl.co",
         "rule": "||0242523456345.3456945020012.repl.co^",
         "category": "MANUAL-REVIEW",
@@ -965,7 +501,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 213,
+        "line": 107,
         "domain": "024goeqwpoewla.ga",
         "rule": "||024goeqwpoewla.ga^",
         "category": "MANUAL-REVIEW",
@@ -973,7 +509,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 215,
+        "line": 109,
         "domain": "025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com",
         "rule": "||025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com^",
         "category": "MANUAL-REVIEW",
@@ -981,7 +517,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 216,
+        "line": 110,
         "domain": "025662nhhh.hyperphp.com",
         "rule": "||025662nhhh.hyperphp.com^",
         "category": "MANUAL-REVIEW",
@@ -989,7 +525,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 217,
+        "line": 111,
         "domain": "025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com",
         "rule": "||025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com^",
         "category": "MANUAL-REVIEW",
@@ -997,7 +533,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 220,
+        "line": 114,
         "domain": "0258369.com",
         "rule": "||0258369.com^",
         "category": "MANUAL-REVIEW",
@@ -1005,7 +541,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 222,
+        "line": 116,
         "domain": "025g.top",
         "rule": "||025g.top^",
         "category": "MANUAL-REVIEW",
@@ -1013,7 +549,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 230,
+        "line": 124,
         "domain": "300474843551021.my.id",
         "rule": "||300474843551021.my.id^",
         "category": "MANUAL-REVIEW",
@@ -1021,7 +557,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 232,
+        "line": 126,
         "domain": "6696506595490460040.sytes.net",
         "rule": "||6696506595490460040.sytes.net^",
         "category": "MANUAL-REVIEW",
@@ -1029,7 +565,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 240,
+        "line": 134,
         "domain": "aigescons-458632.asia",
         "rule": "||aigescons-458632.asia^",
         "category": "MANUAL-REVIEW",
@@ -1037,7 +573,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 241,
+        "line": 135,
         "domain": "airbnb.com.booking-772020.online",
         "rule": "||airbnb.com.booking-772020.online^",
         "category": "MANUAL-REVIEW",
@@ -1045,7 +581,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 242,
+        "line": 136,
         "domain": "alaxan.gq",
         "rule": "||alaxan.gq^",
         "category": "MANUAL-REVIEW",
@@ -1053,7 +589,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 244,
+        "line": 138,
         "domain": "amaze-ma.xyz",
         "rule": "||amaze-ma.xyz^",
         "category": "MANUAL-REVIEW",
@@ -1061,7 +597,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 249,
+        "line": 143,
         "domain": "aol-103986.weeblysite.com",
         "rule": "||aol-103986.weeblysite.com^",
         "category": "MANUAL-REVIEW",
@@ -1069,7 +605,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 251,
+        "line": 145,
         "domain": "app-262d1101-6bb4-4c36-a615-202204577daa.cleverapps.io",
         "rule": "||app-262d1101-6bb4-4c36-a615-202204577daa.cleverapps.io^",
         "category": "MANUAL-REVIEW",
@@ -1077,7 +613,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 252,
+        "line": 146,
         "domain": "athome-104167.weeblysite.com",
         "rule": "||athome-104167.weeblysite.com^",
         "category": "MANUAL-REVIEW",
@@ -1085,7 +621,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 253,
+        "line": 147,
         "domain": "att-108159-100087.square.site",
         "rule": "||att-108159-100087.square.site^",
         "category": "MANUAL-REVIEW",
@@ -1093,7 +629,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 254,
+        "line": 148,
         "domain": "att-mail-107958.weeblysite.com",
         "rule": "||att-mail-107958.weeblysite.com^",
         "category": "MANUAL-REVIEW",
@@ -1101,7 +637,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 257,
+        "line": 151,
         "domain": "bafybeicii7bqdwvwu2hitqi5jrjjeexuzyip5mwrlb3eodcoe5k75jywte.ipfs.dweb.link",
         "rule": "||bafybeicii7bqdwvwu2hitqi5jrjjeexuzyip5mwrlb3eodcoe5k75jywte.ipfs.dweb.link^",
         "category": "MANUAL-REVIEW",
@@ -1109,7 +645,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 258,
+        "line": 152,
         "domain": "bafybeifrqsrlk3deqhp6erqfe42sotuo2ieizvsrmurdem7nr5ngoew7na.ipfs.nftstorage.link",
         "rule": "||bafybeifrqsrlk3deqhp6erqfe42sotuo2ieizvsrmurdem7nr5ngoew7na.ipfs.nftstorage.link^",
         "category": "MANUAL-REVIEW",
@@ -1117,7 +653,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 259,
+        "line": 153,
         "domain": "bafybeigfpyei5pqbwa5cvvniohosq3axbrxrssbg52z6gquija27lzokti.ipfs.dweb.link",
         "rule": "||bafybeigfpyei5pqbwa5cvvniohosq3axbrxrssbg52z6gquija27lzokti.ipfs.dweb.link^",
         "category": "MANUAL-REVIEW",
@@ -1125,7 +661,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 262,
+        "line": 156,
         "domain": "bonus-link.xyz",
         "rule": "||bonus-link.xyz^",
         "category": "MANUAL-REVIEW",
@@ -1133,7 +669,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 264,
+        "line": 158,
         "domain": "bt-103201.weeblysite.com",
         "rule": "||bt-103201.weeblysite.com^",
         "category": "MANUAL-REVIEW",
@@ -1141,7 +677,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 266,
+        "line": 160,
         "domain": "cca3340f2c7845523.temporary.link",
         "rule": "||cca3340f2c7845523.temporary.link^",
         "category": "MANUAL-REVIEW",
@@ -1149,7 +685,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 268,
+        "line": 162,
         "domain": "ce930168-wordpress-c6yyw.tw1.ru",
         "rule": "||ce930168-wordpress-c6yyw.tw1.ru^",
         "category": "MANUAL-REVIEW",
@@ -1157,7 +693,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 273,
+        "line": 167,
         "domain": "com-trackthv.top",
         "rule": "||com-trackthv.top^",
         "category": "MANUAL-REVIEW",
@@ -1165,7 +701,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 290,
+        "line": 184,
         "domain": "identity.facebookus-4532209117.pisi.co.rs",
         "rule": "||identity.facebookus-4532209117.pisi.co.rs^",
         "category": "MANUAL-REVIEW",
@@ -1173,7 +709,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 291,
+        "line": 185,
         "domain": "ig-helpteam.xyz",
         "rule": "||ig-helpteam.xyz^",
         "category": "MANUAL-REVIEW",
@@ -1181,7 +717,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 293,
+        "line": 187,
         "domain": "isoissroe07.click",
         "rule": "||isoissroe07.click^",
         "category": "MANUAL-REVIEW",
@@ -1189,7 +725,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 306,
+        "line": 200,
         "domain": "park-pcnqog.top",
         "rule": "||park-pcnqog.top^",
         "category": "MANUAL-REVIEW",
@@ -1197,7 +733,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 307,
+        "line": 201,
         "domain": "paypal.c2pay.top",
         "rule": "||paypal.c2pay.top^",
         "category": "MANUAL-REVIEW",
@@ -1205,7 +741,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 311,
+        "line": 205,
         "domain": "pub-8329a48fab534b6abe2f2b4488d43090.r2.dev",
         "rule": "||pub-8329a48fab534b6abe2f2b4488d43090.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -1213,7 +749,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 316,
+        "line": 210,
         "domain": "raytracingone.ga",
         "rule": "||raytracingone.ga^",
         "category": "MANUAL-REVIEW",
@@ -1221,7 +757,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 319,
+        "line": 213,
         "domain": "renv-63187212.serverelvir.com",
         "rule": "||renv-63187212.serverelvir.com^",
         "category": "MANUAL-REVIEW",
@@ -1229,7 +765,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 333,
+        "line": 227,
         "domain": "4qiyds.wusps.xyz",
         "rule": "||4qiyds.wusps.xyz^",
         "category": "MANUAL-REVIEW",
@@ -1237,7 +773,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 336,
+        "line": 230,
         "domain": "a0375741.xsph.ru",
         "rule": "||a0375741.xsph.ru^",
         "category": "MANUAL-REVIEW",
@@ -1245,7 +781,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 343,
+        "line": 237,
         "domain": "allegrolokalnie.oferta8539261.buzz",
         "rule": "||allegrolokalnie.oferta8539261.buzz^",
         "category": "MANUAL-REVIEW",
@@ -1253,7 +789,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 351,
+        "line": 245,
         "domain": "att-service-inc-102086.weeblysite.com",
         "rule": "||att-service-inc-102086.weeblysite.com^",
         "category": "MANUAL-REVIEW",
@@ -1261,7 +797,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 353,
+        "line": 247,
         "domain": "bafybeicdf2vdrp45umnyrwy2cp3zn3gfrikhvrtpd52azoc6swwgcfm7d4.ipfs.infura-ipfs.io",
         "rule": "||bafybeicdf2vdrp45umnyrwy2cp3zn3gfrikhvrtpd52azoc6swwgcfm7d4.ipfs.infura-ipfs.io^",
         "category": "MANUAL-REVIEW",
@@ -1269,7 +805,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 354,
+        "line": 248,
         "domain": "bafybeiholp3tnp44cq6ldde44muyzhdowkwyvw4qkkcmsjzirjgnd2ifou.ipfs.nftstorage.link",
         "rule": "||bafybeiholp3tnp44cq6ldde44muyzhdowkwyvw4qkkcmsjzirjgnd2ifou.ipfs.nftstorage.link^",
         "category": "MANUAL-REVIEW",
@@ -1277,7 +813,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 371,
+        "line": 265,
         "domain": "fiasmana.xyz",
         "rule": "||fiasmana.xyz^",
         "category": "MANUAL-REVIEW",
@@ -1285,7 +821,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 374,
+        "line": 268,
         "domain": "fsstvll.kl-site.top",
         "rule": "||fsstvll.kl-site.top^",
         "category": "MANUAL-REVIEW",
@@ -1293,7 +829,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 385,
+        "line": 279,
         "domain": "instagrambluetickserviceindonesia.masuk-dana.my.id",
         "rule": "||instagrambluetickserviceindonesia.masuk-dana.my.id^",
         "category": "MANUAL-REVIEW",
@@ -1301,7 +837,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 396,
+        "line": 290,
         "domain": "lemonchiffonpowderbluehypotenuse.adasdfff.repl.co",
         "rule": "||lemonchiffonpowderbluehypotenuse.adasdfff.repl.co^",
         "category": "MANUAL-REVIEW",
@@ -1309,7 +845,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 403,
+        "line": 297,
         "domain": "mail-103108.square.site",
         "rule": "||mail-103108.square.site^",
         "category": "MANUAL-REVIEW",
@@ -1317,7 +853,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 408,
+        "line": 302,
         "domain": "meta.protection-pages40949989644786269072.m1ho2i7fmj-eqg35wpn23xn.p.runcloud.link",
         "rule": "||meta.protection-pages40949989644786269072.m1ho2i7fmj-eqg35wpn23xn.p.runcloud.link^",
         "category": "MANUAL-REVIEW",
@@ -1325,7 +861,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 409,
+        "line": 303,
         "domain": "metafeedback3268923.click",
         "rule": "||metafeedback3268923.click^",
         "category": "MANUAL-REVIEW",
@@ -1333,7 +869,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 417,
+        "line": 311,
         "domain": "pay.cyon3.com-2b460879.immobi-show.com",
         "rule": "||pay.cyon3.com-2b460879.immobi-show.com^",
         "category": "MANUAL-REVIEW",
@@ -1341,7 +877,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 420,
+        "line": 314,
         "domain": "pub-140cf903de964a479f3b465e010ddb3b.r2.dev",
         "rule": "||pub-140cf903de964a479f3b465e010ddb3b.r2.dev^",
         "category": "MANUAL-REVIEW",
@@ -1349,7 +885,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 423,
+        "line": 317,
         "domain": "report-83047937.nabalifares.ps",
         "rule": "||report-83047937.nabalifares.ps^",
         "category": "MANUAL-REVIEW",
@@ -1357,7 +893,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 438,
+        "line": 332,
         "domain": "5e4838f3-b1f5-4f39-9c33-77bad86b90ed-00-1d402kdw46m4j.riker.replit.dev",
         "rule": "||5e4838f3-b1f5-4f39-9c33-77bad86b90ed-00-1d402kdw46m4j.riker.replit.dev^",
         "category": "MANUAL-REVIEW",
@@ -1365,7 +901,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 439,
+        "line": 333,
         "domain": "6name.top",
         "rule": "||6name.top^",
         "category": "MANUAL-REVIEW",
@@ -1373,7 +909,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 440,
+        "line": 334,
         "domain": "75115431-2-20180529004054.webstarterz.com",
         "rule": "||75115431-2-20180529004054.webstarterz.com^",
         "category": "MANUAL-REVIEW",
@@ -1381,7 +917,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 443,
+        "line": 337,
         "domain": "admin-recoverys-1000006541651641616544654173.ml",
         "rule": "||admin-recoverys-1000006541651641616544654173.ml^",
         "category": "MANUAL-REVIEW",
@@ -1389,7 +925,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 445,
+        "line": 339,
         "domain": "affixconnect.xyz",
         "rule": "||affixconnect.xyz^",
         "category": "MANUAL-REVIEW",
@@ -1397,7 +933,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 453,
+        "line": 347,
         "domain": "att-107847.weeblysite.com",
         "rule": "||att-107847.weeblysite.com^",
         "category": "MANUAL-REVIEW",
@@ -1405,7 +941,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 454,
+        "line": 348,
         "domain": "att.sendsu8.xyz",
         "rule": "||att.sendsu8.xyz^",
         "category": "MANUAL-REVIEW",
@@ -1413,7 +949,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 455,
+        "line": 349,
         "domain": "bafkreig3jz2lphfulonwwxcfkyp55eremqhikr4q6eimbxn7gxsx3bf3bi.ipfs.dweb.link",
         "rule": "||bafkreig3jz2lphfulonwwxcfkyp55eremqhikr4q6eimbxn7gxsx3bf3bi.ipfs.dweb.link^",
         "category": "MANUAL-REVIEW",
@@ -1421,7 +957,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 456,
+        "line": 350,
         "domain": "bafybeiayyqm2gkwdxggf6w4cury2sxhesbvuigufxme3igvqm7ybvrdyxq.ipfs.dweb.link",
         "rule": "||bafybeiayyqm2gkwdxggf6w4cury2sxhesbvuigufxme3igvqm7ybvrdyxq.ipfs.dweb.link^",
         "category": "MANUAL-REVIEW",
@@ -1429,7 +965,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 457,
+        "line": 351,
         "domain": "bafybeih5hmwpt2pyq43h5fxc7wu6xndjm2jaj3gsjodqz3wh5d6iwnco3e.ipfs.nftstorage.link",
         "rule": "||bafybeih5hmwpt2pyq43h5fxc7wu6xndjm2jaj3gsjodqz3wh5d6iwnco3e.ipfs.nftstorage.link^",
         "category": "MANUAL-REVIEW",
@@ -1437,7 +973,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 461,
+        "line": 355,
         "domain": "bell-108584.weeblysite.com",
         "rule": "||bell-108584.weeblysite.com^",
         "category": "MANUAL-REVIEW",
@@ -1445,7 +981,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 465,
+        "line": 359,
         "domain": "bt-internet-100168.square.site",
         "rule": "||bt-internet-100168.square.site^",
         "category": "MANUAL-REVIEW",
@@ -1453,7 +989,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 480,
+        "line": 374,
         "domain": "finderthundert.xyz",
         "rule": "||finderthundert.xyz^",
         "category": "MANUAL-REVIEW",
@@ -1461,7 +997,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 490,
+        "line": 384,
         "domain": "home-102973.weeblysite.com",
         "rule": "||home-102973.weeblysite.com^",
         "category": "MANUAL-REVIEW",
@@ -1469,7 +1005,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 493,
+        "line": 387,
         "domain": "intesa.gruppoalet.ga",
         "rule": "||intesa.gruppoalet.ga^",
         "category": "MANUAL-REVIEW",
@@ -1477,7 +1013,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 513,
+        "line": 407,
         "domain": "msnmsmsnsm219421.ultimatefreehost.in",
         "rule": "||msnmsmsnsm219421.ultimatefreehost.in^",
         "category": "MANUAL-REVIEW",
@@ -1485,7 +1021,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 519,
+        "line": 413,
         "domain": "oshgiutg.tk",
         "rule": "||oshgiutg.tk^",
         "category": "MANUAL-REVIEW",
@@ -1493,7 +1029,7 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 524,
+        "line": 418,
         "domain": "payment.319447.com",
         "rule": "||payment.319447.com^",
         "category": "MANUAL-REVIEW",
@@ -1501,11 +1037,179 @@
       },
       {
         "file": "src/security/phishing.txt",
-        "line": 526,
+        "line": 420,
         "domain": "pub-2407f3c2d128488d992609e6d978708a.r2.dev",
         "rule": "||pub-2407f3c2d128488d992609e6d978708a.r2.dev^",
         "category": "MANUAL-REVIEW",
         "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 429,
+        "domain": "100472974781984.ga",
+        "rule": "||100472974781984.ga^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 431,
+        "domain": "1drv.caynet.xyz",
+        "rule": "||1drv.caynet.xyz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 432,
+        "domain": "302904.scrutihostvrfyonlne.myonlineportal.net",
+        "rule": "||302904.scrutihostvrfyonlne.myonlineportal.net^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 433,
+        "domain": "610225.selcdn.ru",
+        "rule": "||610225.selcdn.ru^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 440,
+        "domain": "allegrolokalnie.id8741893.buzz",
+        "rule": "||allegrolokalnie.id8741893.buzz^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 446,
+        "domain": "app-87bb24fb-edfc-4cf2-a8bb-db3ad5476a80.cleverapps.io",
+        "rule": "||app-87bb24fb-edfc-4cf2-a8bb-db3ad5476a80.cleverapps.io^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: UUID-like"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 449,
+        "domain": "att-106521.weeblysite.com",
+        "rule": "||att-106521.weeblysite.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 453,
+        "domain": "bafybeiaycj7wyjjc7qhfdhswgaanmsy57o24sdpls5hg2o6bmg26vpelfq.ipfs.fleek.cool",
+        "rule": "||bafybeiaycj7wyjjc7qhfdhswgaanmsy57o24sdpls5hg2o6bmg26vpelfq.ipfs.fleek.cool^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 454,
+        "domain": "bdd0d57c-a20e-462a-b66c-a441ab36ccc0-00-1qewacazmpkrw.riker.replit.dev",
+        "rule": "||bdd0d57c-a20e-462a-b66c-a441ab36ccc0-00-1qewacazmpkrw.riker.replit.dev^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: UUID-like"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 472,
+        "domain": "dev-0896231214.pantheonsite.io",
+        "rule": "||dev-0896231214.pantheonsite.io^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 479,
+        "domain": "f0573273.xsph.ru",
+        "rule": "||f0573273.xsph.ru^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 490,
+        "domain": "homemailatt-1008994.weeblysite.com",
+        "rule": "||homemailatt-1008994.weeblysite.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 509,
+        "domain": "metarightcenter.ml",
+        "rule": "||metarightcenter.ml^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 510,
+        "domain": "my-site-101197-103778.weeblysite.com",
+        "rule": "||my-site-101197-103778.weeblysite.com^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 511,
+        "domain": "npekgapplnch-164061821.sangekasra.ir",
+        "rule": "||npekgapplnch-164061821.sangekasra.ir^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 518,
+        "domain": "psgus.top",
+        "rule": "||psgus.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 519,
+        "domain": "pub-5f1a4a485c2c4c248d46f3f954af8b3f.r2.dev",
+        "rule": "||pub-5f1a4a485c2c4c248d46f3f954af8b3f.r2.dev^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: hash-like subdomain"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 520,
+        "domain": "pub-933f8476e3b84494ba3f03acae460733.r2.dev",
+        "rule": "||pub-933f8476e3b84494ba3f03acae460733.r2.dev^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 525,
+        "domain": "repts-99932747.ameigr.ma",
+        "rule": "||repts-99932747.ameigr.ma^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: long numeric string"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 526,
+        "domain": "trackqst.top",
+        "rule": "||trackqst.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
+      },
+      {
+        "file": "src/security/phishing.txt",
+        "line": 527,
+        "domain": "usps.com-trackubh.top",
+        "rule": "||usps.com-trackubh.top^",
+        "category": "MANUAL-REVIEW",
+        "reason": "suspicious pattern: high-abuse TLD"
       }
     ]
   },
@@ -1656,23 +1360,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 41,
-      "domain": "j-0-09g-9bh-h-ggf-1324992141.cos.ap-bangkok.myqcloud.com",
-      "rule": "||j-0-09g-9bh-h-ggf-1324992141.cos.ap-bangkok.myqcloud.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/malware.txt",
-      "line": 49,
-      "domain": "leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com",
-      "rule": "||leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/malware.txt",
-      "line": 75,
+      "line": 27,
       "domain": "ofice365.github.io",
       "rule": "||ofice365.github.io^",
       "category": "HOSTING",
@@ -1680,15 +1368,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 95,
-      "domain": "198348.gl",
-      "rule": "||198348.gl^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/malware.txt",
-      "line": 99,
+      "line": 49,
       "domain": "87130921-60-20220830152356.webstarterz.com",
       "rule": "||87130921-60-20220830152356.webstarterz.com^",
       "category": "MANUAL-REVIEW",
@@ -1696,7 +1376,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 137,
+      "line": 83,
       "domain": "lai-1451610695.cos.ap-guangzhou.myqcloud.com",
       "rule": "||lai-1451610695.cos.ap-guangzhou.myqcloud.com^",
       "category": "MANUAL-REVIEW",
@@ -1704,7 +1384,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 159,
+      "line": 102,
       "domain": "pub-0478b308b8cf46709a73d0eed5afd633.r2.dev",
       "rule": "||pub-0478b308b8cf46709a73d0eed5afd633.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1712,7 +1392,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 160,
+      "line": 103,
       "domain": "pub-1614932a526c40d79fe5bf23e71e3ff7.r2.dev",
       "rule": "||pub-1614932a526c40d79fe5bf23e71e3ff7.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1720,7 +1400,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 161,
+      "line": 104,
       "domain": "pub-1900be17f2994b5580d602f23eb7fb93.r2.dev",
       "rule": "||pub-1900be17f2994b5580d602f23eb7fb93.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1728,7 +1408,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 162,
+      "line": 105,
       "domain": "pub-364c6b3011ca492cab2354176cfaf3f0.r2.dev",
       "rule": "||pub-364c6b3011ca492cab2354176cfaf3f0.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1736,7 +1416,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 163,
+      "line": 106,
       "domain": "pub-43fc211373d547278dd3d5bd0b4d9dac.r2.dev",
       "rule": "||pub-43fc211373d547278dd3d5bd0b4d9dac.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1744,7 +1424,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 164,
+      "line": 107,
       "domain": "pub-45a83f302a1943ed8d62418c2af947ef.r2.dev",
       "rule": "||pub-45a83f302a1943ed8d62418c2af947ef.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1752,7 +1432,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 165,
+      "line": 108,
       "domain": "pub-bbbdebc2599c4d74b04c5d53e439f7a7.r2.dev",
       "rule": "||pub-bbbdebc2599c4d74b04c5d53e439f7a7.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1760,7 +1440,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 166,
+      "line": 109,
       "domain": "pub-bfc34934a91a4893817098f73415917a.r2.dev",
       "rule": "||pub-bfc34934a91a4893817098f73415917a.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1768,7 +1448,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 167,
+      "line": 110,
       "domain": "pub-cdd0dd27ae6a4aee9841d397e0496374.r2.dev",
       "rule": "||pub-cdd0dd27ae6a4aee9841d397e0496374.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1776,7 +1456,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 168,
+      "line": 111,
       "domain": "pub-ec081eb0fab74385a17d8d77afeeda3b.r2.dev",
       "rule": "||pub-ec081eb0fab74385a17d8d77afeeda3b.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1784,7 +1464,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 201,
+      "line": 142,
       "domain": "softbank126023203236.bbtec.net",
       "rule": "||softbank126023203236.bbtec.net^",
       "category": "MANUAL-REVIEW",
@@ -1792,7 +1472,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 213,
+      "line": 154,
       "domain": "tdfhdser-1433552157.cos.ap-hongkong.myqcloud.com",
       "rule": "||tdfhdser-1433552157.cos.ap-hongkong.myqcloud.com^",
       "category": "MANUAL-REVIEW",
@@ -1800,7 +1480,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 235,
+      "line": 173,
       "domain": "vaamsmgfreocmroe-1342087530.cos.sa-saopaulo.myqcloud.com",
       "rule": "||vaamsmgfreocmroe-1342087530.cos.sa-saopaulo.myqcloud.com^",
       "category": "MANUAL-REVIEW",
@@ -1808,7 +1488,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 291,
+      "line": 226,
       "domain": "www999999asgasg-1327129302.cos.ap-chengdu.myqcloud.com",
       "rule": "||www999999asgasg-1327129302.cos.ap-chengdu.myqcloud.com^",
       "category": "MANUAL-REVIEW",
@@ -1816,7 +1496,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 334,
+      "line": 268,
       "domain": "petcarv.click",
       "rule": "||petcarv.click^",
       "category": "MANUAL-REVIEW",
@@ -1824,7 +1504,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 373,
+      "line": 301,
       "domain": "pub-0216fa08b2b94e129cb9e002cf7cb1f4.r2.dev",
       "rule": "||pub-0216fa08b2b94e129cb9e002cf7cb1f4.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1832,7 +1512,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 374,
+      "line": 302,
       "domain": "pub-1c4ef2a315ec4b89b9dfad9472afee69.r2.dev",
       "rule": "||pub-1c4ef2a315ec4b89b9dfad9472afee69.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1840,7 +1520,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 375,
+      "line": 303,
       "domain": "pub-8d59738861b849e5a38b795cc17b1019.r2.dev",
       "rule": "||pub-8d59738861b849e5a38b795cc17b1019.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1848,7 +1528,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 412,
+      "line": 339,
       "domain": "www999999safagqwhg-1327129302.cos.ap-chengdu.myqcloud.com",
       "rule": "||www999999safagqwhg-1327129302.cos.ap-chengdu.myqcloud.com^",
       "category": "MANUAL-REVIEW",
@@ -1856,7 +1536,7 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 516,
+      "line": 420,
       "domain": "pub-a06eb79f0ebe4a6999bcc71a2227d8e3.r2.dev",
       "rule": "||pub-a06eb79f0ebe4a6999bcc71a2227d8e3.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -1864,479 +1544,39 @@
     },
     {
       "file": "src/security/malware.txt",
-      "line": 527,
-      "domain": "tk-1464303226.cos.ap-guangzhou.myqcloud.com",
-      "rule": "||tk-1464303226.cos.ap-guangzhou.myqcloud.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 30,
-      "domain": "00web.glitch.me",
-      "rule": "||00web.glitch.me^",
-      "category": "HOSTING",
-      "reason": "subdomain of hosting platform (glitch.me) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 31,
-      "domain": "00wellsfarg.azurewebsites.net",
-      "rule": "||00wellsfarg.azurewebsites.net^",
-      "category": "HOSTING",
-      "reason": "subdomain of hosting platform (azurewebsites.net) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 32,
-      "domain": "00wetransfer-sharedfiles.netlify.app",
-      "rule": "||00wetransfer-sharedfiles.netlify.app^",
-      "category": "HOSTING",
-      "reason": "subdomain of hosting platform (netlify.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 36,
-      "domain": "01-spk-veri7.xyz",
-      "rule": "||01-spk-veri7.xyz^",
+      "line": 439,
+      "domain": "bnet.playm8ru.win",
+      "rule": "||bnet.playm8ru.win^",
       "category": "MANUAL-REVIEW",
       "reason": "suspicious pattern: high-abuse TLD"
     },
     {
-      "file": "src/security/phishing.txt",
-      "line": 39,
-      "domain": "01001015122344.ml",
-      "rule": "||01001015122344.ml^",
+      "file": "src/security/malware.txt",
+      "line": 470,
+      "domain": "f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com",
+      "rule": "||f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 510,
+      "domain": "pub-ce02802067934e0eb072f69bf6427bf6.r2.dev",
+      "rule": "||pub-ce02802067934e0eb072f69bf6427bf6.r2.dev^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/malware.txt",
+      "line": 511,
+      "domain": "pub-ecb7161ffc7a4a67bdd8761583e21d16.r2.dev",
+      "rule": "||pub-ecb7161ffc7a4a67bdd8761583e21d16.r2.dev^",
       "category": "MANUAL-REVIEW",
       "reason": "suspicious pattern: long numeric string"
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 40,
-      "domain": "01001015122346.ml",
-      "rule": "||01001015122346.ml^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 41,
-      "domain": "0100238504.mexigas.com.mx",
-      "rule": "||0100238504.mexigas.com.mx^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 42,
-      "domain": "010101010011010093893930101.azurewebsites.net",
-      "rule": "||010101010011010093893930101.azurewebsites.net^",
-      "category": "HOSTING",
-      "reason": "subdomain of hosting platform (azurewebsites.net) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 43,
-      "domain": "0101010scotia-rst.agency",
-      "rule": "||0101010scotia-rst.agency^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 44,
-      "domain": "010109434-111.duckdns.org",
-      "rule": "||010109434-111.duckdns.org^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 45,
-      "domain": "01025.yimumon.xyz",
-      "rule": "||01025.yimumon.xyz^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: high-abuse TLD"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 46,
-      "domain": "0103659.com",
-      "rule": "||0103659.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 47,
-      "domain": "010365vip.com",
-      "rule": "||010365vip.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 48,
-      "domain": "01064223613.com",
-      "rule": "||01064223613.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 49,
-      "domain": "0109626668.cn",
-      "rule": "||0109626668.cn^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 54,
-      "domain": "011-two.vercel.app",
-      "rule": "||011-two.vercel.app^",
-      "category": "HOSTING",
-      "reason": "subdomain of hosting platform (vercel.app) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 55,
-      "domain": "011.358761202.workers.dev",
-      "rule": "||011.358761202.workers.dev^",
-      "category": "HOSTING",
-      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 56,
-      "domain": "01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com",
-      "rule": "||01109447a34ae455cb7890345761dfe9-dot-gle9392420309493993.rj.r.appspot.com^",
-      "category": "HOSTING",
-      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 57,
-      "domain": "011111111.000webhostapp.com",
-      "rule": "||011111111.000webhostapp.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 58,
-      "domain": "01112450.duckdns.org",
-      "rule": "||01112450.duckdns.org^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 59,
-      "domain": "01115484188.000webhostapp.com",
-      "rule": "||01115484188.000webhostapp.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 60,
-      "domain": "0112254598920073980495234.com",
-      "rule": "||0112254598920073980495234.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 61,
-      "domain": "0113985d.9jyji2.shop",
-      "rule": "||0113985d.9jyji2.shop^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 62,
-      "domain": "011511.xyz",
-      "rule": "||011511.xyz^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 64,
-      "domain": "01175421.00agt8.shop",
-      "rule": "||01175421.00agt8.shop^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 65,
-      "domain": "01188086.gstwu-eu-hey.com.cn",
-      "rule": "||01188086.gstwu-eu-hey.com.cn^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 66,
-      "domain": "012-109354.weeblysite.com",
-      "rule": "||012-109354.weeblysite.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 67,
-      "domain": "01213300.atwebpages.com",
-      "rule": "||01213300.atwebpages.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 71,
-      "domain": "0124985675.cf",
-      "rule": "||0124985675.cf^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 72,
-      "domain": "012567-24.000webhostapp.com",
-      "rule": "||012567-24.000webhostapp.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 73,
-      "domain": "0126365.com",
-      "rule": "||0126365.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 74,
-      "domain": "012678.xyz",
-      "rule": "||012678.xyz^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 75,
-      "domain": "012833215698.work.gd",
-      "rule": "||012833215698.work.gd^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 76,
-      "domain": "0128410.duckdns.org",
-      "rule": "||0128410.duckdns.org^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 77,
-      "domain": "012841010.duckdns.org",
-      "rule": "||012841010.duckdns.org^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 78,
-      "domain": "012841011.duckdns.org",
-      "rule": "||012841011.duckdns.org^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 79,
-      "domain": "012841012.duckdns.org",
-      "rule": "||012841012.duckdns.org^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 80,
-      "domain": "012841013.duckdns.org",
-      "rule": "||012841013.duckdns.org^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 84,
-      "domain": "01368b10-57e4-4138-acc3-01373134d221.usrfiles.com",
-      "rule": "||01368b10-57e4-4138-acc3-01373134d221.usrfiles.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 87,
-      "domain": "01417282-9677-428f-8b57-11e362547314.id.repl.co",
-      "rule": "||01417282-9677-428f-8b57-11e362547314.id.repl.co^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 88,
-      "domain": "0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co",
-      "rule": "||0144e955-7c7c-4c55-bce2-862800fba0c0.id.repl.co^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 89,
-      "domain": "0145879-pagehelping.000webhostapp.com",
-      "rule": "||0145879-pagehelping.000webhostapp.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 91,
-      "domain": "015481847436324436677560049.com",
-      "rule": "||015481847436324436677560049.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 93,
-      "domain": "015595384.com",
-      "rule": "||015595384.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 96,
-      "domain": "016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com",
-      "rule": "||016614590390149677279078-dot-my-project-45bb.ey.r.appspot.com^",
-      "category": "HOSTING",
-      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 97,
-      "domain": "016614590390149677279078.my-project-45bb.ey.r.appspot.com",
-      "rule": "||016614590390149677279078.my-project-45bb.ey.r.appspot.com^",
-      "category": "HOSTING",
-      "reason": "subdomain of hosting platform (appspot.com) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 98,
-      "domain": "016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev",
-      "rule": "||016f36b4-bb3b-43c8-b13b-70c47ba62d67-00-3l32l94j0emu5.worf.replit.dev^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: UUID-like"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 99,
-      "domain": "0171500061.mexigas.com.mx",
-      "rule": "||0171500061.mexigas.com.mx^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 100,
-      "domain": "0172844bks.7m.pl",
-      "rule": "||0172844bks.7m.pl^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 101,
-      "domain": "0177.datingg-voice.workers.dev",
-      "rule": "||0177.datingg-voice.workers.dev^",
-      "category": "HOSTING",
-      "reason": "subdomain of hosting platform (workers.dev) \u2014 may be legitimate phishing domain or feed pollution; verify manually"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 102,
-      "domain": "017795384.com",
-      "rule": "||017795384.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 104,
-      "domain": "01793008-2b5e-4bbb-a429-3ff58af1c013.htmlcomponentservice.com",
-      "rule": "||01793008-2b5e-4bbb-a429-3ff58af1c013.htmlcomponentservice.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 106,
-      "domain": "01837643.filesusr.com",
-      "rule": "||01837643.filesusr.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 107,
-      "domain": "0184893-904.com",
-      "rule": "||0184893-904.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 108,
-      "domain": "018740-recoverpage.000webhostapp.com",
-      "rule": "||018740-recoverpage.000webhostapp.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 109,
-      "domain": "01888f90-c5de-40b5-aa35-28082cf97171.htmlcomponentservice.com",
-      "rule": "||01888f90-c5de-40b5-aa35-28082cf97171.htmlcomponentservice.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: UUID-like"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 111,
-      "domain": "018f3b18cc2962586.temporary.link",
-      "rule": "||018f3b18cc2962586.temporary.link^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 113,
-      "domain": "01928758273.atwebpages.com",
-      "rule": "||01928758273.atwebpages.com^",
-      "category": "MANUAL-REVIEW",
-      "reason": "suspicious pattern: long numeric string"
-    },
-    {
-      "file": "src/security/phishing.txt",
-      "line": 126,
+      "line": 20,
       "domain": "01db3205053754908.temporary.link",
       "rule": "||01db3205053754908.temporary.link^",
       "category": "MANUAL-REVIEW",
@@ -2344,7 +1584,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 129,
+      "line": 23,
       "domain": "01e913e6-93dc-43b6-b2a3-cee1b5dc0ea4.selstorage.ru",
       "rule": "||01e913e6-93dc-43b6-b2a3-cee1b5dc0ea4.selstorage.ru^",
       "category": "MANUAL-REVIEW",
@@ -2352,7 +1592,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 138,
+      "line": 32,
       "domain": "01newlyrecomend-1318015313.cos.na-siliconvalley.myqcloud.com",
       "rule": "||01newlyrecomend-1318015313.cos.na-siliconvalley.myqcloud.com^",
       "category": "MANUAL-REVIEW",
@@ -2360,7 +1600,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 177,
+      "line": 71,
       "domain": "02-u-4528172.com",
       "rule": "||02-u-4528172.com^",
       "category": "MANUAL-REVIEW",
@@ -2368,7 +1608,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 190,
+      "line": 84,
       "domain": "020101.000webhostapp.com",
       "rule": "||020101.000webhostapp.com^",
       "category": "MANUAL-REVIEW",
@@ -2376,7 +1616,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 191,
+      "line": 85,
       "domain": "02012348.com",
       "rule": "||02012348.com^",
       "category": "MANUAL-REVIEW",
@@ -2384,7 +1624,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 193,
+      "line": 87,
       "domain": "0203659.com",
       "rule": "||0203659.com^",
       "category": "MANUAL-REVIEW",
@@ -2392,7 +1632,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 198,
+      "line": 92,
       "domain": "021034662015959.kitlanchesisa.com.br",
       "rule": "||021034662015959.kitlanchesisa.com.br^",
       "category": "MANUAL-REVIEW",
@@ -2400,7 +1640,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 200,
+      "line": 94,
       "domain": "0215412pageaccountserve23-confirm.start.page",
       "rule": "||0215412pageaccountserve23-confirm.start.page^",
       "category": "MANUAL-REVIEW",
@@ -2408,7 +1648,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 204,
+      "line": 98,
       "domain": "02221203252120.duckdns.org",
       "rule": "||02221203252120.duckdns.org^",
       "category": "MANUAL-REVIEW",
@@ -2416,7 +1656,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 205,
+      "line": 99,
       "domain": "022994.com",
       "rule": "||022994.com^",
       "category": "MANUAL-REVIEW",
@@ -2424,7 +1664,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 207,
+      "line": 101,
       "domain": "023-102613t271.weeblysite.com",
       "rule": "||023-102613t271.weeblysite.com^",
       "category": "MANUAL-REVIEW",
@@ -2432,7 +1672,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 208,
+      "line": 102,
       "domain": "0233659.com",
       "rule": "||0233659.com^",
       "category": "MANUAL-REVIEW",
@@ -2440,7 +1680,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 209,
+      "line": 103,
       "domain": "02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com",
       "rule": "||02348332-a85c-469a-83fe-422672475c48.htmlcomponentservice.com^",
       "category": "MANUAL-REVIEW",
@@ -2448,7 +1688,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 211,
+      "line": 105,
       "domain": "02402300601394318587048.jamb2022.co",
       "rule": "||02402300601394318587048.jamb2022.co^",
       "category": "MANUAL-REVIEW",
@@ -2456,7 +1696,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 212,
+      "line": 106,
       "domain": "0242523456345.3456945020012.repl.co",
       "rule": "||0242523456345.3456945020012.repl.co^",
       "category": "MANUAL-REVIEW",
@@ -2464,7 +1704,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 213,
+      "line": 107,
       "domain": "024goeqwpoewla.ga",
       "rule": "||024goeqwpoewla.ga^",
       "category": "MANUAL-REVIEW",
@@ -2472,7 +1712,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 215,
+      "line": 109,
       "domain": "025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com",
       "rule": "||025107e2-91c5-4675-8e41-df48d5926277.usrfiles.com^",
       "category": "MANUAL-REVIEW",
@@ -2480,7 +1720,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 216,
+      "line": 110,
       "domain": "025662nhhh.hyperphp.com",
       "rule": "||025662nhhh.hyperphp.com^",
       "category": "MANUAL-REVIEW",
@@ -2488,7 +1728,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 217,
+      "line": 111,
       "domain": "025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com",
       "rule": "||025683cd-3142-471d-becd-719a6a70e74c.htmlcomponentservice.com^",
       "category": "MANUAL-REVIEW",
@@ -2496,7 +1736,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 220,
+      "line": 114,
       "domain": "0258369.com",
       "rule": "||0258369.com^",
       "category": "MANUAL-REVIEW",
@@ -2504,7 +1744,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 222,
+      "line": 116,
       "domain": "025g.top",
       "rule": "||025g.top^",
       "category": "MANUAL-REVIEW",
@@ -2512,7 +1752,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 230,
+      "line": 124,
       "domain": "300474843551021.my.id",
       "rule": "||300474843551021.my.id^",
       "category": "MANUAL-REVIEW",
@@ -2520,7 +1760,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 232,
+      "line": 126,
       "domain": "6696506595490460040.sytes.net",
       "rule": "||6696506595490460040.sytes.net^",
       "category": "MANUAL-REVIEW",
@@ -2528,7 +1768,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 240,
+      "line": 134,
       "domain": "aigescons-458632.asia",
       "rule": "||aigescons-458632.asia^",
       "category": "MANUAL-REVIEW",
@@ -2536,7 +1776,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 241,
+      "line": 135,
       "domain": "airbnb.com.booking-772020.online",
       "rule": "||airbnb.com.booking-772020.online^",
       "category": "MANUAL-REVIEW",
@@ -2544,7 +1784,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 242,
+      "line": 136,
       "domain": "alaxan.gq",
       "rule": "||alaxan.gq^",
       "category": "MANUAL-REVIEW",
@@ -2552,7 +1792,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 244,
+      "line": 138,
       "domain": "amaze-ma.xyz",
       "rule": "||amaze-ma.xyz^",
       "category": "MANUAL-REVIEW",
@@ -2560,7 +1800,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 249,
+      "line": 143,
       "domain": "aol-103986.weeblysite.com",
       "rule": "||aol-103986.weeblysite.com^",
       "category": "MANUAL-REVIEW",
@@ -2568,7 +1808,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 251,
+      "line": 145,
       "domain": "app-262d1101-6bb4-4c36-a615-202204577daa.cleverapps.io",
       "rule": "||app-262d1101-6bb4-4c36-a615-202204577daa.cleverapps.io^",
       "category": "MANUAL-REVIEW",
@@ -2576,7 +1816,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 252,
+      "line": 146,
       "domain": "athome-104167.weeblysite.com",
       "rule": "||athome-104167.weeblysite.com^",
       "category": "MANUAL-REVIEW",
@@ -2584,7 +1824,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 253,
+      "line": 147,
       "domain": "att-108159-100087.square.site",
       "rule": "||att-108159-100087.square.site^",
       "category": "MANUAL-REVIEW",
@@ -2592,7 +1832,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 254,
+      "line": 148,
       "domain": "att-mail-107958.weeblysite.com",
       "rule": "||att-mail-107958.weeblysite.com^",
       "category": "MANUAL-REVIEW",
@@ -2600,7 +1840,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 257,
+      "line": 151,
       "domain": "bafybeicii7bqdwvwu2hitqi5jrjjeexuzyip5mwrlb3eodcoe5k75jywte.ipfs.dweb.link",
       "rule": "||bafybeicii7bqdwvwu2hitqi5jrjjeexuzyip5mwrlb3eodcoe5k75jywte.ipfs.dweb.link^",
       "category": "MANUAL-REVIEW",
@@ -2608,7 +1848,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 258,
+      "line": 152,
       "domain": "bafybeifrqsrlk3deqhp6erqfe42sotuo2ieizvsrmurdem7nr5ngoew7na.ipfs.nftstorage.link",
       "rule": "||bafybeifrqsrlk3deqhp6erqfe42sotuo2ieizvsrmurdem7nr5ngoew7na.ipfs.nftstorage.link^",
       "category": "MANUAL-REVIEW",
@@ -2616,7 +1856,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 259,
+      "line": 153,
       "domain": "bafybeigfpyei5pqbwa5cvvniohosq3axbrxrssbg52z6gquija27lzokti.ipfs.dweb.link",
       "rule": "||bafybeigfpyei5pqbwa5cvvniohosq3axbrxrssbg52z6gquija27lzokti.ipfs.dweb.link^",
       "category": "MANUAL-REVIEW",
@@ -2624,7 +1864,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 262,
+      "line": 156,
       "domain": "bonus-link.xyz",
       "rule": "||bonus-link.xyz^",
       "category": "MANUAL-REVIEW",
@@ -2632,7 +1872,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 264,
+      "line": 158,
       "domain": "bt-103201.weeblysite.com",
       "rule": "||bt-103201.weeblysite.com^",
       "category": "MANUAL-REVIEW",
@@ -2640,7 +1880,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 266,
+      "line": 160,
       "domain": "cca3340f2c7845523.temporary.link",
       "rule": "||cca3340f2c7845523.temporary.link^",
       "category": "MANUAL-REVIEW",
@@ -2648,7 +1888,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 268,
+      "line": 162,
       "domain": "ce930168-wordpress-c6yyw.tw1.ru",
       "rule": "||ce930168-wordpress-c6yyw.tw1.ru^",
       "category": "MANUAL-REVIEW",
@@ -2656,7 +1896,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 273,
+      "line": 167,
       "domain": "com-trackthv.top",
       "rule": "||com-trackthv.top^",
       "category": "MANUAL-REVIEW",
@@ -2664,7 +1904,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 290,
+      "line": 184,
       "domain": "identity.facebookus-4532209117.pisi.co.rs",
       "rule": "||identity.facebookus-4532209117.pisi.co.rs^",
       "category": "MANUAL-REVIEW",
@@ -2672,7 +1912,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 291,
+      "line": 185,
       "domain": "ig-helpteam.xyz",
       "rule": "||ig-helpteam.xyz^",
       "category": "MANUAL-REVIEW",
@@ -2680,7 +1920,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 293,
+      "line": 187,
       "domain": "isoissroe07.click",
       "rule": "||isoissroe07.click^",
       "category": "MANUAL-REVIEW",
@@ -2688,7 +1928,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 306,
+      "line": 200,
       "domain": "park-pcnqog.top",
       "rule": "||park-pcnqog.top^",
       "category": "MANUAL-REVIEW",
@@ -2696,7 +1936,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 307,
+      "line": 201,
       "domain": "paypal.c2pay.top",
       "rule": "||paypal.c2pay.top^",
       "category": "MANUAL-REVIEW",
@@ -2704,7 +1944,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 311,
+      "line": 205,
       "domain": "pub-8329a48fab534b6abe2f2b4488d43090.r2.dev",
       "rule": "||pub-8329a48fab534b6abe2f2b4488d43090.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -2712,7 +1952,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 316,
+      "line": 210,
       "domain": "raytracingone.ga",
       "rule": "||raytracingone.ga^",
       "category": "MANUAL-REVIEW",
@@ -2720,7 +1960,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 319,
+      "line": 213,
       "domain": "renv-63187212.serverelvir.com",
       "rule": "||renv-63187212.serverelvir.com^",
       "category": "MANUAL-REVIEW",
@@ -2728,7 +1968,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 333,
+      "line": 227,
       "domain": "4qiyds.wusps.xyz",
       "rule": "||4qiyds.wusps.xyz^",
       "category": "MANUAL-REVIEW",
@@ -2736,7 +1976,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 336,
+      "line": 230,
       "domain": "a0375741.xsph.ru",
       "rule": "||a0375741.xsph.ru^",
       "category": "MANUAL-REVIEW",
@@ -2744,7 +1984,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 343,
+      "line": 237,
       "domain": "allegrolokalnie.oferta8539261.buzz",
       "rule": "||allegrolokalnie.oferta8539261.buzz^",
       "category": "MANUAL-REVIEW",
@@ -2752,7 +1992,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 351,
+      "line": 245,
       "domain": "att-service-inc-102086.weeblysite.com",
       "rule": "||att-service-inc-102086.weeblysite.com^",
       "category": "MANUAL-REVIEW",
@@ -2760,7 +2000,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 353,
+      "line": 247,
       "domain": "bafybeicdf2vdrp45umnyrwy2cp3zn3gfrikhvrtpd52azoc6swwgcfm7d4.ipfs.infura-ipfs.io",
       "rule": "||bafybeicdf2vdrp45umnyrwy2cp3zn3gfrikhvrtpd52azoc6swwgcfm7d4.ipfs.infura-ipfs.io^",
       "category": "MANUAL-REVIEW",
@@ -2768,7 +2008,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 354,
+      "line": 248,
       "domain": "bafybeiholp3tnp44cq6ldde44muyzhdowkwyvw4qkkcmsjzirjgnd2ifou.ipfs.nftstorage.link",
       "rule": "||bafybeiholp3tnp44cq6ldde44muyzhdowkwyvw4qkkcmsjzirjgnd2ifou.ipfs.nftstorage.link^",
       "category": "MANUAL-REVIEW",
@@ -2776,7 +2016,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 371,
+      "line": 265,
       "domain": "fiasmana.xyz",
       "rule": "||fiasmana.xyz^",
       "category": "MANUAL-REVIEW",
@@ -2784,7 +2024,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 374,
+      "line": 268,
       "domain": "fsstvll.kl-site.top",
       "rule": "||fsstvll.kl-site.top^",
       "category": "MANUAL-REVIEW",
@@ -2792,7 +2032,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 385,
+      "line": 279,
       "domain": "instagrambluetickserviceindonesia.masuk-dana.my.id",
       "rule": "||instagrambluetickserviceindonesia.masuk-dana.my.id^",
       "category": "MANUAL-REVIEW",
@@ -2800,7 +2040,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 396,
+      "line": 290,
       "domain": "lemonchiffonpowderbluehypotenuse.adasdfff.repl.co",
       "rule": "||lemonchiffonpowderbluehypotenuse.adasdfff.repl.co^",
       "category": "MANUAL-REVIEW",
@@ -2808,7 +2048,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 403,
+      "line": 297,
       "domain": "mail-103108.square.site",
       "rule": "||mail-103108.square.site^",
       "category": "MANUAL-REVIEW",
@@ -2816,7 +2056,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 408,
+      "line": 302,
       "domain": "meta.protection-pages40949989644786269072.m1ho2i7fmj-eqg35wpn23xn.p.runcloud.link",
       "rule": "||meta.protection-pages40949989644786269072.m1ho2i7fmj-eqg35wpn23xn.p.runcloud.link^",
       "category": "MANUAL-REVIEW",
@@ -2824,7 +2064,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 409,
+      "line": 303,
       "domain": "metafeedback3268923.click",
       "rule": "||metafeedback3268923.click^",
       "category": "MANUAL-REVIEW",
@@ -2832,7 +2072,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 417,
+      "line": 311,
       "domain": "pay.cyon3.com-2b460879.immobi-show.com",
       "rule": "||pay.cyon3.com-2b460879.immobi-show.com^",
       "category": "MANUAL-REVIEW",
@@ -2840,7 +2080,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 420,
+      "line": 314,
       "domain": "pub-140cf903de964a479f3b465e010ddb3b.r2.dev",
       "rule": "||pub-140cf903de964a479f3b465e010ddb3b.r2.dev^",
       "category": "MANUAL-REVIEW",
@@ -2848,7 +2088,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 423,
+      "line": 317,
       "domain": "report-83047937.nabalifares.ps",
       "rule": "||report-83047937.nabalifares.ps^",
       "category": "MANUAL-REVIEW",
@@ -2856,7 +2096,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 438,
+      "line": 332,
       "domain": "5e4838f3-b1f5-4f39-9c33-77bad86b90ed-00-1d402kdw46m4j.riker.replit.dev",
       "rule": "||5e4838f3-b1f5-4f39-9c33-77bad86b90ed-00-1d402kdw46m4j.riker.replit.dev^",
       "category": "MANUAL-REVIEW",
@@ -2864,7 +2104,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 439,
+      "line": 333,
       "domain": "6name.top",
       "rule": "||6name.top^",
       "category": "MANUAL-REVIEW",
@@ -2872,7 +2112,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 440,
+      "line": 334,
       "domain": "75115431-2-20180529004054.webstarterz.com",
       "rule": "||75115431-2-20180529004054.webstarterz.com^",
       "category": "MANUAL-REVIEW",
@@ -2880,7 +2120,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 443,
+      "line": 337,
       "domain": "admin-recoverys-1000006541651641616544654173.ml",
       "rule": "||admin-recoverys-1000006541651641616544654173.ml^",
       "category": "MANUAL-REVIEW",
@@ -2888,7 +2128,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 445,
+      "line": 339,
       "domain": "affixconnect.xyz",
       "rule": "||affixconnect.xyz^",
       "category": "MANUAL-REVIEW",
@@ -2896,7 +2136,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 453,
+      "line": 347,
       "domain": "att-107847.weeblysite.com",
       "rule": "||att-107847.weeblysite.com^",
       "category": "MANUAL-REVIEW",
@@ -2904,7 +2144,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 454,
+      "line": 348,
       "domain": "att.sendsu8.xyz",
       "rule": "||att.sendsu8.xyz^",
       "category": "MANUAL-REVIEW",
@@ -2912,7 +2152,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 455,
+      "line": 349,
       "domain": "bafkreig3jz2lphfulonwwxcfkyp55eremqhikr4q6eimbxn7gxsx3bf3bi.ipfs.dweb.link",
       "rule": "||bafkreig3jz2lphfulonwwxcfkyp55eremqhikr4q6eimbxn7gxsx3bf3bi.ipfs.dweb.link^",
       "category": "MANUAL-REVIEW",
@@ -2920,7 +2160,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 456,
+      "line": 350,
       "domain": "bafybeiayyqm2gkwdxggf6w4cury2sxhesbvuigufxme3igvqm7ybvrdyxq.ipfs.dweb.link",
       "rule": "||bafybeiayyqm2gkwdxggf6w4cury2sxhesbvuigufxme3igvqm7ybvrdyxq.ipfs.dweb.link^",
       "category": "MANUAL-REVIEW",
@@ -2928,7 +2168,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 457,
+      "line": 351,
       "domain": "bafybeih5hmwpt2pyq43h5fxc7wu6xndjm2jaj3gsjodqz3wh5d6iwnco3e.ipfs.nftstorage.link",
       "rule": "||bafybeih5hmwpt2pyq43h5fxc7wu6xndjm2jaj3gsjodqz3wh5d6iwnco3e.ipfs.nftstorage.link^",
       "category": "MANUAL-REVIEW",
@@ -2936,7 +2176,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 461,
+      "line": 355,
       "domain": "bell-108584.weeblysite.com",
       "rule": "||bell-108584.weeblysite.com^",
       "category": "MANUAL-REVIEW",
@@ -2944,7 +2184,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 465,
+      "line": 359,
       "domain": "bt-internet-100168.square.site",
       "rule": "||bt-internet-100168.square.site^",
       "category": "MANUAL-REVIEW",
@@ -2952,7 +2192,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 480,
+      "line": 374,
       "domain": "finderthundert.xyz",
       "rule": "||finderthundert.xyz^",
       "category": "MANUAL-REVIEW",
@@ -2960,7 +2200,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 490,
+      "line": 384,
       "domain": "home-102973.weeblysite.com",
       "rule": "||home-102973.weeblysite.com^",
       "category": "MANUAL-REVIEW",
@@ -2968,7 +2208,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 493,
+      "line": 387,
       "domain": "intesa.gruppoalet.ga",
       "rule": "||intesa.gruppoalet.ga^",
       "category": "MANUAL-REVIEW",
@@ -2976,7 +2216,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 513,
+      "line": 407,
       "domain": "msnmsmsnsm219421.ultimatefreehost.in",
       "rule": "||msnmsmsnsm219421.ultimatefreehost.in^",
       "category": "MANUAL-REVIEW",
@@ -2984,7 +2224,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 519,
+      "line": 413,
       "domain": "oshgiutg.tk",
       "rule": "||oshgiutg.tk^",
       "category": "MANUAL-REVIEW",
@@ -2992,7 +2232,7 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 524,
+      "line": 418,
       "domain": "payment.319447.com",
       "rule": "||payment.319447.com^",
       "category": "MANUAL-REVIEW",
@@ -3000,11 +2240,179 @@
     },
     {
       "file": "src/security/phishing.txt",
-      "line": 526,
+      "line": 420,
       "domain": "pub-2407f3c2d128488d992609e6d978708a.r2.dev",
       "rule": "||pub-2407f3c2d128488d992609e6d978708a.r2.dev^",
       "category": "MANUAL-REVIEW",
       "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 429,
+      "domain": "100472974781984.ga",
+      "rule": "||100472974781984.ga^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 431,
+      "domain": "1drv.caynet.xyz",
+      "rule": "||1drv.caynet.xyz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 432,
+      "domain": "302904.scrutihostvrfyonlne.myonlineportal.net",
+      "rule": "||302904.scrutihostvrfyonlne.myonlineportal.net^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 433,
+      "domain": "610225.selcdn.ru",
+      "rule": "||610225.selcdn.ru^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 440,
+      "domain": "allegrolokalnie.id8741893.buzz",
+      "rule": "||allegrolokalnie.id8741893.buzz^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 446,
+      "domain": "app-87bb24fb-edfc-4cf2-a8bb-db3ad5476a80.cleverapps.io",
+      "rule": "||app-87bb24fb-edfc-4cf2-a8bb-db3ad5476a80.cleverapps.io^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: UUID-like"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 449,
+      "domain": "att-106521.weeblysite.com",
+      "rule": "||att-106521.weeblysite.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 453,
+      "domain": "bafybeiaycj7wyjjc7qhfdhswgaanmsy57o24sdpls5hg2o6bmg26vpelfq.ipfs.fleek.cool",
+      "rule": "||bafybeiaycj7wyjjc7qhfdhswgaanmsy57o24sdpls5hg2o6bmg26vpelfq.ipfs.fleek.cool^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 454,
+      "domain": "bdd0d57c-a20e-462a-b66c-a441ab36ccc0-00-1qewacazmpkrw.riker.replit.dev",
+      "rule": "||bdd0d57c-a20e-462a-b66c-a441ab36ccc0-00-1qewacazmpkrw.riker.replit.dev^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: UUID-like"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 472,
+      "domain": "dev-0896231214.pantheonsite.io",
+      "rule": "||dev-0896231214.pantheonsite.io^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 479,
+      "domain": "f0573273.xsph.ru",
+      "rule": "||f0573273.xsph.ru^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 490,
+      "domain": "homemailatt-1008994.weeblysite.com",
+      "rule": "||homemailatt-1008994.weeblysite.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 509,
+      "domain": "metarightcenter.ml",
+      "rule": "||metarightcenter.ml^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 510,
+      "domain": "my-site-101197-103778.weeblysite.com",
+      "rule": "||my-site-101197-103778.weeblysite.com^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 511,
+      "domain": "npekgapplnch-164061821.sangekasra.ir",
+      "rule": "||npekgapplnch-164061821.sangekasra.ir^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 518,
+      "domain": "psgus.top",
+      "rule": "||psgus.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 519,
+      "domain": "pub-5f1a4a485c2c4c248d46f3f954af8b3f.r2.dev",
+      "rule": "||pub-5f1a4a485c2c4c248d46f3f954af8b3f.r2.dev^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: hash-like subdomain"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 520,
+      "domain": "pub-933f8476e3b84494ba3f03acae460733.r2.dev",
+      "rule": "||pub-933f8476e3b84494ba3f03acae460733.r2.dev^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 525,
+      "domain": "repts-99932747.ameigr.ma",
+      "rule": "||repts-99932747.ameigr.ma^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: long numeric string"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 526,
+      "domain": "trackqst.top",
+      "rule": "||trackqst.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
+    },
+    {
+      "file": "src/security/phishing.txt",
+      "line": 527,
+      "domain": "usps.com-trackubh.top",
+      "rule": "||usps.com-trackubh.top^",
+      "category": "MANUAL-REVIEW",
+      "reason": "suspicious pattern: high-abuse TLD"
     }
   ]
 }
