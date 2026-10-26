@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-19 07:16:21 UTC",
+  "fetched_at": "2026-10-26 07:22:37 UTC",
   "dry_run": false,
   "policy": {
     "max_per_source": 250,
@@ -9,48 +9,11 @@
   },
   "sources": {
     "urlhaus": {
-      "status": "ok",
-      "raw": 563,
-      "platform_skipped": 21058,
-      "platform_skipped_by_apex": {
-        "github.com": 2441,
-        "dropbox.com": 5,
-        "drive.google.com": 135,
-        "netlify.app": 4,
-        "gitlab.com": 18,
-        "discordapp.com": 2,
-        "vercel.app": 9,
-        "raw.githubusercontent.com": 18326,
-        "workers.dev": 3,
-        "firebasestorage.googleapis.com": 4,
-        "github.io": 3,
-        "githubusercontent.com": 4,
-        "blogspot.com": 2,
-        "pages.dev": 19,
-        "blob.core.windows.net": 2,
-        "codeload.github.com": 30,
-        "media.githubusercontent.com": 1,
-        "sendspace.com": 15,
-        "docs.google.com": 34,
-        "sites.google.com": 1
-      },
-      "new": 100
+      "status": "fetch_failed",
+      "new": 0
     },
     "threatfox": {
-      "status": "ok",
-      "raw": 1950,
-      "platform_skipped": 28,
-      "platform_skipped_by_apex": {
-        "github.com": 2,
-        "jsdelivr.net": 1,
-        "vercel.app": 3,
-        "workers.dev": 17,
-        "pastebin.com": 1,
-        "t.me": 1,
-        "cloudapp.azure.com": 1,
-        "amazonaws.com": 1,
-        "azurefd.net": 1
-      },
+      "status": "fetch_failed",
       "new": 0
     },
     "nocoin": {
@@ -129,12 +92,10 @@
   "targets": {
     "malware": {
       "evicted_age": 0,
-      "evicted_not_in_feed": 33,
-      "evicted_fifo": 67,
-      "liveness_checked_sources": [
-        "urlhaus"
-      ],
-      "added": 100,
+      "evicted_not_in_feed": 0,
+      "evicted_fifo": 0,
+      "liveness_checked_sources": [],
+      "added": 0,
       "total_after": 500
     },
     "cryptojacking": {
@@ -158,6 +119,6 @@
       "total_after": 500
     }
   },
-  "total_added": 202,
-  "total_removed": 202
+  "total_added": 102,
+  "total_removed": 102
 }
