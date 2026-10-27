@@ -1,6 +1,7 @@
-## 2026-10-26
+## 2026-10-27
 
-- Threat intelligence refreshed (+102 new, -102 retired)
+- Threat intelligence refreshed (+433 new, -500 retired)
+- Total rules: -67
 - Zero false positive violations detected
 - Critical service verification passed
 

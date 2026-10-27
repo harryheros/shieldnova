@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-26 07:22:37 UTC",
+  "fetched_at": "2026-10-27 21:19:06 UTC",
   "dry_run": false,
   "policy": {
     "max_per_source": 250,
@@ -9,12 +9,39 @@
   },
   "sources": {
     "urlhaus": {
-      "status": "fetch_failed",
-      "new": 0
+      "status": "ok",
+      "raw": 113,
+      "platform_skipped": 93480,
+      "platform_skipped_by_apex": {
+        "github.com": 42853,
+        "raw.githubusercontent.com": 50558,
+        "gitlab.com": 30,
+        "discordapp.com": 11,
+        "workers.dev": 6,
+        "vercel.app": 2,
+        "google.com": 1,
+        "drive.google.com": 14,
+        "dropbox.com": 1,
+        "codeload.github.com": 2,
+        "firebasestorage.googleapis.com": 1,
+        "github.io": 1
+      },
+      "new": 81
     },
     "threatfox": {
-      "status": "fetch_failed",
-      "new": 0
+      "status": "ok",
+      "raw": 1502,
+      "platform_skipped": 13,
+      "platform_skipped_by_apex": {
+        "jsdelivr.net": 4,
+        "telegram.org": 1,
+        "pages.dev": 3,
+        "workers.dev": 2,
+        "cloudapp.azure.com": 1,
+        "amazonaws.com": 1,
+        "azurefd.net": 1
+      },
+      "new": 250
     },
     "nocoin": {
       "status": "ok",
@@ -92,11 +119,13 @@
   "targets": {
     "malware": {
       "evicted_age": 0,
-      "evicted_not_in_feed": 0,
+      "evicted_not_in_feed": 398,
       "evicted_fifo": 0,
-      "liveness_checked_sources": [],
-      "added": 0,
-      "total_after": 500
+      "liveness_checked_sources": [
+        "urlhaus"
+      ],
+      "added": 331,
+      "total_after": 433
     },
     "cryptojacking": {
       "evicted_age": 0,
@@ -119,6 +148,6 @@
       "total_after": 500
     }
   },
-  "total_added": 102,
-  "total_removed": 102
+  "total_added": 433,
+  "total_removed": 500
 }
