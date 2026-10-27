@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26 07:22:43 UTC",
+  "generated_at": "2026-10-27 21:19:18 UTC",
   "build": {
-    "built_at": "2026-10-26 07:22:43 UTC",
+    "built_at": "2026-10-27 21:19:17 UTC",
     "profile": "Conservative / Compatibility-First",
     "invalid_rules_skipped": 0,
     "allowlist_entries": 0,
@@ -24,82 +24,82 @@
       },
       {
         "filename": "shieldnova-security.txt",
-        "total": 1211,
+        "total": 1144,
         "breakdown": {
           "phishing": 500,
-          "malware": 500,
+          "malware": 433,
           "cryptojacking": 211,
-          "deduped_total": 1211,
+          "deduped_total": 1144,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full.txt",
-        "total": 1324,
+        "total": 1257,
         "breakdown": {
           "privacy": 56,
           "ads": 59,
-          "security": 1211,
-          "deduped_total": 1324,
+          "security": 1144,
+          "deduped_total": 1257,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full-cn.txt",
-        "total": 1375,
+        "total": 1308,
         "breakdown": {
           "privacy_global": 56,
           "privacy_cn": 30,
           "ads_global": 59,
           "ads_cn": 21,
-          "security": 1211,
-          "deduped_total": 1375,
+          "security": 1144,
+          "deduped_total": 1308,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full-hktw.txt",
-        "total": 1362,
+        "total": 1295,
         "breakdown": {
           "privacy_global": 56,
           "privacy_hktw": 18,
           "ads_global": 59,
           "ads_hktw": 20,
-          "security": 1211,
-          "deduped_total": 1362,
+          "security": 1144,
+          "deduped_total": 1295,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full-aggressive.txt",
-        "total": 1339,
+        "total": 1272,
         "breakdown": {
           "privacy_global": 56,
           "privacy_aggressive": 15,
           "ads": 59,
-          "security": 1211,
-          "deduped_total": 1339,
+          "security": 1144,
+          "deduped_total": 1272,
           "allowlist_removed": 0
         }
       }
     ]
   },
   "fetch": {
-    "fetched_at": "2026-10-26 07:22:37 UTC",
-    "total_new_domains": 102,
-    "total_retired_domains": 102,
-    "total_platform_skipped": 86779,
-    "successful_sources": 2,
-    "failed_sources": 2,
+    "fetched_at": "2026-10-27 21:19:06 UTC",
+    "total_new_domains": 433,
+    "total_retired_domains": 500,
+    "total_platform_skipped": 180272,
+    "successful_sources": 4,
+    "failed_sources": 0,
     "note": "Public summary only. Detailed operational data remains in internal build artifacts."
   },
   "audit": {
     "scanned_files": 3,
-    "total_findings": 147,
+    "total_findings": 144,
     "summary": {
       "must_remove": 0,
       "hosting": 0,
-      "manual_review": 147
+      "manual_review": 144
     }
   },
   "false_positive_gate": {
@@ -108,16 +108,16 @@
     "note": "Gate passed as a prerequisite to report generation."
   },
   "rule_delta": {
-    "total_rules_now": 1428,
+    "total_rules_now": 1361,
     "previous_total": 1428,
-    "delta": 0
+    "delta": -67
   },
   "integrity": {
     "sha256": {
-      "stats.json": "1a13289c3f119be4ad9bb0a492ff9e952d680d730b3fbcf84782d69933622f79",
-      "fetch_stats.json": "694d9d33cf6e349a7955c4803f104c0731a2aa96930f0ee6bf9397762c974317",
-      "shieldnova-full.txt": "42f61889c80457ded753a263a3b1da0503075869edf70122fc5d5785363d2250",
-      "shieldnova-security.txt": "252db2607662e80d1960a01fce0a6d99aca5db0ff586f3ad059119e6660b7578"
+      "stats.json": "e66117aabe7f1e1bf252884fa93fbfa5760c96bfe94cd38968507933a0cb4465",
+      "fetch_stats.json": "5157dafeccff79b71176cc8dd2d2ce610a7a4aaf765f62b5ba44ab6f09842782",
+      "shieldnova-full.txt": "d0c9c0b916b1309e847841748feffdb3125e22de5ccd9ee241d819b8a09e2a61",
+      "shieldnova-security.txt": "4235e26c176baa2896ea9091024d7d8acb1855f03097652e136ef8fe6a85983d"
     }
   },
   "disclosure": {
