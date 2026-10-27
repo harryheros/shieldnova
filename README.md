@@ -1,6 +1,6 @@
 # ShieldNova
 
-[![Version](https://img.shields.io/badge/version-v2.2.0-blue)](https://github.com/harryheros/shieldnova/releases)
+[![Version](https://img.shields.io/badge/version-v2.2.1-blue)](https://github.com/harryheros/shieldnova/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-orange)](LICENSE)
 
 ShieldNova is a **compatibility-first domain filter list** for:
@@ -134,6 +134,8 @@ ShieldNova's security module is refreshed automatically every week from:
 |---|---|---|
 | abuse.ch URLhaus | Malware distribution | Active malware URLs |
 | abuse.ch ThreatFox | Malware C2 | Recent IOCs |
+
+> **abuse.ch Auth-Key required.** Since October 2026 abuse.ch serves URLhaus and ThreatFox files only from URLs that contain a free Auth-Key (the old keyless download URLs return HTTP 410). Create a key at [auth.abuse.ch](https://auth.abuse.ch/) and add it to the repository as the Actions secret `ABUSECH_AUTH_KEY`. Without it these two sources are skipped (`no_auth_key` in `dist/fetch_stats.json`); the malware list then gets no new entries and its existing entries expire after 180 days.
 | NoCoin | Cryptojacking | Mining service domains |
 | Phishing.Database | Phishing | Confirmed active phishing |
 
