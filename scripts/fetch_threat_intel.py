@@ -43,6 +43,7 @@ Usage:
 
 import csv
 import hashlib
+import io
 import ipaddress
 import json
 import os
@@ -51,6 +52,7 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -77,6 +79,13 @@ MAX_PER_FILE   = 500   # hard size limit per security file (mobile clients)
 FRESH_QUOTA    = 100   # new domains per file per run, making room if needed
 MAX_AGE_DAYS   = 180   # auto entries older than this are always removed
 THREATFOX_MIN_CONFIDENCE = 75
+
+# abuse.ch (URLhaus, ThreatFox) retired its keyless /downloads/ and /export/
+# URLs around 2026-10-21 — they answer HTTP 410 Gone. Files are now served
+# only from URLs that carry a free Auth-Key (https://auth.abuse.ch/) in the
+# path. Set it as the repository secret ABUSECH_AUTH_KEY. Without it both
+# sources are skipped (status "no_auth_key") instead of failing the run.
+ABUSECH_AUTH_KEY = os.environ.get('ABUSECH_AUTH_KEY', '').strip()
 DRY_RUN = '--dry-run' in sys.argv
 
 # Feeds that list *currently active* threats, so "no longer listed" means
@@ -111,12 +120,16 @@ HOSTS_PREFIX_RE = re.compile(r'^(?:0\.0\.0\.0|127\.0\.0\.1|::1)\s+')
 
 SOURCES = {
     'urlhaus': {
-        'url': 'https://urlhaus.abuse.ch/downloads/text_online/',
+        # recent.csv: URLs added in the last 30 days with url_status
+        # online/offline; only online rows are used (= the old text_online).
+        'url': 'https://urlhaus-api.abuse.ch/v2/files/exports/{auth_key}/recent.csv',
+        'auth': True,
         'target': 'malware',
         'description': 'abuse.ch URLhaus - active malware distribution URLs',
     },
     'threatfox': {
-        'url': 'https://threatfox.abuse.ch/export/csv/recent/',
+        'url': 'https://threatfox-api.abuse.ch/v2/files/exports/{auth_key}/recent.csv',
+        'auth': True,
         'target': 'malware',
         'description': 'abuse.ch ThreatFox - recent malware IOCs',
     },
@@ -456,14 +469,35 @@ def log(msg: str):
     print(f'[fetch] {msg}')
 
 
+def mask_secret(text: str) -> str:
+    """Never print the abuse.ch Auth-Key (it is part of the URL)."""
+    if ABUSECH_AUTH_KEY:
+        return str(text).replace(ABUSECH_AUTH_KEY, '<ABUSECH_AUTH_KEY>')
+    return str(text)
+
+
+def decode_payload(data: bytes) -> str:
+    """Response body as text; a ZIP archive is unpacked (first member)."""
+    if data[:2] == b'PK':
+        try:
+            with zipfile.ZipFile(io.BytesIO(data)) as zf:
+                names = zf.namelist()
+                if not names:
+                    return ''
+                data = zf.read(names[0])
+        except zipfile.BadZipFile:
+            return ''
+    return data.decode('utf-8', errors='replace')
+
+
 def fetch_url(url: str, timeout: int = 30) -> str:
     """Fetch URL content as text. Returns empty string on failure."""
     try:
         req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return resp.read().decode('utf-8', errors='replace')
+            return decode_payload(resp.read())
     except (urllib.error.URLError, OSError, TimeoutError) as e:
-        log(f'  WARN: failed to fetch {url}: {e}')
+        log(mask_secret(f'  WARN: failed to fetch {url}: {e}'))
         return ''
 
 
@@ -597,9 +631,51 @@ def _record_skip(skipped: dict, domain: str) -> None:
 
 # ── Source Parsers ────────────────────────────────────────────────────────────
 
+URLHAUS_DEFAULT_HEADER = [
+    'id', 'dateadded', 'url', 'url_status', 'last_online', 'threat', 'tags',
+    'urlhaus_link', 'reporter',
+]
+
+
+def urlhaus_online_urls(content: str) -> list[str]:
+    """URLs from a URLhaus feed that are currently online.
+
+    Accepts the keyed recent.csv export (quoted CSV, '#' comment lines, one
+    of them the header; only url_status == online is kept) and the retired
+    plain-text text_online list (one URL per line, all online).
+    """
+    lines = [l.strip() for l in content.splitlines() if l.strip()]
+    header = None
+    rows = []
+    for line in lines:
+        if line.startswith('#'):
+            body = line.lstrip('#').strip()
+            if body.replace('"', '').startswith('id,dateadded'):
+                header = [h.strip() for h in next(csv.reader([body], skipinitialspace=True))]
+            continue
+        rows.append(line)
+    if not rows:
+        return []
+    if not rows[0].startswith('"') and header is None:
+        return rows  # plain-text list
+    idx = {n: i for i, n in enumerate(header or URLHAUS_DEFAULT_HEADER)}
+    i_url, i_status = idx.get('url'), idx.get('url_status')
+    if i_url is None:
+        log('  WARN: URLhaus header has no url column; skipping feed')
+        return []
+    out = []
+    for row in csv.reader(rows, skipinitialspace=True):
+        if len(row) <= i_url:
+            continue
+        if i_status is not None and len(row) > i_status and row[i_status].strip().lower() != 'online':
+            continue
+        out.append(row[i_url].strip())
+    return out
+
+
 def parse_urlhaus(content: str) -> tuple[set, dict]:
     """
-    Parse URLhaus text feed.
+    Parse URLhaus feed (keyed recent.csv, online rows only).
 
     URLhaus records full malicious URLs (e.g. https://compromised-site.com/payload.exe).
     We extract the hostname. Entries where the hostname belongs to a hosting
@@ -609,7 +685,7 @@ def parse_urlhaus(content: str) -> tuple[set, dict]:
     """
     domains: set = set()
     skipped_by_platform: dict[str, int] = {}
-    for line in content.splitlines():
+    for line in urlhaus_online_urls(content):
         domain = extract_domain(line)
         if not domain:
             continue
@@ -751,12 +827,13 @@ PARSERS = {
 
 # ── Rolling window ───────────────────────────────────────────────────────────
 
-def live_domains(content: str) -> set:
-    """Every valid domain a line-oriented feed currently lists — including
+def live_domains(content: str, source: str = '') -> set:
+    """Every valid domain a feed currently lists — including
     hosting-platform subdomains, so manually reviewed hosting entries are
     judged against the feed too."""
     out = set()
-    for line in content.splitlines():
+    lines = urlhaus_online_urls(content) if source == 'urlhaus' else content.splitlines()
+    for line in lines:
         d = extract_domain(line)
         if d:
             out.add(d)
@@ -955,14 +1032,24 @@ def main():
     for source_name, source_config in SOURCES.items():
         url = source_config['url']
         log(f"\nFetching: {source_config['description']}")
-        log(f'  URL: {url}')
+        if source_config.get('auth'):
+            if not ABUSECH_AUTH_KEY:
+                log('  SKIPPED: needs the ABUSECH_AUTH_KEY repository secret '
+                    '(free key from https://auth.abuse.ch/)')
+                print(f'::warning::{source_name} skipped: set the ABUSECH_AUTH_KEY secret '
+                      '(abuse.ch retired its keyless downloads in Oct 2026)')
+                fetched[source_name] = {'ok': False, 'sane': False, 'eligible': set(), 'live': set()}
+                stats['sources'][source_name] = {'status': 'no_auth_key', 'new': 0}
+                continue
+            url = url.format(auth_key=urllib.parse.quote(ABUSECH_AUTH_KEY, safe=''))
+        log(mask_secret(f'  URL: {url}'))
         content = fetch_url(url)
         if not content:
             fetched[source_name] = {'ok': False, 'sane': False, 'eligible': set(), 'live': set()}
             stats['sources'][source_name] = {'status': 'fetch_failed', 'new': 0}
             continue
         eligible, platform_skipped = PARSERS[source_name](content)
-        live = live_domains(content) if source_name in LIVENESS_SOURCES else set()
+        live = live_domains(content, source_name) if source_name in LIVENESS_SOURCES else set()
         sane = len(live) >= MIN_FEED_SIZE.get(source_name, 0) if source_name in LIVENESS_SOURCES else True
         if source_name in LIVENESS_SOURCES and not sane:
             log(f'  WARN: {source_name} lists only {len(live)} domains '

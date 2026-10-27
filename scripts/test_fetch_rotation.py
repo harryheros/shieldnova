@@ -159,5 +159,69 @@ class TestReport(unittest.TestCase):
                                  '- Total rules: -10'])
 
 
+class TestAbuseChAuthKey(unittest.TestCase):
+    """abuse.ch retired its keyless downloads (HTTP 410) in Oct 2026."""
+
+    UH_CSV = "\n".join([
+        "################################################################",
+        "# abuse.ch URLhaus Database Dump (CSV - recent URLs)            #",
+        '# id,dateadded,url,url_status,last_online,threat,tags,urlhaus_link,reporter',
+        '"1","2026-10-26 10:00:00","http://live-payload.example.net/a.exe","online","2026-10-26 10:00:00","malware_download","exe","https://urlhaus.abuse.ch/url/1/","r"',
+        '"2","2026-10-26 09:00:00","http://dead-payload.example.org/b.sh","offline","2026-10-25 09:00:00","malware_download","sh","https://urlhaus.abuse.ch/url/2/","r"',
+        '"3","2026-10-26 08:00:00","https://evil.github.io/x","online","","malware_download","","https://urlhaus.abuse.ch/url/3/","r"',
+        '"4","2026-10-26 07:00:00","http://1.2.3.4/m","online","","malware_download","","https://urlhaus.abuse.ch/url/4/","r"',
+    ])
+
+    def test_urlhaus_csv_online_rows_only(self):
+        domains, skipped = f.parse_urlhaus(self.UH_CSV)
+        self.assertEqual(domains, {"live-payload.example.net"})
+        self.assertEqual(skipped, {"github.io": 1})
+        live = f.live_domains(self.UH_CSV, "urlhaus")
+        self.assertIn("live-payload.example.net", live)
+        self.assertIn("evil.github.io", live)
+        self.assertNotIn("dead-payload.example.org", live)
+
+    def test_urlhaus_plain_text_still_parses(self):
+        domains, _ = f.parse_urlhaus("# comment\nhttp://a.example.com/x\nhttps://b.example.net/y\n")
+        self.assertEqual(domains, {"a.example.com", "b.example.net"})
+
+    def test_sources_use_keyed_urls(self):
+        for name in ("urlhaus", "threatfox"):
+            cfg = f.SOURCES[name]
+            self.assertTrue(cfg.get("auth"), name)
+            self.assertIn("/v2/files/exports/{auth_key}/", cfg["url"])
+            self.assertNotIn("/downloads/", cfg["url"])
+
+    def test_missing_key_skips_abusech_sources(self):
+        orig_key, orig_fetch, orig_dry = f.ABUSECH_AUTH_KEY, f.fetch_url, f.DRY_RUN
+        calls = []
+        try:
+            f.ABUSECH_AUTH_KEY = ""
+            f.DRY_RUN = True
+            f.fetch_url = lambda url, timeout=30: calls.append(url) or ""
+            f.main()
+        finally:
+            f.ABUSECH_AUTH_KEY, f.fetch_url, f.DRY_RUN = orig_key, orig_fetch, orig_dry
+        self.assertFalse(any("abuse.ch" in u for u in calls), calls)
+
+    def test_key_is_masked(self):
+        orig = f.ABUSECH_AUTH_KEY
+        try:
+            f.ABUSECH_AUTH_KEY = "s3cretkey123"
+            self.assertEqual(f.mask_secret("https://x/v2/files/exports/s3cretkey123/recent.csv"),
+                             "https://x/v2/files/exports/<ABUSECH_AUTH_KEY>/recent.csv")
+        finally:
+            f.ABUSECH_AUTH_KEY = orig
+
+    def test_zip_payload_is_unpacked(self):
+        import io
+        import zipfile
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w") as zf:
+            zf.writestr("recent.csv", self.UH_CSV)
+        self.assertEqual(f.decode_payload(buf.getvalue()), self.UH_CSV)
+        self.assertEqual(f.decode_payload(b"plain"), "plain")
+
+
 if __name__ == '__main__':
     unittest.main()
