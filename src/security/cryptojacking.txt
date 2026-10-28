@@ -48,58 +48,6 @@
 ||wasm.stream^                              ! WASM mining payload delivery
 ||adless.io^                                ! Adless - mining-as-ad-replacement
 
-! --- Auto-fetched from cryptojacking (2026-04-30) ---
-||2miners.com^                              ! auto: cryptojacking
-||a-calc.de^                                ! auto: cryptojacking
-||acbp0020171456.page.tl^                   ! auto: cryptojacking
-||adminer.com^                              ! auto: cryptojacking
-||aeros02.tk^                               ! auto: cryptojacking
-||aeros12.tk^                               ! auto: cryptojacking
-||analytics.blue^                           ! auto: cryptojacking
-||andlache.com^                             ! auto: cryptojacking
-||api.nyda.pro^                             ! auto: cryptojacking
-||aptal.pro^                                ! auto: cryptojacking
-||ashgrrwt.click^                           ! auto: cryptojacking
-||bablace.com^                              ! auto: cryptojacking
-||bafybeidravcab5p3acvthxtwosm4rfpl4yypwwm52s7sazgxaezfzn5xn4.ipfs.infura-ipfs.io^! auto: cryptojacking
-||baiduccdn1.com^                           ! auto: cryptojacking
-||becanium.com^                             ! auto: cryptojacking
-||belicimo.pw^                              ! auto: cryptojacking
-||besocial.online^                          ! auto: cryptojacking
-||bestcoinsignals.com^                      ! auto: cryptojacking
-||bestsrv.de^                               ! auto: cryptojacking
-||bewaslac.com^                             ! auto: cryptojacking
-||bhzejltg.info^                            ! auto: cryptojacking
-||biberukalap.com^                          ! auto: cryptojacking
-||binarybusiness.de^                        ! auto: cryptojacking
-||bitcoin-cashcard.com^                     ! auto: cryptojacking
-||bmcm.pw^                                  ! auto: cryptojacking
-||bmnr.pw^                                  ! auto: cryptojacking
-||bmst.pw^                                  ! auto: cryptojacking
-||broadcastt.xyz^                           ! auto: cryptojacking
-||brominer.com^                             ! auto: cryptojacking
-||candid.zone^                              ! auto: cryptojacking
-||cashbeet.com^                             ! auto: cryptojacking
-||cdn.cloudcoins.co^                        ! auto: cryptojacking
-||cdn1.pebx.pl^                             ! auto: cryptojacking
-||cfcdist.gdn^                              ! auto: cryptojacking
-||clgserv.pro^                              ! auto: cryptojacking
-||cloud-miner.de^                           ! auto: cryptojacking
-||cloud-miner.eu^                           ! auto: cryptojacking
-||cloudcdn.gdn^                             ! auto: cryptojacking
-||cloudflane.com^                           ! auto: cryptojacking
-||coin-have.com^                            ! auto: cryptojacking
-||coinblind.com^                            ! auto: cryptojacking
-||coinerra.com^                             ! auto: cryptojacking
-||coinnebula.com^                           ! auto: cryptojacking
-||coinpirate.cf^                            ! auto: cryptojacking
-||coinpot.co^                               ! auto: cryptojacking
-||coinrail.io^                              ! auto: cryptojacking
-||cpufan.club^                              ! auto: cryptojacking
-||crypto-webminer.com^                      ! auto: cryptojacking
-||crypto.csgocpu.com^                       ! auto: cryptojacking
-||cryptobara.com^                           ! auto: cryptojacking
-
 ! --- Auto-fetched from cryptojacking (2026-05-01) ---
 ||cryptoloot.pro^                           ! auto: cryptojacking
 ||cryptonoter.com^                          ! auto: cryptojacking
@@ -231,6 +179,56 @@
 ||xmr.cool^                                 ! auto: cryptojacking
 ||zlx.com.br^                               ! auto: cryptojacking
 
-! --- Auto-fetched from nocoin (2026-10-27) ---
+! --- Auto-fetched from nocoin (2026-10-28) ---
+||2miners.com^                              ! auto: nocoin
+||a-calc.de^                                ! auto: nocoin
+||acbp0020171456.page.tl^                   ! auto: nocoin
+||adminer.com^                              ! auto: nocoin
+||aeros02.tk^                               ! auto: nocoin
+||aeros12.tk^                               ! auto: nocoin
+||analytics.blue^                           ! auto: nocoin
+||andlache.com^                             ! auto: nocoin
+||api.nyda.pro^                             ! auto: nocoin
+||aptal.pro^                                ! auto: nocoin
+||ashgrrwt.click^                           ! auto: nocoin
+||bablace.com^                              ! auto: nocoin
+||bafybeidravcab5p3acvthxtwosm4rfpl4yypwwm52s7sazgxaezfzn5xn4.ipfs.infura-ipfs.io^! auto: nocoin
+||baiduccdn1.com^                           ! auto: nocoin
+||becanium.com^                             ! auto: nocoin
+||belicimo.pw^                              ! auto: nocoin
+||besocial.online^                          ! auto: nocoin
+||bestcoinsignals.com^                      ! auto: nocoin
+||bestsrv.de^                               ! auto: nocoin
+||bewaslac.com^                             ! auto: nocoin
+||bhzejltg.info^                            ! auto: nocoin
+||biberukalap.com^                          ! auto: nocoin
+||binarybusiness.de^                        ! auto: nocoin
+||bitcoin-cashcard.com^                     ! auto: nocoin
+||bmcm.pw^                                  ! auto: nocoin
+||bmnr.pw^                                  ! auto: nocoin
+||bmst.pw^                                  ! auto: nocoin
+||broadcastt.xyz^                           ! auto: nocoin
+||brominer.com^                             ! auto: nocoin
+||candid.zone^                              ! auto: nocoin
+||cashbeet.com^                             ! auto: nocoin
+||cdn.cloudcoins.co^                        ! auto: nocoin
+||cdn1.pebx.pl^                             ! auto: nocoin
+||cfcdist.gdn^                              ! auto: nocoin
+||clgserv.pro^                              ! auto: nocoin
+||cloud-miner.de^                           ! auto: nocoin
+||cloud-miner.eu^                           ! auto: nocoin
+||cloudcdn.gdn^                             ! auto: nocoin
+||cloudflane.com^                           ! auto: nocoin
+||coin-have.com^                            ! auto: nocoin
+||coinblind.com^                            ! auto: nocoin
+||coinerra.com^                             ! auto: nocoin
+||coinnebula.com^                           ! auto: nocoin
+||coinpirate.cf^                            ! auto: nocoin
+||coinpot.co^                               ! auto: nocoin
+||coinrail.io^                              ! auto: nocoin
+||cpufan.club^                              ! auto: nocoin
+||crypto-webminer.com^                      ! auto: nocoin
+||crypto.csgocpu.com^                       ! auto: nocoin
+||cryptobara.com^                           ! auto: nocoin
 ||ddns.net^                                 ! auto: nocoin
 ||myeffect.net^                             ! auto: nocoin
