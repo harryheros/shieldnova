@@ -2,6 +2,13 @@
 
 > Security rule updates and release history.
 
+## 2026-11-02
+
+- Threat intelligence refreshed (+326 new, -327 retired)
+- Total rules: -1
+- ✓ Release validation: passed
+
+---
 ## 2026-10-28
 
 - Threat intelligence refreshed (+252 new, -185 retired)

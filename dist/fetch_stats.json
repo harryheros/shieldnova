@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-28 17:20:53 UTC",
+  "fetched_at": "2026-11-02 08:49:38 UTC",
   "dry_run": false,
   "policy": {
     "max_per_source": 250,
@@ -10,37 +10,39 @@
   "sources": {
     "urlhaus": {
       "status": "ok",
-      "raw": 108,
-      "platform_skipped": 85416,
+      "raw": 112,
+      "platform_skipped": 99969,
       "platform_skipped_by_apex": {
-        "github.com": 40159,
-        "gitlab.com": 22,
-        "workers.dev": 6,
-        "raw.githubusercontent.com": 45183,
-        "netlify.app": 1,
-        "drive.google.com": 30,
+        "github.com": 49914,
+        "raw.githubusercontent.com": 50012,
+        "workers.dev": 3,
+        "dropbox.com": 2,
         "discordapp.com": 8,
-        "vercel.app": 2,
+        "gitlab.com": 21,
+        "firebasestorage.googleapis.com": 2,
+        "cloudapp.azure.com": 1,
+        "vercel.app": 1,
+        "drive.google.com": 2,
         "google.com": 1,
-        "codeload.github.com": 2,
-        "firebasestorage.googleapis.com": 1,
+        "codeload.github.com": 1,
         "github.io": 1
       },
-      "new": 20
+      "new": 46
     },
     "threatfox": {
       "status": "ok",
-      "raw": 1182,
-      "platform_skipped": 10,
+      "raw": 3213,
+      "platform_skipped": 15,
       "platform_skipped_by_apex": {
-        "jsdelivr.net": 4,
-        "telegram.org": 1,
-        "pages.dev": 2,
+        "vercel.app": 7,
+        "railway.app": 2,
+        "pages.dev": 1,
+        "jsdelivr.net": 2,
         "cloudapp.azure.com": 1,
         "amazonaws.com": 1,
         "azurefd.net": 1
       },
-      "new": 80
+      "new": 54
     },
     "nocoin": {
       "status": "ok",
@@ -49,7 +51,7 @@
       "platform_skipped_by_apex": {
         "now.sh": 2
       },
-      "new": 52
+      "new": 126
     },
     "phishing_database": {
       "status": "ok",
@@ -118,8 +120,8 @@
   "targets": {
     "malware": {
       "evicted_age": 0,
-      "evicted_not_in_feed": 25,
-      "evicted_fifo": 8,
+      "evicted_not_in_feed": 42,
+      "evicted_fifo": 58,
       "liveness_checked_sources": [
         "urlhaus"
       ],
@@ -127,14 +129,14 @@
       "total_after": 500
     },
     "cryptojacking": {
-      "evicted_age": 50,
+      "evicted_age": 125,
       "evicted_not_in_feed": 2,
       "evicted_fifo": 0,
       "liveness_checked_sources": [
         "nocoin"
       ],
-      "added": 52,
-      "total_after": 211
+      "added": 126,
+      "total_after": 210
     },
     "phishing": {
       "evicted_age": 0,
@@ -147,6 +149,6 @@
       "total_after": 500
     }
   },
-  "total_added": 252,
-  "total_removed": 185
+  "total_added": 326,
+  "total_removed": 327
 }

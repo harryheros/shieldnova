@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28 17:21:05 UTC",
+  "generated_at": "2026-11-02 08:49:50 UTC",
   "build": {
-    "built_at": "2026-10-28 17:21:04 UTC",
+    "built_at": "2026-11-02 08:49:50 UTC",
     "profile": "Conservative / Compatibility-First",
     "invalid_rules_skipped": 0,
     "allowlist_entries": 0,
@@ -24,82 +24,82 @@
       },
       {
         "filename": "shieldnova-security.txt",
-        "total": 1211,
+        "total": 1210,
         "breakdown": {
           "phishing": 500,
           "malware": 500,
-          "cryptojacking": 211,
-          "deduped_total": 1211,
+          "cryptojacking": 210,
+          "deduped_total": 1210,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full.txt",
-        "total": 1324,
+        "total": 1323,
         "breakdown": {
           "privacy": 56,
           "ads": 59,
-          "security": 1211,
-          "deduped_total": 1324,
+          "security": 1210,
+          "deduped_total": 1323,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full-cn.txt",
-        "total": 1375,
+        "total": 1374,
         "breakdown": {
           "privacy_global": 56,
           "privacy_cn": 30,
           "ads_global": 59,
           "ads_cn": 21,
-          "security": 1211,
-          "deduped_total": 1375,
+          "security": 1210,
+          "deduped_total": 1374,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full-hktw.txt",
-        "total": 1362,
+        "total": 1361,
         "breakdown": {
           "privacy_global": 56,
           "privacy_hktw": 18,
           "ads_global": 59,
           "ads_hktw": 20,
-          "security": 1211,
-          "deduped_total": 1362,
+          "security": 1210,
+          "deduped_total": 1361,
           "allowlist_removed": 0
         }
       },
       {
         "filename": "shieldnova-full-aggressive.txt",
-        "total": 1339,
+        "total": 1338,
         "breakdown": {
           "privacy_global": 56,
           "privacy_aggressive": 15,
           "ads": 59,
-          "security": 1211,
-          "deduped_total": 1339,
+          "security": 1210,
+          "deduped_total": 1338,
           "allowlist_removed": 0
         }
       }
     ]
   },
   "fetch": {
-    "fetched_at": "2026-10-28 17:20:53 UTC",
-    "total_new_domains": 252,
-    "total_retired_domains": 185,
-    "total_platform_skipped": 172205,
+    "fetched_at": "2026-11-02 08:49:38 UTC",
+    "total_new_domains": 326,
+    "total_retired_domains": 327,
+    "total_platform_skipped": 186763,
     "successful_sources": 4,
     "failed_sources": 0,
     "note": "Public summary only. Detailed operational data remains in internal build artifacts."
   },
   "audit": {
     "scanned_files": 3,
-    "total_findings": 149,
+    "total_findings": 146,
     "summary": {
       "must_remove": 0,
       "hosting": 0,
-      "manual_review": 149
+      "manual_review": 146
     }
   },
   "false_positive_gate": {
@@ -108,16 +108,16 @@
     "note": "Gate passed as a prerequisite to report generation."
   },
   "rule_delta": {
-    "total_rules_now": 1428,
-    "previous_total": 1361,
-    "delta": 67
+    "total_rules_now": 1427,
+    "previous_total": 1428,
+    "delta": -1
   },
   "integrity": {
     "sha256": {
-      "stats.json": "0d2d82f6ab116a415ba8fc087aae53de07a1eb955122dd35517b71e56ef62ff3",
-      "fetch_stats.json": "56c75133722bb6ef2441d7f5e3893e4642a0951a4acf8efd2dc6bad0467d3860",
-      "shieldnova-full.txt": "d1d2c6a78ae48b09ae8f5b47c42a6c83d24783afe6c05a6b427a9029e71c4f3d",
-      "shieldnova-security.txt": "b23422dbc186dc35c6fae05fbe918a9f565422293a4a5c782f42abbb7c9c36a7"
+      "stats.json": "64dcc048b727d122f1436376788577b30ccbb5916684cb555e0cb879f2eb0a8e",
+      "fetch_stats.json": "4c5a75ae13419f66c8b83e5e3b8f028f97323dd3757c371115553100da4c3e8a",
+      "shieldnova-full.txt": "ca9af89bdf0f219f999e7611e7b093d9503e889c8b6da884a0a3d5d69ba783cd",
+      "shieldnova-security.txt": "e09f4aae9e0ae6297a03814a4affe4672e2bed62006b6c55d541df4a870688f2"
     }
   },
   "disclosure": {
