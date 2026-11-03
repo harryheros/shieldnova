@@ -3,201 +3,78 @@
 [![Version](https://img.shields.io/badge/version-v2.2.1-blue)](https://github.com/harryheros/shieldnova/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-orange)](LICENSE)
 
-ShieldNova is a **compatibility-first domain filter list** for:
+A **compatibility-first domain filter list** for privacy, ad blocking and security — conservative rules for minimal breakage, with dedicated China and HK / Taiwan editions. Subscribe in AdGuard, Clash, Surge, Shadowrocket, Loon or Quantumult X.
 
-- Privacy protection (analytics, fingerprinting, telemetry)
-- Ad blocking (ad networks, exchanges, ad-serving domains)
-- Security filtering (phishing, malware, cryptojacking)
+The goal is not maximum blocking, but **maximum usable protection**. Rule counts per list: [`dist/stats.json`](dist/stats.json).
 
-Designed for **minimal breakage** — conservative rules only, optimized for APAC users with dedicated CN / HK / TW coverage.
-
-Subscribe directly in AdGuard, Clash, Surge, Shadowrocket, Loon, or QuantumultX.
+> **License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) for ShieldNova's own curation and value-added work, in all versions. Third-party source data keeps its original licenses — see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md). Commercial use requires a separate written license.
 
 ---
 
-> **License Notice**: All versions of this project, including historical commits, are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), **as applied to ShieldNova's own curation and value-added work**. Third-party source data remains under its original licenses — see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md). Commercial use of ShieldNova's own work requires a separate written license agreement.
-> **Versioning Notice**: Previous public versions of this project may have been distributed under different license terms. All current and future releases are governed solely by the LICENSE file in this repository.
+## Subscribe
+
+Pick **one** list:
+
+| List | Contents |
+|---|---|
+| `shieldnova-full.txt` | Privacy + ads + security — recommended |
+| `shieldnova-full-cn.txt` | Full + China mainland trackers and ads |
+| `shieldnova-full-hktw.txt` | Full + Hong Kong and Taiwan trackers and ads |
+| `shieldnova-full-aggressive.txt` | Full + stricter privacy rules that may break some sites |
+| `shieldnova-privacy.txt`, `-ads.txt`, `-security.txt` | One module only |
+
+```text
+AdGuard:      https://raw.githubusercontent.com/harryheros/shieldnova/main/dist/shieldnova-full.txt
+Other apps:   https://raw.githubusercontent.com/harryheros/shieldnova/main/formats/<app>/shieldnova-full.txt
+```
+
+`<app>`: `adguard`, `clash`, `surge`, `shadowrocket`, `loon`, `quantumultx`.
+
+---
 
 ## Why ShieldNova
 
-Unlike large aggregated blocklists, ShieldNova focuses on:
+One rule where one rule suffices. Where other lists add hundreds of subdomains of one tracker, ShieldNova blocks the domain once, with a note:
 
-- High-confidence rules only  
-- Minimal impact on application functionality  
-- Carefully curated domain intelligence  
-- Long-term maintainability  
-
-The goal is not maximum blocking, but **maximum usable protection**.
-
-For current rule counts per profile, see `dist/stats.json`.
-
----
-
-## Recommended Profiles
-
-Most users only need one profile. Pick your region:
-
-| Profile | What's included | Subscribe |
-|---|---|---|
-| **Full (Global)** | Privacy + Ads + Security | `dist/shieldnova-full.txt` |
-| **Full (China)** | Global + China mainland trackers & ads | `dist/shieldnova-full-cn.txt` |
-| **Full (HK/TW)** | Global + HK & Taiwan specific | `dist/shieldnova-full-hktw.txt` |
-
-Subscribe URL pattern:
-```
-https://raw.githubusercontent.com/harryheros/shieldnova/main/dist/shieldnova-full.txt
-```
-
-For other tools (Surge, Shadowrocket, Clash, etc.), use files under `formats/`:
-```
-https://raw.githubusercontent.com/harryheros/shieldnova/main/formats/{tool}/shieldnova-full.txt
-```
-
----
-
-## What Makes ShieldNova Different
-
-### One rule where one rule suffices
-
-**Others do this:**
-```
-||a10053.actonservice.com^
-||a10555.actonservice.com^
-||a10640.actonservice.com^
-... (500+ entries for one service)
-```
-
-**ShieldNova does this:**
 ```
 ||actonservice.com^                       ! Act-On - marketing automation tracking
 ```
 
-Same coverage. One rule instead of five hundred.
-
-### Comparison
-
 | | ShieldNova | Typical aggregated lists |
 |---|---|---|
-| Subscribe | 1 link | 10-100+ links |
-| Total rules | ~600 curated | 40,000+ scraped |
-| Annotations | Every rule | Rarely |
-| Region editions | Yes | No |
-| False positives | Near zero | Frequent |
-| Performance impact | Negligible | Noticeable |
-| Maintenance | Manual curation | Automated scraping |
+| Subscriptions | 1 | 10–100+ |
+| Rules | ~1,300 (hand-curated privacy and ads, plus a rolling security window) | 40,000+ |
+| Every rule explained | Yes — annotated or attributed to its source feed | Rarely |
+| Regional editions | Yes | No |
+| False positives | Near zero; checked on every build | Frequent |
 
 ---
 
-## Modules
-
-- **privacy** — tracking & telemetry domains  
-- **ads** — advertising infrastructure  
-- **security** — phishing, malware, cryptojacking  
-
----
-
-## Build & Architecture
+## How it is built
 
 ```text
-┌─────────────────────────────────────────────────┐
-│  Manual Rules (src/)                            │
-│  privacy / ads / security — hand-curated        │
-└──────────────────┬──────────────────────────────┘
-                   │
-┌──────────────────▼──────────────────────────────┐
-│  Threat Intel Fetch (weekly, automated)         │
-│  abuse.ch URLhaus / ThreatFox                   │
-│  Phishing.Database / NoCoin list                │
-│  → dedup → rotate window → src/security/        │
-└──────────────────┬──────────────────────────────┘
-                   │
-┌──────────────────▼──────────────────────────────┐
-│  Build Pipeline                                 │
-│  validate → normalize → dedup → allowlist       │
-│  → merge combos → generate 6 client formats     │
-└──────────────────┬──────────────────────────────┘
-                   │
-         ┌─────────┴──────────┐
-         ▼                    ▼
-┌─────────────────┐  ┌────────────────────┐
-│  dist/           │  │  formats/          │
-│  shieldnova-*   │  │  adguard / surge / │
-│  (AdGuard fmt)  │  │  clash / qx / loon │
-└─────────────────┘  └────────────────────┘
+src/  hand-curated privacy / ads / security rules + allowlist
+  +   weekly threat intel: abuse.ch URLhaus & ThreatFox, Phishing.Database, NoCoin
+  →   validate → normalize → dedupe → allowlist → false-positive check
+  →   dist/ (AdGuard format) and formats/ (six apps)
 ```
 
-### Automated Threat Intelligence
+**Security lists** are rolling windows of at most 500 auto-fetched domains per file, alongside hand-curated ones. A fetched entry is retired when its feed stops listing it, after 180 days, or to make room for fresh entries (up to 100 per file per run). Hand-curated rules are never touched, and a failed or truncated feed never triggers removals. Every change is logged in `dist/fetch_stats.json`.
 
-ShieldNova's security module is refreshed automatically every week from:
+**Updates**: every Monday 02:00 UTC, or on demand. A failed run opens a GitHub issue.
 
-| Source | Type | Feed |
-|---|---|---|
-| abuse.ch URLhaus | Malware distribution | Active malware URLs |
-| abuse.ch ThreatFox | Malware C2 | Recent IOCs |
+**Allowlist**: domains in `src/allowlist/core.txt` are removed from every output.
 
-> **abuse.ch Auth-Key required.** Since October 2026 abuse.ch serves URLhaus and ThreatFox files only from URLs that contain a free Auth-Key (the old keyless download URLs return HTTP 410). Create a key at [auth.abuse.ch](https://auth.abuse.ch/) and add it to the repository as the Actions secret `ABUSECH_AUTH_KEY`. Without it these two sources are skipped (`no_auth_key` in `dist/fetch_stats.json`); the malware list then gets no new entries and its existing entries expire after 180 days.
-| NoCoin | Cryptojacking | Mining service domains |
-| Phishing.Database | Phishing | Confirmed active phishing |
+> **Maintainers — abuse.ch Auth-Key.** abuse.ch serves URLhaus and ThreatFox only with a free Auth-Key (keyless URLs return HTTP 410 since October 2026). Create one at [auth.abuse.ch](https://auth.abuse.ch/) and add it as the Actions secret `ABUSECH_AUTH_KEY`. Without it both feeds are skipped and their entries expire after 180 days.
 
-Each security file is a rolling window of at most 500 auto-fetched plus hand-curated domains. Auto-fetched entries are retired when their feed no longer lists them as active, after 180 days, or to make room for fresh entries (up to 100 per file per run); hand-curated rules are never touched, and a failed or truncated feed never triggers removals. New entries are deduplicated against all existing rules and attributed to their source feed. Every change is recorded in `dist/fetch_stats.json`.
-
-### Update Schedule
-
-| Trigger | Frequency | Action |
-|---|---|---|
-| Scheduled | Every Monday 02:00 UTC | Threat intel fetch + build |
-| Manual | On demand | Fetch + build (or build only) |
-| Failure | Automatic | Creates GitHub Issue |
-
----
-
-## Design Principles
-
-- Compatibility first  
-- High-confidence filtering  
-- Minimal disruption  
-- Transparent and auditable rules  
-
----
-
-## Allowlist
-
-Override rules safely:
-
-- `src/allowlist/core.txt` — domains listed here are excluded from all generated outputs
-
----
-
-## Nova Toolkit
-
-ShieldNova is part of the Nova infrastructure toolkit:
-
-| Project | Layer | Description |
-|---|---|---|
-| [IPNova](https://github.com/harryheros/ipnova) | IP | Routing-aware IPv4 dataset for Asia-Pacific infrastructure classification and traffic control |
-| [DomainNova](https://github.com/harryheros/domainnova) | Domain (Data) | High-precision domain dataset for proxy routing and network intelligence |
-| **ShieldNova** | **Domain (Filter)** | **Compatibility-first domain intelligence for privacy, ad blocking, and security** |
-| [HarryWrt](https://github.com/harryheros/harrywrt) | Device | Clean OpenWrt-based firmware for x86_64 and aarch64 (BIOS & UEFI) |
-| [OSNova](https://github.com/harryheros/osnova) | System | System deployment and reinstallation engine for VPS and bare-metal servers |
+Release history: [CHANGELOG.md](./CHANGELOG.md).
 
 ---
 
 ## License
 
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — Attribution-NonCommercial-ShareAlike.
-
-- **Non-commercial use**: Permitted under the terms of CC BY-NC-SA 4.0.
-- **Commercial use**: Commercial use, SaaS deployment, API resale, redistribution, or integration into paid products or services requires explicit prior written authorization from the author. See [COMMERCIAL_LICENSE.md](./COMMERCIAL_LICENSE.md) or contact via [GitHub Issues](https://github.com/harryheros/shieldnova/issues).
-
-### Third-party data
-
-ShieldNova contains data derived from third-party threat-intelligence sources
-(abuse.ch URLhaus & ThreatFox, adblock-nocoin-list, Phishing.Database). **Rights
-in third-party source data remain with their respective owners and licenses.**
-ShieldNova's license applies only to ShieldNova-specific curation,
-classification, annotations, formatting, allowlists, and other value-added work
-— not to the underlying factual domain data. See [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) for per-source attribution and licenses.
-
----
+- **Non-commercial use**: permitted under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **Commercial use** (SaaS, API resale, redistribution, paid products): requires prior written authorization — see [COMMERCIAL_LICENSE.md](./COMMERCIAL_LICENSE.md) or open an [issue](https://github.com/harryheros/shieldnova/issues).
+- **Third-party data** (abuse.ch URLhaus and ThreatFox, adblock-nocoin-list, Phishing.Database) remains with its owners and licenses. ShieldNova's license covers only its own curation, classification, annotations, formatting and allowlists — see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
 
 Part of the [Nova infrastructure toolkit](https://github.com/harryheros).
