@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02 08:49:50 UTC",
+  "generated_at": "2026-11-09 09:03:03 UTC",
   "build": {
-    "built_at": "2026-11-02 08:49:50 UTC",
+    "built_at": "2026-11-09 09:03:02 UTC",
     "profile": "Conservative / Compatibility-First",
     "invalid_rules_skipped": 0,
     "allowlist_entries": 0,
@@ -85,21 +85,21 @@
     ]
   },
   "fetch": {
-    "fetched_at": "2026-11-02 08:49:38 UTC",
-    "total_new_domains": 326,
-    "total_retired_domains": 327,
-    "total_platform_skipped": 186763,
+    "fetched_at": "2026-11-09 09:02:09 UTC",
+    "total_new_domains": 202,
+    "total_retired_domains": 202,
+    "total_platform_skipped": 167887,
     "successful_sources": 4,
     "failed_sources": 0,
     "note": "Public summary only. Detailed operational data remains in internal build artifacts."
   },
   "audit": {
     "scanned_files": 3,
-    "total_findings": 146,
+    "total_findings": 143,
     "summary": {
       "must_remove": 0,
       "hosting": 0,
-      "manual_review": 146
+      "manual_review": 143
     }
   },
   "false_positive_gate": {
@@ -109,15 +109,15 @@
   },
   "rule_delta": {
     "total_rules_now": 1427,
-    "previous_total": 1428,
-    "delta": -1
+    "previous_total": 1427,
+    "delta": 0
   },
   "integrity": {
     "sha256": {
-      "stats.json": "64dcc048b727d122f1436376788577b30ccbb5916684cb555e0cb879f2eb0a8e",
-      "fetch_stats.json": "4c5a75ae13419f66c8b83e5e3b8f028f97323dd3757c371115553100da4c3e8a",
-      "shieldnova-full.txt": "ca9af89bdf0f219f999e7611e7b093d9503e889c8b6da884a0a3d5d69ba783cd",
-      "shieldnova-security.txt": "e09f4aae9e0ae6297a03814a4affe4672e2bed62006b6c55d541df4a870688f2"
+      "stats.json": "ef168f7ffc411dfe940082b9463e1d34013f1079ee0bf90c1a7f07b2756a2d52",
+      "fetch_stats.json": "e1df5d99e9907993e36cfd2c99fc9b2c2e18c4a620120c12d25f2afd626a8337",
+      "shieldnova-full.txt": "8dac12503ca6992417ab5adac67fe44bf41d5abb12713ce6115cda9563f14d73",
+      "shieldnova-security.txt": "81ab5de624b3b0c3eba9a79e5b17fdba97c9a956cb4a282452bbb5332c7d147f"
     }
   },
   "disclosure": {

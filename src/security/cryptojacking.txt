@@ -104,7 +104,6 @@
 ||cryptoloot.pro^                           ! auto: nocoin
 ||cryptonoter.com^                          ! auto: nocoin
 ||datasecu.download^                        ! auto: nocoin
-||ddns.net^                                 ! auto: nocoin
 ||dekoder.ws^                               ! auto: nocoin
 ||devphp.org.ua^                            ! auto: nocoin
 ||directprimal.com^                         ! auto: nocoin
@@ -164,7 +163,6 @@
 ||mining.best^                              ! auto: nocoin
 ||mutuza.win^                               ! auto: nocoin
 ||my.domain^                                ! auto: nocoin
-||myeffect.net^                             ! auto: nocoin
 ||nablabee.com^                             ! auto: nocoin
 ||nahnoji.cz^                               ! auto: nocoin
 ||nametraff.com^                            ! auto: nocoin
@@ -227,3 +225,7 @@
 ||wtm.monitoringservice.co^                 ! auto: nocoin
 ||xmr.cool^                                 ! auto: nocoin
 ||zlx.com.br^                               ! auto: nocoin
+
+! --- Auto-fetched from nocoin (2026-11-09) ---
+||ddns.net^                                 ! auto: nocoin
+||myeffect.net^                             ! auto: nocoin
