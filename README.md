@@ -1,6 +1,6 @@
 # ShieldNova
 
-[![Version](https://img.shields.io/badge/version-v2.2.1-blue)](https://github.com/harryheros/shieldnova/releases)
+[![Version](https://img.shields.io/badge/version-v2.2.2-blue)](https://github.com/harryheros/shieldnova/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-orange)](LICENSE)
 
 A **compatibility-first domain filter list** for privacy, ad blocking and security — conservative rules for minimal breakage, with dedicated China and HK / Taiwan editions. Subscribe in AdGuard, Clash, Surge, Shadowrocket, Loon or Quantumult X.
