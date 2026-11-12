@@ -43,6 +43,19 @@ The following uses require explicit prior written authorization from the author:
 - Academic research and education
 - Open-source projects under a compatible non-commercial license
 - Evaluation and testing (non-production)
+- Use as a filter list in [DNSNova](https://github.com/harryheros/dnsnova), in any deployment, commercial ones included (see below)
+
+---
+
+## Exception: use in DNSNova
+
+ShieldNova may be used free of charge as a filter list in DNSNova, the
+Nova DNS server, including in commercial deployments: the server downloads
+the list and blocks the domains on it for its clients. This permission
+covers that use only. It does not allow redistributing the list, offering
+it through another product or service, or using it outside DNSNova; those
+still need a commercial license. Third-party data in the list keeps its own
+terms (see THIRD_PARTY_NOTICES.md).
 
 ---
 
@@ -50,10 +63,10 @@ The following uses require explicit prior written authorization from the author:
 
 For commercial licensing inquiries, including enterprise plans, OEM rights, API redistribution, and white-label deployment:
 
-→ Open an issue at: https://github.com/harryheros/shieldnova/issues  
-→ Label it: `commercial-licensing`
+→ Use the form at https://novaod.com/licensing  
+→ Or write to licensing@novaod.com
 
-Please include a brief description of your intended use case.
+Please include a brief description of your intended use case: which data, what it is for, and roughly how widely it will be used.
 
 ---
 
