@@ -74,7 +74,8 @@ Release history: [CHANGELOG.md](./CHANGELOG.md).
 ## License
 
 - **Non-commercial use**: permitted under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-- **Commercial use** (SaaS, API resale, redistribution, paid products): requires prior written authorization — see [COMMERCIAL_LICENSE.md](./COMMERCIAL_LICENSE.md) or open an [issue](https://github.com/harryheros/shieldnova/issues).
+- **Commercial use** (SaaS, API resale, redistribution, paid products, use inside a company beyond research): requires prior written authorization — see [COMMERCIAL_LICENSE.md](./COMMERCIAL_LICENSE.md), or ask at [novaod.com/licensing](https://novaod.com/licensing).
+- **In DNSNova**: free to use as a filter list in [DNSNova](https://github.com/harryheros/dnsnova), commercial deployments included; see COMMERCIAL_LICENSE.md for the exact terms.
 - **Third-party data** (abuse.ch URLhaus and ThreatFox, adblock-nocoin-list, Phishing.Database) remains with its owners and licenses. ShieldNova's license covers only its own curation, classification, annotations, formatting and allowlists — see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
 
 Part of the [Nova infrastructure toolkit](https://github.com/harryheros).
