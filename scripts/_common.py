@@ -26,7 +26,7 @@ import re
 # ShieldNova project version (SemVer). Single source of truth — README
 # badge, GitHub release tags, and any future log banners read from here.
 # Bump on every release.
-__version__ = "2.2.2"
+__version__ = "2.2.3"
 
 
 # ── Regex primitives ────────────────────────────────────────────────────────

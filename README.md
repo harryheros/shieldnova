@@ -1,6 +1,6 @@
 # ShieldNova
 
-[![Version](https://img.shields.io/badge/version-v2.2.2-blue)](https://github.com/harryheros/shieldnova/releases)
+[![Version](https://img.shields.io/badge/version-v2.2.3-blue)](https://github.com/harryheros/shieldnova/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-orange)](LICENSE)
 
 A **compatibility-first domain filter list** for privacy, ad blocking and security — conservative rules for minimal breakage, with dedicated China and HK / Taiwan editions. Subscribe in AdGuard, Clash, Surge, Shadowrocket, Loon or Quantumult X.
@@ -67,7 +67,7 @@ src/  hand-curated privacy / ads / security rules + allowlist
 
 > **Maintainers — abuse.ch Auth-Key.** abuse.ch serves URLhaus and ThreatFox only with a free Auth-Key (keyless URLs return HTTP 410 since October 2026). Create one at [auth.abuse.ch](https://auth.abuse.ch/) and add it as the Actions secret `ABUSECH_AUTH_KEY`. Without it both feeds are skipped and their entries expire after 180 days.
 
-Release history: [CHANGELOG.md](./CHANGELOG.md).
+Release history: [CHANGELOG.md](./CHANGELOG.md). Weekly rule updates: [`dist/updates.md`](dist/updates.md).
 
 ---
 
@@ -76,6 +76,6 @@ Release history: [CHANGELOG.md](./CHANGELOG.md).
 - **Non-commercial use**: permitted under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 - **Commercial use** (SaaS, API resale, redistribution, paid products, use inside a company beyond research): requires prior written authorization — see [COMMERCIAL_LICENSE.md](./COMMERCIAL_LICENSE.md), or ask at [novaod.com/licensing](https://novaod.com/licensing).
 - **In DNSNova**: free to use as a filter list in [DNSNova](https://github.com/harryheros/dnsnova), commercial deployments included; see COMMERCIAL_LICENSE.md for the exact terms.
-- **Third-party data** (abuse.ch URLhaus and ThreatFox, adblock-nocoin-list, Phishing.Database) remains with its owners and licenses. ShieldNova's license covers only its own curation, classification, annotations, formatting and allowlists — see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+- **Third-party data** (abuse.ch URLhaus and ThreatFox, adblock-nocoin-list, Phishing.Database) remains with its owners and licenses. ShieldNova's license covers only its own curation, classification, annotations, formatting and allowlists. Commercial use of the abuse.ch data may need a Spamhaus subscription of its own — see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
 
 Part of the [Nova infrastructure toolkit](https://github.com/harryheros).

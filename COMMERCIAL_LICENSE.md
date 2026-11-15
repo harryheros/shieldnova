@@ -22,6 +22,12 @@ require a ShieldNova commercial license for that data.
 In short: you license ShieldNova's curation and packaging, not the raw facts it
 organizes.
 
+**abuse.ch data.** The security lists include domains from abuse.ch URLhaus
+and ThreatFox. abuse.ch's terms say that commercial or for-profit use of
+these platforms may require a paid subscription managed by Spamhaus. A
+ShieldNova commercial license does not include that subscription; see
+[THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+
 ---
 
 ## What Requires a Commercial License

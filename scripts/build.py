@@ -14,6 +14,7 @@ Design goals:
 
 import json
 import os
+import re
 import sys
 from collections import OrderedDict
 from datetime import datetime, timezone
@@ -23,8 +24,6 @@ from datetime import datetime, timezone
 # carried a private copy that could drift silently.
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _common import (  # noqa: E402
-    IPV4_RE,
-    LABEL_RE,
     RULE_RE,
     is_valid_domain,
 )
@@ -48,6 +47,27 @@ FORMATS_DIR = os.path.join(os.path.dirname(__file__), '..', 'formats')
 
 def utc_now():
     return datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
+
+
+# Lines that only carry the build time. A file whose other lines are
+# unchanged is not rewritten, so its time stays that of the last real
+# change: otherwise every build changed some 50 files with the same rules.
+STAMP_LINE_RE = re.compile(r'^(?:[!#] (?:Built|Version): .*|Built: .*|\s*"built": ".*",?)$', re.M)
+
+
+def write_stable(filepath, text):
+    """Write text to filepath unless only the build time would change."""
+    try:
+        with open(filepath, encoding='utf-8') as f:
+            old = f.read()
+    except FileNotFoundError:
+        old = None
+    if old is not None and STAMP_LINE_RE.sub('', old) == STAMP_LINE_RE.sub('', text):
+        return False
+    os.makedirs(os.path.dirname(filepath), exist_ok=True)
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(text)
+    return True
 
 
 def split_inline_comment(line):
@@ -246,13 +266,11 @@ def write_dist(filename, title, description, rules, breakdown):
         count=count,
         extra=extra,
     )
-    filepath = os.path.join(DIST_DIR, filename)
-    os.makedirs(os.path.dirname(filepath), exist_ok=True)
-    with open(filepath, 'w', encoding='utf-8') as f:
-        f.write(header.strip() + '\n\n')
-        if rules:
-            f.write('\n'.join(rules) + '\n')
-    print(f'  Built dist: {filename} ({count} rules)')
+    text = header.strip() + '\n\n'
+    if rules:
+        text += '\n'.join(rules) + '\n'
+    changed = write_stable(os.path.join(DIST_DIR, filename), text)
+    print(f'  Built dist: {filename} ({count} rules){"" if changed else ", unchanged"}')
 
 
 def convert_rule(rule, tool):
@@ -287,7 +305,7 @@ def format_header_lines(title, description, count, tool, breakdown):
     if tool == 'clash':
         return [
             f'# ShieldNova - {title}',
-            f'# Homepage: https://github.com/harryheros/shieldnova',
+            '# Homepage: https://github.com/harryheros/shieldnova',
             f'# Built: {date}',
             f'# Total: {count}',
             'payload:',
@@ -315,21 +333,17 @@ def convert_rules_for_tool(rules, tool):
 def write_format(tool, filename, title, description, rules, breakdown):
     converted = convert_rules_for_tool(rules, tool)
     count = len(converted)
-    filepath = os.path.join(FORMATS_DIR, tool, filename)
-    os.makedirs(os.path.dirname(filepath), exist_ok=True)
-
     header_lines = format_header_lines(title, description, count, tool, breakdown)
 
-    with open(filepath, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(header_lines) + '\n')
-        if tool == 'clash':
-            # payload: is the last header line; rules follow immediately
-            for rule in converted:
-                f.write(f'  - {rule}\n')
-        elif converted:
-            f.write('\n' + '\n'.join(converted) + '\n')
+    text = '\n'.join(header_lines) + '\n'
+    if tool == 'clash':
+        # payload: is the last header line; rules follow immediately
+        text += ''.join(f'  - {rule}\n' for rule in converted)
+    elif converted:
+        text += '\n' + '\n'.join(converted) + '\n'
 
-    print(f'  Built {tool}: {filename} ({count} rules)')
+    changed = write_stable(os.path.join(FORMATS_DIR, tool, filename), text)
+    print(f'  Built {tool}: {filename} ({count} rules){"" if changed else ", unchanged"}')
 
 
 def write_all_formats(filename, title, description, rules, breakdown):
@@ -348,17 +362,15 @@ def bundle_stats(filename, title, description, rules, breakdown):
 
 
 def write_stats_report(report):
-    os.makedirs(DIST_DIR, exist_ok=True)
     json_path = os.path.join(DIST_DIR, 'stats.json')
     md_path = os.path.join(DIST_DIR, 'stats.md')
 
-    with open(json_path, 'w', encoding='utf-8') as f:
-        json.dump(report, f, indent=2, ensure_ascii=False)
+    write_stable(json_path, json.dumps(report, indent=2, ensure_ascii=False))
 
     lines = [
         '# ShieldNova Build Stats',
         '',
-        f'Built: {utc_now()}',
+        f'Built: {report["built"]}',
         '',
         '| File | Total | Breakdown |',
         '|---|---:|---|',
@@ -367,8 +379,7 @@ def write_stats_report(report):
         breakdown = ', '.join(f'{k}={v}' for k, v in item['breakdown'].items())
         lines.append(f"| `{item['filename']}` | {item['total']} | {breakdown} |")
 
-    with open(md_path, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(lines) + '\n')
+    write_stable(md_path, '\n'.join(lines) + '\n')
 
     print('  Built dist: stats.json')
     print('  Built dist: stats.md')

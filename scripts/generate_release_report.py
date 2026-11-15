@@ -29,7 +29,6 @@ Output schema (release_report.json):
 
 import hashlib
 import json
-import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -303,12 +302,7 @@ def build_release_notes(report: dict) -> str:
     serve as an attack map or competitive intelligence.
     """
     date_str  = report['build'].get('built_at', utc_now())[:10]
-    delta     = report.get('rule_delta', {})
-    diff      = delta.get('delta')
-    fp_gate   = report.get('false_positive_gate', {})
-    passed    = fp_gate.get('passed', False)
-    fetch     = report.get('fetch') or {}
-    new_total = fetch.get('total_new_domains', 0)
+    passed    = (report.get('false_positive_gate') or {}).get('passed', False)
 
     lines = [
         f'## {date_str}',
@@ -328,20 +322,17 @@ def build_release_notes(report: dict) -> str:
     return '\n'.join(lines)
 
 
-def update_changelog(report: dict):
+def update_log(report: dict):
     """
-    Prepend a concise public entry to CHANGELOG.md.
+    Prepend a concise public entry to dist/updates.md, the log of weekly
+    refreshes. CHANGELOG.md is the release history and is written by hand:
+    the weekly entries used to go there and buried the releases.
 
     Principle: results only, no internal process detail.
     """
-    changelog_path = ROOT / 'CHANGELOG.md'
-    date_str  = report['build'].get('built_at', utc_now())[:10]
-    delta     = report.get('rule_delta', {})
-    diff      = delta.get('delta')
-    fp_gate   = report.get('false_positive_gate', {})
-    passed    = fp_gate.get('passed', False)
-    fetch     = report.get('fetch') or {}
-    new_total = fetch.get('total_new_domains', 0)
+    log_path = DIST_DIR / 'updates.md'
+    date_str = report['build'].get('built_at', utc_now())[:10]
+    passed   = (report.get('false_positive_gate') or {}).get('passed', False)
 
     lines = [f'## {date_str}', '']
     lines += _change_lines(report)
@@ -351,26 +342,26 @@ def update_changelog(report: dict):
 
     lines += ['', '---', '']
 
-    header = ('# ShieldNova Changelog\n\n'
-              '> Security rule updates and release history.\n\n')
+    title = '# ShieldNova rule updates'
+    header = (f'{title}\n\n'
+              '> Weekly threat-intelligence refreshes, newest first. '
+              'Releases: [CHANGELOG.md](../CHANGELOG.md).\n\n')
 
-    if changelog_path.exists():
-        existing = changelog_path.read_text(encoding='utf-8')
-        if existing.startswith('# ShieldNova Changelog'):
-            existing = existing.split('\n', 3)[-1].lstrip('\n')
-        entry_header = f'## {date_str}'
-        # Replace only an *automatic* entry for the same day (exact header).
-        # A hand-written release entry such as '## 2026-06-05 — v2.1.1'
-        # merely starts with the same prefix and must be preserved.
-        if existing.split('\n', 1)[0].strip() == entry_header:
+    existing = ''
+    if log_path.exists():
+        existing = log_path.read_text(encoding='utf-8')
+        if existing.startswith(title):
+            # Drop the header: everything before the first entry.
+            cut = existing.find('\n## ')
+            existing = existing[cut + 1:] if cut >= 0 else ''
+        # A second run on the same day replaces that day's entry.
+        if existing.split('\n', 1)[0].strip() == f'## {date_str}':
             parts = existing.split('\n---\n', 1)
             existing = parts[1].lstrip('\n') if len(parts) > 1 else ''
-        new_content = header + '\n'.join(lines) + existing
-    else:
-        new_content = header + '\n'.join(lines)
 
-    changelog_path.write_text(new_content, encoding='utf-8')
-    print(f'[report] Updated: CHANGELOG.md ({date_str})')
+    DIST_DIR.mkdir(exist_ok=True)
+    log_path.write_text(header + '\n'.join(lines) + existing, encoding='utf-8')
+    print(f'[report] Updated: dist/updates.md ({date_str})')
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -401,8 +392,8 @@ def main() -> int:
         f.write(notes)
     print(f'[report] Written: {NOTES_OUT.relative_to(ROOT)}')
 
-    # Update CHANGELOG.md
-    update_changelog(report)
+    # Update dist/updates.md
+    update_log(report)
 
     # Print summary to CI log
     delta = report['rule_delta']

@@ -15,19 +15,24 @@ ShieldNova does not and cannot relicense that data.
 
 ## Sources
 
-### abuse.ch — URLhaus
-- **Used for:** active malware-distribution domains (`src/security/malware.txt`)
-- **URL:** https://urlhaus.abuse.ch/
-- **Terms:** abuse.ch datasets are published for the security community. URLhaus
-  data is provided free of charge; attribution to abuse.ch / URLhaus is expected.
-  Refer to https://urlhaus.abuse.ch/api/ for current usage terms.
-
-### abuse.ch — ThreatFox
-- **Used for:** recent malware indicators of compromise (`src/security/malware.txt`)
-- **URL:** https://threatfox.abuse.ch/
-- **Terms:** Published by abuse.ch for the security community; ThreatFox data is
-  available under CC0 (public domain dedication) per abuse.ch documentation.
-  Refer to https://threatfox.abuse.ch/ for current terms.
+### abuse.ch — URLhaus and ThreatFox
+- **Used for:** active malware-distribution domains (URLhaus) and recent
+  malware indicators of compromise (ThreatFox), in `src/security/malware.txt`
+- **URLs:** https://urlhaus.abuse.ch/, https://threatfox.abuse.ch/
+- **Terms:** the [abuse.ch Terms of Use](https://abuse.ch/terms-of-use/)
+  (effective 2025-11-04, last updated 2026-10-21) and the policies of each
+  platform. The platforms are free of charge under fair-use principles, in
+  collaboration with Spamhaus Technology Ltd, the primary licensee of the
+  abuse.ch datasets. **Commercial or for-profit use of URLhaus and ThreatFox
+  may require a paid subscription managed by Spamhaus** (section 4), unless
+  the user qualifies under abuse.ch's contributor policy. Older abuse.ch
+  pages describe ThreatFox data as CC0; the current terms take precedence.
+- **For ShieldNova users:** a ShieldNova commercial license, and the
+  permission to use ShieldNova in DNSNova, cover ShieldNova's own work only.
+  They do not include an abuse.ch / Spamhaus subscription; a commercial user
+  of the security lists should check whether it needs one.
+- Downloads use a free abuse.ch Auth-Key (the repository secret
+  `ABUSECH_AUTH_KEY`).
 
 ### adblock-nocoin-list (hoshsadiq)
 - **Used for:** cryptojacking / in-browser mining domains (`src/security/cryptojacking.txt`)

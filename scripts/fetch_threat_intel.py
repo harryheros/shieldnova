@@ -44,7 +44,6 @@ Usage:
 import csv
 import hashlib
 import io
-import ipaddress
 import json
 import os
 import re
@@ -59,8 +58,6 @@ from pathlib import Path
 # Shared primitives (LABEL_RE, IPV4_RE, is_valid_domain).
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _common import (  # noqa: E402
-    IPV4_RE,
-    LABEL_RE,
     __version__,
     is_valid_domain,
 )
@@ -321,8 +318,6 @@ HOSTING_PLATFORM_APEXES: frozenset[str] = frozenset({
     "reddit.com",
     "redd.it",
     "redditmedia.com",
-    "reddit.com",
-    "redd.it",
     "linkedin.com",
     "licdn.com",
     "tiktok.com",
