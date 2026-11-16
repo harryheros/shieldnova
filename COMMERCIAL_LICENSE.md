@@ -1,8 +1,12 @@
 # Commercial Licensing — ShieldNova
 
 ShieldNova is open for non-commercial use under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
 Commercial use requires a separate written license agreement.
+
+This page explains how the author reads "NonCommercial" (Section 1(i) of
+the license) for ShieldNova, and how to get permission for the uses below. It
+does not add terms to CC BY-NC-SA 4.0; where this page and the license text
+differ, the license text applies.
 
 ---
 
