@@ -226,6 +226,6 @@
 ||xmr.cool^                                 ! auto: nocoin
 ||zlx.com.br^                               ! auto: nocoin
 
-! --- Auto-fetched from nocoin (2026-11-16) ---
+! --- Auto-fetched from nocoin (2026-11-23) ---
 ||ddns.net^                                 ! auto: nocoin
 ||myeffect.net^                             ! auto: nocoin
