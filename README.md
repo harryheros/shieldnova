@@ -1,16 +1,12 @@
-<div align="center">
-
 # ShieldNova
 
-**Compatibility-first domain filter lists for privacy, ad blocking and security.**
+> Compatibility-first domain filter lists for privacy, ad blocking and security.
 
 [![Version](https://img.shields.io/github/v/release/harryheros/shieldnova?label=version&color=blue)](https://github.com/harryheros/shieldnova/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](#license)
 [![Weekly update](https://img.shields.io/github/actions/workflow/status/harryheros/shieldnova/update.yml?label=weekly%20update)](https://github.com/harryheros/shieldnova/actions/workflows/update.yml)
 
 [Subscribe](#subscribe) · [Why ShieldNova](#why-shieldnova) · [How it is built](#how-it-is-built) · [Changelog](./CHANGELOG.md) · [License](#license)
-
-</div>
 
 Conservative rules for minimal breakage, with dedicated editions for mainland China and for Hong Kong and Taiwan. The goal is not maximum blocking, but **maximum usable protection**. Rule counts per list: [`dist/stats.json`](dist/stats.json).
 
@@ -21,17 +17,22 @@ Conservative rules for minimal breakage, with dedicated editions for mainland Ch
 
 Pick **one** list:
 
-| List | Contents |
-|---|---|
-| `shieldnova-full.txt` | Privacy + ads + security — recommended |
-| `shieldnova-full-cn.txt` | Full + mainland China trackers and ads |
-| `shieldnova-full-hktw.txt` | Full + Hong Kong and Taiwan trackers and ads |
-| `shieldnova-full-aggressive.txt` | Full + stricter privacy rules that may break some sites |
-| `shieldnova-privacy.txt`, `-ads.txt`, `-security.txt` | One module only |
+- `shieldnova-full.txt`: privacy + ads + security. **Recommended.**
+- `shieldnova-full-cn.txt`: full, plus mainland China trackers and ads.
+- `shieldnova-full-hktw.txt`: full, plus Hong Kong and Taiwan trackers and ads.
+- `shieldnova-full-aggressive.txt`: full, plus stricter privacy rules that may break some sites.
+- `shieldnova-privacy.txt`, `-ads.txt`, `-security.txt`: one module only.
+
+AdGuard format:
 
 ```text
-AdGuard format:  https://raw.githubusercontent.com/harryheros/shieldnova/main/dist/shieldnova-full.txt
-Other apps:      https://raw.githubusercontent.com/harryheros/shieldnova/main/formats/<app>/shieldnova-full.txt
+https://raw.githubusercontent.com/harryheros/shieldnova/main/dist/shieldnova-full.txt
+```
+
+Other apps:
+
+```text
+https://raw.githubusercontent.com/harryheros/shieldnova/main/formats/<app>/shieldnova-full.txt
 ```
 
 `dist/` holds the AdGuard-format lists, which most filtering software reads. `formats/` has ready-made files for six apps; `<app>` is the folder name: `adguard`, `clash`, `surge`, `shadowrocket`, `loon` or `quantumultx`.
@@ -47,10 +48,12 @@ One rule where one rule suffices. Where other lists add hundreds of subdomains o
 | | ShieldNova | Typical aggregated lists |
 |---|---|---|
 | Subscriptions | 1 | 10–100+ |
-| Rules | ~1,300 (hand-curated privacy and ads, plus a rolling security window) | 40,000+ |
-| Every rule explained | Yes — annotated or attributed to its source feed | Rarely |
+| Rules | ~1,300 | 40,000+ |
+| Every rule explained | Yes | Rarely |
 | Regional editions | Yes | No |
-| False positives | Near zero; checked on every build | Frequent |
+| False positives | Near zero | Frequent |
+
+The ~1,300 rules are hand-curated privacy and ad rules plus a rolling window of security rules. Each one is annotated or attributed to its source feed, and every build is checked for false positives.
 
 ## How it is built
 
