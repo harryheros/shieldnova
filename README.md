@@ -17,11 +17,15 @@ Conservative rules for minimal breakage, with dedicated editions for mainland Ch
 
 Pick **one** list:
 
-- `shieldnova-full.txt`: privacy + ads + security. **Recommended.**
-- `shieldnova-full-cn.txt`: full, plus mainland China trackers and ads.
-- `shieldnova-full-hktw.txt`: full, plus Hong Kong and Taiwan trackers and ads.
-- `shieldnova-full-aggressive.txt`: full, plus stricter privacy rules that may break some sites.
-- `shieldnova-privacy.txt`, `-ads.txt`, `-security.txt`: one module only.
+| List | What it blocks |
+|---|---|
+| `shieldnova-full.txt` | Privacy + ads + security (**recommended**) |
+| `shieldnova-full-cn.txt` | Full + mainland China trackers and ads |
+| `shieldnova-full-hktw.txt` | Full + Hong Kong and Taiwan trackers and ads |
+| `shieldnova-full-aggressive.txt` | Full + stricter privacy rules (may break sites) |
+| `shieldnova-privacy.txt` | Privacy module only |
+| `shieldnova-ads.txt` | Ads module only |
+| `shieldnova-security.txt` | Security module only |
 
 AdGuard format:
 
