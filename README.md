@@ -2,9 +2,9 @@
 
 > Compatibility-first domain filter lists for privacy, ad blocking and security.
 
-[![Version](https://img.shields.io/github/v/release/harryheros/shieldnova?label=version&color=blue)](https://github.com/harryheros/shieldnova/releases)
+[![Version](https://img.shields.io/badge/version-v2.2.3-blue.svg)](https://github.com/harryheros/shieldnova/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](#license)
-[![Weekly update](https://img.shields.io/github/actions/workflow/status/harryheros/shieldnova/update.yml?label=weekly%20update)](https://github.com/harryheros/shieldnova/actions/workflows/update.yml)
+[![Weekly update](https://github.com/harryheros/shieldnova/actions/workflows/update.yml/badge.svg)](https://github.com/harryheros/shieldnova/actions/workflows/update.yml)
 
 [Subscribe](#subscribe) · [Why ShieldNova](#why-shieldnova) · [How it is built](#how-it-is-built) · [Changelog](./CHANGELOG.md) · [License](#license)
 
