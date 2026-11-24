@@ -62,7 +62,7 @@ in [dist/updates.md](./dist/updates.md).
   github-script v9 — v7 ran on Node 20, removed from runners on 2026-09-16),
   plus concurrency, timeout and push-with-rebase retry.
 
-## 2.1.1 (2026-06-05)
+## 2.1.1 (2026-06-08)
 
 - Clarified licensing boundaries for third-party threat-intelligence sources
 - Added `THIRD_PARTY_NOTICES.md` documenting per-source attribution and licenses

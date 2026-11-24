@@ -43,6 +43,8 @@ jobs:
           python3 scripts/test_fetch_rotation.py
           python3 scripts/test_build_stable.py
           python3 scripts/test_update_log.py
+          python3 scripts/test_changelog_format.py
+          python3 scripts/test_readme.py
 
       # Threat intel fetch runs weekly since v2.2: the security lists are a
       # rolling window of *currently active* threats (see fetch_threat_intel.py),

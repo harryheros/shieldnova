@@ -1,15 +1,21 @@
+<div align="center">
+
 # ShieldNova
 
-[![Version](https://img.shields.io/badge/version-v2.2.3-blue)](https://github.com/harryheros/shieldnova/releases)
-[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-orange)](LICENSE)
+**Compatibility-first domain filter lists for privacy, ad blocking and security.**
 
-A **compatibility-first domain filter list** for privacy, ad blocking and security — conservative rules for minimal breakage, with dedicated China and HK / Taiwan editions. Subscribe in AdGuard, Clash, Surge, Shadowrocket, Loon or Quantumult X.
+[![Version](https://img.shields.io/github/v/release/harryheros/shieldnova?label=version&color=blue)](https://github.com/harryheros/shieldnova/releases)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](#license)
+[![Weekly update](https://img.shields.io/github/actions/workflow/status/harryheros/shieldnova/update.yml?label=weekly%20update)](https://github.com/harryheros/shieldnova/actions/workflows/update.yml)
 
-The goal is not maximum blocking, but **maximum usable protection**. Rule counts per list: [`dist/stats.json`](dist/stats.json).
+[Subscribe](#subscribe) · [Why ShieldNova](#why-shieldnova) · [How it is built](#how-it-is-built) · [Changelog](./CHANGELOG.md) · [License](#license)
 
+</div>
+
+Conservative rules for minimal breakage, with dedicated editions for mainland China and for Hong Kong and Taiwan. The goal is not maximum blocking, but **maximum usable protection**. Rule counts per list: [`dist/stats.json`](dist/stats.json).
+
+> [!NOTE]
 > **License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) for ShieldNova's own curation and value-added work, in all versions. Third-party source data keeps its original licenses — see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md). Commercial use requires a separate written license.
-
----
 
 ## Subscribe
 
@@ -18,25 +24,23 @@ Pick **one** list:
 | List | Contents |
 |---|---|
 | `shieldnova-full.txt` | Privacy + ads + security — recommended |
-| `shieldnova-full-cn.txt` | Full + China mainland trackers and ads |
+| `shieldnova-full-cn.txt` | Full + mainland China trackers and ads |
 | `shieldnova-full-hktw.txt` | Full + Hong Kong and Taiwan trackers and ads |
 | `shieldnova-full-aggressive.txt` | Full + stricter privacy rules that may break some sites |
 | `shieldnova-privacy.txt`, `-ads.txt`, `-security.txt` | One module only |
 
 ```text
-AdGuard:      https://raw.githubusercontent.com/harryheros/shieldnova/main/dist/shieldnova-full.txt
-Other apps:   https://raw.githubusercontent.com/harryheros/shieldnova/main/formats/<app>/shieldnova-full.txt
+AdGuard format:  https://raw.githubusercontent.com/harryheros/shieldnova/main/dist/shieldnova-full.txt
+Other apps:      https://raw.githubusercontent.com/harryheros/shieldnova/main/formats/<app>/shieldnova-full.txt
 ```
 
-`<app>`: `adguard`, `clash`, `surge`, `shadowrocket`, `loon`, `quantumultx`.
-
----
+`dist/` holds the AdGuard-format lists, which most filtering software reads. `formats/` has ready-made files for six apps; `<app>` is the folder name: `adguard`, `clash`, `surge`, `shadowrocket`, `loon` or `quantumultx`.
 
 ## Why ShieldNova
 
 One rule where one rule suffices. Where other lists add hundreds of subdomains of one tracker, ShieldNova blocks the domain once, with a note:
 
-```
+```text
 ||actonservice.com^                       ! Act-On - marketing automation tracking
 ```
 
@@ -48,8 +52,6 @@ One rule where one rule suffices. Where other lists add hundreds of subdomains o
 | Regional editions | Yes | No |
 | False positives | Near zero; checked on every build | Frequent |
 
----
-
 ## How it is built
 
 ```text
@@ -59,17 +61,12 @@ src/  hand-curated privacy / ads / security rules + allowlist
   →   dist/ (AdGuard format) and formats/ (six apps)
 ```
 
-**Security lists** are rolling windows of at most 500 auto-fetched domains per file, alongside hand-curated ones. A fetched entry is retired when its feed stops listing it, after 180 days, or to make room for fresh entries (up to 100 per file per run). Hand-curated rules are never touched, and a failed or truncated feed never triggers removals. Every change is logged in `dist/fetch_stats.json`.
+- **Security lists** are rolling windows of at most 500 auto-fetched domains per file, alongside hand-curated ones. A fetched entry is retired when its feed stops listing it, after 180 days, or to make room for fresh entries (up to 100 per file per run). Hand-curated rules are never touched, and a failed or truncated feed never triggers removals. Every change is logged in `dist/fetch_stats.json`.
+- **Allowlist**: domains in `src/allowlist/core.txt` are removed from every output.
+- **Updates**: every Monday 02:00 UTC, or on demand. A failed run opens a GitHub issue. What each update changed: [`dist/updates.md`](dist/updates.md); release history: [CHANGELOG.md](./CHANGELOG.md).
 
-**Updates**: every Monday 02:00 UTC, or on demand. A failed run opens a GitHub issue.
-
-**Allowlist**: domains in `src/allowlist/core.txt` are removed from every output.
-
+> [!IMPORTANT]
 > **Maintainers — abuse.ch Auth-Key.** abuse.ch serves URLhaus and ThreatFox only with a free Auth-Key (keyless URLs return HTTP 410 since October 2026). Create one at [auth.abuse.ch](https://auth.abuse.ch/) and add it as the Actions secret `ABUSECH_AUTH_KEY`. Without it both feeds are skipped and their entries expire after 180 days.
-
-Release history: [CHANGELOG.md](./CHANGELOG.md). Weekly rule updates: [`dist/updates.md`](dist/updates.md).
-
----
 
 ## License
 
