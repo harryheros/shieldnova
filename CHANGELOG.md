@@ -83,8 +83,10 @@ in [dist/updates.md](./dist/updates.md).
   the fetcher, the build and an audit of existing rules
   (`audit_existing_rules.py`); the existing security rules were audited
   against it.
-- A cryptojacking list (`src/security/cryptojacking.txt`) joins the
-  security module.
+- Abuse-TLD patterns moved to configuration (`suspicious_patterns` in
+  `config/critical_domains.json`), so they can change without code changes.
+- `fetch_stats.json` counts platform subdomains that are themselves listed
+  as hosting platforms separately from their parent platforms.
 - Each build writes a release report: `dist/release_report.json` and
   `dist/RELEASE_NOTES.md`.
 - HK/TW privacy and advertising rules expanded.

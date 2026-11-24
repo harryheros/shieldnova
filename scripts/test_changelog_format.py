@@ -37,6 +37,15 @@ class TestChangelogFormat(unittest.TestCase):
         current = tuple(int(x) for x in _common.__version__.split("."))
         self.assertEqual(versions[0], current)
 
+    def test_lists_are_credited_to_the_release_that_added_them(self):
+        # src/security/cryptojacking.txt shipped with 2.0.0 (34 rules); 2.1.0
+        # only grew it through the monthly feed.
+        text = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
+        entry_210 = text.split("## 2.1.0 ", 1)[1].split("\n## ", 1)[0]
+        entry_200 = text.split("## 2.0.0 ", 1)[1].split("\n## ", 1)[0]
+        self.assertNotIn("cryptojacking", entry_210)
+        self.assertIn("cryptojacking", entry_200)
+
     def test_releases_are_in_the_file_not_only_on_github(self):
         text = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
         self.assertNotIn("see the [GitHub releases]", text)
